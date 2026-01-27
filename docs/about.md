@@ -6,40 +6,29 @@
 
 ## 🎓 教育背景
 
-- **本科** | 某某大学 | 计算机科学与技术 | 20xx - 20xx
+- **本科** | 南京大学 | 软件工程（智能化软件） | 2022 - 2026
 
-## 💼 工作经历
+## 💼 实习经历
 
-- **软件工程师** | 某某公司 | 20xx - 至今
-  - 负责后端服务开发
-  - 参与系统架构设计
+- **AI产品实习生** | 绚星智慧科技有限公司 | 2026 - 至今
+  - 负责Agent产品需求和Skills撰写
+  - 参与Agent构建
 
 ## 🔧 技术栈
 
 ### 编程语言
 - Python
-- JavaScript/TypeScript
-- Go
+- Java
 - C++
 
 ### 框架与工具
-- Django / Flask
-- React / Vue
-- Docker / Kubernetes
-- Git
+- Flask
+- AI Agent
 
 ## 🎯 兴趣爱好
 
-- 📚 阅读
+- 🖊 书法
 - 💻 编程
-- 🎮 游戏
-- 🏃 跑步
-
-## 📧 联系我
-
-- Email: your.email@example.com
-- 微信: your_wechat_id
+- ⚽  足球
 
 ---
-
-*"学而时习之，不亦说乎"* —— 孔子

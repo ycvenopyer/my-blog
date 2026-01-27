@@ -19,7 +19,7 @@
 - 标签管理
 - 全文搜索
 
-**项目链接**: [GitHub](https://github.com/yourusername/blog)
+**项目链接**: [GitHub](https://github.com/ycvenopyer/my-blog)
 
 ---
 
@@ -91,4 +91,4 @@ my-files tree --output structure.txt
 ---
 
 !!! info "源码托管"
-    所有项目源码均托管在 [GitHub](https://github.com/yourusername)，欢迎 Star 和 Fork！
+    所有项目源码均托管在 [GitHub](https://github.com/ycvenopyer)，欢迎 Star 和 Fork！

@@ -1,14 +1,14 @@
 site_name: ycvenopyer
 site_description: 存放学习资料和个人信息
 site_author: ycvenopyer
-site_url: https://yourname.github.io/my-blog
+site_url: https://ycvenopyer.github.io/my-blog
 
 nav:
   - 首页: index.md
   - 关于我: about.md
-  - 编程笔记: notes/programming.md
-  - 读书笔记: notes/reading.md
-  - 项目作品: notes/projects.md
+  - 编程笔记: programming.md
+  - 读书笔记: reading.md
+  - 项目作品: projects.md
 
 theme:
   name: material
@@ -73,14 +73,8 @@ markdown_extensions:
 
 extra:
   social:
-    - icon: fontawesome/solid/globe
-      link: https://yourwebsite.com
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/yourusername
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/yourusername
+      link: https://github.com/ycvenopyer
 
 extra_css:
   - stylesheets/extra.css
