@@ -1,16 +1,14 @@
-site_name: 我的个人博客
+site_name: ycvenopyer
 site_description: 存放学习资料和个人信息
-site_author: Your Name
-site_url: https://yourname.github.io/blog
+site_author: ycvenopyer
+site_url: https://yourname.github.io/my-blog
 
 nav:
   - 首页: index.md
   - 关于我: about.md
-  - 学习资料:
-      - 编程笔记: notes/programming.md
-      - 读书笔记: notes/reading.md
-      - 项目作品: notes/projects.md
-  - 联系方式: contact.md
+  - 编程笔记: notes/programming.md
+  - 读书笔记: notes/reading.md
+  - 项目作品: notes/projects.md
 
 theme:
   name: material
