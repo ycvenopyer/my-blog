@@ -51,8 +51,6 @@ theme:
   icon:
     logo: material/book-open-variant
     repo: fontawesome/brands/github
-  repo_url: https://github.com/yourusername
-  repo_name: my-blog
 
 plugins:
   - search
