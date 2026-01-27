@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://yourname.github.io/blog/</loc>
+         <loc>https://yourname.github.io/my-blog/</loc>
          <lastmod>2026-01-27</lastmod>
     </url>
     <url>
-         <loc>https://yourname.github.io/blog/about/</loc>
+         <loc>https://yourname.github.io/my-blog/about/</loc>
          <lastmod>2026-01-27</lastmod>
     </url>
     <url>
-         <loc>https://yourname.github.io/blog/contact/</loc>
+         <loc>https://yourname.github.io/my-blog/notes/programming/</loc>
          <lastmod>2026-01-27</lastmod>
     </url>
     <url>
-         <loc>https://yourname.github.io/blog/notes/programming/</loc>
+         <loc>https://yourname.github.io/my-blog/notes/projects/</loc>
          <lastmod>2026-01-27</lastmod>
     </url>
     <url>
-         <loc>https://yourname.github.io/blog/notes/projects/</loc>
-         <lastmod>2026-01-27</lastmod>
-    </url>
-    <url>
-         <loc>https://yourname.github.io/blog/notes/reading/</loc>
+         <loc>https://yourname.github.io/my-blog/notes/reading/</loc>
          <lastmod>2026-01-27</lastmod>
     </url>
 </urlset>
