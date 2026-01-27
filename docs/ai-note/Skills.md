@@ -189,14 +189,14 @@ Skills也可分优先级。
       └── 企业标准、合规要求
   ~~~
 
-Anthropic官方Skills仓库：https://github.com/anthropics/skills
+[Anthropic官方Skills仓库](https://github.com/anthropics/skills)
 
-Agent Skills开放标准：https://agentskills.io
+[Agent Skills开放标准](https://agentskills.io)
 
-Simon Willison的分析：https://simonwillison.net/2025/Oct/16/claude-skills/
+[Simon Willison的分析](https://simonwillison.net/2025/Oct/16/claude-skills/)
 
-Skills官方文档：https://code.claude.com/docs/en/skills
+[Skills官方文档](https://code.claude.com/docs/en/skills)
 
-obra/superpowers：https://github.com/obra/superpowers
+[obra/superpowers](https://github.com/obra/superpowers)
 
-Sionic AI案例：https://huggingface.co/blog/sionic-ai/claude-code-skills-training
+[Sionic AI案例](https://huggingface.co/blog/sionic-ai/claude-code-skills-training)
