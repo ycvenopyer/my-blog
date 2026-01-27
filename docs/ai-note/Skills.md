@@ -39,6 +39,7 @@
 
 - Skills可以包含可执行脚本，脚本在本地执行，返回结果给Claude，可以封装确定性的执行能力
 
+
 # 2.和MCP对比
 
 MCP(Model Context Protocol)：一个**连接**协议，让Claude能够访问**外部系统**：数据库、API、文件系统、各种SaaS服务。当需要连接外部系统时使用。它的核心目标是为**AI模型**与**外部数据源及工具**之间建立一个**标准化、安全、高效的通信桥梁**。类比于**USB**。
@@ -60,6 +61,7 @@ MCP像是传统软件工程的思路：定义接口、实现服务、处理通�
 Skills更像LLM原生的思路：写清楚怎么做，让模型自己去做。
 
 可以用Skills封装专业知识和工作流程。
+
 
 # 3.Skill撰写
 
@@ -198,7 +200,8 @@ Skills也可分优先级。
       └── 企业标准、合规要求
   ~~~
 
-## 4.Reference
+
+# 4.Reference
 
 [Anthropic官方Skills仓库](https://github.com/anthropics/skills)
 
@@ -211,3 +214,4 @@ Skills也可分优先级。
 [obra/superpowers](https://github.com/obra/superpowers)
 
 [Sionic AI案例](https://huggingface.co/blog/sionic-ai/claude-code-skills-training)
+
