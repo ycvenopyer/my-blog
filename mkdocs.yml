@@ -6,7 +6,9 @@ site_url: https://ycvenopyer.github.io/my-blog
 nav:
   - 首页: index.md
   - 关于我: about.md
-  - AI: ai-note.md
+  - AI:
+      - AI首页: ai-note.md
+      - Skills: ai-note/Skills.md
   - 数学: math.md
   - 项目作品: projects.md
 
