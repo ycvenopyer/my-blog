@@ -1,0 +1,120 @@
+/* 自定义样式 */
+:root {
+    --primary-color: #4F46E5;
+    --accent-color: #818CF8;
+    --text-color: #1F2937;
+    --bg-color: #F9FAFB;
+}
+
+/* 首页横幅样式 */
+.home-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* 卡片样式 */
+.card {
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 表格样式增强 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #E5E7EB;
+}
+
+table thead {
+    background-color: #F3F4F6;
+}
+
+/* 代码块样式增强 */
+code {
+    background-color: #F3F4F6;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* 引用块样式 */
+blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: #6B7280;
+    font-style: italic;
+}
+
+/* 链接样式增强 */
+a:hover {
+    text-decoration: underline;
+}
+
+/* 导航栏样式增强 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 搜索框样式 */
+.form-control {
+    border-radius: 20px;
+}
+
+/* 标签样式 */
+.tag {
+    display: inline-block;
+    background-color: #EEF2FF;
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 回到顶部按钮 */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .home-banner {
+        padding: 2rem;
+    }
+}
