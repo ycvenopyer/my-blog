@@ -1,6 +1,6 @@
-# 1.Skills
+## 1.Skills
 
-## 1.1 Skills定义
+### 1.1 Skills定义
 
 **Skills是模块化的能力包，包含指令、脚本和资源，让Claude在需要时自动加载和使用。**
 
@@ -15,7 +15,7 @@
 
 `自动加载`：你不需要手动告诉Claude现在用XX Skill。Claude会根据你的任务描述，自动判断需要哪个Skill，然后加载。
 
-## 1.2 Skills的核心价值：把重复的指令打包，按需加载
+### 1.2 Skills的核心价值：把重复的指令打包，按需加载
 
 **渐进式披露**：分阶段、按需加载。
 
@@ -40,7 +40,7 @@
 - Skills可以包含可执行脚本，脚本在本地执行，返回结果给Claude，可以封装确定性的执行能力
 
 
-# 2.和MCP对比
+## 2.和MCP对比
 
 MCP(Model Context Protocol)：一个**连接**协议，让Claude能够访问**外部系统**：数据库、API、文件系统、各种SaaS服务。当需要连接外部系统时使用。它的核心目标是为**AI模型**与**外部数据源及工具**之间建立一个**标准化、安全、高效的通信桥梁**。类比于**USB**。
 
@@ -63,15 +63,15 @@ Skills更像LLM原生的思路：写清楚怎么做，让模型自己去做。
 可以用Skills封装专业知识和工作流程。
 
 
-# 3.Skill撰写
+## 3.Skill撰写
 
-## 3.1 适合Skills的情况
+### 3.1 适合Skills的情况
 
 - 有固定工作流
 - 团队协作
 - token消耗大的
 
-## 3.2 创建Skill
+### 3.2 创建Skill
 
 Skill封装了你的工作流程、你的经验沉淀、你的SOP，将这些东西写成SKILL.md，让AI来做即可。
 
@@ -117,7 +117,7 @@ Skills拆解：Skills要精准简洁，按需加载省token，触发更精准，
 
 Skills也可分优先级。
 
-## 3.3 Skills设计的五个最佳实践
+### 3.3 Skills设计的五个最佳实践
 
 - description决定一切：做什么（核心功能）+什么时候用（触发场景）+触发关键词
 
@@ -146,7 +146,7 @@ Skills也可分优先级。
 
 - 从简单开始，逐步迭代：从最小可行版本开始：写一个简单的SKILL.md，用几次，发现问题，添加遗漏的规则，添加常见错误的处理，逐步完善
 
-## 3.4 Skills分类体系：Skills库的构建
+### 3.4 Skills分类体系：Skills库的构建
 
 - 按来源分
 
@@ -201,7 +201,7 @@ Skills也可分优先级。
   ~~~
 
 
-# 4.Reference
+## 4.Reference
 
 [Anthropic官方Skills仓库](https://github.com/anthropics/skills)
 
