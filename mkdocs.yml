@@ -12,10 +12,10 @@ nav:
   - 数学: 
     - Home: math.md
     - 线性代数:
-      - Home: math/linear-algebra/index.md
+      - 概述: math/linear-algebra/index.md
       - 矩阵: math/linear-algebra/matrix.md
     - 离散数学:
-      - Home: math/discrete-math/index.md
+      - 概述: math/discrete-math/index.md
       - 集合论: math/discrete-math/set-theory.md
   - 项目作品: 
     - Home: projects.md
