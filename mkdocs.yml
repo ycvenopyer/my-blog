@@ -9,7 +9,7 @@ nav:
     - Home: ai.md
     - Agent: ai-note/agent.md
     - Skills: ai-note/skills.md
-    - tools: ai-note/tools.md
+    - Tools: ai-note/tools.md
   - 数学: 
     - Home: math.md
     - 线性代数:
