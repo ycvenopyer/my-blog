@@ -2,7 +2,7 @@
 
 ## 👤 个人简介
 
-你好！我是一名热爱技术的学习者，喜欢探索新知识并记录分享。
+Dear Siri! 这里是ycvenopyer的博客！
 
 ## 🎓 教育背景
 
@@ -10,19 +10,22 @@
 
 ## 💼 实习经历
 
-- **AI产品实习生** | 绚星智慧科技有限公司 | 2026 - 至今
-  - 负责Agent产品需求和Skills撰写
-  - 参与Agent构建
+- **AI产品实习生** | 绚星智慧科技有限公司 | 2026.1 - 2026.3
+  - 负责Agent产品需求获取，prompt，tools，skills撰写
+  - 基于LangGraph, Agentickit参与Agent构建
+  - 搭建一个智能AI销售助手，赋能销售人员和销售管理者
 
 ## 🔧 技术栈
 
 ### 编程语言
+
 - Python
 - Java
 
 ### 框架与工具
-- Flask
-- AI Agent
+
+- LangChain
+- LangGraph
 - Claude Code
 - Cursor
 

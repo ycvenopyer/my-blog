@@ -12,13 +12,13 @@
         <meta name="author" content="ycvenopyer">
       
       
-        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/agent/">
+        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/tools/">
       
       
-        <link rel="prev" href="../../ai/">
+        <link rel="prev" href="../skills/">
       
       
-        <link rel="next" href="../skills/">
+        <link rel="next" href="../../math/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Agent - ycvenopyer</title>
+        <title>tools - ycvenopyer</title>
       
     
     
@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#tool-use" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -111,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Agent
+              tools
             
           </span>
         </div>
@@ -460,17 +465,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../agent/" class="md-nav__link">
         
   
   
@@ -486,7 +484,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -524,10 +521,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../tools/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tools
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -543,6 +565,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tool-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Use
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool Use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool 定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1014,6 +1082,42 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tool-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Use
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool Use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool 定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1077,9 +1181,12 @@
 
 
 
-  <h1>Agent</h1>
+  <h1>tools</h1>
 
-
+<h2 id="tool-use">Tool Use<a class="headerlink" href="#tool-use" title="Permanent link">&para;</a></h2>
+<h3 id="tool">Tool 定义<a class="headerlink" href="#tool" title="Permanent link">&para;</a></h3>
+<p>大模型的 Tool（也称Function Calling）是指允许大模型调用外部工具或函数的机制。通过定义工具，模型可以决定何时调用、传递什么参数，并将结果整合到回复中。</p>
+<p><img alt="tool-use" src="/docs/ai-note/tool-use.png" /></p>
 
 
 
