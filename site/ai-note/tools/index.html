@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tool" class="md-skip">
+        <a href="#tool-use" class="md-skip">
           跳转至
         </a>
       
@@ -580,10 +580,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tool-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是 Tool Use
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tool" class="md-nav__link">
     <span class="md-ellipsis">
       
         Tool 定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool 的常见格式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool 的常见格式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openai-function-calling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenAI Function Calling 格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#langchain-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LangChain Tool 格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
       
     </span>
   </a>
@@ -1072,10 +1133,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tool-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是 Tool Use
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tool" class="md-nav__link">
     <span class="md-ellipsis">
       
         Tool 定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool 的常见格式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tool 的常见格式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openai-function-calling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenAI Function Calling 格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#langchain-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LangChain Tool 格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
       
     </span>
   </a>
@@ -1149,9 +1271,109 @@
 
   <h1>Tools</h1>
 
-<h2 id="tool">Tool 定义<a class="headerlink" href="#tool" title="Permanent link">&para;</a></h2>
+<h2 id="tool-use">什么是 Tool Use<a class="headerlink" href="#tool-use" title="Permanent link">&para;</a></h2>
 <p>大模型的 Tool（也称Function Calling）是指允许大模型调用外部工具或函数的机制。通过定义工具，模型可以决定何时调用、传递什么参数，并将结果整合到回复中。</p>
 <p><img alt="tool-use" src="../image/tool-use.png" /></p>
+<p>一次完整的tool-use流程包含以下步骤：</p>
+<ul>
+<li>step1：定义tools，并将其包含在prompt中，发送给LLM；</li>
+<li>step2：拿到LLM的tool-use请求，调用tool；</li>
+<li>step3：把tool调用结果作为新的context，再发送给LLM。</li>
+</ul>
+<h2 id="tool">Tool 定义<a class="headerlink" href="#tool" title="Permanent link">&para;</a></h2>
+<p>对于每一个tool，需提供三类信息：</p>
+<ul>
+<li>name。工具的名称；</li>
+<li>description。工具的功能、限制、使用指南等；</li>
+<li>input schema。工具调用的入参规范，包括每个字段的名称、类型（int、bool、string、list等）、取值范围、描述等；通常采取json schema格式。</li>
+</ul>
+<p>实际上，定义tools也是一次提示词工程，好的tool定义能帮助模型更好理解tools、从而带来更好的tool-use效果。</p>
+<p>Tool-Use为LLM提供了More Context + Take Actions的组合拳，帮助LLM解决knowledge gap问题、自身能力限制问题以及无法执行外部动作的问题，大大拓宽了LLM的应用场景；其实现方式也比较简单，但如果遇到效果不及预期的情况，就得注意tools定义、tools数量及相关性、基座模型能力等因素。</p>
+<h2 id="tool_1">Tool 的常见格式<a class="headerlink" href="#tool_1" title="Permanent link">&para;</a></h2>
+<h3 id="openai-function-calling">OpenAI Function Calling 格式<a class="headerlink" href="#openai-function-calling" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;function&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;function&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;get_current_weather&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;获取指定城市的当前天气&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;object&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;城市名称，如：&#39;北京&#39;&quot;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">          </span><span class="nt">&quot;enum&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;celsius&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;fahrenheit&quot;</span><span class="p">],</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;温度单位&quot;</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;location&quot;</span><span class="p">]</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="langchain-tool">LangChain Tool 格式<a class="headerlink" href="#langchain-tool" title="Permanent link">&para;</a></h3>
+<p>LangChain 自定义 tools有三种方式：</p>
+<p>1.@tool装饰器</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">search_wrapper</span> <span class="o">=</span> <span class="n">GoogleSearchClient</span><span class="p">()</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nd">@tool</span><span class="p">(</span><span class="s2">&quot;my_search_tool&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;通过搜索引擎查询&quot;&quot;&quot;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">search_wrapper</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="k">return</span> <span class="p">[</span><span class="n">res</span><span class="p">[</span><span class="s2">&quot;snippet&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">result</span><span class="p">]</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">description</span><span class="p">)</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">args</span><span class="p">)</span>
+</code></pre></div>
+<p>用装饰器来定义Tool是最简单的方式，会默认函数名作为Tool的名称。也可以多传一个string类型的参数来覆盖名称。此外，装饰器会使用函数的注释作为tool的描述，所以函数必须有注释。</p>
+<p>2.继承 BaseTool 类</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">SearchQuery</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">query</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;要查询的query&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">class</span><span class="w"> </span><span class="nc">CustomSearchTool</span><span class="p">(</span><span class="n">BaseTool</span><span class="p">):</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;my_search_tool_class&quot;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;通过搜索引擎来查询信息&quot;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">args_schema</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">]</span> <span class="o">=</span> <span class="n">SearchQuery</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">_run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;调用工具&quot;&quot;&quot;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">search_wrapper</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        <span class="k">return</span> <span class="p">[</span><span class="n">res</span><span class="p">[</span><span class="s2">&quot;snippet&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">result</span><span class="p">]</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="n">search</span> <span class="o">=</span> <span class="n">CustomSearchTool</span><span class="p">()</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">description</span><span class="p">)</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">args</span><span class="p">)</span>
+</code></pre></div>
+<p>3.用 StructuredTool 类提供的函数</p>
+<p>你也可以用dataclass：StructuredTool。这种方法有点类似于上面两种方法的混合，比继承类方便，比用decorator的功能多。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;通过搜索引擎查询&quot;&quot;&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">search_wrapper</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="p">[</span><span class="n">res</span><span class="p">[</span><span class="s2">&quot;snippet&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">result</span><span class="p">]</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">search_tool</span> <span class="o">=</span> <span class="n">StructuredTool</span><span class="o">.</span><span class="n">from_function</span><span class="p">(</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">func</span><span class="o">=</span><span class="n">search</span><span class="p">,</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;我的搜索方法&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;通过搜索引擎查询，方便又强大&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="c1"># coroutine= ... &lt;- 如果需要，可以指定一个异步方法</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">)</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">search_tool</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">search_tool</span><span class="o">.</span><span class="n">description</span><span class="p">)</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">search_tool</span><span class="o">.</span><span class="n">args</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<p><a href="https://blog.csdn.net/weixin_48707135/article/details/137740363">Langchain自定义Tool的三种方式</a>
+<a href="https://zhuanlan.zhihu.com/p/1921263213938443768">Agent基础篇：Tool-Use的定义、实现方式和效果优化</a>
+<a href="https://platform.openai.com/docs/guides/tools">OpenAI Platform Using Tools</a>
+<a href="https://blog.csdn.net/2401_82469710/article/details/139984847">详解LLM大模型是如何理解并使用 tools</a></p>
 
 
 
