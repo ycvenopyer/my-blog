@@ -2,7 +2,7 @@
 
 ## 👤 个人简介
 
-Dear Siri! 这里是ycvenopyer的博客！
+❤ Dear Siri! 这里是ycvenopyer的博客！
 
 ## 🎓 教育背景
 
