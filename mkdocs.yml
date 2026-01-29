@@ -10,6 +10,7 @@ nav:
     - Agent: ai-note/agent.md
     - Skills: ai-note/skills.md
     - Tools: ai-note/tools.md
+    - System Prompt: ai-note/system-prompt.md
   - 数学: 
     - Home: math.md
     - 线性代数:
