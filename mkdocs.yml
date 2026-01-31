@@ -7,23 +7,63 @@ nav:
   - 首页: index.md
   - AI:
     - Home: ai.md
+    - Transformer: ai-note/transformer.md
+    - PEFT: ai-note/peft.md
+    - RAG: ai-note/rag.md
+    - CoT: ai-note/cot.md
     - Agent: ai-note/agent.md
+    - MCP: ai-note/mcp.md
+    - A2A: ai-note/a2a.md
     - Skills: ai-note/skills.md
     - Tools: ai-note/tools.md
+    - Prompt Engineering: ai-note/prompt-engineering.md
     - System Prompt: ai-note/system-prompt.md
-    - AI产品需求分析: ai-note/ai-product-analysis.md
+    - Context Engineering: ai-note/context-engineering.md
+    - Memory: ai-note/memory.md
+    - AI Product Demand: ai-note/ai-product-demand-analysis.md
+    - Manus: ai-note/manus.md
+    - Dify: ai-note/dify.md
+    - Coze: ai-note/coze.md
     - Clawdbot: ai-note/clawdbot.md
+    - Recommender System: ai-note/recommender-system.md
   - 数学: 
     - Home: math.md
     - 线性代数:
       - 概述: math/linear-algebra/index.md
+      - 行列式: math/linear-algebra/determinant.md
       - 矩阵: math/linear-algebra/matrix.md
+      - 向量组: math/linear-algebra/vector.md
+      - 线性方程组: math/linear-algebra/linear-equation.md
+      - 特征值: math/linear-algebra/eigenvalue.md
+      - 相似: math/linear-algebra/similar.md
+      - 二次型: math/linear-algebra/quadatic-form.md
+    - 概率论与数理统计:
+      - 概述: math/probability-and-statistics/index.md
+      - 随机事件及其概率: math/probability-and-statistics/random-event-and-probability.md
+      - 一维随机变量及其分布: math/probability-and-statistics/single-rv.md
+      - 多维随机变量及其分布: math/probability-and-statistics/multi-rv.md
+      - 数字特征: math/probability-and-statistics/number-character.md
+      - 大数定律与中心极限定理: math/probability-and-statistics/LLT-and-CLT.md
+      - 统计基本概念: math/probability-and-statistics/statistics.md
+      - 参数估计: math/probability-and-statistics/parameter-estimation.md
+      - 假设检验: math/probability-and-statistics/hypothesis-testing.md
     - 离散数学:
       - 概述: math/discrete-math/index.md
-      - 集合论: math/discrete-math/set-theory.md
+      - 命题逻辑: math/discrete-math/propositional-logic.md
+      - 谓词逻辑: math/discrete-math/predicate-logic.md
+      - 集合: math/discrete-math/set.md
+      - 关系: math/discrete-math/relation.md
+      - 数论初步: math/discrete-math/number-theory.md
+      - 归纳与递归: math/discrete-math/induction-and-recursion.md
+      - 代数系统: math/discrete-math/algebra-system.md
+      - 群论: math/discrete-math/group-theory.md
+      - 图论: math/discrete-math/graph-theory.md
+      - 树: math/discrete-math/tree.md
   - 项目作品: 
     - Home: projects.md
     - 基于RAG的金融问答平台: projects/economic-rag.md
+  - 随笔:
+    - Home: essay.md
   - 关于我: about.md
 
 theme:

@@ -13,5 +13,5 @@ System Prompt给AI搭了一个框架，让它有了一个稳定的“人格”�
 
 ## Reference
 
-[万字说透提示词工程：User Prompt 与 Sys Prompt](https://www.woshipm.com/ai/6290455.html)
+[万字说透提示词工程：User Prompt 与 System Prompt](https://www.woshipm.com/ai/6290455.html)
 
