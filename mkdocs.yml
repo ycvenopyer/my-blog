@@ -11,6 +11,8 @@ nav:
     - Skills: ai-note/skills.md
     - Tools: ai-note/tools.md
     - System Prompt: ai-note/system-prompt.md
+    - AI产品需求分析: ai-note/ai-product-analysis.md
+    - Clawdbot: ai-note/clawdbot.md
   - 数学: 
     - Home: math.md
     - 线性代数:
@@ -21,6 +23,7 @@ nav:
       - 集合论: math/discrete-math/set-theory.md
   - 项目作品: 
     - Home: projects.md
+    - 基于RAG的金融问答平台: projects/economic-rag.md
   - 关于我: about.md
 
 theme:
