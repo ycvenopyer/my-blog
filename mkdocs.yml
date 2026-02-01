@@ -73,16 +73,16 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: green
+      accent: green
       toggle:
         icon: material/brightness-7
         name: 切换到暗色模式
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: blue
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: 切换到亮色模式
@@ -122,6 +122,7 @@ markdown_extensions:
   - md_in_html
   - footnotes
   - tables
+  - pymdownx.smartsymbols
   - toc:
       permalink: true
       toc_depth: 3
