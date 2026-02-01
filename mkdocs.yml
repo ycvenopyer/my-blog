@@ -118,6 +118,8 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   - md_in_html
   - footnotes
@@ -137,3 +139,6 @@ extra_css:
 
 extra_javascript:
   - javascripts/extra.js
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
