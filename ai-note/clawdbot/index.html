@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#clawdbot" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -964,6 +969,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clawdbot
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -980,6 +1003,78 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clawdbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是 Clawdbot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manuscowork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        印象派：更像Manus还是Cowork？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        独特之处
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        创意使用场景
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        是如何运转的
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2319,6 +2414,69 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clawdbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是 Clawdbot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manuscowork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        印象派：更像Manus还是Cowork？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        独特之处
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        创意使用场景
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        是如何运转的
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2384,7 +2542,88 @@
 
   <h1>Clawdbot</h1>
 
-
+<h2 id="clawdbot">什么是 Clawdbot<a class="headerlink" href="#clawdbot" title="Permanent link">&para;</a></h2>
+<p><strong>一个开源免费、本地运行的个人AI智能体（Agent）</strong>。</p>
+<h2 id="manuscowork">印象派：更像Manus还是Cowork？<a class="headerlink" href="#manuscowork" title="Permanent link">&para;</a></h2>
+<p><img alt="Manus or Cowork?" src="../image/clawdbot1.png" /></p>
+<ul>
+<li><strong>Manus</strong>: 云端远程型</li>
+</ul>
+<p>工作方式是：给Agent一台“远程电脑”，它在云端点网页、调工具、跑脚本，最后产出文本或文件。</p>
+<ul>
+<li><strong>Cowork</strong>: 本地协作型</li>
+</ul>
+<p>工作方式是：把自己的电脑“共享”给它，设定一个“工作区”。它在一定的权限控制与人类监督下完成工作任务。</p>
+<p><mark class="critic">从形态上看，Clawdbot的确更接近Cowork，而非Manus——属于“本地优先+外部/本地模型+本地资源访问”的路线。</mark></p>
+<h2 id="_1">独特之处<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>入口形态</strong>：Clawdbot的入口不限定在某个官方工作台，而是在你日常使用的工作聊天入口，比如WhatsApp/Telegram/Discord/飞书/钉钉等。</p>
+</li>
+<li>
+<p><strong>主动性</strong>：Clawdbot可以根据你的预设条件（比如定时）或者数据变化主动联系你。例如，每天早晨发送简报、待办事项提醒，或者在监测到某项数据异常时第一事件启动Agent并发消息告知。这让交互体验从“工具”变成了真正的“协作”。</p>
+</li>
+<li>
+<p><strong>长期记忆能力</strong>：Clawdbot内置了完善的长期记忆机制。会自动总结每次对话的关键信息并存入长期记忆库。你甚至可以调整其检索机制——比如向量与关键词检索的权重比。</p>
+</li>
+<li>
+<p><strong>高可扩展性</strong>：Clawdbot采用<mark class="critic">核心精简、边缘丰富</mark>的插件化架构。消息渠道（Channels）、工具（Tools）、技能（Skills）、自动化钩子（Hooks）、模型（Providers）、命令行（CLI）均可通过插件等方式扩展，并遵循零侵入、热更新、安装简单。你甚至可以让它自行编写插件，自行安装，扩展自己的能力！</p>
+</li>
+</ul>
+<p>除了软件模块扩展，Clawdbot一个强大的功能在于：可以把多个电脑或手机设备变成Clawdbot的能力节点（Nodes），用来扩展摄像头、屏幕录制、地理位置、交互式UI等额外能力。</p>
+<ul>
+<li><strong>高权限边界</strong>：这是Clawdbot强大也最备受争议的地方。相对Cowork的以“指定工作区/文件夹授权”控制访问边界，Clawdbot则被赋予了更高的操作电脑的权限。它能执行Shell命令、读写文件、运行脚本、控制浏览器，调用第三方API、甚至控制你家里的设备。</li>
+</ul>
+<p><img alt="Clawdbot vs Cowork vs Manus" src="../image/clawdbot2.png" /></p>
+<h2 id="_2">创意使用场景<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>收件箱清理（Gmail插件）</p>
+</li>
+<li>
+<p>会议日常安排（Calendar API）</p>
+</li>
+<li>
+<p>日常提醒（定时任务+聊天渠道）</p>
+</li>
+<li>
+<p>设备控制（本地状态+IoT API）</p>
+</li>
+<li>
+<p>更高阶的自主应变</p>
+</li>
+</ul>
+<h2 id="_3">是如何运转的<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Clawdbot本身的架构是比较复杂的，涉及较多的层次与模块，加上偏”分布式“的设计以及扩展性、安全性的众多考虑，已经远远超出一个普通 Agent 的范畴。</p>
+<p><img alt="Clawdbot架构" src="../image/clawdbot3.png" /></p>
+<ul>
+<li><strong>Gateway/Routers(中央网关)</strong>：“大脑中枢+交通枢纽”，也是整个系统的核心。</li>
+</ul>
+<p>它负责管理会话、调度Agent任务、维持与各个聊天渠道的消息连接、管理配对设备与权限、协调其他Nodes能力等。几乎所有的用户消息与控制命令都需要从这里经过。</p>
+<ul>
+<li><strong>Agent(智能体)</strong>：“任务执行者”，也就是实际干活的主体。</li>
+</ul>
+<p>Agent在接收到消息与任务后，动用自己的脑袋（LLM/大模型）、手脚（Tools）、专业知识（Skills），尽可能的完成任务，其中可能会访问Web、运行命令、读写文件、编写代码，调用其他Nodes能力（比如摄像头）。</p>
+<p>Clawdbot支持多Agent模式，可以互不干扰，或者相互协作。</p>
+<p>每个Agent有自己的工作区，也就是自己的“办公桌”，放置专属配置与产物。</p>
+<ul>
+<li><strong>Nodes（远程能节点）</strong>：“分布式触手”，与运行Gateway的主机协作的设备。</li>
+</ul>
+<p>Nodes 就是在主机之外的其他“能力”节点。你的旧手机、闲置电脑都可以作为 Node 加入网络，以提供更多的能力，比如摄像头、屏幕录制、系统控制、屏幕共享、显示可交互式的“富”界面等。Nodes 需要在远程设备上运行相应的Node 客户端 App。</p>
+<p>借助 Nodes，你可以要求Agent：</p>
+<ol>
+<li>
+<p>调用某个 iPhone 的摄像头拍照，然后做后续处理</p>
+</li>
+<li>
+<p>搜集服务器的数据，生成仪表盘界面（A2UI描述），然后推送到你的 iPad 上做展示（WhatsApp 等消息客户端无法支持复杂UI）</p>
+</li>
+<li>
+<p><strong>Clients（客户端）</strong>：“管理与控制者”，用来给 Gateway 下达“指令”。</p>
+</li>
+</ol>
+<p>Clawdbot 提供了多种形式的管理 UI，其功能类似，但使用形式不同。如果你喜爱命令行，使用clawdbot CLI 最方便；如果想可视化，可以用 Web UI；此外Mac用户还有一个常驻菜单栏的“管家”。</p>
+<p>除了以上的核心组件与机制之外，Clawdbot的Plugins机制、基于事件的Hooks、多智能体协作、长期记忆机制、分层安全机制等设计，我们将在后续做更深入的探讨与演示。</p>
 
 
 
