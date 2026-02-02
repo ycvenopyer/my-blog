@@ -111,9 +111,17 @@ plugins:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.smartsymbols
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
   - admonition
@@ -124,7 +132,6 @@ markdown_extensions:
   - md_in_html
   - footnotes
   - tables
-  - pymdownx.smartsymbols
   - toc:
       permalink: true
       toc_depth: 3
