@@ -792,7 +792,29 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        
+        定义区别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景区别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agentlanggraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂Agent场景选择LangGraph
       
     </span>
   </a>
@@ -2571,7 +2593,29 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        
+        定义区别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景区别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agentlanggraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂Agent场景选择LangGraph
       
     </span>
   </a>
@@ -2645,7 +2689,39 @@
 
   <h1>LangChain and LangGraph</h1>
 
-<h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">定义区别<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>作为 LangChain 生态中两款核心开发工具，LangChain 与 LangGraph 均由同一团队打造，旨在解决大语言模型（LLM）集成与协同问题，但二者在工作流设计理念上存在本质区别，常被开发者混淆。从命名即可直观感知其核心差异：</p>
+<ul>
+<li>
+<p><mark class="critic">LangChain（链式架构）</mark>：采用静态线性工作流，任务执行严格遵循预先定义的步骤顺序，如同流水线作业，每个环节仅接收上一环节的输出，无法根据中间结果调整路径。</p>
+</li>
+<li>
+<p><mark class="critic">LangGraph（图式架构）</mark>：基于动态分支工作流，以有向图为核心结构，允许在每个节点根据任务状态（如推理结果、工具反馈）进行决策，灵活选择后续分支，支持循环、并行、回溯等复杂逻辑。</p>
+</li>
+</ul>
+<p><img alt="langchain-and-langgraph" src="../image/langchain-and-langgraph.png" /></p>
+<h2 id="_2">场景区别<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>两者的定位差异决定了适用场景的分野，且并非互斥关系，而是可形成“基础组件+高级编排”的协同模式：</p>
+<ul>
+<li>
+<p>LangChain：聚焦于提供标准化组件（如 LLM 调用接口、工具集成模块）与 LCEL（LangChain Expression Language）链式编程语法，适合简单一次性任务（如单轮问答、文档摘要、固定流程的数据处理），能快速搭建轻量化 LLM 应用。</p>
+</li>
+<li>
+<p>LangGraph：作为构建有状态智能体（Agent）系统的高级框架，擅长处理多步骤动态任务（如复杂问题拆解、多智能体协作、需要人工介入的审批流程），其核心优势在于对“状态连续性”的支持。</p>
+</li>
+</ul>
+<h2 id="agentlanggraph">复杂Agent场景选择LangGraph<a class="headerlink" href="#agentlanggraph" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>对“状态”的天然支持：Agent的核心在于在“思考-行动-观察”的循环中保持上下文和记忆。LangGraph的全局State机制（例如存储对话历史、中间步骤、工具结果）为此提供了内置、统一的管理方案，避免了传统开发中状态分散的难题。</p>
+</li>
+<li>
+<p>轻松处理复杂控制流：真实的Agent任务充满不确定性，可能需要根据结果循环重试、条件分支或并行执行。LangGraph的条件边（Conditional Edge）和循环图结构让这些复杂逻辑变得直观和易于实现。</p>
+</li>
+<li>
+<p>内置生产级特性：LangGraph设计之初就考虑了生产部署，原生支持状态持久化（检查点）、人工干预节点和可视化调试等，这些都是构建可靠Agent系统不可或缺的功能。</p>
+</li>
+</ul>
 
 
 
