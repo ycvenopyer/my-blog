@@ -14,6 +14,7 @@ nav:
     - PEFT: ai-note/peft.md
     - RAG: ai-note/rag.md
     - CoT: ai-note/cot.md
+    - LangChain and LangGraph: ai-note/langchain-and-langgraph.md
     - Agent: ai-note/agent.md
     - MCP: ai-note/mcp.md
     - A2A: ai-note/a2a.md
