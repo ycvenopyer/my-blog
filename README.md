@@ -1,6 +1,6 @@
 # MkDocs 个人博客
 
-一个基于 MkDocs 的轻量级个人博客，用于存储学习资料和个人信息。
+一个基于 MkDocs 的轻量级个人博客，用于存储学习资料和个人信息。基本框架由Claude Code生成。欢迎使用此框架生成您自己的个人博客网站！
 
 ## 项目结构
 
@@ -12,11 +12,11 @@ my-blog/
 └── docs/               # 源文件目录
     ├── index.md        # 首页
     ├── about.md        # 关于我
-    ├── contact.md      # 联系方式
-    ├── notes/          # 学习笔记
-    │   ├── programming.md
-    │   ├── reading.md
-    │   └── projects.md
+    ├── ai.md           # AI相关
+    ├── ai-note/        # AI学习笔记
+    │   ├── a2a.md
+    │   ├── agent.md
+    │   └── clawdbot.md
     ├── stylesheets/    # 自定义样式
     │   └── extra.css
     └── javascripts/    # 自定义脚本
@@ -59,26 +59,13 @@ mkdocs gh-deploy
 
 编辑 `docs/about.md` 文件，填写你的个人信息。
 
-### 修改联系方式
-
-编辑 `docs/contact.md` 文件，填写你的联系方式。
-
 ### 添加新文章
 
-在 `docs/notes/` 目录下创建新的 `.md` 文件，然后在 `mkdocs.yml` 的 `nav` 部分添加链接。
+在 `docs/../` 目录下创建新的 `.md` 文件，然后在 `mkdocs.yml` 的 `nav` 部分添加链接。
 
 ### 更新配置
 
 编辑 `mkdocs.yml` 文件自定义博客名称、主题、导航等。
-
-## 主题定制
-
-本博客使用 ReadTheDocs 主题，自定义了：
-
-- 颜色主题：靛蓝色
-- 响应式设计
-- 回到顶部按钮
-- 外部链接新窗口打开
 
 ## 常用命令
 
@@ -92,5 +79,5 @@ mkdocs gh-deploy
 ## 资源链接
 
 - [MkDocs 官方文档](https://www.mkdocs.org/)
-- [ReadTheDocs 主题](https://github.com/readthedocs/readthedocs.org)
 - [Markdown 语法指南](https://www.markdownguide.org/)
+- [MkDocs-Material](https://squidfunk.github.io/mkdocs-material/)
