@@ -5,6 +5,9 @@ site_url: https://ycvenopyer.github.io/my-blog
 
 nav:
   - 首页: index.md
+  - 技术笔记: 
+    - Home: tech.md
+    - SSE: tech-note/sse.md
   - AI:
     - Home: ai.md
     - Transformer: ai-note/transformer.md
