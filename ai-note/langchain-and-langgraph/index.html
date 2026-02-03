@@ -12,31 +12,31 @@
         <meta name="author" content="ycvenopyer">
       
       
-        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/math/discrete-math/graph-theory/">
+        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/langchain-and-langgraph/">
       
       
-        <link rel="prev" href="../group-theory/">
+        <link rel="prev" href="../cot/">
       
       
-        <link rel="next" href="../tree/">
+        <link rel="next" href="../agent/">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>图论 - ycvenopyer</title>
+        <title>LangChain and LangGraph - ycvenopyer</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -91,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="ycvenopyer" class="md-header__button md-logo" aria-label="ycvenopyer" data-md-component="logo">
+    <a href="../.." title="ycvenopyer" class="md-header__button md-logo" aria-label="ycvenopyer" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg>
@@ -111,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              图论
+              LangChain and LangGraph
             
           </span>
         </div>
@@ -217,7 +222,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -238,31 +243,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../tech/" class="md-tabs__link">
+        <a href="../../tech/" class="md-tabs__link">
           
   
   
   技术笔记
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../ai/" class="md-tabs__link">
-          
-  
-  
-  AI
 
         </a>
       </li>
@@ -280,7 +265,27 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+        <a href="../../ai/" class="md-tabs__link">
+          
+  
+  
+  AI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../math/" class="md-tabs__link">
           
   
   
@@ -300,7 +305,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../projects/" class="md-tabs__link">
+        <a href="../../projects/" class="md-tabs__link">
           
   
   
@@ -320,7 +325,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../essay/" class="md-tabs__link">
+        <a href="../../essay/" class="md-tabs__link">
           
   
   
@@ -338,7 +343,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../about/" class="md-tabs__link">
+      <a href="../../about/" class="md-tabs__link">
         
   
   
@@ -373,7 +378,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="ycvenopyer" class="md-nav__button md-logo" aria-label="ycvenopyer" data-md-component="logo">
+    <a href="../.." title="ycvenopyer" class="md-nav__button md-logo" aria-label="ycvenopyer" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg>
@@ -391,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -470,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech/" class="md-nav__link">
+      <a href="../../tech/" class="md-nav__link">
         
   
   
@@ -498,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tech-note/sse/" class="md-nav__link">
+      <a href="../../tech-note/sse/" class="md-nav__link">
         
   
   
@@ -506,681 +511,6 @@
     
   
     SSE
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AI
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    AI
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/transformer/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Transformer
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/peft/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PEFT
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/rag/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    RAG
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/cot/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CoT
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/langchain-and-langgraph/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LangChain and LangGraph
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/agent/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Agent
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/mcp/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    MCP
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/a2a/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    A2A
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/skills/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Skills
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/tools/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Tools
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/prompt-engineering/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Prompt Engineering
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/system-prompt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    System Prompt
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/context-engineering/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Context Engineering
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/memory/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Memory
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/ai-product-demand-analysis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AI Product Demand
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/manus/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Manus
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/dify/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Dify
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/coze/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Coze
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/clawdbot/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Clawdbot
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/openviking/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenViking
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/recommender-system/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Recommender System
   
 
     
@@ -1224,10 +554,761 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transformer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transformer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../peft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PEFT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CoT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangChain and LangGraph
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangChain and LangGraph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义区别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景区别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agentlanggraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂Agent场景选择LangGraph
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a2a/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2A
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prompt-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompt Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../context-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Context Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-product-demand-analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Product Demand
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dify/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dify
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coze/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coze
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clawdbot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clawdbot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openviking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenViking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recommender-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recommender System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -1245,7 +1326,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1263,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../math/" class="md-nav__link">
         
   
   
@@ -1343,7 +1424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linear-algebra/" class="md-nav__link">
+      <a href="../../math/linear-algebra/" class="md-nav__link">
         
   
   
@@ -1371,7 +1452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linear-algebra/determinant/" class="md-nav__link">
+      <a href="../../math/linear-algebra/determinant/" class="md-nav__link">
         
   
   
@@ -1399,7 +1480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linear-algebra/matrix/" class="md-nav__link">
+      <a href="../../math/linear-algebra/matrix/" class="md-nav__link">
         
   
   
@@ -1427,7 +1508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linear-algebra/vector/" class="md-nav__link">
+      <a href="../../math/linear-algebra/vector/" class="md-nav__link">
         
   
   
@@ -1455,7 +1536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linear-algebra/linear-equation/" class="md-nav__link">
+      <a href="../../math/linear-algebra/linear-equation/" class="md-nav__link">
         
   
   
@@ -1483,7 +1564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linear-algebra/eigenvalue/" class="md-nav__link">
+      <a href="../../math/linear-algebra/eigenvalue/" class="md-nav__link">
         
   
   
@@ -1511,7 +1592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linear-algebra/similar/" class="md-nav__link">
+      <a href="../../math/linear-algebra/similar/" class="md-nav__link">
         
   
   
@@ -1539,7 +1620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linear-algebra/quadatic-form/" class="md-nav__link">
+      <a href="../../math/linear-algebra/quadatic-form/" class="md-nav__link">
         
   
   
@@ -1627,7 +1708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../probability-and-statistics/" class="md-nav__link">
+      <a href="../../math/probability-and-statistics/" class="md-nav__link">
         
   
   
@@ -1655,7 +1736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../probability-and-statistics/random-event-and-probability/" class="md-nav__link">
+      <a href="../../math/probability-and-statistics/random-event-and-probability/" class="md-nav__link">
         
   
   
@@ -1683,7 +1764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../probability-and-statistics/single-rv/" class="md-nav__link">
+      <a href="../../math/probability-and-statistics/single-rv/" class="md-nav__link">
         
   
   
@@ -1711,7 +1792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../probability-and-statistics/multi-rv/" class="md-nav__link">
+      <a href="../../math/probability-and-statistics/multi-rv/" class="md-nav__link">
         
   
   
@@ -1739,7 +1820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../probability-and-statistics/number-character/" class="md-nav__link">
+      <a href="../../math/probability-and-statistics/number-character/" class="md-nav__link">
         
   
   
@@ -1767,7 +1848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../probability-and-statistics/LLT-and-CLT/" class="md-nav__link">
+      <a href="../../math/probability-and-statistics/LLT-and-CLT/" class="md-nav__link">
         
   
   
@@ -1795,7 +1876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../probability-and-statistics/statistics/" class="md-nav__link">
+      <a href="../../math/probability-and-statistics/statistics/" class="md-nav__link">
         
   
   
@@ -1823,7 +1904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../probability-and-statistics/parameter-estimation/" class="md-nav__link">
+      <a href="../../math/probability-and-statistics/parameter-estimation/" class="md-nav__link">
         
   
   
@@ -1851,7 +1932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../probability-and-statistics/hypothesis-testing/" class="md-nav__link">
+      <a href="../../math/probability-and-statistics/hypothesis-testing/" class="md-nav__link">
         
   
   
@@ -1884,8 +1965,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1896,11 +1975,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
         
           
           <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -1921,7 +2002,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1939,7 +2020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../math/discrete-math/" class="md-nav__link">
         
   
   
@@ -1967,7 +2048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../propositional-logic/" class="md-nav__link">
+      <a href="../../math/discrete-math/propositional-logic/" class="md-nav__link">
         
   
   
@@ -1995,7 +2076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../predicate-logic/" class="md-nav__link">
+      <a href="../../math/discrete-math/predicate-logic/" class="md-nav__link">
         
   
   
@@ -2023,7 +2104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../set/" class="md-nav__link">
+      <a href="../../math/discrete-math/set/" class="md-nav__link">
         
   
   
@@ -2051,7 +2132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../relation/" class="md-nav__link">
+      <a href="../../math/discrete-math/relation/" class="md-nav__link">
         
   
   
@@ -2079,7 +2160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../number-theory/" class="md-nav__link">
+      <a href="../../math/discrete-math/number-theory/" class="md-nav__link">
         
   
   
@@ -2107,7 +2188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../induction-and-recursion/" class="md-nav__link">
+      <a href="../../math/discrete-math/induction-and-recursion/" class="md-nav__link">
         
   
   
@@ -2135,7 +2216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../algebra-system/" class="md-nav__link">
+      <a href="../../math/discrete-math/algebra-system/" class="md-nav__link">
         
   
   
@@ -2163,7 +2244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../group-theory/" class="md-nav__link">
+      <a href="../../math/discrete-math/group-theory/" class="md-nav__link">
         
   
   
@@ -2188,17 +2269,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../math/discrete-math/graph-theory/" class="md-nav__link">
         
   
   
@@ -2214,7 +2288,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2227,7 +2300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tree/" class="md-nav__link">
+      <a href="../../math/discrete-math/tree/" class="md-nav__link">
         
   
   
@@ -2322,7 +2395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../projects/" class="md-nav__link">
+      <a href="../../projects/" class="md-nav__link">
         
   
   
@@ -2350,7 +2423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../projects/economic-rag/" class="md-nav__link">
+      <a href="../../projects/economic-rag/" class="md-nav__link">
         
   
   
@@ -2437,7 +2510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../essay/" class="md-nav__link">
+      <a href="../../essay/" class="md-nav__link">
         
   
   
@@ -2472,7 +2545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../about/" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
   
   
@@ -2510,6 +2583,47 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义区别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景区别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agentlanggraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复杂Agent场景选择LangGraph
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2533,7 +2647,7 @@
   
   
     <li class="md-path__item">
-      <a href="../../.." class="md-path__link">
+      <a href="../.." class="md-path__link">
         
   <span class="md-ellipsis">
     首页
@@ -2551,28 +2665,10 @@
     
     
       <li class="md-path__item">
-        <a href="../../" class="md-path__link">
+        <a href="../../ai/" class="md-path__link">
           
   <span class="md-ellipsis">
-    数学
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    离散数学
+    AI
   </span>
 
         </a>
@@ -2591,9 +2687,41 @@
 
 
 
-  <h1>图论</h1>
+  <h1>LangChain and LangGraph</h1>
 
-
+<h2 id="_1">定义区别<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>作为 LangChain 生态中两款核心开发工具，LangChain 与 LangGraph 均由同一团队打造，旨在解决大语言模型（LLM）集成与协同问题，但二者在工作流设计理念上存在本质区别，常被开发者混淆。从命名即可直观感知其核心差异：</p>
+<ul>
+<li>
+<p><mark class="critic">LangChain（链式架构）</mark>：采用静态线性工作流，任务执行严格遵循预先定义的步骤顺序，如同流水线作业，每个环节仅接收上一环节的输出，无法根据中间结果调整路径。</p>
+</li>
+<li>
+<p><mark class="critic">LangGraph（图式架构）</mark>：基于动态分支工作流，以有向图为核心结构，允许在每个节点根据任务状态（如推理结果、工具反馈）进行决策，灵活选择后续分支，支持循环、并行、回溯等复杂逻辑。</p>
+</li>
+</ul>
+<p><img alt="langchain-and-langgraph" src="../image/langchain-and-langgraph.png" /></p>
+<h2 id="_2">场景区别<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>两者的定位差异决定了适用场景的分野，且并非互斥关系，而是可形成“基础组件+高级编排”的协同模式：</p>
+<ul>
+<li>
+<p>LangChain：聚焦于提供标准化组件（如 LLM 调用接口、工具集成模块）与 LCEL（LangChain Expression Language）链式编程语法，适合简单一次性任务（如单轮问答、文档摘要、固定流程的数据处理），能快速搭建轻量化 LLM 应用。</p>
+</li>
+<li>
+<p>LangGraph：作为构建有状态智能体（Agent）系统的高级框架，擅长处理多步骤动态任务（如复杂问题拆解、多智能体协作、需要人工介入的审批流程），其核心优势在于对“状态连续性”的支持。</p>
+</li>
+</ul>
+<h2 id="agentlanggraph">复杂Agent场景选择LangGraph<a class="headerlink" href="#agentlanggraph" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>对“状态”的天然支持：Agent的核心在于在“思考-行动-观察”的循环中保持上下文和记忆。LangGraph的全局State机制（例如存储对话历史、中间步骤、工具结果）为此提供了内置、统一的管理方案，避免了传统开发中状态分散的难题。</p>
+</li>
+<li>
+<p>轻松处理复杂控制流：真实的Agent任务充满不确定性，可能需要根据结果循环重试、条件分支或并行执行。LangGraph的条件边（Conditional Edge）和循环图结构让这些复杂逻辑变得直观和易于实现。</p>
+</li>
+<li>
+<p>内置生产级特性：LangGraph设计之初就考虑了生产部署，原生支持状态持久化（检查点）、人工干预节点和可视化调试等，这些都是构建可靠Agent系统不可或缺的功能。</p>
+</li>
+</ul>
 
 
 
@@ -2667,14 +2795,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../../javascripts/extra.js"></script>
+        <script src="../../javascripts/extra.js"></script>
       
-        <script src="../../../javascripts/config.js"></script>
+        <script src="../../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
