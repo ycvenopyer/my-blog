@@ -6,33 +6,41 @@ site_url: https://ycvenopyer.github.io/my-blog
 nav:
   - 首页: index.md
   - 技术笔记: 
-    - Home: tech.md
+    - Overview: tech.md
     - SSE: tech-note/sse.md
   - AI:
-    - Home: ai.md
-    - Transformer: ai-note/transformer.md
-    - PEFT: ai-note/peft.md
-    - RAG: ai-note/rag.md
-    - CoT: ai-note/cot.md
-    - LangChain and LangGraph: ai-note/langchain-and-langgraph.md
-    - Agent: ai-note/agent.md
-    - MCP: ai-note/mcp.md
-    - A2A: ai-note/a2a.md
-    - Skills: ai-note/skills.md
-    - Tools: ai-note/tools.md
-    - Prompt Engineering: ai-note/prompt-engineering.md
-    - System Prompt: ai-note/system-prompt.md
-    - Context Engineering: ai-note/context-engineering.md
-    - Memory: ai-note/memory.md
-    - AI Product Demand: ai-note/ai-product-demand-analysis.md
-    - Manus: ai-note/manus.md
-    - Dify: ai-note/dify.md
-    - Coze: ai-note/coze.md
-    - Clawdbot: ai-note/clawdbot.md
-    - OpenViking: ai-note/openviking.md
-    - Recommender System: ai-note/recommender-system.md
+    - Overview: ai.md
+    - Concept:
+      - Overview: ai-note/concept/index.md
+      - Transformer: ai-note/concept/transformer.md
+      - PEFT: ai-note/concept/peft.md
+      - RAG: ai-note/concept/rag.md
+      - CoT: ai-note/concept/cot.md
+      - LangChain and LangGraph: ai-note/concept/langchain-and-langgraph.md
+      - Prompt Engineering: ai-note/concept/prompt-engineering.md
+      - System Prompt: ai-note/concept/system-prompt.md
+      - Context Engineering: ai-note/concept/context-engineering.md
+      - Memory: ai-note/concept/memory.md
+    - Agent:
+      - Overview: ai-note/agent/index.md
+      - Agent: ai-note/agent/agent.md
+      - A2A: ai-note/agent/a2a.md
+      - MCP: ai-note/agent/mcp.md
+      - Skills: ai-note/agent/skills.md
+      - Tools: ai-note/agent/tools.md
+    - Product:
+      - Overview: ai-note/product/index.md
+      - AI Product Demand: ai-note/product/ai-product-demand-analysis.md
+      - SDD: ai-note/product/sdd.md
+      - Superpowers: ai-note/product/superpowers.md
+      - Manus: ai-note/product/manus.md
+      - Dify: ai-note/product/dify.md
+      - Coze: ai-note/product/coze.md
+      - Clawdbot: ai-note/product/clawdbot.md
+      - OpenViking: ai-note/product/openviking.md
+      - Recommender System: ai-note/product/recommender-system.md
   - 数学: 
-    - Home: math.md
+    - Overview: math.md
     - 线性代数:
       - 概述: math/linear-algebra/index.md
       - 行列式: math/linear-algebra/determinant.md
@@ -65,10 +73,10 @@ nav:
       - 图论: math/discrete-math/graph-theory.md
       - 树: math/discrete-math/tree.md
   - 项目作品: 
-    - Home: projects.md
+    - Overview: projects.md
     - 基于RAG的金融问答平台: projects/economic-rag.md
   - 随笔:
-    - Home: essay.md
+    - Overview: essay.md
   - 关于我: about.md
 
 theme:
