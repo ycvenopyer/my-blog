@@ -434,9 +434,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -632,9 +630,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -1365,9 +1361,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
         
           
           <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
@@ -1712,9 +1706,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -1792,9 +1784,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
         
           
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
@@ -2076,9 +2066,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
         
           
           <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
@@ -2388,9 +2376,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
         
           
           <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
@@ -2763,9 +2749,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -2878,9 +2862,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -3212,7 +3194,7 @@
 <p><code>能力包</code>：每个Skill文件夹里包含：</p>
 <ul>
 <li>SKILL.md（核心指令文件，必需）</li>
-<li>scripts/（**可执行**脚本，可选）</li>
+<li>scripts/（可执行脚本，可选）</li>
 <li>references/（参考文档，可选）</li>
 <li>assets/（模块和资源，可选）</li>
 </ul>
@@ -3220,15 +3202,15 @@
 <h3 id="12">1.2 核心价值：把重复的指令打包，按需加载<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
 <p><strong>渐进式披露</strong>：分阶段、按需加载。</p>
 <p>一个Skill包含很多内容：核心指令、参考文档、执行脚本、模块资源。但Claude不会一次性把所有内容都加载进上下文。采用三层加载机制：</p>
-<p>**第一层：**元数据——总是加载</p>
+<p>第一层：元数据——总是加载</p>
 <ul>
 <li>SKILL.md开头的YAML部分，就两个字段：name和description</li>
 </ul>
-<p>**第二层：**指令——触发时加载</p>
+<p>第二层：指令——触发时加载</p>
 <ul>
 <li>SKILL.md的主体部分，详细的操作指南</li>
 </ul>
-<p>**第三层：**资源——引用时加载</p>
+<p>第三层：*资源——引用时加载</p>
 <ul>
 <li>scripts/目录里的脚本、references/目录里的参考文档、assets/目录里的模板</li>
 </ul>
@@ -3242,12 +3224,12 @@
 </li>
 </ul>
 <h2 id="2skills-vs-mcp">2.Skills vs MCP<a class="headerlink" href="#2skills-vs-mcp" title="Permanent link">&para;</a></h2>
-<p>MCP(Model Context Protocol)：一个**连接**协议，让Claude能够访问**外部系统**：数据库、API、文件系统、各种SaaS服务。当需要连接外部系统时使用。它的核心目标是为**AI模型**与**外部数据源及工具**之间建立一个**标准化、安全、高效的通信桥梁**。类比于**USB**。</p>
-<p>Skills是**使用手册**。当有重复性的工作流程时使用。</p>
+<p>MCP(Model Context Protocol)：一个连接协议，让Claude能够访问外部系统：数据库、API、文件系统、各种SaaS服务。当需要连接外部系统时使用。它的核心目标是为AI模型与外部数据源及工具之间建立一个标准化、安全、高效的通信桥梁。类比于USB。</p>
+<p>Skills是使用手册。当有重复性的工作流程时使用。</p>
 <p>两者互补，在一个复杂的场景下需要同时使用。</p>
 <p><strong>MCP让Claude能碰到外部系统，Skills告诉Claude碰到之后怎么用</strong>。<strong>MCP 负责“连通外部世界”， Skills 负责“干具体的事”。</strong></p>
-<p>Skills比MCP更简洁**（只需markdown+YAML元数据和一些脚本）**，tokens消耗更少，跨平台兼容，且门槛低生态好。</p>
-<p>Skills的设计符合LLM的本质：**用文本描述能力，让模型理解并执行。**可以用Skills封装专业知识和工作流程。</p>
+<p>Skills比MCP更简洁（只需markdown+YAML元数据和一些脚本），tokens消耗更少，跨平台兼容，且门槛低生态好。</p>
+<p>Skills的设计符合LLM的本质：用文本描述能力，让模型理解并执行。可以用Skills封装专业知识和工作流程。</p>
 <p>MCP则像是传统软件工程的思路：定义接口、实现服务、处理通信。</p>
 <h2 id="3skill">3.Skill开发<a class="headerlink" href="#3skill" title="Permanent link">&para;</a></h2>
 <h3 id="31-skills">3.1 适合Skills的情况<a class="headerlink" href="#31-skills" title="Permanent link">&para;</a></h3>
@@ -3460,7 +3442,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
