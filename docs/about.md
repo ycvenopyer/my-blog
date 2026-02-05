@@ -11,8 +11,8 @@
 ## 💼 实习经历
 
 - **AI产品实习生** | 绚星智慧科技有限公司 | 2026.1 - 2026.3
-  - 负责Agent产品需求获取，prompt，tools，skills撰写
-  - 基于LangGraph, Agentickit参与Agent构建
+  - 负责Agent产品需求分析，system prompt，tools，skills撰写
+  - 基于A2A, LangGraph, Agentickit构建Agent
   - 搭建一个智能AI销售助手，赋能销售人员和销售管理者
 
 ## 🔧 技术栈
