@@ -5,7 +5,7 @@ site_url: https://ycvenopyer.github.io/my-blog
 
 nav:
   - 首页: index.md
-  - 技术笔记: 
+  - 技术: 
     - Overview: tech.md
     - SSE: tech-note/sse.md
   - AI:
@@ -75,9 +75,11 @@ nav:
       - 群论: math/discrete-math/group-theory.md
       - 图论: math/discrete-math/graph-theory.md
       - 树: math/discrete-math/tree.md
-  - 项目作品: 
+  - 项目: 
     - Overview: projects.md
+    - 基于BERT模型的预训练剪枝实现: projects/bert-pruning.md
     - 基于RAG的金融问答平台: projects/economic-rag.md
+    - LangGraph和Agentickit构建的Salescoach智能体: projects/salescoach-agent.md
   - 随笔:
     - Overview: essay.md
   - 关于我: about.md
