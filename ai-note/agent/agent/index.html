@@ -247,7 +247,7 @@
           
   
   
-  技术笔记
+  技术
 
         </a>
       </li>
@@ -309,7 +309,7 @@
           
   
   
-  项目作品
+  项目
 
         </a>
       </li>
@@ -444,7 +444,7 @@
   <span class="md-ellipsis">
     
   
-    技术笔记
+    技术
   
 
     
@@ -460,7 +460,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    技术笔记
+    技术
   
 
           </label>
@@ -2787,7 +2787,7 @@
   <span class="md-ellipsis">
     
   
-    项目作品
+    项目
   
 
     
@@ -2803,7 +2803,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    项目作品
+    项目
   
 
           </label>
@@ -2844,6 +2844,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../projects/bert-pruning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于BERT模型的预训练剪枝实现
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../projects/economic-rag/" class="md-nav__link">
         
   
@@ -2852,6 +2880,34 @@
     
   
     基于RAG的金融问答平台
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/salescoach-agent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangGraph和Agentickit构建的Salescoach智能体
   
 
     
@@ -3164,20 +3220,20 @@
 <p><code>Agent</code> = <code>LLM</code>+<code>Planning skills</code>+<code>Memory</code>+<code>Tool use</code></p>
 <p><img alt="agent组件" src="../image/agent.png" /></p>
 <p>这种系统=<strong>LLM（大脑）+Planning skills（规划）+Memory（记忆）+Tool use（工具使用）</strong>。</p>
-<p><strong>Agenticness**是一种**程度</strong>，不是**标签**，用来评估一个AI系统agent化的程度，即系统在**复杂环境下、有限的直接监督下，灵活实现复杂目标的能力程度**。</p>
+<p><strong>Agenticness是一种程度，不是标签，用来评估一个AI系统agent化的程度，即系统在复杂环境下、有限的直接监督下，灵活实现复杂目标的能力程度</strong>。</p>
 <p>在产业界，将以Autonomous Agent作为目标但表现强弱不一的所有系统统称为Agentic System，并根据Agenticness的程度加以区分。</p>
 <h2 id="agent-vs-workflow">Agent vs Workflow<a class="headerlink" href="#agent-vs-workflow" title="Permanent link">&para;</a></h2>
 <p>这是Agentic System内部的两种架构模式：<strong>workflow和agent</strong>。</p>
-<p><code>workflow</code>：通过**预定义**代码路径编排LLM和工具的系统,强调的是过程的**标准化和自动化**,比如软件开发过程中,代码提交-&gt;代码审查-&gt;测试-&gt;部署,每个环节都有前后依赖和触发条件。</p>
-<p><code>Agent</code>：通过LLM**动态**指导其自身流程和工具使用，保持对任务完成过程控制的系统,强调**适应性与自主性,**比如一个客服Agent能根据用户输入判断意图,自主选择回复内容,甚至调用工具解决问题,而无需严格遵守固定步骤。</p>
+<p><code>workflow</code>：通过预定义代码路径编排LLM和工具的系统,强调的是过程的标准化和自动化,比如软件开发过程中,代码提交-&gt;代码审查-&gt;测试-&gt;部署,每个环节都有前后依赖和触发条件。</p>
+<p><code>Agent</code>：通过LLM动态指导其自身流程和工具使用，保持对任务完成过程控制的系统,强调适应性与自主性,比如一个客服Agent能根据用户输入判断意图,自主选择回复内容,甚至调用工具解决问题,而无需严格遵守固定步骤。</p>
 <p><code>Agentic AI</code>:是Agent概念的另一种表达,Agentic AI指旨在独立作出决策并采取行动以实现特点目标的软件程序,可认为AI Agent = Agentic AI System。</p>
-<p>Agentic AI的关键特征:<strong>记忆,规划,环境感知,工具使用,自主达成目标</strong>。</p>
-<p>Agentic AI的常见特征:<strong>从环境中学习,制定复杂计划,自主执行任务</strong>。</p>
+<p>Agentic AI的关键特征:记忆,规划,环境感知,工具使用,自主达成目标。</p>
+<p>Agentic AI的常见特征:从环境中学习,制定复杂计划,自主执行任务。</p>
 <h2 id="agentic">Agentic在现阶段的重要性<a class="headerlink" href="#agentic" title="Permanent link">&para;</a></h2>
 <p><strong>提升企业员工生产效率、优化业务运营、赋能产品服务和商业模式创新等方面发挥着重要作用</strong>。</p>
-<p>强调Agentic，就是在探索和定义未来**人机协作的新范式**：人类负责设定目标、提供价值观和进行关键审核；智能体负责执行复杂的操作和探索解决方案。</p>
+<p>强调Agentic，就是在探索和定义未来人机协作的新范式：人类负责设定目标、提供价值观和进行关键审核；智能体负责执行复杂的操作和探索解决方案。</p>
 <p><strong>长期愿景：迈向通用人工智能（AGI）的过渡形态</strong>。</p>
-<p>智能体被视为迈向AGI的**关键中间形态**：通过赋予AI“自主行动”的能力，研究者可以探索更高级的认知架构（如目标驱动、多智能体协作），推动AI向更通用、更拟人化的方向演进。</p>
+<p>智能体被视为迈向AGI的关键中间形态：通过赋予AI“自主行动”的能力，研究者可以探索更高级的认知架构（如目标驱动、多智能体协作），推动AI向更通用、更拟人化的方向演进。</p>
 <h2 id="agent_1">Agent技术栈<a class="headerlink" href="#agent_1" title="Permanent link">&para;</a></h2>
 <p><img alt="agent技术栈" src="../image/agent-tech-stack.png" /></p>
 <p>1.<strong>模型层</strong></p>

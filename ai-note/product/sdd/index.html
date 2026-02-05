@@ -247,7 +247,7 @@
           
   
   
-  技术笔记
+  技术
 
         </a>
       </li>
@@ -309,7 +309,7 @@
           
   
   
-  项目作品
+  项目
 
         </a>
       </li>
@@ -444,7 +444,7 @@
   <span class="md-ellipsis">
     
   
-    技术笔记
+    技术
   
 
     
@@ -460,7 +460,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    技术笔记
+    技术
   
 
           </label>
@@ -2941,7 +2941,7 @@
   <span class="md-ellipsis">
     
   
-    项目作品
+    项目
   
 
     
@@ -2957,7 +2957,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    项目作品
+    项目
   
 
           </label>
@@ -2998,6 +2998,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../projects/bert-pruning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于BERT模型的预训练剪枝实现
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../projects/economic-rag/" class="md-nav__link">
         
   
@@ -3006,6 +3034,34 @@
     
   
     基于RAG的金融问答平台
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/salescoach-agent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangGraph和Agentickit构建的Salescoach智能体
   
 
     
@@ -3522,16 +3578,36 @@
 </table>
 <h3 id="32-sdd">3.2 SDD的优势<a class="headerlink" href="#32-sdd" title="Permanent link">&para;</a></h3>
 <p>通过SDD，这些问题可以得到有效解决：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>┌─────────────────────────────────────────────────────────────┐
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>│                    SDD 带来的价值                            │
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├─────────────────┬───────────────────────────────────────────┤
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>│ 提升代码质量     │ 规范作为约束条件，确保生成的代码符合预期     │
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>│ 提高开发效率     │ 减少反复沟通，一次性生成可用的代码          │
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│ 降低维护成本     │ 规范即文档，便于理解和修改                  │
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>│ 增强可测试性     │ 规范可直接转换为测试用例                    │
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>│ 支持团队协作     │ 共同的规范确保团队成员理解一致              │
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>└─────────────────┴───────────────────────────────────────────┘
-</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>SDD 带来的价值</th>
+<th>具体描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>提升代码质量</td>
+<td>规范作为约束条件，确保生成的代码符合预期</td>
+</tr>
+<tr>
+<td>提高开发效率</td>
+<td>减少反复沟通，一次性生成可用的代码</td>
+</tr>
+<tr>
+<td>降低维护成本</td>
+<td>规范即文档，便于理解和修改</td>
+</tr>
+<tr>
+<td>增强可测试性</td>
+<td>规范可直接转换为测试用例</td>
+</tr>
+<tr>
+<td>支持团队协作</td>
+<td>共同的规范确保团队成员理解一致</td>
+</tr>
+</tbody>
+</table>
 <p>和TDD或BDD相比，SDD将视角进一步前移，先明确“做什么、为什么做”，再进入实现环节。</p>
 <p>与MDD相比，SDD更加灵活：它常用自然语言或结构化Markdown来描述需求，同时借助LLM将文本映射为代码与系统配置，减少格式化模型与具体实现之间的摩擦。</p>
 <h2 id="sdd_3">四、SDD的实践（代表性工具与项目）<a class="headerlink" href="#sdd_3" title="Permanent link">&para;</a></h2>
