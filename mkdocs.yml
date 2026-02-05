@@ -40,7 +40,7 @@ nav:
       - Coze: ai-note/product/coze.md
       - Clawdbot: ai-note/product/clawdbot.md
       - OpenViking: ai-note/product/openviking.md
-      - CL-Bench: ai-note/agent/cl-bench.md
+      - CL-Bench: ai-note/product/cl-bench.md
       - Recommender System: ai-note/product/recommender-system.md
   - 数学: 
     - Overview: math.md
