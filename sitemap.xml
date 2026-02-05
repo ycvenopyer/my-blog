@@ -2,254 +2,266 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/about/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/essay/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/projects/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/tech/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/a2a/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/agent/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/llm-api/</loc>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/mcp/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/sandbox/</loc>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/skills/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/tools/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/concept/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/concept/context-engineering/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/concept/cot/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/concept/langchain-and-langgraph/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/concept/memory/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/concept/peft/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/concept/prompt-engineering/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/concept/rag/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/concept/system-prompt/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/concept/transformer/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/ai-product-demand-analysis/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/cl-bench/</loc>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/clawdbot/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/coze/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/dify/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/manus/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/openviking/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/recommender-system/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/sdd/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/product/superpowers/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/algebra-system/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/graph-theory/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/group-theory/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/induction-and-recursion/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/number-theory/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/predicate-logic/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/propositional-logic/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/relation/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/set/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/discrete-math/tree/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/linear-algebra/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/linear-algebra/determinant/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/linear-algebra/eigenvalue/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/linear-algebra/linear-equation/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/linear-algebra/matrix/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/linear-algebra/quadatic-form/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/linear-algebra/similar/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/linear-algebra/vector/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/probability-and-statistics/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/probability-and-statistics/LLT-and-CLT/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/probability-and-statistics/hypothesis-testing/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/probability-and-statistics/multi-rv/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/probability-and-statistics/number-character/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/probability-and-statistics/parameter-estimation/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/probability-and-statistics/random-event-and-probability/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/probability-and-statistics/single-rv/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/math/probability-and-statistics/statistics/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/projects/economic-rag/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/tech-note/sse/</loc>
-         <lastmod>2026-02-04</lastmod>
+         <lastmod>2026-02-05</lastmod>
     </url>
 </urlset>
