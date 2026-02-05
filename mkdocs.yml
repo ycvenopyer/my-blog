@@ -29,6 +29,7 @@ nav:
       - A2A: ai-note/agent/a2a.md
       - Tools: ai-note/agent/tools.md
       - Skills: ai-note/agent/skills.md
+      - Sandbox: ai-note/agent/sandbox.md
     - Product:
       - Overview: ai-note/product/index.md
       - AI Product Demand: ai-note/product/ai-product-demand-analysis.md
@@ -39,6 +40,7 @@ nav:
       - Coze: ai-note/product/coze.md
       - Clawdbot: ai-note/product/clawdbot.md
       - OpenViking: ai-note/product/openviking.md
+      - CL-Bench: ai-note/agent/cl-bench.md
       - Recommender System: ai-note/product/recommender-system.md
   - 数学: 
     - Overview: math.md
