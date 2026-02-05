@@ -24,10 +24,11 @@ nav:
     - Agent:
       - Overview: ai-note/agent/index.md
       - Agent: ai-note/agent/agent.md
-      - A2A: ai-note/agent/a2a.md
+      - LLM API: ai-note/agent/llm-api.md
       - MCP: ai-note/agent/mcp.md
-      - Skills: ai-note/agent/skills.md
+      - A2A: ai-note/agent/a2a.md
       - Tools: ai-note/agent/tools.md
+      - Skills: ai-note/agent/skills.md
     - Product:
       - Overview: ai-note/product/index.md
       - AI Product Demand: ai-note/product/ai-product-demand-analysis.md
