@@ -15,8 +15,7 @@ my-blog/
     ├── ai.md           # AI相关
     ├── ai-note/        # AI学习笔记
     │   ├── a2a.md
-    │   ├── agent.md
-    │   └── clawdbot.md
+    │   └── agent.md
     ├── stylesheets/    # 自定义样式
     │   └── extra.css
     └── javascripts/    # 自定义脚本

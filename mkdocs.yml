@@ -10,26 +10,48 @@ nav:
     - SSE: tech-note/sse.md
   - AI:
     - Overview: ai.md
-    - Concept:
-      - Overview: ai-note/concept/index.md
-      - Transformer: ai-note/concept/transformer.md
-      - PEFT: ai-note/concept/peft.md
-      - RAG: ai-note/concept/rag.md
-      - CoT: ai-note/concept/cot.md
-      - LangChain and LangGraph: ai-note/concept/langchain-and-langgraph.md
-      - Prompt Engineering: ai-note/concept/prompt-engineering.md
-      - System Prompt: ai-note/concept/system-prompt.md
-      - Context Engineering: ai-note/concept/context-engineering.md
-      - Memory: ai-note/concept/memory.md
+    - LLM:
+      - Overview: ai-note/llm/index.md
+      - Transformer: ai-note/llm/transformer.md
+      - LLM Structure: ai-note/llm/structure.md
+      - BERT: ai-note/llm/bert.md
+      - Pre-training vs Fine-tuning: ai-note/llm/pre-training-vs-fine-tuning.md
+      - SFT: ai-note/llm/sft.md
+      - RLHF: ai-note/llm/rlhf.md
+      - PEFT: ai-note/llm/peft.md
+      - LLM API: ai-note/llm/llm-api.md
+    - VLM:
+      - Overview: ai-note/vlm/index.md
+      - ViT: ai-note/vlm/vit.md
+      - CLIP: ai-note/vlm/clip.md
+      - BLIP: ai-note/vlm/blip.md
+    - RAG:
+      - Overview: ai-note/rag/index.md
+      - Vector Database: ai-note/rag/vector-database.md
+      - GraphRAG: ai-note/rag/graphrag.md      
+      - RAG Evaluation: ai-note/rag/rag-evaluation.md
+    - Prompt Engineering:
+      - Overview: ai-note/prompt-engineering/index.md
+      - ChatGPT Strategy: ai-note/prompt-engineering/chatgpt-strategy.md
+      - System Prompt: ai-note/prompt-engineering/system-prompt.md
+    - Context Engineering:
+      - Overview: ai-note/context-engineering/index.md
+      - CL-Bench: ai-note/context-engineering/cl-bench.md
+    - LangChain:
+      - Overview: ai-note/langchain/index.md
+      - LangChain: ai-note/langchain/langchain.md
+      - LangGraph: ai-note/langchain/langgraph.md
+      - LangChain vs LangGraph: ai-note/langchain/langchain-vs-langgraph.md
+      - Langfuse: ai-note/langchain/langfuse.md
     - Agent:
       - Overview: ai-note/agent/index.md
       - Agent: ai-note/agent/agent.md
-      - LLM API: ai-note/agent/llm-api.md
       - MCP: ai-note/agent/mcp.md
       - A2A: ai-note/agent/a2a.md
       - Tools: ai-note/agent/tools.md
       - Skills: ai-note/agent/skills.md
       - Sandbox: ai-note/agent/sandbox.md
+      - Memory: ai-note/agent/memory.md
     - Product:
       - Overview: ai-note/product/index.md
       - AI Product Demand: ai-note/product/ai-product-demand-analysis.md
@@ -38,10 +60,8 @@ nav:
       - Manus: ai-note/product/manus.md
       - Dify: ai-note/product/dify.md
       - Coze: ai-note/product/coze.md
-      - Clawdbot: ai-note/product/clawdbot.md
+      - OpenClaw: ai-note/product/openclaw.md
       - OpenViking: ai-note/product/openviking.md
-      - CL-Bench: ai-note/product/cl-bench.md
-      - Recommender System: ai-note/product/recommender-system.md
   - 数学: 
     - Overview: math.md
     - 线性代数:
@@ -77,11 +97,15 @@ nav:
       - 树: math/discrete-math/tree.md
   - 项目: 
     - Overview: projects.md
-    - 基于BERT模型的预训练剪枝实现: projects/bert-pruning.md
+    - 基于BERT模型的预训练剪枝优化: projects/bert-pruning.md
     - 基于RAG的金融问答平台: projects/economic-rag.md
     - LangGraph和Agentickit构建的Salescoach智能体: projects/salescoach-agent.md
   - 随笔:
     - Overview: essay.md
+    - Reading:
+      - Overview: essay/reading/index.md
+    - Paper:
+      - Overview: essay/paper/index.md
   - 关于我: about.md
 
 theme:
@@ -148,6 +172,7 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - footnotes
+  - admonition
   - tables
   - toc:
       permalink: true
