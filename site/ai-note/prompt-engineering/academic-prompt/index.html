@@ -12,13 +12,13 @@
         <meta name="author" content="ycvenopyer">
       
       
-        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/langchain/langchain-vs-langgraph/">
+        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/prompt-engineering/academic-prompt/">
       
       
-        <link rel="prev" href="../langgraph/">
+        <link rel="prev" href="../system-prompt/">
       
       
-        <link rel="next" href="../langfuse/">
+        <link rel="next" href="../../context-engineering/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>LangChain vs LangGraph - ycvenopyer</title>
+        <title>Academic Prompt - ycvenopyer</title>
       
     
     
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LangChain vs LangGraph
+              Academic Prompt
             
           </span>
         </div>
@@ -1266,6 +1266,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1276,11 +1278,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -1301,7 +1303,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1319,7 +1321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../prompt-engineering/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1347,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../prompt-engineering/chatgpt-strategy/" class="md-nav__link">
+      <a href="../chatgpt-strategy/" class="md-nav__link">
         
   
   
@@ -1375,7 +1377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../prompt-engineering/system-prompt/" class="md-nav__link">
+      <a href="../system-prompt/" class="md-nav__link">
         
   
   
@@ -1400,10 +1402,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../prompt-engineering/academic-prompt/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Academic Prompt
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1419,6 +1448,192 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.Preparation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2chatgpt-prompts-for-academic-writing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.chatgpt-prompts-for-academic-writing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.chatgpt-prompts-for-academic-writing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-brainstorming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 BRAINSTORMING
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-article-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 ARTICLE SECTIONS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-improving-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 IMPROVING LANGUAGE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-summarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 SUMMARIZATION
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-planpresentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 PLAN/PRESENTATION
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3academic-prompts-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.Academic Prompts Collection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.Academic Prompts Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 润色与纠错
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 翻译
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 阅读与写作辅助
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 研究与选题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 代码辅助
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1550,8 +1765,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1562,11 +1775,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
         
           
           <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
@@ -1587,7 +1800,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1605,7 +1818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../langchain/" class="md-nav__link">
         
   
   
@@ -1633,7 +1846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../langchain/" class="md-nav__link">
+      <a href="../../langchain/langchain/" class="md-nav__link">
         
   
   
@@ -1661,7 +1874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../langgraph/" class="md-nav__link">
+      <a href="../../langchain/langgraph/" class="md-nav__link">
         
   
   
@@ -1686,35 +1899,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LangChain vs LangGraph
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../langchain/langchain-vs-langgraph/" class="md-nav__link">
         
   
   
@@ -1730,57 +1918,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        定义区别
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        场景区别
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#agentlanggraph" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        复杂Agent场景选择LangGraph
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1793,7 +1930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../langfuse/" class="md-nav__link">
+      <a href="../../langchain/langfuse/" class="md-nav__link">
         
   
   
@@ -3934,6 +4071,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3942,10 +4081,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1preparation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        定义区别
+        1.Preparation
       
     </span>
   </a>
@@ -3953,21 +4092,154 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2chatgpt-prompts-for-academic-writing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        场景区别
+        2.chatgpt-prompts-for-academic-writing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.chatgpt-prompts-for-academic-writing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-brainstorming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 BRAINSTORMING
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#agentlanggraph" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#22-article-sections" class="md-nav__link">
     <span class="md-ellipsis">
       
-        复杂Agent场景选择LangGraph
+        2.2 ARTICLE SECTIONS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-improving-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 IMPROVING LANGUAGE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-summarization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 SUMMARIZATION
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-planpresentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 PLAN/PRESENTATION
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3academic-prompts-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.Academic Prompts Collection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.Academic Prompts Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 润色与纠错
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 翻译
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 阅读与写作辅助
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 研究与选题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 代码辅助
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
       
     </span>
   </a>
@@ -4038,7 +4310,7 @@
         <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
-    LangChain
+    Prompt Engineering
   </span>
 
         </a>
@@ -4057,41 +4329,281 @@
 
 
 
-  <h1>LangChain vs LangGraph</h1>
-
-<h2 id="_1">定义区别<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>作为 LangChain 生态中两款核心开发工具，LangChain 与 LangGraph 均由同一团队打造，旨在解决大语言模型（LLM）集成与协同问题，但二者在工作流设计理念上存在本质区别，常被开发者混淆。从命名即可直观感知其核心差异：</p>
-<ul>
-<li>
-<p><mark class="critic">LangChain（链式架构）</mark>：采用静态线性工作流，任务执行严格遵循预先定义的步骤顺序，如同流水线作业，每个环节仅接收上一环节的输出，无法根据中间结果调整路径。</p>
-</li>
-<li>
-<p><mark class="critic">LangGraph（图式架构）</mark>：基于动态分支工作流，以有向图为核心结构，允许在每个节点根据任务状态（如推理结果、工具反馈）进行决策，灵活选择后续分支，支持循环、并行、回溯等复杂逻辑。</p>
-</li>
-</ul>
-<p><img alt="langchain-and-langgraph" src="../image/langchain-and-langgraph.png" /></p>
-<h2 id="_2">场景区别<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>两者的定位差异决定了适用场景的分野，且并非互斥关系，而是可形成“基础组件+高级编排”的协同模式：</p>
-<ul>
-<li>
-<p>LangChain：聚焦于提供标准化组件（如 LLM 调用接口、工具集成模块）与 LCEL（LangChain Expression Language）链式编程语法，适合简单一次性任务（如单轮问答、文档摘要、固定流程的数据处理），能快速搭建轻量化 LLM 应用。</p>
-</li>
-<li>
-<p>LangGraph：作为构建有状态智能体（Agent）系统的高级框架，擅长处理多步骤动态任务（如复杂问题拆解、多智能体协作、需要人工介入的审批流程），其核心优势在于对“状态连续性”的支持。</p>
-</li>
-</ul>
-<h2 id="agentlanggraph">复杂Agent场景选择LangGraph<a class="headerlink" href="#agentlanggraph" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>对“状态”的天然支持：Agent的核心在于在“思考-行动-观察”的循环中保持上下文和记忆。LangGraph的全局State机制（例如存储对话历史、中间步骤、工具结果）为此提供了内置、统一的管理方案，避免了传统开发中状态分散的难题。</p>
-</li>
-<li>
-<p>轻松处理复杂控制流：真实的Agent任务充满不确定性，可能需要根据结果循环重试、条件分支或并行执行。LangGraph的条件边（Conditional Edge）和循环图结构让这些复杂逻辑变得直观和易于实现。</p>
-</li>
-<li>
-<p>内置生产级特性：LangGraph设计之初就考虑了生产部署，原生支持状态持久化（检查点）、人工干预节点和可视化调试等，这些都是构建可靠Agent系统不可或缺的功能。</p>
-</li>
-</ul>
+<h1 id="_1">学术提示词总结<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="1preparation">1.Preparation<a class="headerlink" href="#1preparation" title="Permanent link">&para;</a></h2>
+<p>首先我们要知道学术提示词仍然是提示词，因此提示词的技巧仍然适用，可以给定大模型一个角色定位和行为边界，参考系统提示词的写法，然后再引导其进行论文翻译和润色。</p>
+<p>比如：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>假设你是一名资深的中英文翻译大师和英语学术作者，请帮我翻译一些中文段落成英文，确保你的语言符合专业学术期刊的语言风格。对翻译的要求有以下几点:1.确保翻译成英文的语言和原文意义一致，不可篡改原文意思；2.提供确切定义，确保你的术语和定义准确无误，特别是对于领域的专有名词和术语；2. 确保语言的逻辑关系准确，条理清晰；3. 采用简洁明确的表达方式，避免使用模糊或不必要的词汇、术语或句子；4. 注意英语语法表达的准确性，确保句子结构正确。你能做到吗？
+</code></pre></div></p>
+<h2 id="2chatgpt-prompts-for-academic-writing">2.<a href="https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing/blob/main/README.md">chatgpt-prompts-for-academic-writing</a><a class="headerlink" href="#2chatgpt-prompts-for-academic-writing" title="Permanent link">&para;</a></h2>
+<h3 id="21-brainstorming">2.1 BRAINSTORMING<a class="headerlink" href="#21-brainstorming" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Find a research topic for a PhD in the area of [TOPIC]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Write a detailed proposal on the following research topic. Make Sure it is free from plagiarism. [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Identify gaps in the literature on [TOPIC SENTENCE]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Generate 10 academic research questions about [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Generate a list of research hypotheses related to [TOPIC SENTENCE]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Identify potential areas for future research in the context of this [TOPIC SENTENCE]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Suggest novel applications of [TOPIC SENTENCE] within [RESEARCH DOMAIN]
+</code></pre></div>
+<h3 id="22-article-sections">2.2 ARTICLE SECTIONS<a class="headerlink" href="#22-article-sections" title="Permanent link">&para;</a></h3>
+<h4 id="titletopic-sentence">Title/Topic Sentence<a class="headerlink" href="#titletopic-sentence" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Suggest 5 titles for the following abstract: [ABSTRACT PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Write a topic sentence for this paragraph: [PARAGRAPH] 
+</code></pre></div>
+<h4 id="keywords">Keywords<a class="headerlink" href="#keywords" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Provide 5 keywords for this: [PARAGRAPHS]
+</code></pre></div>
+<h4 id="abstract">Abstract<a class="headerlink" href="#abstract" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Generate an abstract for a scientific paper based on this information for: [PARAGRAPHS]
+</code></pre></div>
+<h4 id="outline">Outline<a class="headerlink" href="#outline" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Generate an outline for [TOPIC SENTENCE]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>I want to write a journal article about [TOPIC SENTENCE]. Give me an outline for the article that I can use as a starting point.
+</code></pre></div>
+<h4 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Come up with an introduction for the following research topic: [TOPIC SENTENCE]
+</code></pre></div>
+<h4 id="literature-review">Literature Review<a class="headerlink" href="#literature-review" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Conduct a literature review on [TOPIC SENTENCE] and provide review paper references
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Provide me with references and links to papers in [PARAPGRAPH]
+</code></pre></div>
+<blockquote>
+<p><strong>NOTE:</strong> Be careful and double-check article existence. ChatGPT may generate fake references</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Summarize the scholarly literature, including in text citations on [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Write this in standard Harvard referencing [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>Convert this [BIBLIOGRAPHY] from MLA to APA style.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]:
+</code></pre></div>
+<h4 id="methodology">Methodology<a class="headerlink" href="#methodology" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>Create objectives and methodology for [TOPIC SENTENCE]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>Write a detailed methodology for the topic: [TOPIC SENTENCE]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Write objectives for this study: [TOPIC SENTENCE]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>What are the limitations of using [TOPIC SENTENCE] in [RESEARCH DOMAIN]?
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>Create a recipe for the methods used in this [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>Suggest interdisciplinary approaches to [TOPIC SENTENCE]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>Explain how qualitative/quantitative research methods can be used to address [RESEARCH QUESTIONS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>Recommend best practices for data collection and analysis in [TOPIC SENTENCE]
+</code></pre></div>
+<h4 id="experiments">Experiments<a class="headerlink" href="#experiments" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Design an experiment that [ACTION]
+</code></pre></div>
+<h4 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>Write a result section for the following paragraphs. Please write this in the third person. [PARAGRAPHS]
+</code></pre></div>
+<h4 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>Discuss these results: [RESULT PARAGRAPHS]
+</code></pre></div>
+<h4 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>Generate a conclusion for this: [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>Give recommendations and conclusion for: [PARAGRAPHS]
+</code></pre></div>
+<h4 id="future-works">Future Works<a class="headerlink" href="#future-works" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>Can you suggest 3 directions for future research on this topic: [PARAGRAPH]]?
+</code></pre></div>
+<h3 id="23-improving-language">2.3 IMPROVING LANGUAGE<a class="headerlink" href="#23-improving-language" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>Rewrite this paragraph in an academic language: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>Paraphrase the text using more academic and scientific language. Use a neutral tone and avoid repetitions of words and phrases. [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>Correct the grammar: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>What do you think of how this paragraph is written?:  [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>What 3 points would you suggest to improve this paragraph?: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>Improve the style of my writing? [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>Improve the clarity and coherence of my writing [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>Improve the organization and structure of my paper [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>Provide feedback on this text and suggest areas for improvement [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>Can you improve this paragraph using passive voice: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>Can you improve this paragraph to make it more cohesive? [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>Analyze the text below for style, voice, and tone. Using NLP, create a prompt to write a new article in the same style, voice, and tone: [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>Please write a few paragraphs using the following list of points [LIST] 
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>Give three variations of this sentence: [SENTENCE] 
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>Write a transition sentence to connect the following two paragraphs: [PARAGRAPH1] [PARAPGRAPH2]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>Provide effective transitions between paragraphs [PARAGRAPH1] [PARAGRAPH2]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>Rewrite this paragraph as an introduction: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>Rewrite this paragraph as a conclusion: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>Write a counterargument to the following claim: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>Rewrite this in an academic voice: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>Expand these notes: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>Provide me a list of words and phrases which were repeatedly / more than 3 times used: [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>Provide me a list of synonyms for [PARAGRAPH] and evaluate them in the context of [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>Act as a language expert, proofread my paper on [TOPIC SENTENCE] while putting a focus on grammar and punctuation.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>In the context of [RESEARCH DOMAIN] translate [PARAPGRAPH] into the [LANGUAGE] language.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>Proofread the following text for spelling and grammatical errors and rewrite it with corrections. [PARAGRAPHS] 
+</code></pre></div>
+<h3 id="24-summarization">2.4 SUMMARIZATION<a class="headerlink" href="#24-summarization" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>Summarize the following content: [PARAPGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>Summarize the text in simpler and easier-to-understand terms. [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a>Come up with a summary that is exactly [NUMBER OF WORDS] words: [PARAPGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a>Reduce the following to [NUMBER OF WORDS] words: [PARAPGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>Shorten to [NUMBER OF CHARACTERS] characters: [PARAPGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>Give me a bullet point summary for [PARAPGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>Extract the important key points of this: [PARAPGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a>Summarize the text by extracting the most important information in the form of bullet points [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a>Explain this again but simpler: [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-71-1" name="__codelineno-71-1" href="#__codelineno-71-1"></a>Explain this research to a 12 year old: [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a>Identify the key findings and implications of this: [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a>Remove the throat-clearing sentence from this paragraph: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a>Frontload the argument in the following paragraph: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-75-1" name="__codelineno-75-1" href="#__codelineno-75-1"></a>Explain [TOPIC] as an analogy
+</code></pre></div>
+<h3 id="25-planpresentation">2.5 PLAN/PRESENTATION<a class="headerlink" href="#25-planpresentation" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a>Develop a research plan for: [TOPIC SENTENCE]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a>Write a schedule for completion in [TOPIC SENTENCE] in [NUMBER OF DAYS/MONTHS/YEARS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a>The deadline for the submission of the first draft is [DATE]. give me a week-by-week breakdown so I can plan my writing better.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a>Write a sensational press release for this research: [PARAGRAPHS]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-80-1" name="__codelineno-80-1" href="#__codelineno-80-1"></a>Make this more persuasive: [PARAGRAPH]
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a>Write 3 tweets about this research. [PARAGRAPHS]
+</code></pre></div>
+<h2 id="3academic-prompts-collection">3.<a href="https://github.com/Kiteflyingee/academic_prompts?tab=readme-ov-file#1-%E6%B6%A6%E8%89%B2%E4%B8%8E%E7%BA%A0%E9%94%99-polishing--correction">Academic Prompts Collection</a><a class="headerlink" href="#3academic-prompts-collection" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 润色与纠错<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<h4 id="_2">中文学术润色<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>作为一名中文学术论文写作改进助理，你的任务是改进所提供文本的拼写、语法、清晰、简洁和整体可读性，同时分解长句，减少重复，并提供改进建议。请只提供文本的更正版本，避免包括解释。请编辑以下文本</p>
+</blockquote>
+<h4 id="_3">英语学术润色<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a>Below is a paragraph from an academic paper. Polish the writing to meet the academic style, improve the spelling, grammar, clarity, concision and overall readability. When necessary, rewrite the whole sentence. Furthermore, list all modification and explain the reasons to do so in markdown table.
+</code></pre></div>
+<h4 id="_4">查找语法错误<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a>Can you help me ensure that the grammar and the spelling is correct? Do not try to polish the text, if no mistake is found, tell me that this paragraph is good. If you find grammar or spelling mistakes, please list mistakes you find in a two-column markdown table, put the original text the first column, put the corrected text in the second column and highlight the key words you fixed.
+<a id="__codelineno-83-2" name="__codelineno-83-2" href="#__codelineno-83-2"></a>
+<a id="__codelineno-83-3" name="__codelineno-83-3" href="#__codelineno-83-3"></a>Example:
+<a id="__codelineno-83-4" name="__codelineno-83-4" href="#__codelineno-83-4"></a>Paragraph: How is you? Do you knows what is it?
+<a id="__codelineno-83-5" name="__codelineno-83-5" href="#__codelineno-83-5"></a>| Original sentence | Corrected sentence |
+<a id="__codelineno-83-6" name="__codelineno-83-6" href="#__codelineno-83-6"></a>| :--- | :--- |
+<a id="__codelineno-83-7" name="__codelineno-83-7" href="#__codelineno-83-7"></a>| How **is** you? | How **are** you? |
+<a id="__codelineno-83-8" name="__codelineno-83-8" href="#__codelineno-83-8"></a>| Do you **knows** what **is** **it**? | Do you **know** what **it** **is** ? |
+<a id="__codelineno-83-9" name="__codelineno-83-9" href="#__codelineno-83-9"></a>
+<a id="__codelineno-83-10" name="__codelineno-83-10" href="#__codelineno-83-10"></a>Below is a paragraph from an academic paper. You need to report all grammar and spelling mistakes as the example before.
+</code></pre></div>
+<h4 id="latex">Latex 英文润色<a class="headerlink" href="#latex" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a>Below is a section from an academic paper, polish this section to meet the academic standard, improve the grammar, clarity and overall readability, do not modify any latex command such as \section, \cite and equations.
+</code></pre></div>
+<h4 id="latex_1">Latex 中文润色<a class="headerlink" href="#latex_1" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>以下是一篇学术论文中的一段内容，请将此部分润色以满足学术标准，提高语法、清晰度和整体可读性，不要修改任何LaTeX命令，例如\section，\cite和方程式。</p>
+</blockquote>
+<h4 id="aigcai">AIGC内容“降AI味”<a class="headerlink" href="#aigcai" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a>你是一个伪装成人类科研学者的AI，能够将AI生成的文本改写成人类学者常用的表达方式。请对以下由AI生成的段落进行深度改写，在保持原意的基础上，使其风格更自然、更符合学术写作的习惯，让人难以分辨其是由AI生成。待改写段落：
+</code></pre></div>
+<hr />
+<h3 id="32">3.2 翻译<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<h4 id="_5">中译英<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-86-1" name="__codelineno-86-1" href="#__codelineno-86-1"></a>Please translate following sentence to English, making it more accureate and academic:
+</code></pre></div>
+<h4 id="_6">英译中<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>把下面的句子翻译成地道的中文，使它更加学术化：</p>
+</blockquote>
+<h4 id="_7">学术中英互译<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a>I want you to act as a scientific English-Chinese translator, I will provide you with some paragraphs in one language and your task is to accurately and academically translate the paragraphs only into the other language. Do not repeat the original provided paragraphs after translation. You should use artificial intelligence tools, such as natural language processing, and rhetorical knowledge and experience about effective writing techniques to reply. I&#39;ll give you my paragraphs as follows, tell me what language it is written in, and then translate:
+</code></pre></div>
+<hr />
+<h3 id="33">3.3 阅读与写作辅助<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<h4 id="_8">高效阅读论文<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>你是一位精通各领域前沿研究的学术文献解读专家，面对一篇给定的论文，请你高效阅读并迅速提取出其核心内容。要求在解读过程中，先对文献的背景、研究目的和问题进行简明概述，再详细梳理研究方法、关键数据、主要发现及结论，同时对新颖概念进行通俗易懂的解释，帮助读者理解论文的逻辑与创新点；最后，请对文献的优缺点进行客观评价，并指出可能的后续研究方向。整体报告结构清晰、逻辑严谨。</p>
+</blockquote>
+<h4 id="_9">优化文章结构<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>你是一位资深的文章优化专家，请你对给定的文章进行结构优化。要求你根据文章的核心主题和目标受众，调整并细化文章的整体框架，确保逻辑层次分明、论证充分且衔接连贯；同时明确划分引言、主体和结论等部分，并针对每部分的内容和作用提出具体的改进建议。请输出一个优化后的文章结构大纲，并用严谨、学术的语言详细说明各部分的功能和优化方案。</p>
+</blockquote>
+<h4 id="_10">解释代码<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a>请解释以下代码：```代码块```
+</code></pre></div>
+<hr />
+<h3 id="34">3.4 研究与选题<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
+<h4 id="_11">论文选题<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>根据【研究方向】发展趋势、研究热点与已有文献，推荐一个创新性强且具有研究价值的研究论文选题。结合现有研究中的空白，提出一个具有填补空白潜力的问题，确保该选题能够推动学科的理论发展或实践应用。</p>
+</blockquote>
+<h4 id="_12">研究思路<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>请基于我提供的研究主题【研究主题】，分析当前领域的研究现状，并列出5个研究空白或未解决问题，基于研究空白或未解决问题给出对应的研究思路，用表格呈现。</p>
+</blockquote>
+<h4 id="_13">技术方案<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>请基于我提供的研究主题【具体主题】和研究思路【具体思路】，分析当前领域的研究现状，列出5个技术方案，基于研究空白或未解决问题给出选择对应的技术方案的原因，用表格呈现。</p>
+</blockquote>
+<hr />
+<h3 id="35">3.5 代码辅助<a class="headerlink" href="#35" title="Permanent link">&para;</a></h3>
+<h4 id="_14">代码架构分析<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>你是一个专业的软件架构师。请分析以下多个代码文件的集合，并以清晰的语言总结这个项目的整体架构、核心功能、主要模块以及它们之间的相互关系。不要深入每一行代码的细节，重点在于宏观结构。</p>
+</blockquote>
+<h4 id="_15">代码自动注释<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>你是一个遵守代码最佳实践的程序员。请为以下代码的每一部分（函数、类、复杂逻辑块）添加简洁明了的注释，解释其功能、参数和返回值。</p>
+</blockquote>
+<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/binary-husky/gpt_academic">GPT 学术优化 (GPT Academic)</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/2502595">导师推荐：12个论文翻译润色场景，专业版ChatGPT指令合集【附使用教程】</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/688171911">50个顶级的ChatGPT学术论文指令！</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/691642735">黑科技！6个AI读文献指令，让你效率提高100倍！</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/688842912">10个顶级的论文降重指令！</a></p>
 
 
 
