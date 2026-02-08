@@ -34,6 +34,7 @@ nav:
       - Overview: ai-note/prompt-engineering/index.md
       - ChatGPT Strategy: ai-note/prompt-engineering/chatgpt-strategy.md
       - System Prompt: ai-note/prompt-engineering/system-prompt.md
+      - Academic Prompt: ai-note/prompt-engineering/academic-prompt.md
     - Context Engineering:
       - Overview: ai-note/context-engineering/index.md
       - CL-Bench: ai-note/context-engineering/cl-bench.md
