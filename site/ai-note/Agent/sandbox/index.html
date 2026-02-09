@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#sandbox" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1972,6 +1977,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sandbox
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1989,6 +2014,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sandbox_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是Sandbox
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="什么是Sandbox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.守夜人的诞生——传统安全沙箱时代
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.云端的编程革命——云端代码执行环境时代
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3aiai-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.AI觉醒与新挑战——AI Agent定制沙箱时代
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sandboxskills-vs-sandbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sandbox+Skills vs 无Sandbox
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3861,6 +3977,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sandbox_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是Sandbox
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="什么是Sandbox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.守夜人的诞生——传统安全沙箱时代
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.云端的编程革命——云端代码执行环境时代
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3aiai-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.AI觉醒与新挑战——AI Agent定制沙箱时代
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sandboxskills-vs-sandbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sandbox+Skills vs 无Sandbox
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3943,9 +4141,176 @@
 
 
 
-  <h1>Sandbox</h1>
-
-
+<h1 id="sandbox">Sandbox<a class="headerlink" href="#sandbox" title="Permanent link">&para;</a></h1>
+<h2 id="sandbox_1">什么是Sandbox<a class="headerlink" href="#sandbox_1" title="Permanent link">&para;</a></h2>
+<h3 id="1">1.守夜人的诞生——传统安全沙箱时代<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>1990年代的网络安全战场，彼时计算机病毒和恶意软件层出不穷，安全研究问题面临的问题是如何安全地分析这些病毒。Sandbox概念应运而生——创建一个隔离的环境，让恶意代码在其中“表演”，研究人员则在安全距离外观察。代表作：Cuckoo Sandbox。</p>
+<p>2000年代初，虚拟化诞生。VMware等虚拟化技术让一台物理机器可以运行多个隔离的OS，这为沙箱技术提供了更强大的隔离能力，但是缺点是太重了，需要消耗大量内存和CPU资源。</p>
+<p>2013年，Docker诞生，它的出发点是解决“在我的机器上能跑”的问题，但它带来的革命性变化是——让隔离环境变得轻量、快速、标准化。</p>
+<h3 id="2">2.云端的编程革命——云端代码执行环境时代<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>2010年代末，在线协作开发兴起。</p>
+<p>2017年，CodeSandbox诞生，其最初只是一个简单的在线代码编辑器，但它很快演化为一个完整的云端开发环境。开发者只需要打开浏览器，就能获得一个功能完整的IDE。</p>
+<p>2014年，亚马逊发布了AWS Lambda，开启了Serverless时代。Lambda的理念是：开发者只需要上传代码，无需关心服务器、OS、运行时环境。AWS会自动处理代码的执行、扩缩容、容错等问题。</p>
+<p>2018年，AWS开源了Firecracker，这是一个专为无服务器计算涉及的微虚拟机监控器（MicroVM Hypervisor）。Firecracker 的设计哲学是：结合虚拟机的强隔离性和容器的轻量化优势。它实现了：</p>
+<ul>
+<li>毫秒级启动：比传统虚拟机快 1000 倍</li>
+<li>强隔离性：比容器更安全的硬件级隔离</li>
+<li>高密度部署：单机可运行数千个 MicroVM</li>
+<li>极小攻击面：只包含必要的组件</li>
+</ul>
+<p>Firecracker 为后来的 Agent Sandbox 技术奠定了关键的技术基础。</p>
+<h3 id="3aiai-agent">3.AI觉醒与新挑战——AI Agent定制沙箱时代<a class="headerlink" href="#3aiai-agent" title="Permanent link">&para;</a></h3>
+<p>2023年7月，OpenAI发布了Code Interpreter(后改名为Advanced Data Analysis)。这正是Agent Sandbox的雏形——一个自动化Agent可以“动手”写代码、运行任务、产出结果，但所有操作都发生在一个“受限、可控”的沙箱环境中。</p>
+<p>但Code Interpreter 的成功也暴露了一个严峻的问题：AI生成的代码本质上是不可信的。不同于传统软件开发中程序员编写的代码，AI 生成的代码具有以下特点：</p>
+<ul>
+<li>不可预测性：基于概率模型，输出具有随机性</li>
+<li>易受注入攻击：恶意用户可能通过提示注入让 AI 生成恶意代码</li>
+<li>权限边界模糊：AI 可能不理解某些操作的安全后果</li>
+<li>极快的启动速度：支持交互式对话</li>
+<li>丰富的运行时环境：Python、数据科学库等</li>
+<li>状态管理：支持多轮对话的上下文</li>
+<li>细粒度的权限控制：精确限制可执行的操作</li>
+</ul>
+<p>正是在这样的背景下，E2B诞生。</p>
+<p>E2B的核心理念是：将复杂的沙箱技术封装成简单的API。</p>
+<p>E2B 的成功激发了整个生态的发展。2023 年 10 月，E2B 宣布集成到 LangChain 框架，这标志着 Agent Sandbox 开始从单一产品演进为生态基础设施。</p>
+<p>在过去两年里，Agent 从实验室的探索逐渐走向生产环境，不再只是模型能力的展示，而是真实承担起企业中的“数字员工”角色。随着任务日益复杂，既要写代码、调用工具，又要操作浏览器、处理数据，对工作环境的要求也越来越高：</p>
+<ul>
+<li>既要足够自由，支持多种场景的多样化任务操作。</li>
+<li>又要足够安全，避免误删数据或越权操作。</li>
+<li>还要具备弹性和并发能力，支撑大规模落地。 </li>
+</ul>
+<p><img alt="sandbox" src="../image/sandbox.png" /></p>
+<p>随着 Agent 从工具调用逐渐演进到真正的 Agentic Agent ——能自主规划、动态调用工具并与环境交互，对运行环境提出了更高标准。为了让这些数字员工安全、稳定地完成复杂任务，我们迫切需要一个数字世界的沙箱，为 Agent 提供专属办公环境。 </p>
+<p>正是基于这样的需求，Agent 沙箱应运而生。它为数字员工提供了一个安全隔离、极速启动的“虚拟办公环境”，让每个 Agent 都能像真实员工一样高效开展工作，同时解决了场景灵活、安全性与规模化并发三大核心挑战，成为 Agent 从研发走向生产的关键基座。 </p>
+<p><mark class="critic">Sandbox的核心作用，就是为Agent构建一个隔离的运行环境，通过网络隔离、文件系统隔离、进程隔离等多种方式，限制Agent的操作范围，确保它无论执行什么操作，都不会影响到宿主机和其他系统。</mark></p>
+<h2 id="sandboxskills-vs-sandbox">Sandbox+Skills vs 无Sandbox<a class="headerlink" href="#sandboxskills-vs-sandbox" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Sandbox+Skills</th>
+<th>无 Sandbox</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文件系统</strong></td>
+<td>有虚拟文件系统（<code>/user-data/</code>、<code>/skills/</code>、<code>/outputs/</code>）</td>
+<td>无文件系统概念</td>
+</tr>
+<tr>
+<td><strong>工具层次</strong></td>
+<td>底层工具（<code>file_read</code>、<code>file_create</code>、<code>str_replace</code>、<code>sql_query</code>）</td>
+<td>高层抽象工具（<code>create</code>、<code>execute_sql</code>、<code>search_memory</code>）</td>
+</tr>
+<tr>
+<td><strong>Skill 设计</strong></td>
+<td>完整的任务指南（包含数据结构、字段定义、操作流程）</td>
+<td>简洁的功能描述（只说明"做什么"）</td>
+</tr>
+<tr>
+<td><strong>System Prompt</strong></td>
+<td>详细（2000+ 行，包含完整规范）</td>
+<td>简略（仅基本框架）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Deepseek 回答</p>
+<p>Sandbox技术为AI Agent（智能体）带来了安全性、可控性和可扩展性的革命性提升，使其从理论概念走向实际应用。下面我将从核心价值和技术原理两方面详细解释。</p>
+<p>一、核心价值</p>
+<p>我们可以把Sandbox想象成一个为Agent准备的、高度仿真的“数字训练营”或“安全操作间”。</p>
+<ol>
+<li>
+<p>核心价值：安全与隔离</p>
+<p>安全执行：Agent通常被赋予执行代码、访问文件、调用API等能力。在沙箱中运行，可以严格限制其权限（如禁止访问真实数据库、禁止调用危险系统命令），即使Agent被恶意诱导或出现逻辑错误，也不会对宿主系统造成实际损害。</p>
+<p>环境隔离：每个Agent或每个任务都在独立的沙箱实例中运行，避免了任务间的资源竞争和相互干扰。一个Agent的崩溃不会影响其他Agent。</p>
+</li>
+<li>
+<p>关键能力：可控与可观测</p>
+<p>资源管控：可以精确限制Agent使用的CPU、内存、磁盘、网络带宽和运行时间，防止其无限循环或耗尽资源。</p>
+<p>行为监控与审计：沙箱提供了对Agent所有操作（系统调用、文件读写、网络请求）的全面监控和记录，便于调试、分析其决策逻辑，并满足合规审计要求。</p>
+<p>状态快照与回滚：可以轻松保存和恢复沙箱的完整状态，这对调试复杂任务、实现“后悔机制”（让Agent重试）或进行重复性测试至关重要。</p>
+</li>
+<li>
+<p>赋能场景：测试与扩展</p>
+<p>安全测试与迭代：开发者可以无风险地测试Agent的新能力、新工具或新的提示词策略，加速开发迭代周期。</p>
+<p>多实例并行：安全的隔离性使得可以低成本、快速地创建大量沙箱实例，让多个Agent并行执行任务（例如，同时分析多个文档、处理多个客户请求），极大提升了效率和可扩展性。</p>
+<p>工具使用规范化：Sandbox可以定义一套安全的、虚拟化的“工具集”供Agent调用，将危险的真实操作转化为安全的模拟操作（如将“发送真实邮件”变成“生成邮件内容日志”）。</p>
+</li>
+</ol>
+<p>总结来说，Sandbox技术解决了AI Agent走向实际应用的“信任”和“规模”两大核心难题，是构建可靠、实用、可部署的Agent系统的基石技术。</p>
+<p>二、技术原理</p>
+<p>其技术原理核心是 “在受控环境中，对不可信代码的执行进行资源隔离与系统调用拦截”。主要实现层次从浅到深包括：</p>
+<ol>
+<li>
+<p>语言级沙箱</p>
+<p>原理：利用语言本身的特性或解释器进行隔离。例如，Python的 <code>exec</code> 在受限环境下执行，JavaScript的 <code>iframe</code> 沙箱或Node.js的 <code>vm</code> 模块。</p>
+<p>特点：实现简单、轻量，但安全性较低，容易因语言漏洞或配置不当而逃逸。适用于信任度较高或风险较低的场景。</p>
+</li>
+<li>
+<p>容器化沙箱</p>
+<p>原理：使用Docker等容器技术，利用Linux内核的命名空间和控制组实现隔离。</p>
+<p>命名空间：为每个容器提供独立的进程树、网络栈、文件系统挂载点、用户ID等视图，使其与主机和其他容器隔离开。</p>
+<p>控制组：限制容器所能使用的CPU、内存、磁盘I/O等物理资源。</p>
+<p>特点：轻量、启动快、资源开销小，是当前主流的Agent沙箱实现方式。安全性强于语言级沙箱，但因其与主机共享内核，内核漏洞可能导致逃逸。</p>
+</li>
+<li>
+<p>虚拟机级沙箱</p>
+<p>原理：通过Hypervisor在物理硬件上创建完整的、隔离的虚拟机。Agent运行在独立的客户操作系统中，与主机操作系统完全隔离。</p>
+<p>特点：安全性最高，隔离最彻底。但启动慢、资源开销大（每个VM都需要独立的OS内核）。适用于对安全性要求极高的场景。</p>
+</li>
+<li>
+<p>专用安全沙箱</p>
+<p>原理：结合高级安全模块，如seccomp-bpf（限制可用的系统调用）、AppArmor/SELinux（强制访问控制，定义进程能访问的文件和权限）、用户命名空间（将容器内root权限映射到主机非root用户）等，对容器或进程进行“深度加固”。</p>
+<p>特点：在容器基础上提供了一道额外的、细粒度的安全防线，是现代安全沙箱的标配。</p>
+</li>
+<li>
+<p>新兴的微虚拟机</p>
+<p>原理：如 Firecracker，它结合了虚拟机的安全性和容器的轻量级。通过极简的虚拟化设备模型和裁剪的内核，实现毫秒级启动和极低的内存开销。</p>
+<p>特点：专为无服务器和临时性任务负载设计，非常适合需要快速创建/销毁、安全隔离的Agent执行场景，是未来的重要发展方向。</p>
+</li>
+</ol>
+<p>典型工作流程</p>
+<p>当一个Agent需要执行任务时：</p>
+<ol>
+<li>
+<p>沙箱创建：管理系统根据任务需求，动态创建一个具备指定资源限制和安全策略的容器或微型VM实例。</p>
+</li>
+<li>
+<p>环境注入：将必要的代码、工具、API密钥（虚拟化或代理过的）和数据注入到沙箱环境中。</p>
+</li>
+<li>
+<p>Agent执行：Agent在沙箱内开始运行，其所有操作被限制在沙箱内。</p>
+</li>
+<li>
+<p>监控与拦截：沙箱管理器实时监控资源使用，并拦截所有试图违反策略的系统调用或资源请求。</p>
+</li>
+<li>
+<p>结果收集与销毁：任务完成后，将结果输出传回宿主系统，随后立即销毁整个沙箱，不留任何痕迹。</p>
+</li>
+</ol>
+<p>在AI Agent领域的应用代表</p>
+<ol>
+<li>
+<p>OpenAI的代码解释器：在一个安全的、网络隔离的容器环境中执行Python代码，是Sandbox技术的典范应用。</p>
+</li>
+<li>
+<p>Microsoft的AutoGen：支持将代理对话运行在Docker容器中，以实现隔离执行。</p>
+</li>
+<li>
+<p>诸多AI应用开发平台：如CrewAI、LangChain的社区方案等，都提供了基于Docker的Agent执行环境。</p>
+</li>
+</ol>
+<p>结论：Sandbox技术通过操作系统级别的隔离和限制机制，为AI Agent提供了一个安全、可控、可复现的物理世界“模拟器”，是其从对话原型走向生产力工具不可或缺的底层支撑。随着Agent能力的复杂化，沙箱技术也向着更轻量、更安全、更易管理的方向持续演进。</p>
+</div>
+<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<p><a href="https://zhuanlan.zhihu.com/p/1920437545877091174">为什么Agent Sandbox会成为下一代AI应用的基石？</a></p>
+<p><a href="https://manus.im/zh-cn/blog/manus-sandbox">Manus Sandbox</a></p>
+<p><a href="https://e2b.dev/">E2B</a></p>
+<p><a href="https://cloud.tencent.com/document/product/1814/123811">腾讯Agent沙箱服务</a></p>
+<p><a href="https://blog.csdn.net/u013970991/article/details/157868985#:~:text=Sandbox%E7%9A%84%E6%A0%B8%E5%BF%83%E4%BD%9C%E7%94%A8%EF%BC%8C%E5%B0%B1%E6%98%AF%E4%B8%BAAgent%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%94%E7%A6%BB%E7%9A%84%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%EF%BC%8C%E9%80%9A%E8%BF%87%E7%BD%91%E7%BB%9C%E9%9A%94%E7%A6%BB%E3%80%81%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E9%9A%94%E7%A6%BB%E3%80%81%E8%BF%9B%E7%A8%8B%E9%9A%94%E7%A6%BB%E7%AD%89%E5%A4%9A%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%8C%E9%99%90%E5%88%B6Agent%E7%9A%84%E6%93%8D%E4%BD%9C%E8%8C%83%E5%9B%B4%EF%BC%8C%E7%A1%AE%E4%BF%9D%E5%AE%83%E6%97%A0%E8%AE%BA%E6%89%A7%E8%A1%8C%E4%BB%80%E4%B9%88%E6%93%8D%E4%BD%9C%EF%BC%8C%E9%83%BD%E4%B8%8D%E4%BC%9A%E5%BD%B1%E5%93%8D%E5%88%B0%E5%AE%BF%E4%B8%BB%E6%9C%BA%E5%92%8C%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F%E3%80%82,%E7%9B%AE%E5%89%8D%E5%B8%82%E9%9D%A2%E4%B8%8A%E7%9A%84Sandbox%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88%E7%A7%8D%E7%B1%BB%E7%B9%81%E5%A4%9A%EF%BC%8C%E4%B8%8D%E5%90%8C%E6%96%B9%E6%A1%88%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E3%80%81%E6%80%A7%E8%83%BD%E8%A1%A8%E7%8E%B0%E5%92%8C%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF%E5%B7%AE%E5%BC%82%E5%BE%88%E5%A4%A7%EF%BC%8C%E6%8E%A5%E4%B8%8B%E6%9D%A5%E6%88%91%E4%BB%AC%E5%B0%B1%E4%BB%8E%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0%E7%9A%84%E8%A7%92%E5%BA%A6%EF%BC%8C%E9%80%90%E4%B8%80%E8%A7%A3%E6%9E%90%E4%B8%BB%E6%B5%81%E7%9A%84Sandbox%E6%96%B9%E6%A1%88%EF%BC%8C%E5%B8%AE%E5%A4%A7%E5%AE%B6%E7%90%86%E6%B8%85%E5%AE%83%E4%BB%AC%E7%9A%84%E6%A0%B8%E5%BF%83%E5%8C%BA%E5%88%AB%E5%92%8C%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF%E3%80%82">Agent Infra核心技术解析：Sandbox技术原理、选型逻辑与主流方案全景</a></p>
 
 
 
