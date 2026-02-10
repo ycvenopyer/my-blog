@@ -53,6 +53,7 @@ nav:
       - Skills: ai-note/agent/skills.md
       - Sandbox: ai-note/agent/sandbox.md
       - Memory: ai-note/agent/memory.md
+      - Agent Framework: ai-note/agent/agent-framework.md
     - Product:
       - Overview: ai-note/product/index.md
       - AI Product Demand: ai-note/product/ai-product-demand-analysis.md
