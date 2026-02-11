@@ -50,10 +50,12 @@ nav:
       - MCP: ai-note/agent/mcp.md
       - A2A: ai-note/agent/a2a.md
       - Tools: ai-note/agent/tools.md
+      - Agent Framework: ai-note/agent/agent-framework.md
+      - Agent Development Problem: ai-note/agent/agent-dev-problem.md
       - Skills: ai-note/agent/skills.md
       - Sandbox: ai-note/agent/sandbox.md
       - Memory: ai-note/agent/memory.md
-      - Agent Framework: ai-note/agent/agent-framework.md
+      - Memory Structure: ai-note/agent/memory-structure.md
     - Product:
       - Overview: ai-note/product/index.md
       - AI Product Demand: ai-note/product/ai-product-demand-analysis.md
