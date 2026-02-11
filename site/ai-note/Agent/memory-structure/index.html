@@ -12,13 +12,13 @@
         <meta name="author" content="ycvenopyer">
       
       
-        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/prompt-engineering/chatgpt-strategy/">
+        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/agent/memory-structure/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../memory/">
       
       
-        <link rel="next" href="../system-prompt/">
+        <link rel="next" href="../../product/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>ChatGPT Strategy - ycvenopyer</title>
+        <title>Memory Structure - ycvenopyer</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#agent" class="md-skip">
           跳转至
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ChatGPT Strategy
+              Memory Structure
             
           </span>
         </div>
@@ -1266,8 +1266,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1278,11 +1276,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -1303,7 +1301,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1321,7 +1319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../prompt-engineering/" class="md-nav__link">
         
   
   
@@ -1346,37 +1344,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ChatGPT Strategy
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../prompt-engineering/chatgpt-strategy/" class="md-nav__link">
         
   
   
@@ -1392,142 +1363,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        提示词定义
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        提示词的核心要素
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chatgpt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        提示词策略——ChatGPT官方推荐
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="提示词策略——ChatGPT官方推荐">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.指令要清晰
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.提供参考文本
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.将复杂任务拆分为更简单的子任务
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4gpt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.给GPT时间“思考”
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.使用外部工具
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.系统地测试变化
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1540,7 +1375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system-prompt/" class="md-nav__link">
+      <a href="../../prompt-engineering/system-prompt/" class="md-nav__link">
         
   
   
@@ -1568,7 +1403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../academic-prompt/" class="md-nav__link">
+      <a href="../../prompt-engineering/academic-prompt/" class="md-nav__link">
         
   
   
@@ -1913,6 +1748,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1923,11 +1760,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" checked>
         
           
           <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
@@ -1948,7 +1785,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1966,7 +1803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1994,7 +1831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent/agent/" class="md-nav__link">
+      <a href="../agent/" class="md-nav__link">
         
   
   
@@ -2022,7 +1859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent/mcp/" class="md-nav__link">
+      <a href="../mcp/" class="md-nav__link">
         
   
   
@@ -2050,7 +1887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent/a2a/" class="md-nav__link">
+      <a href="../a2a/" class="md-nav__link">
         
   
   
@@ -2078,7 +1915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent/tools/" class="md-nav__link">
+      <a href="../tools/" class="md-nav__link">
         
   
   
@@ -2106,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent/agent-framework/" class="md-nav__link">
+      <a href="../agent-framework/" class="md-nav__link">
         
   
   
@@ -2134,7 +1971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent/agent-dev-problem/" class="md-nav__link">
+      <a href="../agent-dev-problem/" class="md-nav__link">
         
   
   
@@ -2162,7 +1999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent/skills/" class="md-nav__link">
+      <a href="../skills/" class="md-nav__link">
         
   
   
@@ -2190,7 +2027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent/sandbox/" class="md-nav__link">
+      <a href="../sandbox/" class="md-nav__link">
         
   
   
@@ -2218,7 +2055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../agent/memory/" class="md-nav__link">
+      <a href="../memory/" class="md-nav__link">
         
   
   
@@ -2243,10 +2080,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../agent/memory-structure/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memory Structure
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2262,6 +2126,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mem0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mem0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#langmem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Langmem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#letta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Letta
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4115,10 +4032,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#mem0" class="md-nav__link">
     <span class="md-ellipsis">
       
-        提示词定义
+        Mem0
       
     </span>
   </a>
@@ -4126,10 +4043,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#langmem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        提示词的核心要素
+        Langmem
       
     </span>
   </a>
@@ -4137,93 +4054,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#chatgpt" class="md-nav__link">
+  <a href="#letta" class="md-nav__link">
     <span class="md-ellipsis">
       
-        提示词策略——ChatGPT官方推荐
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="提示词策略——ChatGPT官方推荐">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.指令要清晰
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.提供参考文本
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.将复杂任务拆分为更简单的子任务
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4gpt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.给GPT时间“思考”
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.使用外部工具
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.系统地测试变化
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
+        Letta
       
     </span>
   </a>
@@ -4294,7 +4128,7 @@
         <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
-    Prompt Engineering
+    Agent
   </span>
 
         </a>
@@ -4313,132 +4147,10 @@
 
 
 
-<h1 id="_1">提示词工程教学<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">提示词定义<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>提示词是人类与AI沟通的<mark class="critic">指令系统</mark>，它通过文字定义AI的身份、任务、行为边界和执行逻辑。</p>
-<p>核心价值：提示词不是零散的指令堆砌，而是通过结构化设计，让AI理解“我是谁、该做什么、怎么做、不能做什么”，从而将人类意图转化为AI的稳定行为。</p>
-<h2 id="_3">提示词的核心要素<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>身份与目标：AI的角色定位和存在意义，解决“为什么做”；</p>
-</li>
-<li>
-<p>交互逻辑：AI接收信息（输入）和输出结果的规范，解决“如何沟通”；</p>
-</li>
-<li>
-<p>执行流程：AI完成任务的步骤和技能拆解，解决“怎么做”；</p>
-</li>
-<li>
-<p>行为边界：AI绝对不能触碰的红线，解决“什么不能做”。</p>
-</li>
-</ol>
-<h2 id="chatgpt">提示词策略——ChatGPT官方推荐<a class="headerlink" href="#chatgpt" title="Permanent link">&para;</a></h2>
-<h3 id="1">1.指令要清晰<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<p>要清晰地表达你想要什么，不要让GPT猜你想要什么。</p>
-<ul>
-<li>
-<p>问题里包含更多细节。</p>
-</li>
-<li>
-<p>让模型角色扮演（<a href="https://github.com/f/prompts.chat">GitHub人设大全</a>）。</p>
-</li>
-<li>
-<p>充当ChatGPT提升生成器。</p>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">prompt generator</p>
-<p>适用场景：当不知道如何写提示词时，可以尝试使用这种方法。（当然，这种方法依旧不完美，需要不断优化，最终达到自己的目的）</p>
-<p>I want you to act as a ChatGPT prompt generator, I will send a topic, you have to generate a ChatGPT prompt based on the content of the topic, the prompt should start with "I want you to act as ", and guess what I might do, and expand the prompt accordingly Describe the content to make it useful. response need in simplified Chinese. My query is: 英语听力老师。</p>
-</div>
-<ul>
-<li>
-<p>使用分隔符：使用三重引号、XML标签、章节标题等分隔符可以帮助划分文本的不同部分。</p>
-</li>
-<li>
-<p>指定完成任务所需的步骤。</p>
-</li>
-<li>
-<p>提供示例（few-shot）。</p>
-</li>
-<li>
-<p>设定回答的长度。</p>
-</li>
-<li>
-<p>指定段落数量。</p>
-</li>
-<li>
-<p>指定要点数量。</p>
-</li>
-</ul>
-<h3 id="2">2.提供参考文本<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>命令模型根据参考文本回答问题：就像我们在写作业时，如果有了老师给的参考资料，就可以利用这些资料来写答案，这个模型也一样，有了相关的、可信的信息，就可以用这些信息来回答问题。</p>
-</li>
-<li>
-<p>让ChatGPT用引用参考文本的方式回答问题：我们可以给ChatGPT提供材料，并让它回复的时候，标明是根据材料的哪一部分做出的回答。这就好像，我们在写论文的时候，要标注信息来源一样。这样做帮助我们在材料里找到引用的文字，来确认这些引用的文字是否真的存在。</p>
-</li>
-</ul>
-<h3 id="3">3.将复杂任务拆分为更简单的子任务<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>问题分类：根据不同的任务类型进行分类，每一个任务可能都需要不同的步骤或者指令。</p>
-</li>
-<li>
-<p>长对话处理：总结或过滤</p>
-</li>
-<li>
-<p>分段总结长文并递归构建完整摘要</p>
-</li>
-</ul>
-<h3 id="4gpt">4.给GPT时间“思考”<a class="headerlink" href="#4gpt" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>在下结论之前，先引导GPT生成自己的答案：有时候，如果我们明确地告诉模型，在得出结论之前，先按照基本原理进行推理，可能会得到更好的结果。</p>
-</li>
-<li>
-<p>隐藏推理过程</p>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">prompt template</p>
-<p>Follow these steps to answer the user queries. 
-Step 1 - First work out your own solution to the problem. Don't rely on the student's solution since it may be incorrect. Enclose all your work for this step within triple quotes ("""). 
-Step 2 - Compare your solution to the student's solution and evaluate if the student's solution is correct or not. Enclose all your work for this step within triple quotes ("""). 
-Step 3 - If the student made a mistake, determine what hint you could give the student without giving away the answer. Enclose all your work for this step within triple quotes ("""). 
-Step 4 - If the student made a mistake, provide the hint from the previous step to the student (outside of triple quotes). Instead of writing "Step 4 - ..." write "Hint:".<br />
-按照以下步骤回答用户查询。 
-第 1 步 - 首先找出您自己的问题解决方案。不要依赖学生的解决方案，因为它可能不正确。将您为此步骤所做的所有工作用三重引号 (""") 括起来。 
-第 2 步 - 将您的解决方案与学生的解决方案进行比较，并评估学生的解决方案是否正确。将您为此步骤所做的所有工作用三重引号 (""") 括起来。 
-第 3 步 - 如果学生犯了错误，请确定您可以在不给出答案的情况下给学生什么提示。将您为此步骤所做的所有工作用三重引号 (""") 括起来。 
-第 4 步 - 如果学生犯了错误，请向学生提供上一步的提示（三重引号外）。不要写“第 4 步 - ...”，而写“提示：”。</p>
-<p>Problem Statement: <insert problem statement> 
-Student Solution: <insert student solution><br />
-问题陈述：&lt;插入问题陈述&gt; 
-学生解决方案：&lt;插入学生解决方案&gt;</p>
-</div>
-<ul>
-<li>答案不全的问题：我们正在用一个ChatGPT模型从一堆资料中找出跟我们提出的问题有关的内容。每找到一个内容，模型就要决定是不是要继续找下一个，还是停下来不找了。如果那堆资料特别大，模型有时候会停得太早，没能把所有跟问题有关的内容都找出来。这个时候，如果我们再向模型提出一些新的问题：让它再去找找看有没有之前漏掉的内容，往往能让模型的输出结果，变得更好。</li>
-</ul>
-<h3 id="5">5.使用外部工具<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>嵌入：使用基于嵌入的搜索来实现高效的知识检索。一个模型可以利用外部信息作为其输入的一部分。比如RAG。</p>
-</li>
-<li>
-<p>计算：使用代码或者调用外部的API，来进行更精确的计算。</p>
-</li>
-<li>
-<p>让模型使用特定功能：Chat Completions API允许在请求中传递一系列功能描述。这让模型能根据提供的方案生成功能参数。通过API以JSON格式返回生成的功能参数，可以用来执行功能调用。功能调用提供的输出可以在下一个请求中反馈给模型，从而形成一个完整的循环。这是使用GPT模型调用外部功能的推荐方式。</p>
-</li>
-</ul>
-<h3 id="6">6.系统地测试变化<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
-<ul>
-<li>参考黄金标准答案评估模型输出：假设已知问题的正确答案应该参考一组特定的已知事实。然后我们可以使用模型查询来计算答案中包含了多少所需事实。</li>
-</ul>
-<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
-<p><a href="https://zhuanlan.zhihu.com/p/648018011">六种方法，写出好的提示词——ChatGPT官方推荐</a></p>
+<h1 id="agent">Agent 记忆框架<a class="headerlink" href="#agent" title="Permanent link">&para;</a></h1>
+<h2 id="mem0">Mem0<a class="headerlink" href="#mem0" title="Permanent link">&para;</a></h2>
+<h2 id="langmem">Langmem<a class="headerlink" href="#langmem" title="Permanent link">&para;</a></h2>
+<h2 id="letta">Letta<a class="headerlink" href="#letta" title="Permanent link">&para;</a></h2>
 
 
 
