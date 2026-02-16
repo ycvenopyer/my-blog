@@ -37,6 +37,7 @@ nav:
       - Academic Prompt: ai-note/prompt-engineering/academic-prompt.md
     - Context Engineering:
       - Overview: ai-note/context-engineering/index.md
+      - Practice: ai-note/context-engineering/context-engineering-practice.md
       - CL-Bench: ai-note/context-engineering/cl-bench.md
     - LangChain:
       - Overview: ai-note/langchain/index.md
