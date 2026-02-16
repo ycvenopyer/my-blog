@@ -12,13 +12,13 @@
         <meta name="author" content="ycvenopyer">
       
       
-        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/agent/mcp/">
+        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/context-engineering/context-engineering-practice/">
       
       
-        <link rel="prev" href="../agent/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../a2a/">
+        <link rel="next" href="../cl-bench/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>MCP - ycvenopyer</title>
+        <title>Practice - ycvenopyer</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mcp" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MCP
+              Practice
             
           </span>
         </div>
@@ -1436,6 +1436,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1446,11 +1448,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
         
           
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
@@ -1471,7 +1473,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1489,7 +1491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../context-engineering/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1514,10 +1516,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../context-engineering/context-engineering-practice/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Practice
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1533,6 +1562,253 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#langchain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LangChain
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LangChain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 上下文卸载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 上下文缩减
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 上下文检索
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 上下文隔离
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 上下文缓存
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claude Code
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Claude Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 三层记忆架构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-steering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 实时 Steering 机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 分层多 Agent 协作
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 动态上下文注入
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manus
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 为什么需要上下文工程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 上下文缩减：压缩与摘要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 上下文隔离：通信与共享内存模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 上下文卸载：分层式行为空间
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 五个核心维度的平衡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 避免上下文过度工程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1545,7 +1821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../context-engineering/cl-bench/" class="md-nav__link">
+      <a href="../cl-bench/" class="md-nav__link">
         
   
   
@@ -1776,8 +2052,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1788,11 +2062,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
         
           
           <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
@@ -1813,7 +2087,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1831,7 +2105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../agent/" class="md-nav__link">
         
   
   
@@ -1859,7 +2133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/" class="md-nav__link">
+      <a href="../../agent/agent/" class="md-nav__link">
         
   
   
@@ -1884,35 +2158,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    MCP
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../agent/mcp/" class="md-nav__link">
         
   
   
@@ -1928,101 +2177,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mcp" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        什么是MCP
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mcp_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        为什么是MCP
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mcp-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MCP Architecture
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        原理：模型如何确定工具的选用
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        一些观点
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        如何使用
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2035,7 +2189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../a2a/" class="md-nav__link">
+      <a href="../../agent/a2a/" class="md-nav__link">
         
   
   
@@ -2063,7 +2217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tools/" class="md-nav__link">
+      <a href="../../agent/tools/" class="md-nav__link">
         
   
   
@@ -2091,7 +2245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent-framework/" class="md-nav__link">
+      <a href="../../agent/agent-framework/" class="md-nav__link">
         
   
   
@@ -2119,7 +2273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent-dev-problem/" class="md-nav__link">
+      <a href="../../agent/agent-dev-problem/" class="md-nav__link">
         
   
   
@@ -2147,7 +2301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../skills/" class="md-nav__link">
+      <a href="../../agent/skills/" class="md-nav__link">
         
   
   
@@ -2175,7 +2329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sandbox/" class="md-nav__link">
+      <a href="../../agent/sandbox/" class="md-nav__link">
         
   
   
@@ -2203,7 +2357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../memory/" class="md-nav__link">
+      <a href="../../agent/memory/" class="md-nav__link">
         
   
   
@@ -2231,7 +2385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../memory-structure/" class="md-nav__link">
+      <a href="../../agent/memory-structure/" class="md-nav__link">
         
   
   
@@ -4090,6 +4244,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4098,68 +4254,218 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mcp" class="md-nav__link">
+  <a href="#langchain" class="md-nav__link">
     <span class="md-ellipsis">
       
-        什么是MCP
+        LangChain
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LangChain">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 上下文卸载
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#mcp_1" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        为什么是MCP
+        2. 上下文缩减
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#mcp-architecture" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        MCP Architecture
+        3. 上下文检索
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        原理：模型如何确定工具的选用
+        4. 上下文隔离
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        一些观点
+        5. 上下文缓存
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#claude-code" class="md-nav__link">
     <span class="md-ellipsis">
       
-        如何使用
+        Claude Code
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Claude Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 三层记忆架构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-steering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 实时 Steering 机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 分层多 Agent 协作
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 动态上下文注入
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manus
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 为什么需要上下文工程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 上下文缩减：压缩与摘要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 上下文隔离：通信与共享内存模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 上下文卸载：分层式行为空间
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 五个核心维度的平衡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 避免上下文过度工程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4238,7 +4544,7 @@
         <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
-    Agent
+    Context Engineering
   </span>
 
         </a>
@@ -4257,101 +4563,246 @@
 
 
 
-  <h1>MCP</h1>
-
-<h2 id="mcp">什么是MCP<a class="headerlink" href="#mcp" title="Permanent link">&para;</a></h2>
-<p>MCP(Model Context Protocol，模型上下文协议)定义了应用程序和AI模型之间交换上下文信息的方式。这使得开发者能够以一致的方式将各种数据源、工具和功能连接到AI模型，就像USB-C让不同设备能够通过相同的接口连接一样。MCP的目标是创建一个通用标准，使AI应用程序的开发和集成变得更加简单和统一。</p>
-<p><img alt="mcp" src="../image/mcp.png" /></p>
-<p>可以看出，MCP就是以更标准的方式让LLM Chat使用不同工具，Anthropic旨在实现LLM Tool Call的标准。</p>
-<h2 id="mcp_1">为什么是MCP<a class="headerlink" href="#mcp_1" title="Permanent link">&para;</a></h2>
+<h1 id="_1">上下文工程实践<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>在上下文工程领域，有三个产品代表了不同的实践方向：</p>
+<ol>
+<li>
+<p>LangChain：代表 Agent 框架和工具集合，早期的 Agent 框架，提供了各种Agent开发的基础设施，提出了一套上下文管理的方法论。</p>
+</li>
+<li>
+<p>Claude Code：代表 Code Agent 能力上限，编码 Agent 的能力标杆，在长短记忆、分层多 Agent 协作等方面有独到实践。</p>
+</li>
+<li>
+<p>Manus：重新展现 Agent 能力，让 Agent 回到大众视野，带动 MCP 发展，在工具使用、缓存设计等方面有独到实践。</p>
+</li>
+</ol>
+<h2 id="langchain">LangChain<a class="headerlink" href="#langchain" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 上下文卸载<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>并非所有上下文都要保存在消息历史中，可将部分信息卸载到外部系统。</p>
+<p>做法：使用文件系统保存工具调用结果，仅在上下文中保留引用，在需要时再通过检索加载完整内容。</p>
+<h3 id="2">2. 上下文缩减<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>控制上下文窗口长度，防止性能下降。</p>
+<p>做法：摘要工具输出；修剪旧的工具调用；自动触发压缩机制。</p>
+<h3 id="3">3. 上下文检索<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>按需动态检索上下文，而非全量加载。</p>
+<p>做法：</p>
 <ul>
 <li>
-<p>手工prompt的局限性：许多LLM平台（如OpenAI、Google）引入了function call功能，这一机制允许模型在需要时调用预定义的函数来获取数据或执行操作，显著提升了自动化水平。</p>
+<p>语义检索+向量检索</p>
 </li>
 <li>
-<p>function call的局限性：其平台依赖性强，不同LLM平台的function call API实现差异较大。开发者在切换模型时需要重写代码，增加了适配成本，还有安全性，交互性等问题。</p>
-</li>
-<li>
-<p>痛点所在：数据和工具本身是客观存在的，我们希望将数据连接到模型的这个环节可以更智能更统一。</p>
+<p>文件系统+简单命令（bash command:grep/glob）</p>
 </li>
 </ul>
-<p>MCP的优势：</p>
-<ol>
-<li>
-<p>生态：MCP提供很多现成的插件</p>
-</li>
-<li>
-<p>统一性：不限制于特点的AI模型，任何支持MCP的模型都可以灵活切换</p>
-</li>
-<li>
-<p>数据安全：敏感数据保留本地不必上传</p>
-</li>
-</ol>
-<h2 id="mcp-architecture">MCP Architecture<a class="headerlink" href="#mcp-architecture" title="Permanent link">&para;</a></h2>
-<p><img alt="mcp architecture" src="../image/model-context-protocol-architecture.png" /></p>
-<p>MCP由三个核心组件构成：Host、Client和Server。</p>
-<p>假设你正在使用 Claude Desktop (Host) 询问："我桌面上有哪些文档？"</p>
-<ol>
-<li>
-<p>Host：Claude Desktop 作为 Host，负责接收你的提问并与 Claude 模型交互。</p>
-</li>
-<li>
-<p>Client：当 Claude 模型决定需要访问你的文件系统时，Host 中内置的 MCP Client 会被激活。这个 Client 负责与适当的 MCP Server 建立连接。</p>
-</li>
-<li>
-<p>Server：在这个例子中，文件系统 MCP Server 会被调用。它负责执行实际的文件扫描操作，访问你的桌面目录，并返回找到的文档列表。</p>
-</li>
-</ol>
-<p>整个流程是这样的：你的问题 → Claude Desktop(Host) → Claude 模型 → 需要文件信息 → MCP Client 连接 → 文件系统 MCP Server → 执行操作 → 返回结果 → Claude 生成回答 → 显示在 Claude Desktop 上。</p>
-<p>这种架构设计使得 Claude 可以在不同场景下灵活调用各种工具和数据源，而开发者只需专注于开发对应的 MCP Server，无需关心 Host 和 Client 的实现细节。</p>
-<h2 id="_1">原理：模型如何确定工具的选用<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Anthropic的解释：</p>
-<p>当用户提出一个问题时：</p>
+<h3 id="4">4. 上下文隔离<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>做法：多智能体结构，每个子智能体有独立上下文窗口，实现关注点分离。</p>
+<h3 id="5">5. 上下文缓存<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<p>缓存关键上下文片段，避免重复处理；提升智能体在长会话、多轮推理下的性能。</p>
+<h2 id="claude-code">Claude Code<a class="headerlink" href="#claude-code" title="Permanent link">&para;</a></h2>
+<h3 id="1_1">1. 三层记忆架构<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p>在长对话中，上下文管理面临token限制导致信息丢失、传统压缩方法破坏上下文连续性、无法支持复杂多轮协作任务等挑战。</p>
+<p>Claude Code构建了三层记忆系统：短期记忆（当前对话）、中期记忆（智能压缩）、长期记忆（CLAUDE.md项目知识库），实现从实时访问到持久化存储的完整覆盖。</p>
+<p>关键要点：</p>
 <ul>
 <li>
-<p>客户端（Claude Desktop / Cursor）将你的问题发送给 Claude。</p>
+<p>92%阈值自动触发智能压缩</p>
 </li>
 <li>
-<p>Claude 分析可用的工具，并决定使用哪一个（或多个）。</p>
+<p>8段式结构化保存核心信息</p>
 </li>
 <li>
-<p>客户端通过 MCP Server 执行所选的工具。</p>
-</li>
-<li>
-<p>工具的执行结果被送回给 Claude。</p>
-</li>
-<li>
-<p>Claude 结合执行结果构造最终的 prompt 并生成自然语言的回应。</p>
-</li>
-<li>
-<p>回应最终展示给用户！</p>
+<p>跨会话恢复项目背景和用户偏好</p>
 </li>
 </ul>
-<p>这个调用过程可以分为两步：</p>
-<ol>
+<p><img alt="cc-context" src="../image/cc-context.png" /></p>
+<h3 id="2-steering">2. 实时 Steering 机制<a class="headerlink" href="#2-steering" title="Permanent link">&para;</a></h3>
+<p>传统 Agent 无法中断，用户必须等待完整执行结束才能调整方向，导致资源浪费和用户体验差，无法应对动态变化的需求。</p>
+<p>Claude Code 的解决方案是采用异步消息队列 + 主循环的双引擎设计，支持实时中断和恢复，用户可以随时调整任务方向，系统自动保存状态并无缝切换。</p>
+<p>关键要点：</p>
+<ul>
 <li>
-<p>由LLM确定使用哪些MCP Server</p>
+<p>异步消息队列支持实时中断。</p>
 </li>
 <li>
-<p>执行对应的MCP Server并对执行结果进行重新处理</p>
-</li>
-</ol>
-<p><img alt="mcp-call" src="../image/mcp-call.png" /></p>
-<p>模型是通过prompt，即提供所有工具的结构化描述和few-shot的example来确定该使用哪些工具。</p>
-<h2 id="_2">一些观点<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>function call中，每个工具接口的调用方式不一样，固然可以让LLM读取接口文档调用，但是还是很麻烦。MCP就是让所有的工具接口都用同一个方式调用，相当于用MCP协议包装了一层。这样，LLM就不需要每调用一个接口就要学习一次接口文档了。</p>
+<p>主循环自适应流程控制。</p>
 </li>
 <li>
-<p>MCP的能力核心在于 Claude 的function call能力。如果你的tools是上百个的，那么上下文就会超，而且部分大模型在如此多的tools选择和parameter列表生成中一定会有鲁棒性差的问题，所以当你tools上百个时不适合用MCP，或者不该直接使用MCP一次性对全部tools进行选择（可以像N叉树那样，将一次分类转移成多层级多次的分类，减小每次分类的选择空间）；而当你的tools只有十几个的时候，其实压根不用这么复杂——你大可以自己实现一下OpenAI或某个大模型API的function call代码，然后自己开一个tools.py文件，将所有tools按顺序描述好。</p>
+<p>流式输出提供持续交互反馈。</p>
 </li>
-</ol>
-<h2 id="_3">如何使用<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p><a href="https://modelcontextprotocol.io/docs/develop/connect-local-servers">For Claude Desktop Users</a></p>
+</ul>
+<h3 id="3-agent">3. 分层多 Agent 协作<a class="headerlink" href="#3-agent" title="Permanent link">&para;</a></h3>
+<p>复杂任务需要并发处理多个子任务，单 Agent 模式容易出现上下文污染、资源竞争和故障传播，影响整体执行效率和稳定性。</p>
+<p>Claude Code 的解决方案是采用主 Agent 负责任务协调，SubAgent 执行专项任务，实现隔离执行环境，调度器控制最多 10 个工具并发，确保任务隔离和资源优化。</p>
+<h3 id="4_1">4. 动态上下文注入<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h3>
+<p>用户在对话中提及文件或概念时，系统无法自动关联相关信息，导致模型缺乏必要的上下文背景，影响响应质量和准确性。</p>
+<p>Claude Code 的解决方案是智能检测用户意图中的文件引用，自动读取相关内容并注入上下文，基于依赖关系推荐相关文件，提供语法高亮和格式化显示，最大20文件8K Token限制。</p>
+<p>关键要点：</p>
+<ul>
+<li>
+<p>自动识别和注入相关文件内容。</p>
+</li>
+<li>
+<p>智能推荐基于依赖关系分析。</p>
+</li>
+<li>
+<p>容量控制和格式优化提升体验。</p>
+</li>
+</ul>
+<h2 id="manus">Manus<a class="headerlink" href="#manus" title="Permanent link">&para;</a></h2>
+<h3 id="1_2">1. 为什么需要上下文工程<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>模型微调成本高、风险大</p>
+</li>
+<li>
+<p>应用快速演进期更适合依赖通用模型+上下文控制</p>
+</li>
+<li>
+<p>上下文工程是“模型与应用之间最清晰的边界”</p>
+</li>
+</ul>
+<h3 id="2_1">2. 上下文缩减：压缩与摘要<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<h4 id="21">2.1 压缩<a class="headerlink" href="#21" title="Permanent link">&para;</a></h4>
+<p>每次工具调用结果有两种格式：</p>
+<ul>
+<li>
+<p>完整格式（含全部字段）</p>
+</li>
+<li>
+<p>紧凑格式（去除可重建字段，仅保留路径或引用）</p>
+</li>
+</ul>
+<p>可逆（reversible）缩减，不丢失信息，只是外部化。  </p>
+<p>触发机制：</p>
+<ul>
+<li>
+<p>当上下文长度达到“腐烂前阈值”（128k~200k tokens）时触发压缩；</p>
+</li>
+<li>
+<p>仅压缩历史 50% 工具调用，保留近期完整内容。</p>
+</li>
+</ul>
+<h4 id="22">2.2 摘要<a class="headerlink" href="#22" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>不可逆操作，用于超大上下文；</p>
+</li>
+<li>
+<p>在压缩收益变低时启用；</p>
+</li>
+<li>
+<p>摘要前会将完整内容卸载到外部文件系统；</p>
+</li>
+<li>
+<p>使用结构化模式生成摘要（非自由文本）。</p>
+</li>
+</ul>
+<h3 id="3_1">3. 上下文隔离：通信与共享内存模式<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<p>两种模式：</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>特点</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>通过通信共享内存（“agent as tool”）</td>
+<td>主智能体以任务指令调用子智能体</td>
+<td>明确、独立任务</td>
+</tr>
+<tr>
+<td>通过共享上下文</td>
+<td>子智能体可见完整上下文，拥有独立 action space</td>
+<td>复杂研究、分析型任务</td>
+</tr>
+</tbody>
+</table>
+<p>权衡点：</p>
+<ul>
+<li>
+<p>共享上下文消耗高（预填充 Token、不可复用 KV 缓存）</p>
+</li>
+<li>
+<p>通信模式简单高效但信息不完整</p>
+</li>
+</ul>
+<h3 id="4_2">4. 上下文卸载：分层式行为空间<a class="headerlink" href="#4_2" title="Permanent link">&para;</a></h3>
+<p>为避免“上下文混淆”（过多工具导致模型混乱），Manus 将工具空间分为三层：</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>内容</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第1层：函数调用</td>
+<td>原子函数（读写文件、搜索、Shell 命令</td>
+<td>Schema 安全、缓存友好</td>
+</tr>
+<tr>
+<td>第2层：沙盒工具</td>
+<td>在虚拟机内运行的系统命令，如 grep、MCP CLI</td>
+<td>可扩展功能、不破坏缓存</td>
+</tr>
+<tr>
+<td>第3层：代码与 API</td>
+<td>通过 Python 脚本或 API 访问外部服务</td>
+<td>高可组合性、适合重计算任务</td>
+</tr>
+</tbody>
+</table>
+<p>关键特征：</p>
+<ul>
+<li>
+<p>所有层最终仍以标准函数调用形式执行；</p>
+</li>
+<li>
+<p>行为空间正交（orthogonal），缓存一致；</p>
+</li>
+<li>
+<p>提升系统模块化与灵活性。</p>
+</li>
+</ul>
+<h3 id="5_1">5. 五个核心维度的平衡<a class="headerlink" href="#5_1" title="Permanent link">&para;</a></h3>
+<p>上下文工程的五个维度：</p>
+<blockquote>
+<p>卸载（offload）- 缩减（reduce）- 检索（retrieve）- 隔离（isolate）- 缓存（cache）</p>
+</blockquote>
+<p>它们相互制衡：</p>
+<ul>
+<li>
+<p>卸载 + 检索 → 提高缩减效率</p>
+</li>
+<li>
+<p>稳定检索 → 安全隔离</p>
+</li>
+<li>
+<p>过度隔离 → 降低缓存与推理效率</p>
+</li>
+</ul>
+<p>👉 “上下文工程是一门艺术，需要在相互冲突的目标中找到平衡。”</p>
+<h3 id="6">6. 避免上下文过度工程<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>“最重要的经验：少做加法，多做理解。”</p>
+</blockquote>
+<ul>
+<li>
+<p>过度的上下文管理层、复杂的检索机制常适得其反；</p>
+</li>
+<li>
+<p>最有效的优化往往来自简化架构与信任模型。</p>
+</li>
+</ul>
 <h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.anthropic.com/news/model-context-protocol">Introducing the Model Context Protocol</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/29001189476">MCP (Model Context Protocol)，一篇就够了</a></p>
+<p><a href="https://blog.csdn.net/m0_59235245/article/details/157402621#:~:">震惊！不微调也能让AI变强？Manus上下文工程揭秘，让大模型迭代速度提升10倍！</a></p>
+<p><a href="https://developer.aliyun.com/article/1686825">浅谈上下文工程｜从 Claude Code 、Manus 和 Kiro 看提示工程到上下文工程的转变</a></p>
+<p><a href="https://blog.hehouhui.cn/archives/beginner-guide-to-llm-context-engineering-basics-to-practice">白入门LLM Context上下文工程：从基础到实践，通俗易懂讲明白</a></p>
 
 
 
