@@ -20,11 +20,12 @@ nav:
       - RLHF: ai-note/llm/rlhf.md
       - PEFT: ai-note/llm/peft.md
       - LLM API: ai-note/llm/llm-api.md
-    - VLM:
-      - Overview: ai-note/vlm/index.md
-      - ViT: ai-note/vlm/vit.md
-      - CLIP: ai-note/vlm/clip.md
-      - BLIP: ai-note/vlm/blip.md
+    - MLLM:
+      - Overview: ai-note/mllm/index.md
+      - VLM: ai-note/mllm/vlm.md
+      - ViT: ai-note/mllm/vit.md
+      - CLIP: ai-note/mllm/clip.md
+      - BLIP: ai-note/mllm/blip.md
     - RAG:
       - Overview: ai-note/rag/index.md
       - Vector Database: ai-note/rag/vector-database.md
@@ -57,16 +58,18 @@ nav:
       - Sandbox: ai-note/agent/sandbox.md
       - Memory: ai-note/agent/memory.md
       - Memory Structure: ai-note/agent/memory-structure.md
-    - Product:
-      - Overview: ai-note/product/index.md
-      - AI Product Demand: ai-note/product/ai-product-demand-analysis.md
-      - SDD: ai-note/product/sdd.md
-      - Superpowers: ai-note/product/superpowers.md
-      - Manus: ai-note/product/manus.md
-      - Dify: ai-note/product/dify.md
-      - Coze: ai-note/product/coze.md
-      - OpenClaw: ai-note/product/openclaw.md
-      - OpenViking: ai-note/product/openviking.md
+    - WorkFlow:
+      - Overview: ai-note/workflow/index.md
+      - AI Product Demand: ai-note/workflow/ai-product-demand-analysis.md
+      - SDD: ai-note/workflow/sdd.md
+      - Superpowers: ai-note/workflow/superpowers.md
+      - BMAD-Method: ai-note/workflow/bmad-method.md
+      - Manus: ai-note/workflow/manus.md
+      - Dify: ai-note/workflow/dify.md
+      - Coze: ai-note/workflow/coze.md
+      - n8n: ai-note/workflow/n8n.md
+      - OpenClaw: ai-note/workflow/openclaw.md
+      - OpenViking: ai-note/workflow/openviking.md
   - 数学: 
     - Overview: math.md
     - 线性代数:
@@ -105,6 +108,7 @@ nav:
     - 基于BERT模型的预训练剪枝优化: projects/bert-pruning.md
     - 基于RAG的金融问答平台: projects/economic-rag.md
     - LangGraph和Agentickit构建的Salescoach智能体: projects/salescoach-agent.md
+    - 基于贝叶斯理论的测试时动态自适应方法研究: projects/bayesian-tta.md
   - 随笔:
     - Overview: essay.md
     - Reading:
