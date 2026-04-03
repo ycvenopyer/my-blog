@@ -85,6 +85,14 @@
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/cv/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/cv/cnn/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/harness-engineering/</loc>
          <lastmod>2026-04-03</lastmod>
     </url>
@@ -113,7 +121,23 @@
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/alignment/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/bert/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/fine-tuning/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/kv-cache/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/llama/</loc>
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
@@ -121,23 +145,19 @@
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/mamba/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/moe/</loc>
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/peft/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/pre-training/</loc>
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/pre-training-vs-fine-tuning/</loc>
-         <lastmod>2026-04-03</lastmod>
-    </url>
-    <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/rlhf/</loc>
-         <lastmod>2026-04-03</lastmod>
-    </url>
-    <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/sft/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/rwkv/</loc>
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
@@ -149,7 +169,27 @@
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-inference-optimization/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-inference-optimization/deepspeed/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-safety/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-safety/agent-safety/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-speculative-decoding/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/</loc>
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>
@@ -214,6 +254,18 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/zhipu/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/lstm/</loc>
+         <lastmod>2026-04-03</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/rnn/</loc>
          <lastmod>2026-04-03</lastmod>
     </url>
     <url>

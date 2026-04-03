@@ -11,16 +11,28 @@ nav:
     - SSE: tech-note/sse.md
   - AI:
     - Overview: ai.md
+    - ML:
+      - Overview: ai-note/ml/index.md
+    - NLP:
+      - Overview: ai-note/nlp/index.md
+      - RNN: ai-note/nlp/rnn.md
+      - LSTM: ai-note/nlp/lstm.md
+    - CV:
+      - Overview: ai-note/cv/index.md
+      - CNN: ai-note/cv/cnn.md
     - LLM:
       - Overview: ai-note/llm/index.md
       - Transformer: ai-note/llm/transformer.md
-      - MOE: ai-note/llm/moe.md
       - LLM Structure: ai-note/llm/structure.md
+      - LLaMA: ai-note/llm/llama.md
+      - MoE: ai-note/llm/moe.md
+      - RWKV: ai-note/llm/rwkv.md
+      - Mamba: ai-note/llm/mamba.md
       - BERT: ai-note/llm/bert.md
-      - Pre-training vs Fine-tuning: ai-note/llm/pre-training-vs-fine-tuning.md
-      - SFT: ai-note/llm/sft.md
-      - RLHF: ai-note/llm/rlhf.md
-      - PEFT: ai-note/llm/peft.md
+      - KV-Cache: ai-note/llm/kv-cache.md
+      - Pre-training: ai-note/llm/pre-training.md
+      - Fine-tuning: ai-note/llm/fine-tuning.md
+      - Alignment: ai-note/llm/alignment.md
       - LLM API: ai-note/llm/llm-api.md
     - MLLM:
       - Overview: ai-note/mllm/index.md
@@ -28,13 +40,19 @@ nav:
       - ViT: ai-note/mllm/vit.md
       - CLIP: ai-note/mllm/clip.md
       - BLIP: ai-note/mllm/blip.md
-    - LLM Safety:
-      - Overview: ai-note/llm-safety/index.md
     - RAG:
       - Overview: ai-note/rag/index.md
       - Vector Database: ai-note/rag/vector-database.md
       - GraphRAG: ai-note/rag/graphrag.md      
       - RAG Evaluation: ai-note/rag/rag-evaluation.md
+    - LLM Inference Optimization:
+      - Overview: ai-note/llm-inference-optimization/index.md
+      - Deepspeed: ai-note/llm-inference-optimization/deepspeed.md
+    - LLM Speculative Decoding:
+      - Overview: ai-note/llm-speculative-decoding/index.md
+    - LLM Safety:
+      - Overview: ai-note/llm-safety/index.md
+      - Agent Safety: ai-note/llm-safety/agent-safety.md
     - Prompt Engineering:
       - Overview: ai-note/prompt-engineering/index.md
       - ChatGPT Strategy: ai-note/prompt-engineering/chatgpt-strategy.md
