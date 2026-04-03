@@ -7,12 +7,14 @@ nav:
   - 首页: index.md
   - 技术: 
     - Overview: tech.md
+    - Programming Language Trending: tech-note/programming-language-trending.md
     - SSE: tech-note/sse.md
   - AI:
     - Overview: ai.md
     - LLM:
       - Overview: ai-note/llm/index.md
       - Transformer: ai-note/llm/transformer.md
+      - MOE: ai-note/llm/moe.md
       - LLM Structure: ai-note/llm/structure.md
       - BERT: ai-note/llm/bert.md
       - Pre-training vs Fine-tuning: ai-note/llm/pre-training-vs-fine-tuning.md
@@ -26,6 +28,8 @@ nav:
       - ViT: ai-note/mllm/vit.md
       - CLIP: ai-note/mllm/clip.md
       - BLIP: ai-note/mllm/blip.md
+    - LLM Safety:
+      - Overview: ai-note/llm-safety/index.md
     - RAG:
       - Overview: ai-note/rag/index.md
       - Vector Database: ai-note/rag/vector-database.md
@@ -40,6 +44,8 @@ nav:
       - Overview: ai-note/context-engineering/index.md
       - Practice: ai-note/context-engineering/context-engineering-practice.md
       - CL-Bench: ai-note/context-engineering/cl-bench.md
+    - Harness Engineering:
+      - Overview: ai-note/harness-engineering/index.md
     - LangChain:
       - Overview: ai-note/langchain/index.md
       - LangChain: ai-note/langchain/langchain.md
@@ -70,6 +76,18 @@ nav:
       - n8n: ai-note/workflow/n8n.md
       - OpenClaw: ai-note/workflow/openclaw.md
       - OpenViking: ai-note/workflow/openviking.md
+    - Models:
+      - Overview: ai-note/models/index.md
+      - OpenAI: ai-note/models/openai.md
+      - Anthropic: ai-note/models/anthropic.md
+      - Google: ai-note/models/google.md
+      - Zhipu: ai-note/models/zhipu.md
+      - Alibaba: ai-note/models/alibaba.md
+      - ByteDance: ai-note/models/bytedance.md
+      - DeepSeek: ai-note/models/deepseek.md
+      - MiniMax: ai-note/models/minimax.md
+      - Moonshot: ai-note/models/moonshot.md
+      - Xiaomi: ai-note/models/xiaomi.md
   - 数学: 
     - Overview: math.md
     - 线性代数:
