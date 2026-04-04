@@ -5993,8 +5993,8 @@
 <h2 id="4rerank">4.向量搜索与Rerank重排序<a class="headerlink" href="#4rerank" title="Permanent link">&para;</a></h2>
 <h3 id="41-bi-encodercross-encoder">4.1 Bi-encoder与Cross-encoder<a class="headerlink" href="#41-bi-encodercross-encoder" title="Permanent link">&para;</a></h3>
 <p>理解向量搜索与Rerank的区别，首先需要深入了解它们背后的两种核心架构：Bi-encoder（双编码器）和Cross-encoder（交叉编码器）。</p>
-<p>**Bi-encoder架构**采用双塔结构：Query和Document分别通过独立的编码器（通常共享参数）生成各自的向量表示，然后通过余弦相似度或点积计算两者的相关性分数。这种架构的核心优势在于Document可以预先离线编码并建立索引，在线查询时只需编码Query并执行向量检索，计算复杂度从O(n)降至O(1)。Bi-encoder是当前主流Embedding模型的标准架构，适合大规模语料的初筛召回。</p>
-<p>**Cross-encoder架构**则采用完全不同的策略：它将Query和Document拼接为单一输入序列（通常以 [CLS]Query[SEP]Document[SEP]的格式），送入BERT等Transformer模型进行联合编码。模型内部的自注意力机制能够捕捉Query与Document之间的细粒度语义交互，最终输出一个精确的相关性分数，适合小规模精细排序。这种架构的精度显著高于Bi-encoder，但由于每对Query-Document都需要实时计算，无法进行预索引，计算成本极高。</p>
+<p><strong>Bi-encoder架构采用双塔结构</strong>：Query和Document分别通过独立的编码器（通常共享参数）生成各自的向量表示，然后通过余弦相似度或点积计算两者的相关性分数。这种架构的核心优势在于Document可以预先离线编码并建立索引，在线查询时只需编码Query并执行向量检索，计算复杂度从O(n)降至O(1)。Bi-encoder是当前主流Embedding模型的标准架构，适合大规模语料的初筛召回。</p>
+<p><strong>Cross-encoder架构则采用完全不同的策略</strong>：它将Query和Document拼接为单一输入序列（通常以 [CLS]Query[SEP]Document[SEP]的格式），送入BERT等Transformer模型进行联合编码。模型内部的自注意力机制能够捕捉Query与Document之间的细粒度语义交互，最终输出一个精确的相关性分数，适合小规模精细排序。这种架构的精度显著高于Bi-encoder，但由于每对Query-Document都需要实时计算，无法进行预索引，计算成本极高。</p>
 <h3 id="42-rerank">4.2 为什么向量搜索后还需要Rerank？<a class="headerlink" href="#42-rerank" title="Permanent link">&para;</a></h3>
 <p>向量搜索（粗排）与Rerank（精排）形成的两阶段检索架构并非冗余设计，而是在效率与精度之间取得平衡的工程最优解。Rerank的必要性源于以下三个核心原因：</p>
 <p>原因一：解决向量压缩的信息损失</p>
