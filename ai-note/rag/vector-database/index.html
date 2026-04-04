@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1690,6 +1695,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vector Database
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1707,6 +1732,546 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.定义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 向量的来源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 核心概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.相似度度量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.相似度度量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-l2-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 欧氏距离（L2 Distance）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-cosine-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 余弦相似度（Cosine Similarity）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-inner-product-dot-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 内积（Inner Product / Dot Product）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-hamming-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 汉明距离（Hamming Distance）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3ann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.ANN 搜索
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.ANN 搜索">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 为什么需要 ANN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 两阶段流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.常见的 ANN 算法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.常见的 ANN 算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 基于树的方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-ivf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 IVF
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-hnsw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 HNSW
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-pq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 PQ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-scann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 ScaNN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-diskann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 DiskANN
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.评估指标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.向量数据库的典型架构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.向量数据库的典型架构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 存储层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 索引引擎
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 查询引擎
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 分布式协调层（集群模式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 工作流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.向量数据库在 RAG 中的应用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.向量数据库在 RAG 中的应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 知识入库
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 检索增强
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 关键考量
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.常见的向量数据库
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.常见的向量数据库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-faiss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 FAISS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-milvus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Milvus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-qdrant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Qdrant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-weaviate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Weaviate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-chroma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 Chroma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-pinecone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 Pinecone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-pgvector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 pgvector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 对比总结
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.如何选择合适的向量数据库
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.如何选择合适的向量数据库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 数据规模
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 运维能力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 功能需求
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 数据合规
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5333,6 +5898,537 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.定义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 向量的来源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 核心概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.相似度度量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.相似度度量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-l2-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 欧氏距离（L2 Distance）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-cosine-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 余弦相似度（Cosine Similarity）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-inner-product-dot-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 内积（Inner Product / Dot Product）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-hamming-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 汉明距离（Hamming Distance）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3ann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.ANN 搜索
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.ANN 搜索">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 为什么需要 ANN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 两阶段流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.常见的 ANN 算法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.常见的 ANN 算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 基于树的方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-ivf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 IVF
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-hnsw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 HNSW
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-pq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 PQ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-scann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 ScaNN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-diskann" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 DiskANN
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.评估指标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.向量数据库的典型架构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.向量数据库的典型架构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 存储层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 索引引擎
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 查询引擎
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 分布式协调层（集群模式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 工作流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.向量数据库在 RAG 中的应用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.向量数据库在 RAG 中的应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 知识入库
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 检索增强
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 关键考量
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.常见的向量数据库
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.常见的向量数据库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-faiss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 FAISS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-milvus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Milvus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-qdrant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Qdrant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-weaviate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Weaviate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-chroma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 Chroma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-pinecone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 Pinecone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-pgvector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 pgvector
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 对比总结
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.如何选择合适的向量数据库
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.如何选择合适的向量数据库">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 数据规模
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 运维能力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 功能需求
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 数据合规
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -5415,9 +6511,267 @@
 
 
 
-  <h1>Vector Database</h1>
-
-
+<h1 id="_1">向量数据库<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="1">1.定义<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>向量数据库是一种专门用于存储、索引和查询高维向量数据的数据库。其核心能力是高效执行近似最近邻（ANN）搜索，即快速找到与目标向量最相似的 Top-K 个向量。</p>
+<h3 id="11">1.1 向量的来源<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>向量数据库中的向量并非手动录入，而是通过 Embedding 模型将非结构化数据（文本、图片、音频、视频）转换为稠密向量：</p>
+<ul>
+<li>
+<p><strong>文本向量</strong>：如 OpenAI text-embedding-ada-002（1536 维）、BGE、M3E 等模型将句子或段落编码为向量</p>
+</li>
+<li>
+<p><strong>图像向量</strong>：如 CLIP、ResNet 等模型将图像编码为向量</p>
+</li>
+<li>
+<p><strong>多模态向量</strong>：如 CLIP 同时支持文本和图像编码到同一语义空间</p>
+</li>
+</ul>
+<h3 id="12">1.2 核心概念<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Embedding（嵌入）</strong>：将高维稀疏的原始数据映射到低维稠密向量空间的过程</p>
+</li>
+<li>
+<p><strong>维度（Dimension）</strong>：向量的长度，常见为 768、1024、1536 等</p>
+</li>
+<li>
+<p><strong>相似度</strong>：两个向量在空间中的接近程度，语义越相似的数据其向量距离越近</p>
+</li>
+</ul>
+<h2 id="2">2.相似度度量<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>在向量检索中，衡量两个向量"有多像"是核心操作。常用的度量方式有以下几种：</p>
+<h3 id="21-l2-distance">2.1 欧氏距离（L2 Distance）<a class="headerlink" href="#21-l2-distance" title="Permanent link">&para;</a></h3>
+<p>计算两个向量在空间中的直线距离。距离越小越相似。适用于需要衡量绝对位置差异的场景。</p>
+<h3 id="22-cosine-similarity">2.2 余弦相似度（Cosine Similarity）<a class="headerlink" href="#22-cosine-similarity" title="Permanent link">&para;</a></h3>
+<p>计算两个向量夹角的余弦值，取值范围为 [-1, 1]。值越大越相似。它只关注方向不关注大小，是文本向量检索中最常用的度量方式。</p>
+<h3 id="23-inner-product-dot-product">2.3 内积（Inner Product / Dot Product）<a class="headerlink" href="#23-inner-product-dot-product" title="Permanent link">&para;</a></h3>
+<p>两个向量对应分量乘积之和。当向量经过归一化处理后，内积等价于余弦相似度。在推荐系统中广泛使用。</p>
+<h3 id="24-hamming-distance">2.4 汉明距离（Hamming Distance）<a class="headerlink" href="#24-hamming-distance" title="Permanent link">&para;</a></h3>
+<p>计算两个等长二进制串不同位的数量。主要用于二值化向量（如经过二值量化的向量），计算速度极快。</p>
+<h2 id="3ann">3.ANN 搜索<a class="headerlink" href="#3ann" title="Permanent link">&para;</a></h2>
+<h3 id="31-ann">3.1 为什么需要 ANN<a class="headerlink" href="#31-ann" title="Permanent link">&para;</a></h3>
+<p>精确 KNN 搜索需要计算查询向量与数据库中每一个向量的距离，其计算复杂度为 O(Nd)，其中 N 是数据量，d 是向量维度。当数据量达到百万、十亿级别时，这种暴力计算的方式延迟极高，无法满足在线应用的实时性要求。</p>
+<p>ANN（Approximate Nearest Neighbor）搜索通过牺牲少量精度（召回率）来换取几个数量级的速度提升。它采用预先构建索引的方式，避免了全局计算。</p>
+<h3 id="32">3.2 两阶段流程<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>向量检索分为两个阶段：</p>
+<ol>
+<li>
+<p><strong>索引构建阶段（离线）</strong>：对全量向量数据构建索引结构，如聚类中心、图结构或量化码本。此阶段耗时较长但只需执行一次。</p>
+</li>
+<li>
+<p><strong>搜索阶段（在线）</strong>：查询向量利用已构建的索引快速定位候选集，在候选集内计算精确距离并返回 Top-K 结果。此阶段延迟极低。</p>
+</li>
+</ol>
+<h2 id="4-ann">4.常见的 ANN 算法<a class="headerlink" href="#4-ann" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 基于树的方法<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p>将向量空间递归划分为多个子空间，形成树形结构。搜索时只遍历与查询向量相关的分支。代表算法有 KD-Tree、Ball Tree。适用于低维数据（通常 d &lt; 20），在高维向量场景下性能退化严重（维度灾难）。</p>
+<h3 id="42-ivf">4.2 IVF<a class="headerlink" href="#42-ivf" title="Permanent link">&para;</a></h3>
+<p>IVF（Inverted File Index）：先对数据集进行聚类（如 k-means），形成 nlist 个聚类中心。搜索时，先找到距离查询向量最近的 nprobe 个聚类中心，然后只在这些中心包含的向量里进行精确搜索。</p>
+<ul>
+<li>
+<p><strong>优点</strong>：内存占用相对小，适合大规模数据</p>
+</li>
+<li>
+<p><strong>缺点</strong>：需要训练聚类中心，nprobe 参数对性能和精度影响大</p>
+</li>
+</ul>
+<h3 id="43-hnsw">4.3 HNSW<a class="headerlink" href="#43-hnsw" title="Permanent link">&para;</a></h3>
+<p>HNSW（Hierarchical Navigable Small World）：构建多层图结构，上层稀疏便于快速导航，下层稠密保证精度。查询时从顶层入口节点出发，逐层向下贪心搜索。</p>
+<ul>
+<li>
+<p><strong>优点</strong>：查询延迟极低，召回率高，支持动态增删</p>
+</li>
+<li>
+<p><strong>缺点</strong>：内存占用大（通常是原始数据的数倍），构建索引耗时较长</p>
+</li>
+</ul>
+<h3 id="44-pq">4.4 PQ<a class="headerlink" href="#44-pq" title="Permanent link">&para;</a></h3>
+<p>PQ（Product Quantization）：一种向量压缩技术。将高维向量切分成多个子段，对每个子段进行量化（聚类），用聚类中心的 ID 代表原始子向量。大大减少内存占用和距离计算成本。</p>
+<p>通常与 IVF 结合使用，即 IVF-PQ，是内存受限和十亿级数据规模的常用方案。</p>
+<h3 id="45-scann">4.5 ScaNN<a class="headerlink" href="#45-scann" title="Permanent link">&para;</a></h3>
+<p>ScaNN（Scalable Nearest Neighbors）由 Google 提出，结合了 ANQ（Asymmetric Non-Quantization）和树搜索两种技术。在精度和速度之间取得了良好的平衡，是 Google 内部大规模检索的核心算法。</p>
+<h3 id="46-diskann">4.6 DiskANN<a class="headerlink" href="#46-diskann" title="Permanent link">&para;</a></h3>
+<p>DiskANN 由 Microsoft 提出，核心思想是将图索引的大部分数据存储在磁盘上，仅将少量导航数据保留在内存中。通过高效的磁盘 I/O 调度实现十亿级向量的单机检索，大幅降低内存成本。</p>
+<h2 id="5">5.评估指标<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>召回率（Recall）</strong>：返回的 K 个结果中包含真实最近邻的比例，衡量检索精度</p>
+</li>
+<li>
+<p><strong>QPS（Queries Per Second）</strong>：每秒处理的查询数，衡量系统吞吐量</p>
+</li>
+<li>
+<p><strong>延迟（Latency）</strong>：单次查询的耗时，通常关注 P50、P95、P99 分位值</p>
+</li>
+<li>
+<p><strong>内存占用</strong>：索引占用的内存大小，直接影响硬件成本</p>
+</li>
+</ul>
+<h2 id="6">6.向量数据库的典型架构<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<p>一个完整的向量数据库通常包含以下核心组件：</p>
+<h3 id="61">6.1 存储层<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<p>负责向量和元数据的持久化。常见的存储方案包括本地文件系统、对象存储（如 S3、MinIO）以及内嵌的轻量级数据库（如 SQLite、RocksDB）。</p>
+<h3 id="62">6.2 索引引擎<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<p>核心检索组件，负责构建和维护 ANN 索引（HNSW、IVF、PQ 等），执行向量相似度计算。</p>
+<h3 id="63">6.3 查询引擎<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<p>接收查询请求，解析过滤条件，协调索引引擎执行检索，对结果进行排序和裁剪后返回。</p>
+<h3 id="64">6.4 分布式协调层（集群模式）<a class="headerlink" href="#64" title="Permanent link">&para;</a></h3>
+<p>在分布式部署中，负责数据分片（Sharding）、副本管理、负载均衡和故障恢复。通常借助 etcd、Kubernetes 等基础设施实现。</p>
+<h3 id="65">6.5 工作流程<a class="headerlink" href="#65" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1. 数据写入 → 向量 + 元数据(Payload) → 持久化存储
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>2. 索引构建 → 从存储读取向量 → 构建 ANN 索引
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>3. 查询请求 → 解析过滤条件 → 索引检索候选集 → 精确距离计算 → 过滤 + 排序 → 返回 Top-K
+</code></pre></div>
+<h2 id="7-rag">7.向量数据库在 RAG 中的应用<a class="headerlink" href="#7-rag" title="Permanent link">&para;</a></h2>
+<p>在 RAG（Retrieval-Augmented Generation）架构中，向量数据库是检索层的核心组件：</p>
+<h3 id="71">7.1 知识入库<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<p>将文档切分为 Chunk → 通过 Embedding 模型向量化 → 连同元数据（来源、标题、段落编号等）写入向量数据库 → 后台异步构建索引。</p>
+<h3 id="72">7.2 检索增强<a class="headerlink" href="#72" title="Permanent link">&para;</a></h3>
+<p>用户提问 → 问题向量化 → 在向量数据库中检索 Top-K 相关 Chunk → 将检索结果作为上下文拼接到 Prompt → 交由 LLM 生成回答。</p>
+<h3 id="73">7.3 关键考量<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Chunk 大小</strong>：影响检索精度和上下文窗口利用率</p>
+</li>
+<li>
+<p><strong>元数据过滤</strong>：支持按文档来源、时间范围等条件过滤后再检索</p>
+</li>
+<li>
+<p><strong>混合检索</strong>：向量检索 + BM25 关键词检索融合，提升召回质量</p>
+</li>
+<li>
+<p><strong>重排序（Rerank）</strong>：检索结果经过精排模型二次排序</p>
+</li>
+</ul>
+<h2 id="8">8.常见的向量数据库<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<h3 id="81-faiss">8.1 FAISS<a class="headerlink" href="#81-faiss" title="Permanent link">&para;</a></h3>
+<p>FAISS（Facebook AI Similarity Search）由 Meta 开源，是一个用于高效向量检索的 C++ 库，提供 Python 接口。它不是一个独立的数据库服务，而是一个底层检索引擎。支持 IVF、PQ、HNSW 等多种 ANN 算法，支持 GPU 加速。适合需要将向量检索能力嵌入自有系统的场景，但需要自行处理数据持久化、分布式和高可用等问题。</p>
+<h3 id="82-milvus">8.2 Milvus<a class="headerlink" href="#82-milvus" title="Permanent link">&para;</a></h3>
+<p>Milvus 由 Zilliz 开发，是一款开源的云原生分布式向量数据库。支持多种 ANN 索引（IVF、HNSW、SCANN 等），支持标量过滤、混合检索、多租户、数据分片和副本。提供独立的 standalone 和分布式集群部署模式，适合大规模生产环境。Zilliz Cloud 是其全托管云服务版本。</p>
+<h3 id="83-qdrant">8.3 Qdrant<a class="headerlink" href="#83-qdrant" title="Permanent link">&para;</a></h3>
+<p>Qdrant 用 Rust 编写，是一款开源向量数据库，以高性能和低延迟著称。支持 HNSW 作为默认索引，内置丰富的过滤查询和 payload 管理功能。提供 gRPC 和 REST API，支持 Docker 部署和 Qdrant Cloud 托管服务。其独特的量化机制（标量量化、二进制量化、乘积量化）可在保证召回率的同时显著降低内存占用。</p>
+<h3 id="84-weaviate">8.4 Weaviate<a class="headerlink" href="#84-weaviate" title="Permanent link">&para;</a></h3>
+<p>Weaviate 是一款开源向量数据库，特点是内置向量化模块，可以直接在数据库内调用多种 Embedding 模型（如 OpenAI、Cohere、HuggingFace 等），无需外部生成向量再导入。支持 HNSW 索引，提供 GraphQL 查询接口和 RESTful API。适合希望简化 Embedding + 存储 + 检索全链路的场景。</p>
+<h3 id="85-chroma">8.5 Chroma<a class="headerlink" href="#85-chroma" title="Permanent link">&para;</a></h3>
+<p>Chroma 定位为 AI 原生嵌入式向量数据库，主打轻量级和开发者友好。默认使用 HNSW 索引，支持本地持久化和内存模式，pip install 即可使用。与 LangChain、LlamaIndex 等框架集成良好，非常适合原型开发、本地实验和中小规模应用。但在大规模分布式和高可用方面能力较弱。</p>
+<h3 id="86-pinecone">8.6 Pinecone<a class="headerlink" href="#86-pinecone" title="Permanent link">&para;</a></h3>
+<p>Pinecone 是全托管的闭源向量数据库服务，无需运维，开箱即用。支持元数据过滤、命名空间隔离和稀疏-稠密混合检索。其特点是完全托管、自动扩缩容、SLA 保障，适合不想投入运维资源的团队。缺点是数据存储在 Pinecone 云端，存在供应商锁定和数据合规方面的考量。</p>
+<h3 id="87-pgvector">8.7 pgvector<a class="headerlink" href="#87-pgvector" title="Permanent link">&para;</a></h3>
+<p>pgvector 是 PostgreSQL 的一个扩展，让传统关系型数据库具备向量存储和检索能力。支持 HNSW 和 IVFFlat 索引，支持将向量数据与业务数据放在同一数据库中，便于关联查询和事务一致性。适合已有 PostgreSQL 基础设施、向量规模不大且希望减少技术栈复杂度的团队。</p>
+<h3 id="88">8.8 对比总结<a class="headerlink" href="#88" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>数据库</th>
+<th>类型</th>
+<th>主要索引</th>
+<th>分布式</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FAISS</td>
+<td>库</td>
+<td>IVF/PQ/HNSW</td>
+<td>否</td>
+<td>底层引擎嵌入</td>
+</tr>
+<tr>
+<td>Milvus</td>
+<td>数据库</td>
+<td>IVF/HNSW/SCANN</td>
+<td>是</td>
+<td>大规模生产</td>
+</tr>
+<tr>
+<td>Qdrant</td>
+<td>数据库</td>
+<td>HNSW</td>
+<td>是</td>
+<td>高性能低延迟</td>
+</tr>
+<tr>
+<td>Weaviate</td>
+<td>数据库</td>
+<td>HNSW</td>
+<td>是</td>
+<td>内置 Embedding</td>
+</tr>
+<tr>
+<td>Chroma</td>
+<td>嵌入式</td>
+<td>HNSW</td>
+<td>否</td>
+<td>原型开发</td>
+</tr>
+<tr>
+<td>Pinecone</td>
+<td>托管服务</td>
+<td>专有</td>
+<td>是</td>
+<td>零运维</td>
+</tr>
+<tr>
+<td>pgvector</td>
+<td>扩展</td>
+<td>HNSW/IVFFlat</td>
+<td>依赖 PG</td>
+<td>已有 PG 基础设施</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9">9.如何选择合适的向量数据库<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<p>选择向量数据库时需要综合考虑以下因素：</p>
+<h3 id="91">9.1 数据规模<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>万到百万级</strong>：Chroma、pgvector、Qdrant 单机版即可满足</p>
+</li>
+<li>
+<p><strong>千万到亿级</strong>：Milvus、Qdrant 集群版、Weaviate</p>
+</li>
+<li>
+<p><strong>十亿级以上</strong>：Milvus 分布式、DiskANN 方案</p>
+</li>
+</ul>
+<h3 id="92">9.2 运维能力<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>零运维</strong>：Pinecone、Zilliz Cloud 等全托管服务</p>
+</li>
+<li>
+<p><strong>有运维能力</strong>：Milvus、Qdrant、Weaviate 自建集群</p>
+</li>
+<li>
+<p><strong>极简部署</strong>：Chroma、pgvector（已有 PG 时）</p>
+</li>
+</ul>
+<h3 id="93">9.3 功能需求<a class="headerlink" href="#93" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>需要标量过滤</strong>：Milvus、Qdrant、Weaviate、pgvector</p>
+</li>
+<li>
+<p><strong>需要混合检索</strong>：Milvus、Weaviate、Pinecone</p>
+</li>
+<li>
+<p><strong>需要内置 Embedding</strong>：Weaviate</p>
+</li>
+<li>
+<p><strong>需要 GPU 加速</strong>：FAISS、Milvus</p>
+</li>
+</ul>
+<h3 id="94">9.4 数据合规<a class="headerlink" href="#94" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>数据必须本地存储</strong>：FAISS、Milvus、Qdrant、Chroma、pgvector（均支持自建）</p>
+</li>
+<li>
+<p><strong>可接受云端存储</strong>：Pinecone、Zilliz Cloud、Qdrant Cloud</p>
+</li>
+</ul>
 
 
 
