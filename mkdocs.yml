@@ -61,7 +61,6 @@ nav:
     - Context Engineering:
       - Overview: ai-note/context-engineering/index.md
       - Practice: ai-note/context-engineering/context-engineering-practice.md
-      - CL-Bench: ai-note/context-engineering/cl-bench.md
     - Harness Engineering:
       - Overview: ai-note/harness-engineering/index.md
     - LangChain:

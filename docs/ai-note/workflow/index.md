@@ -12,8 +12,6 @@
 
 - Cursor - AI原生代码编辑器
 
-- Tabnine - 本地代码补全工具
-
 2.写作与文档类
 
 - Claude/ChatGPT - 长文本写作、逻辑推理
