@@ -8,6 +8,20 @@
 
 - **硕士** | 南京大学 | 计算机学院 | 计算机技术 | 2026 - 至今
 
+## 🗺️ 研究方向
+
+- 大模型句子嵌入抽取
+- 大语言模型安全
+
+## 🔧 技能特长
+
+- Python
+- Java
+- RAG
+- AI Agent开发，LangChain, LangGraph 开发框架
+- Claude Code, Cursor, OpenClaw 等AI工具
+- Tool Use, Skill, MCP, Prompt 工程
+
 ## 💼 实习经历
 
 - **AI产品实习生** | 绚星智慧科技 | 2026.1 - 2026.3
@@ -16,20 +30,6 @@
   - 设计状态管理机制，实现上下文追踪、对象管理、SQL 查询结果缓存等核心能力，显著提升响应速度与对话连贯性。
   - 采用中间件模式实现工具链管理和状态注入，集成 Langfuse 进行全链路监控，构建了可观测的 Agent 基础设施。
   - 成功赋能销售人员实现智能话术生成、实时竞品分析、客户需求洞察，有效提升销售转化效率。
-
-## 🔧 技术栈
-
-- Python
-- Java
-- RAG
-- AI Agent开发，LangChain, LangGraph 开发框架
-- Claude Code, Cursor, OpenClaw等AI工具
-- Skill, MCP, Prompt工程
-
-## 🗺️ 研究方向
-
-- MoE模型抽取句子嵌入和加速解码
-- Agent安全
 
 ## 🎯 兴趣爱好
 
