@@ -1,10 +1,6 @@
-##
+## SSE
 
-##
-
-##
-
-##
+## SSE vs WebSocket
 
 ## Reference
 

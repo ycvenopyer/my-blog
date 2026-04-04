@@ -6,6 +6,6 @@
 
 ## Hello World!🥳
 
-<font size=4 face="微软雅黑">这里记录了我的学习历程、技术笔记以及一些个人感悟。</font>
+<font size=6 face="微软雅黑">努力成为AI时代的一片浪花</font>
 
 
