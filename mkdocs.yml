@@ -1,5 +1,5 @@
 site_name: ycvenopyer
-site_description: 我的AI自制个人博客
+site_description: 我的个人博客
 site_author: ycvenopyer
 site_url: https://ycvenopyer.github.io/my-blog
 
@@ -40,14 +40,25 @@ nav:
       - ViT: ai-note/mllm/vit.md
       - CLIP: ai-note/mllm/clip.md
       - BLIP: ai-note/mllm/blip.md
+    - AIGC:
+      - Overview: ai-note/aigc/index.md
+      - GAN: ai-note/aigc/gan.md
+      - Stable Diffusion: ai-note/aigc/stable-diffusion.md
+      - Midjourney: ai-note/aigc/midjourney.md
+      - DALL-E: ai-note/aigc/dall-e.md
+      - Suno: ai-note/aigc/suno.md
     - RAG:
       - Overview: ai-note/rag/index.md
       - Vector Database: ai-note/rag/vector-database.md
       - GraphRAG: ai-note/rag/graphrag.md      
       - RAG Evaluation: ai-note/rag/rag-evaluation.md
-    - LLM Inference Optimization:
-      - Overview: ai-note/llm-inference-optimization/index.md
-      - Deepspeed: ai-note/llm-inference-optimization/deepspeed.md
+    - Deep Research:
+      - Overview: ai-note/deep-research/index.md
+      - Deep Research Product: ai-note/deep-research/deep-research-product.md
+      - DeerFlow: ai-note/deep-research/deerflow.md
+    - LLM Distributed Training and Inference:
+      - Overview: ai-note/llm-distributed-training-and-inference/index.md
+      - Deepspeed: ai-note/llm-distributed-training-and-inference/deepspeed.md
     - LLM Speculative Decoding:
       - Overview: ai-note/llm-speculative-decoding/index.md
     - LLM Safety:
@@ -146,6 +157,8 @@ nav:
     - 基于贝叶斯理论的测试时动态自适应方法研究: projects/bayesian-tta.md
   - 随笔:
     - Overview: essay.md
+    - Kaoyan:
+      - 经验贴: essay/kaoyan/experience.md
     - Reading:
       - Overview: essay/reading/index.md
     - Paper:
