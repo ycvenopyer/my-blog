@@ -161,6 +161,10 @@
          <lastmod>2026-04-05</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/cot/</loc>
+         <lastmod>2026-04-05</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/fine-tuning/</loc>
          <lastmod>2026-04-05</lastmod>
     </url>
@@ -174,6 +178,10 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/llm-api/</loc>
+         <lastmod>2026-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/llm-infra/</loc>
          <lastmod>2026-04-05</lastmod>
     </url>
     <url>
@@ -201,11 +209,19 @@
          <lastmod>2026-04-05</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/</loc>
+         <lastmod>2026-04-05</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/</loc>
          <lastmod>2026-04-05</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/deepspeed/</loc>
+         <lastmod>2026-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-evaluation-and-interpretability/</loc>
          <lastmod>2026-04-05</lastmod>
     </url>
     <url>

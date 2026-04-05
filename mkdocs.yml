@@ -33,6 +33,8 @@ nav:
       - Pre-training: ai-note/llm/pre-training.md
       - Fine-tuning: ai-note/llm/fine-tuning.md
       - Alignment: ai-note/llm/alignment.md
+      - CoT: ai-note/llm/cot.md
+      - LLM Infra: ai-note/llm/llm-infra.md
       - LLM API: ai-note/llm/llm-api.md
     - MLLM:
       - Overview: ai-note/mllm/index.md
@@ -40,6 +42,18 @@ nav:
       - ViT: ai-note/mllm/vit.md
       - CLIP: ai-note/mllm/clip.md
       - BLIP: ai-note/mllm/blip.md
+    - LLM Distributed Training and Inference:
+      - Overview: ai-note/llm-distributed-training-and-inference/index.md
+      - Deepspeed: ai-note/llm-distributed-training-and-inference/deepspeed.md
+    - LLM Compression and Quantization:
+      - Overview: ai-note/llm-compression-and-quantization/index.md
+    - LLM Speculative Decoding:
+      - Overview: ai-note/llm-speculative-decoding/index.md
+    - LLM Safety:
+      - Overview: ai-note/llm-safety/index.md
+      - Agent Safety: ai-note/llm-safety/agent-safety.md
+    - LLM Evaluation and Interpretability:
+      - Overview: ai-note/llm-evaluation-and-interpretability/index.md
     - AIGC:
       - Overview: ai-note/aigc/index.md
       - GAN: ai-note/aigc/gan.md
@@ -56,14 +70,6 @@ nav:
       - Overview: ai-note/deep-research/index.md
       - Deep Research Product: ai-note/deep-research/deep-research-product.md
       - DeerFlow: ai-note/deep-research/deerflow.md
-    - LLM Distributed Training and Inference:
-      - Overview: ai-note/llm-distributed-training-and-inference/index.md
-      - Deepspeed: ai-note/llm-distributed-training-and-inference/deepspeed.md
-    - LLM Speculative Decoding:
-      - Overview: ai-note/llm-speculative-decoding/index.md
-    - LLM Safety:
-      - Overview: ai-note/llm-safety/index.md
-      - Agent Safety: ai-note/llm-safety/agent-safety.md
     - Prompt Engineering:
       - Overview: ai-note/prompt-engineering/index.md
       - ChatGPT Strategy: ai-note/prompt-engineering/chatgpt-strategy.md
