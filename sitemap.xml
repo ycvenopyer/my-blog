@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/</loc>
+         <lastmod>2026-04-07</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/about/</loc>
          <lastmod>2026-04-07</lastmod>
     </url>
@@ -10,10 +14,6 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/essay/</loc>
-         <lastmod>2026-04-07</lastmod>
-    </url>
-    <url>
-         <loc>https://ycvenopyer.github.io/my-blog/homepage/</loc>
          <lastmod>2026-04-07</lastmod>
     </url>
     <url>
