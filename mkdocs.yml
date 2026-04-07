@@ -4,8 +4,8 @@ site_author: ycvenopyer
 site_url: https://ycvenopyer.github.io/my-blog
 
 nav:
-  - 首页: index.md
-  - 技术: 
+  - Homepage: homepage.md
+  - Tech: 
     - Overview: tech.md
     - Programming Language Trending: tech-note/programming-language-trending.md
     - SSE: tech-note/sse.md
@@ -122,10 +122,9 @@ nav:
       - MiniMax: ai-note/models/minimax.md
       - Moonshot: ai-note/models/moonshot.md
       - Xiaomi: ai-note/models/xiaomi.md
-  - 数学: 
+  - Math: 
     - Overview: math.md
     - 线性代数:
-      - 概述: math/linear-algebra/index.md
       - 行列式: math/linear-algebra/determinant.md
       - 矩阵: math/linear-algebra/matrix.md
       - 向量组: math/linear-algebra/vector.md
@@ -134,7 +133,6 @@ nav:
       - 相似: math/linear-algebra/similar.md
       - 二次型: math/linear-algebra/quadatic-form.md
     - 概率论与数理统计:
-      - 概述: math/probability-and-statistics/index.md
       - 随机事件及其概率: math/probability-and-statistics/random-event-and-probability.md
       - 一维随机变量及其分布: math/probability-and-statistics/single-rv.md
       - 多维随机变量及其分布: math/probability-and-statistics/multi-rv.md
@@ -144,7 +142,6 @@ nav:
       - 参数估计: math/probability-and-statistics/parameter-estimation.md
       - 假设检验: math/probability-and-statistics/hypothesis-testing.md
     - 离散数学:
-      - 概述: math/discrete-math/index.md
       - 命题逻辑: math/discrete-math/propositional-logic.md
       - 谓词逻辑: math/discrete-math/predicate-logic.md
       - 集合: math/discrete-math/set.md
@@ -155,13 +152,13 @@ nav:
       - 群论: math/discrete-math/group-theory.md
       - 图论: math/discrete-math/graph-theory.md
       - 树: math/discrete-math/tree.md
-  - 项目: 
+  - Project: 
     - Overview: projects.md
-    - 基于BERT模型的预训练剪枝优化: projects/bert-pruning.md
-    - 基于RAG的金融问答平台: projects/economic-rag.md
-    - LangGraph和Agentickit构建的Salescoach智能体: projects/salescoach-agent.md
-    - 基于贝叶斯理论的测试时动态自适应方法研究: projects/bayesian-tta.md
-  - 随笔:
+    - BERT Pruning: projects/bert-pruning.md
+    - RAG-based Financial Q&A Platform: projects/economic-rag.md
+    - Salescoach Agent Built with LangGraph and Agentickit: projects/salescoach-agent.md
+    - Bayesian-TTA: projects/bayesian-tta.md
+  - Essay:
     - Overview: essay.md
     - Kaoyan:
       - 经验贴: essay/kaoyan/experience.md
@@ -169,7 +166,7 @@ nav:
       - Overview: essay/reading/index.md
     - Paper:
       - Overview: essay/paper/index.md
-  - 关于我: about.md
+  - About: about.md
 
 theme:
   name: material
