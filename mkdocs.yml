@@ -4,7 +4,7 @@ site_author: ycvenopyer
 site_url: https://ycvenopyer.github.io/my-blog
 
 nav:
-  - Homepage: homepage.md
+  - Homepage: index.md
   - Tech: 
     - Overview: tech.md
     - Programming Language Trending: tech-note/programming-language-trending.md
