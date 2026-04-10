@@ -165,7 +165,7 @@ nav:
     - Reading:
       - Overview: essay/reading/index.md
     - Paper:
-      - Overview: essay/paper/index.md
+      - Olica: essay/paper/olica.md
   - About: about.md
 
 theme:
