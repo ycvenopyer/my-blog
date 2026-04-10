@@ -6474,6 +6474,7 @@
 <h1 id="olica-efficient-structured-pruning-of-large-language-models-without-retraining">Olica: Efficient Structured Pruning of Large Language Models without Retraining<a class="headerlink" href="#olica-efficient-structured-pruning-of-large-language-models-without-retraining" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>作者：Jiujun He、Huazhen Lin 等，西南财经大学统计与数据科学学院等。<br />
+论文链接： <a href="https://arxiv.org/abs/2506.08436">https://arxiv.org/abs/2506.08436</a>
 开源代码：<a href="https://github.com/BetterTMrR/LLM-Olica">https://github.com/BetterTMrR/LLM-Olica</a></p>
 </blockquote>
 <hr />
@@ -6486,7 +6487,7 @@
 <li><strong>部署困难</strong>：在边缘设备上部署与推理难度陡增。  </li>
 <li><strong>资源需求</strong>：训练与推理对算力、显存要求高。</li>
 </ul>
-<p>现有模型压缩手段包括**网络剪枝、知识蒸馏、量化**等。Olica 聚焦**网络剪枝**，目标是在去除冗余参数的同时尽量保持模型能力。</p>
+<p>现有模型压缩手段包括网络剪枝、知识蒸馏、量化等。Olica 聚焦网络剪枝，目标是在去除冗余参数的同时尽量保持模型能力。</p>
 <h3 id="12">1.2 结构化与非结构化剪枝<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
 <p><img alt="剪枝分类" src="../image/pruning.png" /></p>
 <p>面向 LLM 的剪枝可粗分为两类：</p>
@@ -6497,39 +6498,39 @@
 <h3 id="13">1.3 现有结构化剪枝的局限<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
 <p>结构化剪枝常见两条技术路线：</p>
 <ul>
-<li><strong>基于梯度（gradient-based）</strong>：借助损失函数的泰勒展开等估计参数重要性（如 OBD、OBS）。但对 LLM **全体参数求梯度**代价极高。  </li>
-<li><strong>基于正则化（regularization-based）</strong>：对参数施加 L1/L2 等促使稀疏。LLM <strong>预训练本身已极耗资源</strong>，实践中往往避免再叠加强结构化正则。</li>
+<li><strong>基于梯度（gradient-based）</strong>：借助损失函数的泰勒展开等估计参数重要性（如 OBD、OBS）。但对 LLM 全体参数求梯度代价极高。  </li>
+<li><strong>基于正则化（regularization-based）</strong>：对参数施加 L1/L2 等促使稀疏。LLM 预训练本身已极耗资源，实践中往往避免再叠加强结构化正则。</li>
 </ul>
 <p>此外，许多 LLM 结构化剪枝工作还存在：</p>
 <ul>
 <li><strong>重硬件与多卡</strong>：例如 DISP-LLM 剪枝 13B LLaMA 需要多张 A100 80GB。  </li>
 <li><strong>依赖大量数据与重训练</strong>：如 LLM-Pruner、LoRAP、SlimGPT 等往往需要数万条标注指令数据做恢复训练。  </li>
-<li><strong>剪枝后关联被破坏</strong>：通常需要昂贵的**重训练**来重建层间依赖与性能。</li>
+<li><strong>剪枝后关联被破坏</strong>：通常需要昂贵的重训练来重建层间依赖与性能。</li>
 </ul>
-<p>Olica 的动机正是在上述约束下，探索**尽量少数据、少算力、无需完整重训练**的结构化剪枝路径。</p>
+<p>Olica 的动机正是在上述约束下，探索尽量少数据、少算力、无需完整重训练的结构化剪枝路径。</p>
 <hr />
 <h2 id="2">2. 剪枝方法<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h3 id="21">2.1 核心观察与总体思路<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
 <p><img alt="Transformer" src="../image/transformer.png" /></p>
-<p>Transformer 中 <strong>多头注意力层（MHA）</strong> 涉及两组矩阵乘积：<span class="arithmatex">\(W_q W_k^\top\)</span> 与 <span class="arithmatex">\(W_v W_o^\top\)</span>。Olica 的关键是将这类**矩阵乘积视作统一对象**，对其施加**主成分分析（PCA）**，用低维子空间保留主要信息，从而在**不破坏整体模块形状、不依赖大规模重训练**的前提下压缩 MHA。</p>
+<p>Transformer 中 <strong>多头注意力层（MHA）</strong> 涉及两组矩阵乘积：<span class="arithmatex">\(W_q W_k^\top\)</span> 与 <span class="arithmatex">\(W_v W_o^\top\)</span>。Olica 的关键是将这类矩阵乘积视作统一对象，对其施加主成分分析（PCA），用低维子空间保留主要信息，从而在不破坏整体模块形状、不依赖大规模重训练的前提下压缩 MHA。</p>
 <h3 id="22-mhaond">2.2 MHA：正交神经元分解（OND）<a class="headerlink" href="#22-mhaond" title="Permanent link">&para;</a></h3>
-<p><strong>正交神经元分解（Orthogonal Neuron Decomposition, OND）</strong> 将 MHA 中的 <span class="arithmatex">\(W_v\)</span> 与 <span class="arithmatex">\(W_o\)</span> 视为一体，通过 <strong>SVD</strong> 提取主结构。设 <span class="arithmatex">\(W_{vo} = U \Sigma V^\top\)</span>，可定义 <span class="arithmatex">\(\hat{W}_v \leftarrow U\Sigma\)</span>、<span class="arithmatex">\(\hat{W}_o \leftarrow V\)</span> 等形式（并保持与 <span class="arithmatex">\(W_v\)</span> 相关的恒等/等价关系，具体实现见论文），使得分解后 <strong><span class="arithmatex">\(U\)</span>、<span class="arithmatex">\(V\)</span> 列正交</strong>，输出方向上的信息更“去相关”，便于在固定维度内保留尽可能多的有效信息。</p>
-<p><strong>剪枝策略</strong>：对每个神经元（或等价特征方向）定义**重要性评分**，优先剪掉重要性最低的部分。</p>
+<p><strong>正交神经元分解（Orthogonal Neuron Decomposition, OND）</strong> 将 MHA 中的 <span class="arithmatex">\(W_v\)</span> 与 <span class="arithmatex">\(W_o\)</span> 视为一体，通过 SVD 提取主结构。设 <span class="arithmatex">\(W_{vo} = U \Sigma V^\top\)</span>，可定义 <span class="arithmatex">\(\hat{W}_v \leftarrow U\Sigma\)</span>、<span class="arithmatex">\(\hat{W}_o \leftarrow V\)</span> 等形式（并保持与 <span class="arithmatex">\(W_v\)</span> 相关的恒等/等价关系，具体实现见论文），使得分解后 <strong><span class="arithmatex">\(U\)</span>、<span class="arithmatex">\(V\)</span> 列正交</strong>，输出方向上的信息更“去相关”，便于在固定维度内保留尽可能多的有效信息。</p>
+<p><strong>剪枝策略</strong>：对每个神经元（或等价特征方向）定义重要性评分，优先剪掉重要性最低的部分。</p>
 <p><img alt="Importance Score" src="../image/importance-score.png" /></p>
 <h3 id="23-fast-ond">2.3 Fast-OND：降低分解复杂度<a class="headerlink" href="#23-fast-ond" title="Permanent link">&para;</a></h3>
 <p><img alt="Fast-OND" src="../image/OND.png" /></p>
-<p>朴素 OND 若对 <strong><span class="arithmatex">\(h\)</span> 个注意力头分别**做 SVD，复杂度约为 **<span class="arithmatex">\(O(h d^3)\)</span></strong>，对 7B 级模型可能达到约**一小时**量级。</p>
+<p>朴素 OND 若对 <strong><span class="arithmatex">\(h\)</span> 个注意力头分别做 SVD，复杂度约为 <span class="arithmatex">\(O(h d^3)\)</span></strong>，对 7B 级模型可能达到约一小时。</p>
 <p><img alt="SVD" src="../image/SVD.png" /></p>
-<p>Olica 利用一个经验观察：<strong><span class="arithmatex">\(W_q\)</span> 与 <span class="arithmatex">\(W_k\)</span>（以及 <span class="arithmatex">\(W_v\)</span> 与 <span class="arithmatex">\(W_o\)</span>）的奇异值分布高度相似</strong>，在相同“能量保留比例”下所需奇异值个数也接近。据此提出 <strong>Fast-OND</strong>：<strong>仅对 <span class="arithmatex">\(W_v\)</span> 做 SVD</strong>，令 <span class="arithmatex">\(W_v = U \Sigma V^\top\)</span>，再据此更新 <span class="arithmatex">\(\hat{W}_v \leftarrow U\)</span>、<span class="arithmatex">\(\hat{W}_o \leftarrow W_o V \Sigma^\top\)</span>（与论文记号一致），将复杂度降至约 <strong><span class="arithmatex">\(O(d^3 / h)\)</span></strong>。对 LLaMA-7B（如 <span class="arithmatex">\(h=32\)</span>）可在**数分钟级**完成剪枝。</p>
+<p>Olica 利用一个经验观察：<strong><span class="arithmatex">\(W_q\)</span> 与 <span class="arithmatex">\(W_k\)</span>（以及 <span class="arithmatex">\(W_v\)</span> 与 <span class="arithmatex">\(W_o\)</span>）的奇异值分布高度相似</strong>，在相同“能量保留比例”下所需奇异值个数也接近。据此提出 <strong>Fast-OND</strong>：<strong>仅对 <span class="arithmatex">\(W_v\)</span> 做 SVD</strong>，令 <span class="arithmatex">\(W_v = U \Sigma V^\top\)</span>，再据此更新 <span class="arithmatex">\(\hat{W}_v \leftarrow U\)</span>、<span class="arithmatex">\(\hat{W}_o \leftarrow W_o V \Sigma^\top\)</span>，将复杂度降至约 <strong><span class="arithmatex">\(O(d^3 / h)\)</span></strong>。对 LLaMA-7B（如 <span class="arithmatex">\(h=32\)</span>）可在数分钟级完成剪枝。</p>
 <h3 id="24-ffn">2.4 FFN 层剪枝<a class="headerlink" href="#24-ffn" title="Permanent link">&para;</a></h3>
-<p>对前馈（FFN）层，剪枝目标是**中间神经元**。用**重要性评分**对中间神经元排序，按目标**稀疏率 <span class="arithmatex">\(s\)</span>** 剪掉低分神经元，使权重形状由 <span class="arithmatex">\(\mathbb{R}^{d \times 4d}\)</span> 变为 <span class="arithmatex">\(\mathbb{R}^{d \times d'}\)</span>（<span class="arithmatex">\(d'\)</span> 由稀疏率决定）。</p>
-<p><strong>问题</strong>：层输出发生变化后，误差会在深度网络中**逐层累积**，需要额外**校准**。</p>
+<p>对前馈（FFN）层，剪枝目标是中间神经元。用重要性评分对中间神经元排序，按目标稀疏率 <span class="arithmatex">\(s\)</span> 剪掉低分神经元，使权重形状由 <span class="arithmatex">\(\mathbb{R}^{d \times 4d}\)</span> 变为 <span class="arithmatex">\(\mathbb{R}^{d \times d'}\)</span>（<span class="arithmatex">\(d'\)</span> 由稀疏率决定）。</p>
+<p><strong>问题</strong>：层输出发生变化后，误差会在深度网络中逐层累积，需要额外校准。</p>
 <h3 id="25">2.5 线性校准（无需重训练）<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
-<p>为重建剪枝 FFN 引入的**残差误差**并避免完整重训练，Olica 使用**岭回归**拟合误差项 <span class="arithmatex">\(E\)</span>，对校准矩阵 <span class="arithmatex">\(\hat{W}\)</span> 求**闭式解**，并相应修改前向传播形式。</p>
+<p>为重建剪枝 FFN 引入的残差误差并避免完整重训练，Olica 使用*岭回归拟合误差项 <span class="arithmatex">\(E\)</span>，对校准矩阵 <span class="arithmatex">\(\hat{W}\)</span> 求闭式解，并相应修改前向传播形式。</p>
 <h3 id="26">2.6 层选择与低秩近似<a class="headerlink" href="#26" title="Permanent link">&para;</a></h3>
 <p><img alt="layer-selcetion-and-low-rank" src="../image/layer-selection-and-low-rank.png" /></p>
-<p><strong>层选择</strong>：随着参与校准的 FFN 层数增加，<strong>困惑度（PPL）**通常先降后趋于平稳；校准层并非越多越好，过多会引入额外参数与过拟合风险。论文使用 **多重相关系数 <span class="arithmatex">\(MC^2\)</span></strong> 衡量线性可恢复程度：<span class="arithmatex">\(R_{XE}\)</span> 越大，残差越适合用线性方式补偿；实验上**较浅层 FFN** 的残差往往**更易校准**。</p>
-<p><strong>低秩近似</strong>：若直接引入完整 <span class="arithmatex">\(\hat{W}\)</span>，参数量约 <strong><span class="arithmatex">\(d^2\)</span></strong>，约占单层 FFN 的 <strong>&#8539;</strong>。可将 <span class="arithmatex">\(\hat{W}\)</span> <strong>低秩分解</strong>，只保留**前 <span class="arithmatex">\(r\)</span> 个最大奇异值对应的方向**，将新增参数降到约 <strong><span class="arithmatex">\(2dr\)</span></strong>（<span class="arithmatex">\(r \ll d\)</span>）。</p>
+<p><strong>层选择</strong>：随着参与校准的 FFN 层数增加，困惑度（PPL）通常先降后趋于平稳；校准层并非越多越好，过多会引入额外参数与过拟合风险。论文使用 多重相关系数 <span class="arithmatex">\(MC^2\)</span> 衡量线性可恢复程度：<span class="arithmatex">\(R_{XE}\)</span> 越大，残差越适合用线性方式补偿；实验上较浅层 FFN 的残差往往更易校准。</p>
+<p><strong>低秩近似</strong>：若直接引入完整 <span class="arithmatex">\(\hat{W}\)</span>，参数量约 <strong><span class="arithmatex">\(d^2\)</span></strong>，约占单层 FFN 的 &#8539;。可将 <span class="arithmatex">\(\hat{W}\)</span> 低秩分解，只保留前 <span class="arithmatex">\(r\)</span> 个最大奇异值对应的方向，将新增参数降到约 <strong><span class="arithmatex">\(2dr\)</span></strong>（<span class="arithmatex">\(r \ll d\)</span>）。</p>
 <hr />
 <h2 id="3">3. 实验与结果<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <h3 id="31">3.1 设置<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
@@ -6547,7 +6548,7 @@
 <p><strong>评估</strong>：<code>lm-eval-harness</code>。  </p>
 </li>
 <li>
-<p><strong>校准数据</strong>：从 BookCorpus 与 Alpaca 随机抽 <strong>256</strong> 条样本，截断长度 <strong>128</strong>；在 FFN 层数取 <strong>6 / 12 / 16</strong> 等设置下，选取约 <strong>3%</strong> 最大特征值对应方向等配置（与 PPT 一致，细节见原文）。  </p>
+<p><strong>校准数据</strong>：从 BookCorpus 与 Alpaca 随机抽 <strong>256</strong> 条样本，截断长度 <strong>128</strong>；在 FFN 层数取 <strong>6 / 12 / 16</strong> 等设置下，选取约 <strong>3%</strong> 最大特征值对应方向等配置。  </p>
 </li>
 <li>
 <p><strong>基线</strong>：LLM-Pruner、LoRAPrune、Compresso、FLAP、SliceGPT、LLM-Surgeon、LoRAP、DISP-LLM、SlimGPT 等结构化剪枝方法。</p>
@@ -6555,29 +6556,29 @@
 </ul>
 <h3 id="32">3.2 资源与性能<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
 <p><img alt="ziyuan1" src="../image/ziyuan1.png" /></p>
-<p>在 <strong>33% 稀疏率**下，Olica 在报告设置中达到 **PPL = 19.83</strong>、<strong>平均准确率 61.21%</strong>。相对依赖大量数据与多卡重训练的路线，Olica 在**数据与 GPU 资源**上更省。</p>
+<p>在 33% 稀疏率下，Olica 在报告设置中达到 PPL = 19.83、平均准确率 61.21%。相对依赖大量数据与多卡重训练的路线，Olica 在数据与 GPU 资源上更省。</p>
 <p><img alt="ziyuan2" src="../image/ziyuan2.png" /></p>
 <p><img alt="ziyuan3" src="../image/ziyuan3.png" /></p>
 <p><strong>LLaMA-7B，25% 稀疏率</strong>：PPL <strong>16.69</strong>，平均准确率 <strong>63.54%</strong>，优于所对比基线。</p>
 <p><strong>更高稀疏率（33%）</strong>：PPL <strong>19.83</strong>、准确率 <strong>61.21%</strong>，明显优于 LLM-Pruner（PPL 24.50）与 SlimGPT（PPL 24.55）。</p>
-<p><strong>跨规模与系列</strong>：在 LLaMA-13B、LLaMA-2-7B、Vicuna 等模型上，Olica 多为**最优或次优**，体现一定**通用性**。</p>
-<p><strong>无 LoRA 微调</strong>：PPT 强调上述结果均在**不做 LoRA 微调**的情况下取得。</p>
+<p><strong>跨规模与系列</strong>：在 LLaMA-13B、LLaMA-2-7B、Vicuna 等模型上，Olica 多为最优或次优，体现一定通用性和可扩展性。</p>
+<p><strong>无 LoRA 微调</strong>：PPT 强调上述结果均在不做 LoRA 微调的情况下取得。</p>
 <h3 id="33">3.3 推理效率<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
 <p><img alt="inference" src="../image/inference.png" /></p>
-<p>在较高稀疏度下，可降低资源占用并提升推理吞吐，使剪枝模型更适合资源受限场景；报告表明在稀疏度提升的同时**性能损失可控**。</p>
+<p>在较高稀疏度下，可降低资源占用并提升推理吞吐，使剪枝模型更适合资源受限场景；报告表明在稀疏度提升的同时性能损失可控。</p>
 <hr />
 <h2 id="4">4. 消融实验<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <p><img alt="module" src="../image/module.png" /></p>
 <ul>
-<li><strong>模块有效性</strong>：<strong>Fast-OND</strong> 相对基线分解更高效；**线性校准**可与其它剪枝流程结合并带来增益。  </li>
+<li><strong>模块有效性</strong>：<strong>Fast-OND</strong> 相对基线分解更高效；线性校准可与其它剪枝流程结合并带来增益。  </li>
 </ul>
 <p><img alt="calibration" src="../image/calibration.png" /></p>
 <ul>
 <li>
-<p><strong>校准层数</strong>：PPL 随校准层数增加先降后稳，**超过约 20 层**后边际收益减小。</p>
+<p><strong>校准层数</strong>：PPL 随校准层数增加先降后稳，超过约 20 层后边际收益减小。</p>
 </li>
 <li>
-<p><strong>低秩比例</strong>：随低秩近似比例增大 PPL 逐步下降，<strong>超过约 0.15</strong> 后收益有限。  </p>
+<p><strong>低秩比例</strong>：随低秩近似比例增大 PPL 逐步下降，超过约 0.15 后收益有限。  </p>
 </li>
 <li>
 <p><strong>推荐折中</strong>：校准 <strong>20 层 FFN</strong> 且低秩比例 <strong>0.15</strong> 时，<strong>额外参数约占全模型 1%</strong>。  </p>
@@ -6585,7 +6586,7 @@
 </ul>
 <p><img alt="sample-efficiency" src="../image/sample-efficiency.png" /></p>
 <ul>
-<li><strong>样本效率</strong>：校准样本数与序列长度在 <strong>8～2048</strong> 范围变化时，PPL 波动不超过约 <strong>2.4</strong>；即便仅 **8 个样本**仍较稳定。  </li>
+<li><strong>样本效率</strong>：校准样本数与序列长度在 <strong>8～2048</strong> 范围变化时，PPL 波动不超过约 <strong>2.4</strong>；即便仅 8 个样本仍较稳定。  </li>
 </ul>
 <p><img alt="running-time" src="../image/running-time.png" /></p>
 <ul>
@@ -6593,7 +6594,7 @@
 </ul>
 <hr />
 <h2 id="5">5. 总结<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
-<p>Olica 将 <strong>MHA 中矩阵乘积的 PCA/SVD 式压缩**与 **FFN 剪枝后的线性校准**结合，并辅以 **Fast-OND</strong> 降低分解复杂度（相对注意力头数 <span class="arithmatex">\(h\)</span> 获得约 <strong><span class="arithmatex">\(1/h^2\)</span></strong> 量级的复杂度改进表述，与 PPT「降低注意力头数量的平方倍」一致）、**加权 SVD 与层选择**控制额外参数。整体在**数据量、显存与运行时间**上较省，并在多个基准上达到**优于或接近**主流结构化剪枝基线的表现，同时保持**无需完整重训练**这一实践上的吸引力。</p>
+<p>Olica 将 MHA 中矩阵乘积的 PCA/SVD 式压缩与 FFN 剪枝后的线性校准结合，并辅以 Fast-OND 降低分解复杂度、加权 SVD 与层选择控制额外参数。整体在数据量、显存与运行时间上较省，并在多个基准上达到优于或接近主流结构化剪枝基线的表现，同时保持无需完整重训练这一实践上的吸引力。</p>
 <hr />
 <h2 id="6">6. 参考文献<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
 <ol>
