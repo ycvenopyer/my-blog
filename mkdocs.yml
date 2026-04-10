@@ -34,6 +34,7 @@ nav:
       - Fine-tuning: ai-note/llm/fine-tuning.md
       - Alignment: ai-note/llm/alignment.md
       - CoT: ai-note/llm/cot.md
+      - LLM Pruning: ai-note/llm/llm-pruning.md
       - LLM Infra: ai-note/llm/llm-infra.md
       - LLM API: ai-note/llm/llm-api.md
     - MLLM:
