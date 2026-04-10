@@ -6473,9 +6473,9 @@
 
 <h1 id="olica-efficient-structured-pruning-of-large-language-models-without-retraining">Olica: Efficient Structured Pruning of Large Language Models without Retraining<a class="headerlink" href="#olica-efficient-structured-pruning-of-large-language-models-without-retraining" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p>作者：Jiujun He、Huazhen Lin 等，西南财经大学统计与数据科学学院等。<br />
-论文链接： <a href="https://arxiv.org/abs/2506.08436">https://arxiv.org/abs/2506.08436</a>
-开源代码：<a href="https://github.com/BetterTMrR/LLM-Olica">https://github.com/BetterTMrR/LLM-Olica</a></p>
+<p>作者：Jiujun He、Huazhen Lin ，西南财经大学统计与数据科学学院</p>
+<p>论文链接： <a href="https://arxiv.org/abs/2506.08436">https://arxiv.org/abs/2506.08436</a></p>
+<p>开源代码：<a href="https://github.com/BetterTMrR/LLM-Olica">https://github.com/BetterTMrR/LLM-Olica</a></p>
 </blockquote>
 <hr />
 <h2 id="1">1. 背景与动机<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
@@ -6526,10 +6526,10 @@
 <p>对前馈（FFN）层，剪枝目标是中间神经元。用重要性评分对中间神经元排序，按目标稀疏率 <span class="arithmatex">\(s\)</span> 剪掉低分神经元，使权重形状由 <span class="arithmatex">\(\mathbb{R}^{d \times 4d}\)</span> 变为 <span class="arithmatex">\(\mathbb{R}^{d \times d'}\)</span>（<span class="arithmatex">\(d'\)</span> 由稀疏率决定）。</p>
 <p><strong>问题</strong>：层输出发生变化后，误差会在深度网络中逐层累积，需要额外校准。</p>
 <h3 id="25">2.5 线性校准（无需重训练）<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
-<p>为重建剪枝 FFN 引入的残差误差并避免完整重训练，Olica 使用*岭回归拟合误差项 <span class="arithmatex">\(E\)</span>，对校准矩阵 <span class="arithmatex">\(\hat{W}\)</span> 求闭式解，并相应修改前向传播形式。</p>
+<p>为重建剪枝 FFN 引入的残差误差并避免完整重训练，Olica 使用岭回归拟合误差项 <span class="arithmatex">\(E\)</span>，对校准矩阵 <span class="arithmatex">\(\hat{W}\)</span> 求闭式解，并相应修改前向传播形式。</p>
 <h3 id="26">2.6 层选择与低秩近似<a class="headerlink" href="#26" title="Permanent link">&para;</a></h3>
 <p><img alt="layer-selcetion-and-low-rank" src="../image/layer-selection-and-low-rank.png" /></p>
-<p><strong>层选择</strong>：随着参与校准的 FFN 层数增加，困惑度（PPL）通常先降后趋于平稳；校准层并非越多越好，过多会引入额外参数与过拟合风险。论文使用 多重相关系数 <span class="arithmatex">\(MC^2\)</span> 衡量线性可恢复程度：<span class="arithmatex">\(R_{XE}\)</span> 越大，残差越适合用线性方式补偿；实验上较浅层 FFN 的残差往往更易校准。</p>
+<p><strong>层选择</strong>：随着参与校准的 FFN 层数增加，困惑度（PPL）通常先降后趋于平稳；校准层并非越多越好，过多会引入额外参数与过拟合风险。论文使用 多重相关系数 <span class="arithmatex">\(MC2\)</span> 衡量线性可恢复程度：<span class="arithmatex">\(R_{XE}\)</span> 越大，残差越适合用线性方式补偿；实验上较浅层 FFN 的残差往往更易校准。</p>
 <p><strong>低秩近似</strong>：若直接引入完整 <span class="arithmatex">\(\hat{W}\)</span>，参数量约 <strong><span class="arithmatex">\(d^2\)</span></strong>，约占单层 FFN 的 &#8539;。可将 <span class="arithmatex">\(\hat{W}\)</span> 低秩分解，只保留前 <span class="arithmatex">\(r\)</span> 个最大奇异值对应的方向，将新增参数降到约 <strong><span class="arithmatex">\(2dr\)</span></strong>（<span class="arithmatex">\(r \ll d\)</span>）。</p>
 <hr />
 <h2 id="3">3. 实验与结果<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
