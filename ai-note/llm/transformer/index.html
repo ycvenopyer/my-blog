@@ -6552,6 +6552,10 @@
 </li>
 </ul>
 <p><img alt="transformer-architecture" src="../image/transformer-architecture.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">如何理解Transformer中的编码器-解码器注意力机制？</p>
+<p>编码器-解码器注意力机制允许解码器的每个位置都能够访问编码器的全部输出，使得解码器能够根据输入序列的不同部分生成输出。</p>
+</div>
 <h2 id="2transformer">2.Transformer 的输入<a class="headerlink" href="#2transformer" title="Permanent link">&para;</a></h2>
 <p>Transformer中单词的输入表示<span class="arithmatex">\( X \)</span> 由单词Embedding和位置Embedding相加得到。</p>
 <h3 id="21-embedding">2.1 单词 Embedding<a class="headerlink" href="#21-embedding" title="Permanent link">&para;</a></h3>
@@ -6575,20 +6579,36 @@
 <p>上图是Self-Attention的结构，在计算时需要用到矩阵<span class="arithmatex">\(Q\)</span>（查询）、<span class="arithmatex">\(K\)</span>（键值）、<span class="arithmatex">\(V\)</span>（值）。在实际中，Self-Attention接收的是输入（单词的表示向量<span class="arithmatex">\(x\)</span>组成的矩阵<span class="arithmatex">\(X\)</span>）或者上一个Encoder block的输出，而<span class="arithmatex">\(Q,K,V\)</span>正是通过Self-Attention的输入进行线性变换得到的。</p>
 <h3 id="32-qkv">3.2 Q、K、V 的计算<a class="headerlink" href="#32-qkv" title="Permanent link">&para;</a></h3>
 <p>Self-Attention的输入用矩阵<span class="arithmatex">\(X\)</span>表示，可以分别用权重矩阵<span class="arithmatex">\(W_q,W_k,W_v\)</span>计算得到<span class="arithmatex">\(Q,K,V\)</span>。</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(Q\)</span>:表示我想要关注什么信息。</p>
+</li>
+<li>
+<p><span class="arithmatex">\(K\)</span>:表示我是什么样的信息。</p>
+</li>
+<li>
+<p><span class="arithmatex">\(V\)</span>:表示我携带的信息内容。</p>
+</li>
+</ul>
+<p>这三个矩阵其实是同一个输入投影出来的三种视角，这一步的作用就是让模型在不同子空间中理解token之间的关系。</p>
 <h3 id="33-self-attention">3.3 Self-Attention 的输出<a class="headerlink" href="#33-self-attention" title="Permanent link">&para;</a></h3>
+<p>自注意力机制的数学表达式如下：</p>
 <p><img alt="attention-qkv" src="../image/attention-qkv.png" /></p>
 <p>公式中计算矩阵<span class="arithmatex">\(Q\)</span>和<span class="arithmatex">\(K\)</span>每一行的内积，为了防止内积过大，因此除以<span class="arithmatex">\(d_k\)</span>的平方根。<span class="arithmatex">\(Q\)</span>乘以<span class="arithmatex">\(K\)</span>的转置后，得到的矩阵行列数都为<span class="arithmatex">\(n\)</span>,<span class="arithmatex">\(n\)</span>为句子单词数，这个矩阵可以表示单词之间的<span class="arithmatex">\(attention\)</span>强度。</p>
 <div class="admonition note">
 <p class="admonition-title">为什么要除以<span class="arithmatex">\(d_k\)</span>的平方根？</p>
-<p>TODO</p>
+<p>除以<span class="arithmatex">\(d_k\)</span>的平方根是为了防止点积结果在维度<span class="arithmatex">\(d_k\)</span>较大时过大，这会导致Softmax函数处于饱和区，使得梯度变得非常小，难以通过反向传播有效地训练。缩放有助于维持点积的稳定性，确保梯度在一个合适的范围内。</p>
 </div>
 <p>得到<span class="arithmatex">\(QK^T\)</span>之后，使用Softmax计算每一个单词对于其他单词的attention系数，公式中的Softmax是对矩阵的每一行进行Softmax，即每一行的和都变为1。</p>
 <div class="admonition note">
 <p class="admonition-title">为什么要进行Softmax?</p>
-<p>TODO</p>
+<p>点积结果可以是任意实数，而Softmax会把它们压缩到[0, 1]区间，并且所有权重之和为1。这让注意力分数能被解释为概率分布，即模型在关注谁、关注多少。</p>
+<p>Softmax有指数特性，会让大的分数更大，小的分数更小，从而突出主导注意力。</p>
+<p>如果直接用点积做加权，分数可能过大或过小，导致梯度不稳定。Softmax保证了数值范围可控，梯度传播更平滑。</p>
+<p>因此总结来说Softmax的作用就是把相似度分数转成稳定的注意力分布，突出重点并保证梯度可训练。</p>
 </div>
 <p>得到Softmax矩阵之后可以和<span class="arithmatex">\(V\)</span>相乘，得到最终的输出<span class="arithmatex">\(Z\)</span>。</p>
-<p>Softmax矩阵的第一行表示单词1和其他所有单词的attention系数，最终单词1的输出<span class="arithmatex">\(Z_1\)</span>等于所有单词<span class="arithmatex">\(i\)</span>的值<span class="arithmatex">\(V_i\)</span>根据attention系数的比例加和得到的。</p>
+<p>Softmax矩阵的第一行表示单词1和其他所有单词的attention系数，最终单词1的输出<span class="arithmatex">\(Z_1\)</span>等于所有单词<span class="arithmatex">\(i\)</span>的值<span class="arithmatex">\(V_i\)</span>根据attention系数的比例加权求和得到的。</p>
 <h3 id="34-multi-head-attentionmha">3.4 Multi-Head Attention(MHA)<a class="headerlink" href="#34-multi-head-attentionmha" title="Permanent link">&para;</a></h3>
 <p><img alt="MHA" src="../image/MHA.png" /></p>
 <p>MHA是由多个Self-Attention组成的，从上图可以看到首先将输入<span class="arithmatex">\(X\)</span>分别传递到<span class="arithmatex">\(h\)</span>个不同的Self-Attention中，计算得到<span class="arithmatex">\(h\)</span>个输出矩阵<span class="arithmatex">\(Z\)</span>。论文中<span class="arithmatex">\(h=8\)</span>，得到8个输出矩阵<span class="arithmatex">\(Z_1\)</span>到<span class="arithmatex">\(Z_8\)</span>之后，MHA将它们拼接在一起，然后传入一个Linear层（<span class="arithmatex">\(W^O\)</span>用来进行变换），得到MHA最终的输出<span class="arithmatex">\(Z\)</span>。可以看到MHA输出的矩阵<span class="arithmatex">\(Z\)</span>与其输入的矩阵<span class="arithmatex">\(X\)</span>的维度是一样的。</p>
@@ -6599,20 +6619,24 @@
 <p><img alt="add-norm" src="../image/add-norm.png" /></p>
 <p>Add&amp;Norm层由Add和Norm两部分组成，其中<span class="arithmatex">\(X\)</span>表示MHA或者FFN的输入，<span class="arithmatex">\(MultiHeadAttention(X)\)</span>和
 <span class="arithmatex">\(FeedForward(X)\)</span>表示输出（输入与输出维度相同所以可以直接相加）。</p>
-<p>Add指<span class="arithmatex">\(X + MultiHeadAttention(X)\)</span>，是一种残差连接，通常用于解决多层网络训练的问题，可以让网络只关注当前差异的部分，在ResNet中经常用到。</p>
+<p>Add指<span class="arithmatex">\(X + MultiHeadAttention(X)\)</span>，是一种残差连接，通常用于解决多层网络训练的问题，可以让网络只关注当前差异的部分，在ResNet中经常用到。残差连接有助于解决深度模型中的梯度消失问题，使得更深层次的模型训练成为可能。</p>
 <p>Norm指Layer Normalization，通常用于RNN结构，Layer Normalization会将每一层神经元的输入都转成均值方差一样的，这样可以加快收敛。</p>
 <div class="admonition note">
+<p class="admonition-title">什么是Layer Normalization？</p>
+<p>Layer Normalization的目的是对每个样本的所有特征进行归一化，公式为：<span class="arithmatex">\(LN(x) = \displaystyle{\frac{x-\mu}{\sigma}}\gamma + \beta\)</span>,其中，<span class="arithmatex">\(x\)</span>是输入特征，<span class="arithmatex">\(\mu\)</span>和<span class="arithmatex">\(\sigma\)</span>分别是特征的均值和标准差，<span class="arithmatex">\(\gamma\)</span>和<span class="arithmatex">\(\beta\)</span>是可学习的参数。这一归一化有助于加快训练速度，减少训练过程中的协方差偏移。</p>
+</div>
+<div class="admonition note">
 <p class="admonition-title">为什么不用 BatchNorm 呢？</p>
-<p>TODO</p>
+<p>BN和LN的出发点其实是一样的——稳定训练，防止梯度爆炸或消失。</p>
+<p>BN是在一个batch内计算均值和方差，对同一层的所有样本的每个通道做标准化，换句话说，BN关心的是这一批数据的统计特征。</p>
+<p>LN则是在同一个样本内部计算均值和方差，对该样本的所有特征维度一起归一化，换句话说，LN关心的是单个样本内部的特征分布。‘</p>
+<p>Transformer不用BN的原因：（1）Transformer是序列模型，batch维度不稳定：Transformer的输入往往是变成序列，不同样本长度不同。（2）自注意力机制破坏了空间独立性：在卷积中，BN对通道归一化是合理的，因为每个通道特征相对独立。但在Transformer的Self-Attention中，每个token都与其他token有关联。（3）推理阶段BN的统计特征难以复用：BN在推理时会使用训练阶段的滑动均值来做归一化，但Transformer的输入分布在推理阶段往往与训练时不同（比如变长文本、不同语言或领域），这会导致分布漂移（distribution shift），从而引入偏差。而LN则能够适应上述情况。</p>
+<p>总的来说，不用BN的原因即：（1）BN依赖batch统计量，不适合边长、分布差异大的序列数据。（2）Attention机制导致样本间特征强耦合，BN会破坏这种结构。（3）LN与batch size无关，推理阶段也稳定一致。</p>
 </div>
 <h3 id="42-feed-forwardffn">4.2 Feed Forward(FFN)<a class="headerlink" href="#42-feed-forwardffn" title="Permanent link">&para;</a></h3>
 <p>FFN比较简单，是一个两层的全连接层（FC），第一层的激活函数为<span class="arithmatex">\(ReLU\)</span>，第二层不使用激活函数，公式如下：</p>
 <p><img alt="FFN" src="../image/FFN.png" /></p>
 <p><span class="arithmatex">\(X\)</span>是输入，FFN最终得到的输出矩阵的维度与<span class="arithmatex">\(X\)</span>一致。</p>
-<div class="admonition note">
-<p class="admonition-title">什么是全连接层？</p>
-<p>TODO</p>
-</div>
 <p>FFN的作用：实际上就是一个线性变换层，用来完成输入数据到输出数据的维度变换。通过第一个FC层将输入词向量的512维变换到2048维，随后通过第二个FC层再将2048维变换回512维，从而保证FFN的输入输出维度一致。因此作用可以总结为：</p>
 <ul>
 <li>
@@ -6651,6 +6675,10 @@
 <h3 id="51-multi-head-attention">5.1 第一个 Multi-Head Attention<a class="headerlink" href="#51-multi-head-attention" title="Permanent link">&para;</a></h3>
 <p>第一个MHA采用了Masked操作，因为在翻译的过程中是顺序翻译的，即翻译完第<span class="arithmatex">\(i\)</span>个单词，才可以翻译第<span class="arithmatex">\(i + 1\)</span>个单词。通过Masked操作可以防止第<span class="arithmatex">\(i\)</span>个单词知道<span class="arithmatex">\(i + 1\)</span>个单词之后的信息。</p>
 <p>Masked操作是在Self-Attention的Softmax之前使用的。</p>
+<div class="admonition note">
+<p class="admonition-title">如何理解Transformer中的自回归属性？</p>
+<p>在Transformer的解码器中，自回归属性指模型在生成每个输出时，只能依赖于先前生成的输出，确保在生成序列时的顺序性和一致性。</p>
+</div>
 <p><img alt="masked" src="../image/masked.png" /></p>
 <p>首先是根据输入矩阵<span class="arithmatex">\(X\)</span>得到Mask矩阵<span class="arithmatex">\(M\)</span>，然后接下来的操作和之前的Self-Attention一样，通过输入矩阵<span class="arithmatex">\(X\)</span>和对于的权重矩阵计算得到<span class="arithmatex">\(Q,K,V\)</span>矩阵，然后计算<span class="arithmatex">\(QK^T\)</span>。在得到<span class="arithmatex">\(QK^T\)</span>之后需要进行Softmax，计算attention score，我们在Softmax之前需要使用<span class="arithmatex">\(M\)</span>遮挡住每一个单词之后的信息得到Mask <span class="arithmatex">\(QK^T\)</span>矩阵。之后在Mask <span class="arithmatex">\(QK^T\)</span>上进行Softmax，每一行的和都为1，但是单词0在其他单词上的attention score都为0。最后使用Mask <span class="arithmatex">\(QK^T\)</span>与矩阵<span class="arithmatex">\(V\)</span>相乘，得到输出<span class="arithmatex">\(Z\)</span>，则单词1的输出向量<span class="arithmatex">\(Z_1\)</span>是只包含单词1的信息的。</p>
 <p>通过上述步骤就可以得到一个Mask Self-Attention的输出矩阵<span class="arithmatex">\(Z_i\)</span>，然后和Encoder类似，通过MHA拼接多个输出<span class="arithmatex">\(Z_i\)</span>然后计算得到第一个MHA的输出<span class="arithmatex">\(Z\)</span>，<span class="arithmatex">\(Z\)</span>和输入<span class="arithmatex">\(X\)</span>维度一样。</p>
