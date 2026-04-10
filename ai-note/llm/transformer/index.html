@@ -1078,6 +1078,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transformer
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1094,6 +1112,258 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.Transformer 整体架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.Transformer 的输入
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.Transformer 的输入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 单词 Embedding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 位置 Embedding
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3self-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.Self-Attention（自注意力机制）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.Self-Attention（自注意力机制）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-self-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Self-Attention 结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-qkv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Q、K、V 的计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-self-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Self-Attention 的输出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-multi-head-attentionmha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Multi-Head Attention(MHA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4encoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.Encoder 结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.Encoder 结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-add-norm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Add &amp; Norm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-feed-forwardffn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Feed Forward(FFN)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-encoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 组成 Encoder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.Decoder 结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.Decoder 结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-multi-head-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 第一个 Multi-Head Attention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-multi-head-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 第二个 Multi-Head Attention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-softmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Softmax 预测输出单词
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5941,6 +6211,247 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.Transformer 整体架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.Transformer 的输入
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.Transformer 的输入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 单词 Embedding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 位置 Embedding
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3self-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.Self-Attention（自注意力机制）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.Self-Attention（自注意力机制）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-self-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Self-Attention 结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-qkv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Q、K、V 的计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-self-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Self-Attention 的输出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-multi-head-attentionmha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Multi-Head Attention(MHA)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4encoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.Encoder 结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.Encoder 结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-add-norm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Add &amp; Norm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-feed-forwardffn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Feed Forward(FFN)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-encoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 组成 Encoder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.Decoder 结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.Decoder 结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-multi-head-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 第一个 Multi-Head Attention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-multi-head-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 第二个 Multi-Head Attention
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-softmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Softmax 预测输出单词
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -6023,6 +6534,150 @@
 
 
 <h1 id="transformer">Transformer<a class="headerlink" href="#transformer" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>论文地址：<a href="https://arxiv.org/abs/1706.03762">https://arxiv.org/abs/1706.03762</a></p>
+</blockquote>
+<h2 id="1transformer">1.Transformer 整体架构<a class="headerlink" href="#1transformer" title="Permanent link">&para;</a></h2>
+<p><img alt="example" src="../image/example.png" /></p>
+<p>Transformer 由Encoder和Decoder两个部分组成，都分别包含6个block。Transformer的工作流程如下：</p>
+<ul>
+<li>
+<p>Step1: 获取输入句子的每一个单词的表示向量<span class="arithmatex">\( X \)</span>, <span class="arithmatex">\( X \)</span>由单词的Embedding和单词位置的Embedding相加得到。</p>
+</li>
+<li>
+<p>Step2: 将得到的单词表示向量矩阵传入Encoder中，经过6个Encoder block后可以得到句子所有单词的编码信息矩阵<span class="arithmatex">\( C \)</span>，单词向量矩阵用<span class="arithmatex">\( X_{n\times d} \)</span> 表示，<span class="arithmatex">\( n \)</span>是句子单词个数，<span class="arithmatex">\( d \)</span>是表示向量的维度（论文中<span class="arithmatex">\( d \)</span> = 512）。每个Encoder block输出的矩阵维度与输入完全一致。</p>
+</li>
+<li>
+<p>Step3: 将Encoder输出的编码信息矩阵<span class="arithmatex">\( C \)</span>传递给Decoder中，Decoder依次会根据当前翻译过的单词<span class="arithmatex">\(1\sim i\)</span>翻译下一个单词<span class="arithmatex">\(i + 1\)</span>，在使用过程中，翻译到单词<span class="arithmatex">\(i + 1\)</span>的时候需要通过Mask（掩码）操作遮盖住<span class="arithmatex">\(i + 1\)</span>之后的单词。</p>
+</li>
+</ul>
+<p><img alt="transformer-architecture" src="../image/transformer-architecture.png" /></p>
+<h2 id="2transformer">2.Transformer 的输入<a class="headerlink" href="#2transformer" title="Permanent link">&para;</a></h2>
+<p>Transformer中单词的输入表示<span class="arithmatex">\( X \)</span> 由单词Embedding和位置Embedding相加得到。</p>
+<h3 id="21-embedding">2.1 单词 Embedding<a class="headerlink" href="#21-embedding" title="Permanent link">&para;</a></h3>
+<p>单词的Embedding有很多方式可以获取，例如Word2Vec、Glove等算法预训练得到，也可以在Transformer中训练得到。</p>
+<h3 id="22-embedding">2.2 位置 Embedding<a class="headerlink" href="#22-embedding" title="Permanent link">&para;</a></h3>
+<p>因为Transformer不采用RNN结构，而是使用全局信息，不能利用单词的顺序信息，而这部分信息对于NLP来说非常重要。所以Transformer中使用位置Embedding保存单词在sequence中的相对或绝对位置。</p>
+<p>Positional Embedding的维度与单词Embedding是一样的，PE可以通过训练得到，也可以用公式得到，Transformer中使用如下公式：</p>
+<p><img alt="PE" src="../image/PE.png" /></p>
+<p>其中，<span class="arithmatex">\(pos\)</span>表示单词在句子中的位置，<span class="arithmatex">\(d_{model}\)</span>表示PE的维度，<span class="arithmatex">\(2i\)</span>表示偶数的维度，<span class="arithmatex">\(2i + 1\)</span>表示奇数维度。该公式的优点是：</p>
+<ul>
+<li>
+<p>使PE能够使用比训练集里面所以句子更长的句子，即使用已有的<span class="arithmatex">\(n\)</span>长度的句子可以算出<span class="arithmatex">\(n + 1\)</span>的Embedding。</p>
+</li>
+<li>
+<p>可以让模型容易地计算出相对位置，对于固定长度的间距<span class="arithmatex">\(k\)</span>,<span class="arithmatex">\(PE(pos + k)\)</span>可以用<span class="arithmatex">\(PE(pos)\)</span>计算得到。可以用两角和的正弦余弦公式展开。</p>
+</li>
+</ul>
+<h2 id="3self-attention">3.Self-Attention（自注意力机制）<a class="headerlink" href="#3self-attention" title="Permanent link">&para;</a></h2>
+<h3 id="31-self-attention">3.1 Self-Attention 结构<a class="headerlink" href="#31-self-attention" title="Permanent link">&para;</a></h3>
+<p><img alt="scaled-dot-product-attention" src="../image/scaled-dot-product-attention.png" /></p>
+<p>上图是Self-Attention的结构，在计算时需要用到矩阵<span class="arithmatex">\(Q\)</span>（查询）、<span class="arithmatex">\(K\)</span>（键值）、<span class="arithmatex">\(V\)</span>（值）。在实际中，Self-Attention接收的是输入（单词的表示向量<span class="arithmatex">\(x\)</span>组成的矩阵<span class="arithmatex">\(X\)</span>）或者上一个Encoder block的输出，而<span class="arithmatex">\(Q,K,V\)</span>正是通过Self-Attention的输入进行线性变换得到的。</p>
+<h3 id="32-qkv">3.2 Q、K、V 的计算<a class="headerlink" href="#32-qkv" title="Permanent link">&para;</a></h3>
+<p>Self-Attention的输入用矩阵<span class="arithmatex">\(X\)</span>表示，可以分别用权重矩阵<span class="arithmatex">\(W_q,W_k,W_v\)</span>计算得到<span class="arithmatex">\(Q,K,V\)</span>。</p>
+<h3 id="33-self-attention">3.3 Self-Attention 的输出<a class="headerlink" href="#33-self-attention" title="Permanent link">&para;</a></h3>
+<p><img alt="attention-qkv" src="../image/attention-qkv.png" /></p>
+<p>公式中计算矩阵<span class="arithmatex">\(Q\)</span>和<span class="arithmatex">\(K\)</span>每一行的内积，为了防止内积过大，因此除以<span class="arithmatex">\(d_k\)</span>的平方根。<span class="arithmatex">\(Q\)</span>乘以<span class="arithmatex">\(K\)</span>的转置后，得到的矩阵行列数都为<span class="arithmatex">\(n\)</span>,<span class="arithmatex">\(n\)</span>为句子单词数，这个矩阵可以表示单词之间的<span class="arithmatex">\(attention\)</span>强度。</p>
+<div class="admonition note">
+<p class="admonition-title">为什么要除以<span class="arithmatex">\(d_k\)</span>的平方根？</p>
+<p>TODO</p>
+</div>
+<p>得到<span class="arithmatex">\(QK^T\)</span>之后，使用Softmax计算每一个单词对于其他单词的attention系数，公式中的Softmax是对矩阵的每一行进行Softmax，即每一行的和都变为1。</p>
+<div class="admonition note">
+<p class="admonition-title">为什么要进行Softmax?</p>
+<p>TODO</p>
+</div>
+<p>得到Softmax矩阵之后可以和<span class="arithmatex">\(V\)</span>相乘，得到最终的输出<span class="arithmatex">\(Z\)</span>。</p>
+<p>Softmax矩阵的第一行表示单词1和其他所有单词的attention系数，最终单词1的输出<span class="arithmatex">\(Z_1\)</span>等于所有单词<span class="arithmatex">\(i\)</span>的值<span class="arithmatex">\(V_i\)</span>根据attention系数的比例加和得到的。</p>
+<h3 id="34-multi-head-attentionmha">3.4 Multi-Head Attention(MHA)<a class="headerlink" href="#34-multi-head-attentionmha" title="Permanent link">&para;</a></h3>
+<p><img alt="MHA" src="../image/MHA.png" /></p>
+<p>MHA是由多个Self-Attention组成的，从上图可以看到首先将输入<span class="arithmatex">\(X\)</span>分别传递到<span class="arithmatex">\(h\)</span>个不同的Self-Attention中，计算得到<span class="arithmatex">\(h\)</span>个输出矩阵<span class="arithmatex">\(Z\)</span>。论文中<span class="arithmatex">\(h=8\)</span>，得到8个输出矩阵<span class="arithmatex">\(Z_1\)</span>到<span class="arithmatex">\(Z_8\)</span>之后，MHA将它们拼接在一起，然后传入一个Linear层（<span class="arithmatex">\(W^O\)</span>用来进行变换），得到MHA最终的输出<span class="arithmatex">\(Z\)</span>。可以看到MHA输出的矩阵<span class="arithmatex">\(Z\)</span>与其输入的矩阵<span class="arithmatex">\(X\)</span>的维度是一样的。</p>
+<p><img alt="MHA-concat" src="../image/MHA-concat.png" /></p>
+<h2 id="4encoder">4.Encoder 结构<a class="headerlink" href="#4encoder" title="Permanent link">&para;</a></h2>
+<p>Encoder是由MHA，Add&amp;Norm，FFN，Add&amp;Norm组成的。</p>
+<h3 id="41-add-norm">4.1 Add &amp; Norm<a class="headerlink" href="#41-add-norm" title="Permanent link">&para;</a></h3>
+<p><img alt="add-norm" src="../image/add-norm.png" /></p>
+<p>Add&amp;Norm层由Add和Norm两部分组成，其中<span class="arithmatex">\(X\)</span>表示MHA或者FFN的输入，<span class="arithmatex">\(MultiHeadAttention(X)\)</span>和
+<span class="arithmatex">\(FeedForward(X)\)</span>表示输出（输入与输出维度相同所以可以直接相加）。</p>
+<p>Add指<span class="arithmatex">\(X + MultiHeadAttention(X)\)</span>，是一种残差连接，通常用于解决多层网络训练的问题，可以让网络只关注当前差异的部分，在ResNet中经常用到。</p>
+<p>Norm指Layer Normalization，通常用于RNN结构，Layer Normalization会将每一层神经元的输入都转成均值方差一样的，这样可以加快收敛。</p>
+<div class="admonition note">
+<p class="admonition-title">为什么不用 BatchNorm 呢？</p>
+<p>TODO</p>
+</div>
+<h3 id="42-feed-forwardffn">4.2 Feed Forward(FFN)<a class="headerlink" href="#42-feed-forwardffn" title="Permanent link">&para;</a></h3>
+<p>FFN比较简单，是一个两层的全连接层（FC），第一层的激活函数为<span class="arithmatex">\(ReLU\)</span>，第二层不使用激活函数，公式如下：</p>
+<p><img alt="FFN" src="../image/FFN.png" /></p>
+<p><span class="arithmatex">\(X\)</span>是输入，FFN最终得到的输出矩阵的维度与<span class="arithmatex">\(X\)</span>一致。</p>
+<div class="admonition note">
+<p class="admonition-title">什么是全连接层？</p>
+<p>TODO</p>
+</div>
+<p>FFN的作用：实际上就是一个线性变换层，用来完成输入数据到输出数据的维度变换。通过第一个FC层将输入词向量的512维变换到2048维，随后通过第二个FC层再将2048维变换回512维，从而保证FFN的输入输出维度一致。因此作用可以总结为：</p>
+<ul>
+<li>
+<p>增强特征提取能力：变换到高维空间。</p>
+</li>
+<li>
+<p>提高计算效率：FC层的计算可以并行。</p>
+</li>
+<li>
+<p>防止模型退化：FFN引入了<span class="arithmatex">\(ReLU\)</span>这种非线性激活函数，保证了模型能够保持其表达能力，有效捕捉到输入数据中的复杂特征。</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">为什么用<span class="arithmatex">\(ReLU\)</span>激活函数？</p>
+<p><span class="arithmatex">\(ReLU\)</span>激活函数的作用是为模型施加非线性因素，从而可以使模型拟合出更加复杂的关系，这样子可以增加模型的表达能力，使模型能够捕获到复杂的特征和模式。</p>
+</div>
+<h3 id="43-encoder">4.3 组成 Encoder<a class="headerlink" href="#43-encoder" title="Permanent link">&para;</a></h3>
+<p>通过上面描述的 Multi-Head Attention, Feed Forward, Add &amp; Norm 就可以构造出一个 Encoder block，Encoder block 接收输入矩阵<span class="arithmatex">\(X_{(n\times d)}\)</span>，并输出一个矩阵<span class="arithmatex">\(O_{(n\times d)}\)</span>。通过多个 Encoder block 叠加就可以组成 Encoder。</p>
+<p>第一个 Encoder block 的输入为句子单词的表示向量矩阵，后续 Encoder block 的输入是前一个 Encoder block 的输出，最后一个 Encoder block 输出的矩阵就是编码信息矩阵<span class="arithmatex">\(C\)</span>，这一矩阵后续会用到 Decoder 中。</p>
+<h2 id="5decoder">5.Decoder 结构<a class="headerlink" href="#5decoder" title="Permanent link">&para;</a></h2>
+<p>Decoder block的结构与Encoder block的结构相似，但是有一些区别：</p>
+<ul>
+<li>
+<p>包含两个MHA层。</p>
+</li>
+<li>
+<p>第一个MHA层采用了Masked操作。</p>
+</li>
+<li>
+<p>第二个MHA层的<span class="arithmatex">\(K,V\)</span>矩阵使用Encoder的编码信息矩阵<span class="arithmatex">\(C\)</span>进行计算，而<span class="arithmatex">\(Q\)</span>使用上一个Decoder block的输出计算。</p>
+</li>
+<li>
+<p>最后有一个Softmax层计算下一个翻译单词的概率。</p>
+</li>
+</ul>
+<h3 id="51-multi-head-attention">5.1 第一个 Multi-Head Attention<a class="headerlink" href="#51-multi-head-attention" title="Permanent link">&para;</a></h3>
+<p>第一个MHA采用了Masked操作，因为在翻译的过程中是顺序翻译的，即翻译完第<span class="arithmatex">\(i\)</span>个单词，才可以翻译第<span class="arithmatex">\(i + 1\)</span>个单词。通过Masked操作可以防止第<span class="arithmatex">\(i\)</span>个单词知道<span class="arithmatex">\(i + 1\)</span>个单词之后的信息。</p>
+<p>Masked操作是在Self-Attention的Softmax之前使用的。</p>
+<p><img alt="masked" src="../image/masked.png" /></p>
+<p>首先是根据输入矩阵<span class="arithmatex">\(X\)</span>得到Mask矩阵<span class="arithmatex">\(M\)</span>，然后接下来的操作和之前的Self-Attention一样，通过输入矩阵<span class="arithmatex">\(X\)</span>和对于的权重矩阵计算得到<span class="arithmatex">\(Q,K,V\)</span>矩阵，然后计算<span class="arithmatex">\(QK^T\)</span>。在得到<span class="arithmatex">\(QK^T\)</span>之后需要进行Softmax，计算attention score，我们在Softmax之前需要使用<span class="arithmatex">\(M\)</span>遮挡住每一个单词之后的信息得到Mask <span class="arithmatex">\(QK^T\)</span>矩阵。之后在Mask <span class="arithmatex">\(QK^T\)</span>上进行Softmax，每一行的和都为1，但是单词0在其他单词上的attention score都为0。最后使用Mask <span class="arithmatex">\(QK^T\)</span>与矩阵<span class="arithmatex">\(V\)</span>相乘，得到输出<span class="arithmatex">\(Z\)</span>，则单词1的输出向量<span class="arithmatex">\(Z_1\)</span>是只包含单词1的信息的。</p>
+<p>通过上述步骤就可以得到一个Mask Self-Attention的输出矩阵<span class="arithmatex">\(Z_i\)</span>，然后和Encoder类似，通过MHA拼接多个输出<span class="arithmatex">\(Z_i\)</span>然后计算得到第一个MHA的输出<span class="arithmatex">\(Z\)</span>，<span class="arithmatex">\(Z\)</span>和输入<span class="arithmatex">\(X\)</span>维度一样。</p>
+<h3 id="52-multi-head-attention">5.2 第二个 Multi-Head Attention<a class="headerlink" href="#52-multi-head-attention" title="Permanent link">&para;</a></h3>
+<p>Decoder block第二个Multi-Head Attention变化不大，主要的区别在于其中Self-Attention的<span class="arithmatex">\(K,V\)</span>矩阵不是使用上一个Decoder block的输出计算的，而是使用Encoder的编码信息矩阵<span class="arithmatex">\(C\)</span>计算的。</p>
+<p>根据Encoder的输出<span class="arithmatex">\(C\)</span>计算得到<span class="arithmatex">\(K,V\)</span>，根据上一个Decoder block的输出<span class="arithmatex">\(Z\)</span>计算<span class="arithmatex">\(Q\)</span>（如果是第一个Decoder block则用输入矩阵<span class="arithmatex">\(X\)</span>计算），后续的计算方法与之前一样。</p>
+<p>这样做的好处是在Decoder时，每一位单词都可以利用到Encoder所有单词的信息（这些信息无需Mask）。</p>
+<h3 id="53-softmax">5.3 Softmax 预测输出单词<a class="headerlink" href="#53-softmax" title="Permanent link">&para;</a></h3>
+<p>Decoder block最后的部分是利用Softmax预测下一个单词，Softmax根据输出矩阵的每一行预测下一个单词，这就是Decoder block的结构，和Encoder一样，Decoder由多个Decoder block组成。</p>
+<h2 id="6">6.总结<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Transformer与RNN不同，可以并行训练。</p>
+</li>
+<li>
+<p>Transformer本身不能利用单词的顺序信息，因此需要加入位置。</p>
+</li>
+<li>
+<p>Transformer的重点是Self-Attention结构。</p>
+</li>
+<li>
+<p>Transformer中的MHA中有多个Self-Attention，可以捕获单词之间多种维度上的相关系数attention score。</p>
+</li>
+</ul>
+<h2 id="7reference">7.Reference<a class="headerlink" href="#7reference" title="Permanent link">&para;</a></h2>
+<p><a href="https://zhuanlan.zhihu.com/p/338817680">Transformer模型详解（图解最完整版）</a></p>
+<p><a href="https://blog.csdn.net/dongtuoc/article/details/140341886">Transformer 论文通俗解读：FFN 的作用</a></p>
 
 
 
