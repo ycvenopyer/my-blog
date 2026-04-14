@@ -27,13 +27,15 @@ nav:
     - LLM:
       - Overview: ai-note/llm/index.md
       - Transformer: ai-note/llm/transformer.md
-      - LLM Structure: ai-note/llm/structure.md
-      - LLaMA: ai-note/llm/llama.md
-      - Retnet: ai-note/llm/retnet.md
-      - MoE: ai-note/llm/moe.md
-      - RWKV: ai-note/llm/rwkv.md
-      - Mamba: ai-note/llm/mamba.md
       - BERT: ai-note/llm/bert.md
+      - LLM Structure: ai-note/llm/structure.md
+      - MoE: ai-note/llm/moe.md
+      - LLaMA: ai-note/llm/llama.md
+      - Mamba: ai-note/llm/mamba.md
+      - Retnet: ai-note/llm/retnet.md
+      - RWKV: ai-note/llm/rwkv.md
+      - Griffin: ai-note/llm/griffin.md
+      - Gemini 1.5 Technical Report: ai-note/llm/gemini-1.5-technical-report.md
       - KV-Cache: ai-note/llm/kv-cache.md
       - Pre-training: ai-note/llm/pre-training.md
       - Fine-tuning: ai-note/llm/fine-tuning.md
@@ -50,6 +52,9 @@ nav:
     - LLM Distributed Training and Inference:
       - Overview: ai-note/llm-distributed-training-and-inference/index.md
       - Prefill&Decode: ai-note/llm-distributed-training-and-inference/prefill-and-decode.md
+      - FlashAttention: ai-note/llm-distributed-training-and-inference/flash-attention.md
+      - ZeRO: ai-note/llm-distributed-training-and-inference/zero.md
+      - Megatron-LM: ai-note/llm-distributed-training-and-inference/megatron-lm.md
     - LLM Compression and Quantization:
       - Overview: ai-note/llm-compression-and-quantization/index.md
     - LLM Speculative Decoding:

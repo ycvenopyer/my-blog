@@ -120,7 +120,7 @@ QLoRA（Quantized Low-Rank Adaptation）是一种结合了LoRA方法与深度量
 
 - 根据模型表现，动态调整、增强数据。
 
-## Reference
+## 6.Reference
 
 [【大模型开发 】 一文搞懂Fine-tuning（大模型微调）](https://blog.csdn.net/qq_39172059/article/details/136693607)
 

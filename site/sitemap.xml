@@ -169,6 +169,14 @@
          <lastmod>2026-04-14</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/gemini-1.5-technical-report/</loc>
+         <lastmod>2026-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/griffin/</loc>
+         <lastmod>2026-04-14</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/kv-cache/</loc>
          <lastmod>2026-04-14</lastmod>
     </url>
@@ -221,7 +229,19 @@
          <lastmod>2026-04-14</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/flash-attention/</loc>
+         <lastmod>2026-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/megatron-lm/</loc>
+         <lastmod>2026-04-14</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/prefill-and-decode/</loc>
+         <lastmod>2026-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/zero/</loc>
          <lastmod>2026-04-14</lastmod>
     </url>
     <url>
