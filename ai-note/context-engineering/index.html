@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -1560,34 +1560,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm/llm-api/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLM API
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -3107,10 +3079,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
+  <a href="#1context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        一、如何定义Context
+        1.如何定义Context
       
     </span>
   </a>
@@ -3118,10 +3090,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        二、理解上下文工程
+        2.理解上下文工程
       
     </span>
   </a>
@@ -3129,10 +3101,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        三、为什么需要上下文工程
+        3.为什么需要上下文工程
       
     </span>
   </a>
@@ -3140,10 +3112,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#context-rot" class="md-nav__link">
+  <a href="#4context-rot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        四、长上下文的Context-Rot问题
+        4.长上下文的Context-Rot问题
       
     </span>
   </a>
@@ -3151,10 +3123,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        五、未来展望：从上下文工程到环境工程
+        5.未来展望：从上下文工程到环境工程
       
     </span>
   </a>
@@ -3162,10 +3134,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+  <a href="#6reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reference
+        6.Reference
       
     </span>
   </a>
@@ -6187,10 +6159,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
+  <a href="#1context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        一、如何定义Context
+        1.如何定义Context
       
     </span>
   </a>
@@ -6198,10 +6170,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        二、理解上下文工程
+        2.理解上下文工程
       
     </span>
   </a>
@@ -6209,10 +6181,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        三、为什么需要上下文工程
+        3.为什么需要上下文工程
       
     </span>
   </a>
@@ -6220,10 +6192,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#context-rot" class="md-nav__link">
+  <a href="#4context-rot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        四、长上下文的Context-Rot问题
+        4.长上下文的Context-Rot问题
       
     </span>
   </a>
@@ -6231,10 +6203,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        五、未来展望：从上下文工程到环境工程
+        5.未来展望：从上下文工程到环境工程
       
     </span>
   </a>
@@ -6242,10 +6214,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+  <a href="#6reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reference
+        6.Reference
       
     </span>
   </a>
@@ -6340,7 +6312,10 @@
 
 
 <h1 id="_1">上下文工程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="context">一、如何定义Context<a class="headerlink" href="#context" title="Permanent link">&para;</a></h2>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 1153 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 2 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 4 分钟</p>
+</div>
+<h2 id="1context">1.如何定义Context<a class="headerlink" href="#1context" title="Permanent link">&para;</a></h2>
 <p><img alt="context" src="image/context.png" /></p>
 <p>很多人会认为上下文就是用户的历史聊天记录，显然这是不对的。上下文的内容涵盖了这一部分，从本质上说，上下文是提供给LLM的、用于完成下一步推理或生成任务的全部信息集合。即上图所示。</p>
 <p>我们可以将上下文分成三类：</p>
@@ -6357,11 +6332,11 @@
 </ul>
 <p>如下图所示：</p>
 <p><img alt="context-class" src="image/context-class.png" /></p>
-<h2 id="_2">二、理解上下文工程<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="2">2.理解上下文工程<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <p>上下文工程是一门系统性学科，专注于设计、构建并维护一个动态系统，该系统负责在Agent执行任务的每一步，为其智能地组装出最优的上下文组合，以确保任务能够被可靠、高效地完成。</p>
 <p>若把LLMs（或者更广泛的Agentic System）类比为新一代OS，那么LLM处于CPU的位置，上下文窗口则是RAM。</p>
 <p>提示词工程本质是上下文工程的子模块，专注于精炼指导性上下文的构建；而RAG技术则承担动态生成信息性上下文的基础设施角色。</p>
-<h2 id="_3">三、为什么需要上下文工程<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="3">3.为什么需要上下文工程<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>降低AI失败率：大多数Agent失败不是模型问题，而是上下文不全。</p>
@@ -6376,7 +6351,7 @@
 <p>自我修正：验证循环让AI能自动修正错误。</p>
 </li>
 </ul>
-<h2 id="context-rot">四、长上下文的Context-Rot问题<a class="headerlink" href="#context-rot" title="Permanent link">&para;</a></h2>
+<h2 id="4context-rot">4.长上下文的Context-Rot问题<a class="headerlink" href="#4context-rot" title="Permanent link">&para;</a></h2>
 <p>随着上下文长度的增加，模型的注意力机制可能会出现“腐蚀”现象，导致对关键信息的关注度下降。</p>
 <p>问题表现：</p>
 <ul>
@@ -6423,7 +6398,7 @@
 <p>上下文冲突(Context Clash)，当上下文中的信息互相矛盾时，比如上下文存在过去错误的答案。</p>
 </li>
 </ul>
-<h2 id="_4">五、未来展望：从上下文工程到环境工程<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="5">5.未来展望：从上下文工程到环境工程<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
 <p>LLM 现在就像在一间封闭的屋子中，我们通过发短信和它交流，未来它需要更完善的五感。</p>
 <p>上下文工程仍是中间态，环境工程是终极目标。</p>
 <p>为什么环境工程是终极目标？</p>
@@ -6441,7 +6416,7 @@
 <p>在环境工程中，AI 的输入输出不再局限于文本或结构化数据，而是包括真实世界的感知、动作和长期影响。</p>
 </li>
 </ol>
-<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<h2 id="6reference">6.Reference<a class="headerlink" href="#6reference" title="Permanent link">&para;</a></h2>
 <p><a href="https://zhuanlan.zhihu.com/p/1945173424726058681">上下文工程Context Engineering，看这一篇就够了！</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/1934605504165950750">【LLM研究综述】《大语言模型上下文工程综述（全文）》</a></p>
 <p><a href="https://developer.aliyun.com/article/1686825">浅谈上下文工程｜从 Claude Code 、Manus 和 Kiro 看提示工程到上下文工程的转变</a></p>
@@ -6451,6 +6426,9 @@
 
 
 
+
+  
+  
 
 
 
