@@ -12,13 +12,13 @@
         <meta name="author" content="ycvenopyer">
       
       
-        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/workflow/bmad-method/">
+        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/ml/pca/">
       
       
-        <link rel="prev" href="../superpowers/">
+        <link rel="prev" href="../regularization/">
       
       
-        <link rel="next" href="../manus/">
+        <link rel="next" href="../../nlp/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>BMAD-Method - ycvenopyer</title>
+        <title>PCA - ycvenopyer</title>
       
     
     
@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pca" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -111,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BMAD-Method
+              PCA
             
           </span>
         </div>
@@ -639,6 +644,8 @@
                 
   
   
+    
+  
   
   
     
@@ -649,11 +656,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -674,7 +681,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -692,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -708,6 +715,131 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regularization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regularization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PCA
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PCA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#svd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SVD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pca_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PCA
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1126,6 +1258,34 @@
     
   
     LLaMA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../llm/retnet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retnet
   
 
     
@@ -1766,14 +1926,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm-distributed-training-and-inference/deepspeed/" class="md-nav__link">
+      <a href="../../llm-distributed-training-and-inference/prefill-and-decode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Deepspeed
+    Prefill&Decode
   
 
     
@@ -3643,8 +3803,6 @@
                 
   
   
-    
-  
   
   
     
@@ -3655,11 +3813,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_20" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_20" >
         
           
           <label class="md-nav__link" for="__nav_3_20" id="__nav_3_20_label" tabindex="0">
@@ -3680,7 +3838,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_20_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_20_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_20">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3698,7 +3856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../workflow/" class="md-nav__link">
         
   
   
@@ -3726,7 +3884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai-product-demand-analysis/" class="md-nav__link">
+      <a href="../../workflow/ai-product-demand-analysis/" class="md-nav__link">
         
   
   
@@ -3754,7 +3912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sdd/" class="md-nav__link">
+      <a href="../../workflow/sdd/" class="md-nav__link">
         
   
   
@@ -3782,7 +3940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../superpowers/" class="md-nav__link">
+      <a href="../../workflow/superpowers/" class="md-nav__link">
         
   
   
@@ -3807,46 +3965,10 @@
                 
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BMAD-Method
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../manus/" class="md-nav__link">
+      <a href="../../workflow/manus/" class="md-nav__link">
         
   
   
@@ -3874,7 +3996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dify/" class="md-nav__link">
+      <a href="../../workflow/dify/" class="md-nav__link">
         
   
   
@@ -3902,7 +4024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../coze/" class="md-nav__link">
+      <a href="../../workflow/coze/" class="md-nav__link">
         
   
   
@@ -3930,7 +4052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../n8n/" class="md-nav__link">
+      <a href="../../workflow/n8n/" class="md-nav__link">
         
   
   
@@ -3958,7 +4080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openclaw/" class="md-nav__link">
+      <a href="../../workflow/openclaw/" class="md-nav__link">
         
   
   
@@ -3986,7 +4108,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../openviking/" class="md-nav__link">
+      <a href="../../workflow/hermes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hermes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflow/openviking/" class="md-nav__link">
         
   
   
@@ -5872,6 +6022,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../essay/paper/pop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -5931,6 +6109,38 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#svd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SVD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pca_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PCA
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -5994,7 +6204,7 @@
         <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
-    WorkFlow
+    ML
   </span>
 
         </a>
@@ -6013,9 +6223,9 @@
 
 
 
-  <h1>BMAD-Method</h1>
-
-
+<h1 id="pca">PCA<a class="headerlink" href="#pca" title="Permanent link">&para;</a></h1>
+<h2 id="svd">SVD<a class="headerlink" href="#svd" title="Permanent link">&para;</a></h2>
+<h2 id="pca_1">PCA<a class="headerlink" href="#pca_1" title="Permanent link">&para;</a></h2>
 
 
 

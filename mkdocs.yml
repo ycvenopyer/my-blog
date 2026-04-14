@@ -13,6 +13,8 @@ nav:
     - Overview: ai.md
     - ML:
       - Overview: ai-note/ml/index.md
+      - Regularization: ai-note/ml/regularization.md
+      - PCA: ai-note/ml/pca.md
     - NLP:
       - Overview: ai-note/nlp/index.md
       - RNN: ai-note/nlp/rnn.md
@@ -25,6 +27,7 @@ nav:
       - Transformer: ai-note/llm/transformer.md
       - LLM Structure: ai-note/llm/structure.md
       - LLaMA: ai-note/llm/llama.md
+      - Retnet: ai-note/llm/retnet.md
       - MoE: ai-note/llm/moe.md
       - RWKV: ai-note/llm/rwkv.md
       - Mamba: ai-note/llm/mamba.md
@@ -45,7 +48,7 @@ nav:
       - BLIP: ai-note/mllm/blip.md
     - LLM Distributed Training and Inference:
       - Overview: ai-note/llm-distributed-training-and-inference/index.md
-      - Deepspeed: ai-note/llm-distributed-training-and-inference/deepspeed.md
+      - Prefill&Decode: ai-note/llm-distributed-training-and-inference/prefill-and-decode.md
     - LLM Compression and Quantization:
       - Overview: ai-note/llm-compression-and-quantization/index.md
     - LLM Speculative Decoding:
@@ -104,12 +107,12 @@ nav:
       - AI Product Demand: ai-note/workflow/ai-product-demand-analysis.md
       - SDD: ai-note/workflow/sdd.md
       - Superpowers: ai-note/workflow/superpowers.md
-      - BMAD-Method: ai-note/workflow/bmad-method.md
       - Manus: ai-note/workflow/manus.md
       - Dify: ai-note/workflow/dify.md
       - Coze: ai-note/workflow/coze.md
       - n8n: ai-note/workflow/n8n.md
       - OpenClaw: ai-note/workflow/openclaw.md
+      - Hermes: ai-note/workflow/hermes.md
       - OpenViking: ai-note/workflow/openviking.md
     - Models:
       - Overview: ai-note/models/index.md
@@ -167,6 +170,7 @@ nav:
       - Overview: essay/reading/index.md
     - Paper:
       - Olica: essay/paper/olica.md
+      - POP: essay/paper/pop.md
   - About: about.md
 
 theme:

@@ -23,6 +23,8 @@ Transformer 由Encoder和Decoder两个部分组成，都分别包含6个block。
 
 Transformer中单词的输入表示\( X \) 由单词Embedding和位置Embedding相加得到。
 
+input embedding和output embedding 是通过token embedding matrix 得到的，需要先构建token embedding matrix，维度是vocab_size乘d_model（vocab_size是词汇量的大小，d_model是词向量的长度，也就是说每一个词都用一个d_model维的向量表示，所有的词合起来就构成了这个矩阵），然后用tf.nn.embeddinglookup函数在matrix里按照x查询得到input embedding，x是由词的id构成的向量，设x的长度为T1，那么最终得到的input embedding的维数就是T1乘d_model。output embedding和input embedding的得到方式相同，不同的地方在于把x换成decoder_inputs，以机器翻译为例，要把T1长的英文翻译成T2长的中文，那么x是T1长的英文词id，decoder inputs就是对应T2长的中文词id，所以最终得到的output embedding是T2乘d_model维。
+
 ### 2.1 单词 Embedding
 
 单词的Embedding有很多方式可以获取，例如Word2Vec、Glove等算法预训练得到，也可以在Transformer中训练得到。
