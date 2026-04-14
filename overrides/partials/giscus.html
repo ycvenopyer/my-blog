@@ -1,0 +1,19 @@
+<div class="giscus-wrapper" style="margin-top: 2rem">
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="{{ config.extra.giscus.repo }}"
+    data-repo-id="{{ config.extra.giscus.repo_id }}"
+    data-category="{{ config.extra.giscus.category }}"
+    data-category-id="{{ config.extra.giscus.category_id }}"
+    data-mapping="{{ config.extra.giscus.mapping | default('pathname') }}"
+    data-strict="{{ config.extra.giscus.strict | default(0) }}"
+    data-reactions-enabled="{{ config.extra.giscus.reactions_enabled | default(1) }}"
+    data-emit-metadata="{{ config.extra.giscus.emit_metadata | default(0) }}"
+    data-input-position="{{ config.extra.giscus.input_position | default('bottom') }}"
+    data-theme="preferred_color_scheme"
+    data-lang="{{ config.extra.giscus.lang | default('zh-CN') }}"
+    data-loading="{{ config.extra.giscus.loading | default('lazy') }}"
+    crossorigin="anonymous"
+    async
+  ></script>
+</div>

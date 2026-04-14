@@ -2,6 +2,8 @@ site_name: ycvenopyer
 site_description: 我的个人博客
 site_author: ycvenopyer
 site_url: https://ycvenopyer.github.io/my-blog
+repo_url: https://github.com/ycvenopyer/my-blog
+repo_name: ycvenopyer/my-blog
 
 nav:
   - Homepage: index.md
@@ -176,6 +178,7 @@ nav:
 theme:
   name: material
   language: zh
+  custom_dir: overrides
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -217,10 +220,16 @@ plugins:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.smartsymbols
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.critic:
       mode: view
   - pymdownx.betterem:
@@ -234,19 +243,17 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
+  - def_list
   - md_in_html
   - footnotes
-  - admonition
   - tables
   - toc:
       permalink: true
       toc_depth: 3
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/ycvenopyer
 
 extra_css:
   - stylesheets/extra.css
@@ -256,3 +263,20 @@ extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  giscus:
+    # 1) 先在 https://giscus.app/ 配好后，把下面几项填进去
+    repo: ycvenopyer/my-blog
+    repo_id: "R_kgDORB9Tqg"        # 例如：R_kgDOxxxxxx
+    category: "General"
+    category_id: "DIC_kwDORB9Tqs4C60hX"    # 例如：DIC_kwDOxxxxxx
+
+    # 2) 常用配置（一般不用改）
+    mapping: pathname
+    strict: 0
+    reactions_enabled: 1
+    emit_metadata: 0
+    input_position: bottom
+    lang: zh-CN
+    loading: lazy

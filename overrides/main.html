@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+
+  {# Default: show comments; per-page disable via `comments: false` in front matter #}
+  {% set meta = page.meta | default({}) %}
+  {% if meta.get("comments", true) %}
+    {% include "partials/giscus.html" %}
+  {% endif %}
+{% endblock %}
+
