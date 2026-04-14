@@ -1,8 +1,10 @@
-## SSE
+# SSE
 
-## SSE vs WebSocket
+## 1.介绍
 
-## Reference
+## 2.SSE vs WebSocket
+
+## 3.Reference
 
 [AI大模型爆火的SSE技术到底是什么？万字长文，一篇读懂SSE！](https://developer.aliyun.com/article/1696350)
 

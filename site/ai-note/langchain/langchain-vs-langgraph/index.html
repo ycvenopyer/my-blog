@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           跳转至
         </a>
       
@@ -1547,34 +1547,6 @@
     
   
     LLM Infra
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../llm/llm-api/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLM API
   
 
     
@@ -3387,10 +3359,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        定义区别
+        1.定义区别
       
     </span>
   </a>
@@ -3398,10 +3370,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        场景区别
+        2.场景区别
       
     </span>
   </a>
@@ -3409,10 +3381,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#agentlanggraph" class="md-nav__link">
+  <a href="#3agentlanggraph" class="md-nav__link">
     <span class="md-ellipsis">
       
-        复杂Agent场景选择LangGraph
+        3.复杂Agent场景选择LangGraph
       
     </span>
   </a>
@@ -6148,10 +6120,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        定义区别
+        1.定义区别
       
     </span>
   </a>
@@ -6159,10 +6131,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        场景区别
+        2.场景区别
       
     </span>
   </a>
@@ -6170,10 +6142,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#agentlanggraph" class="md-nav__link">
+  <a href="#3agentlanggraph" class="md-nav__link">
     <span class="md-ellipsis">
       
-        复杂Agent场景选择LangGraph
+        3.复杂Agent场景选择LangGraph
       
     </span>
   </a>
@@ -6269,7 +6241,11 @@
 
   <h1>LangChain vs LangGraph</h1>
 
-<h2 id="_1">定义区别<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 637 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 1 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 2 分钟</p>
+</div>
+<p>LangChain VS LangGraph</p>
+<h2 id="1">1.定义区别<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <p>作为 LangChain 生态中两款核心开发工具，LangChain 与 LangGraph 均由同一团队打造，旨在解决大语言模型（LLM）集成与协同问题，但二者在工作流设计理念上存在本质区别，常被开发者混淆。从命名即可直观感知其核心差异：</p>
 <ul>
 <li>
@@ -6280,7 +6256,7 @@
 </li>
 </ul>
 <p><img alt="langchain-and-langgraph" src="../image/langchain-and-langgraph.png" /></p>
-<h2 id="_2">场景区别<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="2">2.场景区别<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <p>两者的定位差异决定了适用场景的分野，且并非互斥关系，而是可形成“基础组件+高级编排”的协同模式：</p>
 <ul>
 <li>
@@ -6290,7 +6266,7 @@
 <p>LangGraph：作为构建有状态智能体（Agent）系统的高级框架，擅长处理多步骤动态任务（如复杂问题拆解、多智能体协作、需要人工介入的审批流程），其核心优势在于对“状态连续性”的支持。</p>
 </li>
 </ul>
-<h2 id="agentlanggraph">复杂Agent场景选择LangGraph<a class="headerlink" href="#agentlanggraph" title="Permanent link">&para;</a></h2>
+<h2 id="3agentlanggraph">3.复杂Agent场景选择LangGraph<a class="headerlink" href="#3agentlanggraph" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>对“状态”的天然支持：Agent的核心在于在“思考-行动-观察”的循环中保持上下文和记忆。LangGraph的全局State机制（例如存储对话历史、中间步骤、工具结果）为此提供了内置、统一的管理方案，避免了传统开发中状态分散的难题。</p>
@@ -6308,6 +6284,9 @@
 
 
 
+
+  
+  
 
 
 

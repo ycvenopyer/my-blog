@@ -1,9 +1,9 @@
 # Deep Research 产品
 
-## OpenAI Deep Research
+## 1.OpenAI Deep Research
 
-## Gemini Deep Research
+## 2.Gemini Deep Research
 
-## Tongyi Deep Research
+## 3.Tongyi Deep Research
 
-## Perplexity Deep Research
+## 4.Perplexity Deep Research

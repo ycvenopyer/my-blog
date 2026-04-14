@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -1560,34 +1560,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm/llm-api/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLM API
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -2113,10 +2085,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        方向1
+        1.方向1
       
     </span>
   </a>
@@ -2124,10 +2096,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2draft-model" class="md-nav__link">
+  <a href="#22draft-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        方向2：高效Draft model结构设计
+        2.方向2：高效Draft model结构设计
       
     </span>
   </a>
@@ -2135,10 +2107,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        推荐论文和项目
+        3.推荐论文和项目
       
     </span>
   </a>
@@ -6154,10 +6126,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        方向1
+        1.方向1
       
     </span>
   </a>
@@ -6165,10 +6137,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2draft-model" class="md-nav__link">
+  <a href="#22draft-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        方向2：高效Draft model结构设计
+        2.方向2：高效Draft model结构设计
       
     </span>
   </a>
@@ -6176,10 +6148,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        推荐论文和项目
+        3.推荐论文和项目
       
     </span>
   </a>
@@ -6274,15 +6246,17 @@
 
 
 <h1 id="speculative-decoding">Speculative Decoding<a class="headerlink" href="#speculative-decoding" title="Permanent link">&para;</a></h1>
-<p>投机解码</p>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 916 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 3 分钟</p>
+</div>
 <p>随着大规模语言模型（LLM）在各类自然语言处理任务中的广泛应用，模型推理效率成为制约其落地和推广的关键因素，推理同时对吞吐和时延具有较高要求。投机解码（Speculative Decoding）作为一种提升大模型推理性能的有效技术，近年来受到广泛关注。投机解码通过引入辅助模型（通常为小型语言模型）或结构来预测主模型的输出，从而减少主模型的计算负担，提高推理速度。</p>
 <p>大模型推理性能优化-投机解码： Transformer架构的大模型推理的解码（decode phase）每次根据注意力窗口内的所有上文信息，生成一个新token。这个自回归的过程受到访存带宽的限制（memory-bound，访存密集型）。投机解码（Speculative Decoding）通过引入辅助的草稿模型（通常为小型语言模型，draft model）或结构来预测主模型的输出的连续若干个token，目标模型（target model）只需对草稿模型预测的token进行验证，从而在前向计算中并行生成多个token，减少目标模型的计算负担，提高推理速度。</p>
 <p>投机解码的研究领域主要集中在token预测的优化上：研究如何设计高效的draft model或预测模块，包括模型结构、参数量、训练方法、预测token数量等，以在保证预测准确率的同时最大化推理速度提升。</p>
-<h2 id="1">方向1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="11">1.方向1<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
 <p>通过缓存之前预测的有效信息来提升draft model的预测能力：通过设计高效的缓存机制，存储和利用之前预测的（包括没有被命中）token及其上下文信息，提升draft model在连续token预测中的准确率和效率。可以优化的方向包括但不限于： a. 缓存更有效的信息，以提升预测效率； b. 优化检索策略，如向量检索，文本匹配等的效率。</p>
-<h2 id="2draft-model">方向2：高效Draft model结构设计<a class="headerlink" href="#2draft-model" title="Permanent link">&para;</a></h2>
+<h2 id="22draft-model">2.方向2：高效Draft model结构设计<a class="headerlink" href="#22draft-model" title="Permanent link">&para;</a></h2>
 <p>Draft model结构设计：优化预测模块结构设计，draft model的设计目标通常是得到和target model近似的数据分布，从而提升在验证阶段target model接受的token数量，主流的draft model如eagle经常采用和target model一样的自回归设计，然而我们认为自回归的draft结构并不是通向模拟target model数据分布的唯一途径，我们希望draft model在保持住数据分布的同时能够具有其他的如并行采样的优秀性质。可以优化的方向包括但不限于：a. 设计出最小推理代价但最大保留原模型数据分布的新型网络架构 b. 探索高速高效的draft model采样机制来战胜自回归draft采样.</p>
-<h2 id="_1">推荐论文和项目<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="3">3.推荐论文和项目<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <p>SpecForge：SpecForge is an ecosystem project developed by the SGLang team. It is a framework for training speculative decoding models so that you can smoothly port them over to the SGLang serving framework to speed up your inference. Learn more: https://docs.sglang.ai/SpecForge/。</p>
 <p>Accelerating Large Language Model Decoding with Speculative Sampling (2023)</p>
 <p>Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads （SD方向的著名论文，与上述方向2相关）</p>
@@ -6297,6 +6271,9 @@
 
 
 
+
+  
+  
 
 
 

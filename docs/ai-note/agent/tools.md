@@ -1,4 +1,6 @@
-## 什么是 Tool Use
+# Tools
+
+## 1.什么是 Tool Use
 
 大模型的 Tool（也称Function Calling）是指允许大模型调用外部工具或函数的机制。通过定义工具，模型可以决定何时调用、传递什么参数，并将结果整合到回复中。
 
@@ -10,7 +12,7 @@
 - step2：拿到LLM的tool-use请求，调用tool；
 - step3：把tool调用结果作为新的context，再发送给LLM。
 
-## Tool 定义
+## 2.Tool 定义
 
 对于每一个tool，需提供三类信息：
 
@@ -22,9 +24,9 @@
 
 Tool-Use为LLM提供了More Context + Take Actions的组合拳，帮助LLM解决knowledge gap问题、自身能力限制问题以及无法执行外部动作的问题，大大拓宽了LLM的应用场景；其实现方式也比较简单，但如果遇到效果不及预期的情况，就得注意tools定义、tools数量及相关性、基座模型能力等因素。
 
-## Tool 的常见格式
+## 3.Tool 的常见格式
 
-### OpenAI Function Calling 格式
+### 3.1 OpenAI Function Calling 格式
 
 ```json
 {
@@ -51,7 +53,7 @@ Tool-Use为LLM提供了More Context + Take Actions的组合拳，帮助LLM解决
 }
 ```
 
-### LangChain Tool 格式
+### 3.2 LangChain Tool 格式
 
 LangChain 自定义 tools有三种方式：
 
@@ -119,7 +121,7 @@ print(search_tool.description)
 print(search_tool.args)
 ```
 
-## Reference
+## 4.Reference
 [Langchain自定义Tool的三种方式](https://blog.csdn.net/weixin_48707135/article/details/137740363)
 
 [Agent基础篇：Tool-Use的定义、实现方式和效果优化](https://zhuanlan.zhihu.com/p/1921263213938443768)

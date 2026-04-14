@@ -41,7 +41,6 @@ nav:
       - CoT: ai-note/llm/cot.md
       - LLM Pruning: ai-note/llm/llm-pruning.md
       - LLM Infra: ai-note/llm/llm-infra.md
-      - LLM API: ai-note/llm/llm-api.md
     - MLLM:
       - Overview: ai-note/mllm/index.md
       - VLM: ai-note/mllm/vlm.md
@@ -216,6 +215,15 @@ theme:
 
 plugins:
   - search
+  - statistics:
+      page_statistics: true
+      page_read_time: true
+      page_images: true
+      words_per_minute: 320
+      codelines_per_minute: 90
+      ignore_languages:
+        - mermaid
+        - math
 
 markdown_extensions:
   - pymdownx.highlight:

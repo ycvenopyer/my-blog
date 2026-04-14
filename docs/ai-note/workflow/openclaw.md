@@ -1,8 +1,10 @@
-## 什么是 OpenClaw
+# OpenClaw
+
+## 1.什么是 OpenClaw
 
 **一个开源免费、本地运行的个人AI智能体（Agent）**。
 
-## 印象派：更像Manus还是Cowork？
+## 2.Manus or Cowork？
 
 ![Manus or Cowork?](image/clawdbot1.png)
 
@@ -16,7 +18,7 @@
 
 {==从形态上看，OpenClaw的确更接近Cowork，而非Manus——属于“本地优先+外部/本地模型+本地资源访问”的路线。==}
 
-## 独特之处
+## 3.独特性
 
 - **入口形态**：OpenClaw的入口不限定在某个官方工作台，而是在你日常使用的工作聊天入口，比如WhatsApp/Telegram/Discord/飞书/钉钉等。
 
@@ -32,8 +34,7 @@
 
 ![OpenClaw vs Cowork vs Manus](image/clawdbot2.png)
 
-
-## 创意使用场景
+## 4.使用场景
 
 - 收件箱清理（Gmail插件）
 
@@ -45,7 +46,7 @@
 
 - 更高阶的自主应变
 
-## 是如何运转的
+## 5.如何运转
 
 OpenClaw本身的架构是比较复杂的，涉及较多的层次与模块，加上偏”分布式“的设计以及扩展性、安全性的众多考虑，已经远远超出一个普通 Agent 的范畴。
 

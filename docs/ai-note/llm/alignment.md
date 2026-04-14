@@ -1,5 +1,5 @@
 # Alignment（对齐）
 
-## SFT
+## 1.SFT
 
-## RLHF
+## 2.RLHF

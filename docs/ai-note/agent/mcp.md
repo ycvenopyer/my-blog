@@ -1,4 +1,6 @@
-## 什么是MCP
+# MCP
+
+## 1.什么是MCP
 
 MCP(Model Context Protocol，模型上下文协议)定义了应用程序和AI模型之间交换上下文信息的方式。这使得开发者能够以一致的方式将各种数据源、工具和功能连接到AI模型，就像USB-C让不同设备能够通过相同的接口连接一样。MCP的目标是创建一个通用标准，使AI应用程序的开发和集成变得更加简单和统一。
 
@@ -6,7 +8,7 @@ MCP(Model Context Protocol，模型上下文协议)定义了应用程序和AI模
 
 可以看出，MCP就是以更标准的方式让LLM Chat使用不同工具，Anthropic旨在实现LLM Tool Call的标准。
 
-## 为什么是MCP
+## 2.为什么是MCP
 
 - 手工prompt的局限性：许多LLM平台（如OpenAI、Google）引入了function call功能，这一机制允许模型在需要时调用预定义的函数来获取数据或执行操作，显著提升了自动化水平。
 
@@ -22,7 +24,7 @@ MCP的优势：
 
 3. 数据安全：敏感数据保留本地不必上传
 
-## MCP Architecture
+## 3.MCP Architecture
 
 ![mcp architecture](image//model-context-protocol-architecture.png)
 
@@ -40,7 +42,7 @@ MCP由三个核心组件构成：Host、Client和Server。
 
 这种架构设计使得 Claude 可以在不同场景下灵活调用各种工具和数据源，而开发者只需专注于开发对应的 MCP Server，无需关心 Host 和 Client 的实现细节。
 
-## 原理：模型如何确定工具的选用
+## 4.原理：模型如何确定工具的选用
 
 Anthropic的解释：
 
@@ -68,17 +70,17 @@ Anthropic的解释：
 
 模型是通过prompt，即提供所有工具的结构化描述和few-shot的example来确定该使用哪些工具。
 
-## 一些观点
+## 5.一些观点
 
 1. function call中，每个工具接口的调用方式不一样，固然可以让LLM读取接口文档调用，但是还是很麻烦。MCP就是让所有的工具接口都用同一个方式调用，相当于用MCP协议包装了一层。这样，LLM就不需要每调用一个接口就要学习一次接口文档了。
 
 2. MCP的能力核心在于 Claude 的function call能力。如果你的tools是上百个的，那么上下文就会超，而且部分大模型在如此多的tools选择和parameter列表生成中一定会有鲁棒性差的问题，所以当你tools上百个时不适合用MCP，或者不该直接使用MCP一次性对全部tools进行选择（可以像N叉树那样，将一次分类转移成多层级多次的分类，减小每次分类的选择空间）；而当你的tools只有十几个的时候，其实压根不用这么复杂——你大可以自己实现一下OpenAI或某个大模型API的function call代码，然后自己开一个tools.py文件，将所有tools按顺序描述好。
 
-## 如何使用
+## 6.如何使用
 
 [For Claude Desktop Users](https://modelcontextprotocol.io/docs/develop/connect-local-servers)
 
-## Reference
+## 7.Reference
 
 [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
 

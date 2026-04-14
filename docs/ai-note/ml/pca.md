@@ -1,6 +1,6 @@
 # PCA
 
-## SVD
+## 1.SVD
 
-## PCA
+## 2.PCA
 

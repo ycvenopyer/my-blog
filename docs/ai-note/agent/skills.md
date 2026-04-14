@@ -1,3 +1,5 @@
+# Skills
+
 ## 1.什么是Skills
 
 ### 1.1 定义
@@ -118,23 +120,6 @@ Skills也可分优先级。
 - 单一职责：每个Skill只做一件事
 
 - 渐进式披露：核心内容放SKILL.md，详细内容放references/
-
-  ~~~
-  # SKILL.md
-  
-  ## 快速流程
-  1. 第一步
-  2. 第二步
-  3. 第三步
-  
-  ## 常见场景
-  - 场景A：做法
-  - 场景B：做法
-  
-  ## 详细参考
-  - 更多细节见：[DETAILED_GUIDE.md](references/DETAILED_GUIDE.md)
-  - 边界情况见：[EDGE_CASES.md](references/EDGE_CASES.md)
-  ~~~
 
 - 脚本优于生成代码
 
