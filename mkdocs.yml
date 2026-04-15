@@ -170,8 +170,10 @@ nav:
     - Bayesian-TTA: projects/bayesian-tta.md
   - Essay:
     - Overview: essay.md
-    - Kaoyan:
-      - 经验贴: essay/kaoyan/experience.md
+    - Gossip:
+      - 兴趣爱好: essay/gossip/hobbies.md
+      - 考研经验贴: essay/gossip/kaoyan-experience.md
+      - 本科四年总结: essay/gossip/four-years-summary.md
     - Reading:
       - Overview: essay/reading/index.md
     - Paper:

@@ -10,14 +10,14 @@ I am a student in the School of Intelligent Software Engineering at NJU. I am ke
 
 ## 🗺️ Research Interests
 
-I have a broad interest in *LLMs* and *NLP*. Currently, I am primarily focusing on *MoE Compression* and *LLM Safety*.
+I have a broad interest in *LLMs* and *NLP*. Currently, I am primarily focusing on *MoE Compression*(Efficient LLMs) and *LLM Safety*.
 
 ## 🔧 Technical Skills
 
 - Languages: C/C++, Python, Java, Latex
 - Frameworks: Flask, Pytorch
-- Tools: Linux, VSCode, Cursor, Claude Code, Typora, Zotero
-- AI: RAG, Agent, Agent Frameworks(LangChain, LangGraph), MCP, Skill, Prompt Engineering
+- Tools: VSCode, PyCharm, IDEA, Typora, Obsidian, Zotero, Cursor, Claude Code
+- AI: RAG, Agent, Agent Frameworks(LangChain, LangGraph), MCP, Function Calling, Skill, Prompt Engineering
 
 ## 💼 Internship Experience
 
@@ -31,15 +31,3 @@ I have a broad interest in *LLMs* and *NLP*. Currently, I am primarily focusing 
 ## 🎯 Hobbies
 
 ⚽ *Soccer* and 🖊  *calligraphy* are my merits — I am a fan of Real Madrid and have created numerous calligraphy works to date. I play as a defender on the pitch.
-
-I started learning calligraphy from the third grade of elementary school. I first learned at home with my grandfather, and later attended an extracurricular calligraphy class. I began with regular script using Yan Zhenqing's *Yan Qin Li Stele*, then moved on to running-regular script by studying Zhao Mengfu's *Di Shi Dan Ba Stele*. After that, I studied *Shengjiao Xu* (Preface to the Sacred Teachings). The calligraphy of *Shengjiao Xu* is rigorous in structure and rules, making it very suitable for the transition from regular script to running script. Moreover, since it is a collection of characters (from Wang Xizhi), it lends itself well to creative adaptations and allows switching to other running script styles. Later, I self-studied Zhao Mengfu's running script works, such as *Luoshen Fu*, *Qiuxing Fu*, *Chibi Fu*, and *Xianju Fu*, and also tried my hand at calligraphers like Wang Xizhi, Mi Fu, Su Shi, and Zhi Yong.
-
-Since entering university, I began learning cursive script with Sun Guoting's *Shu Pu* (also known as *Treatise on Calligraphy*). Sun Guoting's cursive script is both elegant and aesthetically pleasing, making it highly suitable for beginners. I am most proficient in the *Zhao style*. Years of copying and creating calligraphic works have not only broadened my horizons but also deepened my understanding of China's fine traditional culture. The way of calligraphy is also the way of being human: integrity and flexibility, uninhibitedness and restraint, blank spacing and density, wet ink and dry brush—all of these reflect the wisdom of the ancients.
-
-<div class="two-images-row" markdown="1">
-
-![hard-brush](image/hard-brush.jpeg)
-
-![calligraphy](image/calligraphy.jpg)
-
-</div>
