@@ -1,0 +1,16 @@
+{# Git 时间由 mkdocs-git-revision-date-localized 写入 page.meta；单页关闭：front matter 设 article_dates: false #}
+{% set meta = page.meta | default({}) %}
+{% if meta.get("article_dates", true) and meta.get("git_revision_date_localized_raw_custom") %}
+<footer class="md-article-dates" aria-label="文章时间信息">
+  <span class="md-article-dates__item" title="最后修改">
+    <span class="md-article-dates__icon" aria-hidden="true">{% include ".icons/material/clock-edit-outline.svg" %}</span>
+    <time class="md-article-dates__time" datetime="{{ meta.get('git_revision_date_localized_raw_iso_datetime', '') }}">{{ meta.git_revision_date_localized_raw_custom }}</time>
+  </span>
+  {% if meta.get("git_creation_date_localized_raw_custom") %}
+  <span class="md-article-dates__item" title="首次创作">
+    <span class="md-article-dates__icon" aria-hidden="true">{% include ".icons/material/clock-plus-outline.svg" %}</span>
+    <time class="md-article-dates__time" datetime="{{ meta.get('git_creation_date_localized_raw_iso_datetime', '') }}">{{ meta.git_creation_date_localized_raw_custom }}</time>
+  </span>
+  {% endif %}
+</footer>
+{% endif %}

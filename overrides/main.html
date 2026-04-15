@@ -2,11 +2,8 @@
 
 {% block content %}
   {{ super() }}
-
-  {# 阅读量已写在 docs/templates/page_statistics.html（紧跟字数统计） #}
+  {% include "partials/article-dates.html" %}
   {% set meta = page.meta | default({}) %}
-
-  {# Default: show comments; per-page disable via `comments: false` in front matter #}
   {% if meta.get("comments", true) %}
     {% include "partials/giscus.html" %}
   {% endif %}

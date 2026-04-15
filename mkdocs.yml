@@ -220,6 +220,15 @@ theme:
 
 plugins:
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+      locale: zh
+      timezone: Asia/Shanghai
+      type: custom
+      # %-m / %-d：与常见中文习惯一致（如 3月3日 而非 03月03日）
+      custom_format: "%Y年%-m月%-d日 %H:%M:%S"
+      strict: false
   - statistics:
       page_statistics: true
       page_read_time: true
