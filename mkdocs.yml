@@ -224,6 +224,7 @@ plugins:
       page_statistics: true
       page_read_time: true
       page_images: true
+      page_template: templates/page_statistics.html
       words_per_minute: 320
       codelines_per_minute: 90
       ignore_languages:
@@ -276,6 +277,8 @@ extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # 不蒜子：单页阅读量（静态站无法自建 PV，依赖第三方；与 navigation.instant 同用时可能需在切换后刷新才更新）
+  - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
 extra:
   giscus:
