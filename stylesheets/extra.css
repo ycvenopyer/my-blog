@@ -38,6 +38,44 @@
     border-radius: 8px;
 }
 
+/* 文末：Git 首次创作 / 最后修改（见 overrides/partials/article-dates.html） */
+.md-article-dates {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+    max-width: 100%;
+    overflow-x: auto;
+    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+    font-size: 0.85rem;
+    color: var(--md-default-fg-color--lighter);
+}
+
+.md-article-dates__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.md-article-dates__icon {
+    display: inline-flex;
+    width: 1.1em;
+    height: 1.1em;
+    flex-shrink: 0;
+    color: var(--md-default-fg-color--lighter);
+    opacity: 0.9;
+}
+
+.md-article-dates__icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
 /* 不蒜子：文章阅读量（见 docs/templates/page_statistics.html） */
 .md-pageviews {
     display: flex;
