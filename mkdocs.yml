@@ -177,6 +177,7 @@ nav:
     - Reading:
       - Overview: essay/reading/index.md
     - Paper:
+      - 我的论文阅读: essay/paper/reading-workflow.md
       - Olica: essay/paper/olica.md
       - POP: essay/paper/pop.md
   - About: about.md
