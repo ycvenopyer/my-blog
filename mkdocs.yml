@@ -1,5 +1,5 @@
 site_name: ycvenopyer
-site_description: 我的个人博客
+site_description: 你我的相遇皆是缘分，欢迎订阅我的博客！
 site_author: ycvenopyer
 site_url: https://ycvenopyer.github.io/my-blog
 repo_url: https://github.com/ycvenopyer/my-blog
@@ -223,6 +223,13 @@ theme:
 
 plugins:
   - search
+  - rss:
+      length: 999999
+      abstract_chars_count: -1
+      # 自定义 XSL（docs/rss.xsl）
+      stylesheet: rss.xsl
+      image: https://ycvenopyer.github.io/my-blog/assets/images/favicon.png
+      pretty_print: true
   - glightbox
   - git-revision-date-localized:
       enable_creation_date: true
@@ -230,7 +237,7 @@ plugins:
       locale: zh
       timezone: Asia/Shanghai
       type: custom
-      # %-m / %-d：与常见中文习惯一致（如 3月3日 而非 03月03日）
+      # %-m / %-d：与常见中文习惯一致
       custom_format: "%Y年%-m月%-d日 %H:%M:%S"
       strict: false
   - statistics:
@@ -294,6 +301,9 @@ extra_javascript:
   - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
 extra:
+  # RSS：插件会生成两个 feed，顶栏两个图标分别对应
+  rss_path: feed_rss_created.xml
+  rss_path_updated: feed_rss_updated.xml
   giscus:
     # 1) 先在 https://giscus.app/ 配好后，把下面几项填进去
     repo: ycvenopyer/my-blog
