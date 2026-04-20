@@ -14,12 +14,12 @@ my-blog/
     ├── about.md        # 关于我
     ├── ai.md           # AI相关
     ├── ai-note/        # AI学习笔记
-    │   ├── a2a.md
-    │   └── agent.md
+    │   └── xxx.md
     ├── stylesheets/    # 自定义样式
     │   └── extra.css
-    └── javascripts/    # 自定义脚本
-        └── extra.js
+    ├── javascripts/    # 自定义脚本
+    |    └── extra.js
+    └── ... 
 ```
 
 ## 安装与使用

@@ -22,12 +22,11 @@ I have a broad interest in *LLMs* and *NLP*. Currently, I am primarily focusing 
 ## 💼 Internship Experience
 
 - **AI Product Intern** | Radnova | Jan 2026 – Mar 2026
-- Led the requirements analysis for an agent product, designed complete system prompts, and developed tools and skills to support multi‑skill scenario switching.
-- Built a sales agent using LangGraph state graphs and the Agentickit enterprise framework, enabling inter‑agent collaboration via the A2A protocol.
-- Designed state management mechanisms to achieve core capabilities such as context tracking, object management, and SQL query result caching, significantly improving response speed and conversation coherence.
-- Implemented toolchain management and state injection using a middleware pattern, integrated Langfuse for full‑chain monitoring, and established an observable agent infrastructure.
-- Successfully empowered sales personnel with intelligent script generation, real‑time competitor analysis, and customer insight extraction, effectively enhancing sales conversion efficiency.
 
 ## 🎯 Hobbies
 
 ⚽ *Soccer* and 🖊  *calligraphy* are my merits — I am a fan of Real Madrid and have created numerous calligraphy works to date. I play as a defender on the pitch.
+
+For video games, I enjoy *Brawl Stars* — add me with friend code `2VUQ28PPQ` and we can team up!
+
+I like the *JoJo’s Bizarre Adventure* series and some Chinese animation. Singing is not my strength, but I listen to gufeng-style tracks and English songs.
