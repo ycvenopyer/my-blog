@@ -319,3 +319,8 @@ extra:
     input_position: bottom
     lang: zh-CN
     loading: lazy
+
+
+hooks:
+  - hooks.py # 站点统计
+  

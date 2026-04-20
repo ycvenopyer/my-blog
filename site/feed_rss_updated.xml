@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Mon, 20 Apr 2026 03:10:58 -0000</pubDate>
-    <lastBuildDate>Mon, 20 Apr 2026 03:10:58 -0000</lastBuildDate>
+    <pubDate>Mon, 20 Apr 2026 06:01:07 -0000</pubDate>
+    <lastBuildDate>Mon, 20 Apr 2026 06:01:07 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -32,192 +32,6 @@
     
     
     <item>
-      <title>Olica</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;olica-efficient-structured-pruning-of-large-language-models-without-retraining&#34;&gt;Olica: Efficient Structured Pruning of Large Language Models without Retraining&lt;a class=&#34;headerlink&#34; href=&#34;#olica-efficient-structured-pruning-of-large-language-models-without-retraining&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2122 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 14 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 7 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;作者：Jiujun He、Huazhen Lin ，西南财经大学统计与数据科学学院&lt;/p&gt;
-&lt;p&gt;论文链接： &lt;a href=&#34;https://arxiv.org/abs/2506.08436&#34;&gt;https://arxiv.org/abs/2506.08436&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;开源代码：&lt;a href=&#34;https://github.com/BetterTMrR/LLM-Olica&#34;&gt;https://github.com/BetterTMrR/LLM-Olica&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;1&#34;&gt;1. 背景与动机&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;11-llm&#34;&gt;1.1 LLM 的发展与挑战&lt;a class=&#34;headerlink&#34; href=&#34;#11-llm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;随着 Transformer 架构的普及，自然语言处理经历了从 BERT 到 GPT 系列的重要演进。遵循缩放定律（scaling laws），模型参数从数亿扩展到数千亿级，并展现出上下文学习、指令遵循等涌现能力。&lt;/p&gt;
-&lt;p&gt;与此同时，规模增长带来三方面压力：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;参数规模&lt;/strong&gt;：常见大模型参数量在数百亿到千亿量级。  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;部署困难&lt;/strong&gt;：在边缘设备上部署与推理难度陡增。  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;资源需求&lt;/strong&gt;：训练与推理对算力、显存要求高。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;现有模型压缩手段包括网络剪枝、知识蒸馏、量化等。Olica 聚焦网络剪枝，目标是在去除冗余参数的同时尽量保持模型能力。&lt;/p&gt;
-&lt;h3 id=&#34;12&#34;&gt;1.2 结构化与非结构化剪枝&lt;a class=&#34;headerlink&#34; href=&#34;#12&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;剪枝分类&#34; src=&#34;../image/olica/pruning.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;面向 LLM 的剪枝可粗分为两类：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;结构化剪枝&lt;/strong&gt;：移除结构化单元（如整组通道或卷积核等），更易映射到硬件与高效内核，有利于实际加速。  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;非结构化剪枝&lt;/strong&gt;：移除单个权重，稀疏模式不规则，往往依赖专用库或硬件才能充分体现加速收益。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;13&#34;&gt;1.3 现有结构化剪枝的局限&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;结构化剪枝常见两条技术路线：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;基于梯度（gradient-based）&lt;/strong&gt;：借助损失函数的泰勒展开等估计参数重要性（如 OBD、OBS）。但对 LLM 全体参数求梯度代价极高。  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;基于正则化（regularization-based）&lt;/strong&gt;：对参数施加 L1/L2 等促使稀疏。LLM 预训练本身已极耗资源，实践中往往避免再叠加强结构化正则。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;此外，许多 LLM 结构化剪枝工作还存在：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;重硬件与多卡&lt;/strong&gt;：例如 DISP-LLM 剪枝 13B LLaMA 需要多张 A100 80GB。  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;依赖大量数据与重训练&lt;/strong&gt;：如 LLM-Pruner、LoRAP、SlimGPT 等往往需要数万条标注指令数据做恢复训练。  &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;剪枝后关联被破坏&lt;/strong&gt;：通常需要昂贵的重训练来重建层间依赖与性能。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Olica 的动机正是在上述约束下，探索尽量少数据、少算力、无需完整重训练的结构化剪枝路径。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;2&#34;&gt;2. 剪枝方法&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;21&#34;&gt;2.1 核心观察与总体思路&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;Transformer&#34; src=&#34;../image/olica/transformer.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Transformer 中 &lt;strong&gt;多头注意力层（MHA）&lt;/strong&gt; 涉及两组矩阵乘积：&lt;span class=&#34;arithmatex&#34;&gt;\(W_q W_k^\top\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v W_o^\top\)&lt;/span&gt;。Olica 的关键是将这类矩阵乘积视作统一对象，对其施加主成分分析（PCA），用低维子空间保留主要信息，从而在不破坏整体模块形状、不依赖大规模重训练的前提下压缩 MHA。&lt;/p&gt;
-&lt;h3 id=&#34;22-mhaond&#34;&gt;2.2 MHA：正交神经元分解（OND）&lt;a class=&#34;headerlink&#34; href=&#34;#22-mhaond&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;正交神经元分解（Orthogonal Neuron Decomposition, OND）&lt;/strong&gt; 将 MHA 中的 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(W_o\)&lt;/span&gt; 视为一体，通过 SVD 提取主结构。设 &lt;span class=&#34;arithmatex&#34;&gt;\(W_{vo} = U \Sigma V^\top\)&lt;/span&gt;，可定义 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}_v \leftarrow U\Sigma\)&lt;/span&gt;、&lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}_o \leftarrow V\)&lt;/span&gt; 等形式（并保持与 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v\)&lt;/span&gt; 相关的恒等/等价关系，具体实现见论文），使得分解后 &lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(U\)&lt;/span&gt;、&lt;span class=&#34;arithmatex&#34;&gt;\(V\)&lt;/span&gt; 列正交&lt;/strong&gt;，输出方向上的信息更“去相关”，便于在固定维度内保留尽可能多的有效信息。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;剪枝策略&lt;/strong&gt;：对每个神经元（或等价特征方向）定义重要性评分，优先剪掉重要性最低的部分。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Importance Score&#34; src=&#34;../image/olica/importance-score.png&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;23-fast-ond&#34;&gt;2.3 Fast-OND：降低分解复杂度&lt;a class=&#34;headerlink&#34; href=&#34;#23-fast-ond&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;Fast-OND&#34; src=&#34;../image/olica/OND.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;朴素 OND 若对 &lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(h\)&lt;/span&gt; 个注意力头分别做 SVD，复杂度约为 &lt;span class=&#34;arithmatex&#34;&gt;\(O(h d^3)\)&lt;/span&gt;&lt;/strong&gt;，对 7B 级模型可能达到约一小时。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;SVD&#34; src=&#34;../image/olica/SVD.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Olica 利用一个经验观察：&lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(W_q\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(W_k\)&lt;/span&gt;（以及 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(W_o\)&lt;/span&gt;）的奇异值分布高度相似&lt;/strong&gt;，在相同“能量保留比例”下所需奇异值个数也接近。据此提出 &lt;strong&gt;Fast-OND&lt;/strong&gt;：&lt;strong&gt;仅对 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v\)&lt;/span&gt; 做 SVD&lt;/strong&gt;，令 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v = U \Sigma V^\top\)&lt;/span&gt;，再据此更新 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}_v \leftarrow U\)&lt;/span&gt;、&lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}_o \leftarrow W_o V \Sigma^\top\)&lt;/span&gt;，将复杂度降至约 &lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(O(d^3 / h)\)&lt;/span&gt;&lt;/strong&gt;。对 LLaMA-7B（如 &lt;span class=&#34;arithmatex&#34;&gt;\(h=32\)&lt;/span&gt;）可在数分钟级完成剪枝。&lt;/p&gt;
-&lt;h3 id=&#34;24-ffn&#34;&gt;2.4 FFN 层剪枝&lt;a class=&#34;headerlink&#34; href=&#34;#24-ffn&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;对前馈（FFN）层，剪枝目标是中间神经元。用重要性评分对中间神经元排序，按目标稀疏率 &lt;span class=&#34;arithmatex&#34;&gt;\(s\)&lt;/span&gt; 剪掉低分神经元，使权重形状由 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbb{R}^{d \times 4d}\)&lt;/span&gt; 变为 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbb{R}^{d \times d&#39;}\)&lt;/span&gt;（&lt;span class=&#34;arithmatex&#34;&gt;\(d&#39;\)&lt;/span&gt; 由稀疏率决定）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;：层输出发生变化后，误差会在深度网络中逐层累积，需要额外校准。&lt;/p&gt;
-&lt;h3 id=&#34;25&#34;&gt;2.5 线性校准（无需重训练）&lt;a class=&#34;headerlink&#34; href=&#34;#25&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;为重建剪枝 FFN 引入的残差误差并避免完整重训练，Olica 使用岭回归拟合误差项 &lt;span class=&#34;arithmatex&#34;&gt;\(E\)&lt;/span&gt;，对校准矩阵 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}\)&lt;/span&gt; 求闭式解，并相应修改前向传播形式。&lt;/p&gt;
-&lt;h3 id=&#34;26&#34;&gt;2.6 层选择与低秩近似&lt;a class=&#34;headerlink&#34; href=&#34;#26&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;layer-selcetion-and-low-rank&#34; src=&#34;../image/olica/layer-selection-and-low-rank.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;层选择&lt;/strong&gt;：随着参与校准的 FFN 层数增加，困惑度（PPL）通常先降后趋于平稳；校准层并非越多越好，过多会引入额外参数与过拟合风险。论文使用 多重相关系数 &lt;span class=&#34;arithmatex&#34;&gt;\(MC2\)&lt;/span&gt; 衡量线性可恢复程度：&lt;span class=&#34;arithmatex&#34;&gt;\(R_{XE}\)&lt;/span&gt; 越大，残差越适合用线性方式补偿；实验上较浅层 FFN 的残差往往更易校准。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;低秩近似&lt;/strong&gt;：若直接引入完整 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}\)&lt;/span&gt;，参数量约 &lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(d^2\)&lt;/span&gt;&lt;/strong&gt;，约占单层 FFN 的 &amp;#8539;。可将 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}\)&lt;/span&gt; 低秩分解，只保留前 &lt;span class=&#34;arithmatex&#34;&gt;\(r\)&lt;/span&gt; 个最大奇异值对应的方向，将新增参数降到约 &lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(2dr\)&lt;/span&gt;&lt;/strong&gt;（&lt;span class=&#34;arithmatex&#34;&gt;\(r \ll d\)&lt;/span&gt;）。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;3&#34;&gt;3. 实验与结果&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;31&#34;&gt;3.1 设置&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;模型&lt;/strong&gt;：LLaMA-1、LLaMA-2、Vicuna 系列。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;语言建模数据&lt;/strong&gt;：WikiText2，序列长度 128 tokens。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;下游任务&lt;/strong&gt;：BoolQ、PIQA、HellaSwag、WinoGrande、ARC-e、ARC-c、OpenbookQA 等。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;评估&lt;/strong&gt;：&lt;code&gt;lm-eval-harness&lt;/code&gt;。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;校准数据&lt;/strong&gt;：从 BookCorpus 与 Alpaca 随机抽 &lt;strong&gt;256&lt;/strong&gt; 条样本，截断长度 &lt;strong&gt;128&lt;/strong&gt;；在 FFN 层数取 &lt;strong&gt;6 / 12 / 16&lt;/strong&gt; 等设置下，选取约 &lt;strong&gt;3%&lt;/strong&gt; 最大特征值对应方向等配置。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;基线&lt;/strong&gt;：LLM-Pruner、LoRAPrune、Compresso、FLAP、SliceGPT、LLM-Surgeon、LoRAP、DISP-LLM、SlimGPT 等结构化剪枝方法。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;32&#34;&gt;3.2 资源与性能&lt;a class=&#34;headerlink&#34; href=&#34;#32&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;ziyuan1&#34; src=&#34;../image/olica/ziyuan1.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;在 33% 稀疏率下，Olica 在报告设置中达到 PPL = 19.83、平均准确率 61.21%。相对依赖大量数据与多卡重训练的路线，Olica 在数据与 GPU 资源上更省。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;ziyuan2&#34; src=&#34;../image/olica/ziyuan2.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;ziyuan3&#34; src=&#34;../image/olica/ziyuan3.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;LLaMA-7B，25% 稀疏率&lt;/strong&gt;：PPL &lt;strong&gt;16.69&lt;/strong&gt;，平均准确率 &lt;strong&gt;63.54%&lt;/strong&gt;，优于所对比基线。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;更高稀疏率（33%）&lt;/strong&gt;：PPL &lt;strong&gt;19.83&lt;/strong&gt;、准确率 &lt;strong&gt;61.21%&lt;/strong&gt;，明显优于 LLM-Pruner（PPL 24.50）与 SlimGPT（PPL 24.55）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;跨规模与系列&lt;/strong&gt;：在 LLaMA-13B、LLaMA-2-7B、Vicuna 等模型上，Olica 多为最优或次优，体现一定通用性和可扩展性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;无 LoRA 微调&lt;/strong&gt;：PPT 强调上述结果均在不做 LoRA 微调的情况下取得。&lt;/p&gt;
-&lt;h3 id=&#34;33&#34;&gt;3.3 推理效率&lt;a class=&#34;headerlink&#34; href=&#34;#33&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;inference&#34; src=&#34;../image/olica/inference.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;在较高稀疏度下，可降低资源占用并提升推理吞吐，使剪枝模型更适合资源受限场景；报告表明在稀疏度提升的同时性能损失可控。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;4&#34;&gt;4. 消融实验&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;module&#34; src=&#34;../image/olica/module.png&#34; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;模块有效性&lt;/strong&gt;：&lt;strong&gt;Fast-OND&lt;/strong&gt; 相对基线分解更高效；线性校准可与其它剪枝流程结合并带来增益。  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;calibration&#34; src=&#34;../image/olica/calibration.png&#34; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;校准层数&lt;/strong&gt;：PPL 随校准层数增加先降后稳，超过约 20 层后边际收益减小。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;低秩比例&lt;/strong&gt;：随低秩近似比例增大 PPL 逐步下降，超过约 0.15 后收益有限。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;推荐折中&lt;/strong&gt;：校准 &lt;strong&gt;20 层 FFN&lt;/strong&gt; 且低秩比例 &lt;strong&gt;0.15&lt;/strong&gt; 时，&lt;strong&gt;额外参数约占全模型 1%&lt;/strong&gt;。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;sample-efficiency&#34; src=&#34;../image/olica/sample-efficiency.png&#34; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;样本效率&lt;/strong&gt;：校准样本数与序列长度在 &lt;strong&gt;8～2048&lt;/strong&gt; 范围变化时，PPL 波动不超过约 &lt;strong&gt;2.4&lt;/strong&gt;；即便仅 8 个样本仍较稳定。  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;running-time&#34; src=&#34;../image/olica/running-time.png&#34; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;运行时间&lt;/strong&gt;：Fast-OND 约 &lt;strong&gt;413 s&lt;/strong&gt;，对比标准 OND 约 &lt;strong&gt;2910 s&lt;/strong&gt;，约 &lt;strong&gt;7×&lt;/strong&gt; 加速且精度相当。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;5&#34;&gt;5. 总结&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Olica 将 MHA 中矩阵乘积的 PCA/SVD 式压缩与 FFN 剪枝后的线性校准结合，并辅以 Fast-OND 降低分解复杂度、加权 SVD 与层选择控制额外参数。整体在数据量、显存与运行时间上较省，并在多个基准上达到优于或接近主流结构化剪枝基线的表现，同时保持无需完整重训练这一实践上的吸引力。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;6&#34;&gt;6. 参考文献&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Vaswani et al. &lt;a href=&#34;https://arxiv.org/abs/1706.03762&#34;&gt;&lt;em&gt;Attention Is All You Need&lt;/em&gt;&lt;/a&gt;. NeurIPS 2017.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Kaplan et al. &lt;a href=&#34;https://arxiv.org/abs/2001.08361&#34;&gt;&lt;em&gt;Scaling Laws for Neural Language Models&lt;/em&gt;&lt;/a&gt;. 2020.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Gao et al. &lt;a href=&#34;https://arxiv.org/abs/2410.11988&#34;&gt;&lt;em&gt;DISP-LLM: Dimension-independent structural pruning for large language models&lt;/em&gt;&lt;/a&gt;. NeurIPS 2024.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ma et al. &lt;a href=&#34;https://arxiv.org/abs/2305.11627&#34;&gt;&lt;em&gt;LLM-Pruner: On the Structural Pruning of Large Language Models&lt;/em&gt;&lt;/a&gt;. NeurIPS 2023.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Li et al. &lt;a href=&#34;https://arxiv.org/abs/2404.09695&#34;&gt;&lt;em&gt;LoRAP: Transformer Sub-layers Deserve Differentiated Structured Compression&lt;/em&gt;&lt;/a&gt;. ICML 2024.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ling et al. &lt;a href=&#34;https://arxiv.org/abs/2412.18110&#34;&gt;&lt;em&gt;SlimGPT: Layer-wise Structured Pruning for LLMs&lt;/em&gt;&lt;/a&gt;. NeurIPS 2024.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Zhang et al. &lt;a href=&#34;https://arxiv.org/abs/2305.18403&#34;&gt;&lt;em&gt;LoRAPrune: Structured pruning meets low-rank parameter-efficient fine-tuning&lt;/em&gt;&lt;/a&gt;. ACL 2024.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Guo et al. &lt;a href=&#34;https://arxiv.org/abs/2310.05015&#34;&gt;&lt;em&gt;Compresso: Structured pruning with collaborative prompting learns compact large language models&lt;/em&gt;&lt;/a&gt;. 2023.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;An et al. &lt;a href=&#34;https://arxiv.org/abs/2312.11983&#34;&gt;&lt;em&gt;Fluctuation-based adaptive structured pruning for large language models&lt;/em&gt;&lt;/a&gt;. AAAI 2024.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Ashkboos et al. &lt;a href=&#34;https://arxiv.org/abs/2401.15024&#34;&gt;&lt;em&gt;SliceGPT: Compress LLMs by Deleting Rows and Columns&lt;/em&gt;&lt;/a&gt;. ICLR 2024.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;van der Ouderaa et al. &lt;a href=&#34;https://arxiv.org/abs/2312.17244&#34;&gt;&lt;em&gt;The LLM Surgeon&lt;/em&gt;&lt;/a&gt;. ICLR 2024.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Frantar &amp;amp; Alistarh. &lt;a href=&#34;https://arxiv.org/abs/2301.00774&#34;&gt;&lt;em&gt;SparseGPT: Massive Language Models Can Be Accurately Pruned in One-shot&lt;/em&gt;&lt;/a&gt;. ICML 2023.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/essay/paper/olica/</link>
-      <pubDate>Mon, 20 Apr 2026 11:06:46 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/essay/paper/olica/</guid>
-      
-    </item>
-    
-    <item>
       <title>POP</title>
       
       
@@ -225,7 +39,7 @@
       
       <description>&lt;h1 id=&#34;pop-online-structural-pruning-enables-efficient-inference-of-large-foundation-models&#34;&gt;POP: Online Structural Pruning Enables Efficient Inference of Large Foundation Models&lt;a class=&#34;headerlink&#34; href=&#34;#pop-online-structural-pruning-enables-efficient-inference-of-large-foundation-models&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2428 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 12 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 8 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2425 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 12 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 8 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
@@ -237,7 +51,7 @@
 &lt;p&gt;论文链接： &lt;a href=&#34;https://arxiv.org/abs/2602.06822&#34;&gt;https://arxiv.org/abs/2602.06822&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr /&gt;
-&lt;h2 id=&#34;1&#34;&gt;1. 背景与动机&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;1&#34;&gt;1. 背景&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;11&#34;&gt;1.1 大规模基础模型与推理挑战&lt;a class=&#34;headerlink&#34; href=&#34;#11&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;大规模基础模型（Large Foundation Models, LFMs）通过持续扩大规模显著提升能力，但推理阶段计算开销巨大。常见压缩路径包括：&lt;/p&gt;
 &lt;ul&gt;
@@ -446,10 +260,10 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;局限与展望&lt;/strong&gt;：Top 通道在解码中较稳定多为经验观察；若阈值外的通道也强依赖上下文，固定 R / P 可能限制极端场景下的自适应。未来可探索：自动选择候选区宽度、自适应 &lt;span class=&#34;arithmatex&#34;&gt;\(\gamma\)&lt;/span&gt;、以及能否以低开销将类似思想扩展到注意力头等。&lt;/p&gt;
-&lt;details class=&#34;note&#34;&gt;
-&lt;summary&gt;局限性&lt;/summary&gt;
+&lt;div class=&#34;admonition note&#34;&gt;
+&lt;p class=&#34;admonition-title&#34;&gt;局限性&lt;/p&gt;
 &lt;p&gt;这篇论文采用划分区域然后保留R，剪去P，对C进行再计算候选，感觉参数规模仍然很大，因为候选区还要计算中间激活，FFN层参数量仍占大头，这种划区域思想挺好，但有待改进，划分宽度这里有待优化，中间步骤感觉可以探索一些方法再优化效率。&lt;/p&gt;
-&lt;/details&gt;
+&lt;/div&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;6&#34;&gt;6. 参考文献&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;ol&gt;
@@ -476,10 +290,196 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;/li&gt;
 &lt;/ol&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/essay/paper/pop/</link>
-      <pubDate>Mon, 20 Apr 2026 11:06:46 +0000</pubDate>
+      <pubDate>Mon, 20 Apr 2026 13:54:15 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/essay/paper/pop/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Olica</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;olica-efficient-structured-pruning-of-large-language-models-without-retraining&#34;&gt;Olica: Efficient Structured Pruning of Large Language Models without Retraining&lt;a class=&#34;headerlink&#34; href=&#34;#olica-efficient-structured-pruning-of-large-language-models-without-retraining&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2122 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 14 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 7 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;作者：Jiujun He、Huazhen Lin ，西南财经大学统计与数据科学学院&lt;/p&gt;
+&lt;p&gt;论文链接： &lt;a href=&#34;https://arxiv.org/abs/2506.08436&#34;&gt;https://arxiv.org/abs/2506.08436&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;开源代码：&lt;a href=&#34;https://github.com/BetterTMrR/LLM-Olica&#34;&gt;https://github.com/BetterTMrR/LLM-Olica&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;1&#34;&gt;1. 背景与动机&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11-llm&#34;&gt;1.1 LLM 的发展与挑战&lt;a class=&#34;headerlink&#34; href=&#34;#11-llm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;随着 Transformer 架构的普及，自然语言处理经历了从 BERT 到 GPT 系列的重要演进。遵循缩放定律（scaling laws），模型参数从数亿扩展到数千亿级，并展现出上下文学习、指令遵循等涌现能力。&lt;/p&gt;
+&lt;p&gt;与此同时，规模增长带来三方面压力：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;参数规模&lt;/strong&gt;：常见大模型参数量在数百亿到千亿量级。  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署困难&lt;/strong&gt;：在边缘设备上部署与推理难度陡增。  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;资源需求&lt;/strong&gt;：训练与推理对算力、显存要求高。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现有模型压缩手段包括网络剪枝、知识蒸馏、量化等。Olica 聚焦网络剪枝，目标是在去除冗余参数的同时尽量保持模型能力。&lt;/p&gt;
+&lt;h3 id=&#34;12&#34;&gt;1.2 结构化与非结构化剪枝&lt;a class=&#34;headerlink&#34; href=&#34;#12&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;剪枝分类&#34; src=&#34;../image/olica/pruning.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;面向 LLM 的剪枝可粗分为两类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;结构化剪枝&lt;/strong&gt;：移除结构化单元（如整组通道或卷积核等），更易映射到硬件与高效内核，有利于实际加速。  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;非结构化剪枝&lt;/strong&gt;：移除单个权重，稀疏模式不规则，往往依赖专用库或硬件才能充分体现加速收益。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;13&#34;&gt;1.3 现有结构化剪枝的局限&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;结构化剪枝常见两条技术路线：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;基于梯度（gradient-based）&lt;/strong&gt;：借助损失函数的泰勒展开等估计参数重要性（如 OBD、OBS）。但对 LLM 全体参数求梯度代价极高。  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;基于正则化（regularization-based）&lt;/strong&gt;：对参数施加 L1/L2 等促使稀疏。LLM 预训练本身已极耗资源，实践中往往避免再叠加强结构化正则。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;此外，许多 LLM 结构化剪枝工作还存在：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;重硬件与多卡&lt;/strong&gt;：例如 DISP-LLM 剪枝 13B LLaMA 需要多张 A100 80GB。  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;依赖大量数据与重训练&lt;/strong&gt;：如 LLM-Pruner、LoRAP、SlimGPT 等往往需要数万条标注指令数据做恢复训练。  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;剪枝后关联被破坏&lt;/strong&gt;：通常需要昂贵的重训练来重建层间依赖与性能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Olica 的动机正是在上述约束下，探索尽量少数据、少算力、无需完整重训练的结构化剪枝路径。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;2&#34;&gt;2. 剪枝方法&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21&#34;&gt;2.1 核心观察与总体思路&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;Transformer&#34; src=&#34;../image/olica/transformer.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Transformer 中 &lt;strong&gt;多头注意力层（MHA）&lt;/strong&gt; 涉及两组矩阵乘积：&lt;span class=&#34;arithmatex&#34;&gt;\(W_q W_k^\top\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v W_o^\top\)&lt;/span&gt;。Olica 的关键是将这类矩阵乘积视作统一对象，对其施加主成分分析（PCA），用低维子空间保留主要信息，从而在不破坏整体模块形状、不依赖大规模重训练的前提下压缩 MHA。&lt;/p&gt;
+&lt;h3 id=&#34;22-mhaond&#34;&gt;2.2 MHA：正交神经元分解（OND）&lt;a class=&#34;headerlink&#34; href=&#34;#22-mhaond&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;正交神经元分解（Orthogonal Neuron Decomposition, OND）&lt;/strong&gt; 将 MHA 中的 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(W_o\)&lt;/span&gt; 视为一体，通过 SVD 提取主结构。设 &lt;span class=&#34;arithmatex&#34;&gt;\(W_{vo} = U \Sigma V^\top\)&lt;/span&gt;，可定义 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}_v \leftarrow U\Sigma\)&lt;/span&gt;、&lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}_o \leftarrow V\)&lt;/span&gt; 等形式（并保持与 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v\)&lt;/span&gt; 相关的恒等/等价关系，具体实现见论文），使得分解后 &lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(U\)&lt;/span&gt;、&lt;span class=&#34;arithmatex&#34;&gt;\(V\)&lt;/span&gt; 列正交&lt;/strong&gt;，输出方向上的信息更“去相关”，便于在固定维度内保留尽可能多的有效信息。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;剪枝策略&lt;/strong&gt;：对每个神经元（或等价特征方向）定义重要性评分，优先剪掉重要性最低的部分。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Importance Score&#34; src=&#34;../image/olica/importance-score.png&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;23-fast-ond&#34;&gt;2.3 Fast-OND：降低分解复杂度&lt;a class=&#34;headerlink&#34; href=&#34;#23-fast-ond&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;Fast-OND&#34; src=&#34;../image/olica/OND.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;朴素 OND 若对 &lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(h\)&lt;/span&gt; 个注意力头分别做 SVD，复杂度约为 &lt;span class=&#34;arithmatex&#34;&gt;\(O(h d^3)\)&lt;/span&gt;&lt;/strong&gt;，对 7B 级模型可能达到约一小时。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;SVD&#34; src=&#34;../image/olica/SVD.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Olica 利用一个经验观察：&lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(W_q\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(W_k\)&lt;/span&gt;（以及 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(W_o\)&lt;/span&gt;）的奇异值分布高度相似&lt;/strong&gt;，在相同“能量保留比例”下所需奇异值个数也接近。据此提出 &lt;strong&gt;Fast-OND&lt;/strong&gt;：&lt;strong&gt;仅对 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v\)&lt;/span&gt; 做 SVD&lt;/strong&gt;，令 &lt;span class=&#34;arithmatex&#34;&gt;\(W_v = U \Sigma V^\top\)&lt;/span&gt;，再据此更新 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}_v \leftarrow U\)&lt;/span&gt;、&lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}_o \leftarrow W_o V \Sigma^\top\)&lt;/span&gt;，将复杂度降至约 &lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(O(d^3 / h)\)&lt;/span&gt;&lt;/strong&gt;。对 LLaMA-7B（如 &lt;span class=&#34;arithmatex&#34;&gt;\(h=32\)&lt;/span&gt;）可在数分钟级完成剪枝。&lt;/p&gt;
+&lt;h3 id=&#34;24-ffn&#34;&gt;2.4 FFN 层剪枝&lt;a class=&#34;headerlink&#34; href=&#34;#24-ffn&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;对前馈（FFN）层，剪枝目标是中间神经元。用重要性评分对中间神经元排序，按目标稀疏率 &lt;span class=&#34;arithmatex&#34;&gt;\(s\)&lt;/span&gt; 剪掉低分神经元，使权重形状由 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbb{R}^{d \times 4d}\)&lt;/span&gt; 变为 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbb{R}^{d \times d&#39;}\)&lt;/span&gt;（&lt;span class=&#34;arithmatex&#34;&gt;\(d&#39;\)&lt;/span&gt; 由稀疏率决定）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问题&lt;/strong&gt;：层输出发生变化后，误差会在深度网络中逐层累积，需要额外校准。&lt;/p&gt;
+&lt;h3 id=&#34;25&#34;&gt;2.5 线性校准（无需重训练）&lt;a class=&#34;headerlink&#34; href=&#34;#25&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;为重建剪枝 FFN 引入的残差误差并避免完整重训练，Olica 使用岭回归拟合误差项 &lt;span class=&#34;arithmatex&#34;&gt;\(E\)&lt;/span&gt;，对校准矩阵 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}\)&lt;/span&gt; 求闭式解，并相应修改前向传播形式。&lt;/p&gt;
+&lt;h3 id=&#34;26&#34;&gt;2.6 层选择与低秩近似&lt;a class=&#34;headerlink&#34; href=&#34;#26&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;layer-selcetion-and-low-rank&#34; src=&#34;../image/olica/layer-selection-and-low-rank.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;层选择&lt;/strong&gt;：随着参与校准的 FFN 层数增加，困惑度（PPL）通常先降后趋于平稳；校准层并非越多越好，过多会引入额外参数与过拟合风险。论文使用 多重相关系数 &lt;span class=&#34;arithmatex&#34;&gt;\(MC2\)&lt;/span&gt; 衡量线性可恢复程度：&lt;span class=&#34;arithmatex&#34;&gt;\(R_{XE}\)&lt;/span&gt; 越大，残差越适合用线性方式补偿；实验上较浅层 FFN 的残差往往更易校准。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;低秩近似&lt;/strong&gt;：若直接引入完整 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}\)&lt;/span&gt;，参数量约 &lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(d^2\)&lt;/span&gt;&lt;/strong&gt;，约占单层 FFN 的 &amp;#8539;。可将 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{W}\)&lt;/span&gt; 低秩分解，只保留前 &lt;span class=&#34;arithmatex&#34;&gt;\(r\)&lt;/span&gt; 个最大奇异值对应的方向，将新增参数降到约 &lt;strong&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(2dr\)&lt;/span&gt;&lt;/strong&gt;（&lt;span class=&#34;arithmatex&#34;&gt;\(r \ll d\)&lt;/span&gt;）。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;3&#34;&gt;3. 实验与结果&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;31&#34;&gt;3.1 设置&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;模型&lt;/strong&gt;：LLaMA-1、LLaMA-2、Vicuna 系列。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;语言建模数据&lt;/strong&gt;：WikiText2，序列长度 128 tokens。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;下游任务&lt;/strong&gt;：BoolQ、PIQA、HellaSwag、WinoGrande、ARC-e、ARC-c、OpenbookQA 等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;评估&lt;/strong&gt;：&lt;code&gt;lm-eval-harness&lt;/code&gt;。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;校准数据&lt;/strong&gt;：从 BookCorpus 与 Alpaca 随机抽 &lt;strong&gt;256&lt;/strong&gt; 条样本，截断长度 &lt;strong&gt;128&lt;/strong&gt;；在 FFN 层数取 &lt;strong&gt;6 / 12 / 16&lt;/strong&gt; 等设置下，选取约 &lt;strong&gt;3%&lt;/strong&gt; 最大特征值对应方向等配置。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;基线&lt;/strong&gt;：LLM-Pruner、LoRAPrune、Compresso、FLAP、SliceGPT、LLM-Surgeon、LoRAP、DISP-LLM、SlimGPT 等结构化剪枝方法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;32&#34;&gt;3.2 资源与性能&lt;a class=&#34;headerlink&#34; href=&#34;#32&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;ziyuan1&#34; src=&#34;../image/olica/ziyuan1.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在 33% 稀疏率下，Olica 在报告设置中达到 PPL = 19.83、平均准确率 61.21%。相对依赖大量数据与多卡重训练的路线，Olica 在数据与 GPU 资源上更省。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ziyuan2&#34; src=&#34;../image/olica/ziyuan2.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ziyuan3&#34; src=&#34;../image/olica/ziyuan3.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LLaMA-7B，25% 稀疏率&lt;/strong&gt;：PPL &lt;strong&gt;16.69&lt;/strong&gt;，平均准确率 &lt;strong&gt;63.54%&lt;/strong&gt;，优于所对比基线。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更高稀疏率（33%）&lt;/strong&gt;：PPL &lt;strong&gt;19.83&lt;/strong&gt;、准确率 &lt;strong&gt;61.21%&lt;/strong&gt;，明显优于 LLM-Pruner（PPL 24.50）与 SlimGPT（PPL 24.55）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;跨规模与系列&lt;/strong&gt;：在 LLaMA-13B、LLaMA-2-7B、Vicuna 等模型上，Olica 多为最优或次优，体现一定通用性和可扩展性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;无 LoRA 微调&lt;/strong&gt;：PPT 强调上述结果均在不做 LoRA 微调的情况下取得。&lt;/p&gt;
+&lt;h3 id=&#34;33&#34;&gt;3.3 推理效率&lt;a class=&#34;headerlink&#34; href=&#34;#33&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;inference&#34; src=&#34;../image/olica/inference.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在较高稀疏度下，可降低资源占用并提升推理吞吐，使剪枝模型更适合资源受限场景；报告表明在稀疏度提升的同时性能损失可控。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;4&#34;&gt;4. 消融实验&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;module&#34; src=&#34;../image/olica/module.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;模块有效性&lt;/strong&gt;：&lt;strong&gt;Fast-OND&lt;/strong&gt; 相对基线分解更高效；线性校准可与其它剪枝流程结合并带来增益。  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;calibration&#34; src=&#34;../image/olica/calibration.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;校准层数&lt;/strong&gt;：PPL 随校准层数增加先降后稳，超过约 20 层后边际收益减小。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;低秩比例&lt;/strong&gt;：随低秩近似比例增大 PPL 逐步下降，超过约 0.15 后收益有限。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;推荐折中&lt;/strong&gt;：校准 &lt;strong&gt;20 层 FFN&lt;/strong&gt; 且低秩比例 &lt;strong&gt;0.15&lt;/strong&gt; 时，&lt;strong&gt;额外参数约占全模型 1%&lt;/strong&gt;。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;sample-efficiency&#34; src=&#34;../image/olica/sample-efficiency.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;样本效率&lt;/strong&gt;：校准样本数与序列长度在 &lt;strong&gt;8～2048&lt;/strong&gt; 范围变化时，PPL 波动不超过约 &lt;strong&gt;2.4&lt;/strong&gt;；即便仅 8 个样本仍较稳定。  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;running-time&#34; src=&#34;../image/olica/running-time.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;运行时间&lt;/strong&gt;：Fast-OND 约 &lt;strong&gt;413 s&lt;/strong&gt;，对比标准 OND 约 &lt;strong&gt;2910 s&lt;/strong&gt;，约 &lt;strong&gt;7×&lt;/strong&gt; 加速且精度相当。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;5&#34;&gt;5. 总结&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Olica 将 MHA 中矩阵乘积的 PCA/SVD 式压缩与 FFN 剪枝后的线性校准结合，并辅以 Fast-OND 降低分解复杂度、加权 SVD 与层选择控制额外参数。整体在数据量、显存与运行时间上较省，并在多个基准上达到优于或接近主流结构化剪枝基线的表现，同时保持无需完整重训练这一实践上的吸引力。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;6&#34;&gt;6. 参考文献&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Vaswani et al. &lt;a href=&#34;https://arxiv.org/abs/1706.03762&#34;&gt;&lt;em&gt;Attention Is All You Need&lt;/em&gt;&lt;/a&gt;. NeurIPS 2017.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kaplan et al. &lt;a href=&#34;https://arxiv.org/abs/2001.08361&#34;&gt;&lt;em&gt;Scaling Laws for Neural Language Models&lt;/em&gt;&lt;/a&gt;. 2020.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gao et al. &lt;a href=&#34;https://arxiv.org/abs/2410.11988&#34;&gt;&lt;em&gt;DISP-LLM: Dimension-independent structural pruning for large language models&lt;/em&gt;&lt;/a&gt;. NeurIPS 2024.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ma et al. &lt;a href=&#34;https://arxiv.org/abs/2305.11627&#34;&gt;&lt;em&gt;LLM-Pruner: On the Structural Pruning of Large Language Models&lt;/em&gt;&lt;/a&gt;. NeurIPS 2023.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Li et al. &lt;a href=&#34;https://arxiv.org/abs/2404.09695&#34;&gt;&lt;em&gt;LoRAP: Transformer Sub-layers Deserve Differentiated Structured Compression&lt;/em&gt;&lt;/a&gt;. ICML 2024.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ling et al. &lt;a href=&#34;https://arxiv.org/abs/2412.18110&#34;&gt;&lt;em&gt;SlimGPT: Layer-wise Structured Pruning for LLMs&lt;/em&gt;&lt;/a&gt;. NeurIPS 2024.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Zhang et al. &lt;a href=&#34;https://arxiv.org/abs/2305.18403&#34;&gt;&lt;em&gt;LoRAPrune: Structured pruning meets low-rank parameter-efficient fine-tuning&lt;/em&gt;&lt;/a&gt;. ACL 2024.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Guo et al. &lt;a href=&#34;https://arxiv.org/abs/2310.05015&#34;&gt;&lt;em&gt;Compresso: Structured pruning with collaborative prompting learns compact large language models&lt;/em&gt;&lt;/a&gt;. 2023.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An et al. &lt;a href=&#34;https://arxiv.org/abs/2312.11983&#34;&gt;&lt;em&gt;Fluctuation-based adaptive structured pruning for large language models&lt;/em&gt;&lt;/a&gt;. AAAI 2024.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ashkboos et al. &lt;a href=&#34;https://arxiv.org/abs/2401.15024&#34;&gt;&lt;em&gt;SliceGPT: Compress LLMs by Deleting Rows and Columns&lt;/em&gt;&lt;/a&gt;. ICLR 2024.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;van der Ouderaa et al. &lt;a href=&#34;https://arxiv.org/abs/2312.17244&#34;&gt;&lt;em&gt;The LLM Surgeon&lt;/em&gt;&lt;/a&gt;. ICLR 2024.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Frantar &amp;amp; Alistarh. &lt;a href=&#34;https://arxiv.org/abs/2301.00774&#34;&gt;&lt;em&gt;SparseGPT: Massive Language Models Can Be Accurately Pruned in One-shot&lt;/em&gt;&lt;/a&gt;. ICML 2023.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/essay/paper/olica/</link>
+      <pubDate>Mon, 20 Apr 2026 11:06:46 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/essay/paper/olica/</guid>
       
     </item>
     
@@ -6513,7 +6513,7 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
       
       <description>&lt;h1 id=&#34;_1&#34;&gt;欢迎来到我的个人博客&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 26 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 75 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
@@ -6523,7 +6523,12 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Something attempted, something done.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;ai&#34;&gt;努力成为AI时代的一片浪花&lt;a class=&#34;headerlink&#34; href=&#34;#ai&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;ai&#34;&gt;努力成为AI时代的一片浪花&lt;a class=&#34;headerlink&#34; href=&#34;#ai&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;_2&#34;&gt;站点统计&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;文章总数：&lt;strong&gt;144&lt;/strong&gt; 篇&lt;/li&gt;
+&lt;li&gt;站点总字数：&lt;strong&gt;125,457&lt;/strong&gt; 字（统计 &lt;code&gt;docs&lt;/code&gt; 下全部 Markdown；总字数按正文非空白字符计，不含 YAML 头与围栏代码块）&lt;/li&gt;
+&lt;/ul&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/</link>
       <pubDate>Tue, 07 Apr 2026 09:58:20 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
