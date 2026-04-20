@@ -41,8 +41,6 @@ nav:
       - Fine-tuning: ai-note/llm/fine-tuning.md
       - Alignment: ai-note/llm/alignment.md
       - CoT: ai-note/llm/cot.md
-      - LLM Pruning: ai-note/llm/llm-pruning.md
-      - LLM Infra: ai-note/llm/llm-infra.md
     - MLLM:
       - Overview: ai-note/mllm/index.md
       - VLM: ai-note/mllm/vlm.md
@@ -55,8 +53,10 @@ nav:
       - FlashAttention: ai-note/llm-distributed-training-and-inference/flash-attention.md
       - ZeRO: ai-note/llm-distributed-training-and-inference/zero.md
       - Megatron-LM: ai-note/llm-distributed-training-and-inference/megatron-lm.md
+      - LLM Infra: ai-note/llm-distributed-training-and-inference/llm-infra.md
     - LLM Compression and Quantization:
       - Overview: ai-note/llm-compression-and-quantization/index.md
+      - LLM Pruning: ai-note/llm-compression-and-quantization/llm-pruning.md
     - LLM Speculative Decoding:
       - Overview: ai-note/llm-speculative-decoding/index.md
     - LLM Safety:
@@ -119,7 +119,6 @@ nav:
       - n8n: ai-note/workflow/n8n.md
       - OpenClaw: ai-note/workflow/openclaw.md
       - Hermes: ai-note/workflow/hermes.md
-      - OpenViking: ai-note/workflow/openviking.md
     - Models:
       - Overview: ai-note/models/index.md
       - OpenAI: ai-note/models/openai.md
