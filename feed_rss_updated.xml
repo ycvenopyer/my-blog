@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Mon, 20 Apr 2026 06:45:47 -0000</pubDate>
-    <lastBuildDate>Mon, 20 Apr 2026 06:45:47 -0000</lastBuildDate>
+    <pubDate>Mon, 20 Apr 2026 10:42:05 -0000</pubDate>
+    <lastBuildDate>Mon, 20 Apr 2026 10:42:05 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -39,7 +39,7 @@
       
       <description>&lt;h1 id=&#34;_1&#34;&gt;小站题壁&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 129 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1256 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 4 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
@@ -55,14 +55,103 @@
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;成文：143 篇&lt;/li&gt;
-&lt;li&gt;累字：124,365 字&lt;/li&gt;
+&lt;li&gt;累字：125,277 字&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;
+&lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年的痛苦，因此对于CS该如何入门，AI时代的计算机专业该如何学习想给出自己的建议。首先现在的计算机门槛不高，但AI产生的满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，CS的书基本都没用，看再多的书不如敲上一句prompt（开个玩笑）。一开始把数据结构与算法掌握好，然后刷一些代码网站，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践。第四点是AI方向的学习，这部分首先需要把线性代数和概率论学好，因为我们都是对高维数据操作的，会用到很多概率模型和方法，其次是学习国外一些优秀的课程，AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料。其次是用好AI工具，真正驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
+&lt;p&gt;ycvenopyer是一位逃离SE的CS人，即将研究的是LLM，我在25年的时候听到“前端已死”这种言论，在26年初更是听到“软件工程已死”的消息，软件工程将在近几年内发生颠覆性变革。作为一名本科SE人，本人对于SE的了解仅限于产品、前端、后端、测试、运维，本科期间学了软件质量管理、软件系统设计等SE味严重的课程，但是真正在企业中所需的开发技能学校里是一字不提。个人对于软件工程本身是消极的，工程存在但程序员不在，AI时代对于知识的获取和基本的开发是手到擒来了，大大降低了门槛，只会增删改查、加组件加模块远远不够了，真正能留下来的是在软件之上的人，具有系统和工程思维的人。而且很多企业都在积极拥抱AI，做企业AI转型，这种改变是很可怕的，如果哪天AI可以完全自主解决业务问题，那我就得被辞退了。&lt;/p&gt;
+&lt;p&gt;本人的编程水平实在上不了台面，上面一番话也只是一个菜鸟的牢骚，幸亏遇上了AI时代，在机器学习、自然语言处理、大模型系统与工程这些课程的洗礼下，我逐渐找到一些自己的感觉。AI的基础仍是数学，自然界的一切遵循正态分布，我们所发现的一切是在一定概率空间中的必然事件。这话听起来像玄学，落到纸面上却全是矩阵与期望：嵌入是高维空间里的几何，训练是在噪声里找梯度，推理是一次又一次在分布上采样。学得愈多，愈觉得懂与会用之间还隔着无数实验与失败；论文里的定理漂亮，工程里却是显存、延迟和坏 case 的泥潭。也正因如此，我反而愿意把姿态放低：承认自己会在公式前发愣、会在调参时抓狂，再把每一次弄懂了的瞬间记下来——权当给后来的自己留一张便签。&lt;/p&gt;
+&lt;p&gt;若说有何信念，那便是：模型再强，也仍在人设定的目标函数与数据分布里打转；我们所谓智能，很大程度上是在不确定里做可重复的近似。本站所写，不过是这条路上的脚印，错漏必多，若与君所思偶有一二相合，便已足够；若有不妥，亦望不吝拍砖。仍借开篇王维意：水穷之处，云亦可起——且行且看罢了。&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/</link>
-      <pubDate>Mon, 20 Apr 2026 14:41:54 +0000</pubDate>
+      <pubDate>Mon, 20 Apr 2026 18:39:46 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/</guid>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;a class=&#34;headerlink&#34; href=&#34;#about-me&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 196 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;I am a student in the School of Intelligent Software Engineering at NJU. I am keen on &lt;em&gt;software engineering&lt;/em&gt;, &lt;em&gt;LLMs&lt;/em&gt;, and &lt;em&gt;AI agents&lt;/em&gt;. &lt;/p&gt;
+&lt;h2 id=&#34;education&#34;&gt;🎓 Education&lt;a class=&#34;headerlink&#34; href=&#34;#education&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Bachelor&#39;s Degree&lt;/strong&gt; | Nanjing University | School of Intelligent Software Engineering | Software Engineering (Intelligent Software) | 2022 – 2026&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Master&#39;s Degree&lt;/strong&gt; | Nanjing University | School of Computer Science | Computer Technology | 2026 – Present&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;research-interests&#34;&gt;🗺️ Research Interests&lt;a class=&#34;headerlink&#34; href=&#34;#research-interests&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I have a broad interest in &lt;em&gt;LLMs&lt;/em&gt; and &lt;em&gt;NLP&lt;/em&gt;. Currently, I am primarily focusing on &lt;em&gt;MoE Compression&lt;/em&gt;(Efficient LLMs) and &lt;em&gt;LLM Safety&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;technical-skills&#34;&gt;🔧 Technical Skills&lt;a class=&#34;headerlink&#34; href=&#34;#technical-skills&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Languages: C/C++, Python, Java, Latex&lt;/li&gt;
+&lt;li&gt;Frameworks: Flask, Pytorch&lt;/li&gt;
+&lt;li&gt;Tools: VSCode, PyCharm, IDEA, Typora, Obsidian, Zotero, Cursor, Claude Code&lt;/li&gt;
+&lt;li&gt;AI: RAG, Agent, Agent Frameworks(LangChain, LangGraph), MCP, Function Calling, Skill, Prompt Engineering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;internship-experience&#34;&gt;💼 Internship Experience&lt;a class=&#34;headerlink&#34; href=&#34;#internship-experience&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AI Product Intern&lt;/strong&gt; | Radnova | Jan 2026 – Mar 2026&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hobbies&#34;&gt;🎯 Hobbies&lt;a class=&#34;headerlink&#34; href=&#34;#hobbies&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;⚽ &lt;em&gt;Soccer&lt;/em&gt; and 🖊  &lt;em&gt;calligraphy&lt;/em&gt; are my merits — I am a fan of Real Madrid and have created numerous calligraphy works to date. I play as a defender on the pitch.&lt;/p&gt;
+&lt;p&gt;For video games, I enjoy &lt;em&gt;Brawl Stars&lt;/em&gt; — add me with friend code &lt;code&gt;2VUQ28PPQ&lt;/code&gt; and we can team up!&lt;/p&gt;
+&lt;p&gt;I like the &lt;em&gt;JoJo’s Bizarre Adventure&lt;/em&gt; series and some Chinese animation. Singing is not my strength, but I listen to gufeng-style tracks and English songs.&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/about/</link>
+      <pubDate>Mon, 20 Apr 2026 18:39:46 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/about/</guid>
+      
+    </item>
+    
+    <item>
+      <title>兴趣爱好</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;兴趣爱好&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 986 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 2 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 3 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;我从小学3年级开始学习书法，最早跟随爷爷在家学习，后来到兴趣班学习，从颜真卿的《颜勤礼碑》开始学习楷书，然后行楷学习赵孟頫的《帝师胆巴碑》，后来学习《圣教序》，《圣教序》的字体法度严谨，非常适合楷书到行书的过渡，而且因为是集字，所以适合二次创作，并且可以切换到其他行书字体，后来我自学了赵孟頫的行书，比如《洛神赋》、《秋兴赋》、《赤壁赋》、《闲居赋》等等，也尝试过王羲之、米芾、苏轼、智永等书家。&lt;/p&gt;
+&lt;p&gt;上大学后从孙过庭的《书谱》开始学习草书，孙过庭的草书十分飘逸又不失美感，非常适合草书入门。我最擅长赵体，数年的临摹和创作不仅扩展了我的视野，也让我对中华优秀传统文化有深入理解，书法之道亦是为人之道，刚正与圆滑，洒脱与拘谨，留白与密集，晕染与枯涸，无不映射着古人的智慧。&lt;/p&gt;
+&lt;p&gt;我从初中开始踢球，彼时正是16-18欧冠三连的皇马，承载了我的青春回忆。那个时期的银河战舰，拥有BBC三叉戟（贝尔、本泽马、C罗），典礼中场（克罗斯、莫德里奇、卡塞米罗），后防有水爷拉莫斯、学霸瓦拉内、队宠马塞洛、纳乔、卡瓦哈尔，门将有纳堵墙（纳瓦斯），还有伊斯科、阿森西奥、巴斯克斯等等。这是一支具有绝对统治力的球队，也是最纯白的年代。&lt;/p&gt;
+&lt;p&gt;我担任过门将和后卫的角色，当然也有着一颗前锋的心，高中经常和同学踢球，到了大学，接触到天南海北的爱好者，我开始在院队里担任后卫一职，到了苏州，有幸加入南京大学苏州校区队伍的大家庭，主职中后卫，足球也更多地融入生活，成为放松的方式，是属于青春独有的浪漫。&lt;/p&gt;
+&lt;p&gt;I started learning calligraphy from the third grade of elementary school. I first learned at home with my grandfather, and later attended an extracurricular calligraphy class. I began with regular script using Zhenqing Yan&#39;s &lt;em&gt;Yan Qin Li Stele&lt;/em&gt;, then moved on to running-regular script by studying Mengfu Zhao&#39;s &lt;em&gt;Di Shi Dan Ba Stele&lt;/em&gt;. After that, I studied &lt;em&gt;Shengjiao Xu&lt;/em&gt; (Preface to the Sacred Teachings). The calligraphy of &lt;em&gt;Shengjiao Xu&lt;/em&gt; is rigorous in structure and rules, making it very suitable for the transition from regular script to running script. Moreover, since it is a collection of characters (from Xizhi Wang), it lends itself well to creative adaptations and allows switching to other running script styles. Later, I self-studied Mengfu Zhao&#39;s running script works, such as &lt;em&gt;Luoshen Fu&lt;/em&gt;, &lt;em&gt;Qiuxing Fu&lt;/em&gt;, &lt;em&gt;Chibi Fu&lt;/em&gt;, and &lt;em&gt;Xianju Fu&lt;/em&gt;, and also tried my hand at calligraphers like Xizhi Wang, Fu Mi, Shi Su, and Yong Zhi.&lt;/p&gt;
+&lt;p&gt;Since entering university, I began learning cursive script with Guoting Sun&#39;s &lt;em&gt;Shu Pu&lt;/em&gt; (also known as &lt;em&gt;Treatise on Calligraphy&lt;/em&gt;). Guoting Sun&#39;s cursive script is both elegant and aesthetically pleasing, making it highly suitable for beginners. I am most proficient in the &lt;em&gt;Zhao style&lt;/em&gt;. Years of copying and creating calligraphic works have not only broadened my horizons but also deepened my understanding of China&#39;s fine traditional culture. The way of calligraphy is also the way of being human: integrity and flexibility, uninhibitedness and restraint, blank spacing and density, wet ink and dry brush—all of these reflect the wisdom of the ancients.&lt;/p&gt;
+&lt;p&gt;I started playing soccer in middle school, right during Real Madrid’s UEFA Champions League three-peat from 2016 to 2018—a period that holds many of my fondest youth memories. That era’s “Galácticos” featured the BBC front line (Bale, Benzema, and Cristiano Ronaldo), the legendary midfield trio (Kroos, Modrić, and Casemiro), and a back line with “Captain” Ramos, the scholar Varane, the team favorite Marcelo, plus Nacho and Carvajal. In goal was the “human wall” Navas, along with Isco, Asensio, Lucas Vázquez, and many others. It was a team with absolute dominance—an era of purest white.&lt;/p&gt;
+&lt;p&gt;I have played as both goalkeeper and defender, though I have always had a striker’s heart. In high school I often kicked the ball around with classmates. In university I met enthusiasts from all over the country and began playing as a defender on the school team. After coming to Suzhou, I was fortunate to join the Nanjing University Suzhou campus team—mainly as a centre-back. Football has woven itself more deeply into daily life and become a way to unwind; it is a kind of romance that belongs only to youth.&lt;/p&gt;
+&lt;div class=&#34;two-images-row&#34;&gt;
+&lt;p&gt;&lt;img alt=&#34;hard-brush&#34; src=&#34;../image/hard-brush.jpeg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;calligraphy&#34; src=&#34;../image/calligraphy.jpg&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/essay/gossip/hobbies/</link>
+      <pubDate>Mon, 20 Apr 2026 18:39:46 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/essay/gossip/hobbies/</guid>
       
     </item>
     
@@ -888,59 +977,6 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
     </item>
     
     <item>
-      <title>About</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;a class=&#34;headerlink&#34; href=&#34;#about-me&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 265 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;I am a student in the School of Intelligent Software Engineering at NJU. I am keen on &lt;em&gt;software engineering&lt;/em&gt;, &lt;em&gt;LLMs&lt;/em&gt;, and &lt;em&gt;AI agents&lt;/em&gt;. &lt;/p&gt;
-&lt;h2 id=&#34;education&#34;&gt;🎓 Education&lt;a class=&#34;headerlink&#34; href=&#34;#education&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Bachelor&#39;s Degree&lt;/strong&gt; | Nanjing University | School of Intelligent Software Engineering | Software Engineering (Intelligent Software) | 2022 – 2026&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Master&#39;s Degree&lt;/strong&gt; | Nanjing University | School of Computer Science | Computer Technology | 2026 – Present&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;research-interests&#34;&gt;🗺️ Research Interests&lt;a class=&#34;headerlink&#34; href=&#34;#research-interests&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;I have a broad interest in &lt;em&gt;LLMs&lt;/em&gt; and &lt;em&gt;NLP&lt;/em&gt;. Currently, I am primarily focusing on &lt;em&gt;MoE Compression&lt;/em&gt;(Efficient LLMs) and &lt;em&gt;LLM Safety&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;technical-skills&#34;&gt;🔧 Technical Skills&lt;a class=&#34;headerlink&#34; href=&#34;#technical-skills&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Languages: C/C++, Python, Java, Latex&lt;/li&gt;
-&lt;li&gt;Frameworks: Flask, Pytorch&lt;/li&gt;
-&lt;li&gt;Tools: VSCode, PyCharm, IDEA, Typora, Obsidian, Zotero, Cursor, Claude Code&lt;/li&gt;
-&lt;li&gt;AI: RAG, Agent, Agent Frameworks(LangChain, LangGraph), MCP, Function Calling, Skill, Prompt Engineering&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;internship-experience&#34;&gt;💼 Internship Experience&lt;a class=&#34;headerlink&#34; href=&#34;#internship-experience&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;AI Product Intern&lt;/strong&gt; | Radnova | Jan 2026 – Mar 2026&lt;/li&gt;
-&lt;li&gt;Led the requirements analysis for an agent product, designed complete system prompts, and developed tools and skills to support multi‑skill scenario switching.&lt;/li&gt;
-&lt;li&gt;Built a sales agent using LangGraph state graphs and the Agentickit enterprise framework, enabling inter‑agent collaboration via the A2A protocol.&lt;/li&gt;
-&lt;li&gt;Designed state management mechanisms to achieve core capabilities such as context tracking, object management, and SQL query result caching, significantly improving response speed and conversation coherence.&lt;/li&gt;
-&lt;li&gt;Implemented toolchain management and state injection using a middleware pattern, integrated Langfuse for full‑chain monitoring, and established an observable agent infrastructure.&lt;/li&gt;
-&lt;li&gt;Successfully empowered sales personnel with intelligent script generation, real‑time competitor analysis, and customer insight extraction, effectively enhancing sales conversion efficiency.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;hobbies&#34;&gt;🎯 Hobbies&lt;a class=&#34;headerlink&#34; href=&#34;#hobbies&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;⚽ &lt;em&gt;Soccer&lt;/em&gt; and 🖊  &lt;em&gt;calligraphy&lt;/em&gt; are my merits — I am a fan of Real Madrid and have created numerous calligraphy works to date. I play as a defender on the pitch.&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/about/</link>
-      <pubDate>Wed, 15 Apr 2026 23:30:04 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/about/</guid>
-      
-    </item>
-    
-    <item>
       <title>Overview</title>
       
       
@@ -987,41 +1023,6 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/tech/</guid>
-      
-    </item>
-    
-    <item>
-      <title>兴趣爱好</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;hobbies&#34;&gt;Hobbies&lt;a class=&#34;headerlink&#34; href=&#34;#hobbies&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 983 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 2 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 3 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;我从小学3年级开始学习书法，最早跟随爷爷在家学习，后来到兴趣班学习，从颜真卿的《颜勤礼碑》开始学习楷书，然后行楷学习赵孟頫的《帝师胆巴碑》，后来学习《圣教序》，《圣教序》的字体法度严谨，非常适合楷书到行书的过渡，而且因为是集字，所以适合二次创作，并且可以切换到其他行书字体，后来我自学了赵孟頫的行书，比如《洛神赋》、《秋兴赋》、《赤壁赋》、《闲居赋》等等，也尝试过王羲之、米芾、苏轼、智永等书家。&lt;/p&gt;
-&lt;p&gt;上大学后从孙过庭的《书谱》开始学习草书，孙过庭的草书十分飘逸又不失美感，非常适合草书入门。我最擅长赵体，数年的临摹和创作不仅扩展了我的视野，也让我对中华优秀传统文化有深入理解，书法之道亦是为人之道，刚正与圆滑，洒脱与拘谨，留白与密集，晕染与枯涸，无不映射着古人的智慧。&lt;/p&gt;
-&lt;p&gt;我从初中开始踢球，彼时正是16-18欧冠三连的皇马，承载了我的青春回忆。那个时期的银河战舰，拥有BBC三叉戟（贝尔、本泽马、C罗），典礼中场（克罗斯、莫德里奇、卡塞米罗），后防有水爷拉莫斯、学霸瓦拉内、队宠马塞洛、纳乔、卡瓦哈尔，门将有纳堵墙（纳瓦斯），还有伊斯科、阿森西奥、巴斯克斯等等。这是一支具有绝对统治力的球队，也是最纯白的年代。&lt;/p&gt;
-&lt;p&gt;我担任过门将和后卫的角色，当然也有着一颗前锋的心，高中经常和同学踢球，到了大学，接触到天南海北的爱好者，我开始在院队里担任后卫一职，到了苏州，有幸加入南京大学苏州校区队伍的大家庭，主职中后卫，足球也更多地融入生活，成为放松的方式，是属于青春独有的浪漫。&lt;/p&gt;
-&lt;p&gt;I started learning calligraphy from the third grade of elementary school. I first learned at home with my grandfather, and later attended an extracurricular calligraphy class. I began with regular script using Zhenqing Yan&#39;s &lt;em&gt;Yan Qin Li Stele&lt;/em&gt;, then moved on to running-regular script by studying Mengfu Zhao&#39;s &lt;em&gt;Di Shi Dan Ba Stele&lt;/em&gt;. After that, I studied &lt;em&gt;Shengjiao Xu&lt;/em&gt; (Preface to the Sacred Teachings). The calligraphy of &lt;em&gt;Shengjiao Xu&lt;/em&gt; is rigorous in structure and rules, making it very suitable for the transition from regular script to running script. Moreover, since it is a collection of characters (from Xizhi Wang), it lends itself well to creative adaptations and allows switching to other running script styles. Later, I self-studied Mengfu Zhao&#39;s running script works, such as &lt;em&gt;Luoshen Fu&lt;/em&gt;, &lt;em&gt;Qiuxing Fu&lt;/em&gt;, &lt;em&gt;Chibi Fu&lt;/em&gt;, and &lt;em&gt;Xianju Fu&lt;/em&gt;, and also tried my hand at calligraphers like Xizhi Wang, Fu Mi, Shi Su, and Yong Zhi.&lt;/p&gt;
-&lt;p&gt;Since entering university, I began learning cursive script with Guoting Sun&#39;s &lt;em&gt;Shu Pu&lt;/em&gt; (also known as &lt;em&gt;Treatise on Calligraphy&lt;/em&gt;). Guoting Sun&#39;s cursive script is both elegant and aesthetically pleasing, making it highly suitable for beginners. I am most proficient in the &lt;em&gt;Zhao style&lt;/em&gt;. Years of copying and creating calligraphic works have not only broadened my horizons but also deepened my understanding of China&#39;s fine traditional culture. The way of calligraphy is also the way of being human: integrity and flexibility, uninhibitedness and restraint, blank spacing and density, wet ink and dry brush—all of these reflect the wisdom of the ancients.&lt;/p&gt;
-&lt;p&gt;I started playing soccer in middle school, right during Real Madrid’s UEFA Champions League three-peat from 2016 to 2018—a period that holds many of my fondest youth memories. That era’s “Galácticos” featured the BBC front line (Bale, Benzema, and Cristiano Ronaldo), the legendary midfield trio (Kroos, Modrić, and Casemiro), and a back line with “Captain” Ramos, the scholar Varane, the team favorite Marcelo, plus Nacho and Carvajal. In goal was the “human wall” Navas, along with Isco, Asensio, Lucas Vázquez, and many others. It was a team with absolute dominance—an era of purest white.&lt;/p&gt;
-&lt;p&gt;I have played as both goalkeeper and defender, though I have always had a striker’s heart. In high school I often kicked the ball around with classmates. In university I met enthusiasts from all over the country and began playing as a defender on the school team. After coming to Suzhou, I was fortunate to join the Nanjing University Suzhou campus team—mainly as a centre-back. Football has woven itself more deeply into daily life and become a way to unwind; it is a kind of romance that belongs only to youth.&lt;/p&gt;
-&lt;div class=&#34;two-images-row&#34;&gt;
-&lt;p&gt;&lt;img alt=&#34;hard-brush&#34; src=&#34;../image/hard-brush.jpeg&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;calligraphy&#34; src=&#34;../image/calligraphy.jpg&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/essay/gossip/hobbies/</link>
-      <pubDate>Wed, 15 Apr 2026 23:30:04 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/essay/gossip/hobbies/</guid>
       
     </item>
     
