@@ -1577,62 +1577,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/llm/llm-pruning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLM Pruning
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/llm/llm-infra/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLM Infra
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -2029,6 +1973,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-note/llm-distributed-training-and-inference/llm-infra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM Infra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2102,6 +2074,34 @@
     
   
     Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-note/llm-compression-and-quantization/llm-pruning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM Pruning
   
 
     
@@ -4198,34 +4198,6 @@
     
   
     Hermes
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../ai-note/workflow/openviking/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenViking
   
 
     
@@ -7158,10 +7130,10 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 </li>
 </ul>
 <p><strong>局限与展望</strong>：Top 通道在解码中较稳定多为经验观察；若阈值外的通道也强依赖上下文，固定 R / P 可能限制极端场景下的自适应。未来可探索：自动选择候选区宽度、自适应 <span class="arithmatex">\(\gamma\)</span>、以及能否以低开销将类似思想扩展到注意力头等。</p>
-<details class="note">
-<summary>局限性</summary>
+<div class="admonition note">
+<p class="admonition-title">局限性</p>
 <p>这篇论文采用划分区域然后保留R，剪去P，对C进行再计算候选，感觉参数规模仍然很大，因为候选区还要计算中间激活，FFN层参数量仍占大头，这种划区域思想挺好，但有待改进，划分宽度这里有待优化，中间步骤感觉可以探索一些方法再优化效率。</p>
-</details>
+</div>
 <hr>
 <h2 id="6">6. 参考文献<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
 <ol>
@@ -7199,7 +7171,7 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 <footer class="md-article-dates" aria-label="文章时间信息">
   <span class="md-article-dates__item" title="最后修改">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-04-20 13:54:15">2026年4月20日 13:54:15</time>
+    <time class="md-article-dates__time" datetime="2026-04-20 14:41:54">2026年4月20日 14:41:54</time>
   </span>
   
   <span class="md-article-dates__item" title="首次创作">

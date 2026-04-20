@@ -185,14 +185,6 @@
          <lastmod>2026-04-20</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/llm-infra/</loc>
-         <lastmod>2026-04-20</lastmod>
-    </url>
-    <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/llm-pruning/</loc>
-         <lastmod>2026-04-20</lastmod>
-    </url>
-    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/mamba/</loc>
          <lastmod>2026-04-20</lastmod>
     </url>
@@ -225,11 +217,19 @@
          <lastmod>2026-04-20</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/llm-pruning/</loc>
+         <lastmod>2026-04-20</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/</loc>
          <lastmod>2026-04-20</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/flash-attention/</loc>
+         <lastmod>2026-04-20</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/llm-infra/</loc>
          <lastmod>2026-04-20</lastmod>
     </url>
     <url>
@@ -410,10 +410,6 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/workflow/openclaw/</loc>
-         <lastmod>2026-04-20</lastmod>
-    </url>
-    <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/workflow/openviking/</loc>
          <lastmod>2026-04-20</lastmod>
     </url>
     <url>

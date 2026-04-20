@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Mon, 20 Apr 2026 05:56:15 -0000</pubDate>
-    <lastBuildDate>Mon, 20 Apr 2026 05:56:15 -0000</lastBuildDate>
+    <pubDate>Mon, 20 Apr 2026 06:45:47 -0000</pubDate>
+    <lastBuildDate>Mon, 20 Apr 2026 06:45:47 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,52 @@
     
 
     
+    
+    <item>
+      <title>LLM Pruning</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;llm-pruning&#34;&gt;LLM Pruning&lt;a class=&#34;headerlink&#34; href=&#34;#llm-pruning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 6 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/130645948&#34;&gt;模型剪枝&lt;/a&gt;&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/llm-pruning/</link>
+      <pubDate>Mon, 20 Apr 2026 14:41:54 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/llm-pruning/</guid>
+      
+    </item>
+    
+    <item>
+      <title>LLM Infra</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;llm-infra&#34;&gt;LLM Infra&lt;a class=&#34;headerlink&#34; href=&#34;#llm-infra&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/llm-infra/</link>
+      <pubDate>Mon, 20 Apr 2026 14:41:54 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/llm-infra/</guid>
+      
+    </item>
     
     <item>
       <title>我的论文阅读</title>
@@ -778,10 +824,10 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;局限与展望&lt;/strong&gt;：Top 通道在解码中较稳定多为经验观察；若阈值外的通道也强依赖上下文，固定 R / P 可能限制极端场景下的自适应。未来可探索：自动选择候选区宽度、自适应 &lt;span class=&#34;arithmatex&#34;&gt;\(\gamma\)&lt;/span&gt;、以及能否以低开销将类似思想扩展到注意力头等。&lt;/p&gt;
-&lt;details class=&#34;note&#34;&gt;
-&lt;summary&gt;局限性&lt;/summary&gt;
+&lt;div class=&#34;admonition note&#34;&gt;
+&lt;p class=&#34;admonition-title&#34;&gt;局限性&lt;/p&gt;
 &lt;p&gt;这篇论文采用划分区域然后保留R，剪去P，对C进行再计算候选，感觉参数规模仍然很大，因为候选区还要计算中间激活，FFN层参数量仍占大头，这种划区域思想挺好，但有待改进，划分宽度这里有待优化，中间步骤感觉可以探索一些方法再优化效率。&lt;/p&gt;
-&lt;/details&gt;
+&lt;/div&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;6&#34;&gt;6. 参考文献&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;ol&gt;
@@ -812,30 +858,6 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/essay/paper/pop/</guid>
-      
-    </item>
-    
-    <item>
-      <title>LLM Pruning</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;llm-pruning&#34;&gt;LLM Pruning&lt;a class=&#34;headerlink&#34; href=&#34;#llm-pruning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 6 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/130645948&#34;&gt;模型剪枝&lt;/a&gt;&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/llm-pruning/</link>
-      <pubDate>Fri, 10 Apr 2026 15:26:39 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm/llm-pruning/</guid>
       
     </item>
     
@@ -1031,9 +1053,9 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       
       
-      <description>&lt;h1 id=&#34;_1&#34;&gt;欢迎来到我的个人博客&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;_1&#34;&gt;小站题壁&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 26 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 129 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
@@ -1041,9 +1063,17 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;/aside&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Something attempted, something done.&lt;/p&gt;
+&lt;p&gt;行到水穷处，坐看云起时。——偶录王维句，以志闲心&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;ai&#34;&gt;努力成为AI时代的一片浪花&lt;a class=&#34;headerlink&#34; href=&#34;#ai&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;p&gt;客从四方来，驻足于此，便是缘分。此间无朱门酒肉，唯有键盘为砚、屏幕为笺，录所思、记所学，兼以备忘。笔者不才，好观算法之变、模型之新，亦不忘数理旧章；或随笔闲谈，或披卷论文，皆是一己足迹，不敢自矜，唯愿与同好共切磋耳。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div class=&#34;admonition note&#34;&gt;
+&lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;成文：143 篇&lt;/li&gt;
+&lt;li&gt;累字：124,365 字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/</link>
       <pubDate>Tue, 07 Apr 2026 09:58:20 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -1071,28 +1101,6 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm/cot/</guid>
-      
-    </item>
-    
-    <item>
-      <title>LLM Infra</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;llm-infra&#34;&gt;LLM Infra&lt;a class=&#34;headerlink&#34; href=&#34;#llm-infra&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/llm-infra/</link>
-      <pubDate>Sun, 05 Apr 2026 09:57:35 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm/llm-infra/</guid>
       
     </item>
     
@@ -3346,117 +3354,6 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/workflow/openclaw/</guid>
-      
-    </item>
-    
-    <item>
-      <title>OpenViking</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;openviking&#34;&gt;OpenViking&lt;a class=&#34;headerlink&#34; href=&#34;#openviking&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 979 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 4 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 3 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.是什么&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;OpenViking 是专为 AI Agent 设计的开源上下文数据库&lt;/strong&gt;，采用&#34;文件系统范式&#34;统一管理记忆、资源和技能，通过分层上下文加载、目录递归检索和可观测自迭代机制，解决传统 RAG 的碎片化、高成本和黑箱问题。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.背景&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;随着模型能力飞速提升，Agent 从简单的任务执行者演变为能够感知环境、自主规划、调用工具完成复杂目标的智能实体。然而，开发者们普遍遭遇了上下文管理这座难以逾越的冰山。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当前面临的核心问题：&lt;/strong&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;问题&lt;/th&gt;
-&lt;th&gt;说明&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;上下文无序且割裂&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;记忆在代码中，资源在向量库，技能分散在各个角落，关联和维护成本极高&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;长程任务需要更多上下文&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;简单截断或压缩本质上是&#34;丢卒保帅&#34;，带来不可逆的信息损失和高昂成本&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;朴素 RAG 检索效果局限&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;平铺式存储缺乏全局视野，过于关注语义相关性，在需要泛化和探索的场景中表现不佳&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;上下文缺乏观测和调试&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;传统 RAG 隐式检索链路如同黑箱，出错时难以归因和调试&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;记忆成为核心资产&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Agent 的核心资产包括用户记忆和 Agent 自身的经验偏好，需要形成复利效果&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;业界已有一些探索实践：Manus 提出文件系统是上下文的终极形态；Claude Code 验证了文件系统 + Bash 的简洁方案；Anthropic 的 Skills 系统以文件夹组织能力模块。但缺乏一个类似数据库能有效管理 Agent 所需所有上下文的解决方案。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;3&#34;&gt;3.核心理念&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;OpenViking 摒弃了传统 RAG 的碎片化向量存储模式，创新性地采用&#34;文件系统范式&#34;，将 Agent 所需的记忆、资源和技能进行统一的结构化组织。&lt;/p&gt;
-&lt;h3 id=&#34;31&#34;&gt;3.1 文件系统管理范式&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;将上下文统一抽象并组织于虚拟文件系统中，所有内容映射到 &lt;code&gt;viking://&lt;/code&gt; 协议下的虚拟目录，拥有唯一的 URI。Agent 可以通过 &lt;code&gt;list&lt;/code&gt;、&lt;code&gt;find&lt;/code&gt; 等标准指令精确、确定性地定位、浏览和操作信息，让上下文管理从模糊的语义匹配演变为直观、可追溯的&#34;文件操作&#34;。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;文件系统管理范式&#34; src=&#34;../image/openviking1.gif&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;32&#34;&gt;3.2 分层上下文按需加载&lt;a class=&#34;headerlink&#34; href=&#34;#32&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;将海量上下文一次性塞入提示词不仅成本高昂，更容易超出模型窗口并引入噪声。OpenViking 在上下文写入时自动将其处理为三个层级：&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;层级&lt;/th&gt;
-&lt;th&gt;内容&lt;/th&gt;
-&lt;th&gt;用途&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;L0 (摘要)&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;一句话概括&lt;/td&gt;
-&lt;td&gt;快速判断&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;L1 (概述)&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;包含核心信息和使用场景&lt;/td&gt;
-&lt;td&gt;Agent 规划阶段决策&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;L2 (详情)&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;完整的原始数据&lt;/td&gt;
-&lt;td&gt;深入读取&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;img alt=&#34;分层上下文按需加载&#34; src=&#34;../image/openviking2.gif&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;33&#34;&gt;3.3 目录递归检索&lt;a class=&#34;headerlink&#34; href=&#34;#33&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;创新的检索策略深度融合多种检索方式：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;意图分析&lt;/strong&gt;：生成多个检索条件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;向量检索&lt;/strong&gt;：快速定位初始切片所在的高分目录&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;二次检索&lt;/strong&gt;：在该目录下进行检索，更新候选集合&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;逐层递归&lt;/strong&gt;：若目录下存在子目录，重复二次检索步骤&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&#34;先锁定高分目录、再精细探索内容&#34;的策略，不仅能找到语义最匹配的片段，更能理解信息所在的完整语境，提升检索的全局性与准确性。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;目录递归检索&#34; src=&#34;../image/openviking4.gif&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;34&#34;&gt;3.4 可观测与自迭代&lt;a class=&#34;headerlink&#34; href=&#34;#34&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;可视化检索轨迹&lt;/strong&gt;：目录浏览、文件定位轨迹被完整留存，能够清晰观测问题根源并指导检索逻辑优化&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;记忆自迭代闭环&lt;/strong&gt;：每次会话结束时通过 &lt;code&gt;session.commit()&lt;/code&gt; 主动触发，系统异步分析任务执行结果与用户反馈，自动更新至 User 和 Agent 的 &lt;code&gt;/memory&lt;/code&gt; 目录下，让 Agent &#34;越用越聪明&#34;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;可观测与自迭代&#34; src=&#34;../image/openviking3.gif&#34; /&gt;&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/workflow/openviking/</link>
-      <pubDate>Tue, 03 Mar 2026 15:00:28 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/workflow/openviking/</guid>
       
     </item>
     
@@ -9141,15 +9038,15 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
       
       <description>&lt;h1 id=&#34;ai-time&#34;&gt;AI Time&lt;a class=&#34;headerlink&#34; href=&#34;#ai-time&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 52 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 368 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;p&gt;AI模型基座到AI应用，这是我的AI知识库。&lt;/p&gt;
-&lt;p&gt;文章内容除个人思考总结、各种渠道摘录外，还包括AI工具生成内容，请仔细甄别。&lt;/p&gt;</description>
+&lt;p&gt;如果说从2000年开始互联网领域开始爆发，那么从2022年开始就是AI大模型领域的爆发，约莫20年的变革足以改变行业内的版图。计算机科学的历史其实并不长，但是发展的速度越来越快。早期从机器学习到深度学习，训练方式还处于数据集的特征处理和信息抽取，未能发现隐藏机制和深层信息，自然语言处理还在传统的word2vec，计算机视觉还是ResNet的天下，2017年的一篇《Attention is All You Need》轰动全球，OpenAI推出的GPT系列更是改变了传统计算机与软件工程的发展方向。如今从以年为单位工程迭代（Prompt Engineering -&amp;gt; Context Engineering -&amp;gt; Harness Engineering），到以月为单位的模型迭代（26年一季度各家公司已经推出若干旗舰模型），到以周为单位的产品迭代（产品设计方案和产品原型层出不穷，个人智能体兴起，AGI加速演进），不少人直言“只要学的慢什么都不用学”。&lt;/p&gt;
+&lt;p&gt;AI时代到底学什么？怎么学？我正在逐步探索这个问题。这个板块包含AI模型基座到AI应用，是我的AI知识库。所有文章内容除个人思考总结、各种渠道摘录外，还包括AI工具生成内容，请仔细甄别。&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai/</link>
       <pubDate>Wed, 28 Jan 2026 14:20:06 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -9187,13 +9084,14 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
       
       <description>&lt;h1 id=&#34;math-space&#34;&gt;Math Space&lt;a class=&#34;headerlink&#34; href=&#34;#math-space&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 1 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 65 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 1 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
+&lt;p&gt;很惭愧在这里单开数学一栏，笔者从小到大都很喜爱数学，不过到了大学学习计算机之后就不怎么学习理论数学了，在这里勉强对几门数学课进行整理。&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;Mathematics&#34; src=&#34;../image/math-index.png&#34; /&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/math/</link>
       <pubDate>Tue, 27 Jan 2026 10:32:00 +0000</pubDate>
@@ -9211,14 +9109,14 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
       
       <description>&lt;h1 id=&#34;_1&#34;&gt;项目作品&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 8 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 31 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;p&gt;个人项目&lt;/p&gt;</description>
+&lt;p&gt;这里是我的个人和团队项目，笔者致力于通过项目学习实践经验。&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/projects/</link>
       <pubDate>Tue, 27 Jan 2026 10:14:41 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
