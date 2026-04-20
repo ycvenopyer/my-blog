@@ -6859,7 +6859,7 @@
 
 <h1 id="olica-efficient-structured-pruning-of-large-language-models-without-retraining">Olica: Efficient Structured Pruning of Large Language Models without Retraining<a class="headerlink" href="#olica-efficient-structured-pruning-of-large-language-models-without-retraining" title="Permanent link">¶</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 2121 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"></path></svg></span> 14 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 7 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 2122 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"></path></svg></span> 14 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 7 分钟</p>
 </div>
 <aside class="md-pageviews md-pageviews--after-stats" aria-label="页面阅读量">
   <span class="md-pageviews__text">阅读量</span>
@@ -6883,7 +6883,7 @@
 </ul>
 <p>现有模型压缩手段包括网络剪枝、知识蒸馏、量化等。Olica 聚焦网络剪枝，目标是在去除冗余参数的同时尽量保持模型能力。</p>
 <h3 id="12">1.2 结构化与非结构化剪枝<a class="headerlink" href="#12" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/pruning.png" data-desc-position="bottom"><img alt="剪枝分类" src="../image/pruning.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/pruning.png" data-desc-position="bottom"><img alt="剪枝分类" src="../image/olica/pruning.png"></a></p>
 <p>面向 LLM 的剪枝可粗分为两类：</p>
 <ul>
 <li><strong>结构化剪枝</strong>：移除结构化单元（如整组通道或卷积核等），更易映射到硬件与高效内核，有利于实际加速。  </li>
@@ -6905,16 +6905,16 @@
 <hr>
 <h2 id="2">2. 剪枝方法<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
 <h3 id="21">2.1 核心观察与总体思路<a class="headerlink" href="#21" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/transformer.png" data-desc-position="bottom"><img alt="Transformer" src="../image/transformer.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/transformer.png" data-desc-position="bottom"><img alt="Transformer" src="../image/olica/transformer.png"></a></p>
 <p>Transformer 中 <strong>多头注意力层（MHA）</strong> 涉及两组矩阵乘积：<span class="arithmatex">\(W_q W_k^\top\)</span> 与 <span class="arithmatex">\(W_v W_o^\top\)</span>。Olica 的关键是将这类矩阵乘积视作统一对象，对其施加主成分分析（PCA），用低维子空间保留主要信息，从而在不破坏整体模块形状、不依赖大规模重训练的前提下压缩 MHA。</p>
 <h3 id="22-mhaond">2.2 MHA：正交神经元分解（OND）<a class="headerlink" href="#22-mhaond" title="Permanent link">¶</a></h3>
 <p><strong>正交神经元分解（Orthogonal Neuron Decomposition, OND）</strong> 将 MHA 中的 <span class="arithmatex">\(W_v\)</span> 与 <span class="arithmatex">\(W_o\)</span> 视为一体，通过 SVD 提取主结构。设 <span class="arithmatex">\(W_{vo} = U \Sigma V^\top\)</span>，可定义 <span class="arithmatex">\(\hat{W}_v \leftarrow U\Sigma\)</span>、<span class="arithmatex">\(\hat{W}_o \leftarrow V\)</span> 等形式（并保持与 <span class="arithmatex">\(W_v\)</span> 相关的恒等/等价关系，具体实现见论文），使得分解后 <strong><span class="arithmatex">\(U\)</span>、<span class="arithmatex">\(V\)</span> 列正交</strong>，输出方向上的信息更“去相关”，便于在固定维度内保留尽可能多的有效信息。</p>
 <p><strong>剪枝策略</strong>：对每个神经元（或等价特征方向）定义重要性评分，优先剪掉重要性最低的部分。</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/importance-score.png" data-desc-position="bottom"><img alt="Importance Score" src="../image/importance-score.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/importance-score.png" data-desc-position="bottom"><img alt="Importance Score" src="../image/olica/importance-score.png"></a></p>
 <h3 id="23-fast-ond">2.3 Fast-OND：降低分解复杂度<a class="headerlink" href="#23-fast-ond" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/OND.png" data-desc-position="bottom"><img alt="Fast-OND" src="../image/OND.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/OND.png" data-desc-position="bottom"><img alt="Fast-OND" src="../image/olica/OND.png"></a></p>
 <p>朴素 OND 若对 <strong><span class="arithmatex">\(h\)</span> 个注意力头分别做 SVD，复杂度约为 <span class="arithmatex">\(O(h d^3)\)</span></strong>，对 7B 级模型可能达到约一小时。</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/SVD.png" data-desc-position="bottom"><img alt="SVD" src="../image/SVD.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/SVD.png" data-desc-position="bottom"><img alt="SVD" src="../image/olica/SVD.png"></a></p>
 <p>Olica 利用一个经验观察：<strong><span class="arithmatex">\(W_q\)</span> 与 <span class="arithmatex">\(W_k\)</span>（以及 <span class="arithmatex">\(W_v\)</span> 与 <span class="arithmatex">\(W_o\)</span>）的奇异值分布高度相似</strong>，在相同“能量保留比例”下所需奇异值个数也接近。据此提出 <strong>Fast-OND</strong>：<strong>仅对 <span class="arithmatex">\(W_v\)</span> 做 SVD</strong>，令 <span class="arithmatex">\(W_v = U \Sigma V^\top\)</span>，再据此更新 <span class="arithmatex">\(\hat{W}_v \leftarrow U\)</span>、<span class="arithmatex">\(\hat{W}_o \leftarrow W_o V \Sigma^\top\)</span>，将复杂度降至约 <strong><span class="arithmatex">\(O(d^3 / h)\)</span></strong>。对 LLaMA-7B（如 <span class="arithmatex">\(h=32\)</span>）可在数分钟级完成剪枝。</p>
 <h3 id="24-ffn">2.4 FFN 层剪枝<a class="headerlink" href="#24-ffn" title="Permanent link">¶</a></h3>
 <p>对前馈（FFN）层，剪枝目标是中间神经元。用重要性评分对中间神经元排序，按目标稀疏率 <span class="arithmatex">\(s\)</span> 剪掉低分神经元，使权重形状由 <span class="arithmatex">\(\mathbb{R}^{d \times 4d}\)</span> 变为 <span class="arithmatex">\(\mathbb{R}^{d \times d'}\)</span>（<span class="arithmatex">\(d'\)</span> 由稀疏率决定）。</p>
@@ -6922,7 +6922,7 @@
 <h3 id="25">2.5 线性校准（无需重训练）<a class="headerlink" href="#25" title="Permanent link">¶</a></h3>
 <p>为重建剪枝 FFN 引入的残差误差并避免完整重训练，Olica 使用岭回归拟合误差项 <span class="arithmatex">\(E\)</span>，对校准矩阵 <span class="arithmatex">\(\hat{W}\)</span> 求闭式解，并相应修改前向传播形式。</p>
 <h3 id="26">2.6 层选择与低秩近似<a class="headerlink" href="#26" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/layer-selection-and-low-rank.png" data-desc-position="bottom"><img alt="layer-selcetion-and-low-rank" src="../image/layer-selection-and-low-rank.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/layer-selection-and-low-rank.png" data-desc-position="bottom"><img alt="layer-selcetion-and-low-rank" src="../image/olica/layer-selection-and-low-rank.png"></a></p>
 <p><strong>层选择</strong>：随着参与校准的 FFN 层数增加，困惑度（PPL）通常先降后趋于平稳；校准层并非越多越好，过多会引入额外参数与过拟合风险。论文使用 多重相关系数 <span class="arithmatex">\(MC2\)</span> 衡量线性可恢复程度：<span class="arithmatex">\(R_{XE}\)</span> 越大，残差越适合用线性方式补偿；实验上较浅层 FFN 的残差往往更易校准。</p>
 <p><strong>低秩近似</strong>：若直接引入完整 <span class="arithmatex">\(\hat{W}\)</span>，参数量约 <strong><span class="arithmatex">\(d^2\)</span></strong>，约占单层 FFN 的 ⅛。可将 <span class="arithmatex">\(\hat{W}\)</span> 低秩分解，只保留前 <span class="arithmatex">\(r\)</span> 个最大奇异值对应的方向，将新增参数降到约 <strong><span class="arithmatex">\(2dr\)</span></strong>（<span class="arithmatex">\(r \ll d\)</span>）。</p>
 <hr>
@@ -6949,24 +6949,24 @@
 </li>
 </ul>
 <h3 id="32">3.2 资源与性能<a class="headerlink" href="#32" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/ziyuan1.png" data-desc-position="bottom"><img alt="ziyuan1" src="../image/ziyuan1.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/ziyuan1.png" data-desc-position="bottom"><img alt="ziyuan1" src="../image/olica/ziyuan1.png"></a></p>
 <p>在 33% 稀疏率下，Olica 在报告设置中达到 PPL = 19.83、平均准确率 61.21%。相对依赖大量数据与多卡重训练的路线，Olica 在数据与 GPU 资源上更省。</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/ziyuan2.png" data-desc-position="bottom"><img alt="ziyuan2" src="../image/ziyuan2.png"></a></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/ziyuan3.png" data-desc-position="bottom"><img alt="ziyuan3" src="../image/ziyuan3.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/ziyuan2.png" data-desc-position="bottom"><img alt="ziyuan2" src="../image/olica/ziyuan2.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/ziyuan3.png" data-desc-position="bottom"><img alt="ziyuan3" src="../image/olica/ziyuan3.png"></a></p>
 <p><strong>LLaMA-7B，25% 稀疏率</strong>：PPL <strong>16.69</strong>，平均准确率 <strong>63.54%</strong>，优于所对比基线。</p>
 <p><strong>更高稀疏率（33%）</strong>：PPL <strong>19.83</strong>、准确率 <strong>61.21%</strong>，明显优于 LLM-Pruner（PPL 24.50）与 SlimGPT（PPL 24.55）。</p>
 <p><strong>跨规模与系列</strong>：在 LLaMA-13B、LLaMA-2-7B、Vicuna 等模型上，Olica 多为最优或次优，体现一定通用性和可扩展性。</p>
 <p><strong>无 LoRA 微调</strong>：PPT 强调上述结果均在不做 LoRA 微调的情况下取得。</p>
 <h3 id="33">3.3 推理效率<a class="headerlink" href="#33" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/inference.png" data-desc-position="bottom"><img alt="inference" src="../image/inference.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/inference.png" data-desc-position="bottom"><img alt="inference" src="../image/olica/inference.png"></a></p>
 <p>在较高稀疏度下，可降低资源占用并提升推理吞吐，使剪枝模型更适合资源受限场景；报告表明在稀疏度提升的同时性能损失可控。</p>
 <hr>
 <h2 id="4">4. 消融实验<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/module.png" data-desc-position="bottom"><img alt="module" src="../image/module.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/module.png" data-desc-position="bottom"><img alt="module" src="../image/olica/module.png"></a></p>
 <ul>
 <li><strong>模块有效性</strong>：<strong>Fast-OND</strong> 相对基线分解更高效；线性校准可与其它剪枝流程结合并带来增益。  </li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/calibration.png" data-desc-position="bottom"><img alt="calibration" src="../image/calibration.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/calibration.png" data-desc-position="bottom"><img alt="calibration" src="../image/olica/calibration.png"></a></p>
 <ul>
 <li>
 <p><strong>校准层数</strong>：PPL 随校准层数增加先降后稳，超过约 20 层后边际收益减小。</p>
@@ -6978,11 +6978,11 @@
 <p><strong>推荐折中</strong>：校准 <strong>20 层 FFN</strong> 且低秩比例 <strong>0.15</strong> 时，<strong>额外参数约占全模型 1%</strong>。  </p>
 </li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/sample-efficiency.png" data-desc-position="bottom"><img alt="sample-efficiency" src="../image/sample-efficiency.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/sample-efficiency.png" data-desc-position="bottom"><img alt="sample-efficiency" src="../image/olica/sample-efficiency.png"></a></p>
 <ul>
 <li><strong>样本效率</strong>：校准样本数与序列长度在 <strong>8～2048</strong> 范围变化时，PPL 波动不超过约 <strong>2.4</strong>；即便仅 8 个样本仍较稳定。  </li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/running-time.png" data-desc-position="bottom"><img alt="running-time" src="../image/running-time.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/olica/running-time.png" data-desc-position="bottom"><img alt="running-time" src="../image/olica/running-time.png"></a></p>
 <ul>
 <li><strong>运行时间</strong>：Fast-OND 约 <strong>413 s</strong>，对比标准 OND 约 <strong>2910 s</strong>，约 <strong>7×</strong> 加速且精度相当。</li>
 </ul>
@@ -6992,18 +6992,42 @@
 <hr>
 <h2 id="6">6. 参考文献<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
 <ol>
-<li>Vaswani et al. <em>Attention Is All You Need.</em> NeurIPS 2017.  </li>
-<li>Kaplan et al. <em>Scaling Laws for Neural Language Models.</em> 2020.  </li>
-<li>Gao et al. <em>DISP-LLM: Dimension-independent structural pruning for large language models.</em> NeurIPS 2024.  </li>
-<li>Ma et al. <em>LLM-Pruner: On the Structural Pruning of LLMs.</em> NeurIPS 2023.  </li>
-<li>Li et al. <em>LoRAP: Transformer Sub-layers Deserve Differentiated Structured Compression.</em> ICML 2024.  </li>
-<li>Ling et al. <em>SlimGPT: Layer-wise Structured Pruning for LLMs.</em> NeurIPS 2024.  </li>
-<li>Zhang et al. <em>LoRAPrune: Structured pruning meets low-rank parameter-efficient fine-tuning.</em> ACL 2024.  </li>
-<li>Guo et al. <em>Compresso: Structured pruning with collaborative prompting learns compact large language models.</em> arXiv:2310.05015, 2023.  </li>
-<li>An et al. <em>Fluctuation-based adaptive structured pruning for large language models.</em> AAAI 2024.  </li>
-<li>Ashkboos et al. <em>SliceGPT: Compress LLMs by Deleting Rows and Columns.</em> ICLR 2024.  </li>
-<li>van der Ouderaa et al. <em>The LLM Surgeon.</em> ICLR 2024.  </li>
-<li>Frantar &amp; Alistarh. <em>SparseGPT: Massive Language Models Can Be Accurately Pruned in One-shot.</em> ICML 2023.  </li>
+<li>
+<p>Vaswani et al. <a href="https://arxiv.org/abs/1706.03762"><em>Attention Is All You Need</em></a>. NeurIPS 2017.</p>
+</li>
+<li>
+<p>Kaplan et al. <a href="https://arxiv.org/abs/2001.08361"><em>Scaling Laws for Neural Language Models</em></a>. 2020.</p>
+</li>
+<li>
+<p>Gao et al. <a href="https://arxiv.org/abs/2410.11988"><em>DISP-LLM: Dimension-independent structural pruning for large language models</em></a>. NeurIPS 2024.</p>
+</li>
+<li>
+<p>Ma et al. <a href="https://arxiv.org/abs/2305.11627"><em>LLM-Pruner: On the Structural Pruning of Large Language Models</em></a>. NeurIPS 2023.</p>
+</li>
+<li>
+<p>Li et al. <a href="https://arxiv.org/abs/2404.09695"><em>LoRAP: Transformer Sub-layers Deserve Differentiated Structured Compression</em></a>. ICML 2024.</p>
+</li>
+<li>
+<p>Ling et al. <a href="https://arxiv.org/abs/2412.18110"><em>SlimGPT: Layer-wise Structured Pruning for LLMs</em></a>. NeurIPS 2024.</p>
+</li>
+<li>
+<p>Zhang et al. <a href="https://arxiv.org/abs/2305.18403"><em>LoRAPrune: Structured pruning meets low-rank parameter-efficient fine-tuning</em></a>. ACL 2024.</p>
+</li>
+<li>
+<p>Guo et al. <a href="https://arxiv.org/abs/2310.05015"><em>Compresso: Structured pruning with collaborative prompting learns compact large language models</em></a>. 2023.</p>
+</li>
+<li>
+<p>An et al. <a href="https://arxiv.org/abs/2312.11983"><em>Fluctuation-based adaptive structured pruning for large language models</em></a>. AAAI 2024.</p>
+</li>
+<li>
+<p>Ashkboos et al. <a href="https://arxiv.org/abs/2401.15024"><em>SliceGPT: Compress LLMs by Deleting Rows and Columns</em></a>. ICLR 2024.</p>
+</li>
+<li>
+<p>van der Ouderaa et al. <a href="https://arxiv.org/abs/2312.17244"><em>The LLM Surgeon</em></a>. ICLR 2024.</p>
+</li>
+<li>
+<p>Frantar &amp; Alistarh. <a href="https://arxiv.org/abs/2301.00774"><em>SparseGPT: Massive Language Models Can Be Accurately Pruned in One-shot</em></a>. ICML 2023.</p>
+</li>
 </ol>
 
 
@@ -7017,7 +7041,7 @@
 <footer class="md-article-dates" aria-label="文章时间信息">
   <span class="md-article-dates__item" title="最后修改">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-04-10 13:11:34">2026年4月10日 13:11:34</time>
+    <time class="md-article-dates__time" datetime="2026-04-20 11:06:46">2026年4月20日 11:06:46</time>
   </span>
   
   <span class="md-article-dates__item" title="首次创作">
