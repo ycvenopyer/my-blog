@@ -1884,6 +1884,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prefill&amp;Decode
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1900,6 +1918,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.预填充阶段
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.解码阶段
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.单步解码的实现与性能分析
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4prefill-decode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.Prefill 和 Decode 的协同工作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -6267,6 +6359,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.预填充阶段
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.解码阶段
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.单步解码的实现与性能分析
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4prefill-decode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.Prefill 和 Decode 的协同工作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -6354,12 +6509,71 @@
 
 <h1 id="prefill-decode">Prefill 和 Decode<a class="headerlink" href="#prefill-decode" title="Permanent link">¶</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 3 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间不到 1 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 1480 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"></path></svg></span> 1 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 5 分钟</p>
 </div>
 <aside class="md-pageviews md-pageviews--after-stats" aria-label="页面阅读量">
   <span class="md-pageviews__text">阅读量</span>
   <span id="busuanzi_value_page_pv" class="md-pageviews__value">—</span>
 </aside>
+
+<h2 id="1">1.预填充阶段<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<p>Prefill发生在模型接收到完整输入prompt之后，但在开始生成第一个输出token之前。这个阶段的主要任务是处理输入的prompt，计算出所有输入token的上下文表示，并初始化后续解码阶段所需的关键数据结构——KV Cache。</p>
+<p>具体的计算流程和复杂度参见：<a href="https://zhuanlan.zhihu.com/p/1900479313331073118">第二章：推理加速核心：预填充（Prefill）与解码（Decode）的深度解析与实现</a>。</p>
+<p>在Prefill阶段，对于Transformer的每一层，模型都会计算得到K和V矩阵。这些K和V矩阵会被缓存起来，这就是KV Cache。KV Cache的结构可以看成一个多维数组，按层、按注意力头、按token位置存储了key和value的信息。</p>
+<p>Prefill的特点在于高度的并行性。由于整个输入Prompt在开始时是已知的，模型可以同时计算所有token在每一层的表示。这使得预填充阶段能够充分利用GPU的并行计算能力，显著提高处理速度。</p>
+<p>为了进一步优化预填充阶段的性能，主流的技术包括：</p>
+<ul>
+<li>
+<p>高效注意力机制（Efficient Attention Mechanisms）：如FlashAttention： 这是一种通过重新组织注意力计算过程，减少GPU内存读写次数，从而显著加速计算的高效注意力机制。它尤其在处理长序列时表现出色。</p>
+</li>
+<li>
+<p>批处理（Batching）：在实际应用中，通常会同时处理多个独立的推理请求。预填充阶段可以将这些请求的Prompt组成一个批次进行处理。通过批处理，可以更有效地利用GPU的计算资源，提高整体的吞吐量。</p>
+</li>
+</ul>
+<h2 id="2">2.解码阶段<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<p>Decode在Prefill完成之后开始，模型以自回归的方式逐个生成输出token。每生成一个token，该token就会被添加到已生成的序列中，并作为下一步生成的输入。</p>
+<p>Decode从Prefill处理的输入Prompt的最后一个token开始，目标是生成后续的输出序列。假设Prefill处理了 <span class="arithmatex">\(n\)</span> 个输入token，Decode的目标是生成接下来的 <span class="arithmatex">\(m\)</span> 个输出token <span class="arithmatex">\((y_1, y_2, ..., y_m)\)</span>。</p>
+<p>在每一步 <span class="arithmatex">\(t\)</span>（从 1 到 <span class="arithmatex">\(m\)</span>），模型会基于已经生成的序列 <span class="arithmatex">\(x_1, ..., x_n, y_1, ..., y_{t - 1}\)</span> 来预测下一个token <span class="arithmatex">\(y_t\)</span>。对于decoder-only模型，在解码的每一步，通常只将上一步生成的token作为当前Transformer层的输入（除了第一步，输入是预填充的最后一个token）。然而，模型内部的自注意力机制仍然可以访问包括原始Prompt和所有已生成token在内的完整序列的信息，这是通过KV Cache实现的。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/image.webp" data-desc-position="bottom"><img alt="decode" src="../image/image.webp"></a></p>
+<p>KV Cache在Decode阶段是加速的关键。在Prefill阶段，我们已经为输入Prompt中的所有token计算了key和value向量并存储在KV Cache中。在解码的每一步，假设模型生成了一个新的token <span class="arithmatex">\(y_t\)</span>。为了预测下一个token <span class="arithmatex">\(y_{t + 1}\)</span>，模型需要计算 <span class="arithmatex">\(y_t\)</span> 的key和value向量。然后，这个新的key和value向量会被追加到KV Cache中，扩展缓存的长度。</p>
+<p>当模型在某一步需要计算自注意力时，对于当前要预测的token <span class="arithmatex">\(y_t\)</span>（需要计算其query向量），它会与KV Cache中所有历史的key向量（包括来自原始Prompt和之前已生成的token）进行比较，计算注意力权重。然后，使用这些权重对KV Cache中对应的value向量进行加权求和，得到上下文信息。</p>
+<h2 id="3">3.单步解码的实现与性能分析<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<p>在解码阶段的每一步，模型主要进行以下操作：</p>
+<ol>
+<li>
+<p>接收上一步生成的token的Embedding。</p>
+</li>
+<li>
+<p>计算该token在所有Transformer层的query、key和value向量。</p>
+</li>
+<li>
+<p>将当前生成token的key和value向量更新到KV Cache中。</p>
+</li>
+<li>
+<p>在自注意力计算中，当前token的query向量会与KV Cache中所有历史token的key向量进行比较，计算注意力权重。value向量会根据这些权重进行加权求和，得到上下文向量。</p>
+</li>
+<li>
+<p>模型最后一层的输出会经过线性层和Softmax函数，得到下一个token的概率分布。</p>
+</li>
+<li>
+<p>根据解码策略（例如采样）从概率分布中选择下一个token。</p>
+</li>
+</ol>
+<p>单步解码的计算成本主要在于自注意力机制的计算，其复杂度与当前KV Cache的长度（等于原始Prompt长度加上已生成的token数量）成正比。KV Cache的关键作用在于，它避免了在每一步都重新计算原始Prompt的key和value向量。然而，随着生成序列的长度增加，KV Cache的大小也会增长，可能导致内存带宽成为瓶颈。</p>
+<h2 id="4prefill-decode">4.Prefill 和 Decode 的协同工作<a class="headerlink" href="#4prefill-decode" title="Permanent link">¶</a></h2>
+<p>Prefill和Decode共同完成了LLM的推理过程。Prefill为Decode准备了初始的KV Cache，而Decode则迭代地利用和更新这个缓存来生成最终的输出。</p>
+<p>数据流：输入Prompt -&gt; Tokenization -&gt; Embedding -&gt; Prefill(生成KV Cache) -&gt; Decode(逐个生成token) -&gt; Detokenization -&gt; 输出文本。</p>
+<p>性能瓶颈：</p>
+<ul>
+<li>
+<p>Prefill： 对于极长的输入Prompt，自注意力机制的计算量仍然很大，可能成为计算瓶颈。同时，加载模型权重和初始KV Cache的内存开销也需要考虑。</p>
+</li>
+<li>
+<p>Decode： 解码的串行自回归特性是主要的瓶颈。虽然KV Cache减少了重复计算，但每一步仍然需要进行注意力计算，并且随着生成序列的增长，KV Cache的大小也会增加，可能导致内存带宽瓶颈。此外，生成长序列会显著增加总的推理时间。</p>
+</li>
+</ul>
+<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">¶</a></h2>
+<p><a href="https://www.zhihu.com/column/c_1900478474017313428">大模型推理探秘：揭开 LLM 响应</a></p>
 
 
 
@@ -6372,7 +6586,7 @@
 <footer class="md-article-dates" aria-label="文章时间信息">
   <span class="md-article-dates__item" title="最后修改">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-04-14 17:27:33">2026年4月14日 17:27:33</time>
+    <time class="md-article-dates__time" datetime="2026-04-21 10:57:47">2026年4月21日 10:57:47</time>
   </span>
   
   <span class="md-article-dates__item" title="首次创作">

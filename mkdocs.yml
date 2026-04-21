@@ -36,10 +36,10 @@ nav:
       - RWKV: ai-note/llm/rwkv.md
       - Griffin: ai-note/llm/griffin.md
       - Gemini 1.5 Technical Report: ai-note/llm/gemini-1.5-technical-report.md
-      - KV-Cache: ai-note/llm/kv-cache.md
       - Pre-training: ai-note/llm/pre-training.md
       - Fine-tuning: ai-note/llm/fine-tuning.md
       - Alignment: ai-note/llm/alignment.md
+      - RLHF: ai-note/llm/rlhf.md
       - CoT: ai-note/llm/cot.md
     - MLLM:
       - Overview: ai-note/mllm/index.md
@@ -47,18 +47,21 @@ nav:
       - ViT: ai-note/mllm/vit.md
       - CLIP: ai-note/mllm/clip.md
       - BLIP: ai-note/mllm/blip.md
+      - TTA: ai-note/mllm/tta.md
     - LLM Distributed Training and Inference:
       - Overview: ai-note/llm-distributed-training-and-inference/index.md
+      - KV-Cache: ai-note/llm-distributed-training-and-inference/kv-cache.md
       - Prefill&Decode: ai-note/llm-distributed-training-and-inference/prefill-and-decode.md
+      - vLLM: ai-note/llm-distributed-training-and-inference/vllm.md
       - FlashAttention: ai-note/llm-distributed-training-and-inference/flash-attention.md
+      - PagedAttention: ai-note/llm-distributed-training-and-inference/paged-attention.md
       - ZeRO: ai-note/llm-distributed-training-and-inference/zero.md
       - Megatron-LM: ai-note/llm-distributed-training-and-inference/megatron-lm.md
       - LLM Infra: ai-note/llm-distributed-training-and-inference/llm-infra.md
+      - Speculative Decoding: ai-note/llm-distributed-training-and-inference/speculative-decoding.md
     - LLM Compression and Quantization:
       - Overview: ai-note/llm-compression-and-quantization/index.md
       - LLM Pruning: ai-note/llm-compression-and-quantization/llm-pruning.md
-    - LLM Speculative Decoding:
-      - Overview: ai-note/llm-speculative-decoding/index.md
     - LLM Safety:
       - Overview: ai-note/llm-safety/index.md
       - Agent Safety: ai-note/llm-safety/agent-safety.md
