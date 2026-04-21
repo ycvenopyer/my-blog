@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Tue, 21 Apr 2026 01:13:51 -0000</pubDate>
-    <lastBuildDate>Tue, 21 Apr 2026 01:13:51 -0000</lastBuildDate>
+    <pubDate>Tue, 21 Apr 2026 03:02:21 -0000</pubDate>
+    <lastBuildDate>Tue, 21 Apr 2026 03:02:21 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,87 @@
     
 
     
+    
+    <item>
+      <title>Prefill&amp;Decode</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;prefill-decode&#34;&gt;Prefill 和 Decode&lt;a class=&#34;headerlink&#34; href=&#34;#prefill-decode&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1480 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 1 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 5 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1.预填充阶段&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Prefill发生在模型接收到完整输入prompt之后，但在开始生成第一个输出token之前。这个阶段的主要任务是处理输入的prompt，计算出所有输入token的上下文表示，并初始化后续解码阶段所需的关键数据结构——KV Cache。&lt;/p&gt;
+&lt;p&gt;具体的计算流程和复杂度参见：&lt;a href=&#34;https://zhuanlan.zhihu.com/p/1900479313331073118&#34;&gt;第二章：推理加速核心：预填充（Prefill）与解码（Decode）的深度解析与实现&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;在Prefill阶段，对于Transformer的每一层，模型都会计算得到K和V矩阵。这些K和V矩阵会被缓存起来，这就是KV Cache。KV Cache的结构可以看成一个多维数组，按层、按注意力头、按token位置存储了key和value的信息。&lt;/p&gt;
+&lt;p&gt;Prefill的特点在于高度的并行性。由于整个输入Prompt在开始时是已知的，模型可以同时计算所有token在每一层的表示。这使得预填充阶段能够充分利用GPU的并行计算能力，显著提高处理速度。&lt;/p&gt;
+&lt;p&gt;为了进一步优化预填充阶段的性能，主流的技术包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;高效注意力机制（Efficient Attention Mechanisms）：如FlashAttention： 这是一种通过重新组织注意力计算过程，减少GPU内存读写次数，从而显著加速计算的高效注意力机制。它尤其在处理长序列时表现出色。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;批处理（Batching）：在实际应用中，通常会同时处理多个独立的推理请求。预填充阶段可以将这些请求的Prompt组成一个批次进行处理。通过批处理，可以更有效地利用GPU的计算资源，提高整体的吞吐量。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.解码阶段&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Decode在Prefill完成之后开始，模型以自回归的方式逐个生成输出token。每生成一个token，该token就会被添加到已生成的序列中，并作为下一步生成的输入。&lt;/p&gt;
+&lt;p&gt;Decode从Prefill处理的输入Prompt的最后一个token开始，目标是生成后续的输出序列。假设Prefill处理了 &lt;span class=&#34;arithmatex&#34;&gt;\(n\)&lt;/span&gt; 个输入token，Decode的目标是生成接下来的 &lt;span class=&#34;arithmatex&#34;&gt;\(m\)&lt;/span&gt; 个输出token &lt;span class=&#34;arithmatex&#34;&gt;\((y_1, y_2, ..., y_m)\)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;在每一步 &lt;span class=&#34;arithmatex&#34;&gt;\(t\)&lt;/span&gt;（从 1 到 &lt;span class=&#34;arithmatex&#34;&gt;\(m\)&lt;/span&gt;），模型会基于已经生成的序列 &lt;span class=&#34;arithmatex&#34;&gt;\(x_1, ..., x_n, y_1, ..., y_{t - 1}\)&lt;/span&gt; 来预测下一个token &lt;span class=&#34;arithmatex&#34;&gt;\(y_t\)&lt;/span&gt;。对于decoder-only模型，在解码的每一步，通常只将上一步生成的token作为当前Transformer层的输入（除了第一步，输入是预填充的最后一个token）。然而，模型内部的自注意力机制仍然可以访问包括原始Prompt和所有已生成token在内的完整序列的信息，这是通过KV Cache实现的。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;decode&#34; src=&#34;../image/image.webp&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;KV Cache在Decode阶段是加速的关键。在Prefill阶段，我们已经为输入Prompt中的所有token计算了key和value向量并存储在KV Cache中。在解码的每一步，假设模型生成了一个新的token &lt;span class=&#34;arithmatex&#34;&gt;\(y_t\)&lt;/span&gt;。为了预测下一个token &lt;span class=&#34;arithmatex&#34;&gt;\(y_{t + 1}\)&lt;/span&gt;，模型需要计算 &lt;span class=&#34;arithmatex&#34;&gt;\(y_t\)&lt;/span&gt; 的key和value向量。然后，这个新的key和value向量会被追加到KV Cache中，扩展缓存的长度。&lt;/p&gt;
+&lt;p&gt;当模型在某一步需要计算自注意力时，对于当前要预测的token &lt;span class=&#34;arithmatex&#34;&gt;\(y_t\)&lt;/span&gt;（需要计算其query向量），它会与KV Cache中所有历史的key向量（包括来自原始Prompt和之前已生成的token）进行比较，计算注意力权重。然后，使用这些权重对KV Cache中对应的value向量进行加权求和，得到上下文信息。&lt;/p&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.单步解码的实现与性能分析&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;在解码阶段的每一步，模型主要进行以下操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;接收上一步生成的token的Embedding。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;计算该token在所有Transformer层的query、key和value向量。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将当前生成token的key和value向量更新到KV Cache中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在自注意力计算中，当前token的query向量会与KV Cache中所有历史token的key向量进行比较，计算注意力权重。value向量会根据这些权重进行加权求和，得到上下文向量。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;模型最后一层的输出会经过线性层和Softmax函数，得到下一个token的概率分布。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根据解码策略（例如采样）从概率分布中选择下一个token。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;单步解码的计算成本主要在于自注意力机制的计算，其复杂度与当前KV Cache的长度（等于原始Prompt长度加上已生成的token数量）成正比。KV Cache的关键作用在于，它避免了在每一步都重新计算原始Prompt的key和value向量。然而，随着生成序列的长度增加，KV Cache的大小也会增长，可能导致内存带宽成为瓶颈。&lt;/p&gt;
+&lt;h2 id=&#34;4prefill-decode&#34;&gt;4.Prefill 和 Decode 的协同工作&lt;a class=&#34;headerlink&#34; href=&#34;#4prefill-decode&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Prefill和Decode共同完成了LLM的推理过程。Prefill为Decode准备了初始的KV Cache，而Decode则迭代地利用和更新这个缓存来生成最终的输出。&lt;/p&gt;
+&lt;p&gt;数据流：输入Prompt -&amp;gt; Tokenization -&amp;gt; Embedding -&amp;gt; Prefill(生成KV Cache) -&amp;gt; Decode(逐个生成token) -&amp;gt; Detokenization -&amp;gt; 输出文本。&lt;/p&gt;
+&lt;p&gt;性能瓶颈：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Prefill： 对于极长的输入Prompt，自注意力机制的计算量仍然很大，可能成为计算瓶颈。同时，加载模型权重和初始KV Cache的内存开销也需要考虑。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Decode： 解码的串行自回归特性是主要的瓶颈。虽然KV Cache减少了重复计算，但每一步仍然需要进行注意力计算，并且随着生成序列的增长，KV Cache的大小也会增加，可能导致内存带宽瓶颈。此外，生成长序列会显著增加总的推理时间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;a class=&#34;headerlink&#34; href=&#34;#reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/column/c_1900478474017313428&#34;&gt;大模型推理探秘：揭开 LLM 响应&lt;/a&gt;&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/prefill-and-decode/</link>
+      <pubDate>Tue, 21 Apr 2026 10:57:47 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/prefill-and-decode/</guid>
+      
+    </item>
     
     <item>
       <title>Homepage</title>
@@ -55,7 +136,7 @@
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;成文：143 篇&lt;/li&gt;
-&lt;li&gt;累字：125,371 字&lt;/li&gt;
+&lt;li&gt;累字：127,867 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
@@ -6021,28 +6102,6 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm/transformer/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Prefill&amp;Decode</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;prefill-decode&#34;&gt;Prefill 和 Decode&lt;a class=&#34;headerlink&#34; href=&#34;#prefill-decode&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 3 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/prefill-and-decode/</link>
-      <pubDate>Tue, 14 Apr 2026 17:27:33 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/prefill-and-decode/</guid>
       
     </item>
     
