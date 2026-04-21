@@ -9,34 +9,34 @@
         <meta name="author" content="ycvenopyer">
       
       
-        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/llm-speculative-decoding/">
+        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/speculative-decoding/">
       
       
-        <link rel="prev" href="../llm-compression-and-quantization/llm-pruning/">
+        <link rel="prev" href="../llm-infra/">
       
       
-        <link rel="next" href="../llm-safety/">
+        <link rel="next" href="../../llm-compression-and-quantization/">
       
       
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Overview - ycvenopyer</title>
+        <title>Speculative Decoding - ycvenopyer</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,15 +55,15 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
-  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -106,7 +106,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="ycvenopyer" class="md-header__button md-logo" aria-label="ycvenopyer" data-md-component="logo">
+    <a href="../../.." title="ycvenopyer" class="md-header__button md-logo" aria-label="ycvenopyer" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"></path></svg>
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Speculative Decoding
             
           </span>
         </div>
@@ -225,13 +225,13 @@
       </div>
     
     
-      <a href="../../feed_rss_created.xml" class="md-header__button md-icon" title="RSS（按创建时间）" aria-label="RSS 订阅，按创建时间排序" data-md-component="rss-created">
+      <a href="../../../feed_rss_created.xml" class="md-header__button md-icon" title="RSS（按创建时间）" aria-label="RSS 订阅，按创建时间排序" data-md-component="rss-created">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27zm0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93z"></path></svg>
       </a>
     
     
-      <a href="../../feed_rss_updated.xml" class="md-header__button md-icon" title="RSS（按更新时间）" aria-label="RSS 订阅，按最后更新时间排序" data-md-component="rss-updated">
+      <a href="../../../feed_rss_updated.xml" class="md-header__button md-icon" title="RSS（按更新时间）" aria-label="RSS 订阅，按最后更新时间排序" data-md-component="rss-updated">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1a6.887 6.887 0 0 0 0 9.8c2.73 2.7 7.15 2.7 9.88 0 1.36-1.35 2.04-2.92 2.04-4.9h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58a8.987 8.987 0 0 1 12.65 0L21 3zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8z"></path></svg>
       </a>
@@ -256,7 +256,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tech/" class="md-tabs__link">
+        <a href="../../../tech/" class="md-tabs__link">
           
   
   
@@ -299,7 +299,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../ai/" class="md-tabs__link">
+        <a href="../../../ai/" class="md-tabs__link">
           
   
   
@@ -319,7 +319,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../math/" class="md-tabs__link">
+        <a href="../../../math/" class="md-tabs__link">
           
   
   
@@ -339,7 +339,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../projects/" class="md-tabs__link">
+        <a href="../../../projects/" class="md-tabs__link">
           
   
   
@@ -359,7 +359,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../essay/" class="md-tabs__link">
+        <a href="../../../essay/" class="md-tabs__link">
           
   
   
@@ -377,7 +377,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../about/" class="md-tabs__link">
+      <a href="../../../about/" class="md-tabs__link">
         
   
   
@@ -412,7 +412,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="ycvenopyer" class="md-nav__button md-logo" aria-label="ycvenopyer" data-md-component="logo">
+    <a href="../../.." title="ycvenopyer" class="md-nav__button md-logo" aria-label="ycvenopyer" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"></path></svg>
@@ -442,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -519,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tech/" class="md-nav__link">
+      <a href="../../../tech/" class="md-nav__link">
         
   
   
@@ -547,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tech-note/programming-language-trending/" class="md-nav__link">
+      <a href="../../../tech-note/programming-language-trending/" class="md-nav__link">
         
   
   
@@ -575,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tech-note/sse/" class="md-nav__link">
+      <a href="../../../tech-note/sse/" class="md-nav__link">
         
   
   
@@ -665,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/" class="md-nav__link">
+      <a href="../../../ai/" class="md-nav__link">
         
   
   
@@ -743,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ml/" class="md-nav__link">
+      <a href="../../ml/" class="md-nav__link">
         
   
   
@@ -771,7 +771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ml/regularization/" class="md-nav__link">
+      <a href="../../ml/regularization/" class="md-nav__link">
         
   
   
@@ -799,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ml/pca/" class="md-nav__link">
+      <a href="../../ml/pca/" class="md-nav__link">
         
   
   
@@ -885,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nlp/" class="md-nav__link">
+      <a href="../../nlp/" class="md-nav__link">
         
   
   
@@ -913,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nlp/rnn/" class="md-nav__link">
+      <a href="../../nlp/rnn/" class="md-nav__link">
         
   
   
@@ -941,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nlp/lstm/" class="md-nav__link">
+      <a href="../../nlp/lstm/" class="md-nav__link">
         
   
   
@@ -1027,7 +1027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cv/" class="md-nav__link">
+      <a href="../../cv/" class="md-nav__link">
         
   
   
@@ -1055,7 +1055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cv/cnn/" class="md-nav__link">
+      <a href="../../cv/cnn/" class="md-nav__link">
         
   
   
@@ -1141,7 +1141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/" class="md-nav__link">
+      <a href="../../llm/" class="md-nav__link">
         
   
   
@@ -1169,7 +1169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/transformer/" class="md-nav__link">
+      <a href="../../llm/transformer/" class="md-nav__link">
         
   
   
@@ -1197,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/bert/" class="md-nav__link">
+      <a href="../../llm/bert/" class="md-nav__link">
         
   
   
@@ -1225,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/structure/" class="md-nav__link">
+      <a href="../../llm/structure/" class="md-nav__link">
         
   
   
@@ -1253,7 +1253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/moe/" class="md-nav__link">
+      <a href="../../llm/moe/" class="md-nav__link">
         
   
   
@@ -1281,7 +1281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/llama/" class="md-nav__link">
+      <a href="../../llm/llama/" class="md-nav__link">
         
   
   
@@ -1309,7 +1309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/mamba/" class="md-nav__link">
+      <a href="../../llm/mamba/" class="md-nav__link">
         
   
   
@@ -1337,7 +1337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/retnet/" class="md-nav__link">
+      <a href="../../llm/retnet/" class="md-nav__link">
         
   
   
@@ -1365,7 +1365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/rwkv/" class="md-nav__link">
+      <a href="../../llm/rwkv/" class="md-nav__link">
         
   
   
@@ -1393,7 +1393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/griffin/" class="md-nav__link">
+      <a href="../../llm/griffin/" class="md-nav__link">
         
   
   
@@ -1421,7 +1421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/gemini-1.5-technical-report/" class="md-nav__link">
+      <a href="../../llm/gemini-1.5-technical-report/" class="md-nav__link">
         
   
   
@@ -1449,35 +1449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/kv-cache/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    KV-Cache
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm/pre-training/" class="md-nav__link">
+      <a href="../../llm/pre-training/" class="md-nav__link">
         
   
   
@@ -1505,7 +1477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/fine-tuning/" class="md-nav__link">
+      <a href="../../llm/fine-tuning/" class="md-nav__link">
         
   
   
@@ -1533,7 +1505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/alignment/" class="md-nav__link">
+      <a href="../../llm/alignment/" class="md-nav__link">
         
   
   
@@ -1561,7 +1533,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm/cot/" class="md-nav__link">
+      <a href="../../llm/rlhf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RLHF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../llm/cot/" class="md-nav__link">
         
   
   
@@ -1647,7 +1647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mllm/" class="md-nav__link">
+      <a href="../../mllm/" class="md-nav__link">
         
   
   
@@ -1675,7 +1675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mllm/vlm/" class="md-nav__link">
+      <a href="../../mllm/vlm/" class="md-nav__link">
         
   
   
@@ -1703,7 +1703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mllm/vit/" class="md-nav__link">
+      <a href="../../mllm/vit/" class="md-nav__link">
         
   
   
@@ -1731,7 +1731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mllm/clip/" class="md-nav__link">
+      <a href="../../mllm/clip/" class="md-nav__link">
         
   
   
@@ -1759,7 +1759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mllm/blip/" class="md-nav__link">
+      <a href="../../mllm/blip/" class="md-nav__link">
         
   
   
@@ -1780,64 +1780,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7">
-        
-          
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLM Distributed Training and Inference
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    LLM Distributed Training and Inference
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix="">
-            
               
                 
   
@@ -1845,268 +1787,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm-distributed-training-and-inference/" class="md-nav__link">
+      <a href="../../mllm/tta/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm-distributed-training-and-inference/prefill-and-decode/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Prefill&amp;Decode
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm-distributed-training-and-inference/flash-attention/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FlashAttention
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm-distributed-training-and-inference/zero/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ZeRO
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm-distributed-training-and-inference/megatron-lm/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Megatron-LM
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm-distributed-training-and-inference/llm-infra/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLM Infra
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8">
-        
-          
-          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLM Compression and Quantization
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    LLM Compression and Quantization
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix="">
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm-compression-and-quantization/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../llm-compression-and-quantization/llm-pruning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LLM Pruning
+    TTA
   
 
     
@@ -2148,17 +1836,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" checked="">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked="">
         
           
-          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    LLM Speculative Decoding
+    LLM Distributed Training and Inference
   
 
     
@@ -2169,16 +1857,268 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             
   
-    LLM Speculative Decoding
+    LLM Distributed Training and Inference
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kv-cache/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KV-Cache
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prefill-and-decode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prefill&amp;Decode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vllm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vLLM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flash-attention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FlashAttention
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paged-attention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PagedAttention
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZeRO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../megatron-lm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Megatron-LM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../llm-infra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM Infra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -2203,7 +2143,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Speculative Decoding
   
 
     
@@ -2221,7 +2161,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Speculative Decoding
   
 
     
@@ -2314,17 +2254,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8">
         
           
-          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    LLM Safety
+    LLM Compression and Quantization
   
 
     
@@ -2335,12 +2275,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
   
-    LLM Safety
+    LLM Compression and Quantization
   
 
           </label>
@@ -2353,7 +2293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm-safety/" class="md-nav__link">
+      <a href="../../llm-compression-and-quantization/" class="md-nav__link">
         
   
   
@@ -2381,7 +2321,121 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm-safety/agent-safety/" class="md-nav__link">
+      <a href="../../llm-compression-and-quantization/llm-pruning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM Pruning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9">
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM Safety
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LLM Safety
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../llm-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../llm-safety/agent-safety/" class="md-nav__link">
         
   
   
@@ -2389,6 +2443,92 @@
     
   
     Agent Safety
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10">
+        
+          
+          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLM Evaluation and Interpretability
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LLM Evaluation and Interpretability
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../llm-evaluation-and-interpretability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
   
 
     
@@ -2438,7 +2578,7 @@
   <span class="md-ellipsis">
     
   
-    LLM Evaluation and Interpretability
+    AIGC
   
 
     
@@ -2454,7 +2594,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    LLM Evaluation and Interpretability
+    AIGC
   
 
           </label>
@@ -2467,7 +2607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../llm-evaluation-and-interpretability/" class="md-nav__link">
+      <a href="../../aigc/" class="md-nav__link">
         
   
   
@@ -2475,6 +2615,146 @@
     
   
     Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aigc/gan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GAN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aigc/stable-diffusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stable Diffusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aigc/midjourney/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Midjourney
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aigc/dall-e/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DALL-E
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aigc/suno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suno
   
 
     
@@ -2524,7 +2804,7 @@
   <span class="md-ellipsis">
     
   
-    AIGC
+    RAG
   
 
     
@@ -2540,7 +2820,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    AIGC
+    RAG
   
 
           </label>
@@ -2553,7 +2833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../aigc/" class="md-nav__link">
+      <a href="../../rag/" class="md-nav__link">
         
   
   
@@ -2581,14 +2861,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../aigc/gan/" class="md-nav__link">
+      <a href="../../rag/vector-database/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    GAN
+    Vector Database
   
 
     
@@ -2609,14 +2889,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../aigc/stable-diffusion/" class="md-nav__link">
+      <a href="../../rag/graphrag/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Stable Diffusion
+    GraphRAG
   
 
     
@@ -2637,70 +2917,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../aigc/midjourney/" class="md-nav__link">
+      <a href="../../rag/rag-evaluation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Midjourney
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../aigc/dall-e/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    DALL-E
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../aigc/suno/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Suno
+    RAG Evaluation
   
 
     
@@ -2750,7 +2974,7 @@
   <span class="md-ellipsis">
     
   
-    RAG
+    Deep Research
   
 
     
@@ -2766,7 +2990,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    RAG
+    Deep Research
   
 
           </label>
@@ -2779,7 +3003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rag/" class="md-nav__link">
+      <a href="../../deep-research/" class="md-nav__link">
         
   
   
@@ -2807,14 +3031,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../rag/vector-database/" class="md-nav__link">
+      <a href="../../deep-research/deep-research-product/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Vector Database
+    Deep Research Product
   
 
     
@@ -2835,42 +3059,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../rag/graphrag/" class="md-nav__link">
+      <a href="../../deep-research/deerflow/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    GraphRAG
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../rag/rag-evaluation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    RAG Evaluation
+    DeerFlow
   
 
     
@@ -2920,7 +3116,7 @@
   <span class="md-ellipsis">
     
   
-    Deep Research
+    Prompt Engineering
   
 
     
@@ -2936,7 +3132,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Deep Research
+    Prompt Engineering
   
 
           </label>
@@ -2949,7 +3145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deep-research/" class="md-nav__link">
+      <a href="../../prompt-engineering/" class="md-nav__link">
         
   
   
@@ -2977,14 +3173,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../deep-research/deep-research-product/" class="md-nav__link">
+      <a href="../../prompt-engineering/chatgpt-strategy/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Deep Research Product
+    ChatGPT Strategy
   
 
     
@@ -3005,14 +3201,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../deep-research/deerflow/" class="md-nav__link">
+      <a href="../../prompt-engineering/system-prompt/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    DeerFlow
+    System Prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompt-engineering/academic-prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Academic Prompt
   
 
     
@@ -3062,7 +3286,7 @@
   <span class="md-ellipsis">
     
   
-    Prompt Engineering
+    Context Engineering
   
 
     
@@ -3078,7 +3302,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Prompt Engineering
+    Context Engineering
   
 
           </label>
@@ -3091,7 +3315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prompt-engineering/" class="md-nav__link">
+      <a href="../../context-engineering/" class="md-nav__link">
         
   
   
@@ -3119,70 +3343,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../prompt-engineering/chatgpt-strategy/" class="md-nav__link">
+      <a href="../../context-engineering/context-engineering-practice/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    ChatGPT Strategy
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../prompt-engineering/system-prompt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    System Prompt
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../prompt-engineering/academic-prompt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Academic Prompt
+    Practice
   
 
     
@@ -3232,7 +3400,7 @@
   <span class="md-ellipsis">
     
   
-    Context Engineering
+    Harness Engineering
   
 
     
@@ -3248,7 +3416,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Context Engineering
+    Harness Engineering
   
 
           </label>
@@ -3261,7 +3429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../context-engineering/" class="md-nav__link">
+      <a href="../../harness-engineering/" class="md-nav__link">
         
   
   
@@ -3269,34 +3437,6 @@
     
   
     Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../context-engineering/context-engineering-practice/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Practice
   
 
     
@@ -3346,7 +3486,7 @@
   <span class="md-ellipsis">
     
   
-    Harness Engineering
+    LangChain
   
 
     
@@ -3362,7 +3502,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Harness Engineering
+    LangChain
   
 
           </label>
@@ -3375,7 +3515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../harness-engineering/" class="md-nav__link">
+      <a href="../../langchain/" class="md-nav__link">
         
   
   
@@ -3383,6 +3523,118 @@
     
   
     Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../langchain/langchain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangChain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../langchain/langgraph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangGraph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../langchain/langchain-vs-langgraph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangChain vs LangGraph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../langchain/langfuse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Langfuse
   
 
     
@@ -3432,7 +3684,7 @@
   <span class="md-ellipsis">
     
   
-    LangChain
+    Agent
   
 
     
@@ -3448,7 +3700,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    LangChain
+    Agent
   
 
           </label>
@@ -3461,7 +3713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../langchain/" class="md-nav__link">
+      <a href="../../agent/" class="md-nav__link">
         
   
   
@@ -3489,14 +3741,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../langchain/langchain/" class="md-nav__link">
+      <a href="../../agent/agent/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    LangChain
+    Agent
   
 
     
@@ -3517,14 +3769,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../langchain/langgraph/" class="md-nav__link">
+      <a href="../../agent/mcp/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    LangGraph
+    MCP
   
 
     
@@ -3545,14 +3797,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../langchain/langchain-vs-langgraph/" class="md-nav__link">
+      <a href="../../agent/a2a/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    LangChain vs LangGraph
+    A2A
   
 
     
@@ -3573,14 +3825,182 @@
   
   
     <li class="md-nav__item">
-      <a href="../langchain/langfuse/" class="md-nav__link">
+      <a href="../../agent/tools/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Langfuse
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/agent-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/agent-dev-problem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Development Problem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/sandbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sandbox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../agent/memory-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memory Structure
   
 
     
@@ -3630,7 +4050,7 @@
   <span class="md-ellipsis">
     
   
-    Agent
+    WorkFlow
   
 
     
@@ -3646,7 +4066,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Agent
+    WorkFlow
   
 
           </label>
@@ -3659,7 +4079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/" class="md-nav__link">
+      <a href="../../workflow/" class="md-nav__link">
         
   
   
@@ -3687,14 +4107,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/agent/" class="md-nav__link">
+      <a href="../../workflow/ai-product-demand-analysis/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Agent
+    AI Product Demand
   
 
     
@@ -3715,14 +4135,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/mcp/" class="md-nav__link">
+      <a href="../../workflow/sdd/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MCP
+    SDD
   
 
     
@@ -3743,14 +4163,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/a2a/" class="md-nav__link">
+      <a href="../../workflow/superpowers/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    A2A
+    Superpowers
   
 
     
@@ -3771,14 +4191,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/tools/" class="md-nav__link">
+      <a href="../../workflow/manus/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Tools
+    Manus
   
 
     
@@ -3799,14 +4219,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/agent-framework/" class="md-nav__link">
+      <a href="../../workflow/dify/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Agent Framework
+    Dify
   
 
     
@@ -3827,14 +4247,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/agent-dev-problem/" class="md-nav__link">
+      <a href="../../workflow/coze/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Agent Development Problem
+    Coze
   
 
     
@@ -3855,14 +4275,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/skills/" class="md-nav__link">
+      <a href="../../workflow/n8n/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Skills
+    n8n
   
 
     
@@ -3883,14 +4303,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/sandbox/" class="md-nav__link">
+      <a href="../../workflow/openclaw/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Sandbox
+    OpenClaw
   
 
     
@@ -3911,42 +4331,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../agent/memory/" class="md-nav__link">
+      <a href="../../workflow/hermes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Memory
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../agent/memory-structure/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Memory Structure
+    Hermes
   
 
     
@@ -3996,7 +4388,7 @@
   <span class="md-ellipsis">
     
   
-    WorkFlow
+    Models
   
 
     
@@ -4012,7 +4404,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    WorkFlow
+    Models
   
 
           </label>
@@ -4025,7 +4417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../workflow/" class="md-nav__link">
+      <a href="../../models/" class="md-nav__link">
         
   
   
@@ -4053,345 +4445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../workflow/ai-product-demand-analysis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AI Product Demand
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workflow/sdd/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    SDD
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workflow/superpowers/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Superpowers
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workflow/manus/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Manus
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workflow/dify/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Dify
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workflow/coze/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Coze
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workflow/n8n/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    n8n
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workflow/openclaw/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenClaw
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workflow/hermes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Hermes
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_21">
-        
-          
-          <label class="md-nav__link" for="__nav_3_21" id="__nav_3_21_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Models
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_21_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_21">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Models
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix="">
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../models/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../models/openai/" class="md-nav__link">
+      <a href="../../models/openai/" class="md-nav__link">
         
   
   
@@ -4419,7 +4473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/anthropic/" class="md-nav__link">
+      <a href="../../models/anthropic/" class="md-nav__link">
         
   
   
@@ -4447,7 +4501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/google/" class="md-nav__link">
+      <a href="../../models/google/" class="md-nav__link">
         
   
   
@@ -4475,7 +4529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/zhipu/" class="md-nav__link">
+      <a href="../../models/zhipu/" class="md-nav__link">
         
   
   
@@ -4503,7 +4557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/alibaba/" class="md-nav__link">
+      <a href="../../models/alibaba/" class="md-nav__link">
         
   
   
@@ -4531,7 +4585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/bytedance/" class="md-nav__link">
+      <a href="../../models/bytedance/" class="md-nav__link">
         
   
   
@@ -4559,7 +4613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/deepseek/" class="md-nav__link">
+      <a href="../../models/deepseek/" class="md-nav__link">
         
   
   
@@ -4587,7 +4641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/minimax/" class="md-nav__link">
+      <a href="../../models/minimax/" class="md-nav__link">
         
   
   
@@ -4615,7 +4669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/moonshot/" class="md-nav__link">
+      <a href="../../models/moonshot/" class="md-nav__link">
         
   
   
@@ -4643,7 +4697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../models/xiaomi/" class="md-nav__link">
+      <a href="../../models/xiaomi/" class="md-nav__link">
         
   
   
@@ -4736,7 +4790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/" class="md-nav__link">
+      <a href="../../../math/" class="md-nav__link">
         
   
   
@@ -4814,7 +4868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/linear-algebra/determinant/" class="md-nav__link">
+      <a href="../../../math/linear-algebra/determinant/" class="md-nav__link">
         
   
   
@@ -4842,7 +4896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/linear-algebra/matrix/" class="md-nav__link">
+      <a href="../../../math/linear-algebra/matrix/" class="md-nav__link">
         
   
   
@@ -4870,7 +4924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/linear-algebra/vector/" class="md-nav__link">
+      <a href="../../../math/linear-algebra/vector/" class="md-nav__link">
         
   
   
@@ -4898,7 +4952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/linear-algebra/linear-equation/" class="md-nav__link">
+      <a href="../../../math/linear-algebra/linear-equation/" class="md-nav__link">
         
   
   
@@ -4926,7 +4980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/linear-algebra/eigenvalue/" class="md-nav__link">
+      <a href="../../../math/linear-algebra/eigenvalue/" class="md-nav__link">
         
   
   
@@ -4954,7 +5008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/linear-algebra/similar/" class="md-nav__link">
+      <a href="../../../math/linear-algebra/similar/" class="md-nav__link">
         
   
   
@@ -4982,7 +5036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/linear-algebra/quadatic-form/" class="md-nav__link">
+      <a href="../../../math/linear-algebra/quadatic-form/" class="md-nav__link">
         
   
   
@@ -5068,7 +5122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/probability-and-statistics/random-event-and-probability/" class="md-nav__link">
+      <a href="../../../math/probability-and-statistics/random-event-and-probability/" class="md-nav__link">
         
   
   
@@ -5096,7 +5150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/probability-and-statistics/single-rv/" class="md-nav__link">
+      <a href="../../../math/probability-and-statistics/single-rv/" class="md-nav__link">
         
   
   
@@ -5124,7 +5178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/probability-and-statistics/multi-rv/" class="md-nav__link">
+      <a href="../../../math/probability-and-statistics/multi-rv/" class="md-nav__link">
         
   
   
@@ -5152,7 +5206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/probability-and-statistics/number-character/" class="md-nav__link">
+      <a href="../../../math/probability-and-statistics/number-character/" class="md-nav__link">
         
   
   
@@ -5180,7 +5234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/probability-and-statistics/LLT-and-CLT/" class="md-nav__link">
+      <a href="../../../math/probability-and-statistics/LLT-and-CLT/" class="md-nav__link">
         
   
   
@@ -5208,7 +5262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/probability-and-statistics/statistics/" class="md-nav__link">
+      <a href="../../../math/probability-and-statistics/statistics/" class="md-nav__link">
         
   
   
@@ -5236,7 +5290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/probability-and-statistics/parameter-estimation/" class="md-nav__link">
+      <a href="../../../math/probability-and-statistics/parameter-estimation/" class="md-nav__link">
         
   
   
@@ -5264,7 +5318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/probability-and-statistics/hypothesis-testing/" class="md-nav__link">
+      <a href="../../../math/probability-and-statistics/hypothesis-testing/" class="md-nav__link">
         
   
   
@@ -5350,7 +5404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete-math/propositional-logic/" class="md-nav__link">
+      <a href="../../../math/discrete-math/propositional-logic/" class="md-nav__link">
         
   
   
@@ -5378,7 +5432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete-math/predicate-logic/" class="md-nav__link">
+      <a href="../../../math/discrete-math/predicate-logic/" class="md-nav__link">
         
   
   
@@ -5406,7 +5460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete-math/set/" class="md-nav__link">
+      <a href="../../../math/discrete-math/set/" class="md-nav__link">
         
   
   
@@ -5434,7 +5488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete-math/relation/" class="md-nav__link">
+      <a href="../../../math/discrete-math/relation/" class="md-nav__link">
         
   
   
@@ -5462,7 +5516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete-math/number-theory/" class="md-nav__link">
+      <a href="../../../math/discrete-math/number-theory/" class="md-nav__link">
         
   
   
@@ -5490,7 +5544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete-math/induction-and-recursion/" class="md-nav__link">
+      <a href="../../../math/discrete-math/induction-and-recursion/" class="md-nav__link">
         
   
   
@@ -5518,7 +5572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete-math/algebra-system/" class="md-nav__link">
+      <a href="../../../math/discrete-math/algebra-system/" class="md-nav__link">
         
   
   
@@ -5546,7 +5600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete-math/group-theory/" class="md-nav__link">
+      <a href="../../../math/discrete-math/group-theory/" class="md-nav__link">
         
   
   
@@ -5574,7 +5628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete-math/graph-theory/" class="md-nav__link">
+      <a href="../../../math/discrete-math/graph-theory/" class="md-nav__link">
         
   
   
@@ -5602,7 +5656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete-math/tree/" class="md-nav__link">
+      <a href="../../../math/discrete-math/tree/" class="md-nav__link">
         
   
   
@@ -5695,7 +5749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/" class="md-nav__link">
+      <a href="../../../projects/" class="md-nav__link">
         
   
   
@@ -5723,7 +5777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/bert-pruning/" class="md-nav__link">
+      <a href="../../../projects/bert-pruning/" class="md-nav__link">
         
   
   
@@ -5751,7 +5805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/economic-rag/" class="md-nav__link">
+      <a href="../../../projects/economic-rag/" class="md-nav__link">
         
   
   
@@ -5779,7 +5833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/salescoach-agent/" class="md-nav__link">
+      <a href="../../../projects/salescoach-agent/" class="md-nav__link">
         
   
   
@@ -5807,7 +5861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/bayesian-tta/" class="md-nav__link">
+      <a href="../../../projects/bayesian-tta/" class="md-nav__link">
         
   
   
@@ -5892,7 +5946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essay/" class="md-nav__link">
+      <a href="../../../essay/" class="md-nav__link">
         
   
   
@@ -5970,7 +6024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essay/gossip/hobbies/" class="md-nav__link">
+      <a href="../../../essay/gossip/hobbies/" class="md-nav__link">
         
   
   
@@ -5998,7 +6052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essay/gossip/kaoyan-experience/" class="md-nav__link">
+      <a href="../../../essay/gossip/kaoyan-experience/" class="md-nav__link">
         
   
   
@@ -6026,7 +6080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essay/gossip/four-years-summary/" class="md-nav__link">
+      <a href="../../../essay/gossip/four-years-summary/" class="md-nav__link">
         
   
   
@@ -6112,7 +6166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essay/reading/" class="md-nav__link">
+      <a href="../../../essay/reading/" class="md-nav__link">
         
   
   
@@ -6198,7 +6252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essay/paper/reading-workflow/" class="md-nav__link">
+      <a href="../../../essay/paper/reading-workflow/" class="md-nav__link">
         
   
   
@@ -6226,7 +6280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essay/paper/olica/" class="md-nav__link">
+      <a href="../../../essay/paper/olica/" class="md-nav__link">
         
   
   
@@ -6254,7 +6308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essay/paper/pop/" class="md-nav__link">
+      <a href="../../../essay/paper/pop/" class="md-nav__link">
         
   
   
@@ -6297,7 +6351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
+      <a href="../../../about/" class="md-nav__link">
         
   
   
@@ -6401,7 +6455,7 @@
   
   
     <li class="md-path__item">
-      <a href="../.." class="md-path__link">
+      <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
     Homepage
@@ -6419,7 +6473,7 @@
     
     
       <li class="md-path__item">
-        <a href="../../ai/" class="md-path__link">
+        <a href="../../../ai/" class="md-path__link">
           
   <span class="md-ellipsis">
     AI
@@ -6437,10 +6491,10 @@
     
     
       <li class="md-path__item">
-        <a href="./" class="md-path__link">
+        <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
-    LLM Speculative Decoding
+    LLM Distributed Training and Inference
   </span>
 
         </a>
@@ -6561,14 +6615,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../javascripts/extra.js"></script>
+        <script src="../../../javascripts/extra.js"></script>
       
-        <script src="../../javascripts/config.js"></script>
+        <script src="../../../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
