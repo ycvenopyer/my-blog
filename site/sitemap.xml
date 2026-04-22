@@ -49,6 +49,10 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/langchain/</loc>
+         <lastmod>2026-04-22</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/mcp/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -129,26 +133,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/langchain/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/langchain/langchain-vs-langgraph/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/langchain/langchain/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/langchain/langfuse/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/langchain/langgraph/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -226,6 +210,14 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/moe-compression/</loc>
+         <lastmod>2026-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/structual-pruning/</loc>
+         <lastmod>2026-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/unstructual-pruning/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -317,47 +309,47 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/alibaba/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/alibaba/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/anthropic/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/anthropic/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/bytedance/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/bytedance/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/deepseek/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/deepseek/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/google/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/google/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/minimax/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/minimax/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/moonshot/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/moonshot/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/openai/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/openai/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/xiaomi/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/xiaomi/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/models/zhipu/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/zhipu/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
