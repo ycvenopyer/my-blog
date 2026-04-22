@@ -2222,24 +2222,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2256,47 +2238,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.大模型压缩与量化
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.大模型训练加速
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2318,6 +2259,62 @@
     
   
     LLM Pruning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="context-sparsity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Context Sparsity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="moe-compression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MoE Compression
   
 
     
@@ -6380,36 +6377,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.大模型压缩与量化
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.大模型训练加速
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -6497,15 +6464,60 @@
 
 <h1 id="llm-compression-and-quantization">LLM Compression and Quantization<a class="headerlink" href="#llm-compression-and-quantization" title="Permanent link">¶</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 19 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间不到 1 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 340 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 1 分钟</p>
 </div>
 <aside class="md-pageviews md-pageviews--after-stats" aria-label="页面阅读量">
   <span class="md-pageviews__text">阅读量</span>
   <span id="busuanzi_value_page_pv" class="md-pageviews__value">—</span>
 </aside>
 
-<h2 id="1">1.大模型压缩与量化<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
-<h2 id="2">2.大模型训练加速<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<p>当前的压缩方法有量化（Quantization）、剪枝（Pruning）、知识蒸馏（Knowledge Distillation）和低秩分解（Low-Rank Decomposition）。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">技术</th>
+<th style="text-align: left;">核心原理</th>
+<th style="text-align: left;">典型代表方法</th>
+<th style="text-align: left;">主要优势</th>
+<th style="text-align: left;">主要局限</th>
+<th style="text-align: left;">适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">量化</td>
+<td style="text-align: left;">降低参数/激活值的数值精度，如 FP32 → INT8</td>
+<td style="text-align: left;">GPTQ, AWQ, SmoothQuant, QLoRA</td>
+<td style="text-align: left;">压缩效果好，通用性强，推理加速明显</td>
+<td style="text-align: left;">PTQ 在极低比特下可能有精度损失</td>
+<td style="text-align: left;">几乎所有部署场景，是首选技术</td>
+</tr>
+<tr>
+<td style="text-align: left;">剪枝</td>
+<td style="text-align: left;">移除不重要的权重或神经元</td>
+<td style="text-align: left;">SparseGPT (非结构化), 结构化剪枝</td>
+<td style="text-align: left;">可显著减少参数量与计算量</td>
+<td style="text-align: left;">非结构化剪枝依赖硬件支持；需微调恢复精度</td>
+<td style="text-align: left;">追求极致压缩，尤其在支持稀疏计算的硬件上</td>
+</tr>
+<tr>
+<td style="text-align: left;">知识蒸馏</td>
+<td style="text-align: left;">让小模型（学生）学习大模型（教师）的行为</td>
+<td style="text-align: left;">DistilBERT, TinyBERT</td>
+<td style="text-align: left;">可构建极度轻量的模型，部署灵活</td>
+<td style="text-align: left;">训练过程复杂，学生模型性能上限受限于教师模型</td>
+<td style="text-align: left;">需要获得一个结构完全不同的小模型时</td>
+</tr>
+<tr>
+<td style="text-align: left;">低秩分解</td>
+<td style="text-align: left;">将权重矩阵分解为两个或多个低秩小矩阵</td>
+<td style="text-align: left;">LoRA, QLoRA</td>
+<td style="text-align: left;">参数高效微调（PEFT），与量化技术天然互补</td>
+<td style="text-align: left;">单独压缩效果有限，通常与其他技术结合使用</td>
+<td style="text-align: left;">配合微调（如 QLoRA）或作为辅助压缩手段</td>
+</tr>
+</tbody>
+</table>
 
 
 

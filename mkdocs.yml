@@ -62,11 +62,15 @@ nav:
     - LLM Compression and Quantization:
       - Overview: ai-note/llm-compression-and-quantization/index.md
       - LLM Pruning: ai-note/llm-compression-and-quantization/llm-pruning.md
+      - Unstructual Pruning: ai-note/llm-compression-and-quantization/unstructual-pruning.md
+      - Structual Pruning: ai-note/llm-compression-and-quantization/structual-pruning.md
+      - Context Sparsity: ai-note/llm-compression-and-quantization/context-sparsity.md
+      - MoE Compression: ai-note/llm-compression-and-quantization/moe-compression.md
+    - LLM Evaluation and Interpretability:
+      - Overview: ai-note/llm-evaluation-and-interpretability/index.md
     - LLM Safety:
       - Overview: ai-note/llm-safety/index.md
       - Agent Safety: ai-note/llm-safety/agent-safety.md
-    - LLM Evaluation and Interpretability:
-      - Overview: ai-note/llm-evaluation-and-interpretability/index.md
     - AIGC:
       - Overview: ai-note/aigc/index.md
       - GAN: ai-note/aigc/gan.md
@@ -93,12 +97,6 @@ nav:
       - Practice: ai-note/context-engineering/context-engineering-practice.md
     - Harness Engineering:
       - Overview: ai-note/harness-engineering/index.md
-    - LangChain:
-      - Overview: ai-note/langchain/index.md
-      - LangChain: ai-note/langchain/langchain.md
-      - LangGraph: ai-note/langchain/langgraph.md
-      - LangChain vs LangGraph: ai-note/langchain/langchain-vs-langgraph.md
-      - Langfuse: ai-note/langchain/langfuse.md
     - Agent:
       - Overview: ai-note/agent/index.md
       - Agent: ai-note/agent/agent.md
@@ -106,6 +104,7 @@ nav:
       - A2A: ai-note/agent/a2a.md
       - Tools: ai-note/agent/tools.md
       - Agent Framework: ai-note/agent/agent-framework.md
+      - LangChain: ai-note/agent/langchain.md
       - Agent Development Problem: ai-note/agent/agent-dev-problem.md
       - Skills: ai-note/agent/skills.md
       - Sandbox: ai-note/agent/sandbox.md
@@ -122,18 +121,18 @@ nav:
       - n8n: ai-note/workflow/n8n.md
       - OpenClaw: ai-note/workflow/openclaw.md
       - Hermes: ai-note/workflow/hermes.md
-    - Models:
-      - Overview: ai-note/models/index.md
-      - OpenAI: ai-note/models/openai.md
-      - Anthropic: ai-note/models/anthropic.md
-      - Google: ai-note/models/google.md
-      - Zhipu: ai-note/models/zhipu.md
-      - Alibaba: ai-note/models/alibaba.md
-      - ByteDance: ai-note/models/bytedance.md
-      - DeepSeek: ai-note/models/deepseek.md
-      - MiniMax: ai-note/models/minimax.md
-      - Moonshot: ai-note/models/moonshot.md
-      - Xiaomi: ai-note/models/xiaomi.md
+    - Model:
+      - Overview: ai-note/model/index.md
+      - OpenAI: ai-note/model/openai.md
+      - Anthropic: ai-note/model/anthropic.md
+      - Google: ai-note/model/google.md
+      - Zhipu: ai-note/model/zhipu.md
+      - Alibaba: ai-note/model/alibaba.md
+      - ByteDance: ai-note/model/bytedance.md
+      - DeepSeek: ai-note/model/deepseek.md
+      - MiniMax: ai-note/model/minimax.md
+      - Moonshot: ai-note/model/moonshot.md
+      - Xiaomi: ai-note/model/xiaomi.md
   - Math: 
     - Overview: math.md
     - 线性代数:

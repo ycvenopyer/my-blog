@@ -1,6 +1,6 @@
-LangChain VS LangGraph
+# LangChain
 
-## 1.定义区别
+## 1.LangChain 和 LangGraph
 
 作为 LangChain 生态中两款核心开发工具，LangChain 与 LangGraph 均由同一团队打造，旨在解决大语言模型（LLM）集成与协同问题，但二者在工作流设计理念上存在本质区别，常被开发者混淆。从命名即可直观感知其核心差异：
 
@@ -10,7 +10,7 @@ LangChain VS LangGraph
 
 ![langchain-and-langgraph](image/langchain-and-langgraph.png)
 
-## 2.场景区别
+### 1.1 场景区别
 
 两者的定位差异决定了适用场景的分野，且并非互斥关系，而是可形成“基础组件+高级编排”的协同模式：
 
@@ -18,10 +18,14 @@ LangChain VS LangGraph
 
 - LangGraph：作为构建有状态智能体（Agent）系统的高级框架，擅长处理多步骤动态任务（如复杂问题拆解、多智能体协作、需要人工介入的审批流程），其核心优势在于对“状态连续性”的支持。
 
-## 3.复杂Agent场景选择LangGraph
+### 1.2 复杂Agent场景选择LangGraph
 
 - 对“状态”的天然支持：Agent的核心在于在“思考-行动-观察”的循环中保持上下文和记忆。LangGraph的全局State机制（例如存储对话历史、中间步骤、工具结果）为此提供了内置、统一的管理方案，避免了传统开发中状态分散的难题。
 
 - 轻松处理复杂控制流：真实的Agent任务充满不确定性，可能需要根据结果循环重试、条件分支或并行执行。LangGraph的条件边（Conditional Edge）和循环图结构让这些复杂逻辑变得直观和易于实现。
 
 - 内置生产级特性：LangGraph设计之初就考虑了生产部署，原生支持状态持久化（检查点）、人工干预节点和可视化调试等，这些都是构建可靠Agent系统不可或缺的功能。
+
+## 2.Langfuse
+
+
