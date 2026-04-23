@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Wed, 22 Apr 2026 14:33:16 -0000</pubDate>
-    <lastBuildDate>Wed, 22 Apr 2026 14:33:16 -0000</lastBuildDate>
+    <pubDate>Thu, 23 Apr 2026 02:46:57 -0000</pubDate>
+    <lastBuildDate>Thu, 23 Apr 2026 02:46:57 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,288 @@
     
 
     
+    
+    <item>
+      <title>LLM Pruning</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;llm-pruning&#34;&gt;LLM Pruning&lt;a class=&#34;headerlink&#34; href=&#34;#llm-pruning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2557 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 8 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;剪枝通过移除冗余权重或结构单元来压缩模型：与量化侧重降低数值精度不同，剪枝侧重减少参与计算的参数或改变结构。关于pruning的论文合集你可以看&lt;a href=&#34;https://github.com/hrcheng1066/awesome-pruning&#34;&gt;awesome-pruning&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;1&#34;&gt;1.剪枝的基础原理&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11&#34;&gt;1.1 为什么需要剪枝？&lt;a class=&#34;headerlink&#34; href=&#34;#11&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;大规模语言模型往往过参数化，存在可移除的冗余权重。我们可以将大模型分为训练和推理两个阶段，训练阶段是根据数据学习模型中的参数（对MLP来说主要是网络中的权重）；推理阶段中将新数据给模型，经过计算得出结果。过参数化是指训练阶段我们需要大量的参数来捕捉数据中的微小信息，而到了推理阶段则并不需要那么多参数，因此就可以在部署前对模型进行简化。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在可控精度损失下，剪枝可减小参数量与理论计算量，使得计算实践更少，功耗更小。同时对设备要求变低，可以放在更低端的设备上跑。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;也有pruning后精度提高的，说明原模型overfit了，pruning起到了regularization的作用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;12&#34;&gt;1.2 分类&lt;a class=&#34;headerlink&#34; href=&#34;#12&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;分类维度&lt;/th&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;类型&lt;/th&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;说明&lt;/th&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;硬件友好度&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;粒度&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;非结构化剪枝&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;任意位置移除单个权重，得到稀疏矩阵&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;低：依赖稀疏 GEMM（通用矩阵乘）、专用内核或半结构化模式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化剪枝&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;移除整行/整列、注意力头、FFN 神经元等&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;高：矩阵维度变小，易在通用 GEMM 上加速&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;时机&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;训练前剪枝&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;基于初始化或随机掩码&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;较少单独用于 LLM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;训练中剪枝&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;动态调整稀疏掩码、稀疏训练&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;灵活，训练与搜索成本高&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;训练后剪枝&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;对已训练模型剪枝，可选校准与微调&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;LLM 场景最常见&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;13&#34;&gt;1.3 评估维度&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;重要性分数（importance score）&lt;/strong&gt;：如何为每个权重或结构单元打分（幅度、梯度、Hessian 近似、激活相关项等）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;稀疏度（sparsity ratio）&lt;/strong&gt;：被剪除权重的比例，可以定义为层中0参数所占比例；结构化场景则对应移除头/神经元比例等。稀疏度可以预先定义，也可以在剪枝过程中自动化，由pruning算法确定各模块的剪枝比例，而不是一开始固定一个值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;精度恢复（accuracy recovery）&lt;/strong&gt;：裁完后进行fine-tuning可以弥补pruning带来的精度损失，因此很多方法会在pruning后做fine-tuning。比较经典的是training，pruning，fine-tuning三段式。后面两个阶段交替进行，每次pruning后损失的精度可以由后面的fine-tuning来弥补，该过程也称为iterative pruning。评估指标有困惑度，是否需要calibration或LoRA微调等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;admonition note&#34;&gt;
+&lt;p class=&#34;admonition-title&#34;&gt;困惑度&lt;/p&gt;
+&lt;p&gt;在语言建模范式下，困惑度（perplexity, PPL）用来概括模型在一段无标签文本上预测下一个 token 的难易程度：PPL 越低，通常表示模型对语料的平均预测更自信、语言建模样本内拟合更好；是否与下游任务、泛化一致，仍需结合其他指标。&lt;/p&gt;
+&lt;p&gt;设语料有 &lt;span class=&#34;arithmatex&#34;&gt;\(N\)&lt;/span&gt; 个被计入损失的 token，位置 &lt;span class=&#34;arithmatex&#34;&gt;\(t\)&lt;/span&gt; 上模型输出下一 token 的分布，真实出现的 token 为 &lt;span class=&#34;arithmatex&#34;&gt;\(w_t\)&lt;/span&gt;，条件概率为 &lt;span class=&#34;arithmatex&#34;&gt;\(p(w_t \mid w_1, \ldots, w_{t-1})\)&lt;/span&gt;（也简记为给定上文的 &lt;span class=&#34;arithmatex&#34;&gt;\(p(w_t\!\mid\!\text{context})\)&lt;/span&gt;）。平均负对数似然（NLL，按 token 平均）为：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+NLL = -\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1, \ldots, w_{t-1}\bigr)
+\]&lt;/div&gt;
+&lt;p&gt;困惑度定义为：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1, \ldots, w_{t-1}\bigr)\right)
+\]&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;模型能力（capacity）&lt;/strong&gt;：主流pruning方法中，被裁剪的部分一般直接丢弃不会再拿回来了，即模型的capacity在iterative pruning的过程中不断减少。如此一旦有参数被不适当地裁剪掉便无法被恢复。近年来在模型压缩过程中保留被裁剪部分能力或者扩充能力的方法不断被提出。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.剪枝方法演进&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21&#34;&gt;2.1 传统剪枝&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;幅度（magnitude-based）&lt;/strong&gt;：剪掉绝对值小的权重，实现简单、代价低，大模型 one-shot 时常弱于利用层间敏感度、梯度或激活信息的方法。《Comparing Biases for Minimal Network Construction with Back-Propagation》提出了magnitude-based的pruning方法，即对网络中每个hidden unit施加与其绝对值相关的weight decay来最小化hidden unit数量。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;梯度（gradient-based）&lt;/strong&gt;：用损失对权重的导数、或一阶/二阶泰勒项估计删掉某个权重/神经元对误差的扰动，与纯幅值法对照；是部分结构化剪枝的基础。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;二阶导数（Hessian）&lt;/strong&gt;：基于损失函数相对于权重的二阶导数（对权重向量来说即Hessian矩阵）来衡量网络中权重的重要程度，然后对其进行裁剪，必要时对剩余权重做补偿；经典代表为 OBD、OBS，在 LLM 上由 SparseGPT、LLM-Surgeon 等延续。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://arxiv.org/abs/1510.00149&#34;&gt;Deep Compression&lt;/a&gt;&lt;/strong&gt;：采用剪枝 → 量化 → 哈夫曼编码流水线，对当时经典网络AlexNet和VGG进行了压缩，其中对于pruning带来的精度损失，使用了iterative pruning方法进行补偿，可以让精度几乎没有损失。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;正则化（regularization-based）&lt;/strong&gt;：L1、&lt;a href=&#34;https://blog.51cto.com/u_15837794/11420483&#34;&gt;group sparsity&lt;/a&gt;等，把稀疏性写进目标函数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;迭代（iterative pruning）&lt;/strong&gt;：多轮剪去一部分 → 短微调 → 再剪，和 one-shot（一次定掩码再校准）相对；传统 CNN 压缩里很常见，和 Deep Compression 的剪完再训叙述一致，部署周期通常长于单次剪枝。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;22-llm&#34;&gt;2.2 LLM 剪枝的代表性方法&lt;a class=&#34;headerlink&#34; href=&#34;#22-llm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;方法&lt;/th&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;类型&lt;/th&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;核心思想&lt;/th&gt;
+&lt;th style=&#34;text-align: left;&#34;&gt;是否需要微调&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://proceedings.neurips.cc/paper/1989/file/6c9882bbac1c7093bd25041881277658-Paper.pdf&#34;&gt;&lt;strong&gt;OBD（Optimal Brain Damage）&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;非结构化（经典）&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;用对角近似 Hessian 估计删去单个权重对损失的影响&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;通常需要重训练或后续微调&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://proceedings.neurips.cc/paper/1992/file/303ed4c69846ab36c2904d3ba8573050-Paper.pdf&#34;&gt;&lt;strong&gt;OBS（Optimal Brain Surgeon）&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;非结构化（经典）&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;在 OBD 上引入更完整的二阶信息，并在剪除时做权重补偿&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;常需与再训练/微调配合&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2301.00774&#34;&gt;&lt;strong&gt;SparseGPT&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;非结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;借鉴 OBS 类思路，在单次剪枝中用近似二阶信息做权重更新，减轻全量重训练依赖&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;常配合少量校准数据，不依赖大规模梯度训练&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2306.11695&#34;&gt;&lt;strong&gt;Wanda&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;非结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;用权重与输入激活（如行范数）构造重要性，无需 Hessian&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;一般无需微调即可保持较好 PPL&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2305.11627&#34;&gt;&lt;strong&gt;LLM-Pruner&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;基于梯度等信号识别可移除的耦合结构（头、神经元等）&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;通常需要 LoRA 等快速微调&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2312.17244&#34;&gt;&lt;strong&gt;LLM-Surgeon&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;非结构化/半结构化/结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;将 Kronecker 分解等曲率近似扩到 LLM 规模，联合决定删谁与对剩余权重的更新&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;剪枝中已含权重复原式更新；是否再训看目标与算力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2410.11988&#34;&gt;&lt;strong&gt;DISP-LLM&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;面向维度的解耦式结构剪枝，用超网络等为各层/块学不同的保留模式，各块宽度可不一致&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;主模型常冻结，以剪枝/辅助模块训练为主&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2310.05015&#34;&gt;&lt;strong&gt;Compresso&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;指令微调阶段结合 LoRA 与 L0/协作式提示，在结构化剪枝下恢复指令跟随与通用能力&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;是（与指令微调/LoRA 同阶段）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2312.11983&#34;&gt;&lt;strong&gt;FLAP&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;基于输出特征图可恢复性等波动式重要性，加偏置补偿，追求免重训的硬件友好裁剪&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;一般无需全量重训&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2305.18403&#34;&gt;&lt;strong&gt;LoRAPrune&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;用 LoRA 权重/梯度作重要性，避免在冻结主干上存完整权重梯度，迭代剪通道/头&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;依赖 LoRA 式迭代与合并流程&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2404.09695&#34;&gt;&lt;strong&gt;LoRAP&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化（差异化）&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;对子层分治：MHA 侧用激活加权的低秩/谱分解，FFN 侧用无梯度通道剪枝&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;按论文设定有对应微调/压缩阶段&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2412.18110&#34;&gt;&lt;strong&gt;SlimGPT&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;在 OBS 思路上做层内批量贪心、动态度与增量剪枝率，控累积误差、偏快速近似最优&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;轻量重算或再训依实验设定&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2401.15024&#34;&gt;&lt;strong&gt;SliceGPT&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;利用 Transformer 的计算不变性，通过正交变换后裁掉矩阵行列以缩小隐藏维&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;常无需大规模数据再训（配合变换）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2503.09657&#34;&gt;&lt;strong&gt;Týr-the-Pruner&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;以逐层多稀疏率建超网、再搜全局层间稀疏分布，使总体稀疏满足目标时误差可接受&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;依管线可选继续训练&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2302.04089&#34;&gt;&lt;strong&gt;ZipLM&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;在目标环境下迭代剪掉损失–时延/算力最差的结构单元，与推理方式绑定&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;可一次性或逐步压缩，看设定&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2310.06694&#34;&gt;&lt;strong&gt;Sheared-LLaMA&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;在续训过程中按任务目标做结构化裁减，把大模型剪到小预算再继续预训练/对齐&lt;/td&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;是（续训/剪枝一体）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;23&#34;&gt;2.3 重要性评分机制&lt;a class=&#34;headerlink&#34; href=&#34;#23&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;幅度&lt;/strong&gt;：&lt;span class=&#34;arithmatex&#34;&gt;\( \text{score} \propto |W| \)&lt;/span&gt;（逐元素）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SparseGPT&lt;/strong&gt;：在 OBS 框架下利用 Hessian 逆的近似（常是对角或块对角），使剪掉权重后的单层误差可控。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Wanda&lt;/strong&gt;（典型形式）：用权重与激活共同刻画敏感度，例如对输出通道维度有 &lt;span class=&#34;arithmatex&#34;&gt;\( \text{score}_j \propto |W_{:,j}| \odot \|X_{:,j}\|_2 \)&lt;/span&gt; 一类形式（&lt;span class=&#34;arithmatex&#34;&gt;\(X\)&lt;/span&gt; 为校准时的输入激活）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;24-transformer&#34;&gt;2.4 与 Transformer 结构的关系&lt;a class=&#34;headerlink&#34; href=&#34;#24-transformer&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;剪枝对象多为 Q/K/V/O 投影、FFN/SwiGLU 分支；结构化方法常剪MHA或FFN中间维度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;全参微调昂贵，故 post-training 剪枝常与少量校准方法或LoRA搭配。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.其他剪枝论文&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1906.08746&#34;&gt;Progressive Gradient Pruning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2602.04491&#34;&gt;Greedy-Gnorm: A Gradient Matrix Norm-Based Alternative to Attention Entropy for Head Pruning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2406.07017&#34;&gt;MoreauPruner: Robust Pruning of Large Language Models against Weight Perturbations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2410.17711&#34;&gt;Beware of Calibration Data for Pruning Large Language Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2501.17771&#34;&gt;2SSP: A Two-Stage Framework for Structured Pruning of LLMs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2401.02938&#34;&gt;Fast and Effective Weight Update for Pruned Large Language Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2402.05406&#34;&gt;Everybody Prune Now: Structured Pruning of LLMs with only Forward Passes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2403.07378&#34;&gt;SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2501.15255&#34;&gt;Lightweight and Post-Training Structured Pruning for On-Device Large Language Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2602.07375&#34;&gt;Efficient Post-Training Pruning of Large Language Models with Statistical Correction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2501.09412&#34;&gt;FASP: Fast and Accurate Structured Pruning of Large Language Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2501.15296&#34;&gt;You Only Prune Once: Designing Calibration-Free Model Compression With Policy Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2406.10594&#34;&gt;BlockPruner: Fine-grained Pruning for Large Language Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2407.20584&#34;&gt;Pruning Large Language Models with Semi-Structural Adaptive Sparse Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2409.17481&#34;&gt;MaskLLM: Learnable Semi-Structured Sparsity for Large Language Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2410.15567&#34;&gt;Pruning Foundation Models for High Accuracy without Retraining&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2505.22689&#34;&gt;SlimLLM: Accurate Structured Pruning for Large Language Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2511.17205&#34;&gt;E³-Pruner: Towards Efficient, Economical, and Effective Layer Pruning for Large Language Models&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4reference&#34;&gt;4.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#4reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/130645948&#34;&gt;深度学习网络模型压缩剪枝详细分析&lt;/a&gt;&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/llm-pruning/</link>
+      <pubDate>Thu, 23 Apr 2026 10:31:30 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/llm-pruning/</guid>
+      
+    </item>
     
     <item>
       <title>LangChain</title>
@@ -212,289 +494,6 @@
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/context-sparsity/</guid>
-      
-    </item>
-    
-    <item>
-      <title>LLM Pruning</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;llm-pruning&#34;&gt;LLM Pruning&lt;a class=&#34;headerlink&#34; href=&#34;#llm-pruning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2206 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 7 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;剪枝通过移除冗余权重或结构单元来压缩模型：与量化侧重降低数值精度不同，剪枝侧重减少参与计算的参数或改变结构。关于pruning的论文合集你可以看&lt;a href=&#34;https://github.com/hrcheng1066/awesome-pruning&#34;&gt;awesome-pruning&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;1&#34;&gt;1.剪枝的基础原理&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;11&#34;&gt;1.1 为什么需要剪枝？&lt;a class=&#34;headerlink&#34; href=&#34;#11&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;大规模语言模型往往过参数化，存在可移除的冗余权重。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在可控精度损失下，剪枝可减小参数量与理论计算量，并为后续量化、蒸馏等步骤腾出空间。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;与量化不同：剪枝直接改变权重，而非仅改变数值表示。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;12&#34;&gt;1.2 分类&lt;a class=&#34;headerlink&#34; href=&#34;#12&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align: left;&#34;&gt;分类维度&lt;/th&gt;
-&lt;th style=&#34;text-align: left;&#34;&gt;类型&lt;/th&gt;
-&lt;th style=&#34;text-align: left;&#34;&gt;说明&lt;/th&gt;
-&lt;th style=&#34;text-align: left;&#34;&gt;硬件友好度&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;粒度&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;非结构化剪枝&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;任意位置移除单个权重，得到稀疏矩阵&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;低：依赖稀疏 GEMM（通用矩阵乘）、专用内核或半结构化模式&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化剪枝&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;移除整行/整列、注意力头、FFN 神经元等&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;高：矩阵维度变小，易在通用 GEMM 上加速&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;时机&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;训练前剪枝&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;基于初始化或随机掩码&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;较少单独用于 LLM&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;训练中剪枝&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;动态调整稀疏掩码、稀疏训练&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;灵活，训练与搜索成本高&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;训练后剪枝&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;对已训练模型剪枝，可选校准与微调&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;LLM 场景最常见&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;13&#34;&gt;1.3 评估维度&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;重要性分数&lt;/strong&gt;：如何为每个权重或结构单元打分（幅度、梯度、Hessian 近似、激活相关项等）。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;稀疏度&lt;/strong&gt;：被剪除权重的比例；结构化场景则对应移除头/神经元比例等。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;精度与恢复&lt;/strong&gt;：剪枝后困惑度（PPL）、下游任务；是否需要校准或 LoRA/全参微调 以及可接受的性能回退。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;admonition note&#34;&gt;
-&lt;p class=&#34;admonition-title&#34;&gt;困惑度&lt;/p&gt;
-&lt;p&gt;在语言建模范式下，困惑度（perplexity, PPL）用来概括模型在一段无标签文本上预测下一个 token 的难易程度：PPL 越低，通常表示模型对语料的平均预测更自信、语言建模样本内拟合更好；是否与下游任务、泛化一致，仍需结合其他指标。&lt;/p&gt;
-&lt;p&gt;设语料有 &lt;span class=&#34;arithmatex&#34;&gt;\(N\)&lt;/span&gt; 个被计入损失的 token，位置 &lt;span class=&#34;arithmatex&#34;&gt;\(t\)&lt;/span&gt; 上模型输出下一 token 的分布，真实出现的 token 为 &lt;span class=&#34;arithmatex&#34;&gt;\(w_t\)&lt;/span&gt;，条件概率为 &lt;span class=&#34;arithmatex&#34;&gt;\(p(w_t \mid w_1, \ldots, w_{t-1})\)&lt;/span&gt;（也简记为给定上文的 &lt;span class=&#34;arithmatex&#34;&gt;\(p(w_t\!\mid\!\text{context})\)&lt;/span&gt;）。平均负对数似然（NLL，按 token 平均）为：&lt;/p&gt;
-&lt;div class=&#34;arithmatex&#34;&gt;\[
-NLL = -\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1, \ldots, w_{t-1}\bigr)
-\]&lt;/div&gt;
-&lt;p&gt;困惑度定义为：&lt;/p&gt;
-&lt;div class=&#34;arithmatex&#34;&gt;\[
-PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1, \ldots, w_{t-1}\bigr)\right)
-\]&lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.剪枝方法演进&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;21&#34;&gt;2.1 传统剪枝&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Deep Compression&lt;/strong&gt;：剪枝 → 量化 → 霍夫曼编码等流水线，强调剪枝后需训练恢复的经典思路；常与下面迭代式一起出现。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;幅度剪枝（magnitude-based）&lt;/strong&gt;：剪掉绝对值小的权重，实现简单、代价低，大模型 one-shot 时常弱于利用层间敏感度、梯度或激活信息的方法。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;梯度 / 泰勒式（gradient- / Taylor-based）&lt;/strong&gt;：用损失对权重的导数、或一阶/二阶泰勒项估计删掉某个权重/神经元对误差的扰动，与纯幅值法对照；是部分结构化剪枝的基础。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;二阶 / 曲率（Hessian, OBD / OBS 等）&lt;/strong&gt;：用（近似）Hessian 或平方灵敏度衡量删权代价，必要时对剩余权重做补偿；经典代表为 OBD、OBS，在 LLM 上由 SparseGPT、LLM-Surgeon 等延续。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;基于激活 / 通道（activation- / channel-based）&lt;/strong&gt;：用 BN 缩放因子、激活稀疏度、APoZ 等统计量定通道/滤波器/神经元重要度，易导向结构化、硬件友好的裁剪。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;稀疏正则（regularization-based）&lt;/strong&gt;：L1、group sparsity、变分稀疏等，把稀疏性写进目标函数，与显式打分 + 硬掩码 + 再训练可对照理解，也常与量化、蒸馏同训。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;信息论 / 最小描述长度（information-theoretic, MDL）&lt;/strong&gt;：从互信息、编码长度等角度选子网络或权值，与经验风险最小化并列为一条理论线，工程里不如幅值/梯度法常见。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;迭代 / 渐进剪枝（iterative / gradual）&lt;/strong&gt;：多轮剪去一部分 → 短微调 → 再剪，和 one-shot（一次定掩码再校准）相对；传统 CNN 压缩里很常见，和 Deep Compression 的剪完再训叙述一致，部署周期通常长于单次剪枝。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;22-llm&#34;&gt;2.2 LLM 剪枝的代表性方法&lt;a class=&#34;headerlink&#34; href=&#34;#22-llm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align: left;&#34;&gt;方法&lt;/th&gt;
-&lt;th style=&#34;text-align: left;&#34;&gt;类型&lt;/th&gt;
-&lt;th style=&#34;text-align: left;&#34;&gt;核心思想&lt;/th&gt;
-&lt;th style=&#34;text-align: left;&#34;&gt;是否需要微调&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://proceedings.neurips.cc/paper/1989/file/6c9882bbac1c7093bd25041881277658-Paper.pdf&#34;&gt;&lt;strong&gt;OBD（Optimal Brain Damage）&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;非结构化（经典）&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;用对角近似 Hessian 估计删去单个权重对损失的影响&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;通常需要重训练或后续微调&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://proceedings.neurips.cc/paper/1992/file/303ed4c69846ab36c2904d3ba8573050-Paper.pdf&#34;&gt;&lt;strong&gt;OBS（Optimal Brain Surgeon）&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;非结构化（经典）&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;在 OBD 上引入更完整的二阶信息，并在剪除时做权重补偿&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;常需与再训练/微调配合&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2301.00774&#34;&gt;&lt;strong&gt;SparseGPT&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;非结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;借鉴 OBS 类思路，在单次剪枝中用近似二阶信息做权重更新，减轻全量重训练依赖&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;常配合少量校准数据，不依赖大规模梯度训练&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2306.11695&#34;&gt;&lt;strong&gt;Wanda&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;非结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;用权重与输入激活（如行范数）构造重要性，无需 Hessian&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;一般无需微调即可保持较好 PPL&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2305.11627&#34;&gt;&lt;strong&gt;LLM-Pruner&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;基于梯度等信号识别可移除的耦合结构（头、神经元等）&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;通常需要 LoRA 等快速微调&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2312.17244&#34;&gt;&lt;strong&gt;LLM-Surgeon&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;非结构化/半结构化/结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;将 Kronecker 分解等曲率近似扩到 LLM 规模，联合决定删谁与对剩余权重的更新&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;剪枝中已含权重复原式更新；是否再训看目标与算力&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2410.11988&#34;&gt;&lt;strong&gt;DISP-LLM&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;面向维度的解耦式结构剪枝，用超网络等为各层/块学不同的保留模式，各块宽度可不一致&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;主模型常冻结，以剪枝/辅助模块训练为主&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2310.05015&#34;&gt;&lt;strong&gt;Compresso&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;指令微调阶段结合 LoRA 与 L0/协作式提示，在结构化剪枝下恢复指令跟随与通用能力&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;是（与指令微调/LoRA 同阶段）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2312.11983&#34;&gt;&lt;strong&gt;FLAP&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;基于输出特征图可恢复性等波动式重要性，加偏置补偿，追求免重训的硬件友好裁剪&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;一般无需全量重训&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2305.18403&#34;&gt;&lt;strong&gt;LoRAPrune&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;用 LoRA 权重/梯度作重要性，避免在冻结主干上存完整权重梯度，迭代剪通道/头&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;依赖 LoRA 式迭代与合并流程&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2404.09695&#34;&gt;&lt;strong&gt;LoRAP&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化（差异化）&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;对子层分治：MHA 侧用激活加权的低秩/谱分解，FFN 侧用无梯度通道剪枝&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;按论文设定有对应微调/压缩阶段&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2412.18110&#34;&gt;&lt;strong&gt;SlimGPT&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;在 OBS 思路上做层内批量贪心、动态度与增量剪枝率，控累积误差、偏快速近似最优&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;轻量重算或再训依实验设定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2401.15024&#34;&gt;&lt;strong&gt;SliceGPT&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;利用 Transformer 的计算不变性，通过正交变换后裁掉矩阵行列以缩小隐藏维&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;常无需大规模数据再训（配合变换）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2503.09657&#34;&gt;&lt;strong&gt;Týr-the-Pruner&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;以逐层多稀疏率建超网、再搜全局层间稀疏分布，使总体稀疏满足目标时误差可接受&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;依管线可选继续训练&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2302.04089&#34;&gt;&lt;strong&gt;ZipLM&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;在目标环境下迭代剪掉损失–时延/算力最差的结构单元，与推理方式绑定&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;可一次性或逐步压缩，看设定&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2310.06694&#34;&gt;&lt;strong&gt;Sheared-LLaMA&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;结构化&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;在续训过程中按任务目标做结构化裁减，把大模型剪到小预算再继续预训练/对齐&lt;/td&gt;
-&lt;td style=&#34;text-align: left;&#34;&gt;是（续训/剪枝一体）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;23&#34;&gt;2.3 重要性评分机制&lt;a class=&#34;headerlink&#34; href=&#34;#23&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;幅度&lt;/strong&gt;：&lt;span class=&#34;arithmatex&#34;&gt;\( \text{score} \propto |W| \)&lt;/span&gt;（逐元素）。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;SparseGPT&lt;/strong&gt;：在 OBS 框架下利用 Hessian 逆的近似（常是对角或块对角），使剪掉权重后的单层误差可控。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Wanda&lt;/strong&gt;（典型形式）：用权重与激活共同刻画敏感度，例如对输出通道维度有 &lt;span class=&#34;arithmatex&#34;&gt;\( \text{score}_j \propto |W_{:,j}| \odot \|X_{:,j}\|_2 \)&lt;/span&gt; 一类形式（&lt;span class=&#34;arithmatex&#34;&gt;\(X\)&lt;/span&gt; 为校准时的输入激活）。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;24-transformer&#34;&gt;2.4 与 Transformer 结构的关系&lt;a class=&#34;headerlink&#34; href=&#34;#24-transformer&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;剪枝对象多为 Q/K/V/O 投影、FFN/SwiGLU 分支；结构化方法常剪MHA或FFN中间维度。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;全参微调昂贵，故 post-training 剪枝常与少量校准方法或LoRA搭配。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3&#34;&gt;3.其他剪枝论文&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1906.08746&#34;&gt;Progressive Gradient Pruning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2602.04491&#34;&gt;Greedy-Gnorm: A Gradient Matrix Norm-Based Alternative to Attention Entropy for Head Pruning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2406.07017&#34;&gt;MoreauPruner: Robust Pruning of Large Language Models against Weight Perturbations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2410.17711&#34;&gt;Beware of Calibration Data for Pruning Large Language Models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2501.17771&#34;&gt;2SSP: A Two-Stage Framework for Structured Pruning of LLMs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2401.02938&#34;&gt;Fast and Effective Weight Update for Pruned Large Language Models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2402.05406&#34;&gt;Everybody Prune Now: Structured Pruning of LLMs with only Forward Passes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2403.07378&#34;&gt;SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2501.15255&#34;&gt;Lightweight and Post-Training Structured Pruning for On-Device Large Language Models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2602.07375&#34;&gt;Efficient Post-Training Pruning of Large Language Models with Statistical Correction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2501.09412&#34;&gt;FASP: Fast and Accurate Structured Pruning of Large Language Models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2501.15296&#34;&gt;You Only Prune Once: Designing Calibration-Free Model Compression With Policy Learning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2406.10594&#34;&gt;BlockPruner: Fine-grained Pruning for Large Language Models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2407.20584&#34;&gt;Pruning Large Language Models with Semi-Structural Adaptive Sparse Training&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2409.17481&#34;&gt;MaskLLM: Learnable Semi-Structured Sparsity for Large Language Models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2410.15567&#34;&gt;Pruning Foundation Models for High Accuracy without Retraining&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2505.22689&#34;&gt;SlimLLM: Accurate Structured Pruning for Large Language Models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2511.17205&#34;&gt;E³-Pruner: Towards Efficient, Economical, and Effective Layer Pruning for Large Language Models&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/llm-pruning/</link>
-      <pubDate>Wed, 22 Apr 2026 22:30:17 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/llm-pruning/</guid>
       
     </item>
     
@@ -1224,7 +1223,7 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;成文：147 篇&lt;/li&gt;
-&lt;li&gt;累字：140,557 字&lt;/li&gt;
+&lt;li&gt;累字：141,320 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
