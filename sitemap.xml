@@ -53,6 +53,10 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/llm-api/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/mcp/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
@@ -145,10 +149,6 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/cot/</loc>
-         <lastmod>2026-04-23</lastmod>
-    </url>
-    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/fine-tuning/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
@@ -181,11 +181,11 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/rlhf/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/rwkv/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/rwkv/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/sampling-techniques/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
@@ -193,31 +193,43 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/tokenization/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/transformer/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/context-sparsity/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/context-sparsity/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/llm-pruning/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/llm-pruning/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/moe-compression/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/moe-compression/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/structual-pruning/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/quantization/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression-and-quantization/unstructual-pruning/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/structual-pruning/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/unstructual-pruning/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-deploy/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
@@ -261,7 +273,27 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-evaluation-and-interpretability/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-evaluation/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-rl/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-rl/agentic-rl/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-rl/rlaif/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-rl/rlhf/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-rl/rlvr/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
@@ -274,6 +306,10 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/neural-network/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
@@ -294,6 +330,10 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/mllm/clip/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/mllm/llava/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
@@ -357,11 +397,19 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/lstm/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/feature-extraction/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/rnn/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/text-preprocess/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/word-embedding/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
@@ -377,11 +425,19 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/prompt-engineering/cot/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/prompt-engineering/system-prompt/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/rag/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/rag/advanced-rag/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
