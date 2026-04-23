@@ -158,6 +158,8 @@ nav:
       - OpenAI: ai-note/model/openai.md
       - Anthropic: ai-note/model/anthropic.md
       - Google: ai-note/model/google.md
+      - xAI: ai-note/model/xai.md
+      - Meta AI: ai-note/model/meta-ai.md
       - Zhipu: ai-note/model/zhipu.md
       - Alibaba: ai-note/model/alibaba.md
       - ByteDance: ai-note/model/bytedance.md
