@@ -145,10 +145,6 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/bert/</loc>
-         <lastmod>2026-04-23</lastmod>
-    </url>
-    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/fine-tuning/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
@@ -162,6 +158,10 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/llama/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/llm-application/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
@@ -237,6 +237,10 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/deepspeed/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/flash-attention/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
@@ -309,15 +313,55 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/bayesian-classifier/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/cluster/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/decision-tree/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/dimensionality/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/ensemble-learning/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/feature-selection-and-sparsity-learning/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/linear-model/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/model-evaluation-and-selection/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/neural-network/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/pca/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/probabilistic-graphical-model/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/regularization/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/reinforcement-learning/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/semi-supervised-learning/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/ml/svm/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
@@ -373,6 +417,10 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/meta-ai/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/minimax/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
@@ -382,6 +430,10 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/openai/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/model/xai/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
@@ -401,7 +453,27 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/information-extraction/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/machine-translation/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/pre-training-lm-advanced/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/pre-training-lm/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/rnn/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/nlp/sentiment-analysis/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
