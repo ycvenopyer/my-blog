@@ -17,16 +17,21 @@ nav:
       - Overview: ai-note/ml/index.md
       - Regularization: ai-note/ml/regularization.md
       - PCA: ai-note/ml/pca.md
+      - Neural Network: ai-note/ml/neural-network.md
     - NLP:
       - Overview: ai-note/nlp/index.md
+      - Text Preprocess: ai-note/nlp/text-preprocess.md
+      - Feature Extraction: ai-note/nlp/feature-extraction.md
+      - Word Embedding: ai-note/nlp/word-embedding.md
       - RNN: ai-note/nlp/rnn.md
-      - LSTM: ai-note/nlp/lstm.md
     - CV:
       - Overview: ai-note/cv/index.md
       - CNN: ai-note/cv/cnn.md
     - LLM:
       - Overview: ai-note/llm/index.md
+      - Tokenization: ai-note/llm/tokenization.md
       - Transformer: ai-note/llm/transformer.md
+      - Sampling Techniques: ai-note/llm/sampling-techniques.md
       - BERT: ai-note/llm/bert.md
       - LLM Structure: ai-note/llm/structure.md
       - MoE: ai-note/llm/moe.md
@@ -39,15 +44,12 @@ nav:
       - Pre-training: ai-note/llm/pre-training.md
       - Fine-tuning: ai-note/llm/fine-tuning.md
       - Alignment: ai-note/llm/alignment.md
-      - RLHF: ai-note/llm/rlhf.md
-      - CoT: ai-note/llm/cot.md
-    - MLLM:
-      - Overview: ai-note/mllm/index.md
-      - VLM: ai-note/mllm/vlm.md
-      - ViT: ai-note/mllm/vit.md
-      - CLIP: ai-note/mllm/clip.md
-      - BLIP: ai-note/mllm/blip.md
-      - TTA: ai-note/mllm/tta.md
+    - LLM RL:
+      - Overview: ai-note/llm-rl/index.md
+      - RLHF: ai-note/llm-rl/rlhf.md
+      - RLVR: ai-note/llm-rl/rlvr.md
+      - RLAIF: ai-note/llm-rl/rlaif.md
+      - Agentic RL: ai-note/llm-rl/agentic-rl.md
     - LLM Distributed Training and Inference:
       - Overview: ai-note/llm-distributed-training-and-inference/index.md
       - KV-Cache: ai-note/llm-distributed-training-and-inference/kv-cache.md
@@ -57,20 +59,31 @@ nav:
       - PagedAttention: ai-note/llm-distributed-training-and-inference/paged-attention.md
       - ZeRO: ai-note/llm-distributed-training-and-inference/zero.md
       - Megatron-LM: ai-note/llm-distributed-training-and-inference/megatron-lm.md
-      - LLM Infra: ai-note/llm-distributed-training-and-inference/llm-infra.md
       - Speculative Decoding: ai-note/llm-distributed-training-and-inference/speculative-decoding.md
-    - LLM Compression and Quantization:
-      - Overview: ai-note/llm-compression-and-quantization/index.md
-      - LLM Pruning: ai-note/llm-compression-and-quantization/llm-pruning.md
-      - Unstructual Pruning: ai-note/llm-compression-and-quantization/unstructual-pruning.md
-      - Structual Pruning: ai-note/llm-compression-and-quantization/structual-pruning.md
-      - Context Sparsity: ai-note/llm-compression-and-quantization/context-sparsity.md
-      - MoE Compression: ai-note/llm-compression-and-quantization/moe-compression.md
-    - LLM Evaluation and Interpretability:
-      - Overview: ai-note/llm-evaluation-and-interpretability/index.md
+      - LLM Infra: ai-note/llm-distributed-training-and-inference/llm-infra.md
+    - LLM Compression:
+      - Overview: ai-note/llm-compression/index.md
+      - LLM Pruning: ai-note/llm-compression/llm-pruning.md
+      - Unstructual Pruning: ai-note/llm-compression/unstructual-pruning.md
+      - Structual Pruning: ai-note/llm-compression/structual-pruning.md
+      - Context Sparsity: ai-note/llm-compression/context-sparsity.md
+      - MoE Compression: ai-note/llm-compression/moe-compression.md
+      - Quantization: ai-note/llm-compression/quantization.md
+    - LLM Deploy:
+      - Overview: ai-note/llm-deploy/index.md
+    - LLM Evaluation:
+      - Overview: ai-note/llm-evaluation/index.md
     - LLM Safety:
       - Overview: ai-note/llm-safety/index.md
       - Agent Safety: ai-note/llm-safety/agent-safety.md
+    - MLLM:
+      - Overview: ai-note/mllm/index.md
+      - VLM: ai-note/mllm/vlm.md
+      - ViT: ai-note/mllm/vit.md
+      - CLIP: ai-note/mllm/clip.md
+      - BLIP: ai-note/mllm/blip.md
+      - LlaVA: ai-note/mllm/llava.md
+      - TTA: ai-note/mllm/tta.md
     - AIGC:
       - Overview: ai-note/aigc/index.md
       - GAN: ai-note/aigc/gan.md
@@ -83,12 +96,14 @@ nav:
       - Vector Database: ai-note/rag/vector-database.md
       - GraphRAG: ai-note/rag/graphrag.md      
       - RAG Evaluation: ai-note/rag/rag-evaluation.md
+      - Advanced RAG: ai-note/rag/advanced-rag.md
     - Deep Research:
       - Overview: ai-note/deep-research/index.md
       - Deep Research Product: ai-note/deep-research/deep-research-product.md
       - DeerFlow: ai-note/deep-research/deerflow.md
     - Prompt Engineering:
       - Overview: ai-note/prompt-engineering/index.md
+      - CoT: ai-note/prompt-engineering/cot.md
       - ChatGPT Strategy: ai-note/prompt-engineering/chatgpt-strategy.md
       - System Prompt: ai-note/prompt-engineering/system-prompt.md
       - Academic Prompt: ai-note/prompt-engineering/academic-prompt.md
@@ -99,6 +114,7 @@ nav:
       - Overview: ai-note/harness-engineering/index.md
     - Agent:
       - Overview: ai-note/agent/index.md
+      - LLM API: ai-note/agent/llm-api.md
       - Agent: ai-note/agent/agent.md
       - MCP: ai-note/agent/mcp.md
       - A2A: ai-note/agent/a2a.md

@@ -178,7 +178,7 @@ Give recommendations and conclusion for: [PARAGRAPHS]
 #### Future Works
 
 ```text
-Can you suggest 3 directions for future research on this topic: [PARAGRAPH]]?
+Can you suggest 3 directions for future research on this topic: [PARAGRAPH]?
 ```
 
 ### 2.3 IMPROVING LANGUAGE
@@ -439,7 +439,7 @@ I want you to act as a scientific English-Chinese translator, I will provide you
 
 #### 解释代码
 ```text
-请解释以下代码：```代码块```
+请解释以下代码：
 ```
 
 ---
