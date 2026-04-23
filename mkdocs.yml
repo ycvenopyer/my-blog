@@ -15,15 +15,30 @@ nav:
     - Overview: ai.md
     - ML:
       - Overview: ai-note/ml/index.md
-      - Regularization: ai-note/ml/regularization.md
-      - PCA: ai-note/ml/pca.md
+      - Model Evaluation and Selection: ai-note/ml/model-evaluation-and-selection.md
+      - Linear Model: ai-note/ml/linear-model.md
+      - Decision Tree: ai-note/ml/decision-tree.md
       - Neural Network: ai-note/ml/neural-network.md
+      - SVM: ai-note/ml/svm.md
+      - Bayesian Classifier: ai-note/ml/bayesian-classifier.md
+      - Ensemble Learning: ai-note/ml/ensemble-learning.md
+      - Cluster: ai-note/ml/cluster.md
+      - Dimensionality: ai-note/ml/dimensionality.md
+      - Feature Selection and Sparsity Learning: ai-note/ml/feature-selection-and-sparsity-learning.md
+      - Semi-Supervised Learning: ai-note/ml/semi-supervised-learning.md
+      - Probabilistic Graphical Model: ai-note/ml/probabilistic-graphical-model.md
+      - Reinforcement Learning: ai-note/ml/reinforcement-learning.md
     - NLP:
       - Overview: ai-note/nlp/index.md
       - Text Preprocess: ai-note/nlp/text-preprocess.md
       - Feature Extraction: ai-note/nlp/feature-extraction.md
       - Word Embedding: ai-note/nlp/word-embedding.md
       - RNN: ai-note/nlp/rnn.md
+      - Pretraining LM: ai-note/nlp/pre-training-lm.md
+      - Pretraining LM Advanced: ai-note/nlp/pre-training-lm-advanced.md
+      - Information Extraction: ai-note/nlp/information-extraction.md
+      - Machine Translation: ai-note/nlp/machine-translation.md
+      - Sentiment Analysis: ai-note/nlp/sentiment-analysis.md
     - CV:
       - Overview: ai-note/cv/index.md
       - CNN: ai-note/cv/cnn.md
@@ -32,7 +47,6 @@ nav:
       - Tokenization: ai-note/llm/tokenization.md
       - Transformer: ai-note/llm/transformer.md
       - Sampling Techniques: ai-note/llm/sampling-techniques.md
-      - BERT: ai-note/llm/bert.md
       - LLM Structure: ai-note/llm/structure.md
       - MoE: ai-note/llm/moe.md
       - LLaMA: ai-note/llm/llama.md
@@ -44,6 +58,7 @@ nav:
       - Pre-training: ai-note/llm/pre-training.md
       - Fine-tuning: ai-note/llm/fine-tuning.md
       - Alignment: ai-note/llm/alignment.md
+      - LLM Application: ai-note/llm/llm-application.md
     - LLM RL:
       - Overview: ai-note/llm-rl/index.md
       - RLHF: ai-note/llm-rl/rlhf.md
@@ -60,6 +75,7 @@ nav:
       - ZeRO: ai-note/llm-distributed-training-and-inference/zero.md
       - Megatron-LM: ai-note/llm-distributed-training-and-inference/megatron-lm.md
       - Speculative Decoding: ai-note/llm-distributed-training-and-inference/speculative-decoding.md
+      - Deepspeed: ai-note/llm-distributed-training-and-inference/deepspeed.md
       - LLM Infra: ai-note/llm-distributed-training-and-inference/llm-infra.md
     - LLM Compression:
       - Overview: ai-note/llm-compression/index.md

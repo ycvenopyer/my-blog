@@ -2,7 +2,14 @@
 
 ## Word2Vec
 
+### Skip-Gram
+
+### CBOW
+
 ## GloVe
 
-## FastText
+## CoVe
 
+## BiLM
+
+## ELMo

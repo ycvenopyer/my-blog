@@ -1,4 +1,6 @@
 # Alibaba
 
-Qwen
+Qwen3.6
+
+Qwen3-VL
 

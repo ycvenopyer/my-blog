@@ -1,4 +1,5 @@
 # Xiaomi
 
-Xiaomi MiMo-v2-pro
+Xiaomi MiMo-V2.5-Pro
 
+MiMo-V2.5-TTS / -ASR

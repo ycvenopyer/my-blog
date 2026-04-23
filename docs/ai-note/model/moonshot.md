@@ -1,3 +1,5 @@
 # Moonshot
 
-Kimi2.5
+Kimi2.6 Agent / Agent Swarm
+
+## Attention Residuals

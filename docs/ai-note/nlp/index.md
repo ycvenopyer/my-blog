@@ -10,3 +10,12 @@ Word Embedding: Word embeddings are a type of word representation that allows wo
 
 Recurrent Neural Networks (RNNs): Understand the working of RNNs, a type of neural network designed to work with sequence data. Explore LSTMs and GRUs, two RNN variants that are capable of learning long-term dependencies.
 
+## 文本的表示
+
+## 自然语言处理任务
+
+## 自然语言处理的基本问题
+
+## 自然语言处理的评价指标
+
+## 基础工具集与常用数据集

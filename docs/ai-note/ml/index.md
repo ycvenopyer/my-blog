@@ -10,3 +10,6 @@ Data Preprocessing: This involves feature scaling and normalization, handling mi
 
 Machine Learning Libraries: Proficiency with Scikit-learn, a library providing a wide selection of supervised and unsupervised learning algorithms, is vital. Understanding how to implement algorithms like linear regression, logistic regression, decision trees, random forests, k-nearest neighbors (K-NN), and K-means clustering is important. Dimensionality reduction techniques like PCA and t-SNE are also helpful for visualizing high-dimensional data.
 
+## 基本术语
+
+## 发展历程
