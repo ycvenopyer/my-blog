@@ -6,12 +6,12 @@
 
 ### 1.1 为什么需要剪枝？
 
-- 大规模语言模型往往过参数化，存在可移除的冗余权重。
+- 大规模语言模型往往过参数化，存在可移除的冗余权重。我们可以将大模型分为训练和推理两个阶段，训练阶段是根据数据学习模型中的参数（对MLP来说主要是网络中的权重）；推理阶段中将新数据给模型，经过计算得出结果。过参数化是指训练阶段我们需要大量的参数来捕捉数据中的微小信息，而到了推理阶段则并不需要那么多参数，因此就可以在部署前对模型进行简化。
   
-- 在可控精度损失下，剪枝可减小参数量与理论计算量，并为后续量化、蒸馏等步骤腾出空间。
-  
-- 与量化不同：剪枝直接改变权重，而非仅改变数值表示。
+- 在可控精度损失下，剪枝可减小参数量与理论计算量，使得计算实践更少，功耗更小。同时对设备要求变低，可以放在更低端的设备上跑。
 
+- 也有pruning后精度提高的，说明原模型overfit了，pruning起到了regularization的作用。
+  
 ### 1.2 分类
 
 | 分类维度 | 类型 | 说明 | 硬件友好度 |
@@ -24,11 +24,11 @@
 
 ### 1.3 评估维度
 
-- **重要性分数**：如何为每个权重或结构单元打分（幅度、梯度、Hessian 近似、激活相关项等）。
+- **重要性分数（importance score）**：如何为每个权重或结构单元打分（幅度、梯度、Hessian 近似、激活相关项等）。
   
-- **稀疏度**：被剪除权重的比例；结构化场景则对应移除头/神经元比例等。
+- **稀疏度（sparsity ratio）**：被剪除权重的比例，可以定义为层中0参数所占比例；结构化场景则对应移除头/神经元比例等。稀疏度可以预先定义，也可以在剪枝过程中自动化，由pruning算法确定各模块的剪枝比例，而不是一开始固定一个值。
   
-- **精度与恢复**：剪枝后困惑度（PPL）、下游任务；是否需要校准或 LoRA/全参微调 以及可接受的性能回退。
+- **精度恢复（accuracy recovery）**：裁完后进行fine-tuning可以弥补pruning带来的精度损失，因此很多方法会在pruning后做fine-tuning。比较经典的是training，pruning，fine-tuning三段式。后面两个阶段交替进行，每次pruning后损失的精度可以由后面的fine-tuning来弥补，该过程也称为iterative pruning。评估指标有困惑度，是否需要calibration或LoRA微调等。
 
 !!! note "困惑度"
     在语言建模范式下，困惑度（perplexity, PPL）用来概括模型在一段无标签文本上预测下一个 token 的难易程度：PPL 越低，通常表示模型对语料的平均预测更自信、语言建模样本内拟合更好；是否与下游任务、泛化一致，仍需结合其他指标。
@@ -45,26 +45,23 @@
     PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1, \ldots, w_{t-1}\bigr)\right)
     \]
 
+- **模型能力（capacity）**：主流pruning方法中，被裁剪的部分一般直接丢弃不会再拿回来了，即模型的capacity在iterative pruning的过程中不断减少。如此一旦有参数被不适当地裁剪掉便无法被恢复。近年来在模型压缩过程中保留被裁剪部分能力或者扩充能力的方法不断被提出。
 
 ## 2.剪枝方法演进
 
 ### 2.1 传统剪枝
 
-- **Deep Compression**：剪枝 → 量化 → 霍夫曼编码等流水线，强调剪枝后需训练恢复的经典思路；常与下面迭代式一起出现。
+- **幅度（magnitude-based）**：剪掉绝对值小的权重，实现简单、代价低，大模型 one-shot 时常弱于利用层间敏感度、梯度或激活信息的方法。《Comparing Biases for Minimal Network Construction with Back-Propagation》提出了magnitude-based的pruning方法，即对网络中每个hidden unit施加与其绝对值相关的weight decay来最小化hidden unit数量。
 
-- **幅度剪枝（magnitude-based）**：剪掉绝对值小的权重，实现简单、代价低，大模型 one-shot 时常弱于利用层间敏感度、梯度或激活信息的方法。
+- **梯度（gradient-based）**：用损失对权重的导数、或一阶/二阶泰勒项估计删掉某个权重/神经元对误差的扰动，与纯幅值法对照；是部分结构化剪枝的基础。
 
-- **梯度 / 泰勒式（gradient- / Taylor-based）**：用损失对权重的导数、或一阶/二阶泰勒项估计删掉某个权重/神经元对误差的扰动，与纯幅值法对照；是部分结构化剪枝的基础。
+- **二阶导数（Hessian）**：基于损失函数相对于权重的二阶导数（对权重向量来说即Hessian矩阵）来衡量网络中权重的重要程度，然后对其进行裁剪，必要时对剩余权重做补偿；经典代表为 OBD、OBS，在 LLM 上由 SparseGPT、LLM-Surgeon 等延续。
+  
+- **[Deep Compression](https://arxiv.org/abs/1510.00149)**：采用剪枝 → 量化 → 哈夫曼编码流水线，对当时经典网络AlexNet和VGG进行了压缩，其中对于pruning带来的精度损失，使用了iterative pruning方法进行补偿，可以让精度几乎没有损失。
 
-- **二阶 / 曲率（Hessian, OBD / OBS 等）**：用（近似）Hessian 或平方灵敏度衡量删权代价，必要时对剩余权重做补偿；经典代表为 OBD、OBS，在 LLM 上由 SparseGPT、LLM-Surgeon 等延续。
+- **正则化（regularization-based）**：L1、[group sparsity](https://blog.51cto.com/u_15837794/11420483)等，把稀疏性写进目标函数。
 
-- **基于激活 / 通道（activation- / channel-based）**：用 BN 缩放因子、激活稀疏度、APoZ 等统计量定通道/滤波器/神经元重要度，易导向结构化、硬件友好的裁剪。
-
-- **稀疏正则（regularization-based）**：L1、group sparsity、变分稀疏等，把稀疏性写进目标函数，与显式打分 + 硬掩码 + 再训练可对照理解，也常与量化、蒸馏同训。
-
-- **信息论 / 最小描述长度（information-theoretic, MDL）**：从互信息、编码长度等角度选子网络或权值，与经验风险最小化并列为一条理论线，工程里不如幅值/梯度法常见。
-
-- **迭代 / 渐进剪枝（iterative / gradual）**：多轮剪去一部分 → 短微调 → 再剪，和 one-shot（一次定掩码再校准）相对；传统 CNN 压缩里很常见，和 Deep Compression 的剪完再训叙述一致，部署周期通常长于单次剪枝。
+- **迭代（iterative pruning）**：多轮剪去一部分 → 短微调 → 再剪，和 one-shot（一次定掩码再校准）相对；传统 CNN 压缩里很常见，和 Deep Compression 的剪完再训叙述一致，部署周期通常长于单次剪枝。
 
 ### 2.2 LLM 剪枝的代表性方法
 
@@ -121,4 +118,8 @@
 16. [Pruning Foundation Models for High Accuracy without Retraining](https://arxiv.org/abs/2410.15567)
 17. [SlimLLM: Accurate Structured Pruning for Large Language Models](https://arxiv.org/abs/2505.22689)
 18. [E³-Pruner: Towards Efficient, Economical, and Effective Layer Pruning for Large Language Models](https://arxiv.org/abs/2511.17205)
+
+## 4.Reference
+
+[深度学习网络模型压缩剪枝详细分析](https://zhuanlan.zhihu.com/p/130645948)
 
