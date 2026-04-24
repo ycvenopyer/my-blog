@@ -1,6 +1,6 @@
 # DeepSeek
 
-DeepSeek v1/2/3,v4?
+DeepSeek v4-pro, flash
 
 DeepSeek-R1,R2?
 
