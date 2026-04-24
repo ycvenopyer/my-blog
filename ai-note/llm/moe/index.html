@@ -7793,7 +7793,7 @@ G(x) = Softmax(KeepTopK(H(x), k))
 <p>Switch Transformer 的作者还重新审视并简化了前面章节中提到的负载均衡损失。在训练期间，对于每个 Switch 层的辅助损失被添加到总模型损失中。这种损失鼓励均匀路由，并可以使用超参数进行加权。</p>
 <p>作者还尝试了混合精度的方法，例如用 bfloat16 精度训练专家，同时对其余计算使用全精度进行。较低的精度可以减少处理器间的通信成本、计算成本以及存储张量的内存。然而，在最初的实验中，当专家和门控网络都使用 bfloat16 精度训练时，出现了不稳定的训练现象。这种不稳定性特别是由路由计算引起的，因为路由涉及指数函数等操作，这些操作对精度要求较高。因此，为了保持计算的稳定性和精确性，保持更高的精度是重要的。为了减轻不稳定性，路由过程也使用了全精度。</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/bfloat16.png" data-desc-position="bottom"><img alt="bfloat16" src="../image/bfloat16.png"></a></p>
-<p>Switch Transformers 采用了编码器 - 解码器的架构，实现了与 T5 类似的混合专家模型 (MoE) 版本。<a href="https://arxiv.org/abs/2112.06905">GLaM</a> 这篇工作探索了如何使用仅为原来 [\displaystyle{\frac{1}{3}}] 的计算资源 (因为 MoE 模型在训练时需要的计算量较少，从而能够显著降低碳足迹) 来训练与 GPT-3 质量相匹配的模型来提高这些模型的规模。作者专注于仅解码器 (decoder-only) 的模型以及少样本和单样本评估，而不是微调。他们使用了 Top-2 路由和更大的容量因子。此外，他们探讨了将容量因子作为一个动态度量，根据训练和评估期间所使用的计算量进行调整。</p>
+<p>Switch Transformers 采用了编码器 - 解码器的架构，实现了与 T5 类似的混合专家模型 (MoE) 版本。<a href="https://arxiv.org/abs/2112.06905">GLaM</a> 这篇工作探索了如何使用仅为原来 <span class="arithmatex">\(\displaystyle{\frac{1}{3}}\)</span> 的计算资源 (因为 MoE 模型在训练时需要的计算量较少，从而能够显著降低碳足迹) 来训练与 GPT-3 质量相匹配的模型来提高这些模型的规模。作者专注于仅解码器 (decoder-only) 的模型以及少样本和单样本评估，而不是微调。他们使用了 Top-2 路由和更大的容量因子。此外，他们探讨了将容量因子作为一个动态度量，根据训练和评估期间所使用的计算量进行调整。</p>
 <h2 id="7router-z-loss">7.用Router-z-loss稳定模型训练<a class="headerlink" href="#7router-z-loss" title="Permanent link">¶</a></h2>
 <p>之前讨论的平衡损失可能会导致稳定性问题。我们可以使用许多方法来稳定稀疏模型的训练，但这可能会牺牲模型质量。例如，引入 dropout 可以提高稳定性，但会导致模型质量下降。另一方面，增加更多的乘法分量可以提高质量，但会降低模型稳定性。</p>
 <p><a href="https://arxiv.org/abs/2202.08906">ST-MoE</a> 引入的 Router z-loss 在保持了模型性能的同时显著提升了训练的稳定性。这种损失机制通过惩罚门控网络输入的较大 logits 来起作用，目的是促使数值的绝对大小保持较小，这样可以有效减少计算中的舍入误差。这一点对于那些依赖指数函数进行计算的门控网络尤其重要。</p>
@@ -7864,7 +7864,7 @@ L_z(x) = \frac{1}{B} \sum_{i=1}^B \left( \log \sum_{j=1}^N e^{x_j^{(i)}} \right)
 <footer class="md-article-dates" aria-label="文章时间信息">
   <span class="md-article-dates__item" title="最后修改">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-04-24 17:58:05">2026年4月24日 17:58:05</time>
+    <time class="md-article-dates__time" datetime="2026-04-24 18:19:02">2026年4月24日 18:19:02</time>
   </span>
   
   <span class="md-article-dates__item" title="首次创作">

@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Fri, 24 Apr 2026 10:01:19 -0000</pubDate>
-    <lastBuildDate>Fri, 24 Apr 2026 10:01:19 -0000</lastBuildDate>
+    <pubDate>Fri, 24 Apr 2026 10:19:23 -0000</pubDate>
+    <lastBuildDate>Fri, 24 Apr 2026 10:19:23 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -4310,7 +4310,7 @@ G(x) = Softmax(KeepTopK(H(x), k))
 &lt;p&gt;Switch Transformer 的作者还重新审视并简化了前面章节中提到的负载均衡损失。在训练期间，对于每个 Switch 层的辅助损失被添加到总模型损失中。这种损失鼓励均匀路由，并可以使用超参数进行加权。&lt;/p&gt;
 &lt;p&gt;作者还尝试了混合精度的方法，例如用 bfloat16 精度训练专家，同时对其余计算使用全精度进行。较低的精度可以减少处理器间的通信成本、计算成本以及存储张量的内存。然而，在最初的实验中，当专家和门控网络都使用 bfloat16 精度训练时，出现了不稳定的训练现象。这种不稳定性特别是由路由计算引起的，因为路由涉及指数函数等操作，这些操作对精度要求较高。因此，为了保持计算的稳定性和精确性，保持更高的精度是重要的。为了减轻不稳定性，路由过程也使用了全精度。&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;bfloat16&#34; src=&#34;../image/bfloat16.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Switch Transformers 采用了编码器 - 解码器的架构，实现了与 T5 类似的混合专家模型 (MoE) 版本。&lt;a href=&#34;https://arxiv.org/abs/2112.06905&#34;&gt;GLaM&lt;/a&gt; 这篇工作探索了如何使用仅为原来 [\displaystyle{\frac{1}{3}}] 的计算资源 (因为 MoE 模型在训练时需要的计算量较少，从而能够显著降低碳足迹) 来训练与 GPT-3 质量相匹配的模型来提高这些模型的规模。作者专注于仅解码器 (decoder-only) 的模型以及少样本和单样本评估，而不是微调。他们使用了 Top-2 路由和更大的容量因子。此外，他们探讨了将容量因子作为一个动态度量，根据训练和评估期间所使用的计算量进行调整。&lt;/p&gt;
+&lt;p&gt;Switch Transformers 采用了编码器 - 解码器的架构，实现了与 T5 类似的混合专家模型 (MoE) 版本。&lt;a href=&#34;https://arxiv.org/abs/2112.06905&#34;&gt;GLaM&lt;/a&gt; 这篇工作探索了如何使用仅为原来 &lt;span class=&#34;arithmatex&#34;&gt;\(\displaystyle{\frac{1}{3}}\)&lt;/span&gt; 的计算资源 (因为 MoE 模型在训练时需要的计算量较少，从而能够显著降低碳足迹) 来训练与 GPT-3 质量相匹配的模型来提高这些模型的规模。作者专注于仅解码器 (decoder-only) 的模型以及少样本和单样本评估，而不是微调。他们使用了 Top-2 路由和更大的容量因子。此外，他们探讨了将容量因子作为一个动态度量，根据训练和评估期间所使用的计算量进行调整。&lt;/p&gt;
 &lt;h2 id=&#34;7router-z-loss&#34;&gt;7.用Router-z-loss稳定模型训练&lt;a class=&#34;headerlink&#34; href=&#34;#7router-z-loss&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;之前讨论的平衡损失可能会导致稳定性问题。我们可以使用许多方法来稳定稀疏模型的训练，但这可能会牺牲模型质量。例如，引入 dropout 可以提高稳定性，但会导致模型质量下降。另一方面，增加更多的乘法分量可以提高质量，但会降低模型稳定性。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2202.08906&#34;&gt;ST-MoE&lt;/a&gt; 引入的 Router z-loss 在保持了模型性能的同时显著提升了训练的稳定性。这种损失机制通过惩罚门控网络输入的较大 logits 来起作用，目的是促使数值的绝对大小保持较小，这样可以有效减少计算中的舍入误差。这一点对于那些依赖指数函数进行计算的门控网络尤其重要。&lt;/p&gt;
