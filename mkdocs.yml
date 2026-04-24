@@ -153,6 +153,7 @@ nav:
       - n8n: ai-note/workflow/n8n.md
       - OpenClaw: ai-note/workflow/openclaw.md
       - Hermes: ai-note/workflow/hermes.md
+      - Lovart: ai-note/workflow/lovart.md
     - Model:
       - Overview: ai-note/model/index.md
       - OpenAI: ai-note/model/openai.md
