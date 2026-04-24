@@ -80,6 +80,10 @@ Anthropic的解释：
 
 [For Claude Desktop Users](https://modelcontextprotocol.io/docs/develop/connect-local-servers)
 
+[Anthropic 最新博客：MCP 没死，它又来了](https://mp.weixin.qq.com/s/Sz2hzXiNCyf1YNzPbeUo5Q)
+
+[Building agents that reach production systems with MCP](https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp)
+
 ## 7.Reference
 
 [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)

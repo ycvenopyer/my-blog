@@ -60,7 +60,7 @@ Prefill和Decode共同完成了LLM的推理过程。Prefill为Decode准备了初
   
 - Decode： 解码的串行自回归特性是主要的瓶颈。虽然KV Cache减少了重复计算，但每一步仍然需要进行注意力计算，并且随着生成序列的增长，KV Cache的大小也会增加，可能导致内存带宽瓶颈。此外，生成长序列会显著增加总的推理时间。
 
-## Reference
+## 5.Reference
 
 [大模型推理探秘：揭开 LLM 响应](https://www.zhihu.com/column/c_1900478474017313428)
 

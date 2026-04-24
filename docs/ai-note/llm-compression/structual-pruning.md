@@ -1,17 +1,17 @@
 # 结构化剪枝经典论文
 
-## LLM-Pruner
+## 1.LLM-Pruner
 
-## Compresso
+## 2.Compresso
 
-## FLAP
+## 3.FLAP
 
-## LoRAPrune
+## 4.LoRAPrune
 
-## LoRAP
+## 5.LoRAP
 
-## SlimGPT
+## 6.SlimGPT
 
-## SliceGPT
+## 7.SliceGPT
 
-## Reference
+## 8.Reference

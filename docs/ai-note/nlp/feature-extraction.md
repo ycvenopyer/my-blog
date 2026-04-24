@@ -1,7 +1,7 @@
 # 特征提取
 
-## Bag-of-words (BoW)
+## 1.Bag-of-words (BoW)
 
-## Term Frequency-Inverse Document Frequency (TF-IDF)
+## 2.Term Frequency-Inverse Document Frequency (TF-IDF)
 
-## n-grams
+## 3.n-grams

@@ -8,14 +8,14 @@ Overfitting: Understand the concept of overfitting (where a model performs well 
 
 Implement a Multilayer Perceptron (MLP): Build an MLP, also known as a fully connected network, using PyTorch.
 
-## 神经元模型
+## 1.神经元模型
 
-## 感知机与多层网络
+## 2.感知机与多层网络（MLP）
 
-## 反向传播算法
+## 3.反向传播算法（BP）
 
-## 全局最小与局部最小
+## 4.全局最小与局部最小
 
-## 其他神经网络
+## 5.其他神经网络
 
-## 深度学习
+## 6.深度学习

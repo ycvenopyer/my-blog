@@ -1,9 +1,9 @@
 # 强化学习
 
-## epsilon-贪心
+## 1.epsilon-贪心
 
-## Softmax
+## 2.Softmax
 
-## Q-learning
+## 3.Q-learning
 
-## Sarsa
+## 4.Sarsa

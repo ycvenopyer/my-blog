@@ -122,6 +122,7 @@ print(search_tool.args)
 ```
 
 ## 4.Reference
+
 [Langchain自定义Tool的三种方式](https://blog.csdn.net/weixin_48707135/article/details/137740363)
 
 [Agent基础篇：Tool-Use的定义、实现方式和效果优化](https://zhuanlan.zhihu.com/p/1921263213938443768)
@@ -129,4 +130,3 @@ print(search_tool.args)
 [OpenAI Platform Using Tools](https://platform.openai.com/docs/guides/tools)
 
 [详解LLM大模型是如何理解并使用 tools](https://blog.csdn.net/2401_82469710/article/details/139984847)
-

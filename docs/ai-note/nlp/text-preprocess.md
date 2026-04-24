@@ -1,10 +1,10 @@
 # 文本预处理
 
-## tokenization
+## 1.tokenization
 
-## stemming
+## 2.stemming
 
-## lemmatization
+## 3.lemmatization
 
-## stop word removal
+## 4.stop word removal
 

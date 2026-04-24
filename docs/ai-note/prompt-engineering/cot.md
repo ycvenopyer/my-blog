@@ -1,10 +1,10 @@
 # CoT
 
-## CoT
+## 1.CoT
 
-## ToT
+## 2.ToT
 
-## GoT
+## 3.GoT
 
-## ReAct
+## 4.ReAct
 

@@ -237,7 +237,7 @@ def hybrid_search(query: str):
 
 GraphRAG 通过引入知识图谱和社区检测，解决了传统 RAG 在全局理解和关系推理方面的核心短板。其"索引时生成摘要"的设计理念和"局部-全局"双搜索模式，为复杂文档分析提供了全新的范式。然而，高昂的索引成本和抽取质量的不确定性仍是实际落地中需要权衡的关键因素。
 
-## Reference
+## 8.Reference
 
 - [Microsoft GraphRAG](https://github.com/microsoft/graphrag)
 - [GraphRAG: From Local to Global at Scale (论文)](https://arxiv.org/abs/2404.16130)

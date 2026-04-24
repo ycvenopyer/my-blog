@@ -298,13 +298,13 @@ Reflexion会让Agent明确地批评自己之前的输出，然后重新生成更
 
 ### 13.1 综合对比文章
 
-[LangGraph vs CrewAI vs AutoGen: Top 10 AI Agent Frameworks](https://o-mega.ai/articles/langgraph-vs-crewai-vs-autogen-top-10-agent-frameworks-2026) - O-Mega.ai, 2026
+[LangGraph vs CrewAI vs AutoGen: Top 10 AI Agent Frameworks](https://o-mega.ai/articles/langgraph-vs-crewai-vs-autogen-top-10-agent-frameworks-2026) 
 
-[CrewAI vs LangGraph vs AutoGen](https://www.datacamp.com/tutorial/crewai-vs-langgraph-vs-autogen) - DataCamp Tutorial, 2025
+[CrewAI vs LangGraph vs AutoGen](https://www.datacamp.com/tutorial/crewai-vs-langgraph-vs-autogen) 
 
-[Top 9 AI Agent Frameworks in 2026](https://www.capsolver.com/blog/AI/top-9-ai-agent-frameworks-in-2026) - Capsolver, 2026
+[Top 9 AI Agent Frameworks in 2026](https://www.capsolver.com/blog/AI/top-9-ai-agent-frameworks-in-2026) 
 
-[11个顶级AI Agent框架对比](https://blog.csdn.net/2401_84204413/article/details/157221804) - CSDN, 2026
+[11个顶级AI Agent框架对比](https://blog.csdn.net/2401_84204413/article/details/157221804)
 
 ### 13.2 框架官方资源
 
@@ -326,11 +326,11 @@ Reflexion会让Agent明确地批评自己之前的输出，然后重新生成更
 
 ### 13.3 深度教程
 
-[2026年AI Agent学习计划](https://blog.csdn.net/m0_57545130/article/details/157131532) - CSDN, 2026
+[2026年AI Agent学习计划](https://blog.csdn.net/m0_57545130/article/details/157131532) 
 
-[AutoGPT Guide: Creating And Deploying Autonomous AI](https://www.datacamp.com/tutorial/autogpt-guide) - DataCamp, 2025
+[AutoGPT Guide: Creating And Deploying Autonomous AI](https://www.datacamp.com/tutorial/autogpt-guide)
 
-[Multi-agent PRD automation with MetaGPT](https://www.ibm.com/think/tutorials/multi-agent-prd-ai-automation-metagpt-ollama-deepseek) - IBM Tutorial
+[Multi-agent PRD automation with MetaGPT](https://www.ibm.com/think/tutorials/multi-agent-prd-ai-automation-metagpt-ollama-deepseek)
 
-[Agentic AI in 2026: A Practical Roadmap](https://medium.com/autonomous-ai-journal/agentic-ai-in-2026-a-practical-roadmap-from-beginner-to-production-ready-systems-2f67f063913d) - Medium, 2026
+[Agentic AI in 2026: A Practical Roadmap](https://medium.com/autonomous-ai-journal/agentic-ai-in-2026-a-practical-roadmap-from-beginner-to-production-ready-systems-2f67f063913d)
 

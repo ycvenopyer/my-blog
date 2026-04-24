@@ -1,13 +1,13 @@
 # 集成学习
 
-## 个体与集成
+## 1.个体与集成
 
-## Boosting
+## 2.Boosting
 
-## Bagging
+## 3.Bagging
 
-## Random Forest
+## 4.Random Forest
 
-## 结合策略
+## 5.结合策略
 
-## 多样性
+## 6.多样性

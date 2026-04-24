@@ -58,11 +58,10 @@ RLHF的步骤为：
 
 - 评估困难: 如何客观、全面地评估一个模型是否对齐?这本身也是一个研究难点(称为“对齐评估”)。
 
-## Reference
+## 6.Reference
 
 [AI大模型中的对齐（Alignment）是什么？为什么要做对齐？](https://zhuanlan.zhihu.com/p/1916821537769625444)
 
 [SFT 是什么?大模型SFT（监督微调）该怎么做（经验技巧+分析思路）](https://zhuanlan.zhihu.com/p/1933109386949145022)
 
 [RLHF是什么？一文说清RLHF（人类反馈强化学习）的概念和实现过程](https://zhuanlan.zhihu.com/p/1899472091121682346)
-

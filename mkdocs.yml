@@ -87,6 +87,7 @@ nav:
       - Quantization: ai-note/llm-compression/quantization.md
     - LLM Deploy:
       - Overview: ai-note/llm-deploy/index.md
+      - LLM API: ai-note/llm-deploy/llm-api.md
     - LLM Evaluation:
       - Overview: ai-note/llm-evaluation/index.md
     - LLM Safety:
@@ -130,7 +131,6 @@ nav:
       - Overview: ai-note/harness-engineering/index.md
     - Agent:
       - Overview: ai-note/agent/index.md
-      - LLM API: ai-note/agent/llm-api.md
       - Agent: ai-note/agent/agent.md
       - MCP: ai-note/agent/mcp.md
       - A2A: ai-note/agent/a2a.md

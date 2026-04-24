@@ -154,7 +154,7 @@ CoFi 类方法旨在得到更小更快的模型，且相对大规模无标签蒸
 
 ---
 
-## 参考文献
+## 6.参考文献
 
 1. Fan, A., Grave, E., Joulin, A. *Reducing Transformer Depth on Demand with Structured Dropout.* [arXiv:1909.11556](https://arxiv.org/abs/1909.11556)  
 2. Sajjad, H., Dalvi, F., Durrani, N., Nakov, P. *Poor Man’s BERT: Smaller and Faster Transformer Models.* [arXiv:2004.03844](https://arxiv.org/abs/2004.03844)  

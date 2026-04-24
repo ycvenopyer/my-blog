@@ -1,15 +1,15 @@
 # 词嵌入
 
-## Word2Vec
+## 1.Word2Vec
 
-### Skip-Gram
+### 1.1 Skip-Gram
 
-### CBOW
+### 1.2 CBOW
 
-## GloVe
+## 2.GloVe
 
-## CoVe
+## 3.CoVe
 
-## BiLM
+## 4.BiLM
 
-## ELMo
+## 5.ELMo

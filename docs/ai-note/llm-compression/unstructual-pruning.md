@@ -1,13 +1,13 @@
 # 非结构化剪枝经典论文
 
-## OBD
+## 1.OBD
 
-## OBS
+## 2.OBS
 
-## SparseGPT
+## 3.SparseGPT
 
-## Wanda
+## 4.Wanda
 
-## Reference
+## 5.Reference
 
 [再看大模型稀疏化：SparseGPT、Wanda](https://zhuanlan.zhihu.com/p/679376718)
