@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 23 Apr 2026 16:13:31 -0000</pubDate>
-    <lastBuildDate>Thu, 23 Apr 2026 16:13:31 -0000</lastBuildDate>
+    <pubDate>Fri, 24 Apr 2026 05:27:00 -0000</pubDate>
+    <lastBuildDate>Fri, 24 Apr 2026 05:27:00 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,61 @@
     
 
     
+    
+    <item>
+      <title>LLM API</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;llm-api&#34;&gt;LLM API&lt;a class=&#34;headerlink&#34; href=&#34;#llm-api&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 20 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1private-llms&#34;&gt;1.private LLMs&lt;a class=&#34;headerlink&#34; href=&#34;#1private-llms&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11-openai&#34;&gt;1.1 OpenAI&lt;a class=&#34;headerlink&#34; href=&#34;#11-openai&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;12-google&#34;&gt;1.2 Google&lt;a class=&#34;headerlink&#34; href=&#34;#12-google&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;13-anthropic&#34;&gt;1.3 Anthropic&lt;a class=&#34;headerlink&#34; href=&#34;#13-anthropic&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;2open-source-llms&#34;&gt;2.open-source LLMs&lt;a class=&#34;headerlink&#34; href=&#34;#2open-source-llms&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21-openrouter&#34;&gt;2.1 OpenRouter&lt;a class=&#34;headerlink&#34; href=&#34;#21-openrouter&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;22-hugging-face&#34;&gt;2.2 Hugging Face&lt;a class=&#34;headerlink&#34; href=&#34;#22-hugging-face&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;23-together-ai&#34;&gt;2.3 Together AI&lt;a class=&#34;headerlink&#34; href=&#34;#23-together-ai&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-deploy/llm-api/</link>
+      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm-deploy/llm-api/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Lovart</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;lovart&#34;&gt;Lovart&lt;a class=&#34;headerlink&#34; href=&#34;#lovart&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 6 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;AI设计助手&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/workflow/lovart/</link>
+      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/workflow/lovart/</guid>
+      
+    </item>
     
     <item>
       <title>LLM Application</title>
@@ -96,12 +151,12 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;_2&#34;&gt;贝叶斯决策论&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;极大似然估计&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;朴素贝叶斯分类器&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;半朴素贝叶斯分类器&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_6&#34;&gt;贝叶斯网&lt;a class=&#34;headerlink&#34; href=&#34;#_6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;em&#34;&gt;EM算法&lt;a class=&#34;headerlink&#34; href=&#34;#em&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.贝叶斯决策论&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.极大似然估计&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.朴素贝叶斯分类器&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.半朴素贝叶斯分类器&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.贝叶斯网&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6em&#34;&gt;6.EM算法&lt;a class=&#34;headerlink&#34; href=&#34;#6em&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/bayesian-classifier/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -125,12 +180,12 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;_2&#34;&gt;聚类任务&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;性能度量&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;距离计算&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;原型聚类&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_6&#34;&gt;密度聚类&lt;a class=&#34;headerlink&#34; href=&#34;#_6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_7&#34;&gt;层次聚类&lt;a class=&#34;headerlink&#34; href=&#34;#_7&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.聚类任务&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.性能度量&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.距离计算&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.原型聚类&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.密度聚类&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.层次聚类&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/cluster/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -154,11 +209,11 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;_2&#34;&gt;基本流程&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;划分选择&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;剪枝处理&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;连续与缺失值&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_6&#34;&gt;多变量决策树&lt;a class=&#34;headerlink&#34; href=&#34;#_6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.基本流程&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.划分选择&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.剪枝处理&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.连续与缺失值&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.多变量决策树&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/decision-tree/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -182,12 +237,12 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;knn&#34;&gt;kNN&lt;a class=&#34;headerlink&#34; href=&#34;#knn&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_2&#34;&gt;低维嵌入&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;pca&#34;&gt;PCA&lt;a class=&#34;headerlink&#34; href=&#34;#pca&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;核化线性降维&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;流形学习&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;度量学习&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1knn&#34;&gt;1.kNN&lt;a class=&#34;headerlink&#34; href=&#34;#1knn&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.低维嵌入&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3pca&#34;&gt;3.PCA&lt;a class=&#34;headerlink&#34; href=&#34;#3pca&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.核化线性降维&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.流形学习&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.度量学习&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/dimensionality/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -211,12 +266,12 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;_2&#34;&gt;个体与集成&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;boosting&#34;&gt;Boosting&lt;a class=&#34;headerlink&#34; href=&#34;#boosting&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;bagging&#34;&gt;Bagging&lt;a class=&#34;headerlink&#34; href=&#34;#bagging&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;random-forest&#34;&gt;Random Forest&lt;a class=&#34;headerlink&#34; href=&#34;#random-forest&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;结合策略&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;多样性&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.个体与集成&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2boosting&#34;&gt;2.Boosting&lt;a class=&#34;headerlink&#34; href=&#34;#2boosting&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3bagging&#34;&gt;3.Bagging&lt;a class=&#34;headerlink&#34; href=&#34;#3bagging&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4random-forest&#34;&gt;4.Random Forest&lt;a class=&#34;headerlink&#34; href=&#34;#4random-forest&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.结合策略&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.多样性&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/ensemble-learning/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -240,12 +295,12 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;_2&#34;&gt;子集搜索与评价&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;过滤式选择&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;包裹式选择&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;l1&#34;&gt;嵌入式选择与L1正则化&lt;a class=&#34;headerlink&#34; href=&#34;#l1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;稀疏表示与字典学习&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_6&#34;&gt;压缩感知&lt;a class=&#34;headerlink&#34; href=&#34;#_6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.子集搜索与评价&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.过滤式选择&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.包裹式选择&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4l1&#34;&gt;4.嵌入式选择与L1正则化&lt;a class=&#34;headerlink&#34; href=&#34;#4l1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.稀疏表示与字典学习&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.压缩感知&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/feature-selection-and-sparsity-learning/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -269,12 +324,12 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;_2&#34;&gt;基本形式&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;线性回归&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;对数几率回归&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;线性判别分析&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_6&#34;&gt;多分类学习&lt;a class=&#34;headerlink&#34; href=&#34;#_6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_7&#34;&gt;类别不平衡问题&lt;a class=&#34;headerlink&#34; href=&#34;#_7&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.基本形式&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.线性回归&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.对数几率回归&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.线性判别分析&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.多分类学习&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.类别不平衡问题&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/linear-model/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -291,18 +346,18 @@
       
       <description>&lt;h1 id=&#34;_1&#34;&gt;模型评估与选择&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 32 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 33 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;_2&#34;&gt;经验误差与过拟合&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;评估方法&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;性能度量&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;比较检验&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_6&#34;&gt;偏差与方差&lt;a class=&#34;headerlink&#34; href=&#34;#_6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.经验误差与过拟合&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2评估方法&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.性能度量&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.比较检验&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.偏差与方差&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/model-evaluation-and-selection/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -326,12 +381,12 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;_2&#34;&gt;隐马尔可夫模型&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;马尔可夫随机场&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;条件随机场&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;学习与推断&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_6&#34;&gt;近似推断&lt;a class=&#34;headerlink&#34; href=&#34;#_6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_7&#34;&gt;话题模型&lt;a class=&#34;headerlink&#34; href=&#34;#_7&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.隐马尔可夫模型&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.马尔可夫随机场&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.条件随机场&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.学习与推断&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.近似推断&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.话题模型&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/probabilistic-graphical-model/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -355,10 +410,10 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;epsilon-&#34;&gt;epsilon-贪心&lt;a class=&#34;headerlink&#34; href=&#34;#epsilon-&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;softmax&#34;&gt;Softmax&lt;a class=&#34;headerlink&#34; href=&#34;#softmax&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;q-learning&#34;&gt;Q-learning&lt;a class=&#34;headerlink&#34; href=&#34;#q-learning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;sarsa&#34;&gt;Sarsa&lt;a class=&#34;headerlink&#34; href=&#34;#sarsa&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1epsilon-&#34;&gt;1.epsilon-贪心&lt;a class=&#34;headerlink&#34; href=&#34;#1epsilon-&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2softmax&#34;&gt;2.Softmax&lt;a class=&#34;headerlink&#34; href=&#34;#2softmax&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3q-learning&#34;&gt;3.Q-learning&lt;a class=&#34;headerlink&#34; href=&#34;#3q-learning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4sarsa&#34;&gt;4.Sarsa&lt;a class=&#34;headerlink&#34; href=&#34;#4sarsa&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/reinforcement-learning/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -382,12 +437,12 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;_2&#34;&gt;未标记样本&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;生成式方法&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;svm&#34;&gt;半监督SVM&lt;a class=&#34;headerlink&#34; href=&#34;#svm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;图半监督学习&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;基于分歧的方法&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_6&#34;&gt;半监督聚类&lt;a class=&#34;headerlink&#34; href=&#34;#_6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.未标记样本&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.生成式方法&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3svm&#34;&gt;3.半监督SVM&lt;a class=&#34;headerlink&#34; href=&#34;#3svm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.图半监督学习&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.基于分歧的方法&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.半监督聚类&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/semi-supervised-learning/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -411,12 +466,12 @@
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;_2&#34;&gt;间隔与支持向量&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;对偶问题&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;核函数&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;软间隔与正则化&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_6&#34;&gt;支持向量回归&lt;a class=&#34;headerlink&#34; href=&#34;#_6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_7&#34;&gt;核方法&lt;a class=&#34;headerlink&#34; href=&#34;#_7&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.间隔与支持向量&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.对偶问题&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.核函数&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.软间隔与正则化&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.支持向量回归&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.核方法&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/svm/</link>
       <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -614,30 +669,6 @@
     </item>
     
     <item>
-      <title>LLM API</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;llm-api&#34;&gt;LLM API&lt;a class=&#34;headerlink&#34; href=&#34;#llm-api&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 32 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;LLM APIs: APIs are a convenient way to deploy LLMs. This space is divided between private LLMs (OpenAI, Google, Anthropic, etc.) and open-source LLMs (OpenRouter, Hugging Face, Together AI, etc.).&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/agent/llm-api/</link>
-      <pubDate>Thu, 23 Apr 2026 18:11:38 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/agent/llm-api/</guid>
-      
-    </item>
-    
-    <item>
       <title>Sampling Techniques</title>
       
       
@@ -645,14 +676,16 @@
       
       <description>&lt;h1 id=&#34;sampling-techniques&#34;&gt;Sampling techniques&lt;a class=&#34;headerlink&#34; href=&#34;#sampling-techniques&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 28 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 47 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;p&gt;Explore various text generation approaches and their tradeoffs. Compare deterministic methods like greedy search and beam search with probabilistic approaches like temperature sampling and nucleus sampling.&lt;/p&gt;</description>
+&lt;p&gt;Explore various text generation approaches and their tradeoffs. Compare deterministic methods like greedy search and beam search with probabilistic approaches like temperature sampling and nucleus sampling.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.next.gr/ai/chatbots-conversational-ai/text-generation-strategies-greedy-vs-beam-search&#34;&gt;Text Generation Strategies: Greedy vs Beam Search&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/miners/p/14950681.html&#34;&gt;浅谈文本生成中的采样方法&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/sampling-techniques/</link>
       <pubDate>Thu, 23 Apr 2026 18:11:38 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -1177,14 +1210,14 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;llm-pruner&#34;&gt;LLM-Pruner&lt;a class=&#34;headerlink&#34; href=&#34;#llm-pruner&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;compresso&#34;&gt;Compresso&lt;a class=&#34;headerlink&#34; href=&#34;#compresso&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;flap&#34;&gt;FLAP&lt;a class=&#34;headerlink&#34; href=&#34;#flap&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;loraprune&#34;&gt;LoRAPrune&lt;a class=&#34;headerlink&#34; href=&#34;#loraprune&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;lorap&#34;&gt;LoRAP&lt;a class=&#34;headerlink&#34; href=&#34;#lorap&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;slimgpt&#34;&gt;SlimGPT&lt;a class=&#34;headerlink&#34; href=&#34;#slimgpt&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;slicegpt&#34;&gt;SliceGPT&lt;a class=&#34;headerlink&#34; href=&#34;#slicegpt&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;a class=&#34;headerlink&#34; href=&#34;#reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1llm-pruner&#34;&gt;1.LLM-Pruner&lt;a class=&#34;headerlink&#34; href=&#34;#1llm-pruner&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2compresso&#34;&gt;2.Compresso&lt;a class=&#34;headerlink&#34; href=&#34;#2compresso&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3flap&#34;&gt;3.FLAP&lt;a class=&#34;headerlink&#34; href=&#34;#3flap&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4loraprune&#34;&gt;4.LoRAPrune&lt;a class=&#34;headerlink&#34; href=&#34;#4loraprune&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5lorap&#34;&gt;5.LoRAP&lt;a class=&#34;headerlink&#34; href=&#34;#5lorap&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6slimgpt&#34;&gt;6.SlimGPT&lt;a class=&#34;headerlink&#34; href=&#34;#6slimgpt&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;7slicegpt&#34;&gt;7.SliceGPT&lt;a class=&#34;headerlink&#34; href=&#34;#7slicegpt&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;8reference&#34;&gt;8.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#8reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/structual-pruning/</link>
       <pubDate>Thu, 23 Apr 2026 18:11:38 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -1208,11 +1241,11 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;obd&#34;&gt;OBD&lt;a class=&#34;headerlink&#34; href=&#34;#obd&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;obs&#34;&gt;OBS&lt;a class=&#34;headerlink&#34; href=&#34;#obs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;sparsegpt&#34;&gt;SparseGPT&lt;a class=&#34;headerlink&#34; href=&#34;#sparsegpt&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;wanda&#34;&gt;Wanda&lt;a class=&#34;headerlink&#34; href=&#34;#wanda&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;a class=&#34;headerlink&#34; href=&#34;#reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;1obd&#34;&gt;1.OBD&lt;a class=&#34;headerlink&#34; href=&#34;#1obd&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2obs&#34;&gt;2.OBS&lt;a class=&#34;headerlink&#34; href=&#34;#2obs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3sparsegpt&#34;&gt;3.SparseGPT&lt;a class=&#34;headerlink&#34; href=&#34;#3sparsegpt&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4wanda&#34;&gt;4.Wanda&lt;a class=&#34;headerlink&#34; href=&#34;#4wanda&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5reference&#34;&gt;5.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#5reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/679376718&#34;&gt;再看大模型稀疏化：SparseGPT、Wanda&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/unstructual-pruning/</link>
       <pubDate>Thu, 23 Apr 2026 18:11:38 +0000</pubDate>
@@ -1455,12 +1488,12 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;ppo&#34;&gt;PPO&lt;a class=&#34;headerlink&#34; href=&#34;#ppo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;dpo&#34;&gt;DPO&lt;a class=&#34;headerlink&#34; href=&#34;#dpo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;grpo&#34;&gt;GRPO&lt;a class=&#34;headerlink&#34; href=&#34;#grpo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;dapo&#34;&gt;DAPO&lt;a class=&#34;headerlink&#34; href=&#34;#dapo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;gspo&#34;&gt;GSPO&lt;a class=&#34;headerlink&#34; href=&#34;#gspo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;arpo&#34;&gt;ARPO&lt;a class=&#34;headerlink&#34; href=&#34;#arpo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1ppo&#34;&gt;1.PPO&lt;a class=&#34;headerlink&#34; href=&#34;#1ppo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2dpo&#34;&gt;2.DPO&lt;a class=&#34;headerlink&#34; href=&#34;#2dpo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3grpo&#34;&gt;3.GRPO&lt;a class=&#34;headerlink&#34; href=&#34;#3grpo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4dapo&#34;&gt;4.DAPO&lt;a class=&#34;headerlink&#34; href=&#34;#4dapo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5gspo&#34;&gt;5.GSPO&lt;a class=&#34;headerlink&#34; href=&#34;#5gspo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6arpo&#34;&gt;6.ARPO&lt;a class=&#34;headerlink&#34; href=&#34;#6arpo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-rl/rlhf/</link>
       <pubDate>Thu, 23 Apr 2026 18:11:38 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -1499,7 +1532,7 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
       
       <description>&lt;h1 id=&#34;_1&#34;&gt;神经网络&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 148 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 150 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
@@ -1510,12 +1543,12 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
 &lt;p&gt;Training and Optimization: Familiarize yourself with backpropagation and different types of loss functions, like Mean Squared Error (MSE) and Cross-Entropy. Understand various optimization algorithms like Gradient Descent, Stochastic Gradient Descent, RMSprop, and Adam.&lt;/p&gt;
 &lt;p&gt;Overfitting: Understand the concept of overfitting (where a model performs well on training data but poorly on unseen data) and learn various regularization techniques (dropout, L1/L2 regularization, early stopping, data augmentation) to prevent it.&lt;/p&gt;
 &lt;p&gt;Implement a Multilayer Perceptron (MLP): Build an MLP, also known as a fully connected network, using PyTorch.&lt;/p&gt;
-&lt;h2 id=&#34;_2&#34;&gt;神经元模型&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;感知机与多层网络&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;反向传播算法&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;全局最小与局部最小&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_6&#34;&gt;其他神经网络&lt;a class=&#34;headerlink&#34; href=&#34;#_6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_7&#34;&gt;深度学习&lt;a class=&#34;headerlink&#34; href=&#34;#_7&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.神经元模型&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2mlp&#34;&gt;2.感知机与多层网络（MLP）&lt;a class=&#34;headerlink&#34; href=&#34;#2mlp&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3bp&#34;&gt;3.反向传播算法（BP）&lt;a class=&#34;headerlink&#34; href=&#34;#3bp&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.全局最小与局部最小&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.其他神经网络&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.深度学习&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/neural-network/</link>
       <pubDate>Thu, 23 Apr 2026 18:11:38 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -1563,9 +1596,9 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;bag-of-words-bow&#34;&gt;Bag-of-words (BoW)&lt;a class=&#34;headerlink&#34; href=&#34;#bag-of-words-bow&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;term-frequency-inverse-document-frequency-tf-idf&#34;&gt;Term Frequency-Inverse Document Frequency (TF-IDF)&lt;a class=&#34;headerlink&#34; href=&#34;#term-frequency-inverse-document-frequency-tf-idf&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;n-grams&#34;&gt;n-grams&lt;a class=&#34;headerlink&#34; href=&#34;#n-grams&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1bag-of-words-bow&#34;&gt;1.Bag-of-words (BoW)&lt;a class=&#34;headerlink&#34; href=&#34;#1bag-of-words-bow&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2term-frequency-inverse-document-frequency-tf-idf&#34;&gt;2.Term Frequency-Inverse Document Frequency (TF-IDF)&lt;a class=&#34;headerlink&#34; href=&#34;#2term-frequency-inverse-document-frequency-tf-idf&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3n-grams&#34;&gt;3.n-grams&lt;a class=&#34;headerlink&#34; href=&#34;#3n-grams&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/nlp/feature-extraction/</link>
       <pubDate>Thu, 23 Apr 2026 18:11:38 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -1589,10 +1622,10 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;tokenization&#34;&gt;tokenization&lt;a class=&#34;headerlink&#34; href=&#34;#tokenization&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;stemming&#34;&gt;stemming&lt;a class=&#34;headerlink&#34; href=&#34;#stemming&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;lemmatization&#34;&gt;lemmatization&lt;a class=&#34;headerlink&#34; href=&#34;#lemmatization&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;stop-word-removal&#34;&gt;stop word removal&lt;a class=&#34;headerlink&#34; href=&#34;#stop-word-removal&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1tokenization&#34;&gt;1.tokenization&lt;a class=&#34;headerlink&#34; href=&#34;#1tokenization&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2stemming&#34;&gt;2.stemming&lt;a class=&#34;headerlink&#34; href=&#34;#2stemming&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3lemmatization&#34;&gt;3.lemmatization&lt;a class=&#34;headerlink&#34; href=&#34;#3lemmatization&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4stop-word-removal&#34;&gt;4.stop word removal&lt;a class=&#34;headerlink&#34; href=&#34;#4stop-word-removal&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/nlp/text-preprocess/</link>
       <pubDate>Thu, 23 Apr 2026 18:11:38 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -1609,20 +1642,20 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
       
       <description>&lt;h1 id=&#34;_1&#34;&gt;词嵌入&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 10 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 12 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;word2vec&#34;&gt;Word2Vec&lt;a class=&#34;headerlink&#34; href=&#34;#word2vec&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;skip-gram&#34;&gt;Skip-Gram&lt;a class=&#34;headerlink&#34; href=&#34;#skip-gram&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;h3 id=&#34;cbow&#34;&gt;CBOW&lt;a class=&#34;headerlink&#34; href=&#34;#cbow&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;h2 id=&#34;glove&#34;&gt;GloVe&lt;a class=&#34;headerlink&#34; href=&#34;#glove&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;cove&#34;&gt;CoVe&lt;a class=&#34;headerlink&#34; href=&#34;#cove&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;bilm&#34;&gt;BiLM&lt;a class=&#34;headerlink&#34; href=&#34;#bilm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;elmo&#34;&gt;ELMo&lt;a class=&#34;headerlink&#34; href=&#34;#elmo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1word2vec&#34;&gt;1.Word2Vec&lt;a class=&#34;headerlink&#34; href=&#34;#1word2vec&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11-skip-gram&#34;&gt;1.1 Skip-Gram&lt;a class=&#34;headerlink&#34; href=&#34;#11-skip-gram&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;12-cbow&#34;&gt;1.2 CBOW&lt;a class=&#34;headerlink&#34; href=&#34;#12-cbow&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;2glove&#34;&gt;2.GloVe&lt;a class=&#34;headerlink&#34; href=&#34;#2glove&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3cove&#34;&gt;3.CoVe&lt;a class=&#34;headerlink&#34; href=&#34;#3cove&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4bilm&#34;&gt;4.BiLM&lt;a class=&#34;headerlink&#34; href=&#34;#4bilm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5elmo&#34;&gt;5.ELMo&lt;a class=&#34;headerlink&#34; href=&#34;#5elmo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/nlp/word-embedding/</link>
       <pubDate>Thu, 23 Apr 2026 18:11:38 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -1646,10 +1679,10 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;h2 id=&#34;cot_1&#34;&gt;CoT&lt;a class=&#34;headerlink&#34; href=&#34;#cot_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;tot&#34;&gt;ToT&lt;a class=&#34;headerlink&#34; href=&#34;#tot&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;got&#34;&gt;GoT&lt;a class=&#34;headerlink&#34; href=&#34;#got&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;react&#34;&gt;ReAct&lt;a class=&#34;headerlink&#34; href=&#34;#react&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1cot&#34;&gt;1.CoT&lt;a class=&#34;headerlink&#34; href=&#34;#1cot&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2tot&#34;&gt;2.ToT&lt;a class=&#34;headerlink&#34; href=&#34;#2tot&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3got&#34;&gt;3.GoT&lt;a class=&#34;headerlink&#34; href=&#34;#3got&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4react&#34;&gt;4.ReAct&lt;a class=&#34;headerlink&#34; href=&#34;#4react&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/prompt-engineering/cot/</link>
       <pubDate>Thu, 23 Apr 2026 18:11:38 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -1701,7 +1734,7 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
       
       <description>&lt;h1 id=&#34;langchain&#34;&gt;LangChain&lt;a class=&#34;headerlink&#34; href=&#34;#langchain&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 637 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 1 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 2 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 638 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 1 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 2 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
@@ -1741,7 +1774,8 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
 &lt;p&gt;内置生产级特性：LangGraph设计之初就考虑了生产部署，原生支持状态持久化（检查点）、人工干预节点和可视化调试等，这些都是构建可靠Agent系统不可或缺的功能。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2langfuse&#34;&gt;2.Langfuse&lt;a class=&#34;headerlink&#34; href=&#34;#2langfuse&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;2langsmith&#34;&gt;2.Langsmith&lt;a class=&#34;headerlink&#34; href=&#34;#2langsmith&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3langfuse&#34;&gt;3.Langfuse&lt;a class=&#34;headerlink&#34; href=&#34;#3langfuse&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/agent/langchain/</link>
       <pubDate>Wed, 22 Apr 2026 22:30:17 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -2102,7 +2136,7 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
       
       <description>&lt;h1 id=&#34;speculative-decoding&#34;&gt;Speculative Decoding&lt;a class=&#34;headerlink&#34; href=&#34;#speculative-decoding&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 916 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 3 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 909 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 3 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
@@ -2110,17 +2144,17 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
 &lt;/aside&gt;
 
 &lt;p&gt;随着大规模语言模型（LLM）在各类自然语言处理任务中的广泛应用，模型推理效率成为制约其落地和推广的关键因素，推理同时对吞吐和时延具有较高要求。投机解码（Speculative Decoding）作为一种提升大模型推理性能的有效技术，近年来受到广泛关注。投机解码通过引入辅助模型（通常为小型语言模型）或结构来预测主模型的输出，从而减少主模型的计算负担，提高推理速度。&lt;/p&gt;
-&lt;p&gt;大模型推理性能优化-投机解码： Transformer架构的大模型推理的解码（decode phase）每次根据注意力窗口内的所有上文信息，生成一个新token。这个自回归的过程受到访存带宽的限制（memory-bound，访存密集型）。投机解码（Speculative Decoding）通过引入辅助的草稿模型（通常为小型语言模型，draft model）或结构来预测主模型的输出的连续若干个token，目标模型（target model）只需对草稿模型预测的token进行验证，从而在前向计算中并行生成多个token，减少目标模型的计算负担，提高推理速度。&lt;/p&gt;
+&lt;p&gt;Transformer架构的大模型推理的解码（decode phase）每次根据注意力窗口内的所有上文信息，生成一个新token。这个自回归的过程受到访存带宽的限制（memory-bound，访存密集型）。投机解码通过引入辅助的草稿模型（通常为小型语言模型，draft model）或结构来预测主模型的输出的连续若干个token，目标模型（target model）只需对草稿模型预测的token进行验证，从而在前向计算中并行生成多个token，减少目标模型的计算负担，提高推理速度。&lt;/p&gt;
 &lt;p&gt;投机解码的研究领域主要集中在token预测的优化上：研究如何设计高效的draft model或预测模块，包括模型结构、参数量、训练方法、预测token数量等，以在保证预测准确率的同时最大化推理速度提升。&lt;/p&gt;
-&lt;h2 id=&#34;11&#34;&gt;1.方向1&lt;a class=&#34;headerlink&#34; href=&#34;#11&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;11&#34;&gt;1.方向1：高效缓存机制的设计&lt;a class=&#34;headerlink&#34; href=&#34;#11&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;通过缓存之前预测的有效信息来提升draft model的预测能力：通过设计高效的缓存机制，存储和利用之前预测的（包括没有被命中）token及其上下文信息，提升draft model在连续token预测中的准确率和效率。可以优化的方向包括但不限于： a. 缓存更有效的信息，以提升预测效率； b. 优化检索策略，如向量检索，文本匹配等的效率。&lt;/p&gt;
-&lt;h2 id=&#34;22draft-model&#34;&gt;2.方向2：高效Draft model结构设计&lt;a class=&#34;headerlink&#34; href=&#34;#22draft-model&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Draft model结构设计：优化预测模块结构设计，draft model的设计目标通常是得到和target model近似的数据分布，从而提升在验证阶段target model接受的token数量，主流的draft model如eagle经常采用和target model一样的自回归设计，然而我们认为自回归的draft结构并不是通向模拟target model数据分布的唯一途径，我们希望draft model在保持住数据分布的同时能够具有其他的如并行采样的优秀性质。可以优化的方向包括但不限于：a. 设计出最小推理代价但最大保留原模型数据分布的新型网络架构 b. 探索高速高效的draft model采样机制来战胜自回归draft采样.&lt;/p&gt;
+&lt;h2 id=&#34;22draft-model&#34;&gt;2.方向2：高效draft model结构设计&lt;a class=&#34;headerlink&#34; href=&#34;#22draft-model&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;draft model结构设计：优化预测模块结构设计，draft model的设计目标通常是得到和target model近似的数据分布，从而提升在验证阶段target model接受的token数量，主流的draft model如eagle经常采用和target model一样的自回归设计，然而我们认为自回归的draft结构并不是通向模拟target model数据分布的唯一途径，我们希望draft model在保持住数据分布的同时能够具有其他的如并行采样的优秀性质。可以优化的方向包括但不限于：a. 设计出最小推理代价但最大保留原模型数据分布的新型网络架构 b. 探索高速高效的draft model采样机制来战胜自回归draft采样.&lt;/p&gt;
 &lt;h2 id=&#34;3&#34;&gt;3.推荐论文和项目&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;SpecForge：SpecForge is an ecosystem project developed by the SGLang team. It is a framework for training speculative decoding models so that you can smoothly port them over to the SGLang serving framework to speed up your inference. Learn more: https://docs.sglang.ai/SpecForge/。&lt;/p&gt;
-&lt;p&gt;Accelerating Large Language Model Decoding with Speculative Sampling (2023)&lt;/p&gt;
+&lt;p&gt;SpecForge：SpecForge is an ecosystem project developed by the SGLang team. It is a framework for training speculative decoding models so that you can smoothly port them over to the SGLang serving framework to speed up your inference. Learn more: &lt;a href=&#34;https://docs.sglang.ai/SpecForge/&#34;&gt;https://docs.sglang.ai/SpecForge/&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;Accelerating Large Language Model Decoding with Speculative Sampling &lt;/p&gt;
 &lt;p&gt;Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads （SD方向的著名论文，与上述方向2相关）&lt;/p&gt;
-&lt;p&gt;EAGLE: Speculative Sampling Requires Rethinking Feature Uncertainty （还包括EAGLE-2, 3系列，EAGLE-3是当前业界落地的SOTA工作&lt;/p&gt;
+&lt;p&gt;EAGLE: Speculative Sampling Requires Rethinking Feature Uncertainty （还包括EAGLE-2, 3系列，EAGLE-3是当前业界落地的SOTA工作）&lt;/p&gt;
 &lt;p&gt;Break the Sequential Dependency of LLM Inference Using Lookahead Decoding&lt;/p&gt;
 &lt;p&gt;Better &amp;amp; Faster Large Language Models via Multi-token Prediction&lt;/p&gt;
 &lt;p&gt;Turning Trash into Treasure: Accelerating Inference of Large Language Models with Token Recycling （与上述方向1强相关）&lt;/p&gt;
@@ -2491,12 +2525,14 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
       
       <description>&lt;h1 id=&#34;gemini-15-technical-report&#34;&gt;Gemini 1.5 Technical Report&lt;a class=&#34;headerlink&#34; href=&#34;#gemini-15-technical-report&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 4 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 15 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2403.05530&#34;&gt;Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/gemini-1.5-technical-report/</link>
       <pubDate>Tue, 14 Apr 2026 23:03:13 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -2513,12 +2549,14 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
       
       <description>&lt;h1 id=&#34;griffin-mixing-gated-linear-recurrences-with-local-attention-for-efficient-language-models&#34;&gt;Griffin: Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models&lt;a class=&#34;headerlink&#34; href=&#34;#griffin-mixing-gated-linear-recurrences-with-local-attention-for-efficient-language-models&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 12 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 13 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2402.19427&#34;&gt;Griffin&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/griffin/</link>
       <pubDate>Tue, 14 Apr 2026 23:03:13 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -2607,12 +2645,14 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
       
       <description>&lt;h1 id=&#34;retnet&#34;&gt;RetNet&lt;a class=&#34;headerlink&#34; href=&#34;#retnet&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 11 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2307.08621&#34;&gt;Retentive Network: A Successor to Transformer for Large Language Models&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/retnet/</link>
       <pubDate>Tue, 14 Apr 2026 17:27:33 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -2692,7 +2732,7 @@ PPL = e^{NLL} = \exp\!\left(-\frac{1}{N} \sum_{t=1}^{N} \log p\bigl(w_t \mid w_1
 &lt;p&gt;Decode： 解码的串行自回归特性是主要的瓶颈。虽然KV Cache减少了重复计算，但每一步仍然需要进行注意力计算，并且随着生成序列的增长，KV Cache的大小也会增加，可能导致内存带宽瓶颈。此外，生成长序列会显著增加总的推理时间。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;a class=&#34;headerlink&#34; href=&#34;#reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5reference&#34;&gt;5.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#5reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/column/c_1900478474017313428&#34;&gt;大模型推理探秘：揭开 LLM 响应&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/prefill-and-decode/</link>
       <pubDate>Tue, 14 Apr 2026 17:27:33 +0000</pubDate>
@@ -3199,8 +3239,8 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;div class=&#34;admonition note&#34;&gt;
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;成文：179 篇&lt;/li&gt;
-&lt;li&gt;累字：153,325 字&lt;/li&gt;
+&lt;li&gt;成文：180 篇&lt;/li&gt;
+&lt;li&gt;累字：164,141 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
@@ -3572,7 +3612,7 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;p&gt;评估困难: 如何客观、全面地评估一个模型是否对齐?这本身也是一个研究难点(称为“对齐评估”)。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;a class=&#34;headerlink&#34; href=&#34;#reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6reference&#34;&gt;6.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#6reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/1916821537769625444&#34;&gt;AI大模型中的对齐（Alignment）是什么？为什么要做对齐？&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/1933109386949145022&#34;&gt;SFT 是什么?大模型SFT（监督微调）该怎么做（经验技巧+分析思路）&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/1899472091121682346&#34;&gt;RLHF是什么？一文说清RLHF（人类反馈强化学习）的概念和实现过程&lt;/a&gt;&lt;/p&gt;</description>
@@ -3745,12 +3785,14 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       <description>&lt;h1 id=&#34;llama&#34;&gt;Llama&lt;a class=&#34;headerlink&#34; href=&#34;#llama&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 8 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2302.13971&#34;&gt;LLaMA: Open and Efficient Foundation Language Models&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/llama/</link>
       <pubDate>Sat, 04 Apr 2026 00:20:31 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -3767,13 +3809,14 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       <description>&lt;h1 id=&#34;mamba&#34;&gt;Mamba&lt;a class=&#34;headerlink&#34; href=&#34;#mamba&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 8 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 16 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2312.00752&#34;&gt;Mamba: Linear-Time Sequence Modeling with Selective State Spaces&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;SSM（状态空间模型）&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/mamba/</link>
       <pubDate>Sat, 04 Apr 2026 00:20:31 +0000</pubDate>
@@ -3838,12 +3881,14 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       <description>&lt;h1 id=&#34;rwkv&#34;&gt;RWKV&lt;a class=&#34;headerlink&#34; href=&#34;#rwkv&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 8 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2305.13048&#34;&gt;RWKV: Reinventing RNNs for the Transformer Era&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/rwkv/</link>
       <pubDate>Sat, 04 Apr 2026 00:20:31 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -3916,8 +3961,8 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;p&gt;Data Science Libraries: It includes familiarity with NumPy for numerical operations, Pandas for data manipulation and analysis, Matplotlib and Seaborn for data visualization.&lt;/p&gt;
 &lt;p&gt;Data Preprocessing: This involves feature scaling and normalization, handling missing data, outlier detection, categorical data encoding, and splitting data into training, validation, and test sets.&lt;/p&gt;
 &lt;p&gt;Machine Learning Libraries: Proficiency with Scikit-learn, a library providing a wide selection of supervised and unsupervised learning algorithms, is vital. Understanding how to implement algorithms like linear regression, logistic regression, decision trees, random forests, k-nearest neighbors (K-NN), and K-means clustering is important. Dimensionality reduction techniques like PCA and t-SNE are also helpful for visualizing high-dimensional data.&lt;/p&gt;
-&lt;h2 id=&#34;_1&#34;&gt;基本术语&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_2&#34;&gt;发展历程&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.基本术语&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.发展历程&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/</link>
       <pubDate>Sat, 04 Apr 2026 00:20:31 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -3946,11 +3991,11 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;p&gt;Feature Extraction Techniques: Become familiar with techniques to convert text data into a format that can be understood by machine learning algorithms. Key methods include Bag-of-words (BoW), Term Frequency-Inverse Document Frequency (TF-IDF), and n-grams.&lt;/p&gt;
 &lt;p&gt;Word Embedding: Word embeddings are a type of word representation that allows words with similar meanings to have similar representations. Key methods include Word2Vec, GloVe, and FastText.&lt;/p&gt;
 &lt;p&gt;Recurrent Neural Networks (RNNs): Understand the working of RNNs, a type of neural network designed to work with sequence data. Explore LSTMs and GRUs, two RNN variants that are capable of learning long-term dependencies.&lt;/p&gt;
-&lt;h2 id=&#34;_1&#34;&gt;文本的表示&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_2&#34;&gt;自然语言处理任务&lt;a class=&#34;headerlink&#34; href=&#34;#_2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_3&#34;&gt;自然语言处理的基本问题&lt;a class=&#34;headerlink&#34; href=&#34;#_3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_4&#34;&gt;自然语言处理的评价指标&lt;a class=&#34;headerlink&#34; href=&#34;#_4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;_5&#34;&gt;基础工具集与常用数据集&lt;a class=&#34;headerlink&#34; href=&#34;#_5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;1&#34;&gt;1.文本的表示&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.自然语言处理任务&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.自然语言处理的基本问题&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.自然语言处理的评价指标&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.基础工具集与常用数据集&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/nlp/</link>
       <pubDate>Sat, 04 Apr 2026 00:20:31 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -3993,14 +4038,168 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       <description>&lt;h1 id=&#34;_1&#34;&gt;驾驭工程&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 15 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 6801 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 21 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;p&gt;重塑AI Agent时代的软件工程。&lt;/p&gt;</description>
+&lt;p&gt;Harness Engineering: AI Agent稳定落地的核心引擎，重塑AI Agent时代的软件工程。&lt;/p&gt;
+&lt;h2 id=&#34;1&#34;&gt;1.定义&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Harness Engineering是指在AI系统中，除模型本身外所有决定系统稳定交付能力的组件总和。其核心目标是解决AI Agent在真实场景中的执行稳定性问题，确保模型从“能思考”到“能稳定做事”的关键跨越。&lt;/p&gt;
+&lt;h2 id=&#34;2ai&#34;&gt;2.AI工程的三阶段演进&lt;a class=&#34;headerlink&#34; href=&#34;#2ai&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;阶段&lt;/th&gt;
+&lt;th&gt;核心问题&lt;/th&gt;
+&lt;th&gt;解决思路&lt;/th&gt;
+&lt;th&gt;技术重点&lt;/th&gt;
+&lt;th&gt;局限性&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Prompt Engineering (提示词工程)&lt;/td&gt;
+&lt;td&gt;模型是否可理解指令&lt;/td&gt;
+&lt;td&gt;优化语言表达&lt;/td&gt;
+&lt;td&gt;角色设定、风格约束、示例引导&lt;/td&gt;
+&lt;td&gt;无法弥补知识缺失，不能管理动态信息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Context Engineering (上下文工程)&lt;/td&gt;
+&lt;td&gt;模型是否获得正确信息&lt;/td&gt;
+&lt;td&gt;优化信息供给&lt;/td&gt;
+&lt;td&gt;检索增强(RAG)、渐进式微调、信息分层&lt;/td&gt;
+&lt;td&gt;无法解决执行过程中的监督与纠偏问题&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Harness Engineering (驾驭工程)&lt;/td&gt;
+&lt;td&gt;模型能否稳定交付任务&lt;/td&gt;
+&lt;td&gt;优化运行系统&lt;/td&gt;
+&lt;td&gt;执行编排、状态管理、错误恢复&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;3harness&#34;&gt;3.成熟Harness的六层架构&lt;a class=&#34;headerlink&#34; href=&#34;#3harness&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;31&#34;&gt;3.1 上下文边界层&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;核心功能&lt;/strong&gt;: 确保模型在正确边界内思考。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关键组件&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;角色与目标定义: 明确模型身份、任务范围及成功标准。&lt;/li&gt;
+&lt;li&gt;信息获取与选择: 确保上下文相关性(非越多越好)。&lt;/li&gt;
+&lt;li&gt;结构化组织: 分层管理规则、任务状态、外部证据。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;32&#34;&gt;3.2 工具系统层&lt;a class=&#34;headerlink&#34; href=&#34;#32&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;核心功能&lt;/strong&gt;: 连接模型与现实世界的桥梁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关键挑战&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;工具选择: 平衡能力覆盖与使用复杂度。&lt;/li&gt;
+&lt;li&gt;调用时机: 避免不必要的调用(不必要)和错误判断(不管)。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;33&#34;&gt;3.3 执行编排层&lt;a class=&#34;headerlink&#34; href=&#34;#33&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;核心功能&lt;/strong&gt;: 将任务分解为可执行步骤。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;典型流程&lt;/strong&gt;: 目标理解→信息整合→分析处理→输出生成→结果检查→修正迭代。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;价值&lt;/strong&gt;: 解决Agent“想到哪做到哪”的无序执行问题，确保任务闭环。&lt;/p&gt;
+&lt;h3 id=&#34;34&#34;&gt;3.4 记忆与状态层&lt;a class=&#34;headerlink&#34; href=&#34;#34&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;核心功能&lt;/strong&gt;: 解决Agent“失忆”问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;状态分类&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;当前任务状态。&lt;/li&gt;
+&lt;li&gt;会话中间结果。&lt;/li&gt;
+&lt;li&gt;长期记忆与用户偏好。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;管理原则&lt;/strong&gt;: 分类存储，避免信息混乱导致的执行偏差。&lt;/p&gt;
+&lt;h3 id=&#34;35&#34;&gt;3.5 评估与观测层&lt;a class=&#34;headerlink&#34; href=&#34;#35&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;核心功能&lt;/strong&gt;: 建立质量反馈机制。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关键组件&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;输出验证与验收。&lt;/li&gt;
+&lt;li&gt;自动化测试系统。&lt;/li&gt;
+&lt;li&gt;日志与指标监控。&lt;/li&gt;
+&lt;li&gt;错误回溯分析。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;价值&lt;/strong&gt;: 避免Agent“自我感觉良好”的认知偏差。&lt;/p&gt;
+&lt;h3 id=&#34;36&#34;&gt;3.6 约束校验与恢复层&lt;a class=&#34;headerlink&#34; href=&#34;#36&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;核心功能&lt;/strong&gt;: 保障系统鲁棒性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关键机制&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;约束机制: 明确能力边界(能做什么/不能做什么)。&lt;/li&gt;
+&lt;li&gt;校验机制: 输出前后的检查流程。&lt;/li&gt;
+&lt;li&gt;恢复机制: 失败后的重试、回滚策略。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.一线公司实践案例&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;41-anthropic&#34;&gt;4.1 Anthropic的自主编码系统&lt;a class=&#34;headerlink&#34; href=&#34;#41-anthropic&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;核心问题&lt;/strong&gt;: 长任务上下文过载。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;解决方案: Context Reset(上下文重置)。&lt;/li&gt;
+&lt;li&gt;类比: 内存泄漏后重启进程而非清理缓存。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;核心问题&lt;/strong&gt;: 自评失真。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;解决方案: 角色分离架构：Planner(规划者): 需求转换器；Generator(生成器): 逐步实现；Evaluator(评估者): 环境化测试(真实操作验证)。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-openaiagent&#34;&gt;2. OpenAI的Agent开发实践&lt;a class=&#34;headerlink&#34; href=&#34;#2-openaiagent&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;工程师角色转变&lt;/strong&gt;: 从写代码→设计环境。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关键策略&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;渐进式部署: 将巨型文档拆分为目录+子文档，按需加载。&lt;/li&gt;
+&lt;li&gt;环境化验证: Agent接测逻辑(截图/操作)+日志系统+隔离环境。&lt;/li&gt;
+&lt;li&gt;自动治理系统: 将资源工程师经验编码为可执行规则(含修复方案)。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3&#34;&gt;3. 关键策略&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;约束机制: 明确能力边界(能做什么/不能做什么)。&lt;/li&gt;
+&lt;li&gt;校验机制: 输出前后的检查流程。&lt;/li&gt;
+&lt;li&gt;恢复机制: 失败后的重试、回滚策略。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.关键洞察&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;能力边界&lt;/strong&gt;: Prompt解决“说清楚”，Context解决“信息对”，Harness解决“持续做对”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;包含关系&lt;/strong&gt;: Harness包含前两者，是更大系统边界的工程化。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;落地关键&lt;/strong&gt;: 模型决定上限，Harness决定能否稳定落地。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;发展趋势&lt;/strong&gt;: AI落地挑战正从“让模型聪明”转向“让模型稳定工作”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6reference&#34;&gt;6.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#6reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1Zk9FBwELs/?spm_id_from=333.1387.favlist.content.click&amp;amp;vd_source=6e9fd89b00bfca79e3a8b49b0bf9ec53&#34;&gt;最近爆火的 Harness Engineering 到底是啥？一期讲透！&lt;/a&gt;&lt;/p&gt;
+&lt;details class=&#34;note&#34;&gt;
+&lt;summary&gt;《最近爆火的 Harness Engineering 到底是啥？一期讲透！》字幕&lt;/summary&gt;
+&lt;p&gt;过去两年呢，AI工程其实经历了三次很明显的中心迁移：从prompt engineering、上下文工程，再到最近的harness engineering。表面上看好像只是换了几个新的名词，但如果你只是把它理解成术语流行式，那就完全低估它们了。&lt;/p&gt;
+&lt;p&gt;那这三个词呢，分别对应了现在AI系统发展的三个阶段性问题：模型有没有听懂你在说什么，模型有没有拿到足够而且正确的信息，模型在真实的执行力能不能持续的做对。你会发现这些问题呢，是一层一层往外扩张的。&lt;/p&gt;
+&lt;p&gt;在大模型刚火起来的时候呢，大家最直观的感受就是：同一个模型，你换一种说法，结果可能差很多。比如你说一句「帮我总结一下这篇文章」，他可能只会给你一个很平的总结；但如果你换一种说法，效果马上就会不一样。所以那个阶段呢，大家都相信一件事情：模型不是不会，而是你没有把问题说明白。于是大家开始疯狂的研究提示词：什么角色设定、风格约束、few-shot的示例分布、引导输出格式，等等等等。&lt;/p&gt;
+&lt;p&gt;那为什么这些东西有效呢？因为大模型本质上是一个对上下文非常敏感的概率生成系统：你给他什么身份，他很容易沿着那个身份去回答；你给他什么样的样例，他很容易沿着那个范式去补全；你强调什么样的约束，它就很容易把那部分当成重点。所以提示词工程的本质不是命令模型，而是塑造一个局部的概率空间。那这个阶段的最重要的能力不是系统的设计，而是语言的设计。&lt;/p&gt;
+&lt;p&gt;但提示词工程很快就遇到了天花板。因为很多任务不是你说清楚就行，而是你真的得知道——比如你让模型分析一份公司的内部文档，回答一个产品的最新配置，按照一套非常长的规范去写代码，在多个工具之间完成复杂的任务。这个时候你会发现，提示词写得再漂亮，也替代不了事实本身。所以呢，提示词擅长的是长期任务约束输出、激发模型的已有能力，但是他不擅长凭空弥补缺失的知识、管理大量动态的信息、处理长链路任务里的状态。说白了，提示词解决的是表达的问题，不是信息的问题。于是第二阶段开始了。当大家还只是做聊天机器人的时候呢，提示词的作用很大，因为任务短、链路短、状态少，很多问题确实靠把话说明白就可以解决了。但后来agent开始火了，模型不只是要回答问题，而是要进到真实的环境里面做事情：他要多轮对话，调浏览器，写代码，数据库这些工具，还要在多个步骤之间传递中间结果，还要根据外部的反馈不断修订计划。&lt;/p&gt;
+&lt;p&gt;那这个时候问题就变了：系统面对的已经不是一次回答对不对，而是整条链路的任务能不能跑通。比如如果你不是简单的问一句「帮我总结一下这篇文章」，而是让他做一个更真实的任务啊——比如说，帮我分析这份需求文档，找出潜在风险，结合历史的评审意见给出改进建议，再生成一版发给产品经理的反馈稿——你会发现，这已经完全不是一句提示词就能解决的问题了。他至少要拿到当前的需求文档、历史的评审记录、相关规范、当前目标、已经分析出来中间结论、输出的对象是谁、语气应该怎么调，等等等等。&lt;/p&gt;
+&lt;p&gt;所以context engineering的核心就变成一句话：模型未必是知道的，系统必须在合适的时机把正确的信息送进去。那这里的context呢，也不只是几段背景的资料；在工程的意义上，它代表了所有影响模型当前决策的信息的总和，包括用户的输入、历史对话、检索结果、工具返回、当当前任务的状态、中间产物、系统规则、安全约束，或者其他agent的传过来的结构化的结果。所以你会看到，prompt其实只是context的一部分；也正因为如此呢，推到上下文的供给机制是非常重要的。&lt;/p&gt;
+&lt;p&gt;那说到context engineering呢，我觉得RAG也算是一个比较典型的实践。RAG的价值是很直接的：模型参数里面没有知识，怎么在运行时补进去呢？那做法大家都知道：先检索，再把相关的内容塞到上下文。&lt;/p&gt;
+&lt;p&gt;但是真正成熟的context engineering呢，关注的肯定不只是检索啊，他关注的是整条完整的链路：比如文档怎么切块，结果怎么排序，长文怎么压缩，历史对话什么时候要保留、什么时候要摘要，工具返回要不要全部暴露给模型，多个A证的之间到底传原文摘要还是结构化的字段呢，包括最近很火的agent skills——我觉得本质上也是上下文工程的高级实践。因为它解决了一个特别现实的问题：如果你把十几个不同的工具、工具的说明、所有的参数定义全部一上来就塞个模型，理论上模型会知道的更多，但是实践往往会更糟糕。&lt;/p&gt;
+&lt;p&gt;为什么呢？因为上下文的窗口是非常稀缺的资源，信息一多，注意力就会涣散。所以skill采用的是一个非常典型的思路，叫渐进式披露：不是一开始就把能力全部给模型看，而是只给他看最少量的原信息；等他真正的要触发某些能力的时候，再把那部分的SOP、详细的参考信息、脚本动态的加载进来。&lt;/p&gt;
+&lt;p&gt;那这个思路呢，其实非常重要，因为它告诉我们：上下文的优化不只是给的更多，而是按需给、分层给、在正确的实际给。&lt;/p&gt;
+&lt;p&gt;但是上下文工程其实也不只是终点，因为后来大家又发现了一个更麻烦的问题：就算信息给对了，模型也不一定能稳定的执行的正确。它可能计划做的很好，但是执行跑偏了、掉了工具、但理解错了，返回结果在一个很长的链路里已经慢慢偏航了，但是系统却没有发现。哎，这个时候我们发现啊，提示词和上下文其实主要的解决都在输入词的问题——提示词优化意图的表达，上下文优化的是信息的供给。但是复杂的任务里还有一个更难的问题：当模型开始连续行动的时候，谁来监督它、约束它和纠偏它呢？这个时候第三阶段来了。harness这个词呢，原本的意思是缰绳、马具、约束装置的意思；放到AI系统里面，其实就是在提醒我们一件非常朴素的事情：当模型做从回答问题走向执行任务，系统不只要能够负责信息，还要能够驾驭整个过程。这个就是harness engineering的出发点。&lt;/p&gt;
+&lt;p&gt;如果前两代工程关注的是怎么让模型更会想，那harness更关注的就是怎么让模型别跑偏、跑得稳、出了错还能拉回来。&lt;/p&gt;
+&lt;p&gt;这里呢啊，我用一个比较通俗的例子啊，来解释这三个概念。假设你要派一个新人去完成一次很重要的客户拜访的工作：prompt engineering呢，就是你要告诉他先把任务讲清楚——比如见面先寒暄，再介绍方案，讲完需求，最后确认下一步啊——这个就是prompt，重点是把话说明白。那context engineering是啥呢？你要告诉他把资料要准备齐全啊，比如说这个客户的背景、过往的沟通记录、产品的报价、竞品的情况啊、这次会议的目标，这些都是context，重点是把信息要给对。那如果这个会真的很重要啊，你还会继续做很多事情啊，比如说让他带着checklist去，让他在关键的节点实时汇报，汇后核实纪要和录音啊，如果发现偏差马上纠正，最后按照明确的标准去验收结果。这些啊，就是harness，重点已经不是说清楚和资料齐不齐了，而是有没有一套持续观测、持续纠偏、最终验收结果的机制。&lt;/p&gt;
+&lt;p&gt;所以呢，这三者啊也不是替代的关系，而是包含的关系：prompt是对指令的工程化，context是对输入环境的工程化，harness呢就是对整个运行系统的工程化。它们的边界是一层比一层大的。&lt;/p&gt;
+&lt;p&gt;LangChain的工程师呢，给harness下了一个很典型的定义：agent等于model加harness；那harness呢，就等于agent减model。翻译成人话呢，就是在一个Agent的系统里面，除了模型本身以外，几乎所有能决定它能不能稳定交付的东西，都可以算进harness。&lt;/p&gt;
+&lt;p&gt;那如果拆开来看呢，我自己会把一个成熟的harness engineering分成六层。&lt;/p&gt;
+&lt;p&gt;第一层啊，就是我们重新站在harness的视角去看context。模型能不能稳定发挥，很多时候不仅取决于他聪不聪明，而取决于他看到了什么。所以harness的第一职责，就是让模型能够在正确的信息边界内思考。第一层通常包括三件事情：首先啊，角色的目标和定义——模型要知道自己是谁、任务是什么、成功的标准是什么；第二，信息的裁剪和选择——上下文不是越多越好，而是越相关越好；第三啊，结构化的组织——固定的规则放在哪，当前的任务放在哪儿，任务运行的状态放在哪儿，外部的证据又放在哪儿，最好分层清除。因为信息一旦乱掉呢，模型就很容易漏重点、忘约束，甚至自我污染。&lt;/p&gt;
+&lt;p&gt;第二层，工具系统。没有工具，大模型本质上还是一个文本预测器：会解释，会总结，但他接触不到真实的世界。一旦连上工具呢，模型才可以真正的做事，比如搜网页、读文档、写代码、调API，等等等等。但是harness在这里做的，不是简单的把工具挂上去，而是啊也要解决三个问题：第一，给他什么工具——工具太少能力不够，工具太多模型又会乱用；第二，什么时候该调用工具——本来不需要查的时候别乱查，该查账的时候也别硬答；第三，工具结果怎么重新喂回模型——搜索过来的几十条结果，不应该原封不动的塞回去，而是要提炼、筛选，保持和任务的相关性。&lt;/p&gt;
+&lt;p&gt;第三层，执行编排。那这一层解决的核心问题呢，就是模型下一步该做什么。很多agent的问题呢，不是某一步不会，而是不会把所有的步骤给串起来：它会搜索，也会总结，也会写代码，但整个过程想到哪做到哪儿，最后交付出来一堆半成品。所以一个完整的任务呢，通常需要有这样的轨道：首先理解目标，然后判断信息够不够——不够继续补，基于结果继续分析，然后生成输出，检查输出——不满足要求就重新修正，或者从事。这个时候你会发现，这已经非常接近人在工作了；区别在于人靠经验，代理人靠harness这套环境。&lt;/p&gt;
+&lt;p&gt;第四层，记忆和状态。那没有状态的agent呢，每一轮都会像失忆一样：他不知道自己刚做了啥，也不知道哪些结论已经确认了、哪些问题还没解决。所以harness还必须要管理状态。这里呢，我们要至少让它分清三类东西：首先，当前任务的状态；会话中的中间结果；长期的记忆和用户偏好。这三类呢，如果混在一起，系统会越来越乱；看清楚之后呢，agent的才会像一个稳定的写作者。&lt;/p&gt;
+&lt;p&gt;第五层，评估和观测啊。这个呀，就是很多团队啊最容易忽视的一层：很多系统其实不是生成不出来，而是生成完了之后根本不知道自己做的好不好。那如果没有独立的评估和观测的能力，agent就会长期停留在自我感觉良好的状态。这一层呢，通常包括输出和验收、环境的验证、自动的测试、日志和指标、错误的归因，等等等等。也就是说呢，系统不仅是要会做，还要知道自己有没有真的能够做对。&lt;/p&gt;
+&lt;p&gt;第六层，约束、校验、失败和恢复。那最后一层呢，往往才是真正决定这个系统能不能上线的关键环节。因为在真实的环境里面，失败不是例外，而是常态：可能搜索不准，可能是API超时，也可能文档格式混乱，或者模型误解了任务。那如果没有恢复的机制呢，agent每次出错就只能从头再来。所以一个成熟的harness，一定要包括三件事情：约束啊——哪些能做、哪些不能做；校验啊——比如输出之前、输出之后要怎么检查；恢复——失败之后怎么从事、切入镜、回滚到稳定的状态。&lt;/p&gt;
+&lt;p&gt;转过来呢，我们来看最有参考价值的部分啊：一线公司的真实实践。因为harness这个词最近之所以突然火起来呢，不是大家在空谈这个方法论，而是很多公司都已经把它做进了产品和工程体系里面了啊。比如LangChain在底层模型完全不变的情况下，只通过改造和迭代安全带，就把他自家的智能体验从一个榜单上的排名直接从30开外杀到了前五。OpenAI呢，依靠一个只有几名人类工程师的团队，用agent从零构建了一个超百万行代码的生产及应用，百分之百的代码都是由agent编写的，耗时呢只有纯人工开发的1/10。那Anthropic呢，也构建了一个可以完全自主编码的系统：只凭一句自然语言的需求，就能在无需人类干预的情况下连续运行几个小时，最后做出完整的游戏、完整的数字音频工作站。&lt;/p&gt;
+&lt;p&gt;那我们先看看Anthropic的实践啊。首先啊，他们在长城自主的任务上总结了两个特别典型的问题。那第一个问题啊，我自己把它翻译成上下文交易，时间一长，上下文越来越满，模型就是模型就开始丢细节、丢重点；甚至呢还会出现一种很有意思的现象——他好像知道自己快装不下了，于是开始着急的去收尾。很多系统面对这种问题呢，都会做context complication，也就是啊把前面的历史上下文压缩一下再继续跑。但Anthropic发现呢，对于一些模型来说，这还是不够的，因为压缩只是变短了，不代表那种负担感真的消失了。所以他们做了一件更激进的事情，叫context reset：不是在原上下文里面继续压，而是换了一个非常干净的新的agent，把工作交接给他。那这个思路很像什么呢？特别像工程里面遇到内存泄漏之后，不是继续清缓存，而是直接重启整个进程再恢复状态。这个其实就是一种非常典型的harness设计。&lt;/p&gt;
+&lt;p&gt;那Anthropic解决的第二个问题呢，就是自评失真的问题。首先模型自己干活啊，再让他自己给自己打分，往往会是会偏乐观的；那尤其是在设计体验、产品完整度这一类没有标准答案的问题上，偏差是更明显的。所以他们采用了一个非常关键的思路啊：把干活的人和验收的人分开。他们是这样拆分的啊：planner负责把模糊的需求扩展成完整的规格，generator负责逐步的去实现，那evaluator呢负责像QA一样去真实的测试。更关键的是，这个evaluator他不只是会看代码，而是会真实的操作页面、看具体的交互、检查实际的结果。也就是说啊，这不是一个抽象的审查，它是一个带具体环境的验证。那这个事情非常重要啊，因为它背后是一个很明确的工程原则：生产验收必须分离。只要评估者足够独立，系统就能形成一个真正的有效循环——生成、检查、修复、再检查的这样的一个循环。&lt;/p&gt;
+&lt;p&gt;那OpenAI呢，在这方面给我的感觉是，他们重新定义了工程师在agent的时代的工作。他们做了一个非常有意思的思路啊：人类在这个环境里面不需要写一行的代码，人类只需要去负责设计环境。具体来说呢，工程师的工作变成了三件事情：首先，把产品目标拆解成agent能理解的小任务；那agent失败的时候呢，不是让他更努力一点，而是问环境里面缺了什么能力；最后，建立反馈的链路，让agent真正的能够看到自己的工作结果。那这句话我是非常认同的：当agent的出了问题的时候，修复方案几乎从来不是要更努力一点，而是确定他缺了什么样的结构性的能力。这个其实也是典型的harness思维。&lt;/p&gt;
+&lt;p&gt;OpenAI还有一个特别典型的事件啊，也是渐进式披露。他们早期呢犯过一个很多团队都会犯的错误：写了一个巨大的agent.md，把所有的规范、框架、约定全部塞进去了。结果呢，agent的更糊涂了，因为上下文窗口是一个稀缺的资源，塞的太满，其实等于什么都没说。那后来他们怎么改的呢？把agent.md变成一个目录页啊：页面只保留核心的索引，更详细的内容呢查到架构文档、设计文档、执行计划、质量评分、安全规则这些具体到子文档里面去了。那agent的先看目录，需要的时候再钻进去。那这个时候我们会发现啊，这个和我们前面说的skills本质上是一个思路：不是一次性全给，而是按需暴露。还有个实践啊，就是OpenAI不只是让agent的写代码，还会让agent呢看见整个应用。因为产业速度一旦上来呢，瓶颈其实就不再是血而是验了；那人类呢，根本是验不过来的，所以他们让agent自己去验。怎么验呢？首先接浏览器能截图，点页面能模拟用户的真实操作；然后去给agent接日志系统和指标系统，让他能够查log、查监控；最后每个任务都独立隔离的环境在跑，互不影响。结果呢，就是agent不再是写完代码就说是写完了，而是真正的可以跑起来看结果，发现bug、修bug、再验证。这个呢，其实就是harness里非常完整的一套攻击系统：执行编排、评估和观测、约束和恢复。&lt;/p&gt;
+&lt;p&gt;那还有一点需要注意的是呢，OpenAI不止会靠人类在最后的code review环节去兜底质量，因为agent的提交速度太快了，人类是盯不过来的。所以他们把很多资深工程师的经验直接写成了系统规则：比如模块怎么分层，哪一层不能依赖哪一层，什么情况下必须拦截，发现问题之后应该怎么修。重点呢，是这些规则不只是负责报错，而是会把怎么修也一起反馈给agent的，进入下一轮的上下文。那你会发现呢，这已经不是传统意义上的代码规范了，而是一套可持续运行的自动治理系统。这个呢，也是harness的典型形态啊。&lt;/p&gt;
+&lt;p&gt;最后呢，我们说一下啊。首先，prompt engineering呢，解决的是怎么把任务讲清楚；context engineering呢，解决的是怎么把信息都给对；那harness engineering呢，解决的是怎么让模型在真实的执行中持续作对。所以harness不是在取代prompt，也不是在取代context，它是在更大的系统边界上把前两者都包含进来。当任务还是简单的单轮生成的时候，prompt是很重要的；那当任务开始依赖外部知识、去运行信息的时候呢，context就很关键了；当模型真的进入了长链路、可执行、低容错的真实场景里面，harness几乎就是不可避免的。这也是为什么同样的模型在不同的产品里面表现差距会这么大：因为真正决定上限的可能是模型，但是真正决定能不能落地、能不能稳定交付的就是harness。&lt;/p&gt;
+&lt;p&gt;那到了这个阶段呢，我们也看清了一个现实：AI落地的核心挑战，正在从让模型看起来更聪明，转向让模型在真实世界里稳定的工作。如果你最近也在做agent，我觉得这件事情非常值得你趁早想明白。&lt;/p&gt;
+&lt;/details&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/harness-engineering/</link>
       <pubDate>Fri, 03 Apr 2026 21:52:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -4017,12 +4216,16 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       <description>&lt;h1 id=&#34;moe&#34;&gt;MoE&lt;a class=&#34;headerlink&#34; href=&#34;#moe&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 33 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/1940075819864154660&#34;&gt;重读经典MoE】Adaptive Mixtures of Local Experts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2006.16668&#34;&gt;GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2101.03961&#34;&gt;Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/moe/</link>
       <pubDate>Fri, 03 Apr 2026 21:52:07 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -4172,12 +4375,15 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       <description>&lt;h1 id=&#34;blip&#34;&gt;BLIP&lt;a class=&#34;headerlink&#34; href=&#34;#blip&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 23 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2201.12086&#34;&gt;BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2301.12597&#34;&gt;BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/mllm/blip/</link>
       <pubDate>Tue, 03 Mar 2026 15:00:28 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -4194,12 +4400,14 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       <description>&lt;h1 id=&#34;clip&#34;&gt;CLIP&lt;a class=&#34;headerlink&#34; href=&#34;#clip&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 9 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2103.00020&#34;&gt;Learning Transferable Visual Models From Natural Language Supervision&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/mllm/clip/</link>
       <pubDate>Tue, 03 Mar 2026 15:00:28 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -4216,12 +4424,14 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       <description>&lt;h1 id=&#34;vit&#34;&gt;ViT&lt;a class=&#34;headerlink&#34; href=&#34;#vit&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 13 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2010.11929&#34;&gt;An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/mllm/vit/</link>
       <pubDate>Tue, 03 Mar 2026 15:00:28 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -5488,8 +5698,7 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;/span&gt;&lt;span id=&#34;__span-0-11&#34;&gt;&lt;a id=&#34;__codelineno-0-11&#34; name=&#34;__codelineno-0-11&#34; href=&#34;#__codelineno-0-11&#34;&gt;&lt;/a&gt;&lt;span class=&#34;c1&#34;&gt;# /superpowers:write-plan - Create implementation plan&lt;/span&gt;
 &lt;/span&gt;&lt;span id=&#34;__span-0-12&#34;&gt;&lt;a id=&#34;__codelineno-0-12&#34; name=&#34;__codelineno-0-12&#34; href=&#34;#__codelineno-0-12&#34;&gt;&lt;/a&gt;&lt;span class=&#34;c1&#34;&gt;# /superpowers:execute-plan - Execute plan in batches&lt;/span&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Codex/OpenCode 安装&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;加载对应平台的远程安装指南，复用核心技能逻辑。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Codex/OpenCode 安装&lt;/strong&gt;：加载对应平台的远程安装指南，复用核心技能逻辑。&lt;/p&gt;
 &lt;h2 id=&#34;6&#34;&gt;6.总结&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Superpowers 本质是编码代理的开发流程操作系统（Development Process OS for Coding Agents），通过标准化技能和工作流，让代理能够像专业工程师一样遵循规范完成开发，大幅提升编码代理的输出质量和开发效率。&lt;/p&gt;
 &lt;h2 id=&#34;7reference&#34;&gt;7.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#7reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
@@ -5762,7 +5971,7 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;p&gt;过度隔离 → 降低缓存与推理效率&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;👉 “上下文工程是一门艺术，需要在相互冲突的目标中找到平衡。”&lt;/p&gt;
+&lt;p&gt;上下文工程是一门艺术，需要在相互冲突的目标中找到平衡。&lt;/p&gt;
 &lt;h3 id=&#34;36&#34;&gt;3.6 避免上下文过度工程&lt;a class=&#34;headerlink&#34; href=&#34;#36&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“最重要的经验：少做加法，多做理解。”&lt;/p&gt;
@@ -5834,9 +6043,9 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;p&gt;底层大模型是Agent能力的瓶颈，当上述步骤都解决后，Agent的上限来自于底层大模型的能力。&lt;/p&gt;
 &lt;h2 id=&#34;9&#34;&gt;9.框架选择&lt;a class=&#34;headerlink&#34; href=&#34;#9&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;框架只是工具，不是必需，Langchain，CrewAI等常常使底层prompt和响应变得不透明，增加调试难度。重点在于前面的工程思路。&lt;/p&gt;
-&lt;h2 id=&#34;_1&#34;&gt;总结&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;10&#34;&gt;10.总结&lt;a class=&#34;headerlink&#34; href=&#34;#10&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Agent与Agent之间的巨大差距，根源不在谁调的接口不同，而在接口之外的工程做得天差地别。 调接口是入门门槛，一周就能跨过去。但从Demo到产品，中间隔着的是一整套关于可靠性、可观测性、上下文管理和错误恢复的系统工程。这才是Agent开发真正难的地方。&lt;/p&gt;
-&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;a class=&#34;headerlink&#34; href=&#34;#reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;11reference&#34;&gt;11.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#11reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/2002427334347728106/answer/2004469833736135416&#34;&gt;agent与agent之间的差距很大，但agent开发不就是调接口吗？agent开发的难点是什么呢？&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/agent/agent-dev-problem/</link>
       <pubDate>Wed, 11 Feb 2026 14:58:47 +0000</pubDate>
@@ -6194,7 +6403,7 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       <description>&lt;h1 id=&#34;agent&#34;&gt;Agent框架&lt;a class=&#34;headerlink&#34; href=&#34;#agent&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1440 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 4 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1423 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 4 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
@@ -6631,10 +6840,10 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;p&gt;&lt;strong&gt;快速原型&lt;/strong&gt;：LangChain、AutoGPT&lt;/p&gt;
 &lt;h2 id=&#34;13&#34;&gt;13.参考资料&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;131&#34;&gt;13.1 综合对比文章&lt;a class=&#34;headerlink&#34; href=&#34;#131&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://o-mega.ai/articles/langgraph-vs-crewai-vs-autogen-top-10-agent-frameworks-2026&#34;&gt;LangGraph vs CrewAI vs AutoGen: Top 10 AI Agent Frameworks&lt;/a&gt; - O-Mega.ai, 2026&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.datacamp.com/tutorial/crewai-vs-langgraph-vs-autogen&#34;&gt;CrewAI vs LangGraph vs AutoGen&lt;/a&gt; - DataCamp Tutorial, 2025&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.capsolver.com/blog/AI/top-9-ai-agent-frameworks-in-2026&#34;&gt;Top 9 AI Agent Frameworks in 2026&lt;/a&gt; - Capsolver, 2026&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/2401_84204413/article/details/157221804&#34;&gt;11个顶级AI Agent框架对比&lt;/a&gt; - CSDN, 2026&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://o-mega.ai/articles/langgraph-vs-crewai-vs-autogen-top-10-agent-frameworks-2026&#34;&gt;LangGraph vs CrewAI vs AutoGen: Top 10 AI Agent Frameworks&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.datacamp.com/tutorial/crewai-vs-langgraph-vs-autogen&#34;&gt;CrewAI vs LangGraph vs AutoGen&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.capsolver.com/blog/AI/top-9-ai-agent-frameworks-in-2026&#34;&gt;Top 9 AI Agent Frameworks in 2026&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/2401_84204413/article/details/157221804&#34;&gt;11个顶级AI Agent框架对比&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;132&#34;&gt;13.2 框架官方资源&lt;a class=&#34;headerlink&#34; href=&#34;#132&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://python.langchain.com/&#34;&gt;LangChain Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://docs.llamaindex.ai/&#34;&gt;LlamaIndex Documentation&lt;/a&gt;&lt;/p&gt;
@@ -6645,10 +6854,10 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;p&gt;&lt;a href=&#34;https://docs.agpt.co/&#34;&gt;AutoGPT Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/FoundationAgents/MetaGPT&#34;&gt;MetaGPT GitHub&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;133&#34;&gt;13.3 深度教程&lt;a class=&#34;headerlink&#34; href=&#34;#133&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/m0_57545130/article/details/157131532&#34;&gt;2026年AI Agent学习计划&lt;/a&gt; - CSDN, 2026&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.datacamp.com/tutorial/autogpt-guide&#34;&gt;AutoGPT Guide: Creating And Deploying Autonomous AI&lt;/a&gt; - DataCamp, 2025&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.ibm.com/think/tutorials/multi-agent-prd-ai-automation-metagpt-ollama-deepseek&#34;&gt;Multi-agent PRD automation with MetaGPT&lt;/a&gt; - IBM Tutorial&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://medium.com/autonomous-ai-journal/agentic-ai-in-2026-a-practical-roadmap-from-beginner-to-production-ready-systems-2f67f063913d&#34;&gt;Agentic AI in 2026: A Practical Roadmap&lt;/a&gt; - Medium, 2026&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/m0_57545130/article/details/157131532&#34;&gt;2026年AI Agent学习计划&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.datacamp.com/tutorial/autogpt-guide&#34;&gt;AutoGPT Guide: Creating And Deploying Autonomous AI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ibm.com/think/tutorials/multi-agent-prd-ai-automation-metagpt-ollama-deepseek&#34;&gt;Multi-agent PRD automation with MetaGPT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/autonomous-ai-journal/agentic-ai-in-2026-a-practical-roadmap-from-beginner-to-production-ready-systems-2f67f063913d&#34;&gt;Agentic AI in 2026: A Practical Roadmap&lt;/a&gt;&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/agent/agent-framework/</link>
       <pubDate>Tue, 10 Feb 2026 14:58:44 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -7273,14 +7482,14 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       
       <description>&lt;h1 id=&#34;llm&#34;&gt;LLM&lt;a class=&#34;headerlink&#34; href=&#34;#llm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 16 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 9 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;p&gt;大语言模型的力量！入门必须要看&lt;a href=&#34;https://github.com/mlabonne/llm-course&#34;&gt;llm-course&lt;/a&gt;！&lt;/p&gt;</description>
+&lt;p&gt;大语言模型的力量！&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/</link>
       <pubDate>Sat, 07 Feb 2026 10:23:26 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -8281,7 +8490,7 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;7&#34;&gt;7.总结&lt;a class=&#34;headerlink&#34; href=&#34;#7&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;GraphRAG 通过引入知识图谱和社区检测，解决了传统 RAG 在全局理解和关系推理方面的核心短板。其&#34;索引时生成摘要&#34;的设计理念和&#34;局部-全局&#34;双搜索模式，为复杂文档分析提供了全新的范式。然而，高昂的索引成本和抽取质量的不确定性仍是实际落地中需要权衡的关键因素。&lt;/p&gt;
-&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;a class=&#34;headerlink&#34; href=&#34;#reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;8reference&#34;&gt;8.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#8reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/microsoft/graphrag&#34;&gt;Microsoft GraphRAG&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2404.16130&#34;&gt;GraphRAG: From Local to Global at Scale (论文)&lt;/a&gt;&lt;/li&gt;
@@ -8642,7 +8851,7 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
 &lt;p&gt;&lt;strong&gt;持续优化&lt;/strong&gt;：根据指标反馈迭代改进&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;a class=&#34;headerlink&#34; href=&#34;#reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;10reference&#34;&gt;10.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#10reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://1shuangjiang1.github.io/p/rag-%E6%A8%A1%E5%9E%8B%E6%95%88%E6%9E%9C%E8%AF%84%E4%BC%B0/&#34;&gt;RAG 模型效果评估&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/1892529470419736435&#34;&gt;2025年必备的RAG评估框架与工具详解&lt;/a&gt;&lt;/li&gt;
@@ -9173,7 +9382,7 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr /&gt;
-&lt;h2 id=&#34;_1&#34;&gt;参考文献&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.参考文献&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Fan, A., Grave, E., Joulin, A. &lt;em&gt;Reducing Transformer Depth on Demand with Structured Dropout.&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/1909.11556&#34;&gt;arXiv:1909.11556&lt;/a&gt;  &lt;/li&gt;
 &lt;li&gt;Sajjad, H., Dalvi, F., Durrani, N., Nakov, P. &lt;em&gt;Poor Man’s BERT: Smaller and Faster Transformer Models.&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/2004.03844&#34;&gt;arXiv:2004.03844&lt;/a&gt;  &lt;/li&gt;
@@ -9220,7 +9429,7 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
       
       <description>&lt;h1 id=&#34;sandbox&#34;&gt;Sandbox&lt;a class=&#34;headerlink&#34; href=&#34;#sandbox&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 3132 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 1 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 10 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 3135 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 1 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 10 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
@@ -9301,8 +9510,8 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;div class=&#34;admonition note&#34;&gt;
-&lt;p class=&#34;admonition-title&#34;&gt;Deepseek 回答&lt;/p&gt;
+&lt;details class=&#34;note&#34;&gt;
+&lt;summary&gt;Deepseek 回答何为Sandbox&lt;/summary&gt;
 &lt;p&gt;Sandbox技术为AI Agent（智能体）带来了安全性、可控性和可扩展性的革命性提升，使其从理论概念走向实际应用。下面我将从核心价值和技术原理两方面详细解释。&lt;/p&gt;
 &lt;p&gt;一、核心价值&lt;/p&gt;
 &lt;p&gt;我们可以把Sandbox想象成一个为Agent准备的、高度仿真的“数字训练营”或“安全操作间”。&lt;/p&gt;
@@ -9389,7 +9598,7 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;结论：Sandbox技术通过操作系统级别的隔离和限制机制，为AI Agent提供了一个安全、可控、可复现的物理世界“模拟器”，是其从对话原型走向生产力工具不可或缺的底层支撑。随着Agent能力的复杂化，沙箱技术也向着更轻量、更安全、更易管理的方向持续演进。&lt;/p&gt;
-&lt;/div&gt;
+&lt;/details&gt;
 &lt;h2 id=&#34;3reference&#34;&gt;3.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#3reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/1920437545877091174&#34;&gt;为什么Agent Sandbox会成为下一代AI应用的基石？&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://manus.im/zh-cn/blog/manus-sandbox&#34;&gt;Manus Sandbox&lt;/a&gt;&lt;/p&gt;
@@ -9691,7 +9900,7 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
       
       <description>&lt;h1 id=&#34;mcp&#34;&gt;MCP&lt;a class=&#34;headerlink&#34; href=&#34;#mcp&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1165 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 3 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 4 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1185 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 3 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 4 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
@@ -9788,6 +9997,8 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;6&#34;&gt;6.如何使用&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://modelcontextprotocol.io/docs/develop/connect-local-servers&#34;&gt;For Claude Desktop Users&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/Sz2hzXiNCyf1YNzPbeUo5Q&#34;&gt;Anthropic 最新博客：MCP 没死，它又来了&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://claude.com/blog/building-agents-that-reach-production-systems-with-mcp&#34;&gt;Building agents that reach production systems with MCP&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;7reference&#34;&gt;7.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#7reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.anthropic.com/news/model-context-protocol&#34;&gt;Introducing the Model Context Protocol&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/29001189476&#34;&gt;MCP (Model Context Protocol)，一篇就够了&lt;/a&gt;&lt;/p&gt;</description>
@@ -10725,15 +10936,15 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
       
       <description>&lt;h1 id=&#34;ai-time&#34;&gt;AI Time&lt;a class=&#34;headerlink&#34; href=&#34;#ai-time&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 368 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 375 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
-&lt;p&gt;如果说从2000年开始互联网领域开始爆发，那么从2022年开始就是AI大模型领域的爆发，约莫20年的变革足以改变行业内的版图。计算机科学的历史其实并不长，但是发展的速度越来越快。早期从机器学习到深度学习，训练方式还处于数据集的特征处理和信息抽取，未能发现隐藏机制和深层信息，自然语言处理还在传统的word2vec，计算机视觉还是ResNet的天下，2017年的一篇《Attention is All You Need》轰动全球，OpenAI推出的GPT系列更是改变了传统计算机与软件工程的发展方向。如今从以年为单位工程迭代（Prompt Engineering -&amp;gt; Context Engineering -&amp;gt; Harness Engineering），到以月为单位的模型迭代（26年一季度各家公司已经推出若干旗舰模型），到以周为单位的产品迭代（产品设计方案和产品原型层出不穷，个人智能体兴起，AGI加速演进），不少人直言“只要学的慢什么都不用学”。&lt;/p&gt;
-&lt;p&gt;AI时代到底学什么？怎么学？我正在逐步探索这个问题。这个板块包含AI模型基座到AI应用，是我的AI知识库。所有文章内容除个人思考总结、各种渠道摘录外，还包括AI工具生成内容，请仔细甄别。&lt;/p&gt;</description>
+&lt;p&gt;如果说从2000年开始互联网领域开始爆发，那么从2022年开始就是AI大模型领域的爆发，约莫20年的变革足以改变行业内的版图。计算机科学的历史其实并不长，但是发展的速度越来越快。早期从机器学习到深度学习，训练方式还处于数据集的特征处理和信息抽取，未能发现隐藏机制和深层信息，自然语言处理还在传统的word2vec，计算机视觉还是ImageNet的天下，2017年的一篇《Attention is All You Need》轰动全球，OpenAI推出的GPT系列更是改变了传统计算机与软件工程的发展方向。如今从以年为单位工程迭代（Prompt Engineering -&amp;gt; Context Engineering -&amp;gt; Harness Engineering），到以月为单位的模型迭代（26年一季度各家公司已经推出若干旗舰模型），到以周为单位的产品迭代（产品设计方案和产品原型层出不穷，个人智能体兴起，AGI加速演进），不少人直言“只要学的慢什么都不用学”。&lt;/p&gt;
+&lt;p&gt;AI时代到底学什么？怎么学？我正在逐步探索这个问题。入门必须要看&lt;a href=&#34;https://github.com/mlabonne/llm-course&#34;&gt;llm-course&lt;/a&gt;！这个板块包含AI模型基座到AI应用，是我的AI知识库。所有文章内容除个人思考总结、各种渠道摘录外，还包括AI工具生成内容，请仔细甄别。&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/ai/</link>
       <pubDate>Wed, 28 Jan 2026 14:20:06 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
