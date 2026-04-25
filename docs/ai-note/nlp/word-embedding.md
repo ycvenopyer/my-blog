@@ -8,8 +8,10 @@
 
 ## 2.GloVe
 
-## 3.CoVe
+## 3.FastText
 
-## 4.BiLM
+## 4.CoVe
 
-## 5.ELMo
+## 5.BiLM
+
+## 6.ELMo

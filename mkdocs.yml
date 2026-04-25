@@ -28,6 +28,12 @@ nav:
       - Semi-Supervised Learning: ai-note/ml/semi-supervised-learning.md
       - Probabilistic Graphical Model: ai-note/ml/probabilistic-graphical-model.md
       - Reinforcement Learning: ai-note/ml/reinforcement-learning.md
+    - DL:
+      - Overview: ai-note/dl/index.md
+      - CNN: ai-note/dl/cnn.md
+      - ResNet: ai-note/dl/resnet.md
+      - VAE: ai-note/dl/vae.md
+      - GAN: ai-note/dl/gan.md
     - NLP:
       - Overview: ai-note/nlp/index.md
       - Text Preprocess: ai-note/nlp/text-preprocess.md
@@ -39,9 +45,6 @@ nav:
       - Information Extraction: ai-note/nlp/information-extraction.md
       - Machine Translation: ai-note/nlp/machine-translation.md
       - Sentiment Analysis: ai-note/nlp/sentiment-analysis.md
-    - CV:
-      - Overview: ai-note/cv/index.md
-      - CNN: ai-note/cv/cnn.md
     - LLM:
       - Overview: ai-note/llm/index.md
       - Tokenization: ai-note/llm/tokenization.md
@@ -51,7 +54,7 @@ nav:
       - MoE: ai-note/llm/moe.md
       - LLaMA: ai-note/llm/llama.md
       - Mamba: ai-note/llm/mamba.md
-      - Retnet: ai-note/llm/retnet.md
+      - RetNet: ai-note/llm/retnet.md
       - RWKV: ai-note/llm/rwkv.md
       - Griffin: ai-note/llm/griffin.md
       - Gemini 1.5 Technical Report: ai-note/llm/gemini-1.5-technical-report.md
@@ -103,7 +106,6 @@ nav:
       - TTA: ai-note/mllm/tta.md
     - AIGC:
       - Overview: ai-note/aigc/index.md
-      - GAN: ai-note/aigc/gan.md
       - Stable Diffusion: ai-note/aigc/stable-diffusion.md
       - Midjourney: ai-note/aigc/midjourney.md
       - DALL-E: ai-note/aigc/dall-e.md
