@@ -9,13 +9,13 @@
         <meta name="author" content="ycvenopyer">
       
       
-        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/ml/cluster/">
+        <link rel="canonical" href="https://ycvenopyer.github.io/my-blog/ai-note/llm/deepseekv4-technical-report/">
       
       
-        <link rel="prev" href="../ensemble-learning/">
+        <link rel="prev" href="../gemini-1.5-technical-report/">
       
       
-        <link rel="next" href="../dimensionality/">
+        <link rel="next" href="../pre-training/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Cluster - ycvenopyer</title>
+        <title>DeepSeekv4 Technical Report - ycvenopyer</title>
       
     
     
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#deepseekv4-technical-report" class="md-skip">
           跳转至
         </a>
       
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cluster
+              DeepSeekv4 Technical Report
             
           </span>
         </div>
@@ -690,8 +690,6 @@
                 
   
   
-    
-  
   
   
     
@@ -702,11 +700,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked="">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2">
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -727,7 +725,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -745,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../ml/" class="md-nav__link">
         
   
   
@@ -773,7 +771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../model-evaluation-and-selection/" class="md-nav__link">
+      <a href="../../ml/model-evaluation-and-selection/" class="md-nav__link">
         
   
   
@@ -801,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linear-model/" class="md-nav__link">
+      <a href="../../ml/linear-model/" class="md-nav__link">
         
   
   
@@ -829,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../decision-tree/" class="md-nav__link">
+      <a href="../../ml/decision-tree/" class="md-nav__link">
         
   
   
@@ -857,7 +855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../neural-network/" class="md-nav__link">
+      <a href="../../ml/neural-network/" class="md-nav__link">
         
   
   
@@ -885,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../svm/" class="md-nav__link">
+      <a href="../../ml/svm/" class="md-nav__link">
         
   
   
@@ -913,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bayesian-classifier/" class="md-nav__link">
+      <a href="../../ml/bayesian-classifier/" class="md-nav__link">
         
   
   
@@ -941,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ensemble-learning/" class="md-nav__link">
+      <a href="../../ml/ensemble-learning/" class="md-nav__link">
         
   
   
@@ -966,37 +964,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Cluster
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ml/cluster/" class="md-nav__link">
         
   
   
@@ -1012,165 +983,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.聚类任务
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.性能度量
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.距离计算
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.原型聚类
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4.原型聚类">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#41-k-means" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.1 K-Means
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#42-lvq" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.2 学习向量量化（LVQ）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#43-gmm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.3 高斯混合聚类（GMM）
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.密度聚类
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.密度聚类">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-dbscan" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.1 DBSCAN
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.层次聚类
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6.层次聚类">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#61-agnes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.1 AGNES
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1183,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dimensionality/" class="md-nav__link">
+      <a href="../../ml/dimensionality/" class="md-nav__link">
         
   
   
@@ -1211,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../feature-selection-and-sparsity-learning/" class="md-nav__link">
+      <a href="../../ml/feature-selection-and-sparsity-learning/" class="md-nav__link">
         
   
   
@@ -1239,7 +1051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../semi-supervised-learning/" class="md-nav__link">
+      <a href="../../ml/semi-supervised-learning/" class="md-nav__link">
         
   
   
@@ -1267,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../probabilistic-graphical-model/" class="md-nav__link">
+      <a href="../../ml/probabilistic-graphical-model/" class="md-nav__link">
         
   
   
@@ -1295,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reinforcement-learning/" class="md-nav__link">
+      <a href="../../ml/reinforcement-learning/" class="md-nav__link">
         
   
   
@@ -1864,6 +1676,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1874,11 +1688,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked="">
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -1899,7 +1713,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1917,7 +1731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1945,7 +1759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/tokenization/" class="md-nav__link">
+      <a href="../tokenization/" class="md-nav__link">
         
   
   
@@ -1973,7 +1787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/transformer/" class="md-nav__link">
+      <a href="../transformer/" class="md-nav__link">
         
   
   
@@ -2001,7 +1815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/sampling-techniques/" class="md-nav__link">
+      <a href="../sampling-techniques/" class="md-nav__link">
         
   
   
@@ -2029,7 +1843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/structure/" class="md-nav__link">
+      <a href="../structure/" class="md-nav__link">
         
   
   
@@ -2057,7 +1871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/moe/" class="md-nav__link">
+      <a href="../moe/" class="md-nav__link">
         
   
   
@@ -2085,7 +1899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/llama/" class="md-nav__link">
+      <a href="../llama/" class="md-nav__link">
         
   
   
@@ -2113,7 +1927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/mamba/" class="md-nav__link">
+      <a href="../mamba/" class="md-nav__link">
         
   
   
@@ -2141,7 +1955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/retnet/" class="md-nav__link">
+      <a href="../retnet/" class="md-nav__link">
         
   
   
@@ -2169,7 +1983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/rwkv/" class="md-nav__link">
+      <a href="../rwkv/" class="md-nav__link">
         
   
   
@@ -2197,7 +2011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/griffin/" class="md-nav__link">
+      <a href="../griffin/" class="md-nav__link">
         
   
   
@@ -2225,7 +2039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/gemini-1.5-technical-report/" class="md-nav__link">
+      <a href="../gemini-1.5-technical-report/" class="md-nav__link">
         
   
   
@@ -2250,10 +2064,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../llm/deepseekv4-technical-report/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2269,6 +2092,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -2281,7 +2105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/pre-training/" class="md-nav__link">
+      <a href="../pre-training/" class="md-nav__link">
         
   
   
@@ -2309,7 +2133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/fine-tuning/" class="md-nav__link">
+      <a href="../fine-tuning/" class="md-nav__link">
         
   
   
@@ -2337,7 +2161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/alignment/" class="md-nav__link">
+      <a href="../alignment/" class="md-nav__link">
         
   
   
@@ -2365,7 +2189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/opd/" class="md-nav__link">
+      <a href="../opd/" class="md-nav__link">
         
   
   
@@ -2393,7 +2217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/llm-application/" class="md-nav__link">
+      <a href="../llm-application/" class="md-nav__link">
         
   
   
@@ -7591,153 +7415,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.聚类任务
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.性能度量
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.距离计算
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.原型聚类
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4.原型聚类">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#41-k-means" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.1 K-Means
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#42-lvq" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.2 学习向量量化（LVQ）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#43-gmm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.3 高斯混合聚类（GMM）
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.密度聚类
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5.密度聚类">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-dbscan" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.1 DBSCAN
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.层次聚类
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6.层次聚类">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#61-agnes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6.1 AGNES
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -7800,7 +7477,7 @@
         <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
-    ML
+    LLM
   </span>
 
         </a>
@@ -7823,43 +7500,14 @@
   
 
 
-<h1 id="_1">聚类<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+<h1 id="deepseekv4-technical-report">DeepSeekv4 Technical Report<a class="headerlink" href="#deepseekv4-technical-report" title="Permanent link">¶</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 152 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间不到 1 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 3 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间不到 1 分钟</p>
 </div>
 <aside class="md-pageviews md-pageviews--after-stats" aria-label="页面阅读量">
   <span class="md-pageviews__text">阅读量</span>
   <span id="busuanzi_value_page_pv" class="md-pageviews__value">—</span>
 </aside>
-
-<h2 id="1">1.聚类任务<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
-<h2 id="2">2.性能度量<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
-<p>也叫聚类有效性指标</p>
-<p>聚类目的：簇内相似度高且簇间相似度低</p>
-<p>分为内部指标和外部指标</p>
-<p>外部指标：Jaccard系数，FM指数，Rand指数</p>
-<p>内部指标：DB指数，Dunn指数</p>
-<p>还有F值，互信息，平均廓宽等</p>
-<h2 id="3">3.距离计算<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
-<p>闵可夫斯基距离</p>
-<p>曼哈顿距离</p>
-<p>内积距离</p>
-<p>余弦距离</p>
-<p>VDM</p>
-<p>MinkovDM</p>
-<p>非度量距离</p>
-<h2 id="4">4.原型聚类<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
-<h3 id="41-k-means">4.1 K-Means<a class="headerlink" href="#41-k-means" title="Permanent link">¶</a></h3>
-<h3 id="42-lvq">4.2 学习向量量化（LVQ）<a class="headerlink" href="#42-lvq" title="Permanent link">¶</a></h3>
-<h3 id="43-gmm">4.3 高斯混合聚类（GMM）<a class="headerlink" href="#43-gmm" title="Permanent link">¶</a></h3>
-<h2 id="5">5.密度聚类<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
-<h3 id="51-dbscan">5.1 DBSCAN<a class="headerlink" href="#51-dbscan" title="Permanent link">¶</a></h3>
-<p>OPTICS、DENCLUE</p>
-<h2 id="6">6.层次聚类<a class="headerlink" href="#6" title="Permanent link">¶</a></h2>
-<h3 id="61-agnes">6.1 AGNES<a class="headerlink" href="#61-agnes" title="Permanent link">¶</a></h3>
-<p>DIANA</p>
-<p>BIRCH</p>
-<p>ROCK</p>
 
 
 
@@ -7872,12 +7520,12 @@
 <footer class="md-article-dates" aria-label="文章时间信息">
   <span class="md-article-dates__item" title="最后修改">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-04-25 11:46:35">2026年4月25日 11:46:35</time>
+    <time class="md-article-dates__time" datetime="2026-04-25 21:50:13">2026年4月25日 21:50:13</time>
   </span>
   
   <span class="md-article-dates__item" title="首次创作">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-04-23 23:54:07">2026年4月23日 23:54:07</time>
+    <time class="md-article-dates__time" datetime="2026-04-25 21:50:13">2026年4月25日 21:50:13</time>
   </span>
   
 </footer>
