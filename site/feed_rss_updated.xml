@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Fri, 24 Apr 2026 10:19:23 -0000</pubDate>
-    <lastBuildDate>Fri, 24 Apr 2026 10:19:23 -0000</lastBuildDate>
+    <pubDate>Sat, 25 Apr 2026 04:00:59 -0000</pubDate>
+    <lastBuildDate>Sat, 25 Apr 2026 04:00:59 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,700 @@
     
 
     
+    
+    <item>
+      <title>Overview</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;deep-learning&#34;&gt;Deep Learning&lt;a class=&#34;headerlink&#34; href=&#34;#deep-learning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/dl/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/dl/</guid>
+      
+    </item>
+    
+    <item>
+      <title>CNN</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;cnn&#34;&gt;CNN&lt;a class=&#34;headerlink&#34; href=&#34;#cnn&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/dl/cnn/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/dl/cnn/</guid>
+      
+    </item>
+    
+    <item>
+      <title>GAN</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;gan&#34;&gt;GAN&lt;a class=&#34;headerlink&#34; href=&#34;#gan&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 7 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;生成对抗网络&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/dl/gan/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/dl/gan/</guid>
+      
+    </item>
+    
+    <item>
+      <title>ResNet</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;resnet&#34;&gt;ResNet&lt;a class=&#34;headerlink&#34; href=&#34;#resnet&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 13 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1512.03385&#34;&gt;ResNet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/159162779&#34;&gt;ResNet-论文全文完整翻译+注解&lt;/a&gt;&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/dl/resnet/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/dl/resnet/</guid>
+      
+    </item>
+    
+    <item>
+      <title>VAE</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;vae&#34;&gt;VAE&lt;a class=&#34;headerlink&#34; href=&#34;#vae&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 3 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1ae&#34;&gt;1.AE&lt;a class=&#34;headerlink&#34; href=&#34;#1ae&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2vae&#34;&gt;2.VAE&lt;a class=&#34;headerlink&#34; href=&#34;#2vae&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/dl/vae/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/dl/vae/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Bayesian Classifier</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;贝叶斯分类器&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 193 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1.贝叶斯决策论&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;判别式模型与生成式模型&lt;/p&gt;
+&lt;p&gt;贝叶斯定理&lt;/p&gt;
+&lt;h2 id=&#34;2mle&#34;&gt;2.极大似然估计（MLE）&lt;a class=&#34;headerlink&#34; href=&#34;#2mle&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.朴素贝叶斯分类器&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;属性条件独立性假设&lt;/p&gt;
+&lt;p&gt;拉普拉斯修正&lt;/p&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.半朴素贝叶斯分类器&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;考虑一部分属性见的相互依赖信息&lt;/p&gt;
+&lt;p&gt;独依赖估计（ODE）&lt;/p&gt;
+&lt;p&gt;SPODE&lt;/p&gt;
+&lt;p&gt;TAN&lt;/p&gt;
+&lt;p&gt;AODE&lt;/p&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.贝叶斯网（信念网）&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;借助DAG刻画属性之间的依赖关系，用条件概率表（CRT）来描述属性的联合概率分布。&lt;/p&gt;
+&lt;p&gt;贝叶斯网中三个变量之间的典型依赖关系：同父结构，V型结构，顺序结构。&lt;/p&gt;
+&lt;p&gt;道德图&lt;/p&gt;
+&lt;p&gt;最小描述长度（MDL）&lt;/p&gt;
+&lt;p&gt;AIC评分函数&lt;/p&gt;
+&lt;p&gt;BIC评分函数&lt;/p&gt;
+&lt;p&gt;近似推断：吉布斯采样&lt;/p&gt;
+&lt;h2 id=&#34;6em&#34;&gt;6.EM算法&lt;a class=&#34;headerlink&#34; href=&#34;#6em&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/bayesian-classifier/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/bayesian-classifier/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Cluster</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;聚类&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 152 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1.聚类任务&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.性能度量&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;也叫聚类有效性指标&lt;/p&gt;
+&lt;p&gt;聚类目的：簇内相似度高且簇间相似度低&lt;/p&gt;
+&lt;p&gt;分为内部指标和外部指标&lt;/p&gt;
+&lt;p&gt;外部指标：Jaccard系数，FM指数，Rand指数&lt;/p&gt;
+&lt;p&gt;内部指标：DB指数，Dunn指数&lt;/p&gt;
+&lt;p&gt;还有F值，互信息，平均廓宽等&lt;/p&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.距离计算&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;闵可夫斯基距离&lt;/p&gt;
+&lt;p&gt;曼哈顿距离&lt;/p&gt;
+&lt;p&gt;内积距离&lt;/p&gt;
+&lt;p&gt;余弦距离&lt;/p&gt;
+&lt;p&gt;VDM&lt;/p&gt;
+&lt;p&gt;MinkovDM&lt;/p&gt;
+&lt;p&gt;非度量距离&lt;/p&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.原型聚类&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;41-k-means&#34;&gt;4.1 K-Means&lt;a class=&#34;headerlink&#34; href=&#34;#41-k-means&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;42-lvq&#34;&gt;4.2 学习向量量化（LVQ）&lt;a class=&#34;headerlink&#34; href=&#34;#42-lvq&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;43-gmm&#34;&gt;4.3 高斯混合聚类（GMM）&lt;a class=&#34;headerlink&#34; href=&#34;#43-gmm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.密度聚类&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;51-dbscan&#34;&gt;5.1 DBSCAN&lt;a class=&#34;headerlink&#34; href=&#34;#51-dbscan&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;OPTICS、DENCLUE&lt;/p&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.层次聚类&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;61-agnes&#34;&gt;6.1 AGNES&lt;a class=&#34;headerlink&#34; href=&#34;#61-agnes&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;DIANA&lt;/p&gt;
+&lt;p&gt;BIRCH&lt;/p&gt;
+&lt;p&gt;ROCK&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/cluster/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/cluster/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Decision Tree</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;决策树&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 141 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1.基本流程&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;分而治之&lt;/p&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.划分选择&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21&#34;&gt;2.1 信息增益&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;ID3&lt;/p&gt;
+&lt;h3 id=&#34;22&#34;&gt;2.2 增益率&lt;a class=&#34;headerlink&#34; href=&#34;#22&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;C4.5&lt;/p&gt;
+&lt;h3 id=&#34;23&#34;&gt;2.3 基尼指数&lt;a class=&#34;headerlink&#34; href=&#34;#23&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;CART&lt;/p&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.剪枝处理&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;31&#34;&gt;3.1 预剪枝&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;32&#34;&gt;3.2 后剪枝&lt;a class=&#34;headerlink&#34; href=&#34;#32&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.连续与缺失值&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;41&#34;&gt;4.1 连续值处理&lt;a class=&#34;headerlink&#34; href=&#34;#41&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;二分法&lt;/p&gt;
+&lt;h3 id=&#34;42&#34;&gt;4.2 缺失值处理&lt;a class=&#34;headerlink&#34; href=&#34;#42&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.多变量决策树&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;OC1&lt;/p&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.可增量学习的决策树&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;在接受到新样本后对已学得的模型进行调整，而不完全重新学习，主要机制是通过调整分支路径上的划分属性次序来对树进行部分重构。&lt;/p&gt;
+&lt;p&gt;ID4&lt;/p&gt;
+&lt;p&gt;ID5R&lt;/p&gt;
+&lt;p&gt;ITI&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/decision-tree/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/decision-tree/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Dimensionality</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;降维与度量学习&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 62 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1knn&#34;&gt;1.kNN&lt;a class=&#34;headerlink&#34; href=&#34;#1knn&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.低维嵌入&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;维数灾难&lt;/p&gt;
+&lt;h3 id=&#34;21-mds&#34;&gt;2.1 MDS&lt;a class=&#34;headerlink&#34; href=&#34;#21-mds&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;3pca&#34;&gt;3.PCA&lt;a class=&#34;headerlink&#34; href=&#34;#3pca&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4t-sne&#34;&gt;4.t-SNE&lt;a class=&#34;headerlink&#34; href=&#34;#4t-sne&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.核化线性降维&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;51-kpca&#34;&gt;5.1 kPCA&lt;a class=&#34;headerlink&#34; href=&#34;#51-kpca&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.流形学习&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;61-isomap&#34;&gt;6.1 等度量映射（Isomap）&lt;a class=&#34;headerlink&#34; href=&#34;#61-isomap&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;62-lle&#34;&gt;6.2 局部线性嵌入（LLE）&lt;a class=&#34;headerlink&#34; href=&#34;#62-lle&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;7&#34;&gt;7.度量学习&lt;a class=&#34;headerlink&#34; href=&#34;#7&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;度量矩阵&lt;/p&gt;
+&lt;p&gt;近邻成分分析（NCA）&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/dimensionality/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/dimensionality/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Ensemble Learning</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;集成学习&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 175 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1.个体与集成&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2boosting&#34;&gt;2.Boosting&lt;a class=&#34;headerlink&#34; href=&#34;#2boosting&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21-adaboost&#34;&gt;2.1 AdaBoost&lt;a class=&#34;headerlink&#34; href=&#34;#21-adaboost&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;22-xgboost&#34;&gt;2.2 XGBoost&lt;a class=&#34;headerlink&#34; href=&#34;#22-xgboost&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;23-lightgbm&#34;&gt;2.3 LightGBM&lt;a class=&#34;headerlink&#34; href=&#34;#23-lightgbm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;3bagging&#34;&gt;3.Bagging&lt;a class=&#34;headerlink&#34; href=&#34;#3bagging&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4random-forest&#34;&gt;4.Random Forest&lt;a class=&#34;headerlink&#34; href=&#34;#4random-forest&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.结合策略&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;51&#34;&gt;5.1 平均法&lt;a class=&#34;headerlink&#34; href=&#34;#51&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;简单平均法&lt;/p&gt;
+&lt;p&gt;加权平均法&lt;/p&gt;
+&lt;h3 id=&#34;52&#34;&gt;5.2 投票法&lt;a class=&#34;headerlink&#34; href=&#34;#52&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;绝对多数投票法&lt;/p&gt;
+&lt;p&gt;相对多数投票法&lt;/p&gt;
+&lt;p&gt;加权投票法&lt;/p&gt;
+&lt;p&gt;类标记和类概率&lt;/p&gt;
+&lt;h3 id=&#34;53&#34;&gt;5.3 学习法&lt;a class=&#34;headerlink&#34; href=&#34;#53&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Stacking&lt;/p&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.多样性&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;61-&#34;&gt;6.1 误差-分歧分解&lt;a class=&#34;headerlink&#34; href=&#34;#61-&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;62&#34;&gt;6.2 多样性度量&lt;a class=&#34;headerlink&#34; href=&#34;#62&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;不合度量&lt;/p&gt;
+&lt;p&gt;相关系数&lt;/p&gt;
+&lt;p&gt;Q-统计量&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(\kappa\)&lt;/span&gt;-统计量&lt;/p&gt;
+&lt;h2 id=&#34;63&#34;&gt;6.3 多样性增强&lt;a class=&#34;headerlink&#34; href=&#34;#63&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;数据样本、输入属性、输出表示、算法参数扰动&lt;/p&gt;
+&lt;h2 id=&#34;7ensemble-pruning&#34;&gt;7.集成修剪（ensemble pruning）&lt;a class=&#34;headerlink&#34; href=&#34;#7ensemble-pruning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;在集成产生之后再试图去除一些个体学习器来获得较小的集成。&lt;/p&gt;
+&lt;p&gt;并行化集成&lt;/p&gt;
+&lt;p&gt;基于优化的集成修剪&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/ensemble-learning/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/ensemble-learning/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Feature Selection and Sparsity Learning</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;特征选择与稀疏学习&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 168 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1.子集搜索与评价&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.过滤式选择&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Relief&lt;/p&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.包裹式选择&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;LVW(Las Vegas Wrapper)&lt;/p&gt;
+&lt;h2 id=&#34;4l1&#34;&gt;4.嵌入式选择与L1正则化&lt;a class=&#34;headerlink&#34; href=&#34;#4l1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;LASSO——可通过近端梯度下降求解(PGD)&lt;/p&gt;
+&lt;p&gt;ridge regression&lt;/p&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.稀疏表示与字典学习&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;“稀疏表示”(sparse representation)近年来很受关注，但即便对多元线性回归这样简单的模型，获得具有最优“稀疏性”(sparsity)的解也并不容易。稀疏性问题本质上对应了L0范数的优化，这在通常条件下是NP难问题。LASSO通过L1范数来近似L0范数，是求取稀疏解的重要技术。&lt;/p&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.压缩感知&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/feature-selection-and-sparsity-learning/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/feature-selection-and-sparsity-learning/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Linear Model</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;线性模型&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 97 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1.基本形式&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2linear-regression&#34;&gt;2.线性回归(Linear Regression)&lt;a class=&#34;headerlink&#34; href=&#34;#2linear-regression&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3logistic-regression&#34;&gt;3.对数几率回归(Logistic Regression)&lt;a class=&#34;headerlink&#34; href=&#34;#3logistic-regression&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;对数几率，对数几率函数(sigmoid函数)&lt;/p&gt;
+&lt;h2 id=&#34;4lda&#34;&gt;4.线性判别分析(LDA)&lt;a class=&#34;headerlink&#34; href=&#34;#4lda&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;类内散度矩阵，类间散度矩阵，广义瑞利商&lt;/p&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.多分类学习&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;一对一(OvO)，一对其余(OvR)，多对多(MvM)&lt;/p&gt;
+&lt;p&gt;ECOC编码&lt;/p&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.类别不平衡问题&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;再缩放&lt;/p&gt;
+&lt;p&gt;欠采样&lt;/p&gt;
+&lt;p&gt;阈值移动&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/linear-model/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/linear-model/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Model Evaluation and Selection</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;模型评估与选择&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 147 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1.经验误差与过拟合&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;精度，误差，过拟合，欠拟合&lt;/p&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.评估方法&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21&#34;&gt;2.1 留出法&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;22-cross-validation&#34;&gt;2.2 交叉验证法(cross validation)&lt;a class=&#34;headerlink&#34; href=&#34;#22-cross-validation&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;k折交叉验证&lt;/p&gt;
+&lt;p&gt;LOO留一法&lt;/p&gt;
+&lt;h3 id=&#34;23-bootstrapping&#34;&gt;2.3 自助法(bootstrapping)&lt;a class=&#34;headerlink&#34; href=&#34;#23-bootstrapping&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;包外估计&lt;/p&gt;
+&lt;h3 id=&#34;24&#34;&gt;2.4 调参与最终模型&lt;a class=&#34;headerlink&#34; href=&#34;#24&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.性能度量&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;31&#34;&gt;3.1 错误率与精度&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;32-f1&#34;&gt;3.2 查准率、查全率、F1&lt;a class=&#34;headerlink&#34; href=&#34;#32-f1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;33-rocauc&#34;&gt;3.3 ROC与AUC&lt;a class=&#34;headerlink&#34; href=&#34;#33-rocauc&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;34&#34;&gt;3.4 代价敏感错误率与代价曲线&lt;a class=&#34;headerlink&#34; href=&#34;#34&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.比较检验&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;41&#34;&gt;4.1 假设检验&lt;a class=&#34;headerlink&#34; href=&#34;#41&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;二项分布，t分布&lt;/p&gt;
+&lt;h3 id=&#34;42-t&#34;&gt;4.2 交叉验证t检验&lt;a class=&#34;headerlink&#34; href=&#34;#42-t&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;43-mcnemar&#34;&gt;4.3 McNemar检验&lt;a class=&#34;headerlink&#34; href=&#34;#43-mcnemar&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;44-friedmannemenyi&#34;&gt;4.4 Friedman检验与Nemenyi后续检验&lt;a class=&#34;headerlink&#34; href=&#34;#44-friedmannemenyi&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.偏差与方差&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/model-evaluation-and-selection/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/model-evaluation-and-selection/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Neural Network</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;神经网络&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 358 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;Fundamentals: This includes understanding the structure of a neural network, such as layers, weights, biases, and activation functions (sigmoid, tanh, ReLU, etc.)&lt;/p&gt;
+&lt;p&gt;Training and Optimization: Familiarize yourself with backpropagation and different types of loss functions, like Mean Squared Error (MSE) and Cross-Entropy. Understand various optimization algorithms like Gradient Descent, Stochastic Gradient Descent, RMSprop, and Adam.&lt;/p&gt;
+&lt;p&gt;Overfitting: Understand the concept of overfitting (where a model performs well on training data but poorly on unseen data) and learn various regularization techniques (dropout, L1/L2 regularization, early stopping, data augmentation) to prevent it.&lt;/p&gt;
+&lt;p&gt;Implement a Multilayer Perceptron (MLP): Build an MLP, also known as a fully connected network, using PyTorch.&lt;/p&gt;
+&lt;h2 id=&#34;1&#34;&gt;1.神经元模型&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;M-P神经元模型&lt;/p&gt;
+&lt;p&gt;激活函数&lt;/p&gt;
+&lt;p&gt;学习率&lt;/p&gt;
+&lt;p&gt;权重初始化：常数初始化，随机分布初始化，Xavier初始化，He初始化&lt;/p&gt;
+&lt;h2 id=&#34;2mlp&#34;&gt;2.感知机与多层网络（MLP）&lt;a class=&#34;headerlink&#34; href=&#34;#2mlp&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;多层前馈神经网络（Multi-Layer FFN）&lt;/p&gt;
+&lt;p&gt;前馈并不意味着网络信号不能向后传，而是指网络拓扑结构上不存在环或回路。&lt;/p&gt;
+&lt;h2 id=&#34;3bp&#34;&gt;3.反向传播算法（BP）&lt;a class=&#34;headerlink&#34; href=&#34;#3bp&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;LMS（Least Mean Square）算法（BP前身）：将LMS推广到由非线性可微神经元组成的多层前馈网络，就得到BP算法。&lt;/p&gt;
+&lt;p&gt;梯度下降GD&lt;/p&gt;
+&lt;p&gt;随机梯度下降SGD&lt;/p&gt;
+&lt;p&gt;解决过拟合：早停，正则化（dropout，标签平滑，权重衰减）&lt;/p&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.全局最小与局部最小&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;跳出局部最小：启发式算法（模拟退火，遗传算法等）&lt;/p&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.其他神经网络&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;RBF网络&lt;/p&gt;
+&lt;p&gt;ART网络&lt;/p&gt;
+&lt;p&gt;SOM网络&lt;/p&gt;
+&lt;p&gt;级联相关网络&lt;/p&gt;
+&lt;p&gt;Elman网络&lt;/p&gt;
+&lt;p&gt;Boltzman机&lt;/p&gt;
+&lt;p&gt;深度学习（pre-training,fine-tuning）&lt;/p&gt;
+&lt;p&gt;深度信念网络DBN&lt;/p&gt;
+&lt;p&gt;权值共享CNN&lt;/p&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.深度学习&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/neural-network/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/neural-network/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Probabilistic Graphical Model</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;概率图模型&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 135 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;一类是DAG模型或贝叶斯网&lt;/p&gt;
+&lt;p&gt;一类是无向图模型或马尔可夫网&lt;/p&gt;
+&lt;h2 id=&#34;1hmm&#34;&gt;1.隐马尔可夫模型（HMM）&lt;a class=&#34;headerlink&#34; href=&#34;#1hmm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2mrf&#34;&gt;2.马尔可夫随机场（MRF）&lt;a class=&#34;headerlink&#34; href=&#34;#2mrf&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3crf&#34;&gt;3.条件随机场（CRF）&lt;a class=&#34;headerlink&#34; href=&#34;#3crf&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.学习与推断&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;41&#34;&gt;4.1 变量消去&lt;a class=&#34;headerlink&#34; href=&#34;#41&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;42&#34;&gt;4.2 信念传播&lt;a class=&#34;headerlink&#34; href=&#34;#42&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.近似推断&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;一类是采样，通过随机化方法完成近似；一类是变分推断，使用确定性近似完成近似推断&lt;/p&gt;
+&lt;h3 id=&#34;51-mcmc&#34;&gt;5.1 MCMC采样&lt;a class=&#34;headerlink&#34; href=&#34;#51-mcmc&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;马尔可夫链蒙特卡罗方法&lt;/p&gt;
+&lt;p&gt;Metropolis-Hastings（MH）算法&lt;/p&gt;
+&lt;p&gt;吉布斯采样&lt;/p&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.话题模型&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/probabilistic-graphical-model/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/probabilistic-graphical-model/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;强化学习&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 30 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1mdp&#34;&gt;1.马尔可夫决策过程（MDP）&lt;a class=&#34;headerlink&#34; href=&#34;#1mdp&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2epsilon-&#34;&gt;2.epsilon-贪心&lt;a class=&#34;headerlink&#34; href=&#34;#2epsilon-&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3softmax&#34;&gt;3.Softmax&lt;a class=&#34;headerlink&#34; href=&#34;#3softmax&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4q-learning&#34;&gt;4.Q-learning&lt;a class=&#34;headerlink&#34; href=&#34;#4q-learning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5sarsa&#34;&gt;5.Sarsa&lt;a class=&#34;headerlink&#34; href=&#34;#5sarsa&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6actor-critic&#34;&gt;6.Actor-Critic&lt;a class=&#34;headerlink&#34; href=&#34;#6actor-critic&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;7sac&#34;&gt;7.SAC&lt;a class=&#34;headerlink&#34; href=&#34;#7sac&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;8q&#34;&gt;8.深度Q网络&lt;a class=&#34;headerlink&#34; href=&#34;#8q&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;9&#34;&gt;9.策略梯度&lt;a class=&#34;headerlink&#34; href=&#34;#9&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/reinforcement-learning/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/reinforcement-learning/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Semi-Supervised Learning</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;半监督学习&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 86 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1.未标记样本&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;聚类假设&lt;/p&gt;
+&lt;p&gt;流形假设&lt;/p&gt;
+&lt;p&gt;半监督学习分为纯半监督学习和直推学习&lt;/p&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.生成式方法&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3svm&#34;&gt;3.半监督SVM&lt;a class=&#34;headerlink&#34; href=&#34;#3svm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;TSVM&lt;/p&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.图半监督学习&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5&#34;&gt;5.基于分歧的方法&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;协同训练算法&lt;/p&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.半监督聚类&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;约束k均值算法&lt;/p&gt;
+&lt;p&gt;约束种子k均值算法&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/semi-supervised-learning/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/semi-supervised-learning/</guid>
+      
+    </item>
+    
+    <item>
+      <title>SVM</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;支持向量机&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 117 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1.间隔与支持向量&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.对偶问题&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;凸二次规划问题（最优化方法）&lt;/p&gt;
+&lt;p&gt;KKT条件&lt;/p&gt;
+&lt;p&gt;SMO(Sequential Minimal Optimization)算法&lt;/p&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.核函数&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4&#34;&gt;4.软间隔与正则化&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;引入损失函数：hinge损失，指数损失，对率损失&lt;/p&gt;
+&lt;p&gt;松弛变量&lt;/p&gt;
+&lt;p&gt;结构风险与经验风险&lt;/p&gt;
+&lt;h2 id=&#34;5svr&#34;&gt;5.支持向量回归（SVR）&lt;a class=&#34;headerlink&#34; href=&#34;#5svr&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.核方法&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Mercer定理&lt;/p&gt;
+&lt;p&gt;表示定理&lt;/p&gt;
+&lt;p&gt;基于核函数的学习方法：引入核函数将线性变成非线性&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/svm/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/svm/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Word Embedding</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;词嵌入&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 13 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1word2vec&#34;&gt;1.Word2Vec&lt;a class=&#34;headerlink&#34; href=&#34;#1word2vec&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11-skip-gram&#34;&gt;1.1 Skip-Gram&lt;a class=&#34;headerlink&#34; href=&#34;#11-skip-gram&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;12-cbow&#34;&gt;1.2 CBOW&lt;a class=&#34;headerlink&#34; href=&#34;#12-cbow&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;2glove&#34;&gt;2.GloVe&lt;a class=&#34;headerlink&#34; href=&#34;#2glove&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3fasttext&#34;&gt;3.FastText&lt;a class=&#34;headerlink&#34; href=&#34;#3fasttext&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4cove&#34;&gt;4.CoVe&lt;a class=&#34;headerlink&#34; href=&#34;#4cove&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;5bilm&#34;&gt;5.BiLM&lt;a class=&#34;headerlink&#34; href=&#34;#5bilm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;6elmo&#34;&gt;6.ELMo&lt;a class=&#34;headerlink&#34; href=&#34;#6elmo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/nlp/word-embedding/</link>
+      <pubDate>Sat, 25 Apr 2026 11:46:35 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/nlp/word-embedding/</guid>
+      
+    </item>
     
     <item>
       <title>MoE</title>
@@ -1936,7 +2630,7 @@ L_z(x) = \frac{1}{B} \sum_{i=1}^B \left( \log \sum_{j=1}^N e^{x_j^{(i)}} \right)
     </item>
     
     <item>
-      <title>Retnet</title>
+      <title>RetNet</title>
       
       
       
@@ -2280,383 +2974,6 @@ L_z(x) = \frac{1}{B} \sum_{i=1}^B \left( \log \sum_{j=1}^N e^{x_j^{(i)}} \right)
     </item>
     
     <item>
-      <title>Bayesian Classifier</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;贝叶斯分类器&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 42 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.贝叶斯决策论&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.极大似然估计&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3&#34;&gt;3.朴素贝叶斯分类器&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4&#34;&gt;4.半朴素贝叶斯分类器&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.贝叶斯网&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;6em&#34;&gt;6.EM算法&lt;a class=&#34;headerlink&#34; href=&#34;#6em&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/bayesian-classifier/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/bayesian-classifier/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Cluster</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;聚类&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 26 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.聚类任务&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.性能度量&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3&#34;&gt;3.距离计算&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4&#34;&gt;4.原型聚类&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.密度聚类&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;6&#34;&gt;6.层次聚类&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/cluster/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/cluster/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Decision Tree</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;决策树&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 27 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.基本流程&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.划分选择&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3&#34;&gt;3.剪枝处理&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4&#34;&gt;4.连续与缺失值&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.多变量决策树&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/decision-tree/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/decision-tree/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Dimensionality</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;降维与度量学习&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 27 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1knn&#34;&gt;1.kNN&lt;a class=&#34;headerlink&#34; href=&#34;#1knn&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.低维嵌入&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3pca&#34;&gt;3.PCA&lt;a class=&#34;headerlink&#34; href=&#34;#3pca&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4&#34;&gt;4.核化线性降维&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.流形学习&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;6&#34;&gt;6.度量学习&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/dimensionality/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/dimensionality/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Ensemble Learning</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;集成学习&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 20 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.个体与集成&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2boosting&#34;&gt;2.Boosting&lt;a class=&#34;headerlink&#34; href=&#34;#2boosting&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3bagging&#34;&gt;3.Bagging&lt;a class=&#34;headerlink&#34; href=&#34;#3bagging&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4random-forest&#34;&gt;4.Random Forest&lt;a class=&#34;headerlink&#34; href=&#34;#4random-forest&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.结合策略&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;6&#34;&gt;6.多样性&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/ensemble-learning/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/ensemble-learning/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Feature Selection and Sparsity Learning</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;特征选择与稀疏学习&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 49 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.子集搜索与评价&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.过滤式选择&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3&#34;&gt;3.包裹式选择&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4l1&#34;&gt;4.嵌入式选择与L1正则化&lt;a class=&#34;headerlink&#34; href=&#34;#4l1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.稀疏表示与字典学习&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;6&#34;&gt;6.压缩感知&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/feature-selection-and-sparsity-learning/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/feature-selection-and-sparsity-learning/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Linear Model</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;线性模型&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 36 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.基本形式&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.线性回归&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3&#34;&gt;3.对数几率回归&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4&#34;&gt;4.线性判别分析&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.多分类学习&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;6&#34;&gt;6.类别不平衡问题&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/linear-model/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/linear-model/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Model Evaluation and Selection</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;模型评估与选择&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 33 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.经验误差与过拟合&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2&#34;&gt;2评估方法&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3&#34;&gt;3.性能度量&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4&#34;&gt;4.比较检验&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.偏差与方差&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/model-evaluation-and-selection/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/model-evaluation-and-selection/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Neural Network</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;神经网络&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 150 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;Fundamentals: This includes understanding the structure of a neural network, such as layers, weights, biases, and activation functions (sigmoid, tanh, ReLU, etc.)&lt;/p&gt;
-&lt;p&gt;Training and Optimization: Familiarize yourself with backpropagation and different types of loss functions, like Mean Squared Error (MSE) and Cross-Entropy. Understand various optimization algorithms like Gradient Descent, Stochastic Gradient Descent, RMSprop, and Adam.&lt;/p&gt;
-&lt;p&gt;Overfitting: Understand the concept of overfitting (where a model performs well on training data but poorly on unseen data) and learn various regularization techniques (dropout, L1/L2 regularization, early stopping, data augmentation) to prevent it.&lt;/p&gt;
-&lt;p&gt;Implement a Multilayer Perceptron (MLP): Build an MLP, also known as a fully connected network, using PyTorch.&lt;/p&gt;
-&lt;h2 id=&#34;1&#34;&gt;1.神经元模型&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2mlp&#34;&gt;2.感知机与多层网络（MLP）&lt;a class=&#34;headerlink&#34; href=&#34;#2mlp&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3bp&#34;&gt;3.反向传播算法（BP）&lt;a class=&#34;headerlink&#34; href=&#34;#3bp&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4&#34;&gt;4.全局最小与局部最小&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.其他神经网络&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;6&#34;&gt;6.深度学习&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/neural-network/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/neural-network/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Probabilistic Graphical Model</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;概率图模型&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 37 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.隐马尔可夫模型&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.马尔可夫随机场&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3&#34;&gt;3.条件随机场&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4&#34;&gt;4.学习与推断&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.近似推断&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;6&#34;&gt;6.话题模型&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/probabilistic-graphical-model/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/probabilistic-graphical-model/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Reinforcement Learning</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;强化学习&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 10 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1epsilon-&#34;&gt;1.epsilon-贪心&lt;a class=&#34;headerlink&#34; href=&#34;#1epsilon-&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2softmax&#34;&gt;2.Softmax&lt;a class=&#34;headerlink&#34; href=&#34;#2softmax&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3q-learning&#34;&gt;3.Q-learning&lt;a class=&#34;headerlink&#34; href=&#34;#3q-learning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4sarsa&#34;&gt;4.Sarsa&lt;a class=&#34;headerlink&#34; href=&#34;#4sarsa&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/reinforcement-learning/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/reinforcement-learning/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Semi-Supervised Learning</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;半监督学习&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 37 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.未标记样本&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.生成式方法&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3svm&#34;&gt;3.半监督SVM&lt;a class=&#34;headerlink&#34; href=&#34;#3svm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4&#34;&gt;4.图半监督学习&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.基于分歧的方法&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;6&#34;&gt;6.半监督聚类&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/semi-supervised-learning/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/semi-supervised-learning/</guid>
-      
-    </item>
-    
-    <item>
-      <title>SVM</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;支持向量机&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 35 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1.间隔与支持向量&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;2&#34;&gt;2.对偶问题&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3&#34;&gt;3.核函数&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4&#34;&gt;4.软间隔与正则化&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5&#34;&gt;5.支持向量回归&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;6&#34;&gt;6.核方法&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/ml/svm/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/ml/svm/</guid>
-      
-    </item>
-    
-    <item>
       <title>BLIP</title>
       
       
@@ -2812,36 +3129,6 @@ L_z(x) = \frac{1}{B} \sum_{i=1}^B \left( \log \sum_{j=1}^N e^{x_j^{(i)}} \right)
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/nlp/text-preprocess/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Word Embedding</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;词嵌入&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 12 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1word2vec&#34;&gt;1.Word2Vec&lt;a class=&#34;headerlink&#34; href=&#34;#1word2vec&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;11-skip-gram&#34;&gt;1.1 Skip-Gram&lt;a class=&#34;headerlink&#34; href=&#34;#11-skip-gram&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;h3 id=&#34;12-cbow&#34;&gt;1.2 CBOW&lt;a class=&#34;headerlink&#34; href=&#34;#12-cbow&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;h2 id=&#34;2glove&#34;&gt;2.GloVe&lt;a class=&#34;headerlink&#34; href=&#34;#2glove&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3cove&#34;&gt;3.CoVe&lt;a class=&#34;headerlink&#34; href=&#34;#3cove&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4bilm&#34;&gt;4.BiLM&lt;a class=&#34;headerlink&#34; href=&#34;#4bilm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;5elmo&#34;&gt;5.ELMo&lt;a class=&#34;headerlink&#34; href=&#34;#5elmo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/nlp/word-embedding/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/nlp/word-embedding/</guid>
       
     </item>
     
@@ -6061,8 +6348,8 @@ Student Solution: &lt;insert student solution&gt;&lt;br /&gt;
 &lt;div class=&#34;admonition note&#34;&gt;
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;成文：180 篇&lt;/li&gt;
-&lt;li&gt;累字：171,217 字&lt;/li&gt;
+&lt;li&gt;成文：182 篇&lt;/li&gt;
+&lt;li&gt;累字：173,580 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
@@ -9892,30 +10179,6 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
     </item>
     
     <item>
-      <title>GAN</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;gan&#34;&gt;GAN&lt;a class=&#34;headerlink&#34; href=&#34;#gan&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 7 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;生成对抗网络&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/aigc/gan/</link>
-      <pubDate>Sun, 05 Apr 2026 09:44:27 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/aigc/gan/</guid>
-      
-    </item>
-    
-    <item>
       <title>Midjourney</title>
       
       
@@ -10537,52 +10800,6 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/tech-note/programming-language-trending/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Overview</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;computer-vision&#34;&gt;Computer Vision&lt;a class=&#34;headerlink&#34; href=&#34;#computer-vision&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 7 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;计算机视觉&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/cv/</link>
-      <pubDate>Sat, 04 Apr 2026 00:20:31 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/cv/</guid>
-      
-    </item>
-    
-    <item>
-      <title>CNN</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;cnn&#34;&gt;CNN&lt;a class=&#34;headerlink&#34; href=&#34;#cnn&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/cv/cnn/</link>
-      <pubDate>Sat, 04 Apr 2026 00:20:31 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/cv/cnn/</guid>
       
     </item>
     
