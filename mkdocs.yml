@@ -58,9 +58,11 @@ nav:
       - RWKV: ai-note/llm/rwkv.md
       - Griffin: ai-note/llm/griffin.md
       - Gemini 1.5 Technical Report: ai-note/llm/gemini-1.5-technical-report.md
+      - DeepSeekv4 Technical Report: ai-note/llm/deepseekv4-technical-report.md
       - Pre-training: ai-note/llm/pre-training.md
       - Fine-tuning: ai-note/llm/fine-tuning.md
       - Alignment: ai-note/llm/alignment.md
+      - On-Policy Distillation: ai-note/llm/opd.md
       - LLM Application: ai-note/llm/llm-application.md
     - LLM RL:
       - Overview: ai-note/llm-rl/index.md
