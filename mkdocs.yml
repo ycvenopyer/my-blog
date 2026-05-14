@@ -52,6 +52,7 @@ nav:
       - Sampling Techniques: ai-note/llm/sampling-techniques.md
       - LLM Structure: ai-note/llm/structure.md
       - MoE: ai-note/llm/moe.md
+      - dLLM: ai-note/llm/dllm.md
       - LLaMA: ai-note/llm/llama.md
       - Mamba: ai-note/llm/mamba.md
       - RetNet: ai-note/llm/retnet.md
