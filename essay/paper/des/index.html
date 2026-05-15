@@ -7387,6 +7387,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DES
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -7403,6 +7421,269 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 背景与动机
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 背景与动机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 扩散大语言模型与并行解码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 "专家爆炸"问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 现有方法的局限
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 核心方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 核心方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 延迟模型分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-des" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 DES框架
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-des-seq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 序列内共享（DES-Seq）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-des-vote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 显著性感知投票（DES-Vote）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-vanilla-vs-expert-skipping-vs-des" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Vanilla vs Expert Skipping vs DES
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 实验与结果
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 实验与结果">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 实验设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 主要结果
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 效率分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 消融实验
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 消融实验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 核心集大小的影响
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 对块大小的鲁棒性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 活跃专家数量的影响
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 专家利用可视化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -7470,6 +7751,258 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 背景与动机
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 背景与动机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 扩散大语言模型与并行解码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 "专家爆炸"问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 现有方法的局限
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 核心方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 核心方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 延迟模型分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-des" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 DES框架
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-des-seq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 序列内共享（DES-Seq）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-des-vote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 显著性感知投票（DES-Vote）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-vanilla-vs-expert-skipping-vs-des" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Vanilla vs Expert Skipping vs DES
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 实验与结果
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 实验与结果">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 实验设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 主要结果
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 效率分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 消融实验
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 消融实验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 核心集大小的影响
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 对块大小的鲁棒性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 活跃专家数量的影响
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 专家利用可视化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -7558,12 +8091,151 @@
 
 <h1 id="dynamic-expert-sharing-decoupling-memory-from-parallelism-in-mixture-of-experts-diffusion-llms">Dynamic Expert Sharing: Decoupling Memory from Parallelism in Mixture-of-Experts Diffusion LLMs<a class="headerlink" href="#dynamic-expert-sharing-decoupling-memory-from-parallelism-in-mixture-of-experts-diffusion-llms" title="Permanent link">¶</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 11 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间不到 1 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 2267 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"></path></svg></span> 15 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 7 分钟</p>
 </div>
 <aside class="md-pageviews md-pageviews--after-stats" aria-label="页面阅读量">
   <span class="md-pageviews__text">阅读量</span>
   <span id="busuanzi_value_page_pv" class="md-pageviews__value">—</span>
 </aside>
+
+<blockquote>
+<p>作者：Hao (Mark) Chen¹, Zhiwen Mo¹, Royson Lee², Qianzhou Wang¹, Da Li², Shell Xu Hu², Wayne Luk¹, Timothy Hospedales², Hongxiang Fan¹</p>
+<p>¹伦敦帝国理工学院，伦敦，英国<br>
+²三星AI中心，剑桥，英国</p>
+<p>论文链接：<a href="https://arxiv.org/abs/2602.00879">https://arxiv.org/abs/2602.00879</a> </p>
+</blockquote>
+<hr>
+<h2 id="1">1. 背景与动机<a class="headerlink" href="#1" title="Permanent link">¶</a></h2>
+<h3 id="11">1.1 扩散大语言模型与并行解码<a class="headerlink" href="#11" title="Permanent link">¶</a></h3>
+<p>在各种并行解码范式中，扩散大语言模型（dLLMs）作为一种在生成质量和吞吐量之间取得平衡的有前景的方案应运而生。最先进的dLLMs通常利用基于块的并行解码，通过并发token生成实现与传统自回归（AR）模型相当的性能。</p>
+<p>为了有效扩展这些架构，dLLMs越来越多地将混合专家（MoE）作为核心架构组件集成。MoE的主要优势在于它能够将模式的整体知识容量与每个token的计算成本解耦。通过为每个输入只激活稀疏的专家子集，MoE允许dLLMs扩展到海量参数规模，在不按比例增加FLOPs的情况下显著增强表示能力。</p>
+<h3 id="12">1.2 "专家爆炸"问题<a class="headerlink" href="#12" title="Permanent link">¶</a></h3>
+<p>然而，将MoE集成到dLLMs中引入了一个效率悖论。虽然从AR过渡到并行dLLM会增加运算强度，但MoE dLLMs的稀疏激活使其比密集模型更加内存受限。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/roofline.png" data-desc-position="bottom"><img alt="roofline" src="../image/des/roofline.png"></a></p>
+<p>在这些内存受限场景中——这在多GPU和CPU卸载环境中很典型——延迟主要由从高带宽内存（HBM）到静态RAM（SRAM）加载唯一专家权重所需的流量决定。这种瓶颈因并行生成固有的"专家爆炸"而加剧：</p>
+<ul>
+<li>
+<p>AR解码每步处理单个token。</p>
+</li>
+<li>
+<p>dLLMs同时处理N个token。</p>
+</li>
+<li>
+<p>如果专家被独立选择，唯一专家负载几乎随块大小N线性扩展。</p>
+</li>
+</ul>
+<p>随着并行块的扩展，将不同专家从HBM传输到片上内存的开销可能会抵消MoE的计算节省，可能使这些模型比其较小的密集等价物更慢。</p>
+<h3 id="13">1.3 现有方法的局限<a class="headerlink" href="#13" title="Permanent link">¶</a></h3>
+<p>现有的MoE动态效率优化方法，如专家跳过（expert skipping），主要是为AR模型设计的，且严格以token为中心。虽然这些方法在减少每个token的计算FLOPs方面有效，但它们优先考虑局部稀疏性而非跨token的专家冗余。因此，它们无法缓解全局HBM流量瓶颈，因为每层加载的唯一专家权重没有在序列级别进行优化。</p>
+<hr>
+<h2 id="2">2. 核心方法<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
+<h3 id="21">2.1 延迟模型分析<a class="headerlink" href="#21" title="Permanent link">¶</a></h3>
+<p>通过单个专家处理c个token的时间为：<span class="arithmatex">\(f(c) = ac + b\)</span>（当c &gt; 0时），其中b表示从HBM到SRAM的权重获取成本，a是边际计算成本。</p>
+<p>N个并行token序列的MoE块总延迟为：</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/latency-formula.png" data-desc-position="bottom"><img alt="latency-formula" src="../image/des/latency-formula.png"></a></p>
+<p>这里<span class="arithmatex">\(b\cdot \bigcup_{n=1}^N \mathcal{S}_n\)</span>主导延迟，需最小化特殊专家负载。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/latency-model.png" data-desc-position="bottom"><img alt="latency model" src="../image/des/latency-model.png"></a></p>
+<h3 id="22-des">2.2 DES框架<a class="headerlink" href="#22-des" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/des.png" data-desc-position="bottom"><img alt="DES Overview" src="../image/des/des.png"></a></p>
+<p>动态专家共享（DES）是一种旨在通过在并行token之间形成共识来最小化专家占用的新方法。该方法将优化目标从每token剪枝转向序列级共享。</p>
+<p>与标准AR批处理中token通常属于不同任务不同，dLLMs中的并行解码涉及语义耦合的token，它们在专家需求方面表现出显著的重叠。为利用这一点，DES引入了核心集选择：在运行时动态识别出一个最小、高价值的专家集来服务于整个并行块。</p>
+<p>通过将专家选择限制在共享核心集，显著减少了HBM到SRAM的流量，有效缓解了并行MoE解码的内存流量开销而不损害生成质量。</p>
+<p>核心集选择函数：<span class="arithmatex">\(\Phi : \mathcal{I} \rightarrow \mathcal{C}\)</span>，<span class="arithmatex">\(\mathcal{I}\)</span>是路由器的logits或者隐藏状态，<span class="arithmatex">\(\mathcal{C}\)</span>是专家集合。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/coreset-selection--function.png" data-desc-position="bottom"><img alt="coreset-selection-function" src="../image/des/coreset-selection--function.png"></a></p>
+<p>那么如何设计核心集选择函数呢？</p>
+<h3 id="23-des-seq">2.3 序列内共享（DES-Seq）<a class="headerlink" href="#23-des-seq" title="Permanent link">¶</a></h3>
+<p>形成较小核心集的一种直接方法是从每个token选择固定数量的最显著专家。对于块中的每个token n，选择其top-k专家。核心集<span class="arithmatex">\(\mathcal{C}\)</span>是这些本地选择的并集：</p>
+<div class="arithmatex">\[\mathcal{C}_{DES-Seq} = \bigcup_{n=1}^N \text{TopK}(\mathcal{I}_n, k)\]</div>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/DES-Seq.png" data-desc-position="bottom"><img alt="DES-Seq" src="../image/des/DES-Seq.png"></a></p>
+<p>优点：简单，易于实现，可向量化。</p>
+<p>局限：（1）只是减少本地预算而不寻求全局共识；（2）对所有token使用固定的选择阈值k，忽略了专家重要性在序列中差异显著（例如，token A的第2位排名专家可能比token B的第2位排名专家更关键）。</p>
+<h3 id="24-des-vote">2.4 显著性感知投票（DES-Vote）<a class="headerlink" href="#24-des-vote" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/DES-Vote.png" data-desc-position="bottom"><img alt="DES-Vote" src="../image/des/DES-Vote.png"></a></p>
+<p>重要发现：路由权重与专家重要性高度相关，让token“投票”选出最重要的专家。</p>
+<p>DES-Vote流程：</p>
+<ul>
+<li>
+<p>筛选：每个token只考虑自己的top-K专家 (屏蔽其他专家，过滤噪声)。</p>
+</li>
+<li>
+<p>投票：将这些专家的路由权重作为“选票”，跨token累加。</p>
+</li>
+<li>
+<p>选举：选择总得票数最高的<span class="arithmatex">\(M_{core}\)</span>个专家作为核心集。</p>
+</li>
+</ul>
+<div class="arithmatex">\[V_i = \sum_{n=1}^N \text{Masked}(\mathcal{I}_{n,i}), \mathcal{C}_{DES-Vote} = \text{TopK}(V, M_{core})\]</div>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/DES-Vote-Process.png" data-desc-position="bottom"><img alt="DES-Vote Process" src="../image/des/DES-Vote-Process.png"></a></p>
+<p>优点：自动考虑专家在整个序列中的集体重要性；灵活性高，通过调整<span class="arithmatex">\(M_{core}\)</span>控制核心集大小。</p>
+<h3 id="25-vanilla-vs-expert-skipping-vs-des">2.5 Vanilla vs Expert Skipping vs DES<a class="headerlink" href="#25-vanilla-vs-expert-skipping-vs-des" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/compare.png" data-desc-position="bottom"><img alt="Compare" src="../image/des/compare.png"></a></p>
+<hr>
+<h2 id="3">3. 实验与结果<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<h3 id="31">3.1 实验设置<a class="headerlink" href="#31" title="Permanent link">¶</a></h3>
+<p>框架：使用dInfer框架，采用Fast-dLLM作为KV缓存方法，采用0.9置信度采样阈值和默认超参数配置。</p>
+<p>超参数：使用预算因子β参数化DES-Vote使得核心集大小<span class="arithmatex">\(M_{core}\)</span> = β × M（M是总专家池大小），而DES-Seq由本地选择计数k控制，改变β和k来调整核心集大小。</p>
+<p>模型：LLaDA2.0-Mini(16B MoE dLLM)，LLaDA-MoE-7B(7B MoE dLLM)。</p>
+<p>四个长形式生成解码和多样化推理基准数据集：HumanEval，MBPP，GSM8K，MATH500。</p>
+<p>基线：Vanilla(原始模型)，Top-K(直接减少K)，NAEE(自适应专家跳过)，MC-MoE(保留重要token的专家)。</p>
+<p>硬件：NVIDIA B200 GPU。</p>
+<p>评估指标：准确率、特殊专家激活数、内存占用、MoE层延迟、端到端延迟等。</p>
+<h3 id="32">3.2 主要结果<a class="headerlink" href="#32" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/result.png" data-desc-position="bottom"><img alt="result" src="../image/des/result.png"></a></p>
+<p>现有专家跳过方法失败：NAEE和MC-MoE在dLLMs上仅保留约46%的准确度，源于在具有不同门控分布的并行token上应用静态跳过阈值的次优性。</p>
+<p>DES-Vote表现最优：在将唯一专家负载减少55%的同时保持99.5%的相对准确度。</p>
+<p>专家共享的有效性：结合本地显著性（MC-MoE）相对于NAEE仅产生可忽略的改进，表明以token为中心的指标不足以解决并行解码固有的集体冗余。</p>
+<h3 id="33">3.3 效率分析<a class="headerlink" href="#33" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/efficiency.png" data-desc-position="bottom"><img alt="Efficiency Analysis" src="../image/des/efficiency.png"></a></p>
+<p>DES-Vote将LLaDA2.0-Mini的MoE层延迟降低高达38.0%。</p>
+<p>LLaDA-MoE-7B降低31.9%。</p>
+<p>总端到端GPU内核时间提高8.2-14.3%。</p>
+<hr>
+<h2 id="4">4. 消融实验<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<h3 id="41">4.1 核心集大小的影响<a class="headerlink" href="#41" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/coreset-size.png" data-desc-position="bottom"><img alt="Coreset Size" src="../image/des/coreset-size.png"></a></p>
+<p>模型性能与核心集大小正相关，随核心集变小逐渐下降。</p>
+<p>DES-Vote在相同核心集大小下始终保持更高准确度。</p>
+<p>DES-Vote通过连续β参数实现更细粒度的核心集大小调节。</p>
+<p>某些情况下准确度提升，可能归因于剪掉可能引入噪声的低价值专家。</p>
+<h3 id="42">4.2 对块大小的鲁棒性<a class="headerlink" href="#42" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/block-size.png" data-desc-position="bottom"><img alt="Block Size" src="../image/des/block-size.png"></a></p>
+<p>准确度下降始终较小，核心集有效泛化到更大并行度。</p>
+<p>DES-Vote保持恒定且低的激活专家数量，与块大小无关。</p>
+<p>从业者可以纯粹基于效率与准确度权衡优化块大小，不受传统内存带宽限制的约束。</p>
+<h3 id="43">4.3 活跃专家数量的影响<a class="headerlink" href="#43" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/active-expert.png" data-desc-position="bottom"><img alt="Active Experts" src="../image/des/active-expert.png"></a></p>
+<p>即使激活相同总数的唯一专家，将每token计算从8个专家减少到4个专家也会导致一致且显著的准确度下降，这证实了：即使这些专家与原始模型选择的top-8不同，从核心集重新激活专家也能保持性能。</p>
+<h3 id="44">4.4 专家利用可视化<a class="headerlink" href="#44" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/des/expert-use.png" data-desc-position="bottom"><img alt="Expert Utilization" src="../image/des/expert-use.png"></a></p>
+<p>路由保真度：DES-Seq和DES-Vote与原始专家命中率向量余弦相似度≥0.98。</p>
+<p>表示保真度：限制专家池在核心集内不会扭曲模型的基本路由模式。</p>
+<p>集中效应：DES-Vote的激活曲线比DES-Seq和原基线更尖锐，集中在少数核心专家上；DES-Vote成功地聚焦于最重要的专家，缓解了长尾效应，从而减少了内存流量。</p>
+<hr>
+<h2 id="5">5. 总结<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
+<p>主要工作和贡献：</p>
+<ul>
+<li>
+<p>识别并量化了并行MoE解码中的专家爆炸瓶颈。</p>
+</li>
+<li>
+<p>提出动态专家共享，将MoE优化从token级转向序列级，利用新颖的显著性感知投票机制来最大化专家重用。</p>
+</li>
+<li>
+<p>通过DES-Seq和DES-Vote显著减少延迟同时保持高准确度，有效地将内存流量与并行度解耦。</p>
+</li>
+</ul>
+<p>局限：</p>
+<ul>
+<li>
+<p>核心集选择本身有计算开销。</p>
+</li>
+<li>
+<p>主要验证在代码/数学任务，在更广泛的语言任务上需要进一步验证。</p>
+</li>
+<li>
+<p>对极度稀疏或非均匀路由的MoE架构的适用性？</p>
+</li>
+</ul>
 
 
 
@@ -7576,7 +8248,7 @@
 <footer class="md-article-dates" aria-label="文章时间信息">
   <span class="md-article-dates__item" title="最后修改">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-05-13 18:33:19">2026年5月13日 18:33:19</time>
+    <time class="md-article-dates__time" datetime="2026-05-15 12:44:52">2026年5月15日 12:44:52</time>
   </span>
   
   <span class="md-article-dates__item" title="首次创作">
