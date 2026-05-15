@@ -98,6 +98,7 @@ nav:
       - Overview: ai-note/llm-evaluation/index.md
     - LLM Safety:
       - Overview: ai-note/llm-safety/index.md
+      - MIA: ai-note/llm-safety/mia.md
       - Agent Safety: ai-note/llm-safety/agent-safety.md
     - MLLM:
       - Overview: ai-note/mllm/index.md
@@ -222,6 +223,7 @@ nav:
       - Olica: essay/paper/olica.md
       - POP: essay/paper/pop.md
       - DES: essay/paper/des.md
+      - SAMA: essay/paper/sama.md
   - About: about.md
 
 theme:
