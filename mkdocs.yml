@@ -224,6 +224,7 @@ nav:
       - POP: essay/paper/pop.md
       - DES: essay/paper/des.md
       - SAMA: essay/paper/sama.md
+      - Discrete DLM MIA: essay/paper/discrete-dlm-mia.md
   - About: about.md
 
 theme:
