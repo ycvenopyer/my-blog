@@ -10,7 +10,6 @@ nav:
   - Tech: 
     - Overview: tech.md
     - Programming Language Trending: tech-note/programming-language-trending.md
-    - SSE: tech-note/sse.md
   - AI:
     - Overview: ai.md
     - ML:
@@ -52,18 +51,17 @@ nav:
       - Sampling Techniques: ai-note/llm/sampling-techniques.md
       - LLM Structure: ai-note/llm/structure.md
       - MoE: ai-note/llm/moe.md
-      - dLLM: ai-note/llm/dllm.md
       - LLaMA: ai-note/llm/llama.md
       - Mamba: ai-note/llm/mamba.md
       - RetNet: ai-note/llm/retnet.md
       - RWKV: ai-note/llm/rwkv.md
       - Griffin: ai-note/llm/griffin.md
       - Gemini 1.5 Technical Report: ai-note/llm/gemini-1.5-technical-report.md
-      - DeepSeekv4 Technical Report: ai-note/llm/deepseekv4-technical-report.md
       - Pre-training: ai-note/llm/pre-training.md
       - Fine-tuning: ai-note/llm/fine-tuning.md
       - Alignment: ai-note/llm/alignment.md
       - On-Policy Distillation: ai-note/llm/opd.md
+      - Test-Time Scaling: ai-note/llm/test-time-scaling.md
       - LLM Application: ai-note/llm/llm-application.md
     - LLM RL:
       - Overview: ai-note/llm-rl/index.md
@@ -100,6 +98,8 @@ nav:
       - Overview: ai-note/llm-safety/index.md
       - MIA: ai-note/llm-safety/mia.md
       - Agent Safety: ai-note/llm-safety/agent-safety.md
+    - DLM:
+      - Overview: ai-note/dlm/index.md
     - MLLM:
       - Overview: ai-note/mllm/index.md
       - VLM: ai-note/mllm/vlm.md
@@ -209,7 +209,6 @@ nav:
     - BERT Pruning: projects/bert-pruning.md
     - RAG-based Financial Q&A Platform: projects/economic-rag.md
     - Salescoach Agent Built with LangGraph and Agentickit: projects/salescoach-agent.md
-    - Bayesian-TTA: projects/bayesian-tta.md
   - Essay:
     - Overview: essay.md
     - Gossip:

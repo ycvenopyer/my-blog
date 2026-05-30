@@ -1,6 +1,6 @@
 # About Me
 
-I am a student in the School of Intelligent Software Engineering at NJU. I am keen on *software engineering*, *LLMs*, and *AI agents*. 
+I am a student in the School of Intelligent Software Engineering at NJU. I am keen on *Software Engineering*, *LLMs*, and *AI Agents*. 
 
 ## 🎓 Education
 
@@ -10,7 +10,7 @@ I am a student in the School of Intelligent Software Engineering at NJU. I am ke
 
 ## 🗺️ Research Interests
 
-I have a broad interest in *LLMs* and *NLP*. Currently, I am primarily focusing on *MoE Compression*(Efficient LLMs) and *LLM Safety*.
+I have a broad interest in *LLMs* and *NLP*. Currently, I am primarily focusing on *Efficient LLMs*, *Diffusion Language Models* and *LLM Safety*.
 
 ## 🔧 Technical Skills
 
@@ -29,4 +29,4 @@ I have a broad interest in *LLMs* and *NLP*. Currently, I am primarily focusing 
 
 For video games, I enjoy *Brawl Stars* — add me with friend code `2VUQ28PPQ` and we can team up!
 
-I like the *JoJo’s Bizarre Adventure* series and some Chinese animation. Singing is not my strength, but I listen to gufeng-style tracks and English songs.
+I like the *JoJo’s Bizarre Adventure* series and some Chinese animation.
