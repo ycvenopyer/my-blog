@@ -1,6 +1,6 @@
 # OpenAI
 
-GPT系列：GPT-5.4
+GPT系列：GPT-5.5
 
 o系列（深度推理）
 

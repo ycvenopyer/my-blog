@@ -102,7 +102,6 @@ nav:
       - Overview: ai-note/dlm/index.md
     - MLLM:
       - Overview: ai-note/mllm/index.md
-      - VLM: ai-note/mllm/vlm.md
       - ViT: ai-note/mllm/vit.md
       - CLIP: ai-note/mllm/clip.md
       - BLIP: ai-note/mllm/blip.md
