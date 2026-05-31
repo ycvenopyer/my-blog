@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Sat, 30 May 2026 05:12:30 -0000</pubDate>
-    <lastBuildDate>Sat, 30 May 2026 05:12:30 -0000</lastBuildDate>
+    <pubDate>Sun, 31 May 2026 13:52:40 -0000</pubDate>
+    <lastBuildDate>Sun, 31 May 2026 13:52:40 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,301 @@
     
 
     
+    
+    <item>
+      <title>Test-Time Scaling</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;test-time-scaling&#34;&gt;Test-Time Scaling&lt;a class=&#34;headerlink&#34; href=&#34;#test-time-scaling&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 4 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;test-time-compute&#34;&gt;Test-Time Compute&lt;a class=&#34;headerlink&#34; href=&#34;#test-time-compute&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/test-time-scaling/</link>
+      <pubDate>Sun, 31 May 2026 21:52:14 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm/test-time-scaling/</guid>
+      
+    </item>
+    
+    <item>
+      <title>3DGS</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;3d4d-gs-&#34;&gt;3D/4D GS轻量化-码本向量量化&lt;a class=&#34;headerlink&#34; href=&#34;#3d4d-gs-&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 13 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;nerf&#34;&gt;NeRF&lt;a class=&#34;headerlink&#34; href=&#34;#nerf&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3dgs&#34;&gt;3DGS&lt;a class=&#34;headerlink&#34; href=&#34;#3dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/</link>
+      <pubDate>Sun, 31 May 2026 21:52:14 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Bayesian TTA</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;基于贝叶斯理论的测试时动态自适应方法研究&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 20 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/projects/bayesian-tta/</link>
+      <pubDate>Sun, 31 May 2026 21:52:14 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/bayesian-tta/</guid>
+      
+    </item>
+    
+    <item>
+      <title>BERT Pruning</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;bert&#34;&gt;基于BERT预训练模型的剪枝方法&lt;a class=&#34;headerlink&#34; href=&#34;#bert&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2025 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 6 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 6 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;1&#34;&gt;1. 背景与目标&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11&#34;&gt;1.1 剪枝原因&lt;a class=&#34;headerlink&#34; href=&#34;#11&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;预训练语言模型参数量大，在落地部署时常面临算力与显存占用高、推理延迟大等问题。模型剪枝通过移除对任务冗余的结构或参数，在尽量保留精度的前提下缩小模型、降低计算量，是压缩与加速路线的经典手段之一。&lt;/p&gt;
+&lt;h3 id=&#34;12&#34;&gt;1.2 实验设定&lt;a class=&#34;headerlink&#34; href=&#34;#12&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;任务&lt;/strong&gt;：文本分类。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;数据&lt;/strong&gt;：AG News等新闻语料上微调 BERT 类模型。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;评价维度&lt;/strong&gt;：准确率、参数量、推理速度。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;13&#34;&gt;1.3 核心目标&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在尽可能保留原始模型核心能力与任务精度的前提下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;降低模型规模与计算复杂度；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;减少资源消耗，使模型更易部署到实际场景。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;2-layer-pruning&#34;&gt;2. 层剪枝（Layer Pruning）&lt;a class=&#34;headerlink&#34; href=&#34;#2-layer-pruning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21&#34;&gt;2.1 思路与相关论文&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;层剪枝属于粗粒度结构化剪枝：直接去掉若干 Transformer 层，参数量与深度同步下降，实现路径清晰，也便于与固定深度推理的工程栈对接。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;LayerDrop（结构化 Dropout）&lt;/strong&gt; — Fan 等，&lt;a href=&#34;https://arxiv.org/abs/1909.11556&#34;&gt;Reducing Transformer Depth on Demand with Structured Dropout&lt;/a&gt;。训练时以一定概率随机丢弃整层，使子网络在多种深度上都能工作；推理时可按需使用更浅的子网络，从而在深度维度上获得压缩与加速潜力。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Poor Man’s BERT&lt;/strong&gt; — Sajjad 等，&lt;a href=&#34;https://arxiv.org/abs/2004.03844&#34;&gt;On the Effect of Dropping Layers of Pre-trained Transformer Models&lt;/a&gt;。在不重新预训练的前提下，通过删层、减头、减隐藏维度等简单策略缩小 BERT，说明结构裁剪加微调在工程上可行，并与更大规模蒸馏等方法形成对照。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;层剪枝：通过移除网络中的冗余层，减小模型规模、降低计算成本并加速推理，是一种粗粒度但高效的方案。&lt;/p&gt;
+&lt;h3 id=&#34;22-layerdrop&#34;&gt;2.2 LayerDrop 与训练设置&lt;a class=&#34;headerlink&#34; href=&#34;#22-layerdrop&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;除训练后直接删层的剪枝策略外，我们还对照了LayerDrop：训练阶段使用丢弃概率约 0.1 的结构化丢弃，使模型适应随机深度。&lt;/p&gt;
+&lt;h3 id=&#34;23&#34;&gt;2.3 我们采用的层剪枝策略&lt;a class=&#34;headerlink&#34; href=&#34;#23&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在微调后的文本分类模型上，对比多种删层模式（均以完整模型为基准）：&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;bert-pruning&#34; src=&#34;../image/bert-pruning.png&#34; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;策略类型&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Top-Layer&lt;/td&gt;
+&lt;td&gt;优先去掉靠近输出侧的部分层&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bottom-Layer&lt;/td&gt;
+&lt;td&gt;优先去掉靠近输入侧的部分层&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;奇数 / 偶数层丢弃&lt;/td&gt;
+&lt;td&gt;按层号间隔删除，观察结构对称性对性能的影响&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;对称丢弃&lt;/td&gt;
+&lt;td&gt;按对称模式删层&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Full Model&lt;/td&gt;
+&lt;td&gt;不删层，作为对照&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;24&#34;&gt;2.4 实验现象&lt;a class=&#34;headerlink&#34; href=&#34;#24&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;layer-pruning&#34; src=&#34;../image/layer-pruning.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;从准确率、参数量、推理速度三方面对比：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;准确率&lt;/strong&gt;：在所测试的策略中，Top-Layer 表现相对最好。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;规模与速度&lt;/strong&gt;：相对 Full Model，各类层剪枝均能减小参数量、加快推理；丢弃的层越多，模型越小、往往也越快。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;精度—速度权衡&lt;/strong&gt;：多数策略在略低于原模型准确率的代价下，仍保持可接受性能，说明层剪枝在本任务上性价比较好。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;LayerDrop&lt;/strong&gt;：实验中收益不突出，推测与丢弃概率是否合适有关，仍需搜索更优超参。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;3-head-pruning&#34;&gt;3. 注意力头剪枝（Head Pruning）&lt;a class=&#34;headerlink&#34; href=&#34;#3-head-pruning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;31&#34;&gt;3.1 思路与相关论文&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;多头自注意力中，并非每个头对下游任务都同等重要。头剪枝在注意力头这一粒度上移除冗余，仍保持 Transformer 整体模块形态，属于常见的结构化裁剪单元。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Voita 等&lt;/strong&gt;，&lt;a href=&#34;https://arxiv.org/abs/1905.09418&#34;&gt;Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned&lt;/a&gt;：从分析与剪枝实验说明，少数头承担主要语义与句法功能，大量头可被剪掉而性能损失有限。 &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Michel 等&lt;/strong&gt;，&lt;a href=&#34;https://arxiv.org/abs/1905.10650&#34;&gt;Are Sixteen Heads Really Better than One?&lt;/a&gt;：系统研究多头数量与性能，表明许多头可剪，且剪枝后可通过微调恢复部分性能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Head Pruning：移除多头注意力中贡献小或近似无效的头，在降参与加速的同时尽量保持精度。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;head-pruning&#34; src=&#34;../image/head-pruning.png&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;32&#34;&gt;3.2 实验现象&lt;a class=&#34;headerlink&#34; href=&#34;#32&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;head-pruning-result&#34; src=&#34;../image/head-pruning-result.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在不同剪枝比例下观察训练过程与最终指标：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;随剪枝比例增大，参数量持续下降，准确率出现可预期的渐进式下降。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;推理速度并非随剪枝单调明显改善：仅在约 50% 头被剪掉时，速度提升较为明显；其他比例下提速不显著。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这与文献中头剪枝的收益依赖实现与硬件的论述一致：减少 FLOPs 不等于 wall-clock 时间同比例下降，矩阵乘在 GPU 上往往以张量整块计算，轻度剪头未必改变主导算子的形状或内存访问模式。&lt;/p&gt;
+&lt;p&gt;小结：头剪枝在论文层面已验证大量头可删；在工程上若要以延迟为主要目标，需要结合剪枝比例、算子实现与硬件，而不能只看参数量或理论 FLOPs。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;4-cofi&#34;&gt;4. CoFi：粗粒度 + 细粒度联合剪枝与分层蒸馏&lt;a class=&#34;headerlink&#34; href=&#34;#4-cofi&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;41&#34;&gt;4.1 动机：剪枝、蒸馏与速度上限&lt;a class=&#34;headerlink&#34; href=&#34;#41&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;CoFi&#34; src=&#34;../image/CoFi.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;经验上，单纯剪枝往往难以把端到端推理加速推到特别高的倍数。知识蒸馏可以把大模型能力迁移到小模型，常能带来更明显的小模型 + 低延迟，但往往依赖大量无标签数据与较高的训练成本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CoFi&lt;/strong&gt;：&lt;a href=&#34;https://arxiv.org/abs/2204.00408&#34;&gt;Structured Pruning Learns Compact and Accurate Models&lt;/a&gt;提出一种面向特定任务的结构化剪枝框架：在同一套目标函数下同时学习：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;粗粒度单元（如自注意力子层、前馈子层等是否保留）；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;细粒度单元（如隐藏维度内的权重级稀疏等）；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;并配合分层蒸馏（layer-wise distillation）：动态学习教师网络与学生网络之间的层对应关系，把蒸馏损失写进联合目标，从而在剪枝的同时拉近师生表示，提升小模型精度。&lt;/p&gt;
+&lt;p&gt;CoFi 类方法旨在得到更小更快的模型，且相对大规模无标签蒸馏而言，不一定依赖额外海量无标签数据做传统意义上的蒸馏数据管线。&lt;/p&gt;
+&lt;h3 id=&#34;42&#34;&gt;4.2 设置与现象&lt;a class=&#34;headerlink&#34; href=&#34;#42&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;CoFi-result&#34; src=&#34;../image/CoFi-result.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在尝试向 CoFi 论文设定靠拢时，我们采用约0.2 的剪枝率、稀疏度（Sparsity Ratio）约 0.2 等配置，观察到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;参数量约减少 15.72%；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;测试准确率未出现明显损失；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;但推理时间变长，整体速度约下降 37%，与更小应更快的直觉不一致。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;43&#34;&gt;4.3 反思：为何参数少了却更慢？&lt;a class=&#34;headerlink&#34; href=&#34;#43&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;结合实现与文献，可能原因包括：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;剪枝粒度偏窄：若主要对线性层等做稀疏/掩码，而嵌入层、注意力中的大张量等仍占主导，则实际减少的有效计算有限。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;迭代剪枝比例：若每轮仅约20%剪枝，多轮累积不足时，整体结构仍接近稠密网络。 &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;稀疏计算与硬件：非结构化或半结构化稀疏若未走专用稀疏内核，在 GPU 上可能无法加速甚至变慢（额外掩码、不规则访存）。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;推理路径：需确认是否启用与稀疏匹配的推理后端，以及是否仍按稠密算子执行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;5&#34;&gt;5. 总结&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;方向&lt;/th&gt;
+&lt;th&gt;主要思想（文献）&lt;/th&gt;
+&lt;th&gt;本项目观察&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;层剪枝&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;LayerDrop、删层式 BERT 压缩等&lt;/td&gt;
+&lt;td&gt;多种删层策略可降参、提速；Top-Layer 较优；LayerDrop 需调参&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;头剪枝&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;多头可大量剪除；需微调补偿&lt;/td&gt;
+&lt;td&gt;高比例剪头才较明显提速；精度随比例缓慢下降&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;CoFi&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;粗 + 细联合剪枝 + 分层蒸馏&lt;/td&gt;
+&lt;td&gt;参数量可降且精度稳，但实现不当会导致推理变慢&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;6&#34;&gt;6.参考文献&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Fan, A., Grave, E., Joulin, A. &lt;em&gt;Reducing Transformer Depth on Demand with Structured Dropout.&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/1909.11556&#34;&gt;arXiv:1909.11556&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;Sajjad, H., Dalvi, F., Durrani, N., Nakov, P. &lt;em&gt;Poor Man’s BERT: Smaller and Faster Transformer Models.&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/2004.03844&#34;&gt;arXiv:2004.03844&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;Voita, E., Talbot, D., Moiseev, F., Sennrich, R., Titov, I. &lt;em&gt;Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned.&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/1905.09418&#34;&gt;arXiv:1905.09418&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;Michel, P., Levy, O., Neubig, G. &lt;em&gt;Are Sixteen Heads Really Better than One?&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/1905.10650&#34;&gt;arXiv:1905.10650&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;Xia, M., Zhong, Z., Chen, D. &lt;em&gt;Structured Pruning Learns Compact and Accurate Models (CoFi).&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/2204.00408&#34;&gt;arXiv:2204.00408&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;知乎专栏（CoFi相关笔记）：&lt;a href=&#34;https://zhuanlan.zhihu.com/p/510614211&#34;&gt;https://zhuanlan.zhihu.com/p/510614211&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/projects/bert-pruning/</link>
+      <pubDate>Sun, 31 May 2026 21:52:14 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/bert-pruning/</guid>
+      
+    </item>
     
     <item>
       <title>Overview</title>
@@ -183,8 +478,8 @@
 &lt;div class=&#34;admonition note&#34;&gt;
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;成文：186 篇&lt;/li&gt;
-&lt;li&gt;累字：188,533 字&lt;/li&gt;
+&lt;li&gt;成文：188 篇&lt;/li&gt;
+&lt;li&gt;累字：188,602 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
@@ -245,28 +540,6 @@
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/about/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Test-Time Scaling</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;test-time-scaling&#34;&gt;Test-Time Scaling&lt;a class=&#34;headerlink&#34; href=&#34;#test-time-scaling&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/llm/test-time-scaling/</link>
-      <pubDate>Sat, 30 May 2026 11:11:26 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm/test-time-scaling/</guid>
       
     </item>
     
@@ -5281,230 +5554,6 @@ L_z(x) = \frac{1}{B} \sum_{i=1}^B \left( \log \sum_{j=1}^N e^{x_j^{(i)}} \right)
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/workflow/superpowers/</guid>
-      
-    </item>
-    
-    <item>
-      <title>BERT Pruning</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;bert&#34;&gt;基于 BERT 预训练模型的剪枝策略&lt;a class=&#34;headerlink&#34; href=&#34;#bert&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2025 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 6 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 6 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1&#34;&gt;1. 背景与目标&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;11&#34;&gt;1.1 剪枝原因&lt;a class=&#34;headerlink&#34; href=&#34;#11&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;预训练语言模型参数量大，在落地部署时常面临算力与显存占用高、推理延迟大等问题。模型剪枝通过移除对任务冗余的结构或参数，在尽量保留精度的前提下缩小模型、降低计算量，是压缩与加速路线的经典手段之一。&lt;/p&gt;
-&lt;h3 id=&#34;12&#34;&gt;1.2 实验设定&lt;a class=&#34;headerlink&#34; href=&#34;#12&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;任务&lt;/strong&gt;：文本分类。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;数据&lt;/strong&gt;：AG News等新闻语料上微调 BERT 类模型。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;评价维度&lt;/strong&gt;：准确率、参数量、推理速度。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;13&#34;&gt;1.3 核心目标&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;在尽可能保留原始模型核心能力与任务精度的前提下：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;降低模型规模与计算复杂度；  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;减少资源消耗，使模型更易部署到实际场景。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;2-layer-pruning&#34;&gt;2. 层剪枝（Layer Pruning）&lt;a class=&#34;headerlink&#34; href=&#34;#2-layer-pruning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;21&#34;&gt;2.1 思路与相关论文&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;层剪枝属于粗粒度结构化剪枝：直接去掉若干 Transformer 层，参数量与深度同步下降，实现路径清晰，也便于与固定深度推理的工程栈对接。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;LayerDrop（结构化 Dropout）&lt;/strong&gt; — Fan 等，&lt;a href=&#34;https://arxiv.org/abs/1909.11556&#34;&gt;Reducing Transformer Depth on Demand with Structured Dropout&lt;/a&gt;。训练时以一定概率随机丢弃整层，使子网络在多种深度上都能工作；推理时可按需使用更浅的子网络，从而在深度维度上获得压缩与加速潜力。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Poor Man’s BERT&lt;/strong&gt; — Sajjad 等，&lt;a href=&#34;https://arxiv.org/abs/2004.03844&#34;&gt;On the Effect of Dropping Layers of Pre-trained Transformer Models&lt;/a&gt;。在不重新预训练的前提下，通过删层、减头、减隐藏维度等简单策略缩小 BERT，说明结构裁剪加微调在工程上可行，并与更大规模蒸馏等方法形成对照。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;层剪枝：通过移除网络中的冗余层，减小模型规模、降低计算成本并加速推理，是一种粗粒度但高效的方案。&lt;/p&gt;
-&lt;h3 id=&#34;22-layerdrop&#34;&gt;2.2 LayerDrop 与训练设置&lt;a class=&#34;headerlink&#34; href=&#34;#22-layerdrop&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;除训练后直接删层的剪枝策略外，我们还对照了LayerDrop：训练阶段使用丢弃概率约 0.1 的结构化丢弃，使模型适应随机深度。&lt;/p&gt;
-&lt;h3 id=&#34;23&#34;&gt;2.3 我们采用的层剪枝策略&lt;a class=&#34;headerlink&#34; href=&#34;#23&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;在微调后的文本分类模型上，对比多种删层模式（均以完整模型为基准）：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;bert-pruning&#34; src=&#34;../image/bert-pruning.png&#34; /&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;策略类型&lt;/th&gt;
-&lt;th&gt;含义&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Top-Layer&lt;/td&gt;
-&lt;td&gt;优先去掉靠近输出侧的部分层&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Bottom-Layer&lt;/td&gt;
-&lt;td&gt;优先去掉靠近输入侧的部分层&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;奇数 / 偶数层丢弃&lt;/td&gt;
-&lt;td&gt;按层号间隔删除，观察结构对称性对性能的影响&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;对称丢弃&lt;/td&gt;
-&lt;td&gt;按对称模式删层&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Full Model&lt;/td&gt;
-&lt;td&gt;不删层，作为对照&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;24&#34;&gt;2.4 实验现象&lt;a class=&#34;headerlink&#34; href=&#34;#24&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;layer-pruning&#34; src=&#34;../image/layer-pruning.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;从准确率、参数量、推理速度三方面对比：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;准确率&lt;/strong&gt;：在所测试的策略中，Top-Layer 表现相对最好。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;规模与速度&lt;/strong&gt;：相对 Full Model，各类层剪枝均能减小参数量、加快推理；丢弃的层越多，模型越小、往往也越快。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;精度—速度权衡&lt;/strong&gt;：多数策略在略低于原模型准确率的代价下，仍保持可接受性能，说明层剪枝在本任务上性价比较好。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;LayerDrop&lt;/strong&gt;：实验中收益不突出，推测与丢弃概率是否合适有关，仍需搜索更优超参。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;3-head-pruning&#34;&gt;3. 注意力头剪枝（Head Pruning）&lt;a class=&#34;headerlink&#34; href=&#34;#3-head-pruning&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;31&#34;&gt;3.1 思路与相关论文&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;多头自注意力中，并非每个头对下游任务都同等重要。头剪枝在注意力头这一粒度上移除冗余，仍保持 Transformer 整体模块形态，属于常见的结构化裁剪单元。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Voita 等&lt;/strong&gt;，&lt;a href=&#34;https://arxiv.org/abs/1905.09418&#34;&gt;Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned&lt;/a&gt;：从分析与剪枝实验说明，少数头承担主要语义与句法功能，大量头可被剪掉而性能损失有限。 &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Michel 等&lt;/strong&gt;，&lt;a href=&#34;https://arxiv.org/abs/1905.10650&#34;&gt;Are Sixteen Heads Really Better than One?&lt;/a&gt;：系统研究多头数量与性能，表明许多头可剪，且剪枝后可通过微调恢复部分性能。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Head Pruning：移除多头注意力中贡献小或近似无效的头，在降参与加速的同时尽量保持精度。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;head-pruning&#34; src=&#34;../image/head-pruning.png&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;32&#34;&gt;3.2 实验现象&lt;a class=&#34;headerlink&#34; href=&#34;#32&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;head-pruning-result&#34; src=&#34;../image/head-pruning-result.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;在不同剪枝比例下观察训练过程与最终指标：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;随剪枝比例增大，参数量持续下降，准确率出现可预期的渐进式下降。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;推理速度并非随剪枝单调明显改善：仅在约 50% 头被剪掉时，速度提升较为明显；其他比例下提速不显著。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这与文献中头剪枝的收益依赖实现与硬件的论述一致：减少 FLOPs 不等于 wall-clock 时间同比例下降，矩阵乘在 GPU 上往往以张量整块计算，轻度剪头未必改变主导算子的形状或内存访问模式。&lt;/p&gt;
-&lt;p&gt;小结：头剪枝在论文层面已验证大量头可删；在工程上若要以延迟为主要目标，需要结合剪枝比例、算子实现与硬件，而不能只看参数量或理论 FLOPs。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;4-cofi&#34;&gt;4. CoFi：粗粒度 + 细粒度联合剪枝与分层蒸馏&lt;a class=&#34;headerlink&#34; href=&#34;#4-cofi&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;41&#34;&gt;4.1 动机：剪枝、蒸馏与速度上限&lt;a class=&#34;headerlink&#34; href=&#34;#41&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;CoFi&#34; src=&#34;../image/CoFi.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;经验上，单纯剪枝往往难以把端到端推理加速推到特别高的倍数。知识蒸馏可以把大模型能力迁移到小模型，常能带来更明显的小模型 + 低延迟，但往往依赖大量无标签数据与较高的训练成本。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;CoFi&lt;/strong&gt;：&lt;a href=&#34;https://arxiv.org/abs/2204.00408&#34;&gt;Structured Pruning Learns Compact and Accurate Models&lt;/a&gt;提出一种面向特定任务的结构化剪枝框架：在同一套目标函数下同时学习：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;粗粒度单元（如自注意力子层、前馈子层等是否保留）；  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;细粒度单元（如隐藏维度内的权重级稀疏等）；  &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;并配合分层蒸馏（layer-wise distillation）：动态学习教师网络与学生网络之间的层对应关系，把蒸馏损失写进联合目标，从而在剪枝的同时拉近师生表示，提升小模型精度。&lt;/p&gt;
-&lt;p&gt;CoFi 类方法旨在得到更小更快的模型，且相对大规模无标签蒸馏而言，不一定依赖额外海量无标签数据做传统意义上的蒸馏数据管线。&lt;/p&gt;
-&lt;h3 id=&#34;42&#34;&gt;4.2 设置与现象&lt;a class=&#34;headerlink&#34; href=&#34;#42&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;CoFi-result&#34; src=&#34;../image/CoFi-result.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;在尝试向 CoFi 论文设定靠拢时，我们采用约0.2 的剪枝率、稀疏度（Sparsity Ratio）约 0.2 等配置，观察到：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;参数量约减少 15.72%；  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;测试准确率未出现明显损失；  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;但推理时间变长，整体速度约下降 37%，与更小应更快的直觉不一致。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;43&#34;&gt;4.3 反思：为何参数少了却更慢？&lt;a class=&#34;headerlink&#34; href=&#34;#43&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;结合实现与文献，可能原因包括：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;剪枝粒度偏窄：若主要对线性层等做稀疏/掩码，而嵌入层、注意力中的大张量等仍占主导，则实际减少的有效计算有限。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;迭代剪枝比例：若每轮仅约20%剪枝，多轮累积不足时，整体结构仍接近稠密网络。 &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;稀疏计算与硬件：非结构化或半结构化稀疏若未走专用稀疏内核，在 GPU 上可能无法加速甚至变慢（额外掩码、不规则访存）。  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;推理路径：需确认是否启用与稀疏匹配的推理后端，以及是否仍按稠密算子执行。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;5&#34;&gt;5. 总结&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;方向&lt;/th&gt;
-&lt;th&gt;主要思想（文献）&lt;/th&gt;
-&lt;th&gt;本项目观察&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;层剪枝&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;LayerDrop、删层式 BERT 压缩等&lt;/td&gt;
-&lt;td&gt;多种删层策略可降参、提速；Top-Layer 较优；LayerDrop 需调参&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;头剪枝&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;多头可大量剪除；需微调补偿&lt;/td&gt;
-&lt;td&gt;高比例剪头才较明显提速；精度随比例缓慢下降&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;CoFi&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;粗 + 细联合剪枝 + 分层蒸馏&lt;/td&gt;
-&lt;td&gt;参数量可降且精度稳，但实现不当会导致推理变慢&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr /&gt;
-&lt;h2 id=&#34;6&#34;&gt;6.参考文献&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Fan, A., Grave, E., Joulin, A. &lt;em&gt;Reducing Transformer Depth on Demand with Structured Dropout.&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/1909.11556&#34;&gt;arXiv:1909.11556&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;Sajjad, H., Dalvi, F., Durrani, N., Nakov, P. &lt;em&gt;Poor Man’s BERT: Smaller and Faster Transformer Models.&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/2004.03844&#34;&gt;arXiv:2004.03844&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;Voita, E., Talbot, D., Moiseev, F., Sennrich, R., Titov, I. &lt;em&gt;Analyzing Multi-Head Self-Attention: Specialized Heads Do the Heavy Lifting, the Rest Can Be Pruned.&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/1905.09418&#34;&gt;arXiv:1905.09418&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;Michel, P., Levy, O., Neubig, G. &lt;em&gt;Are Sixteen Heads Really Better than One?&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/1905.10650&#34;&gt;arXiv:1905.10650&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;Xia, M., Zhong, Z., Chen, D. &lt;em&gt;Structured Pruning Learns Compact and Accurate Models (CoFi).&lt;/em&gt; &lt;a href=&#34;https://arxiv.org/abs/2204.00408&#34;&gt;arXiv:2204.00408&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;知乎专栏（CoFi相关笔记）：&lt;a href=&#34;https://zhuanlan.zhihu.com/p/510614211&#34;&gt;https://zhuanlan.zhihu.com/p/510614211&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/projects/bert-pruning/</link>
-      <pubDate>Fri, 24 Apr 2026 13:22:08 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/bert-pruning/</guid>
       
     </item>
     
@@ -11666,7 +11715,7 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
     </item>
     
     <item>
-      <title>RAG-based Financial Q&amp;A Platform</title>
+      <title>Financial RAG</title>
       
       
       
@@ -11688,7 +11737,7 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
     </item>
     
     <item>
-      <title>Salescoach Agent Built with LangGraph and Agentickit</title>
+      <title>Salescoach Agent</title>
       
       
       
