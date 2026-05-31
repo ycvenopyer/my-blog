@@ -206,8 +206,10 @@ nav:
   - Project: 
     - Overview: projects.md
     - BERT Pruning: projects/bert-pruning.md
-    - RAG-based Financial Q&A Platform: projects/economic-rag.md
-    - Salescoach Agent Built with LangGraph and Agentickit: projects/salescoach-agent.md
+    - Financial RAG: projects/economic-rag.md
+    - Salescoach Agent: projects/salescoach-agent.md
+    - Bayesian TTA: projects/bayesian-tta.md
+    - 3DGS: projects/3dgs.md
   - Essay:
     - Overview: essay.md
     - Gossip:
