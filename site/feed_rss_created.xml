@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Sun, 31 May 2026 13:52:40 -0000</pubDate>
-    <lastBuildDate>Sun, 31 May 2026 13:52:40 -0000</lastBuildDate>
+    <pubDate>Tue, 02 Jun 2026 16:01:06 -0000</pubDate>
+    <lastBuildDate>Tue, 02 Jun 2026 16:01:06 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -39,15 +39,20 @@
       
       <description>&lt;h1 id=&#34;3d4d-gs-&#34;&gt;3D/4D GS轻量化-码本向量量化&lt;a class=&#34;headerlink&#34; href=&#34;#3d4d-gs-&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 13 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 22 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
 &lt;/aside&gt;
 
+&lt;h2 id=&#34;nvsnovel-view-synthesis&#34;&gt;NVS(Novel View Synthesis)&lt;a class=&#34;headerlink&#34; href=&#34;#nvsnovel-view-synthesis&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;nerf&#34;&gt;NeRF&lt;a class=&#34;headerlink&#34; href=&#34;#nerf&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3dgs&#34;&gt;3DGS&lt;a class=&#34;headerlink&#34; href=&#34;#3dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;h2 id=&#34;3dgs&#34;&gt;3DGS&lt;a class=&#34;headerlink&#34; href=&#34;#3dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4dgs&#34;&gt;4DGS&lt;a class=&#34;headerlink&#34; href=&#34;#4dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;vq&#34;&gt;VQ&lt;a class=&#34;headerlink&#34; href=&#34;#vq&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;r-vq&#34;&gt;R-VQ&lt;a class=&#34;headerlink&#34; href=&#34;#r-vq&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;codebook-codeword&#34;&gt;CodeBook, CodeWord&lt;a class=&#34;headerlink&#34; href=&#34;#codebook-codeword&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/</link>
       <pubDate>Sun, 31 May 2026 21:52:14 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -134,12 +139,250 @@
       
       <description>&lt;h1 id=&#34;membership-inference-attacks-on-discrete-diffusion-language-models&#34;&gt;Membership Inference Attacks on Discrete Diffusion Language Models&lt;a class=&#34;headerlink&#34; href=&#34;#membership-inference-attacks-on-discrete-diffusion-language-models&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
 &lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 8 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2112 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 7 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 7 分钟&lt;/p&gt;
 &lt;/div&gt;
 &lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
   &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
   &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
+&lt;/aside&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;作者：Shailesh K，印度理工学院马德拉斯分校（Indian Institute of Technology Madras）&lt;/p&gt;
+&lt;p&gt;论文链接：&lt;a href=&#34;https://arxiv.org/abs/2605.16445&#34;&gt;https://arxiv.org/abs/2605.16445&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;1&#34;&gt;1. 背景与动机&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11-mdlm&#34;&gt;1.1 成员推理攻击与 MDLM 隐私&lt;a class=&#34;headerlink&#34; href=&#34;#11-mdlm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;成员推理攻击（Membership Inference Attack, MIA）是隐私泄露的标准经验化检验：给定一段文本与对模型的某种访问权限，攻击者能否判断该文本是否出现在训练集中？对微调后的大语言模型而言，这类攻击在医疗记录、法律文档、私有代码库等敏感语料场景下具有实际意义。&lt;/p&gt;
+&lt;p&gt;按访问级别，MIA 可粗分为三类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;黑盒&lt;/strong&gt;：Loss、Zlib、Ratio 等，仅使用标量 NLL 输出；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;灰盒&lt;/strong&gt;：SAMA 等，可使用任意掩码输入的 NLL，但不使用内部状态；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;白盒&lt;/strong&gt;：可访问权重、隐状态、注意力图与梯度，本文攻击即属此类。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;12-mdlm&#34;&gt;1.2 MDLM 与现有基线&lt;a class=&#34;headerlink&#34; href=&#34;#12-mdlm&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;掩码扩散语言模型（Masked Diffusion Language Models, MDLMs）以迭代去掩码替代自回归生成。前向过程以概率 &lt;span class=&#34;arithmatex&#34;&gt;\(t\)&lt;/span&gt; 独立掩码每个 token，其中 &lt;span class=&#34;arithmatex&#34;&gt;\(t \sim U(\varepsilon, 1)\)&lt;/span&gt;：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+q(x_t \mid x_0) = \prod_{i=1}^{L} \left[ t \cdot \mathbf{1}[x_t^{(i)} = [\text{M}]] + (1-t) \cdot \mathbf{1}[x_t^{(i)} = x_0^{(i)}] \right]
+\]&lt;/div&gt;
+&lt;p&gt;模型 &lt;span class=&#34;arithmatex&#34;&gt;\(p_\theta\)&lt;/span&gt; 学习填充被掩码位置，通过最小化掩码重构损失（ELBO）训练：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\mathcal{L}_\theta(x_0) = \mathbb{E}_{t,\, x_t \sim q(\cdot \mid x_0)} \left[ -\log p_\theta(x_0 \mid x_t)_{\text{masked}} \right]
+\]&lt;/div&gt;
+&lt;p&gt;与自回归模型不同，MDLM 不存在可直接读取的单一无条件似然——损失取决于哪些 token 被掩码以及掩码比例，这种依赖关系携带了基于标量攻击所遗漏的成员信息。&lt;/p&gt;
+&lt;p&gt;现有灰盒基线 SAMA 在 &lt;span class=&#34;arithmatex&#34;&gt;\(T\)&lt;/span&gt; 步渐进累积掩码上，对随机 token 子集的 NLL 差异做符号聚合，再用调和权重汇总。本文实验使用 &lt;span class=&#34;arithmatex&#34;&gt;\(T=4\)&lt;/span&gt;、&lt;span class=&#34;arithmatex&#34;&gt;\(N=128\)&lt;/span&gt; 子集、每子集 &lt;span class=&#34;arithmatex&#34;&gt;\(M=10\)&lt;/span&gt; 个 token 的 SAMA 配置作为对比。&lt;/p&gt;
+&lt;p&gt;研究空白：自回归 MIA 已有大量研究，但尚无工作将白盒 ELBO 轨迹提取应用于离散扩散语言模型。本文表明 MDLM 的实际脆弱性显著高于 SAMA 等灰盒基线所暗示的水平。&lt;/p&gt;
+&lt;h3 id=&#34;13&#34;&gt;1.3 核心洞察&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;已记忆某段文本的模型在任何掩码水平下都能以较低代价重构，产生比未见文本更低、更凹的 ELBO 曲线。单点标量 NLL 会遗漏这条轨迹形状中的成员信息。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ELBO 轨迹示意&#34; src=&#34;../image/discrete-dlm-mia/core-idea-2.png&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;2&#34;&gt;2. 方法&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21&#34;&gt;2.1 威胁模型&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;本文考虑两种攻击设置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;完全白盒&lt;/strong&gt;：攻击者拥有微调模型权重，可运行任意掩码模式的前向传播，读取隐状态、注意力图与梯度张量；对应权重公开发布或泄露的场景。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;影子模型迁移&lt;/strong&gt;：攻击者没有目标域成员标签，但知道架构与微调配方，可在无关数据上训练代理 MDLM，用 shadow 数据训练分类器后直接迁移至目标域。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;22&#34;&gt;2.2 记忆验证&lt;a class=&#34;headerlink&#34; href=&#34;#22&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;运行攻击前，论文检验微调是否诱导了记忆。定义 ELBO 差距：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\Delta_{\text{mem}}(x) = \mathcal{L}_{\text{base}}(x) - \mathcal{L}_{\text{FT}}(x)
+\]&lt;/div&gt;
+&lt;p&gt;正差距表示微调降低了该文本的重构代价。在六个 MIMIR 域中，成员差距为 2.19–2.75 nats，非成员为 1.39–2.12 nats，分布有明显分离，确认记忆存在且可测量。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;记忆验证&#34; src=&#34;../image/discrete-dlm-mia/memory-verification-2.png&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;23&#34;&gt;2.3 扩散轨迹特征提取&lt;a class=&#34;headerlink&#34; href=&#34;#23&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;每条挑战文本 &lt;span class=&#34;arithmatex&#34;&gt;\(x\)&lt;/span&gt; 在掩码比例 &lt;span class=&#34;arithmatex&#34;&gt;\(\alpha = \{0.05, 0.20, 0.35, 0.50\}\)&lt;/span&gt;（&lt;span class=&#34;arithmatex&#34;&gt;\(T=4\)&lt;/span&gt; 个水平）下评估，每个水平 &lt;span class=&#34;arithmatex&#34;&gt;\(K=8\)&lt;/span&gt; 次独立随机掩码以降低方差。在每个水平计算 11–12 个标量信号，拼接后得到 46 维特征向量 &lt;span class=&#34;arithmatex&#34;&gt;\(\phi(x)\)&lt;/span&gt;：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;信号组&lt;/th&gt;
+&lt;th&gt;维度&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;ELBO 轨迹&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;各比例下的掩码 NLL，成员值更低&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ELBO 导数&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(dL/dt\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(d^2L/dt^2\)&lt;/span&gt; 的有限差分估计&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;预测熵&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;掩码位置上预测分布的平均熵&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;掩码一致性&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;同一比例下两次独立掩码的预测一致度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;隐状态统计&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;FT 与 base 隐状态的 &lt;span class=&#34;arithmatex&#34;&gt;\(\ell_2\)&lt;/span&gt; 范数及余弦相似度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;注意力信号&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;注意力熵、跨层相关、传输重心、扰动响应&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;跨模型余弦 + ELBO 方差&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;全局跨模型表示相似度与 ELBO 方差&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img alt=&#34;46 维特征向量&#34; src=&#34;../image/discrete-dlm-mia/feature-extraction-2.png&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;24&#34;&gt;2.4 攻击分类器&lt;a class=&#34;headerlink&#34; href=&#34;#24&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;span class=&#34;arithmatex&#34;&gt;\(\phi(x)\)&lt;/span&gt; 上训练三种分类器，均使用 5 折分层交叉验证，折外概率用于 AUC 计算：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;XGBoost&lt;/strong&gt;：200 棵树，深度 4，学习率 0.05，子采样 0.8；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;LightGBM&lt;/strong&gt;：相同设置；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;MLP&lt;/strong&gt;：隐藏层 &lt;span class=&#34;arithmatex&#34;&gt;\((256, 128, 64)\)&lt;/span&gt;，dropout 0.3，20% 验证集早停。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;25&#34;&gt;2.5 影子模型迁移&lt;a class=&#34;headerlink&#34; href=&#34;#25&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在 &lt;span class=&#34;arithmatex&#34;&gt;\(K_s=3\)&lt;/span&gt; 个 shadow MDLM 上（于 ngram_13_0.2 MIMIR 划分的代理数据微调，跨六域池化约 5,695 条成员序列）提取相同 46 维特征，训练单个 XGBoost 分类器后直接应用于目标域，无需重训练、无目标域标签。&lt;/p&gt;
+&lt;p&gt;评估五种条件：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;条件&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;A（Oracle）&lt;/td&gt;
+&lt;td&gt;使用目标成员标签的 5 折 CV，白盒上界&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B（Shadow-46）&lt;/td&gt;
+&lt;td&gt;完整 46 维 shadow 迁移&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;C（ELBO+H）&lt;/td&gt;
+&lt;td&gt;8 维子集，仅 ELBO 与熵特征&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;D（Attn-only）&lt;/td&gt;
+&lt;td&gt;仅 16 维注意力特征（负对照）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;E（Pruned-30）&lt;/td&gt;
+&lt;td&gt;46 维去掉 16 维注意力&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;3&#34;&gt;3. 实验与结果&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;31&#34;&gt;3.1 实验设置&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;模型&lt;/strong&gt;：dllm-hub/Qwen3-0.6B-diffusion-mdlm-v0.1，按域分别微调 5 epoch（AdamW，&lt;span class=&#34;arithmatex&#34;&gt;\(\eta=10^{-4}\)&lt;/span&gt;，batch 8，bfloat16）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;数据集&lt;/strong&gt;：MIMIR 基准 ngram_13_0.8 划分，六域（arXiv、GitHub、HackerNews、Pile-CC、PubMed Central、Wikipedia）；每域 300 成员 + 300 非成员作评估，1,000 成员用于微调；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;基线&lt;/strong&gt;：黑盒 Loss、Zlib、Ratio；灰盒 SAMA（&lt;span class=&#34;arithmatex&#34;&gt;\(T=4\)&lt;/span&gt;，&lt;span class=&#34;arithmatex&#34;&gt;\(N=128\)&lt;/span&gt;，&lt;span class=&#34;arithmatex&#34;&gt;\(M=10\)&lt;/span&gt;）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;指标&lt;/strong&gt;：AUC-ROC（95% bootstrap CI，1000 次重采样），以及 TPR@{0.1%, 1%, 10%} FPR。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;32-fpr-tpr&#34;&gt;3.2 低 FPR 下的 TPR&lt;a class=&#34;headerlink&#34; href=&#34;#32-fpr-tpr&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;低 FPR 下的 TPR&#34; src=&#34;../image/discrete-dlm-mia/tpr-low-fpr-2.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在 1% FPR 下，XGBoost 依域恢复 15–40% 成员，SAMA 仅 3–10%；Pile-CC 上 XGBoost 识别 37.7% 成员，HackerNews 达 40.1%，相对 SAMA 改进 4–8 倍。&lt;/p&gt;
+&lt;p&gt;在 0.1% FPR 下，XGBoost 仍恢复 4–18% 成员（每测试 1,000 个非成员仅一个误报）。SAMA 在 &lt;span class=&#34;arithmatex&#34;&gt;\(N=128\)&lt;/span&gt; 子集时无法在此分辨率可靠运行，而轨迹分类器无性能退化即可工作。&lt;/p&gt;
+&lt;h3 id=&#34;33-auc-roc&#34;&gt;3.3 AUC-ROC 总览&lt;a class=&#34;headerlink&#34; href=&#34;#33-auc-roc&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;AUC-ROC 热图&#34; src=&#34;../image/discrete-dlm-mia/auc-results-2.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;XGBoost 平均 AUC 0.878（±0.046），MLP 0.882，均远高于 SAMA 灰盒基线 0.816（±0.037）。相对 SAMA 的 +0.062 差距来自捕获完整 ELBO 曲线形状，而非每子集标量 NLL 比较。黑盒攻击（Loss、Zlib、Ratio）集中在 0.625–0.722，未从扩散结构获益。&lt;/p&gt;
+&lt;p&gt;域差异：Pile-CC（AUC 0.930）与 HackerNews（0.928）最脆弱；GitHub（0.801）最难，源码结构规律使成员与非成员产生相似 ELBO。&lt;/p&gt;
+&lt;h3 id=&#34;34&#34;&gt;3.4 影子模型迁移&lt;a class=&#34;headerlink&#34; href=&#34;#34&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;影子模型迁移&#34; src=&#34;../image/discrete-dlm-mia/shadow-transfer-2.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Oracle 平均 AUC 0.878；Shadow-46（条件 B）平均 0.858，差距仅 0.020。在 1% FPR 下，无目标域标签的影子攻击平均恢复 19.5% 成员，Oracle 为 27.4%。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;条件 C（ELBO+熵，8 维）&lt;/strong&gt;：AUC 0.843，仅损失 0.015 AUC，提取约快 6 倍；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;条件 D（仅注意力）&lt;/strong&gt;：AUC 崩塌至 0.525，TPR@1%FPR 1.6%，接近随机——注意力模式域特定，无可迁移成员信号；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;结论：基于 ELBO 的信号可跨域迁移；注意力信号不可。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;4&#34;&gt;4. 消融实验&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;特征消融&#34; src=&#34;../image/discrete-dlm-mia/ablation-2.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;留一信号（LOSO）分析将 ELBO 轨迹隔离为主要信号：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;信号组&lt;/th&gt;
+&lt;th&gt;LOSO AUC 下降&lt;/th&gt;
+&lt;th&gt;Solo AUC&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;ELBO 轨迹&lt;/td&gt;
+&lt;td&gt;0.130&lt;/td&gt;
+&lt;td&gt;0.774&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;预测熵&lt;/td&gt;
+&lt;td&gt;0.043&lt;/td&gt;
+&lt;td&gt;0.655&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;掩码一致性&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;0.666&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;注意力各组&lt;/td&gt;
+&lt;td&gt;&amp;lt;0.006&lt;/td&gt;
+&lt;td&gt;0.47–0.53（接近随机）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;移除 ELBO 轨迹组使平均 AUC 下降 0.130，超过 XGBoost 与 SAMA 之间的完整差距（0.062）。四个注意力组各自贡献均小于 0.006；在 shadow 设置中 Attn-only 亦失败（AUC 0.525），证实注意力特征域特定。&lt;/p&gt;
+&lt;p&gt;最小有效攻击：ELBO 轨迹 + 预测熵（8 维）在 shadow 迁移中平均 AUC 0.843，仍高于 SAMA 0.816，且提取成本约为完整 46 维的 &amp;#8537;。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;5&#34;&gt;5. 总结&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;本文首次将白盒 ELBO 轨迹提取应用于微调 MDLM 的成员推断，表明其脆弱性显著高于灰盒基线所暗示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;白盒 MIA&lt;/strong&gt;：46 维扩散轨迹特征 + XGBoost/MLP 分类器，六域平均 AUC 0.878，峰值 0.930，比 SAMA 高 0.062；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;影子模型迁移&lt;/strong&gt;：&lt;span class=&#34;arithmatex&#34;&gt;\(K=3\)&lt;/span&gt; 个代理 MDLM，无目标域标签达 0.858 AUC，与 Oracle 差距仅 0.020；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特征消融&lt;/strong&gt;：ELBO 轨迹驱动大部分性能，注意力特征几乎无贡。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;局限&lt;/strong&gt;：实验基于单一模型族（Qwen3-0.6B MDLM），每域训练集较小（300–1,000 样本）；白盒威胁模型偏乐观，限制内部访问的部署将把攻击限制在影子模型路径。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;未来方向&lt;/strong&gt;：防御侧可考虑差分隐私微调与 ELBO 轨迹正则化；攻击侧可扩展至 LLaDA 等 MDLM 变体，以及从生成时输出估计 ELBO 轨迹以实现完全黑盒设置。&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/essay/paper/discrete-dlm-mia/</link>
       <pubDate>Fri, 29 May 2026 09:57:44 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_created.xml">ycvenopyer</source>
@@ -4537,7 +4780,7 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;成文：188 篇&lt;/li&gt;
-&lt;li&gt;累字：188,602 字&lt;/li&gt;
+&lt;li&gt;累字：193,250 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
