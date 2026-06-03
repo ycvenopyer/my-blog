@@ -209,7 +209,9 @@ nav:
     - Financial RAG: projects/economic-rag.md
     - Salescoach Agent: projects/salescoach-agent.md
     - Bayesian TTA: projects/bayesian-tta.md
-    - 3DGS: projects/3dgs.md
+    - 3DGS: 
+      - 概览: projects/3dgs/index.md
+      - Compact 3DGS论文解读: projects/3dgs/c3dgs.md
   - Essay:
     - Overview: essay.md
     - Gossip:

@@ -10,7 +10,5 @@
 
 ## VQ
 
-## R-VQ
-
 ## CodeBook, CodeWord
 
