@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Tue, 02 Jun 2026 16:01:06 -0000</pubDate>
-    <lastBuildDate>Tue, 02 Jun 2026 16:01:06 -0000</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2026 14:25:43 -0000</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2026 14:25:43 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,280 @@
     
 
     
+    
+    <item>
+      <title>Compact 3DGS论文解读</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;compact-3d-gaussian-splatting-for-static-and-dynamic-radiance-fields&#34;&gt;Compact 3D Gaussian Splatting for Static and Dynamic Radiance Fields&lt;a class=&#34;headerlink&#34; href=&#34;#compact-3d-gaussian-splatting-for-static-and-dynamic-radiance-fields&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1908 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 14 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 6 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;作者：Joo Chan Lee、Daniel Rho、Xiangyu Sun、Jong Hwan Ko、Eunbyung Park（成均馆大学）&lt;/p&gt;
+&lt;p&gt;论文链接：&lt;a href=&#34;https://arxiv.org/abs/2408.03822&#34;&gt;https://arxiv.org/abs/2408.03822&lt;/a&gt;（CVPR 2024 Highlight；期刊版扩展至动态场景）&lt;/p&gt;
+&lt;p&gt;论文代码：&lt;a href=&#34;https://github.com/maincold2/Compact-3DGS&#34;&gt;https://github.com/maincold2/Compact-3DGS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;项目主页：&lt;a href=&#34;https://maincold2.github.io/c3dgs/&#34;&gt;https://maincold2.github.io/c3dgs/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;1&#34;&gt;1. 背景与动机&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11-nerf-3dgs&#34;&gt;1.1 从 NeRF 到 3DGS&lt;a class=&#34;headerlink&#34; href=&#34;#11-nerf-3dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;神经辐射场（NeRF）用 MLP 表示体密度与颜色，通过逐射线体渲染实现高质量新视角合成，但训练与推理代价高，难以在普通 GPU 上实时运行。Instant NGP 等网格/哈希方法加快了训练，却仍受限于体采样，内存占用大，实时渲染仍是瓶颈。&lt;/p&gt;
+&lt;p&gt;3D Gaussian Splatting（3DGS） 改用显式三维高斯点云 + 可微光栅化，在保持高质量的同时实现实时渲染。后续工作（如 STG）进一步将 3DGS 扩展到动态场景，用时空高斯特征溅射建模多视角视频。&lt;/p&gt;
+&lt;h3 id=&#34;12-3dgs&#34;&gt;1.2 3DGS 的存储瓶颈&lt;a class=&#34;headerlink&#34; href=&#34;#12-3dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;高质量 3DGS 表示一个真实静态场景往往需要 &amp;gt;1GB 存储，原因主要有两点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;高斯数量多&lt;/strong&gt;：致密化（克隆/分裂）为保留细节会不断增点，其中存在大量冗余。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;每点属性大&lt;/strong&gt;：位置、尺度、旋转、不透明度、视角相关颜色（3 阶 SH 共 48 维）等，单点约 59 个参数；动态场景还需额外时间属性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现有压缩路线（LightGaussian、Compressed 3DGS、EAGLES 等）多采用训练后剪枝、量化或熵编码，仅 EAGLES 与本方法支持端到端训练；EAGLES 主要通过调整致密化调度控点，缩减效果次优。本方法是唯一在训练期间通过可学习掩码去除无效高斯的工作。&lt;/p&gt;
+&lt;h3 id=&#34;13&#34;&gt;1.3 核心目标&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在不牺牲渲染质量的前提下，从两个维度压缩：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;减少高斯数量——可学习体积掩码，训练期剔除对渲染贡献极小的高斯。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;压缩每点属性——哈希网格 + MLP 表示视角相关颜色；R-VQ 码本表示尺度/旋转及动态时间属性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt=&#34;与 3DGS 对比：更少高斯、更小存储、更快渲染&#34; src=&#34;../../image/c3dgs/slide05_img09.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;典型对比：3DGS 为 110 fps / 29.06 PSNR / 774 MB；本方法为 155 fps / 29.16 PSNR / 28 MB。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;2&#34;&gt;2. 方法与框架&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21&#34;&gt;2.1 整体流程&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;静态场景 Compact 3DGS 架构&#34; src=&#34;../../image/c3dgs/slide06_img11.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;对 &lt;span class=&#34;arithmatex&#34;&gt;\(N\)&lt;/span&gt; 个高斯依次做：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;可学习掩码筛选有效高斯；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;R-VQ 码本压缩尺度 &lt;span class=&#34;arithmatex&#34;&gt;\(s\)&lt;/span&gt; 与旋转 &lt;span class=&#34;arithmatex&#34;&gt;\(r\)&lt;/span&gt;；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;哈希网格 + Tiny MLP 查询视角相关颜色，替代每点 SH；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;投影与光栅化渲染。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;总损失：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+L = L_{\text{ren}} + \lambda_m L_m + L_r + L_s
+\]&lt;/div&gt;
+&lt;p&gt;其中 &lt;span class=&#34;arithmatex&#34;&gt;\(L_{\text{ren}}\)&lt;/span&gt; 为 L1 + SSIM 渲染损失，&lt;span class=&#34;arithmatex&#34;&gt;\(L_m\)&lt;/span&gt; 为掩码稀疏正则，&lt;span class=&#34;arithmatex&#34;&gt;\(L_r\)&lt;/span&gt;、&lt;span class=&#34;arithmatex&#34;&gt;\(L_s\)&lt;/span&gt; 为旋转与尺度的 R-VQ 损失。&lt;/p&gt;
+&lt;h3 id=&#34;22-gaussian-volume-mask&#34;&gt;2.2 可学习体积掩码（Gaussian Volume Mask）&lt;a class=&#34;headerlink&#34; href=&#34;#22-gaussian-volume-mask&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;观察&lt;/strong&gt;：小体积或低不透明度高斯对最终像素贡献极小，却占大量存储与计算；仅按不透明度剪枝无法充分去除冗余。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;做法&lt;/strong&gt;：引入可学习标量 &lt;span class=&#34;arithmatex&#34;&gt;\(m_n\)&lt;/span&gt;，经 Sigmoid 与直通估计器（STE）得到二值掩码 &lt;span class=&#34;arithmatex&#34;&gt;\(M_n\)&lt;/span&gt;，同时作用于尺度与不透明度：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\hat{\Sigma}_n = R(r_n)\, S(M_n s_n)\, S(M_n s_n)^\top R(r_n)^\top
+\]&lt;/div&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\hat{\alpha}_n(x) = M_n\, o_n \exp\!\left(-\tfrac{1}{2}(x-p&#39;_n)^\top \hat{\Sigma}&#39;^{-1}_n (x-p&#39;_n)\right)
+\]&lt;/div&gt;
+&lt;p&gt;掩码损失 &lt;span class=&#34;arithmatex&#34;&gt;\(L_m = \frac{1}{N}\sum_n \sigma(m_n)\)&lt;/span&gt; 鼓励稀疏；与 3DGS 在中期停止致密化不同，本方法全程持续掩蔽，训练期即可降低 GPU 内存。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;掩码效果：高斯更稀疏，渲染质量几乎不变&#34; src=&#34;../../image/c3dgs/slide07_img13.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;高斯元数量&#34; src=&#34;../../image/c3dgs/slide07_img14.png&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;23-r-vq&#34;&gt;2.3 几何码本（R-VQ）&lt;a class=&#34;headerlink&#34; href=&#34;#23-r-vq&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;观察&lt;/strong&gt;：场景中大量小高斯几何相似，尺度/旋转变化有限，适合用共享码本 + 索引表示。&lt;/p&gt;
+&lt;p&gt;采用残差向量量化（R-VQ）：&lt;span class=&#34;arithmatex&#34;&gt;\(L\)&lt;/span&gt; 阶段码本，每阶段存储 &lt;span class=&#34;arithmatex&#34;&gt;\(C\)&lt;/span&gt; 个码字索引，逐层量化残差。朴素 VQ 计算与显存开销大，R-VQ 在保持表达能力的同时更可控。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;R-VQ 多阶段量化流程&#34; src=&#34;../../image/c3dgs/slide08_img16.png&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;静态&lt;/strong&gt;：&lt;span class=&#34;arithmatex&#34;&gt;\(C=64\)&lt;/span&gt;，&lt;span class=&#34;arithmatex&#34;&gt;\(L=6\)&lt;/span&gt;；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;动态&lt;/strong&gt;：&lt;span class=&#34;arithmatex&#34;&gt;\(C=256\)&lt;/span&gt;，几何/时间属性阶段数分别为 (4,3) 或 (5,4)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;训练策略：码本用 K-means 初始化，仅在最后 1K 迭代启用 R-VQ，其余阶段 &lt;span class=&#34;arithmatex&#34;&gt;\(L_r + L_s = 0\)&lt;/span&gt;，避免早期不稳定。&lt;/p&gt;
+&lt;h3 id=&#34;24&#34;&gt;2.4 紧凑视角相关颜色&lt;a class=&#34;headerlink&#34; href=&#34;#24&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;3DGS 每点用 48 维 SH 建模视角相关颜色，参数低效。本方法借鉴 Mip-NeRF 360 的 contract 将有界位置映射到 &lt;span class=&#34;arithmatex&#34;&gt;\([-1,1]^3\)&lt;/span&gt;，再用 Instant NGP 式多分辨率哈希网格（16 级分辨率 16–4096，2 通道）+ 2 层 64 通道 MLP 输出颜色：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+c_n(d) = f(\text{contract}(p_n),\, d;\, \theta)
+\]&lt;/div&gt;
+&lt;p&gt;SH 0 阶分量单独表示并转 RGB，性能略优于直接预测 RGB。相对逐点 SH，颜色存储可压缩 3× 以上。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;哈希网格 + MLP 颜色表示&#34; src=&#34;../../image/c3dgs/slide09_img18.png&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;25&#34;&gt;2.5 动态场景扩展&lt;a class=&#34;headerlink&#34; href=&#34;#25&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;以 STG 为基线：每个高斯用多项式系数描述时变位置/旋转，时间 RBF 控制可见性，9 维特征经溅射 + MLP 得最终 RGB。&lt;/p&gt;
+&lt;p&gt;本方法在此基础上：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;时空掩码&lt;/strong&gt;：将 &lt;span class=&#34;arithmatex&#34;&gt;\(M_n\)&lt;/span&gt; 同时作用于时变协方差与时间不透明度 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{o}_n(t) = M_n o_n \exp(-\xi_n |t-\mu_n|^2)\)&lt;/span&gt;，在所有时间戳上联合学习重要性，避免训练后逐帧评估的困难。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;R-VQ&lt;/strong&gt;：对时间不变几何（&lt;span class=&#34;arithmatex&#34;&gt;\(s_n, sr_n\)&lt;/span&gt;）及旋转系数、时间颜色特征做码本压缩；位置系数 &lt;span class=&#34;arithmatex&#34;&gt;\(u_{n,k}\)&lt;/span&gt; 已有多项式紧凑表示，不再额外量化。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;神经场颜色&lt;/strong&gt;：规范位置 &lt;span class=&#34;arithmatex&#34;&gt;\(sp_n\)&lt;/span&gt; 的空间/视角颜色由共享哈希场查询，时间分量仍用 R-VQ 后的 &lt;span class=&#34;arithmatex&#34;&gt;\(\hat{sc}_n\)&lt;/span&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;动态场景 Compact 3DGS 架构&#34; src=&#34;../../image/c3dgs/slide10_img20.png&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;26-ours-pp&#34;&gt;2.6 后处理（Ours + PP）&lt;a class=&#34;headerlink&#34; href=&#34;#26-ours-pp&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;端到端模型记为 Ours；进一步施加：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;位置/标量属性 FP16 存储；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;哈希网格与标量 8-bit min-max 量化； &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;剪枝绝对值 &amp;lt; 0.1 的哈希参数；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Morton 顺序排序高斯；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;量化值与 R-VQ 索引做 Huffman + DEFLATE 压缩。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;变体记为 Ours + PP，静态 Mip-NeRF 360 上可达相对 3DGS &amp;gt;28× 压缩。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;3&#34;&gt;3. 实验与结果&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;31&#34;&gt;3.1 设置&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;th&gt;数据集&lt;/th&gt;
+&lt;th&gt;训练&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;静态&lt;/td&gt;
+&lt;td&gt;Mip-NeRF 360、Tanks&amp;amp;Temples、Deep Blending、NeRF-Synthetic&lt;/td&gt;
+&lt;td&gt;30K iter，保留 3DGS 超参&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;动态&lt;/td&gt;
+&lt;td&gt;DyNeRF、Technicolor&lt;/td&gt;
+&lt;td&gt;25K iter，保留 STG 超参&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;评估指标：PSNR、SSIM、LPIPS、训练时间、FPS、Storage (MB)。&lt;/p&gt;
+&lt;h3 id=&#34;32&#34;&gt;3.2 静态场景&lt;a class=&#34;headerlink&#34; href=&#34;#32&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;静态场景定量与定性结果&#34; src=&#34;../../image/c3dgs/slide12_img23.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;静态表格&#34; src=&#34;../../image/c3dgs/slide12_img24.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mip-NeRF 360&lt;/strong&gt;：Ours 48.8 MB vs 3DGS* 746 MB（约 15×），PSNR 相当，FPS 更高。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deep Blending&lt;/strong&gt;：Ours PSNR 29.79 略优于 3DGS，FPS 181，存储 43.2 MB（约 40% 更快、&amp;gt;15× 更紧凑）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NeRF-Synthetic&lt;/strong&gt;：5.55 MB（约 0.08× 存储），FPS 545（约 1.52×），PSNR 33.33。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ours + PP&lt;/strong&gt;：26.2 MB，相对 3DGS &amp;gt;28× 压缩，质量保持。&lt;/p&gt;
+&lt;h3 id=&#34;33&#34;&gt;3.3 动态场景&lt;a class=&#34;headerlink&#34; href=&#34;#33&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;动态场景与 STG 对比&#34; src=&#34;../../image/c3dgs/slide13_img26.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;动态表格&#34; src=&#34;../../image/c3dgs/slide13_img27.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DyNeRF&lt;/strong&gt;：Ours 21.8 MB vs STG* 197 MB（约 9×），PSNR 31.73，FPS 186。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Technicolor（Ours + PP）&lt;/strong&gt;：0.16 MB/帧，PSNR 33.1，FPS 116。&lt;/p&gt;
+&lt;p&gt;相对 STG，端到端训练约 &amp;gt;10× 参数效率；加后处理可达 &amp;gt;12× 压缩，渲染质量相当。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;4&#34;&gt;4. 消融实验&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;静态/动态消融：Mask、Color、Geo、Half、PP&#34; src=&#34;../../image/c3dgs/slide14_img29.png&#34; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;模块&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;th&gt;典型收益&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Mask&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;可学习体积掩码&lt;/td&gt;
+&lt;td&gt;Playroom：存储 +140% 效率、渲染 +65% 加速；Painter 动态场景高斯 −75%，FPS +20%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Color&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;哈希神经场替代 SH&lt;/td&gt;
+&lt;td&gt;颜色存储 &amp;gt;3× 压缩&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Geo&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;R-VQ 几何码本&lt;/td&gt;
+&lt;td&gt;存储约 −30%，质量基本不变&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Half&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;FP16 位置/标量&lt;/td&gt;
+&lt;td&gt;进一步减小 footprint&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;PP&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;量化 + 熵编码&lt;/td&gt;
+&lt;td&gt;模型再缩小 ~30–40%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;完整 pipeline（Mask + Color + Geo + Half + PP）在 Playroom 仅 17 MB。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;R-VQ 可视化与码本索引分布&#34; src=&#34;../../image/c3dgs/slide15_img31.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;R-VQ 前后椭球体与渲染几乎无可见差异；低阶段码本索引分布较均匀、码字范数较大，高阶段残差更小、分布更稀疏——说明多阶段残差量化有效。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;内存分析&#34; src=&#34;../../image/c3dgs/slide15_img32.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;颜色表示仍是各属性中占用较大的一块，但 8-bit 量化 + 熵编码可显著压缩。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;5&#34;&gt;5. 总结&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;C3DGS 提出面向静态与动态辐射场的端到端紧凑 3DGS 框架：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;**可学习体积掩码**在训练期而非训练后剔除冗余高斯，静态与动态均适用；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**哈希神经场**共享表示视角相关颜色，替代高维 SH；  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**R-VQ 码本**压缩几何与时间属性，参数开销可忽略。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;相对 3DGS / STG，分别实现 &amp;gt;25× / &amp;gt;12× 存储压缩，渲染更快，重建质量相当。该框架可作为 3DGS 轻量化的完整方案，便于移动端、AR/VR 等存储与带宽受限场景部署。&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/c3dgs/</link>
+      <pubDate>Wed, 03 Jun 2026 14:26:27 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/c3dgs/</guid>
+      
+    </item>
+    
+    <item>
+      <title>概览</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;3d4d-gs-&#34;&gt;3D/4D GS轻量化-码本向量量化&lt;a class=&#34;headerlink&#34; href=&#34;#3d4d-gs-&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 21 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;h2 id=&#34;nvsnovel-view-synthesis&#34;&gt;NVS(Novel View Synthesis)&lt;a class=&#34;headerlink&#34; href=&#34;#nvsnovel-view-synthesis&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;nerf&#34;&gt;NeRF&lt;a class=&#34;headerlink&#34; href=&#34;#nerf&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;3dgs&#34;&gt;3DGS&lt;a class=&#34;headerlink&#34; href=&#34;#3dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;4dgs&#34;&gt;4DGS&lt;a class=&#34;headerlink&#34; href=&#34;#4dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;vq&#34;&gt;VQ&lt;a class=&#34;headerlink&#34; href=&#34;#vq&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;codebook-codeword&#34;&gt;CodeBook, CodeWord&lt;a class=&#34;headerlink&#34; href=&#34;#codebook-codeword&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/</link>
+      <pubDate>Wed, 03 Jun 2026 14:26:27 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/</guid>
+      
+    </item>
     
     <item>
       <title>Discrete DLM MIA</title>
@@ -288,36 +562,6 @@ q(x_t \mid x_0) = \prod_{i=1}^{L} \left[ t \cdot \mathbf{1}[x_t^{(i)} = [\text{M
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/essay/paper/discrete-dlm-mia/</guid>
-      
-    </item>
-    
-    <item>
-      <title>3DGS</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;3d4d-gs-&#34;&gt;3D/4D GS轻量化-码本向量量化&lt;a class=&#34;headerlink&#34; href=&#34;#3d4d-gs-&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 22 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;nvsnovel-view-synthesis&#34;&gt;NVS(Novel View Synthesis)&lt;a class=&#34;headerlink&#34; href=&#34;#nvsnovel-view-synthesis&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;nerf&#34;&gt;NeRF&lt;a class=&#34;headerlink&#34; href=&#34;#nerf&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;3dgs&#34;&gt;3DGS&lt;a class=&#34;headerlink&#34; href=&#34;#3dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;4dgs&#34;&gt;4DGS&lt;a class=&#34;headerlink&#34; href=&#34;#4dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;vq&#34;&gt;VQ&lt;a class=&#34;headerlink&#34; href=&#34;#vq&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;r-vq&#34;&gt;R-VQ&lt;a class=&#34;headerlink&#34; href=&#34;#r-vq&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;codebook-codeword&#34;&gt;CodeBook, CodeWord&lt;a class=&#34;headerlink&#34; href=&#34;#codebook-codeword&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/</link>
-      <pubDate>Wed, 03 Jun 2026 00:00:37 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/</guid>
       
     </item>
     
@@ -743,8 +987,8 @@ q(x_t \mid x_0) = \prod_{i=1}^{L} \left[ t \cdot \mathbf{1}[x_t^{(i)} = [\text{M
 &lt;div class=&#34;admonition note&#34;&gt;
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;成文：188 篇&lt;/li&gt;
-&lt;li&gt;累字：193,250 字&lt;/li&gt;
+&lt;li&gt;成文：189 篇&lt;/li&gt;
+&lt;li&gt;累字：197,815 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
