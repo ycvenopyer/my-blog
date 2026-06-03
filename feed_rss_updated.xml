@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Wed, 03 Jun 2026 14:25:43 -0000</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2026 14:25:43 -0000</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2026 14:34:51 -0000</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2026 14:34:51 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -258,18 +258,18 @@ c_n(d) = f(\text{contract}(p_n),\, d;\, \theta)
 &lt;p&gt;C3DGS 提出面向静态与动态辐射场的端到端紧凑 3DGS 框架：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;**可学习体积掩码**在训练期而非训练后剔除冗余高斯，静态与动态均适用；  &lt;/p&gt;
+&lt;p&gt;可学习体积掩码在训练期而非训练后剔除冗余高斯，静态与动态均适用；  &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;**哈希神经场**共享表示视角相关颜色，替代高维 SH；  &lt;/p&gt;
+&lt;p&gt;哈希神经场共享表示视角相关颜色，替代高维 SH；  &lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;**R-VQ 码本**压缩几何与时间属性，参数开销可忽略。&lt;/p&gt;
+&lt;p&gt;R-VQ 码本压缩几何与时间属性，参数开销可忽略。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;相对 3DGS / STG，分别实现 &amp;gt;25× / &amp;gt;12× 存储压缩，渲染更快，重建质量相当。该框架可作为 3DGS 轻量化的完整方案，便于移动端、AR/VR 等存储与带宽受限场景部署。&lt;/p&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/c3dgs/</link>
-      <pubDate>Wed, 03 Jun 2026 14:26:27 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2026 14:35:32 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/c3dgs/</guid>
@@ -298,7 +298,7 @@ c_n(d) = f(\text{contract}(p_n),\, d;\, \theta)
 &lt;h2 id=&#34;vq&#34;&gt;VQ&lt;a class=&#34;headerlink&#34; href=&#34;#vq&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;codebook-codeword&#34;&gt;CodeBook, CodeWord&lt;a class=&#34;headerlink&#34; href=&#34;#codebook-codeword&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
       <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/</link>
-      <pubDate>Wed, 03 Jun 2026 14:26:27 +0000</pubDate>
+      <pubDate>Wed, 03 Jun 2026 14:35:32 +0000</pubDate>
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/</guid>
@@ -988,7 +988,7 @@ q(x_t \mid x_0) = \prod_{i=1}^{L} \left[ t \cdot \mathbf{1}[x_t^{(i)} = [\text{M
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;成文：189 篇&lt;/li&gt;
-&lt;li&gt;累字：197,815 字&lt;/li&gt;
+&lt;li&gt;累字：197,803 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
