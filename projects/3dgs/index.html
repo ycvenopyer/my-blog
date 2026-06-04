@@ -8125,7 +8125,7 @@
 
 <h1 id="3d4d-gs">3D/4D GS 轻量化 — 码本向量量化<a class="headerlink" href="#3d4d-gs" title="Permanent link">¶</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 1982 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 6 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 1990 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 6 分钟</p>
 </div>
 <aside class="md-pageviews md-pageviews--after-stats" aria-label="页面阅读量">
   <span class="md-pageviews__text">阅读量</span>
@@ -8152,10 +8152,13 @@
 <p>流程：</p>
 <ol>
 <li>采集：多视角照片或视频 + 相机内外参 + 稀疏 3D 点。  </li>
-<li>SfM（Structure-from-Motion，运动恢复结构）：从多张有重叠的图像反推每张图相机在哪、朝哪看，并恢复一批稀疏 3D 特征点（角点、纹理块等），是经典多视图几何流程。  </li>
-<li>
+</ol>
+<div class="admonition note 多视角照片采集">
+<p class="admonition-title">Note</p>
+<p>SfM（Structure-from-Motion，运动恢复结构）：从多张有重叠的图像反推每张图相机在哪、朝哪看，并恢复一批稀疏 3D 特征点（角点、纹理块等），是经典多视图几何流程。  </p>
 <p>COLMAP：常用的开源 SfM/MVS（Multi-View Stereo） 工具（<a href="https://colmap.github.io/">colmap.github.io</a>）。典型用法是输入图像文件夹，自动做特征匹配、增量式重建与光束法平差（Bundle Adjustment），输出相机位姿、内参和稀疏点云（<code>.ply</code> / <code>cameras.bin</code> 等）。  </p>
-</li>
+</div>
+<ol>
 <li>
 <p>表示：隐式场（NeRF）或显式基元（高斯点云）。  </p>
 </li>
@@ -8367,12 +8370,12 @@ i_n^l = \arg\min_k \left\| Z^l[k] - (r_n - \hat{r}_n^{l-1}) \right\|
 <footer class="md-article-dates" aria-label="文章时间信息">
   <span class="md-article-dates__item" title="最后修改">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-06-04 11:10:14">2026年6月4日 11:10:14</time>
+    <time class="md-article-dates__time" datetime="2026-06-04 11:23:11">2026年6月4日 11:23:11</time>
   </span>
   
   <span class="md-article-dates__item" title="首次创作">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-06-04 11:10:14">2026年6月4日 11:10:14</time>
+    <time class="md-article-dates__time" datetime="2026-05-31 21:52:14">2026年5月31日 21:52:14</time>
   </span>
   
 </footer>
