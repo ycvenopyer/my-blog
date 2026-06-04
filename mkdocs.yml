@@ -211,6 +211,8 @@ nav:
     - Bayesian TTA: projects/bayesian-tta.md
     - 3DGS: 
       - 概览: projects/3dgs/index.md
+      - 3DGS论文解读: projects/3dgs/3dgs.md
+      - STG论文解读: projects/3dgs/stg.md
       - Compact 3DGS论文解读: projects/3dgs/c3dgs.md
   - Essay:
     - Overview: essay.md
