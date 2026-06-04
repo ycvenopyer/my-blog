@@ -8150,15 +8150,15 @@
 <p>有了这样一个场，渲染任意新视角时：从相机发出一条射线，沿射线采样多个 3D 点，向场查询各点的颜色与不透明度，再按体渲染 / α 混合合成该像素——新视角来自对场的查询，而不是在已有照片之间做像素插值。</p>
 <p>NeRF 用 MLP 隐式场 <span class="arithmatex">\(f(\mathbf{x},\mathbf{d})\mapsto(\sigma,c)\)</span> 存这个场；3DGS 用百万个显式高斯近似，再用光栅化求像素。二者目标都是 NVS，差别主要在怎么存这个场以及如何计算。</p>
 <p>流程：</p>
-<ol>
+<ul>
 <li>采集：多视角照片或视频 + 相机内外参 + 稀疏 3D 点。  </li>
-</ol>
+</ul>
 <div class="admonition note 多视角照片采集">
 <p class="admonition-title">Note</p>
 <p>SfM（Structure-from-Motion，运动恢复结构）：从多张有重叠的图像反推每张图相机在哪、朝哪看，并恢复一批稀疏 3D 特征点（角点、纹理块等），是经典多视图几何流程。  </p>
 <p>COLMAP：常用的开源 SfM/MVS（Multi-View Stereo） 工具（<a href="https://colmap.github.io/">colmap.github.io</a>）。典型用法是输入图像文件夹，自动做特征匹配、增量式重建与光束法平差（Bundle Adjustment），输出相机位姿、内参和稀疏点云（<code>.ply</code> / <code>cameras.bin</code> 等）。  </p>
 </div>
-<ol>
+<ul>
 <li>
 <p>表示：隐式场（NeRF）或显式基元（高斯点云）。  </p>
 </li>
@@ -8168,7 +8168,7 @@
 <li>
 <p>评估：PSNR、SSIM、LPIPS；部署时还需 FPS 与 模型体积（MB）。</p>
 </li>
-</ol>
+</ul>
 <hr>
 <h2 id="3nerf">3.NeRF（神经辐射场）<a class="headerlink" href="#3nerf" title="Permanent link">¶</a></h2>
 <p>NeRF（<a href="https://arxiv.org/abs/2003.08934">Mildenhall et al., ECCV 2020</a>）用 MLP 将空间位置 x 与视角 d 映射为体积密度 σ 与辐射度 c，沿射线采样后按体渲染公式 α 混合得到像素颜色，端到端优化网络权重。</p>
@@ -8370,7 +8370,7 @@ i_n^l = \arg\min_k \left\| Z^l[k] - (r_n - \hat{r}_n^{l-1}) \right\|
 <footer class="md-article-dates" aria-label="文章时间信息">
   <span class="md-article-dates__item" title="最后修改">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-06-04 11:23:11">2026年6月4日 11:23:11</time>
+    <time class="md-article-dates__time" datetime="2026-06-04 11:27:51">2026年6月4日 11:27:51</time>
   </span>
   
   <span class="md-article-dates__item" title="首次创作">
