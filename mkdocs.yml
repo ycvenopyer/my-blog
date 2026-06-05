@@ -107,6 +107,7 @@ nav:
       - BLIP: ai-note/mllm/blip.md
       - LlaVA: ai-note/mllm/llava.md
       - TTA: ai-note/mllm/tta.md
+      - Discrete Tokenization: ai-note/mllm/discrete-tokenization.md
     - AIGC:
       - Overview: ai-note/aigc/index.md
       - Stable Diffusion: ai-note/aigc/stable-diffusion.md
@@ -214,6 +215,7 @@ nav:
       - 3DGS论文解读: projects/3dgs/3dgs.md
       - STG论文解读: projects/3dgs/stg.md
       - Compact 3DGS论文解读: projects/3dgs/c3dgs.md
+      - Rotation Trick: projects/3dgs/rotation-trick.md
   - Essay:
     - Overview: essay.md
     - Gossip:
