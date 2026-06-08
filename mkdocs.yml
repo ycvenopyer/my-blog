@@ -31,6 +31,8 @@ nav:
       - Overview: ai-note/dl/index.md
       - CNN: ai-note/dl/cnn.md
       - ResNet: ai-note/dl/resnet.md
+      - Discriminative Model: ai-note/dl/discriminative-model.md
+      - Generative Model: ai-note/dl/generative-model.md
       - VAE: ai-note/dl/vae.md
       - GAN: ai-note/dl/gan.md
     - NLP:
@@ -100,6 +102,13 @@ nav:
       - Agent Safety: ai-note/llm-safety/agent-safety.md
     - DLM:
       - Overview: ai-note/dlm/index.md
+      - U-Net: ai-note/dlm/u-net.md
+      - DDPM: ai-note/dlm/ddpm.md
+      - Flow Matching: ai-note/dlm/flow-matching.md
+      - DiT: ai-note/dlm/dit.md
+      - Latent Diffusion Model: ai-note/dlm/ldm.md
+      - LLaDA: ai-note/dlm/llada.md
+      - Dream: ai-note/dlm/dream.md
     - MLLM:
       - Overview: ai-note/mllm/index.md
       - ViT: ai-note/mllm/vit.md
