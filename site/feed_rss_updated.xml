@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 11 Jun 2026 13:16:06 -0000</pubDate>
-    <lastBuildDate>Thu, 11 Jun 2026 13:16:06 -0000</lastBuildDate>
+    <pubDate>Thu, 11 Jun 2026 14:13:31 -0000</pubDate>
+    <lastBuildDate>Thu, 11 Jun 2026 14:13:31 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,371 @@
     
 
     
+    
+    <item>
+      <title>3DGS论文解读</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;3d-gaussian-splatting-for-real-time-radiance-field-rendering&#34;&gt;3D Gaussian Splatting for Real-Time Radiance Field Rendering&lt;a class=&#34;headerlink&#34; href=&#34;#3d-gaussian-splatting-for-real-time-radiance-field-rendering&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1730 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 8 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 5 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;作者：Bernhard Kerbl、Georgios Kopanas、Thomas Leimkühler、George Drettakis（Inria / Max-Planck-Institut für Informatik）&lt;/p&gt;
+&lt;p&gt;论文链接：&lt;a href=&#34;https://arxiv.org/abs/2308.04079&#34;&gt;https://arxiv.org/abs/2308.04079&lt;/a&gt;（SIGGRAPH 2023）&lt;/p&gt;
+&lt;p&gt;论文代码：&lt;a href=&#34;https://github.com/graphdeco-inria/gaussian-splatting&#34;&gt;https://github.com/graphdeco-inria/gaussian-splatting&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;项目主页：&lt;a href=&#34;https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/&#34;&gt;https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;1&#34;&gt;1. 背景与动机&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11-nerf&#34;&gt;1.1 从 NeRF 到实时辐射场&lt;a class=&#34;headerlink&#34; href=&#34;#11-nerf&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;神经辐射场（NeRF）用 MLP 隐式表示体密度与颜色，沿射线体渲染可得到高质量新视角合成，但训练与推理都需大量 MLP 查询，代价高。Instant NGP、Plenoxels 等通过哈希网格或稀疏体素加速，仍依赖随机射线采样，内存占用大，1080p 下难以真正实时。&lt;/p&gt;
+&lt;p&gt;网格与点云是经典显式表示，适合 GPU 光栅化；NeRF 类方法则是连续隐式场，优化灵活但渲染慢。3DGS 试图兼得二者优点：用可微三维高斯作体渲染式表示，再用溅射光栅化实现实时合成。&lt;/p&gt;
+&lt;h3 id=&#34;12&#34;&gt;1.2 现有方法的瓶颈&lt;a class=&#34;headerlink&#34; href=&#34;#12&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在无界完整场景、1080p 分辨率下，尚无方法能同时达到当前最优画质与 &lt;span class=&#34;arithmatex&#34;&gt;\(\geq 30\)&lt;/span&gt; FPS 实时渲染：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Mip-NeRF360：画质最好，单 GPU 训练约 48 小时，渲染约 10 秒/帧。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;InstantNGP / Plenoxels：训练快（约 5–25 分钟），但画质低于 Mip-NeRF360，FPS 约 10–15，仍非严格实时。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;13&#34;&gt;1.3 核心目标&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;提出三个关键设计，在保持当前最优级画质的同时实现竞争性训练时间与 1080p 实时新视角合成：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;从 SfM 稀疏点出发，用三维高斯表示场景，保留连续体渲染的可优化性，又避免空域无效采样。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;交错优化高斯属性与自适应密度控制（致密化/剪枝），优化各向异性协方差以紧凑拟合几何。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;快速、可见性感知的可微光栅化，支持各向异性溅射与高效反向传播。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt=&#34;与 InstantNGP、Plenoxels、Mip-NeRF360 对比：训练时间、PSNR 与 FPS&#34; src=&#34;../../image/3dgs/fig01_teaser.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;典型结果：与 InstantNGP 训练时间相近时画质相当；训练约 51 分钟时可略超 Mip-NeRF360，同时达到 93–135 FPS。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;2&#34;&gt;2. 方法与框架&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21&#34;&gt;2.1 整体流程&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;输入为多视角静态图像及 SfM 标定相机；从稀疏点云初始化三维高斯，交替优化位置、不透明度、协方差、SH 颜色，并自适应增删高斯；经分块光栅化渲染后与真值比较并反向传播。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;从 SfM 点初始化，经自适应密度控制与可微分块光栅化优化&#34; src=&#34;../../image/3dgs/fig02_pipeline.png&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;22&#34;&gt;2.2 可微三维高斯溅射&lt;a class=&#34;headerlink&#34; href=&#34;#22&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;每个高斯由均值 &lt;span class=&#34;arithmatex&#34;&gt;\(\boldsymbol{\mu}\)&lt;/span&gt;、协方差 &lt;span class=&#34;arithmatex&#34;&gt;\(\boldsymbol{\Sigma}\)&lt;/span&gt;、不透明度 &lt;span class=&#34;arithmatex&#34;&gt;\(\alpha\)&lt;/span&gt; 与 SH 系数描述。三维高斯密度：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+G(\mathbf{x}) = \exp\!\left(-\tfrac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^\top \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)
+\]&lt;/div&gt;
+&lt;p&gt;渲染时与 &lt;span class=&#34;arithmatex&#34;&gt;\(\alpha\)&lt;/span&gt; 相乘参与 &lt;span class=&#34;arithmatex&#34;&gt;\(\alpha\)&lt;/span&gt; 混合。协方差半正定，分解为缩放 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{S}\)&lt;/span&gt; 与旋转 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{R}\)&lt;/span&gt;：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\boldsymbol{\Sigma} = \mathbf{R}\mathbf{S}\mathbf{S}^\top \mathbf{R}^\top
+\]&lt;/div&gt;
+&lt;p&gt;优化时用三维向量 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{s}\)&lt;/span&gt;（指数激活）与单位四元数 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{q}\)&lt;/span&gt; 分别表示缩放与旋转，避免直接优化 &lt;span class=&#34;arithmatex&#34;&gt;\(\boldsymbol{\Sigma}\)&lt;/span&gt; 导致非半正定。&lt;/p&gt;
+&lt;p&gt;投影到像平面：设视图变换 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{W}\)&lt;/span&gt;、投影雅可比 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{J}\)&lt;/span&gt;，&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\boldsymbol{\Sigma}&#39; = \mathbf{J}\mathbf{W}\boldsymbol{\Sigma}\mathbf{W}^\top\mathbf{J}^\top
+\]&lt;/div&gt;
+&lt;p&gt;取 &lt;span class=&#34;arithmatex&#34;&gt;\(\boldsymbol{\Sigma}&#39;\)&lt;/span&gt; 左上 &lt;span class=&#34;arithmatex&#34;&gt;\(2\times 2\)&lt;/span&gt; 子矩阵作为二维协方差，与 NeRF 体渲染在 &lt;span class=&#34;arithmatex&#34;&gt;\(\alpha\)&lt;/span&gt; 混合意义上等价：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\mathbf{C} = \sum_{i\in\mathcal{N}} c_i\,\alpha_i \prod_{j=1}^{i-1}(1-\alpha_j)
+\]&lt;/div&gt;
+&lt;p&gt;其中 &lt;span class=&#34;arithmatex&#34;&gt;\(c_i\)&lt;/span&gt; 由 SH 与视线方向求得，&lt;span class=&#34;arithmatex&#34;&gt;\(\alpha_i\)&lt;/span&gt; 为二维高斯与不透明度之积。&lt;/p&gt;
+&lt;h3 id=&#34;23&#34;&gt;2.3 优化与自适应密度控制&lt;a class=&#34;headerlink&#34; href=&#34;#23&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;损失函数（L1 + D-SSIM）：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+L = (1-\lambda)\, L_1 + \lambda\, L_{\text{D-SSIM}},\quad \lambda = 0.2
+\]&lt;/div&gt;
+&lt;p&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(\alpha\)&lt;/span&gt; 经 S 型函数约束于 &lt;span class=&#34;arithmatex&#34;&gt;\([0,1)\)&lt;/span&gt;，尺度用指数激活；初始协方差为各向同性，轴长取到最近三个 SfM 点距离均值。&lt;/p&gt;
+&lt;p&gt;密度控制（预热后每 100 次迭代执行）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;剪枝：&lt;span class=&#34;arithmatex&#34;&gt;\(\alpha &amp;lt; \alpha_{\min}\)&lt;/span&gt; 或世界/视空间覆盖范围过大的高斯。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;致密化：视空间位置梯度均值 &lt;span class=&#34;arithmatex&#34;&gt;\(&amp;gt; \tau_{\text{pos}}\)&lt;/span&gt;（0.0002）时增点。欠重建（小高斯）：克隆，沿梯度方向复制同尺度高斯。过重建（大高斯）：分裂为两个，尺度除以 &lt;span class=&#34;arithmatex&#34;&gt;\(\phi=1.6\)&lt;/span&gt;，位置按原高斯概率密度采样。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;每 &lt;span class=&#34;arithmatex&#34;&gt;\(N=3000\)&lt;/span&gt; 次迭代将 &lt;span class=&#34;arithmatex&#34;&gt;\(\alpha\)&lt;/span&gt; 重置接近 0，抑制相机附近漂浮伪影。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;自适应致密化：上排克隆补欠重建，下排分裂处理过重建&#34; src=&#34;../../image/3dgs/fig04_densification.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;最终场景约 &lt;span class=&#34;arithmatex&#34;&gt;\(10^6\)&lt;/span&gt; 量级高斯（测试集 100 万–500 万），单点约 59 维参数（&lt;span class=&#34;arithmatex&#34;&gt;\(3+3+4+1+48\)&lt;/span&gt;）。&lt;/p&gt;
+&lt;h3 id=&#34;24&#34;&gt;2.4 快速可微光栅化&lt;a class=&#34;headerlink&#34; href=&#34;#24&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;屏幕划分为 &lt;span class=&#34;arithmatex&#34;&gt;\(16\times 16\)&lt;/span&gt; 分块；视锥与分块剔除，保留 99% 置信区间相交的高斯。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;每个高斯按重叠分块实例化，键 = 视空间深度（低 32 比特）+ 分块编号（高比特），全局基数排序一次完成。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;每分块一个线程块，协作加载高斯到共享内存，前向按深度由前向后累积颜色与 &lt;span class=&#34;arithmatex&#34;&gt;\(\alpha\)&lt;/span&gt;；&lt;span class=&#34;arithmatex&#34;&gt;\(\alpha\)&lt;/span&gt; 饱和则提前停止。  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;反向传播：不限制参与梯度的高斯数量；复用排序结果由后向前遍历，用前向累积 &lt;span class=&#34;arithmatex&#34;&gt;\(\alpha\)&lt;/span&gt; 反推中间透明度，避免逐像素动态列表。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;与 Pulsar 等相比：保持近似有序 &lt;span class=&#34;arithmatex&#34;&gt;\(\alpha\)&lt;/span&gt; 混合、支持各向异性溅射、对所有溅射反传梯度。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;3&#34;&gt;3. 实验与结果&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;31&#34;&gt;3.1 设置&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;数据集&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Mip-NeRF 360&lt;/td&gt;
+&lt;td&gt;无界室内外，画质基准&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tanks&amp;amp;Temples、Deep Blending&lt;/td&gt;
+&lt;td&gt;大场景与室内&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;NeRF-Synthetic&lt;/td&gt;
+&lt;td&gt;有界合成，可随机初始化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;指标：PSNR、SSIM、LPIPS、训练时间、FPS、存储（MB）。A6000 GPU；Mip-NeRF360 数字来自原论文。&lt;/p&gt;
+&lt;h3 id=&#34;32&#34;&gt;3.2 真实场景&lt;a class=&#34;headerlink&#34; href=&#34;#32&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;多数据集定性对比（3 万次迭代）&#34; src=&#34;../../image/3dgs/fig05_comparison.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;定量对比：Mip-NeRF 360 / Tanks&amp;amp;Temples / Deep Blending&#34; src=&#34;../../image/3dgs/fig06_table.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Mip-NeRF 360（本文 30K）：SSIM 0.815、PSNR 27.21、LPIPS 0.214，训练 41 分钟，134 FPS，734 MB——画质与 Mip-NeRF360 相当或略优，训练快两个数量级，渲染快数百倍。&lt;/p&gt;
+&lt;p&gt;7K 次迭代（约 6 分钟）已接近 InstantNGP / Plenoxels 画质；继续训练可追平 Mip-NeRF360，而快速方法通常无法再通过加时达到当前最优。&lt;/p&gt;
+&lt;p&gt;Deep Blending：PSNR 29.41、137 FPS。Tanks&amp;amp;Temples：与 InstantNGP-Base 训练时间相近（约 7 分钟），画质更好。&lt;/p&gt;
+&lt;h3 id=&#34;33&#34;&gt;3.3 合成场景&lt;a class=&#34;headerlink&#34; href=&#34;#33&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;随机初始化 10 万高斯，30K 次迭代后约 20 万–50 万点，PSNR 平均 33.32，渲染 180–300 FPS。相对点基辐射场方法，用约 &amp;frac14; 点数达到相同 PSNR，模型约 3.8 MB（仅用 2 阶 SH）。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;4&#34;&gt;4. 消融实验&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;SfM 初始化与随机初始化对比（5000 次迭代）&#34; src=&#34;../../image/3dgs/fig08_ablation_init.png&#34; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;变体&lt;/th&gt;
+&lt;th&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;随机初始化&lt;/td&gt;
+&lt;td&gt;无 SfM 时仍可工作，背景与未覆盖区域易出现漂浮伪影&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;无克隆 / 无分裂&lt;/td&gt;
+&lt;td&gt;分裂对背景重要；克隆加速薄结构收敛&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;限制反向带宽&lt;/td&gt;
+&lt;td&gt;限制仅前 10 个高斯反传梯度，Truck 场景 PSNR 降约 11 dB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;各向同性&lt;/td&gt;
+&lt;td&gt;关闭各向异性协方差，细节对齐表面能力显著下降&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;无 SH&lt;/td&gt;
+&lt;td&gt;去掉视角相关 SH，PSNR 下降&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img alt=&#34;限制梯度高斯数量与完整方法对比&#34; src=&#34;../../image/3dgs/fig09_ablation_grad.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;各向异性与各向同性对比（Ficus 限 5000 高斯）&#34; src=&#34;../../image/3dgs/fig10_ablation_aniso.png&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;5&#34;&gt;5. 局限与总结&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;局限：未充分观测区域仍有伪影；细长或斑块状高斯、视角相关处可能出现闪现伪影；大场景训练峰值显存超过 20 GB；存储仍高于纯 NeRF MLP（数百 MB 级点云文件）。&lt;/p&gt;
+&lt;p&gt;3DGS 首次在完整无界场景、1080p 下实现当前最优级画质与真正实时渲染。核心贡献：各向异性三维高斯 + 交错密度控制 + 可见性感知分块光栅化。显式溅射不必牺牲体渲染式优化，为后续动态扩展（如 STG）与压缩（如 C3DGS）奠定基础。&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/3dgs/</link>
+      <pubDate>Thu, 11 Jun 2026 22:13:10 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/3dgs/</guid>
+      
+    </item>
+    
+    <item>
+      <title>STG论文解读</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;spacetime-gaussian-feature-splatting-for-real-time-dynamic-view-synthesis&#34;&gt;Spacetime Gaussian Feature Splatting for Real-Time Dynamic View Synthesis&lt;a class=&#34;headerlink&#34; href=&#34;#spacetime-gaussian-feature-splatting-for-real-time-dynamic-view-synthesis&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1533 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 10 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 5 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;作者：Zhan Li、Zhang Chen、Zhong Li、Yi Xu（OPPO US Research Center / Portland State University）&lt;/p&gt;
+&lt;p&gt;论文链接：&lt;a href=&#34;https://arxiv.org/abs/2312.16812&#34;&gt;https://arxiv.org/abs/2312.16812&lt;/a&gt;（CVPR 2024）&lt;/p&gt;
+&lt;p&gt;论文代码：&lt;a href=&#34;https://github.com/oppo-us-research/SpacetimeGaussians&#34;&gt;https://github.com/oppo-us-research/SpacetimeGaussians&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;项目主页：&lt;a href=&#34;https://oppo-us-research.github.io/SpacetimeGaussians-website/&#34;&gt;https://oppo-us-research.github.io/SpacetimeGaussians-website/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;1&#34;&gt;1. 背景与动机&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11&#34;&gt;1.1 动态新视角合成的挑战&lt;a class=&#34;headerlink&#34; href=&#34;#11&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;动态场景新视角合成需同时满足高分辨率照片级真实感、实时渲染与紧凑存储，三者往往难以兼得。逐帧应用 3DGS 会导致模型体积与训练时间随帧数线性膨胀。&lt;/p&gt;
+&lt;p&gt;现有动态 NeRF 类方法（NeRFPlayer、HyperReel、K-Planes、MixVoxels 等）多在单一模型中编码多帧，利用相邻帧相似性共享特征，但网格/平面类表示难以自适应复杂运动结构，高分辨率实时渲染常需牺牲质量。&lt;/p&gt;
+&lt;h3 id=&#34;12-3dgs&#34;&gt;1.2 3DGS 的局限&lt;a class=&#34;headerlink&#34; href=&#34;#12-3dgs&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;3DGS 在静态场景已证明溅射光栅化的高效性，但属性逐帧存储不适用于多视角视频：百万级高斯 × 数百帧 × 每点 SH/几何参数，存储与带宽压力巨大。&lt;/p&gt;
+&lt;h3 id=&#34;13&#34;&gt;1.3 核心目标&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;提出 Spacetime Gaussian Feature Splatting（STG），在四维时空域扩展 3D 高斯，并用特征溅射 + 轻量 MLP 替代 SH，实现：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;静态、动态与瞬态（出现/消失）内容的统一建模；  &lt;/li&gt;
+&lt;li&gt;视角与时间相关外观的紧凑表达；  &lt;/li&gt;
+&lt;li&gt;引导采样补全稀疏远端区域；  &lt;/li&gt;
+&lt;li&gt;8K 分辨率轻量版约 60+ FPS（RTX 4090）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;8K 实时演示、高质量渲染与质量-速度-体积权衡&#34; src=&#34;../../image/stg/fig01_teaser.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Neural 3D Video 数据集上：PSNR 32.05、140 FPS、200 MB（300 帧）；相对 HyperReel（360 MB、2 FPS）与 K-Planes（311 MB、0.3 FPS）更优。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;2&#34;&gt;2. 方法与框架&lt;a class=&#34;headerlink&#34; href=&#34;#2&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;21&#34;&gt;2.1 整体架构&lt;a class=&#34;headerlink&#34; href=&#34;#21&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;输入为多视角视频与相机参数；从各时间戳 SfM 稀疏点初始化 Spacetime Gaussians（STG），优化时空属性与溅射特征，经特征光栅化 + MLP 得到最终颜色。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;STG 组成：时间不透明度、多项式运动/旋转、时间相关特征；特征溅射后经 MLP 着色&#34; src=&#34;../../image/stg/fig02_overview.png&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;22&#34;&gt;2.2 时空高斯&lt;a class=&#34;headerlink&#34; href=&#34;#22&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;对时空点 &lt;span class=&#34;arithmatex&#34;&gt;\((\mathbf{x}, t)\)&lt;/span&gt;，第 &lt;span class=&#34;arithmatex&#34;&gt;\(i\)&lt;/span&gt; 个 STG 的不透明度：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\alpha_i(t) = \sigma_i(t)\,\exp\!\left(-\tfrac{1}{2}(\mathbf{x}-\boldsymbol{\mu}_i(t))^\top \boldsymbol{\Sigma}_i(t)^{-1}(\mathbf{x}-\boldsymbol{\mu}_i(t))\right)
+\]&lt;/div&gt;
+&lt;p&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(\boldsymbol{\mu}_i(t)\)&lt;/span&gt;、&lt;span class=&#34;arithmatex&#34;&gt;\(\boldsymbol{\Sigma}_i(t)\)&lt;/span&gt; 随时间变化；&lt;span class=&#34;arithmatex&#34;&gt;\(\sigma_i(t)\)&lt;/span&gt; 为时间调制的不透明度。&lt;/p&gt;
+&lt;p&gt;时间径向基（TRBF）——时间不透明度：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\sigma_i(t) = \sigma_i^s \exp\!\left(-s_i^\tau |t-\mu_i^\tau|^2\right)
+\]&lt;/div&gt;
+&lt;p&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(\mu_i^\tau\)&lt;/span&gt; 为时间中心（可见性峰值时刻），&lt;span class=&#34;arithmatex&#34;&gt;\(s_i^\tau\)&lt;/span&gt; 控制有效持续时间，&lt;span class=&#34;arithmatex&#34;&gt;\(\sigma_i^s\)&lt;/span&gt; 为空间不透明度。可建模内容的出现与消失。&lt;/p&gt;
+&lt;p&gt;多项式运动轨迹（&lt;span class=&#34;arithmatex&#34;&gt;\(n_p=3\)&lt;/span&gt;）：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\boldsymbol{\mu}_i(t) = \sum_{k=0}^{n_p} \mathbf{b}_{i,k}\,(t-\mu_i^\tau)^k,\quad \mathbf{b}_{i,k}\in\mathbb{R}^3
+\]&lt;/div&gt;
+&lt;p&gt;复杂长运动可由多个短段 STG 组合表示。&lt;/p&gt;
+&lt;p&gt;多项式旋转（&lt;span class=&#34;arithmatex&#34;&gt;\(n_q=1\)&lt;/span&gt;），四元数 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{q}_i(t)\)&lt;/span&gt; 同样以 &lt;span class=&#34;arithmatex&#34;&gt;\(\mu_i^\tau\)&lt;/span&gt; 为中心展开；归一化得 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{R}_i(t)\)&lt;/span&gt;，再与常数缩放 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{S}_i\)&lt;/span&gt; 组成：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\boldsymbol{\Sigma}_i(t) = \mathbf{R}_i(t)\mathbf{S}_i\mathbf{S}_i^\top \mathbf{R}_i(t)^\top
+\]&lt;/div&gt;
+&lt;p&gt;缩放矩阵不随时间变化（实验未见时变缩放收益）。&lt;/p&gt;
+&lt;h3 id=&#34;23&#34;&gt;2.3 特征溅射渲染&lt;a class=&#34;headerlink&#34; href=&#34;#23&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;每点存 9 维特征而非 48 维 SH：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\mathbf{f}_i(t) = \big[\mathbf{f}_i^{\text{base}},\,\mathbf{f}_i^{\text{dir}},\,(t-\mu_i^\tau)\mathbf{f}_i^{\text{time}}\big]^\top,\quad \mathbf{f}_i^{\cdot}\in\mathbb{R}^3
+\]&lt;/div&gt;
+&lt;p&gt;光栅化时将 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{f}_i(t)\)&lt;/span&gt; 替代颜色做溅射，像素处得 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{F}^{\text{base}}, \mathbf{F}^{\text{dir}}, \mathbf{F}^{\text{time}}\)&lt;/span&gt;，再经两层 MLP &lt;span class=&#34;arithmatex&#34;&gt;\(\Phi\)&lt;/span&gt;：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\mathbf{I} = \mathbf{F}^{\text{base}} + \Phi(\mathbf{F}^{\text{dir}}, \mathbf{F}^{\text{time}}, \mathbf{r})
+\]&lt;/div&gt;
+&lt;p&gt;&lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{r}\)&lt;/span&gt; 为像素视线方向。轻量版省略 &lt;span class=&#34;arithmatex&#34;&gt;\(\Phi\)&lt;/span&gt;，仅用 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathbf{F}^{\text{base}}\)&lt;/span&gt;，换取更高 FPS（8K 约 66 FPS）。&lt;/p&gt;
+&lt;h3 id=&#34;24&#34;&gt;2.4 优化与引导采样&lt;a class=&#34;headerlink&#34; href=&#34;#24&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;可优化参数：&lt;span class=&#34;arithmatex&#34;&gt;\(\Phi\)&lt;/span&gt; 及每个 STG 的 &lt;span class=&#34;arithmatex&#34;&gt;\(\sigma_i^s, s_i^\tau, \mu_i^\tau, \{\mathbf{b}_{i,k}\}, \{\mathbf{c}_{i,k}\}, \mathbf{s}_i\)&lt;/span&gt; 与基色/视角/时间三分量特征。损失为 L1 + D-SSIM；沿用 3DGS 密度控制，并采用更激进剪枝以控制模型大小。50 帧序列在 A6000 GPU 上训练约 40–60 分钟。&lt;/p&gt;
+&lt;p&gt;引导采样：初始化稀疏且远离相机的区域易模糊。在损失稳定后，按图像块聚合训练误差，从高误差块中心像素发射射线；利用溅射得到的粗深度图限定采样深度区间，沿射线均匀增采样新 STG 并加小噪声。每场景最多约 3 次；与克隆/分裂互补——后者在已有高斯附近增密，引导采样可填补空白区域。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;利用训练误差与粗深度沿射线采样新高斯&#34; src=&#34;../../image/stg/fig03_guided_sampling.png&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;3&#34;&gt;3. 实验与结果&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;31&#34;&gt;3.1 设置&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;数据集&lt;/th&gt;
+&lt;th&gt;特点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Neural 3D Video&lt;/td&gt;
+&lt;td&gt;6 场景，18–21 相机，2704×2028，300 帧&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Google Immersive&lt;/td&gt;
+&lt;td&gt;46 鱼眼相机，外半球布置，视角重叠少&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Technicolor&lt;/td&gt;
+&lt;td&gt;5 场景，电影级多视角&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;指标：PSNR、DSSIM、LPIPS、FPS、模型体积（MB 或 MB/帧）。&lt;/p&gt;
+&lt;h3 id=&#34;32-neural-3d-video&#34;&gt;3.2 Neural 3D Video&lt;a class=&#34;headerlink&#34; href=&#34;#32-neural-3d-video&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;Neural 3D Video 定性对比&#34; src=&#34;../../image/stg/fig04_qualitative_n3d.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Neural 3D Video 定量表（1352×1014 测 FPS）&#34; src=&#34;../../image/stg/fig05_table_n3d.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;本文方法：PSNR 32.05、DSSIM 0.026、LPIPS 0.044、140 FPS、200 MB（300 帧）。优于 MixVoxels-X/L、K-Planes、HyperReel、NeRFPlayer 等；LPIPS 最佳，PSNR/DSSIM 多数领先。细节更鲜活（如三文鱼纹理、杯壁焦散）。&lt;/p&gt;
+&lt;h3 id=&#34;33-google-immersive&#34;&gt;3.3 Google Immersive&lt;a class=&#34;headerlink&#34; href=&#34;#33-google-immersive&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;Google Immersive 数据集表与定性对比&#34; src=&#34;../../image/stg/fig06_table_immersive.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;本文方法：PSNR 29.2、DSSIM 0.042、LPIPS 0.081、99 FPS、1.2 MB/帧。相对 HyperReel 渲染快 10 倍以上；相对 NeRFPlayer 各指标全面领先。&lt;/p&gt;
+&lt;h3 id=&#34;34-technicolor&#34;&gt;3.4 Technicolor&lt;a class=&#34;headerlink&#34; href=&#34;#34-technicolor&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;Technicolor 定量表&#34; src=&#34;../../image/stg/fig07_table_technicolor.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;本文方法：PSNR 33.6、LPIPS 0.084、86.7 FPS、1.1 MB/帧，优于 DyNeRF 与 HyperReel。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Technicolor 定性对比&#34; src=&#34;../../image/stg/fig09_qualitative_technicolor.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;轻量版 8K 实时渲染演示&#34; src=&#34;../../image/stg/fig10_lite_demo.png&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;4&#34;&gt;4. 消融实验&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;各模块消融（Technicolor 五场景平均）&#34; src=&#34;../../image/stg/fig08_ablation.png&#34; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;变体&lt;/th&gt;
+&lt;th&gt;PSNR&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;无时间不透明度&lt;/td&gt;
+&lt;td&gt;31.0&lt;/td&gt;
+&lt;td&gt;无法建模瞬态内容，下降最大&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;无多项式运动&lt;/td&gt;
+&lt;td&gt;32.6&lt;/td&gt;
+&lt;td&gt;运动表达受限&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;无多项式旋转&lt;/td&gt;
+&lt;td&gt;33.4&lt;/td&gt;
+&lt;td&gt;影响较小&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;无特征溅射&lt;/td&gt;
+&lt;td&gt;33.0&lt;/td&gt;
+&lt;td&gt;回退 SH 路线，体积增且 LPIPS 变差&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;无引导采样&lt;/td&gt;
+&lt;td&gt;33.3&lt;/td&gt;
+&lt;td&gt;远端稀疏区质量下降&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;完整方法&lt;/td&gt;
+&lt;td&gt;33.6&lt;/td&gt;
+&lt;td&gt;完整流程&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;初始化消融（Theater 场景）：每 &lt;span class=&#34;arithmatex&#34;&gt;\(N\)&lt;/span&gt; 帧取 SfM 点，&lt;span class=&#34;arithmatex&#34;&gt;\(N=1\)&lt;/span&gt; 时 PSNR 31.58、110 MB；&lt;span class=&#34;arithmatex&#34;&gt;\(N=16\)&lt;/span&gt; 时 31.04、32.6 MB——更稀疏初始化可显著减小体积，画质略降。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;5&#34;&gt;5. 总结&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;STG 将 3DGS 扩展到四维时空：TRBF 时间不透明度 + 多项式运动/旋转刻画动态与瞬态；9 维特征溅射 + 小 MLP 替代 SH，体积更小且支持时变外观；引导采样结合误差与粗深度，改善远端稀疏区。&lt;/p&gt;
+&lt;p&gt;在 Neural 3D Video、Google Immersive、Technicolor 上达到当前最优级质量与实时高分辨率渲染，模型紧凑（约 200 MB/300 帧或约 1 MB/帧）。轻量版可 8K 60+ FPS，适合 VR/AR、广播与流媒体。该方法也是 Compact 3DGS 等动态压缩工作的主要基线。&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/stg/</link>
+      <pubDate>Thu, 11 Jun 2026 22:13:10 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/stg/</guid>
+      
+    </item>
     
     <item>
       <title>Salescoach Agent</title>
@@ -2379,28 +2744,6 @@ i_n^l = \arg\min_k \left\| Z^l[k] - (r_n - \hat{r}_n^{l-1}) \right\|
     </item>
     
     <item>
-      <title>3DGS论文解读</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;3d-gaussian-splatting-for-real-time-radiance-field-rendering&#34;&gt;3D Gaussian Splatting for Real-Time Radiance Field Rendering&lt;a class=&#34;headerlink&#34; href=&#34;#3d-gaussian-splatting-for-real-time-radiance-field-rendering&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 8 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/3dgs/</link>
-      <pubDate>Thu, 04 Jun 2026 11:23:11 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/3dgs/</guid>
-      
-    </item>
-    
-    <item>
       <title>Compact 3DGS论文解读</title>
       
       
@@ -2642,28 +2985,6 @@ c_n(d) = f(\text{contract}(p_n),\, d;\, \theta)
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/c3dgs/</guid>
-      
-    </item>
-    
-    <item>
-      <title>STG论文解读</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;spacetime-gaussian-feature-splatting-for-real-time-dynamic-view-synthesis&#34;&gt;Spacetime Gaussian feature splatting for real-time dynamic view synthesis&lt;a class=&#34;headerlink&#34; href=&#34;#spacetime-gaussian-feature-splatting-for-real-time-dynamic-view-synthesis&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 9 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/projects/3dgs/stg/</link>
-      <pubDate>Thu, 04 Jun 2026 11:20:05 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/3dgs/stg/</guid>
       
     </item>
     
@@ -3104,7 +3425,7 @@ q(x_t \mid x_0) = \prod_{i=1}^{L} \left[ t \cdot \mathbf{1}[x_t^{(i)} = [\text{M
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;成文：202 篇&lt;/li&gt;
-&lt;li&gt;累字：228,700 字&lt;/li&gt;
+&lt;li&gt;累字：237,106 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
