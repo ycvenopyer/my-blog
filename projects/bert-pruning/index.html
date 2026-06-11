@@ -8617,7 +8617,7 @@
 <h3 id="22">2.2 层剪枝策略<a class="headerlink" href="#22" title="Permanent link">¶</a></h3>
 <p>除训练后直接删层的剪枝策略外，我们还对照了LayerDrop：训练阶段使用丢弃概率约 0.1 的结构化丢弃，使模型适应随机深度。</p>
 <p>在微调后的文本分类模型上，对比多种删层模式（均以完整模型为基准）：</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/bert-pruning.png" data-desc-position="bottom"><img alt="bert-pruning" src="../image/bert-pruning.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/bert-pruning/bert-pruning.png" data-desc-position="bottom"><img alt="bert-pruning" src="../image/bert-pruning/bert-pruning.png"></a></p>
 <table>
 <thead>
 <tr>
@@ -8649,7 +8649,7 @@
 </tbody>
 </table>
 <h3 id="23">2.3 实验现象<a class="headerlink" href="#23" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/layer-pruning.png" data-desc-position="bottom"><img alt="layer-pruning" src="../image/layer-pruning.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/bert-pruning/layer-pruning.png" data-desc-position="bottom"><img alt="layer-pruning" src="../image/bert-pruning/layer-pruning.png"></a></p>
 <p>从准确率、参数量、推理速度三方面对比：</p>
 <ul>
 <li>
@@ -8678,9 +8678,9 @@
 </li>
 </ul>
 <p>Head Pruning：移除多头注意力中贡献小或近似无效的头，在降参与加速的同时尽量保持精度。</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/head-pruning.png" data-desc-position="bottom"><img alt="head-pruning" src="../image/head-pruning.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/bert-pruning/head-pruning.png" data-desc-position="bottom"><img alt="head-pruning" src="../image/bert-pruning/head-pruning.png"></a></p>
 <h3 id="32">3.2 实验现象<a class="headerlink" href="#32" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/head-pruning-result.png" data-desc-position="bottom"><img alt="head-pruning-result" src="../image/head-pruning-result.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/bert-pruning/head-pruning-result.png" data-desc-position="bottom"><img alt="head-pruning-result" src="../image/bert-pruning/head-pruning-result.png"></a></p>
 <p>在不同剪枝比例下观察训练过程与最终指标：</p>
 <ul>
 <li>
@@ -8695,7 +8695,7 @@
 <hr>
 <h2 id="4-cofi">4. CoFi：粗粒度 + 细粒度联合剪枝与分层蒸馏<a class="headerlink" href="#4-cofi" title="Permanent link">¶</a></h2>
 <h3 id="41">4.1 动机<a class="headerlink" href="#41" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/CoFi.png" data-desc-position="bottom"><img alt="CoFi" src="../image/CoFi.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/bert-pruning/CoFi.png" data-desc-position="bottom"><img alt="CoFi" src="../image/bert-pruning/CoFi.png"></a></p>
 <p>经验上，单纯剪枝往往难以把端到端推理加速推到特别高的倍数。知识蒸馏可以把大模型能力迁移到小模型，常能带来更明显的小模型 + 低延迟，但往往依赖大量无标签数据与较高的训练成本。</p>
 <p><strong>CoFi</strong>：<a href="https://arxiv.org/abs/2204.00408">Structured Pruning Learns Compact and Accurate Models</a>提出一种面向特定任务的结构化剪枝框架，在同一套目标函数下同时学习：</p>
 <ul>
@@ -8709,7 +8709,7 @@
 <p>并配合分层蒸馏（layer-wise distillation）：动态学习教师网络与学生网络之间的层对应关系，把蒸馏损失写进联合目标，从而在剪枝的同时拉近师生表示，提升小模型精度。</p>
 <p>CoFi 类方法旨在得到更小更快的模型，且相对大规模无标签蒸馏而言，不一定依赖额外海量无标签数据做传统意义上的蒸馏数据管线。</p>
 <h3 id="42">4.2 实验现象<a class="headerlink" href="#42" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/CoFi-result.png" data-desc-position="bottom"><img alt="CoFi-result" src="../image/CoFi-result.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image/bert-pruning/CoFi-result.png" data-desc-position="bottom"><img alt="CoFi-result" src="../image/bert-pruning/CoFi-result.png"></a></p>
 <p>在尝试向 CoFi 论文设定靠拢时，我们采用约0.2 的剪枝率、稀疏度约 0.2 等配置，观察到：</p>
 <ul>
 <li>
@@ -8788,7 +8788,7 @@
 <footer class="md-article-dates" aria-label="文章时间信息">
   <span class="md-article-dates__item" title="最后修改">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-06-11 12:23:57">2026年6月11日 12:23:57</time>
+    <time class="md-article-dates__time" datetime="2026-06-11 16:19:50">2026年6月11日 16:19:50</time>
   </span>
   
   <span class="md-article-dates__item" title="首次创作">
