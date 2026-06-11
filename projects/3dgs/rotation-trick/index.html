@@ -7558,21 +7558,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#25-householder" class="md-nav__link">
+  <a href="#25-voronoi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.5 Householder 高效实现
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#26-voronoi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.6 Voronoi 区域分析
+        2.5 Voronoi 区域分析
       
     </span>
   </a>
@@ -7651,17 +7640,6 @@
     <span class="md-ellipsis">
       
         4.2 实践注意点
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#43" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.3 后续方向
       
     </span>
   </a>
@@ -8396,21 +8374,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#25-householder" class="md-nav__link">
+  <a href="#25-voronoi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.5 Householder 高效实现
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#26-voronoi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.6 Voronoi 区域分析
+        2.5 Voronoi 区域分析
       
     </span>
   </a>
@@ -8489,17 +8456,6 @@
     <span class="md-ellipsis">
       
         4.2 实践注意点
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#43" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.3 后续方向
       
     </span>
   </a>
@@ -8611,7 +8567,7 @@
 
 <h1 id="restructuring-vector-quantization-with-the-rotation-trick">Restructuring Vector Quantization with the Rotation Trick<a class="headerlink" href="#restructuring-vector-quantization-with-the-rotation-trick" title="Permanent link">¶</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 2965 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 9 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约 2625 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间 8 分钟</p>
 </div>
 <aside class="md-pageviews md-pageviews--after-stats" aria-label="页面阅读量">
   <span class="md-pageviews__text">阅读量</span>
@@ -8632,7 +8588,7 @@
 \tilde{q} = e + \mathrm{sg}(q - e)
 \]</div>
 <p>前向 <span class="arithmatex">\(\tilde{q}=q\)</span>，反向 <span class="arithmatex">\(\partial \tilde{q}/\partial e = I\)</span>，等价于 <span class="arithmatex">\(\nabla_e L = \nabla_q L\)</span>：梯度从解码器输入 <span class="arithmatex">\(q\)</span> 原样复制到 <span class="arithmatex">\(e\)</span>，量化层内的几何关系被完全忽略。</p>
-<p>STE 的核心问题：同一 Voronoi 区域内所有 <span class="arithmatex">\(e\)</span> 获得相同梯度，与 <span class="arithmatex">\(e\)</span> 距 <span class="arithmatex">\(q\)</span> 的远近、相对夹角无关。位置信息丢失，易导致码本利用率低、码本崩塌（大量码字范数趋零）以及量化误差 <span class="arithmatex">\(\|e-q\|_2^2\)</span> 偏大。完整符号、链式法则与替代方案见 §2。</p>
+<p>STE 的核心问题：同一 Voronoi 区域内所有 <span class="arithmatex">\(e\)</span> 获得相同梯度，与 <span class="arithmatex">\(e\)</span> 距 <span class="arithmatex">\(q\)</span> 的远近、相对夹角无关。位置信息丢失，易导致码本利用率低、码本崩塌（大量码字范数趋零）以及量化误差 <span class="arithmatex">\(\|e-q\|_2^2\)</span> 偏大。</p>
 <h3 id="12">1.2 核心目标<a class="headerlink" href="#12" title="Permanent link">¶</a></h3>
 <p>提出 rotation trick：前向仍输出码字 <span class="arithmatex">\(q\)</span>，反向将 <span class="arithmatex">\(\nabla_q L\)</span> 经旋转+缩放变换传到 <span class="arithmatex">\(e\)</span>，使 <span class="arithmatex">\(q\)</span> 与 <span class="arithmatex">\(\nabla_q L\)</span> 的夹角在传到 <span class="arithmatex">\(e\)</span> 时保持不变。期望在同一 Voronoi 区域内对不同位置的 <span class="arithmatex">\(e\)</span> 给出差异化更新，从而提高码本利用率、降低量化误差，改善 VQ-VAE 训练。</p>
 <hr>
@@ -8696,7 +8652,7 @@ L = \underbrace{\|x - \tilde{x}\|_2^2}_{L_{\text{ren}}} + \underbrace{\|\mathrm{
 <h3 id="22-ste">2.2 STE 与链式法则<a class="headerlink" href="#22-ste" title="Permanent link">¶</a></h3>
 <p>反向传播对 <span class="arithmatex">\(x\)</span> 的梯度可分解为：</p>
 <div class="arithmatex">\[
-\frac{\partial L}{\partial x} = \underbrace{\frac{\partial L}{\partial q}}_{\text{解码器}} \underbrace{\frac{\partial q}{\partial e}}_{\text{量化层}} \underbrace{\frac{\partial e}{\partial x}}_{\text{编码器}}
+\frac{\partial L}{\partial x} = \underbrace{\frac{\partial L}{\partial q}}_{\text{解码器}}\quad \underbrace{\frac{\partial q}{\partial e}}_{\text{量化层}}\quad \underbrace{\frac{\partial e}{\partial x}}_{\text{编码器}}
 \]</div>
 <p>量化层 <span class="arithmatex">\(Q(\cdot)\)</span> 非光滑，<span class="arithmatex">\(\partial q/\partial e\)</span> 无良好定义，梯度无法经此项更新编码器。</p>
 <p>直通估计器（STE） 在反向中令 <span class="arithmatex">\(\partial q/\partial e = I\)</span>（单位阵），将 <span class="arithmatex">\(q\)</span> 处梯度原样复制到 <span class="arithmatex">\(e\)</span>：</p>
@@ -8707,12 +8663,8 @@ L = \underbrace{\|x - \tilde{x}\|_2^2}_{L_{\text{ren}}} + \underbrace{\|\mathrm{
 <div class="arithmatex">\[
 \tilde{q} = e + \underbrace{(q - e)}_{\text{detach}}
 \]</div>
+<p>下标 detach 表示截断梯度（stop-gradient，下文记作 <span class="arithmatex">\(\mathrm{sg}[\cdot]\)</span>）：前向 <span class="arithmatex">\((q-e)\)</span> 仍按原值参与计算，反向时该项视为常数、梯度不经过它。PyTorch 中即 <code>(q - e).detach()</code>。</p>
 <p>前向 <span class="arithmatex">\(\tilde{q}=q\)</span>；反向 <span class="arithmatex">\(\partial \tilde{q}/\partial e = I\)</span>。因此 <span class="arithmatex">\(\nabla_e L\)</span> 不依赖 <span class="arithmatex">\(e\)</span> 在 Voronoi 区域内的位置——无论靠近 <span class="arithmatex">\(q\)</span> 还是在区域边界，同区域内所有点获得相同梯度更新，量化操作的位置信息完全丢失。</p>
-<p>论文还讨论了两种看似更“精确”的替代：Hessian 近似与双前向精确梯度。在 <span class="arithmatex">\(q\)</span> 处 Taylor 展开可得</p>
-<div class="arithmatex">\[
-\nabla_e L \approx \nabla_q L + (\nabla_q^2 L)(e - q)
-\]</div>
-<p>或在 <span class="arithmatex">\(q=e\)</span> 的辅助前向中计算精确 <span class="arithmatex">\(\nabla_e L\)</span>。二者往往表现更差：对 <span class="arithmatex">\(e\)</span> 的精确梯度等价于训练普通自编码器，与 VQ-VAE 的离散瓶颈归纳偏置不匹配；当 <span class="arithmatex">\(e \approx q\)</span> 时应有 <span class="arithmatex">\(\nabla_e L \approx \nabla_q L\)</span>，Hessian/精确梯度在负曲率或鞍点处可能违背该假设。</p>
 <h3 id="23-ste">2.3 旋转技巧：STE 的几何推广<a class="headerlink" href="#23-ste" title="Permanent link">¶</a></h3>
 <p>设计问题：将 <span class="arithmatex">\(\nabla_q L\)</span> 从 <span class="arithmatex">\(q\)</span> 传到 <span class="arithmatex">\(e\)</span> 时，应保留什么几何性质？</p>
 <ul>
@@ -8766,13 +8718,7 @@ R = I + 2\hat{q}\hat{e}^\top - 2\left(\frac{\hat{q}+\hat{e}}{\|\hat{q}+\hat{e}\|
 \|\nabla_q L\|\cos\theta = q[\nabla_q L]^\top = e R^\top [\nabla_q L]^\top = e[\nabla_e L]^\top = \|\nabla_q L\|\cos\varphi
 \]</div>
 <p>故 <span class="arithmatex">\(\theta = \varphi\)</span>：梯度传到 <span class="arithmatex">\(e\)</span> 时，与码字之间的夹角不变。</p>
-<h3 id="25-householder">2.5 Householder 高效实现<a class="headerlink" href="#25-householder" title="Permanent link">¶</a></h3>
-<p>显式构造 <span class="arithmatex">\(d \times d\)</span> 的 <span class="arithmatex">\(R\)</span> 开销大。用 Householder 反射可写成仅含向量内积的形式。令 <span class="arithmatex">\(\lambda=\|q\|/\|e\|\)</span>，<span class="arithmatex">\(r=(\hat{e}+\hat{q})/\|\hat{e}+\hat{q}\|\)</span>：</p>
-<div class="arithmatex">\[
-\tilde{q} = \lambda R e = \lambda\bigl(I - 2rr^\top + 2\hat{q}\hat{e}^\top\bigr) e = \lambda\bigl[e - 2r(r^\top e) + 2\hat{q}(\hat{e}^\top e)\bigr]
-\]</div>
-<p>等价于两次反射的复合：<span class="arithmatex">\(R = (I-2rr^\top)(I-2\hat{q}\hat{q}^\top)\)</span> 在 <span class="arithmatex">\(\hat{e},\hat{q}\)</span> 平面内将 <span class="arithmatex">\(\hat{e}\)</span> 旋转至 <span class="arithmatex">\(\hat{q}\)</span>（附录 A.5）。该写法避免大矩阵外积，GPU 显存占用极小；墙钟时间与 STE 无显著差异。</p>
-<h3 id="26-voronoi">2.6 Voronoi 区域分析<a class="headerlink" href="#26-voronoi" title="Permanent link">¶</a></h3>
+<h3 id="25-voronoi">2.5 Voronoi 区域分析<a class="headerlink" href="#25-voronoi" title="Permanent link">¶</a></h3>
 <p>设 <span class="arithmatex">\(\theta\)</span> 为 <span class="arithmatex">\(e\)</span> 与 <span class="arithmatex">\(q\)</span> 的夹角，<span class="arithmatex">\(\varphi\)</span> 为 <span class="arithmatex">\(q\)</span> 与 <span class="arithmatex">\(\nabla_q L\)</span> 的夹角。有损压缩中，VQ 希望在失真 <span class="arithmatex">\(\|e-q\|_2^2\)</span> 低的同时信息容量（码本利用率）高。</p>
 <table>
 <thead>
@@ -8868,16 +8814,13 @@ R = I + 2\hat{q}\hat{e}^\top - 2\left(\frac{\hat{q}+\hat{e}}{\|\hat{q}+\hat{e}\|
 <p>量化误差常降一个数量级；  </p>
 </li>
 <li>
-<p>码本使用率显著提高（上例约 13.5×）；  </p>
+<p>码本使用率显著提高；  </p>
 </li>
 <li>
 <p>r-FID、r-IS 一致改善；  </p>
 </li>
-<li>
-<p>Hessian 近似或精确梯度替代 STE 表现更差（编码器趋近自编码器，优化目标不匹配）。</p>
-</li>
 </ul>
-<p>视频 VQ-VAE：STE 训练出现码本崩塌（BAIR 批内约 4/1024 码字被用）；rotation trick 稳定（约 441/1024），重建 r-FVD 更优。</p>
+<p>视频 VQ-VAE：STE 训练出现码本崩塌；rotation trick 稳定，重建 r-FVD 更优。</p>
 <hr>
 <h2 id="4">4. 讨论<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
 <h3 id="41">4.1 理论视角<a class="headerlink" href="#41" title="Permanent link">¶</a></h3>
@@ -8904,15 +8847,6 @@ R = I + 2\hat{q}\hat{e}^\top - 2\left(\frac{\hat{q}+\hat{e}}{\|\hat{q}+\hat{e}\|
 <p>并非所有 VQ-VAE 代码无脑替换都能提升，需结合初始化与超参验证。</p>
 </li>
 </ul>
-<h3 id="43">4.3 后续方向<a class="headerlink" href="#43" title="Permanent link">¶</a></h3>
-<ul>
-<li>
-<p>与 SimVQ（码本线性变换）等互补技巧组合；  </p>
-</li>
-<li>
-<p>分析 rotation trick 对 Stage-2 生成质量（而非仅重建）的下游影响——论文未覆盖此点。</p>
-</li>
-</ul>
 <hr>
 <h2 id="5">5. 总结<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
 <p>Rotation Trick 通过旋转+缩放将编码器输出平滑对齐到码字，前向不变、反向保持 <span class="arithmatex">\(q\)</span> 与梯度的夹角，从而改变 Voronoi 区域内各点的更新方式。在 11 种 VQ-VAE 设置上显著改善 r-FID、码本利用率与量化误差。作为 STE 的即插即用替代，前向输出不变、计算开销可忽略，在码本利用率低或训练不稳定时值得尝试；实际效果仍依赖码本初始化与超参设置。</p>
@@ -8928,7 +8862,7 @@ R = I + 2\hat{q}\hat{e}^\top - 2\left(\frac{\hat{q}+\hat{e}}{\|\hat{q}+\hat{e}\|
 <footer class="md-article-dates" aria-label="文章时间信息">
   <span class="md-article-dates__item" title="最后修改">
     <span class="md-article-dates__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg></span>
-    <time class="md-article-dates__time" datetime="2026-06-10 23:22:18">2026年6月10日 23:22:18</time>
+    <time class="md-article-dates__time" datetime="2026-06-11 11:21:20">2026年6月11日 11:21:20</time>
   </span>
   
   <span class="md-article-dates__item" title="首次创作">
