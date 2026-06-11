@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 11 Jun 2026 04:24:43 -0000</pubDate>
-    <lastBuildDate>Thu, 11 Jun 2026 04:24:43 -0000</lastBuildDate>
+    <pubDate>Thu, 11 Jun 2026 08:00:17 -0000</pubDate>
+    <lastBuildDate>Thu, 11 Jun 2026 08:00:17 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,407 @@
     
 
     
+    
+    <item>
+      <title>Bayesian TTA</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;_1&#34;&gt;基于贝叶斯理论的测试时动态自适应方法研究&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 2841 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 4 张图片 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间 9 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;视觉语言模型（VLM）在测试阶段遇到数据分布偏移时，性能往往会明显下降。本文提出一种基于贝叶斯理论、免反向传播、免迭代优化的测试时动态自适应方法，在多种分布外检测与跨域细粒度数据集上取得稳定领先的平均准确率，同时保持较低的推理开销。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;1&#34;&gt;1. 背景与目标&lt;a class=&#34;headerlink&#34; href=&#34;#1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;11&#34;&gt;1.1 问题背景&lt;a class=&#34;headerlink&#34; href=&#34;#11&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;以 &lt;a href=&#34;https://arxiv.org/abs/2103.00020&#34;&gt;CLIP&lt;/a&gt; 为代表的视觉语言模型，通过对比学习在图文对之间建立跨模态对应，具备强大的零样本迁移能力。然而在实际部署中，测试数据分布与预训练数据往往存在显著差异——医疗影像的设备差异、监控场景的光照与摄像头变化等——都会导致模型性能退化。&lt;/p&gt;
+&lt;p&gt;传统域适应（Domain Adaptation）与域泛化（Domain Generalization）通常需要在训练阶段获取目标域或多源域数据，在隐私保护与数据获取成本上存在限制。测试时自适应（Test-Time Adaptation，TTA）则只需在推理阶段利用无标签测试数据动态调整模型，无需重训练，更贴近真实流式部署场景。&lt;/p&gt;
+&lt;h3 id=&#34;12&#34;&gt;1.2 现有方法的不足&lt;a class=&#34;headerlink&#34; href=&#34;#12&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;当前主流 TTA 方法存在两类典型瓶颈：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;计算开销大：TPT、TENT 等方法依赖反向传播或迭代优化，在线推理成本高；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;分布建模弱：多数方法采用启发式缓存或熵最小化，缺乏对测试数据分布结构的显式概率建模，在复杂分布偏移下鲁棒性有限。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;13&#34;&gt;1.3 核心目标&lt;a class=&#34;headerlink&#34; href=&#34;#13&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;从贝叶斯理论出发，设计一种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;免反向传播、免迭代优化的轻量级在线适应方案；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;能对测试数据分布进行显式动态估计的方法；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;同时支持在线流式与直推批量两种部署模式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;2-tta&#34;&gt;2. TTA概览&lt;a class=&#34;headerlink&#34; href=&#34;#2-tta&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;TTA 的核心思想是：在模型已预训练完成的前提下，仅利用测试阶段的无标签数据，使模型适应目标域分布。按适应方式可大致分为以下几类（参见 &lt;a href=&#34;https://github.com/tim-learn/awesome-test-time-adaptation&#34;&gt;awesome-test-time-adaptation&lt;/a&gt;）：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类别&lt;/th&gt;
+&lt;th&gt;设定&lt;/th&gt;
+&lt;th&gt;代表方法&lt;/th&gt;
+&lt;th&gt;特点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;无源域适应&lt;/td&gt;
+&lt;td&gt;测试时无法访问源域数据&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://arxiv.org/abs/2002.08546&#34;&gt;SHOT&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2006.10726&#34;&gt;TENT&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2204.10377&#34;&gt;AdaContrast&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;保护源域隐私；对伪标签质量敏感&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;批量适应&lt;/td&gt;
+&lt;td&gt;一次性获得一批测试样本&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://arxiv.org/abs/2110.09506&#34;&gt;MEMO&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;计算效率较高；批次间分布剧变时不稳定&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;在线适应&lt;/td&gt;
+&lt;td&gt;连续到来的测试数据流&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://arxiv.org/abs/2203.13591&#34;&gt;CoTTA&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2204.02610&#34;&gt;EATA&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2303.13899&#34;&gt;RoTTA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;最接近实际部署；对效率与稳定性要求高&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;先验适应&lt;/td&gt;
+&lt;td&gt;利用预训练模型内置先验&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://arxiv.org/abs/2209.07511&#34;&gt;TPT&lt;/a&gt;、&lt;a href=&#34;https://openreview.net/forum?id=e_yvNqkJKAW&#34;&gt;T3A&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;参数高效；先验利用方式仍待深入&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;面向 CLIP 等 VLM 的 TTA 还可进一步细分为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;提示调优路线：TPT 及其改进 &lt;a href=&#34;https://arxiv.org/abs/2308.06038&#34;&gt;DiffTPT&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2403.14119&#34;&gt;C-TPT&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2410.20346&#34;&gt;HisTPT&lt;/a&gt; 等，在测试时优化少量 prompt 嵌入；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;缓存/记忆路线：&lt;a href=&#34;https://arxiv.org/abs/2403.18293&#34;&gt;TDA&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2405.02266&#34;&gt;MTA&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2403.17589&#34;&gt;DMN&lt;/a&gt; 等，维护代表性样本缓存指导后续分类；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;统计/贝叶斯路线：显式估计测试分布并做概率推断。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;3&#34;&gt;3. 相关技术与代表工作&lt;a class=&#34;headerlink&#34; href=&#34;#3&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;31&#34;&gt;3.1 视觉语言模型基础&lt;a class=&#34;headerlink&#34; href=&#34;#31&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;CLIP 对比预训练架构&#34; src=&#34;../image/bayesian-tta/clip-architecture.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;CLIP 由图像编码器（ResNet / ViT）与文本编码器（Transformer）组成，将图文映射到共享嵌入空间。给定 &lt;span class=&#34;arithmatex&#34;&gt;\(K\)&lt;/span&gt; 个候选类别，零样本分类通过图像特征与类原型（文本嵌入）的余弦相似度完成：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\hat{y} = \arg\max_k \; \tau \cdot \cos(f(x),\, t_k)
+\]&lt;/div&gt;
+&lt;p&gt;其中 &lt;span class=&#34;arithmatex&#34;&gt;\(\tau\)&lt;/span&gt; 为预训练阶段学习的温度参数，后续 TTA 方法通常固定该值以保持原始图文对齐特性。&lt;/p&gt;
+&lt;p&gt;提示学习方面，训练阶段有 &lt;a href=&#34;https://arxiv.org/abs/2109.01134&#34;&gt;CoOp&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2203.05557&#34;&gt;CoCoOp&lt;/a&gt;；测试阶段 &lt;a href=&#34;https://arxiv.org/abs/2209.07511&#34;&gt;TPT&lt;/a&gt; 首次将 prompt 调优引入 TTA。特征适配器方面，&lt;a href=&#34;https://arxiv.org/abs/2110.04544&#34;&gt;CLIP-Adapter&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2111.03930&#34;&gt;Tip-Adapter&lt;/a&gt; 通过轻量模块或免训练缓存实现适应。&lt;/p&gt;
+&lt;h3 id=&#34;32-tta&#34;&gt;3.2 基于统计理论的 TTA&lt;a class=&#34;headerlink&#34; href=&#34;#32-tta&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;近年来，从分布估计而非实例缓存出发的贝叶斯 TTA 成为重要方向：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2409.19375&#34;&gt;DOTA&lt;/a&gt; — 从实例级缓存转向分布级估计，假设各类特征服从高斯分布，用在线 EM 更新参数，缓解灾难性遗忘；小样本场景下性能受限。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2503.09248&#34;&gt;BCA&lt;/a&gt; — 从贝叶斯定理分析 CLIP 预测过程，双重更新类别嵌入（似然）与类别先验，在 OOD 与跨域任务上提升明显；未直接建模协方差，先验更新易受早期错误预测污染。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2508.15568&#34;&gt;ADAPT&lt;/a&gt; — 引入 CLIP 先验与历史知识库引导的轻量正则化，通过闭式解实现高效自适应（复现基石）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2402.04087&#34;&gt;GDA-CLIP&lt;/a&gt; — 用高斯判别分析（GDA）实现免训练 CLIP 适应，是强基线。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2406.01837&#34;&gt;TransCLIP&lt;/a&gt; — 直推式多元高斯建模，BMM 算法迭代优化分布参数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2410.19294&#34;&gt;Frolic&lt;/a&gt; — 从目标数据矩推断每类提示分布，做偏差校正。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;33&#34;&gt;3.3 直推式学习&lt;a class=&#34;headerlink&#34; href=&#34;#33&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;直推式学习（Transductive Learning）在推理时可利用整个测试集的结构信息，适合离线批量场景。图方法如 &lt;a href=&#34;https://arxiv.org/abs/2404.04072&#34;&gt;ZLaP&lt;/a&gt;、&lt;a href=&#34;https://arxiv.org/abs/2412.18303&#34;&gt;ECALP&lt;/a&gt; 在特征图上传播标签，但迭代代价较高。本方法同时覆盖在线与直推两种模式，部署灵活性更强。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;4&#34;&gt;4. 方法设计&lt;a class=&#34;headerlink&#34; href=&#34;#4&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;41&#34;&gt;4.1 整体框架&lt;a class=&#34;headerlink&#34; href=&#34;#41&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;BTTA 整体框架&#34; src=&#34;../image/bayesian-tta/btta-framework.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;本项目提出的方法包含四个核心设计：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;基于 GDA 的免反向传播分类器：假设各类图像特征服从共享协方差的高斯分布，MLE 给出类均值与协方差的闭式解；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;知识库引导的偏差校正：每类维护固定容量高置信样本库，融合 CLIP 先验、GDA 线性项与一致性正则；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;闭式标签估计与动态融合：推导单遍闭式解；用预测熵与主峰概率构造含糊度度量，动态调节融合系数；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;双模式部署：分别实现在线流式与直推批量算法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;42&#34;&gt;4.2 高斯判别分析分类器&lt;a class=&#34;headerlink&#34; href=&#34;#42&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;假设给定类别 &lt;span class=&#34;arithmatex&#34;&gt;\(k\)&lt;/span&gt; 时特征 &lt;span class=&#34;arithmatex&#34;&gt;\(f(x) \sim \mathcal{N}(\mu_k, \Sigma)\)&lt;/span&gt;，共享协方差 &lt;span class=&#34;arithmatex&#34;&gt;\(\Sigma\)&lt;/span&gt;。由贝叶斯规则，均匀先验下最优预测为：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\hat{y} = \arg\max_k \; f(x)^\top \Sigma^{-1} \mu_k - \frac{1}{2}\mu_k^\top \Sigma^{-1} \mu_k
+\]&lt;/div&gt;
+&lt;p&gt;在独立同分布假设下，&lt;span class=&#34;arithmatex&#34;&gt;\(\mu_k\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(\Sigma\)&lt;/span&gt; 的 MLE 分别为类经验均值与合并样本协方差，无需反向传播或迭代优化。高维情形下采用带收缩的贝叶斯岭型估计量稳定 &lt;span class=&#34;arithmatex&#34;&gt;\(\Sigma^{-1}\)&lt;/span&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;43&#34;&gt;4.3 知识库与偏差校正&lt;a class=&#34;headerlink&#34; href=&#34;#43&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;在线场景中，早期预测不可靠会导致似然估计有偏。本方法为每类维护容量为 &lt;span class=&#34;arithmatex&#34;&gt;\(C\)&lt;/span&gt; 的知识库 &lt;span class=&#34;arithmatex&#34;&gt;\(\mathcal{K}_k\)&lt;/span&gt;，以 CLIP 预测负熵作为置信度，仅保留高置信样本。&lt;/p&gt;
+&lt;p&gt;最小化如下正则化目标（三项分别为在线负对数似然、CLIP 先验正则、知识库一致性正则），可严格推导出闭式标签估计器，融合：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;CLIP 零样本预测；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GDA 线性判别项；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;知识库类条件一致性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;类均值采用知识库经验均值与 CLIP 先验均值的动态加权融合。定义归一化熵 &lt;span class=&#34;arithmatex&#34;&gt;\(H_{\text{norm}}\)&lt;/span&gt; 与主峰概率 &lt;span class=&#34;arithmatex&#34;&gt;\(p_{\max}\)&lt;/span&gt;，构造含糊度：&lt;/p&gt;
+&lt;div class=&#34;arithmatex&#34;&gt;\[
+\phi = \alpha \cdot H_{\text{norm}} + (1-\alpha) \cdot (1 - p_{\max})
+\]&lt;/div&gt;
+&lt;p&gt;融合系数 &lt;span class=&#34;arithmatex&#34;&gt;\(\lambda(\phi)\)&lt;/span&gt; 在 &lt;span class=&#34;arithmatex&#34;&gt;\([\lambda_{\min}, \lambda_{\max}]\)&lt;/span&gt; 间线性变化：高置信样本更依赖知识库，含糊样本更回退到 CLIP 先验。&lt;/p&gt;
+&lt;h3 id=&#34;44&#34;&gt;4.4 直推式扩展&lt;a class=&#34;headerlink&#34; href=&#34;#44&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;直推模式下可一次性访问整个测试集，将在线目标扩展为全局目标，标签估计器形式不变；类均值改为单遍估计，&lt;span class=&#34;arithmatex&#34;&gt;\(\lambda\)&lt;/span&gt; 取固定值（无需动态更新）。实验表明直推模式准确率通常高于在线模式，但在线模式更贴近真实流式部署。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;5&#34;&gt;5. 实验设计与结果&lt;a class=&#34;headerlink&#34; href=&#34;#5&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;51&#34;&gt;5.1 实验设定&lt;a class=&#34;headerlink&#34; href=&#34;#51&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;骨干网络：CLIP 视觉编码器 ViT-B/16 与 ResNet-50&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;评价指标：Top-1 准确率&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;部署模式：在线模式：batch size = 1，逐样本流式处理；直推模式：一次性访问全测试集&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;超参数（ViT-B/16）：在线模式 &lt;span class=&#34;arithmatex&#34;&gt;\(\lambda \in [0.6, 0.9]\)&lt;/span&gt;，&lt;span class=&#34;arithmatex&#34;&gt;\(\gamma \in [0.9, 1.0]\)&lt;/span&gt;，&lt;span class=&#34;arithmatex&#34;&gt;\(\alpha=0.5\)&lt;/span&gt;，知识库大小 &lt;span class=&#34;arithmatex&#34;&gt;\(C=16\)&lt;/span&gt;；直推模式 &lt;span class=&#34;arithmatex&#34;&gt;\(\lambda=0.9\)&lt;/span&gt;，&lt;span class=&#34;arithmatex&#34;&gt;\(C=6\)&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;先验初始化：采用 &lt;a href=&#34;https://arxiv.org/abs/2407.04603&#34;&gt;AWT&lt;/a&gt; 中 GPT 生成的类别视觉描述&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;数据集：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;任务类型&lt;/th&gt;
+&lt;th&gt;数据集&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;分布外检测（5个）&lt;/td&gt;
+&lt;td&gt;ImageNet、ImageNet-A/V/R/S&lt;/td&gt;
+&lt;td&gt;自然对抗、变体、渲染、素描等偏移&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;跨域细粒度（8个）&lt;/td&gt;
+&lt;td&gt;Aircraft、Caltech、Cars、DTD、EuroSAT、Flower、Sun397、UCF101&lt;/td&gt;
+&lt;td&gt;细粒度与跨域分类&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;对比基线：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在线：Zero-Shot CLIP、TPT / DiffTPT / C-TPT / HisTPT / DMN（需反向传播）、TDA / MTA / BCA / DOTA（免梯度）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;直推：GDA-CLIP、TransCLIP、Frolic&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;52&#34;&gt;5.2 主要结果&lt;a class=&#34;headerlink&#34; href=&#34;#52&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;分布外检测（ViT-B/16，在线模式）&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;方法&lt;/th&gt;
+&lt;th&gt;平均准确率&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;CLIP Zero-Shot&lt;/td&gt;
+&lt;td&gt;59.11%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TPT&lt;/td&gt;
+&lt;td&gt;62.45%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;DOTA&lt;/td&gt;
+&lt;td&gt;65.76%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Our&lt;/td&gt;
+&lt;td&gt;66.39%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;本方法在 ViT-B/16 在线模式下平均准确率达 66.39%，超越全部需/免反向传播基线；ResNet-50 上平均 50.73%，同样最优。直推模式下超过 GDA-CLIP、TransCLIP、Frolic，在 ImageNet 系列数据集上几乎全面领先。&lt;/p&gt;
+&lt;p&gt;跨域细粒度（ViT-B/16）&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;模式&lt;/th&gt;
+&lt;th&gt;Our 平均&lt;/th&gt;
+&lt;th&gt;相对 Zero-Shot 提升&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;在线&lt;/td&gt;
+&lt;td&gt;66.60%&lt;/td&gt;
+&lt;td&gt;+8.76%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;直推&lt;/td&gt;
+&lt;td&gt;68.05%&lt;/td&gt;
+&lt;td&gt;+10.21%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;ResNet-50 在线模式略低于需梯度的 DMN（58.72%），但在免反向传播方法中最优；直推模式优于 TransCLIP。&lt;/p&gt;
+&lt;h3 id=&#34;53&#34;&gt;5.3 消融实验&lt;a class=&#34;headerlink&#34; href=&#34;#53&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;模块有效性（ViT-B/16，在线，分布外任务）：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;配置&lt;/th&gt;
+&lt;th&gt;平均准确率&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;无知识库、无 &lt;span class=&#34;arithmatex&#34;&gt;\(\mu\)&lt;/span&gt;/&lt;span class=&#34;arithmatex&#34;&gt;\(\Sigma\)&lt;/span&gt; 更新&lt;/td&gt;
+&lt;td&gt;49.65%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;完整方法&lt;/td&gt;
+&lt;td&gt;66.39%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;移除知识库后性能从 66.39% 骤降至 49.65%，说明知识库正则对缓解在线似然偏差至关重要。&lt;span class=&#34;arithmatex&#34;&gt;\(\mu\)&lt;/span&gt; 与 &lt;span class=&#34;arithmatex&#34;&gt;\(\Sigma\)&lt;/span&gt; 的联合自适应更新效果最佳。&lt;/p&gt;
+&lt;p&gt;超参数敏感性&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;知识库大小的影响&#34; src=&#34;../image/bayesian-tta/kb-size.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;知识库过小则统计信息不足、性能波动；适中容量后趋于稳定。直推模式因可访问全测试集，对 &lt;span class=&#34;arithmatex&#34;&gt;\(C\)&lt;/span&gt; 更鲁棒。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;直推模式下 λ 的影响&#34; src=&#34;../image/bayesian-tta/alpha-beta.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;直推模式准确率随 &lt;span class=&#34;arithmatex&#34;&gt;\(\lambda\)&lt;/span&gt; 增大稳步提升，说明方法更受益于可靠历史样本而非仅依赖静态 CLIP 先验；取 &lt;span class=&#34;arithmatex&#34;&gt;\(\lambda=0.9\)&lt;/span&gt; 可平衡先验与自适应性。&lt;/p&gt;
+&lt;h3 id=&#34;54&#34;&gt;5.4 效率对比&lt;a class=&#34;headerlink&#34; href=&#34;#54&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;方法&lt;/th&gt;
+&lt;th&gt;模式&lt;/th&gt;
+&lt;th&gt;耗时&lt;/th&gt;
+&lt;th&gt;内存&lt;/th&gt;
+&lt;th&gt;准确率&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;TPT&lt;/td&gt;
+&lt;td&gt;在线&lt;/td&gt;
+&lt;td&gt;数小时级&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;68.98%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;BTTA&lt;/td&gt;
+&lt;td&gt;在线&lt;/td&gt;
+&lt;td&gt;59 min&lt;/td&gt;
+&lt;td&gt;0.93 GB&lt;/td&gt;
+&lt;td&gt;70.93%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GDA-CLIP&lt;/td&gt;
+&lt;td&gt;直推&lt;/td&gt;
+&lt;td&gt;较长&lt;/td&gt;
+&lt;td&gt;较大&lt;/td&gt;
+&lt;td&gt;64.13%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TransCLIP&lt;/td&gt;
+&lt;td&gt;直推&lt;/td&gt;
+&lt;td&gt;较长&lt;/td&gt;
+&lt;td&gt;较大&lt;/td&gt;
+&lt;td&gt;70.30%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Our&lt;/td&gt;
+&lt;td&gt;直推&lt;/td&gt;
+&lt;td&gt;0.71 min&lt;/td&gt;
+&lt;td&gt;3.37 GB&lt;/td&gt;
+&lt;td&gt;71.54%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;本方法在精度与效率之间取得较好平衡：在线模式以远低于 TPT 的时间达到更高准确率；直推模式单遍运行，时间与内存显著优于 GDA-CLIP 与 TransCLIP。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&#34;6&#34;&gt;6. 总结与展望&lt;a class=&#34;headerlink&#34; href=&#34;#6&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;61&#34;&gt;6.1 主要结论&lt;a class=&#34;headerlink&#34; href=&#34;#61&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;本方法将贝叶斯推理、高斯判别分析与知识库引导的偏差校正结合，实现了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;免反向传播、免迭代优化的闭式在线/直推自适应；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 5 个 OOD + 8 个跨域数据集上的稳定领先平均准确率；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;低内存、低延迟的部署特性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;62&#34;&gt;6.2 局限性&lt;a class=&#34;headerlink&#34; href=&#34;#62&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;共享协方差的高斯假设难以刻画类内外观差异极大的复杂分布；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;知识库采用置信度阈值替换策略，对长时序历史样本的利用仍较粗糙；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实验仅在 CLIP 上验证，尚未扩展至 ALIGN、BLIP 等其他 VLM。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;63&#34;&gt;6.3 未来方向&lt;a class=&#34;headerlink&#34; href=&#34;#63&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;探索混合分布或更灵活的生成式建模；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;改进知识库时序加权与遗忘策略；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;扩展至检测、分割、视频理解等下游任务及其他 VLM 骨干。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/projects/bayesian-tta/</link>
+      <pubDate>Thu, 11 Jun 2026 15:59:59 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/bayesian-tta/</guid>
+      
+    </item>
     
     <item>
       <title>BERT Pruning</title>
@@ -1603,28 +2004,6 @@ q(x_t \mid x_0) = \prod_{i=1}^{L} \left[ t \cdot \mathbf{1}[x_t^{(i)} = [\text{M
     </item>
     
     <item>
-      <title>Bayesian TTA</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;基于贝叶斯理论的测试时动态自适应方法研究&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 20 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/projects/bayesian-tta/</link>
-      <pubDate>Sun, 31 May 2026 21:52:14 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/projects/bayesian-tta/</guid>
-      
-    </item>
-    
-    <item>
       <title>Overview</title>
       
       
@@ -1777,7 +2156,7 @@ q(x_t \mid x_0) = \prod_{i=1}^{L} \left[ t \cdot \mathbf{1}[x_t^{(i)} = [\text{M
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;成文：202 篇&lt;/li&gt;
-&lt;li&gt;累字：208,583 字&lt;/li&gt;
+&lt;li&gt;累字：214,696 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
