@@ -296,7 +296,7 @@ Prompt 评估（`Prompt_eval.vue`）：与 RAG 评估共享 `TaskList` / `TaskCa
 
 ---
 
-??? note 写入简历
+??? note "写入简历"
     > 项目名称：基于 RAG 的金融问答平台  
 
     > 角色：后端开发工程师  
