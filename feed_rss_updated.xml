@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Thu, 11 Jun 2026 14:24:54 -0000</pubDate>
-    <lastBuildDate>Thu, 11 Jun 2026 14:24:54 -0000</lastBuildDate>
+    <pubDate>Fri, 12 Jun 2026 01:03:04 -0000</pubDate>
+    <lastBuildDate>Fri, 12 Jun 2026 01:03:04 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -30,6 +30,52 @@
     
 
     
+    
+    <item>
+      <title>DDIM</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;ddim&#34;&gt;DDIM&lt;a class=&#34;headerlink&#34; href=&#34;#ddim&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 1 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/dlm/ddim/</link>
+      <pubDate>Fri, 12 Jun 2026 09:02:51 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/dlm/ddim/</guid>
+      
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      
+      
+      
+      
+      <description>&lt;h1 id=&#34;model&#34;&gt;Model&lt;a class=&#34;headerlink&#34; href=&#34;#model&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
+&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 17 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
+&lt;/div&gt;
+&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
+  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
+  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;这里对各个厂商的大模型做一个汇总&lt;/p&gt;</description>
+      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/</link>
+      <pubDate>Fri, 12 Jun 2026 09:02:51 +0000</pubDate>
+      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
+      
+      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/</guid>
+      
+    </item>
     
     <item>
       <title>STG论文解读</title>
@@ -3288,90 +3334,6 @@ q(x_t \mid x_0) = \prod_{i=1}^{L} \left[ t \cdot \mathbf{1}[x_t^{(i)} = [\text{M
     </item>
     
     <item>
-      <title>Alibaba</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;alibaba&#34;&gt;Alibaba&lt;a class=&#34;headerlink&#34; href=&#34;#alibaba&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 3 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;Qwen3.7&lt;/p&gt;
-&lt;p&gt;Qwen3-VL&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/alibaba/</link>
-      <pubDate>Sat, 30 May 2026 13:12:13 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/alibaba/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Anthropic</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;athropic&#34;&gt;Athropic&lt;a class=&#34;headerlink&#34; href=&#34;#athropic&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 16 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;Claude Haiku/Sonnet/Opus 4.8,Mythos?&lt;/p&gt;
-&lt;p&gt;Claude Code(CLI) Desktop&lt;/p&gt;
-&lt;p&gt;MCP&lt;/p&gt;
-&lt;p&gt;Constitutional AI&lt;/p&gt;
-&lt;p&gt;Claude Design&lt;/p&gt;
-&lt;p&gt;Dynamic Workflow&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/anthropic/</link>
-      <pubDate>Sat, 30 May 2026 13:12:13 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/anthropic/</guid>
-      
-    </item>
-    
-    <item>
-      <title>OpenAI</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;openai&#34;&gt;OpenAI&lt;a class=&#34;headerlink&#34; href=&#34;#openai&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 35 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;GPT系列：GPT-5.5&lt;/p&gt;
-&lt;p&gt;o系列（深度推理）&lt;/p&gt;
-&lt;p&gt;开源系列 gpt-oss：gpt-oss-120B / gpt-oss-20B&lt;/p&gt;
-&lt;p&gt;Codex&lt;/p&gt;
-&lt;p&gt;Sora视频生成&lt;/p&gt;
-&lt;p&gt;GPT-Image-2图像生成&lt;/p&gt;
-&lt;p&gt;Whisper语音识别&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/openai/</link>
-      <pubDate>Sat, 30 May 2026 13:12:13 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/openai/</guid>
-      
-    </item>
-    
-    <item>
       <title>Homepage</title>
       
       
@@ -3389,8 +3351,8 @@ q(x_t \mid x_0) = \prod_{i=1}^{L} \left[ t \cdot \mathbf{1}[x_t^{(i)} = [\text{M
 &lt;div class=&#34;admonition note&#34;&gt;
 &lt;p class=&#34;admonition-title&#34;&gt;卷籍一览&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;成文：202 篇&lt;/li&gt;
-&lt;li&gt;累字：236,814 字&lt;/li&gt;
+&lt;li&gt;成文：181 篇&lt;/li&gt;
+&lt;li&gt;累字：235,925 字&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;ycvenopyer是一位小镇做题家，经历了好几年学习SE的痛苦才跨过小白那道坎，因此就CS该如何入门、AI时代的计算机专业该如何学习想对一些和我类似的同学给出自己的建议。首先现在计算机相关专业门槛不高，但AI产生的一键满足感太不扎实，如果你想从事CS相关行业，仍建议从基础开始，而且在Coding环节不要100%借助AI，一键Tab的爽感会让你在上机的时候坐牢。第二点是CS是完全靠自学的，如果你不知道从何开始，可以从&lt;a href=&#34;https://csdiy.wiki/&#34;&gt;CSDIY&lt;/a&gt;看起，这里计算机四大件（数据结构与算法、操作系统、计算机组成原理、计算机网络）是必须认真拜读的，虽然很多都是几十年前的东西了，但其中的思想方法仍然发挥着光辉，在学习这些之前建议补充一些数学知识，包括微积分、线性代数、概率论、离散数学等。第三点是CS需要实践而不是看书，只看CS的书基本没用，看再多的书不如敲上一句prompt（开个玩笑，应该是Hello World!）。一开始把数据结构与算法学好，然后在代码平台上刷题，比如&lt;a href=&#34;https://leetcode.cn/&#34;&gt;力扣&lt;/a&gt;、&lt;a href=&#34;https://www.nowcoder.com/&#34;&gt;牛客&lt;/a&gt;、&lt;a href=&#34;https://www.luogu.com.cn/&#34;&gt;洛谷&lt;/a&gt;等，最后做项目实践，可以从简单的小游戏入手，然后做一些课程项目，接着从&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;上找一些开源项目尝试，有了这些你就可以开始找实习，企业实习的实践收获是远大于课程学习的，通过企业实习熟悉大型项目的流程，积累经验。最后是AI方向的学习，这部分首先需要把线性代数和概率论学好，数学基础是深入学习AI的基石，其次是学习国外一些优秀的课程，而对于前沿AI的内容，比如AI模型、AI产品化的东西在&lt;a href=&#34;https://www.anthropic.com/&#34;&gt;Anthropic&lt;/a&gt;或者是&lt;a href=&#34;https://openai.com&#34;&gt;OpenAI&lt;/a&gt;的官网上有，这是第一手资料；然后是要用好AI工具，逐渐驾驭AI而不是被牵着鼻子走。&lt;/p&gt;
@@ -5272,37 +5234,6 @@ L_z(x) = \frac{1}{B} \sum_{i=1}^B \left( \log \sum_{j=1}^N e^{x_j^{(i)}} \right)
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm/moe/</guid>
-      
-    </item>
-    
-    <item>
-      <title>DeepSeek</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;deepseek&#34;&gt;DeepSeek&lt;a class=&#34;headerlink&#34; href=&#34;#deepseek&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 18 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;DeepSeek v4-pro, flash&lt;/p&gt;
-&lt;p&gt;DeepSeek-R1,R2?&lt;/p&gt;
-&lt;h2 id=&#34;grpo&#34;&gt;GRPO&lt;a class=&#34;headerlink&#34; href=&#34;#grpo&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;deepseekmoe&#34;&gt;DeepSeekMoE&lt;a class=&#34;headerlink&#34; href=&#34;#deepseekmoe&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;mla&#34;&gt;MLA&lt;a class=&#34;headerlink&#34; href=&#34;#mla&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;mtp&#34;&gt;MTP&lt;a class=&#34;headerlink&#34; href=&#34;#mtp&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;fp8&#34;&gt;FP8 混合精度训练&lt;a class=&#34;headerlink&#34; href=&#34;#fp8&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&#34;dsa&#34;&gt;DSA&lt;a class=&#34;headerlink&#34; href=&#34;#dsa&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/deepseek/</link>
-      <pubDate>Fri, 24 Apr 2026 17:58:05 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/deepseek/</guid>
       
     </item>
     
@@ -8540,238 +8471,6 @@ L_z(x) = \frac{1}{B} \sum_{i=1}^B \left( \log \sum_{j=1}^N e^{x_j^{(i)}} \right)
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/deepspeed/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Overview</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;_1&#34;&gt;模型概览&lt;a class=&#34;headerlink&#34; href=&#34;#_1&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 65 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;h2 id=&#34;1vendor-oriented&#34;&gt;1.Vendor-Oriented&lt;a class=&#34;headerlink&#34; href=&#34;#1vendor-oriented&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;按照厂家有OpenAI、Anthropic、Google、DeepSeek、xAI、Meta AI、Alibaba、ByteDance、Zhipu、Moonshot、MiniMax、Xiaomi等。&lt;/p&gt;
-&lt;h2 id=&#34;2domain-oriented&#34;&gt;2.Domain-Oriented&lt;a class=&#34;headerlink&#34; href=&#34;#2domain-oriented&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;按照模型类别可以划分为Dense LLM、MoE、VLM等。&lt;/p&gt;
-&lt;h2 id=&#34;3reference&#34;&gt;3.Reference&lt;a class=&#34;headerlink&#34; href=&#34;#3reference&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/2011803903986008414&#34;&gt;AI江湖的金庸群侠传：全球主流 AI 大模型厂商深度调研&lt;/a&gt;&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/</link>
-      <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/</guid>
-      
-    </item>
-    
-    <item>
-      <title>ByteDance</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;bytedance&#34;&gt;ByteDance&lt;a class=&#34;headerlink&#34; href=&#34;#bytedance&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 7 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;Doubao-Seed-2.0 Pro/Lite/Mini/Code&lt;/p&gt;
-&lt;p&gt;Trae&lt;/p&gt;
-&lt;p&gt;Seedance 2.0&lt;/p&gt;
-&lt;p&gt;Coze&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/bytedance/</link>
-      <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/bytedance/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Google</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;google&#34;&gt;Google&lt;a class=&#34;headerlink&#34; href=&#34;#google&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 5 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;Gemini 3.1pro&lt;/p&gt;
-&lt;p&gt;Nano Banana&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/google/</link>
-      <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/google/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Meta AI</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;meta-ai&#34;&gt;Meta AI&lt;a class=&#34;headerlink&#34; href=&#34;#meta-ai&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 9 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;Llama系列（完全开源）&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/meta-ai/</link>
-      <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/meta-ai/</guid>
-      
-    </item>
-    
-    <item>
-      <title>MiniMax</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;minimax&#34;&gt;MiniMax&lt;a class=&#34;headerlink&#34; href=&#34;#minimax&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 22 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;MiniMax M2.7&lt;/p&gt;
-&lt;p&gt;MiniMax-Text-01 新一代纯文本模型&lt;/p&gt;
-&lt;p&gt;MiniMax-VL-01   视觉语言多模态模型&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/minimax/</link>
-      <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/minimax/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Moonshot</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;moonshot&#34;&gt;Moonshot&lt;a class=&#34;headerlink&#34; href=&#34;#moonshot&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 7 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;Kimi2.6 Agent / Agent Swarm&lt;/p&gt;
-&lt;h2 id=&#34;attention-residuals&#34;&gt;Attention Residuals&lt;a class=&#34;headerlink&#34; href=&#34;#attention-residuals&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/moonshot/</link>
-      <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/moonshot/</guid>
-      
-    </item>
-    
-    <item>
-      <title>xAI</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;xai&#34;&gt;xAI&lt;a class=&#34;headerlink&#34; href=&#34;#xai&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 3 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;Grok 4.1&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/xai/</link>
-      <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/xai/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Xiaomi</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;xiaomi&#34;&gt;Xiaomi&lt;a class=&#34;headerlink&#34; href=&#34;#xiaomi&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 5 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;Xiaomi MiMo-V2.5-Pro&lt;/p&gt;
-&lt;p&gt;MiMo-V2.5-TTS / -ASR&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/xiaomi/</link>
-      <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/xiaomi/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Zhipu</title>
-      
-      
-      
-      
-      <description>&lt;h1 id=&#34;zhipuai&#34;&gt;ZhipuAI&lt;a class=&#34;headerlink&#34; href=&#34;#zhipuai&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
-&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 14 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;
-
-&lt;p&gt;GLM 5.1&lt;/p&gt;
-&lt;p&gt;GLM-4V&lt;/p&gt;
-&lt;p&gt;CogView-4图像生成&lt;/p&gt;
-&lt;p&gt;CogVideoX视频生成&lt;/p&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/ai-note/model/zhipu/</link>
-      <pubDate>Thu, 23 Apr 2026 23:54:07 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/ai-note/model/zhipu/</guid>
       
     </item>
     
@@ -14708,216 +14407,6 @@ I^{\mathrm{out}}_i = \mathcal{A}\bigl(\{ I_{i,k} \}_{k=1}^{C_{\mathrm{in}}}\bigr
       <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
       
       <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/linear-algebra/determinant/</guid>
-      
-    </item>
-    
-    <item>
-      <title>代数系统</title>
-      
-      
-      
-      
-      <description>&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 0 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/math/discrete-math/algebra-system/</link>
-      <pubDate>Sat, 31 Jan 2026 21:07:19 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/discrete-math/algebra-system/</guid>
-      
-    </item>
-    
-    <item>
-      <title>图论</title>
-      
-      
-      
-      
-      <description>&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 0 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/math/discrete-math/graph-theory/</link>
-      <pubDate>Sat, 31 Jan 2026 21:07:19 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/discrete-math/graph-theory/</guid>
-      
-    </item>
-    
-    <item>
-      <title>群论</title>
-      
-      
-      
-      
-      <description>&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 0 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/math/discrete-math/group-theory/</link>
-      <pubDate>Sat, 31 Jan 2026 21:07:19 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/discrete-math/group-theory/</guid>
-      
-    </item>
-    
-    <item>
-      <title>归纳与递归</title>
-      
-      
-      
-      
-      <description>&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 0 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/math/discrete-math/induction-and-recursion/</link>
-      <pubDate>Sat, 31 Jan 2026 21:07:19 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/discrete-math/induction-and-recursion/</guid>
-      
-    </item>
-    
-    <item>
-      <title>数论初步</title>
-      
-      
-      
-      
-      <description>&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 0 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/math/discrete-math/number-theory/</link>
-      <pubDate>Sat, 31 Jan 2026 21:07:19 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/discrete-math/number-theory/</guid>
-      
-    </item>
-    
-    <item>
-      <title>谓词逻辑</title>
-      
-      
-      
-      
-      <description>&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 0 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/math/discrete-math/predicate-logic/</link>
-      <pubDate>Sat, 31 Jan 2026 21:07:19 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/discrete-math/predicate-logic/</guid>
-      
-    </item>
-    
-    <item>
-      <title>命题逻辑</title>
-      
-      
-      
-      
-      <description>&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 0 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/math/discrete-math/propositional-logic/</link>
-      <pubDate>Sat, 31 Jan 2026 21:07:19 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/discrete-math/propositional-logic/</guid>
-      
-    </item>
-    
-    <item>
-      <title>关系</title>
-      
-      
-      
-      
-      <description>&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 0 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/math/discrete-math/relation/</link>
-      <pubDate>Sat, 31 Jan 2026 21:07:19 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/discrete-math/relation/</guid>
-      
-    </item>
-    
-    <item>
-      <title>集合</title>
-      
-      
-      
-      
-      <description>&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 0 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/math/discrete-math/set/</link>
-      <pubDate>Sat, 31 Jan 2026 21:07:19 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/discrete-math/set/</guid>
-      
-    </item>
-    
-    <item>
-      <title>树</title>
-      
-      
-      
-      
-      <description>&lt;div style=&#34;margin-top: -30px; font-size: 0.75em; opacity: 0.7;&#34;&gt;
-&lt;p&gt;&lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 约 0 个字 &lt;span class=&#34;twemoji&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path d=&#34;M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt; 预计阅读时间不到 1 分钟&lt;/p&gt;
-&lt;/div&gt;
-&lt;aside class=&#34;md-pageviews md-pageviews--after-stats&#34; aria-label=&#34;页面阅读量&#34;&gt;
-  &lt;span class=&#34;md-pageviews__text&#34;&gt;阅读量&lt;/span&gt;
-  &lt;span id=&#34;busuanzi_value_page_pv&#34; class=&#34;md-pageviews__value&#34;&gt;—&lt;/span&gt;
-&lt;/aside&gt;</description>
-      <link>https://ycvenopyer.github.io/my-blog/math/discrete-math/tree/</link>
-      <pubDate>Sat, 31 Jan 2026 21:07:19 +0000</pubDate>
-      <source url="https://ycvenopyer.github.io/my-blog/feed_rss_updated.xml">ycvenopyer</source>
-      
-      <guid isPermaLink="true">https://ycvenopyer.github.io/my-blog/math/discrete-math/tree/</guid>
       
     </item>
     
