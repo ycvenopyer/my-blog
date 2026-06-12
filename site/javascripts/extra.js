@@ -1,30 +1,3 @@
-// 首页标题：鼠标光晕跟随
-function initHeroTitle() {
-    const hero = document.querySelector('.hero-title');
-    if (!hero || hero.dataset.heroInit) return;
-    hero.dataset.heroInit = '1';
-
-    const glow = hero.querySelector('.hero-title__glow');
-    if (!glow) return;
-
-    hero.addEventListener('mousemove', function(e) {
-        const rect = hero.getBoundingClientRect();
-        glow.style.left = (e.clientX - rect.left) + 'px';
-        glow.style.top = (e.clientY - rect.top) + 'px';
-        hero.classList.add('hero-title--active');
-    });
-
-    hero.addEventListener('mouseleave', function() {
-        hero.classList.remove('hero-title--active');
-    });
-}
-
-if (typeof document$ !== 'undefined') {
-    document$.subscribe(initHeroTitle);
-} else {
-    document.addEventListener('DOMContentLoaded', initHeroTitle);
-}
-
 // 回到顶部按钮
 document.addEventListener('DOMContentLoaded', function() {
     // 创建回到顶部按钮
