@@ -63,6 +63,7 @@ nav:
       - Fine-tuning: ai-note/llm/fine-tuning.md
       - Alignment: ai-note/llm/alignment.md
       - On-Policy Distillation: ai-note/llm/opd.md
+      - Scaling Law: ai-note/llm/scaling-law.md
       - Test-Time Scaling: ai-note/llm/test-time-scaling.md
       - LLM Application: ai-note/llm/llm-application.md
     - LLM RL:
@@ -78,10 +79,9 @@ nav:
       - vLLM: ai-note/llm-distributed-training-and-inference/vllm.md
       - FlashAttention: ai-note/llm-distributed-training-and-inference/flash-attention.md
       - PagedAttention: ai-note/llm-distributed-training-and-inference/paged-attention.md
-      - ZeRO: ai-note/llm-distributed-training-and-inference/zero.md
+      - DeepSpeed and ZeRO: ai-note/llm-distributed-training-and-inference/deepspeed-and-zero.md
       - Megatron-LM: ai-note/llm-distributed-training-and-inference/megatron-lm.md
       - Speculative Decoding: ai-note/llm-distributed-training-and-inference/speculative-decoding.md
-      - Deepspeed: ai-note/llm-distributed-training-and-inference/deepspeed.md
       - LLM Infra: ai-note/llm-distributed-training-and-inference/llm-infra.md
     - LLM Compression:
       - Overview: ai-note/llm-compression/index.md
@@ -89,6 +89,7 @@ nav:
       - Unstructual Pruning: ai-note/llm-compression/unstructual-pruning.md
       - Structual Pruning: ai-note/llm-compression/structual-pruning.md
       - Context Sparsity: ai-note/llm-compression/context-sparsity.md
+      - Sparse Attention: ai-note/llm-compression/sparse-attention.md
       - MoE Compression: ai-note/llm-compression/moe-compression.md
       - Quantization: ai-note/llm-compression/quantization.md
     - LLM Deploy:
@@ -145,6 +146,7 @@ nav:
       - Practice: ai-note/context-engineering/context-engineering-practice.md
     - Harness Engineering:
       - Overview: ai-note/harness-engineering/index.md
+      - Loop Engineering: ai-note/harness-engineering/loop-engineering.md
     - Agent:
       - Overview: ai-note/agent/index.md
       - Agent: ai-note/agent/agent.md
@@ -155,6 +157,7 @@ nav:
       - LangChain: ai-note/agent/langchain.md
       - Agent Development Problem: ai-note/agent/agent-dev-problem.md
       - Skills: ai-note/agent/skills.md
+      - Anthropic Skill Practice: ai-note/agent/anthropic-skill-practice.md
       - Sandbox: ai-note/agent/sandbox.md
       - Memory: ai-note/agent/memory.md
       - Memory Structure: ai-note/agent/memory-structure.md
@@ -164,6 +167,7 @@ nav:
       - SDD: ai-note/workflow/sdd.md
       - Superpowers: ai-note/workflow/superpowers.md
       - Manus: ai-note/workflow/manus.md
+      - Codex Usage: ai-note/workflow/how-to-use-codex.md
       - Dify: ai-note/workflow/dify.md
       - Coze: ai-note/workflow/coze.md
       - n8n: ai-note/workflow/n8n.md

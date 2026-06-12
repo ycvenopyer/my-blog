@@ -9,3 +9,9 @@
 | 知识蒸馏 | 让小模型（学生）学习大模型（教师）的行为 | DistilBERT, TinyBERT | 可构建极度轻量的模型，部署灵活 | 训练过程复杂，学生模型性能上限受限于教师模型 | 需要获得一个结构完全不同的小模型时 |
 | 低秩分解 | 将权重矩阵分解为两个或多个低秩小矩阵 | LoRA, QLoRA | 参数高效微调（PEFT），与量化技术天然互补 | 单独压缩效果有限，通常与其他技术结合使用 | 配合微调（如 QLoRA）或作为辅助压缩手段 |
 
+https://mp.weixin.qq.com/s/iCDdyKgqEFbV18qXDFEIAQ
+https://mp.weixin.qq.com/s/J7T0I2c2AXRYaDHXH8fcYg
+https://mp.weixin.qq.com/s/S9SHkFc7xlmbX_aEtha4AQ
+https://mp.weixin.qq.com/s/cDNUPBcmUyvUmsmcoJPsmg
+https://mp.weixin.qq.com/s/YrdKJqbm2s-ZMM4tyl82GQ
+https://mp.weixin.qq.com/s/G0p0PiNmKkZWsS8prVkQUQ

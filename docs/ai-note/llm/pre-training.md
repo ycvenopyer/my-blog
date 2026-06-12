@@ -20,8 +20,6 @@ pre-norm, post-norm, RMSNorm, LayerNorm
 
 ### 2.4 SwiGLU
 
-### 2.5 Scaling Law
-
 ## 3.注意力机制的优化
 
 ### 3.1 Longformer Sparse Attention
