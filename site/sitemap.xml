@@ -49,6 +49,10 @@
          <lastmod>2026-06-12</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/anthropic-skill-practice/</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/agent/langchain/</loc>
          <lastmod>2026-06-12</lastmod>
     </url>
@@ -185,6 +189,10 @@
          <lastmod>2026-06-12</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/harness-engineering/loop-engineering/</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/</loc>
          <lastmod>2026-06-12</lastmod>
     </url>
@@ -241,6 +249,10 @@
          <lastmod>2026-06-12</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/scaling-law/</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm/structure/</loc>
          <lastmod>2026-06-12</lastmod>
     </url>
@@ -277,6 +289,10 @@
          <lastmod>2026-06-12</lastmod>
     </url>
     <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/sparse-attention/</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-compression/structual-pruning/</loc>
          <lastmod>2026-06-12</lastmod>
     </url>
@@ -297,7 +313,7 @@
          <lastmod>2026-06-12</lastmod>
     </url>
     <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/deepspeed/</loc>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/deepspeed-and-zero/</loc>
          <lastmod>2026-06-12</lastmod>
     </url>
     <url>
@@ -330,10 +346,6 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/vllm/</loc>
-         <lastmod>2026-06-12</lastmod>
-    </url>
-    <url>
-         <loc>https://ycvenopyer.github.io/my-blog/ai-note/llm-distributed-training-and-inference/zero/</loc>
          <lastmod>2026-06-12</lastmod>
     </url>
     <url>
@@ -558,6 +570,10 @@
     </url>
     <url>
          <loc>https://ycvenopyer.github.io/my-blog/ai-note/workflow/hermes/</loc>
+         <lastmod>2026-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://ycvenopyer.github.io/my-blog/ai-note/workflow/how-to-use-codex/</loc>
          <lastmod>2026-06-12</lastmod>
     </url>
     <url>
