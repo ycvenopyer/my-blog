@@ -80,6 +80,8 @@ nav:
       - vLLM: ai-note/llm-distributed-training-and-inference/vllm.md
       - FlashAttention: ai-note/llm-distributed-training-and-inference/flash-attention.md
       - PagedAttention: ai-note/llm-distributed-training-and-inference/paged-attention.md
+      - DDP: ai-note/llm-distributed-training-and-inference/ddp.md
+      - Training-Inference Mismatch: ai-note/llm-distributed-training-and-inference/training-inference-mismatch.md
       - DeepSpeed and ZeRO: ai-note/llm-distributed-training-and-inference/deepspeed-and-zero.md
       - Megatron-LM: ai-note/llm-distributed-training-and-inference/megatron-lm.md
       - Speculative Decoding: ai-note/llm-distributed-training-and-inference/speculative-decoding.md
