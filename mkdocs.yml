@@ -33,6 +33,7 @@ nav:
       - ResNet: ai-note/dl/resnet.md
       - Discriminative Model: ai-note/dl/discriminative-model.md
       - Generative Model: ai-note/dl/generative-model.md
+      - Params: ai-note/dl/params.md
       - VAE: ai-note/dl/vae.md
       - GAN: ai-note/dl/gan.md
     - NLP:

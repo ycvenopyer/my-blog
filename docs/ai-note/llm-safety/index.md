@@ -1,6 +1,8 @@
 # 大模型安全
 
-资料：[LLM Security](https://llmsecurity.net/)
+[LLM Security](https://llmsecurity.net/)
+
+[Awesome-LM-SSP](https://github.com/CryptoAILab/Awesome-LM-SSP)
 
 ## 1.为何需要LLM安全？
 
