@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Mon, 15 Jun 2026 12:00:06 -0000</pubDate>
-    <lastBuildDate>Mon, 15 Jun 2026 12:00:06 -0000</lastBuildDate>
+    <pubDate>Mon, 15 Jun 2026 12:02:25 -0000</pubDate>
+    <lastBuildDate>Mon, 15 Jun 2026 12:02:25 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -58,7 +58,7 @@
     </item>
     
     <item>
-      <title>DDP数据并行</title>
+      <title>DDP</title>
       
       
       
@@ -84,7 +84,7 @@
     </item>
     
     <item>
-      <title>training-inference mismatch训推不一致</title>
+      <title>Training-Inference Mismatch</title>
       
       
       
