@@ -171,6 +171,7 @@ nav:
       - Superpowers: ai-note/workflow/superpowers.md
       - Manus: ai-note/workflow/manus.md
       - Codex Usage: ai-note/workflow/how-to-use-codex.md
+      - Claude Code Usage: ai-note/workflow/how-to-use-claude-code.md
       - Dify: ai-note/workflow/dify.md
       - Coze: ai-note/workflow/coze.md
       - n8n: ai-note/workflow/n8n.md

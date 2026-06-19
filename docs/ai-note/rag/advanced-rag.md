@@ -23,3 +23,10 @@ LLM Powered Autonomous Agents by Lilian Weng: A more theoretical article about L
 LangChain - OpenAI's RAG: Overview of the RAG strategies employed by OpenAI, including post-processing.
 
 DSPy in 8 Steps: General-purpose guide to DSPy introducing modules, signatures, and optimizers.
+
+
+[Chunk-Free RAG](https://mp.weixin.qq.com/s/cDXDzhn0aHhcLLrJDRb4gw)
+
+[Chunking-free RAG自测题](https://mp.weixin.qq.com/s/iKbkjHiq7scC6nyphhkGdg)
+
+[Chunking-free RAG自测题答案](https://mp.weixin.qq.com/s/_weQ_jAt2Jd-_fDT9sw6nw)
