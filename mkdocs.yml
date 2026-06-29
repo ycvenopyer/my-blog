@@ -84,6 +84,9 @@ nav:
       - Training-Inference Mismatch: ai-note/llm-distributed-training-and-inference/training-inference-mismatch.md
       - DeepSpeed and ZeRO: ai-note/llm-distributed-training-and-inference/deepspeed-and-zero.md
       - Megatron-LM: ai-note/llm-distributed-training-and-inference/megatron-lm.md
+      - EAGLE: ai-note/llm-distributed-training-and-inference/eagle.md
+      - DFlash: ai-note/llm-distributed-training-and-inference/dflash.md
+      - DSpark: ai-note/llm-distributed-training-and-inference/dspark.md
       - Speculative Decoding: ai-note/llm-distributed-training-and-inference/speculative-decoding.md
       - LLM Infra: ai-note/llm-distributed-training-and-inference/llm-infra.md
     - LLM Compression:
