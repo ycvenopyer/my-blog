@@ -1,4 +1,9 @@
 # Model
 
-这里对各个厂商的大模型做一个汇总
+[models.dev](https://models.dev/)
 
+[openrouter](https://openrouter.ai/)
+
+[modelscope](https://www.modelscope.cn/home)
+
+[huggingface](https://huggingface.co/)
