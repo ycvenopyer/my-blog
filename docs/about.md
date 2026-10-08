@@ -22,7 +22,7 @@ Now I am working on extracting sentence embeddings from MoE models and accelerat
 - Frameworks: Flask, Pytorch, Vue
 - Tools: VSCode, PyCharm, IDEA, Typora, Obsidian, Zotero, Cursor, Claude Code, Codex, WorkBuddy
 - AI: RAG, Agent, Agent Frameworks(LangChain, LangGraph), MCP, Function Calling, Skill, Prompt Engineering, Harnesss Engineering
-- LLM: Machine Learning, Natural Language Processing, Transformer, MoE, Diffision Language Model
+- LLM: Machine Learning, Natural Language Processing, Transformer, MoE, Diffusion Language Model
 
 ## 💼 Internship Experience
 
