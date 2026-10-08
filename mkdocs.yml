@@ -167,6 +167,9 @@ nav:
       - Sandbox: ai-note/agent/sandbox.md
       - Memory: ai-note/agent/memory.md
       - Memory Structure: ai-note/agent/memory-structure.md
+    - RSI:
+      - Overview: ai-note/rsi/index.md
+      - Continual Learning: ai-note/rsi/continual-learning.md
     - WorkFlow:
       - Overview: ai-note/workflow/index.md
       - AI Product Demand: ai-note/workflow/ai-product-demand-analysis.md
@@ -181,6 +184,7 @@ nav:
       - OpenClaw: ai-note/workflow/openclaw.md
       - Hermes: ai-note/workflow/hermes.md
       - Lovart: ai-note/workflow/lovart.md
+      - Jev: ai-note/workflow/jev.md
     - Model:
       - Overview: ai-note/model/index.md
   - Math: 
@@ -229,6 +233,9 @@ nav:
       - DES: essay/paper/des.md
       - SAMA: essay/paper/sama.md
       - Discrete DLM MIA: essay/paper/discrete-dlm-mia.md
+      - EffiR: essay/paper/effir.md
+      - BudgetGuidance: essay/paper/budget-guidance.md
+      - Bilevel MoE Upcycling: essay/paper/bilevel-moe-upcycling.md
   - About: about.md
 
 theme:

@@ -4,24 +4,29 @@ I am a student in the School of Computer Science at NJU.
 
 ## 🎓 Education
 
-- **Bachelor's Degree** | Nanjing University | School of Intelligent Software Engineering | 2022 – 2026
+- **Master's Degree** | Nanjing University | School of Computer Science | 2026.09 – Present
 
-- **Master's Degree** | Nanjing University | School of Computer Science | 2026 – Present
+- **Bachelor's Degree** | Nanjing University | School of Intelligent Software Engineering | 2022.09 – 2026.06
 
 ## 🗺️ Research Interests
 
-I have a broad interest in *LLMs* and *NLP*. Currently, I am primarily focusing on *Efficient LLMs(MoE Structure)*, *Diffusion Language Models*, *LLM Safety* and *AI Agents*. Moreover, I am also keen on LLM distributed training and inference, as well as LLM Evaluation and Interpretability.
+I have a broad interest in NLP and LLM, including LLM intervention and interpretability, representation learning and information retrieval, diffusion language models, and efficient LLMs(MoE models). In addition, I am keen on LLM distributed training and inference, and AI Agents.
+
+I once worked on membership inference attacks against masked diffusion language models.
+
+Now I am working on extracting sentence embeddings from MoE models and accelerating their decoding process, and continual learning (MoE upcycling, model merging).
 
 ## 🔧 Technical Skills
 
 - Languages: C/C++, Python, Java, HTML/CSS/JS, Latex, Markdown
 - Frameworks: Flask, Pytorch, Vue
-- Tools: VSCode, PyCharm, IDEA, Typora, Obsidian, Zotero, Cursor, Claude Code, Codex
+- Tools: VSCode, PyCharm, IDEA, Typora, Obsidian, Zotero, Cursor, Claude Code, Codex, WorkBuddy
 - AI: RAG, Agent, Agent Frameworks(LangChain, LangGraph), MCP, Function Calling, Skill, Prompt Engineering, Harnesss Engineering
+- LLM: Machine Learning, Natural Language Processing, Transformer, MoE, Diffision Language Model
 
 ## 💼 Internship Experience
 
-- **AI Product Intern** | Radnova | Jan 2026 – Mar 2026
+- **AI Product Intern** | Radnova | 2026.01 – 2026.03
 
 ## 🎯 Hobbies
 
