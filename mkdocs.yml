@@ -185,6 +185,7 @@ nav:
       - Hermes: ai-note/workflow/hermes.md
       - Lovart: ai-note/workflow/lovart.md
       - Jev: ai-note/workflow/jev.md
+      - REA: ai-note/workflow/rea.md
     - Model:
       - Overview: ai-note/model/index.md
   - Math: 
